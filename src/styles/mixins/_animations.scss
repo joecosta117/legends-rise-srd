@@ -1,0 +1,18 @@
+// Animation Mixins
+@mixin fadeIn($duration: 1s) {
+    animation: fadeIn ease $duration;
+  
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  
+  // Transition Mixins
+  @mixin transformTransition($duration: 0.5s) {
+    transition: transform $duration ease-in-out;
+  }

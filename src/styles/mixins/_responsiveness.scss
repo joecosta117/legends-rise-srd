@@ -1,0 +1,16 @@
+/// Mixins that relate to responsive design.
+
+// returns pre-defined breakpoint from map, or else custom value passed in
+@function breakpoint($breakpoint) {
+    @if (map-has-key($mq-breakpoints, $breakpoint)) {
+      @return map-get($mq-breakpoints, $breakpoint);
+    } @else {
+      @return $breakpoint;
+    }
+  }
+  
+  @mixin mq($breakpoint, $respond: "min-width") {
+    @media (#{$respond}: breakpoint($breakpoint)) {
+      @content;
+    }
+  }
