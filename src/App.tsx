@@ -1,7 +1,8 @@
 import './App.css'
 import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/home';
+import Home from './pages/Home';
+import HeroCreationSteps from './pages/HeroCreationSteps';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="page-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/hero-creation-steps" element={<HeroCreationSteps />} />
             {/* <Route exact path="/5e-classes" component={ContentPage} />
             <Route exact path="/5e-magic-items" component={ContentPage} />
             <Route exact path="/5e-monsters" component={ContentPage} />

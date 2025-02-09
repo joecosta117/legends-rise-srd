@@ -1,24 +1,24 @@
 import "./index.scss";
 import React, { useState, useEffect } from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // @ts-ignore
 import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
 
 const Navigation = () => {
-  const [isMobile, setIsMobile] = useState(false);
+//   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(getBreakpoint() === "MOBILE");
-    };
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setIsMobile(getBreakpoint() === "MOBILE");
+//     };
 
-    handleResize();
+//     handleResize();
 
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+//     window.addEventListener("resize", handleResize);
+//     return () => {
+//       window.removeEventListener("resize", handleResize);
+//     };
+//   }, []);
 
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
@@ -78,9 +78,9 @@ const Navigation = () => {
     <div className="navigation" id="nav">
       <div className="navigation__container">
         <div className="navigation__title-container">
-          {/* <Link to="/" className="navigation__title-container__title">
+          <Link to="/" className="navigation__title-container__title">
             Legends Rise TTRPG
-          </Link> */}
+          </Link>
         </div>
         <div className="navigation__links" data-is-active={isMobileNavOpen}>
           <div
@@ -90,7 +90,7 @@ const Navigation = () => {
           >
             <div className="navigation__links-container__nav" data-type="5E">
               <div className="navigation__links-container__link" data-type="5E">
-                D&D 5E
+                Character Rules
               </div>
               <button
                 className="navigation__links-container__dropdown-arrow"
@@ -103,14 +103,14 @@ const Navigation = () => {
               data-type="5E"
               data-active="false"
             >
-              {/* <Link
+              <Link
                 className="navigation__links-container__dropdown__item"
-                to="/5e-classes"
+                to="/hero-creation-steps"
                 onClick={toggleMobileNav}
               >
-                Classes
+                Hero Creation Steps
               </Link>
-              <Link
+              {/* <Link
                 className="navigation__links-container__dropdown__item"
                 to="/5e-magic-items"
                 onClick={toggleMobileNav}
@@ -162,7 +162,7 @@ const Navigation = () => {
           >
             <div className="navigation__links-container__nav" data-type="2E">
               <div className="navigation__links-container__link" data-type="2E">
-                Pathfinder 2E
+                Game Rules
               </div>
               <button
                 className="navigation__links-container__dropdown-arrow"
