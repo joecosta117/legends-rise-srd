@@ -10,7 +10,7 @@
   // flex-direction: column;
   // align-items: center;
 
-  p, li {
+  h2, h3, p, li {
     @include mq(s) {
       padding-left: 50px;
       padding-right: 50px;

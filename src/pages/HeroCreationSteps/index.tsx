@@ -5,7 +5,7 @@ function HeroCreationSteps() {
       <div className="hero-creation-steps">
         <div className="hcs-content">
           <h1>Hero Creation</h1>
-          <p>You can create a 1st level hero using an <b><a target='blank' href='https://docs.google.com/document/d/1-rIBiG8WjHG-kw4yfBgI__ks7ZFQjKbCklnnrQ1l31w/edit?usp=sharing'>empty hero sheet</a></b>. I suggest making a copy of the sheet in your google drive, and then editing from there. You will build a hero using the following steps.</p>
+          <p>You can create a hero using an <b><a target='blank' href='https://docs.google.com/document/d/1-rIBiG8WjHG-kw4yfBgI__ks7ZFQjKbCklnnrQ1l31w/edit?usp=sharing'>empty hero sheet</a></b>. I suggest making a copy of the sheet in your google drive, and then editing from there. You will build a hero using the following steps.</p>
 
           <h2>Step 1: Choose an Ancestry</h2>
           <p>Your ancestry represents who your hero’s people are, whether they be humans or elves. Ancestries grant your hero special powers. You can look at the list of ancestries here (TODO add link)</p>
