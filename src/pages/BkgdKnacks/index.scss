@@ -1,13 +1,13 @@
 @import "../../styles/index.scss";
 
-.hero-creation-steps {
+.skills {
   @include page-layout();
 }
 
-.hcs-content {
+.skills-content {
   @include page-content();
 
-  h2, h3, p, li {
+  h2, h3, h4, p, li {
     @include mq(s) {
       padding-left: 50px;
       padding-right: 50px;
@@ -22,7 +22,7 @@
     }
   }
 
-  p, h2 {
+  p, h2, h3, h4 {
     text-align: left;
   }
 
@@ -30,7 +30,7 @@
     margin-top: 0;
   }
 
-  h2, h3 {
+  h2, h3, h4 {
     margin-bottom: .25em;
   }
 
@@ -47,13 +47,38 @@
     }
   }
 
-  .defense {
-    list-style-type: none;
-    text-align: left;
-    margin-bottom: 1em;
+  .collapsed-section {
+    cursor: "pointer";
+    padding: 5px;
+    border: 1px solid $gold;
+    text-align: center;
+    background: $lightblack;
+
+    &[data-is-expanded="true"] {
+      background-color: $dimgrey;
+      margin-bottom: 0;
+      border-bottom: none;
+    }
   }
 
-  .higher-level {
-    list-style-type: none;
-  } 
+  .expanded-section {
+    padding: 10px;
+    border: 1px solid $gold;
+    border-top: none;
+    background: $lightblack;
+
+    ul {
+      margin-top: -10px;
+    }
+
+    li {
+      text-align: left;
+      list-style-position: inside;
+      margin-bottom: 0.25em;
+
+      span {
+        margin-left: -5px;
+      }
+    }
+  }
 }

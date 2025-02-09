@@ -110,6 +110,13 @@ const Navigation = () => {
               >
                 Hero Creation Steps
               </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/background-and-knacks"
+                onClick={toggleMobileNav}
+              >
+                Background & Knacks
+              </Link>
               {/* <Link
                 className="navigation__links-container__dropdown__item"
                 to="/5e-magic-items"

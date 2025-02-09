@@ -26,19 +26,19 @@ function HeroCreationSteps() {
             <li className="defense"><b>Mystical Defense (MD):</b> Represents your hero’s protection from threats that affect your mind, soul, and very essence, such as overcoming mind control, resisting unholy corruption, or withstanding raw magical energy.</li>
           </ul>
           <h3>Calculating Defenses</h3>
-          <p>Your PD and MD both equal <b>8 + your proficiency bonus</b>. Your defenses are also improved in the following order:</p>
+          <p>Your PD and MD both equal <b>8 + your proficiency bonus</b> (10 at 1st level). Your defenses are also improved in the following order:</p>
           <ol>
             <li>Your class gives you bonuses to one or two defenses.</li>
             <li>Your defenses can also be improved by wearing certain armor.</li>
           </ol>
-          <p>For example, Darian’s defenses start at 10 at 1st level. Their class gives them +1 to PD, which brings their PD to 11. Darian then decides to wear light armor, which increases their PD to 12.</p>
+          <p>For example, Darian’s proficiency bonus is +2 at 1st level, so both PD and MD start at 10. Their class gives them +1 to PD, which brings their PD to 11. Darian then decides to wear light armor, which increases their PD to 12.</p>
 
           <h2>Optional Step 6: Starting at Higher Level</h2>
           <p>Although it's recommended to start at 1st level, some campaigns might begin at higher levels. When starting at a higher level, look at the level progression table (TODO link) to see what features you get from higher levels. For equipment, you can still use your class’s starting equipment, but depending on the level, you might start with gold and permanent magic items:
           </p>
           <ul>
-            <li className="higher-level"><b>Levels 2-4:</b> 2 gold</li>
-            <li className="higher-level"><b>Levels 5-7:</b> 5 gold, one permanent tier 1 magic item</li>
+            <li className="higher-level"><b>Levels 2-4:</b> 1 gold</li>
+            <li className="higher-level"><b>Levels 5-7:</b> 3 gold, one permanent tier 1 magic item</li>
             <li className="higher-level"><b>Levels 8-10:</b> 9 gold, one permanent tier 1 magic item, and one permament tier 2 magic item</li>
           </ul>
         </div>
