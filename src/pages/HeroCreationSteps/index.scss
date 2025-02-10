@@ -7,46 +7,6 @@
 .hcs-content {
   @include page-content();
 
-  h2, h3, p, li {
-    @include mq(s) {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @include mq(m) {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    @include mq(xl) {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-  }
-
-  p, h2 {
-    text-align: left;
-  }
-
-  p {
-    margin-top: 0;
-  }
-
-  h2, h3 {
-    margin-bottom: .25em;
-  }
-
-  ol, ul {
-    list-style-position: inside; // Ensures the marker is inside the list item
-    padding-left: 0; // Removes default padding
-
-    li {
-      text-align: left;
-      margin-bottom: 0.5em;
-      &::marker {
-        font-size: 1em; // Adjusts the size of the marker if needed
-      }
-    }
-  }
-
   .defense {
     list-style-type: none;
     text-align: left;

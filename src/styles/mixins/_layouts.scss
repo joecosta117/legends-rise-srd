@@ -1,25 +1,71 @@
 @mixin page-layout() {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 
+  @include mq(m) {
+    grid-template-columns: auto 900px auto;
+  }
+  @include mq(xl) {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+
+@mixin page-content() {
+  // TODO: Add a background color
+  // background: $parchment;
+  padding-top: 25px;
+  width: 100%;
+
+  @include mq(m) {
+    padding-top: 50px;
+    grid-column: 2;
+  }
+
+  h2, h3, h4, p, li {
+    @include mq(s) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
     @include mq(m) {
-      grid-template-columns: auto 900px auto;
+      padding-left: 100px;
+      padding-right: 100px;
     }
     @include mq(xl) {
-      grid-template-columns: auto 1200px auto;
+      padding-left: 150px;
+      padding-right: 150px;
     }
   }
-  
-  @mixin page-content() {
-    // TODO: Add a background color
-    // background: $parchment;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-  
-    @include mq(m) {
-      padding-bottom: 100px;
-      padding-top: 100px;
-      grid-column: 2;
+
+  p, h2, h3, h4 {
+    text-align: left;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  h2, h3, h4 {
+    margin-bottom: .25em;
+  }
+
+  ol, ul {
+    list-style-position: inside; 
+    padding-left: 0; 
+
+    li {
+      text-align: left;
+      list-style-position: inside;
+      margin-bottom: 0.25em;
+      &::marker {
+        font-size: 1em; 
+      }
+      span {
+        margin-left: -5px;
+      }
     }
   }
+
+  ul {
+    margin-top: -10px;
+  }
+}

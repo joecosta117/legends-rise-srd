@@ -4,10 +4,16 @@ import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 
 function BkgdKnacks() {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isBkgdExpanded, setIsBkgdExpanded] = useState(false);
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+  const toggleBkgdExpand = () => {
+    setIsBkgdExpanded(!isBkgdExpanded);
+  };
+
+  const [isKnacksExpanded, setIsKnacksExpanded] = useState(false);
+
+  const toggleKnacksExpand = () => {
+    setIsKnacksExpanded(!isKnacksExpanded);
   };
 
   return (
@@ -21,15 +27,14 @@ function BkgdKnacks() {
 
         <h3>Invoking Backgrounds</h3>
         <p>You can <b>invoke</b> your background when you make a skill roll to add your proficiency bonus to the result. You can only invoke your background if the background is relevant towards the challenge. For example, a hero with the background “dragon hunter” could invoke this background to add their proficiency bonus on their skill roll to track a monster in the forest.</p>
-      
-        <h3>Invoking Knacks</h3>
-        <p>You can invoke your knacks when you make a skill roll to add <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to the result. For example, a hero can invoke their knack “stealth” to try to move past goblin sentires without being noticed. The hero then gains <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to their skill roll. You can only invoke up to one knack per skill roll.</p>
-        <p>For both invoking backgrounds and knacks, the GM is the final judge if the background or knack works given the context of the challenge.</p>
 
-        <h2 onClick={toggleExpand} className="collapsed-section" data-is-expanded={isExpanded}>
-          Choosing Background {isExpanded ? "▲" : "▶"}
-        </h2>
-        {isExpanded && (
+        <h4 onClick={toggleBkgdExpand} className="collapsed-section" data-is-expanded={isBkgdExpanded}>
+          <span>Choosing Your Background</span>
+          <button
+            className="collapsed-section__dropdown-arrow" data-active={isBkgdExpanded}
+          ></button>
+        </h4>
+        {isBkgdExpanded && (
           <div className="expanded-section">
             <p>You choose a background at 1st level. Here are some suggestions on the context of your background:</p>
             <p><b>Birthplace or Upbringing:</b> Your hero growing up in an elven forest has a very different origin compared to another hero that grew up in the dangerous streets of a seedy city.</p>
@@ -89,9 +94,45 @@ function BkgdKnacks() {
             <p>For example, at 1st level Damarin chooses the “Orphaned Rogue from the Capital'' as his background. At 5th level, when Damarin’s tier becomes 2, he expands his background to “Orphaned Rogue from the Capital that is hunting demons'' to better reflect the knowledge he’s gained on fiends during his past adventure. At 8th level, when Damarin’s tier becomes 3, he further expands his background to “Orphaned Rogue from the Capital that hunts demons and travels to otherworldly realms” to represent his time spent traversing other realms during his adventures.</p>
           </div>
         )}
+      
+        <h3>Invoking Knacks</h3>
+        <p>You can invoke your knacks when you make a skill roll to add <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to the result. For example, a hero can invoke their knack “stealth” to try to move past goblin sentires without being noticed. The hero then gains <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to their skill roll. You can only invoke up to one knack per skill roll.</p>
+        <p>For both invoking backgrounds and knacks, the GM is the final judge if the background or knack works given the context of the challenge.</p>
 
-
-
+        <h4 onClick={toggleKnacksExpand} className="collapsed-section" data-is-expanded={isKnacksExpanded}>
+          <span>Choosing Your Knacks</span>
+          <button
+            className="collapsed-section__dropdown-arrow" data-active={isKnacksExpanded}
+          ></button>
+        </h4>
+        {isKnacksExpanded && (
+          <div className="expanded-section">
+            <p>All heroes learn two knacks at 1st level, of which players define themselves. Knacks represent talents your hero excels at, and are typically short one to two word concepts similar to skills in other games. As your hero progresses, they will automatically learn more knacks.</p>
+            <p>Here are some examples of knacks you could pick, but feel free to make up your own:</p>
+            <ul>
+              <li><span>Ancient History</span></li>
+              <li><span>Animal Friend</span></li>
+              <li><span>Athletics</span></li>
+              <li><span>Dragon Lore</span></li>
+              <li><span>Faith</span></li>
+              <li><span>Fire Magic</span></li>
+              <li><span>Herbalism</span></li>
+              <li><span>Intimidation</span></li>
+              <li><span>Legal Studies</span></li>
+              <li><span>Lying</span></li>
+              <li><span>Military Tactics</span></li>
+              <li><span>Nature</span></li>
+              <li><span>Perception</span></li>
+              <li><span>Persuasion</span></li>
+              <li><span>Politics</span></li>
+              <li><span>Research</span></li>
+              <li><span>Riding</span></li>
+              <li><span>Stealth</span></li>
+              <li><span>Tinkering</span></li>
+              <li><span>Wilderness Survival</span></li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -1,0 +1,108 @@
+@import "../../styles/index.scss";
+
+.ability {
+  max-width: 300px;
+
+  @include mq(s) {
+    max-width: 400px;
+  }
+  @include mq(m) {
+    max-width: 500px;
+  }
+  @include mq(xl) {
+    max-width: 600px;
+  }
+  
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: $actionred;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(s) {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    @include mq(m) {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    @include mq(xl) {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &[data-type="Action"] {
+      background: $actionred;
+    }
+    &[data-type="Maneuver"] {
+      background: $maneuvergreen;
+    }
+    &[data-type="Reaction"] {
+      background: $reactionorange;
+    }
+    &[data-type="Free"] {
+      background: $freepurple;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  &__descriptor {
+    font-style: italic;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+
+    @include mq(s) {
+      margin-left: 50px;
+      margin-right: 50px;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    @include mq(m) {
+      margin-left: 100px;
+      margin-right: 100px;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    @include mq(xl) {
+      margin-left: 150px;
+      margin-right: 150px;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  &__top {
+    padding-top: 5px;
+  }
+
+  &__line {
+    & span[data-type="PD"] {
+      color: $physicalred;
+    }
+    & span[data-type="MD"] {
+      color: $mysticalblue;
+    }
+  }
+
+  ul {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

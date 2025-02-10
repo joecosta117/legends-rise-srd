@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import HeroCreationSteps from './pages/HeroCreationSteps';
 import BkgdKnacks from './pages/BkgdKnacks';
+import Ancestries from './pages/Ancestries';
+import Classes from './pages/Classes';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/hero-creation-steps" element={<HeroCreationSteps />} />
             <Route path="/background-and-knacks" element={<BkgdKnacks />} />
+            <Route path="/ancestries" element={<Ancestries />} />
+            <Route path="/classes" element={<Classes />} />
             {/* <Route exact path="/5e-classes" component={ContentPage} />
             <Route exact path="/5e-magic-items" component={ContentPage} />
             <Route exact path="/5e-monsters" component={ContentPage} />

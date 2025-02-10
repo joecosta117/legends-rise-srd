@@ -112,53 +112,25 @@ const Navigation = () => {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/ancestries"
+                onClick={toggleMobileNav}
+              >
+                Ancestries
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/background-and-knacks"
                 onClick={toggleMobileNav}
               >
                 Background & Knacks
               </Link>
-              {/* <Link
-                className="navigation__links-container__dropdown__item"
-                to="/5e-magic-items"
-                onClick={toggleMobileNav}
-              >
-                Magic Items
-              </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/5e-monsters"
+                to="/classes"
                 onClick={toggleMobileNav}
               >
-                Monsters
+                Classes
               </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/5e-races"
-                onClick={toggleMobileNav}
-              >
-                Races
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/5e-spells"
-                onClick={toggleMobileNav}
-              >
-                Spells
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/5e-subclasses"
-                onClick={toggleMobileNav}
-              >
-                Subclasses
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/5e-systems"
-                onClick={toggleMobileNav}
-              >
-                Systems
-              </Link> */}
             </div>
           </div>
 

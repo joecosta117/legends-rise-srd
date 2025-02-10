@@ -60,6 +60,7 @@
   }
   
   @mixin right-arrow-button {
+    border-radius: 0;
     background: none;
     border: solid black;
     border-width: 0 2px 2px 0;
