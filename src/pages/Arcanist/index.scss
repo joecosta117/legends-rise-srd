@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.arcanist {
+  @include page-layout();
+}
+
+.arcanist-content {
+  @include class-page-content();
+}

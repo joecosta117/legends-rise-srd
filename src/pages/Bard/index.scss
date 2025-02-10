@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.bard {
+  @include page-layout();
+}
+
+.bard-content {
+  @include class-page-content();
+}

@@ -6,6 +6,8 @@ import HeroCreationSteps from './pages/HeroCreationSteps';
 import BkgdKnacks from './pages/BkgdKnacks';
 import Ancestries from './pages/Ancestries';
 import Classes from './pages/Classes';
+import Arcanist from './pages/Arcanist';
+import Bard from './pages/Bard';
 
 function App() {
   return (
@@ -18,19 +20,8 @@ function App() {
             <Route path="/background-and-knacks" element={<BkgdKnacks />} />
             <Route path="/ancestries" element={<Ancestries />} />
             <Route path="/classes" element={<Classes />} />
-            {/* <Route exact path="/5e-classes" component={ContentPage} />
-            <Route exact path="/5e-magic-items" component={ContentPage} />
-            <Route exact path="/5e-monsters" component={ContentPage} />
-            <Route exact path="/5e-subclasses" component={SubclassesPage} />
-            <Route exact path="/5e-races" component={ContentPage} />
-            <Route exact path="/5e-systems" component={ContentPage} />
-            <Route exact path="/5e-spells" component={ContentPage} />
-            <Route exact path="/2e-ancestries" component={ContentPage} />
-            <Route exact path="/2e-archetypes" component={ContentPage} />
-            <Route exact path="/2e-classes" component={ContentPage} />
-            <Route exact path="/2e-magic-items" component={ContentPage} />
-            <Route exact path="/2e-monsters" component={ContentPage} />
-            <Route exact path="/contact" component={EmailPage} /> */}
+            <Route path="/classes/arcanist" element={<Arcanist />} />
+            <Route path="/classes/bard" element={<Bard />} />
           </Routes>
         </div>
     </Router>

@@ -30,10 +30,10 @@ const AbilityCard: React.FC<AbilityCardProps> = ({ name, actType, descriptor, fr
     const misfortuneRegex = /(\+?\d*)\s*(misfortune)/gi;
 
     return effect.split(' ').map((word, index, array) => {
-      if (fortuneRegex.test(word)) {
-        return <span key={index}><img className="icon" src={fortune} alt="fortune icon" /> </span>;
-      } else if (misfortuneRegex.test(word)) {
+      if (misfortuneRegex.test(word)) {
         return <span key={index}><img className="icon" src={misfortune} alt="misfortune icon" /> </span>;
+      } else if (fortuneRegex.test(word)) {
+        return <span key={index}><img className="icon" src={fortune} alt="fortune icon" /> </span>;
       } else if (array[index + 1] === 'fortune' || array[index + 1] === 'misfortune') {
         return <span key={index}><b>{word}</b> </span>;
       } else {

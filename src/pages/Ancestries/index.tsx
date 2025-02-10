@@ -1,6 +1,4 @@
 import "./index.scss";
-import React, { useState } from "react";
-import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 import AbilityCard from "../../components/AbilityCard";
 

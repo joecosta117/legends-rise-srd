@@ -69,3 +69,54 @@
     margin-top: -10px;
   }
 }
+
+@mixin class-page-content {
+  @include page-content();
+  display: grid;
+
+  .tab-items {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-flow: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: bold;
+
+    @include mq(s) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include mq(m) {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    @include mq(xl) {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+    .tab {
+      cursor: pointer;
+    }
+
+    .divider {
+      color: $gold;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .secondary-list {
+    margin-top: 0;
+    margin-left: 10px;
+
+    li {
+      @include mq(s) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
