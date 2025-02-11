@@ -1,6 +1,8 @@
 import "./index.scss";
 import AbilityCard from "../../components/AbilityCard";
 import { useState } from "react";
+import fortune from "../../assets/fortune-icon-v2.png";
+import misfortune from "../../assets/misfortune-icon-v2.png";
 
 function Bard() {
   const [isDetails, setDetails] = useState(true);
@@ -115,16 +117,16 @@ function Bard() {
 
         {isSubclasses && (
           <div>
-            <h2>Bard Subclasses</h2>
+            <h1>Bard Subclasses</h1>
             <p>These are the subclass choices for the bard.</p>
-            <h3>Muse of Drama</h3>
+            <h2>Muse of Drama</h2>
             <p>Your creativity gains inspiration from the magic of narration and storytelling. Your performances interject thrilling heroic moments, but not without the risk of danger.</p>
-            <h4>Plot Twist (1st-Level Feature)</h4>
+            <h3>Plot Twist (1st-Level Feature)</h3>
             <p>You know how to raise the stakes and create a good story. You can tempt fate on any roll, and when you or an ally tempt fate, the bonus increases by +1 fortune.</p>
 
-            <h3>Muse of Lore</h3>
+            <h2>Muse of Lore</h2>
             <p>Unlike other bards, you focus your creativity on the history and the lore of the world around you, and use it to weave grand performances.</p>
-            <h4>Student of Lore (1st-Level Feature)</h4>
+            <h3>Student of Lore (1st-Level Feature)</h3>
             <p>You gain a knack related to a knowledgeable topic such as ancient history. You also gain the following ability:</p>
             <AbilityCard
               name="Lore Drop"
@@ -135,124 +137,191 @@ function Bard() {
               effect="Study" 
             />
 
-            <h3>Warmage</h3>
-            <p>You specialize in casting from the frontlines, using magic to bolster your defenses and destruction.</p>
-            <h4>War Magic (1st-Level Feature)</h4>
-            <p>While unarmored, you gain +1 to your PD. Also, when you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier.</p>
+            <h2>Muse of Valor</h2>
+            <p>You find artistic inspiration from the sounds and thrill of battle.</p>
+            <h3>Bardic Warrior (1st-Level Feature)</h3>
+            <p>You wield a weapon as well as you weave magic. You gain the following benefits:</p>
+            <ul>
+              <li><span>Your starting hit points increase to 10, and your recoveries increase to 5.</span></li>
+              <li><span>You gain training in light armor, shields, and all weapons.</span></li>
+              <li><span>You gain one armor, one weapon, and either another weapon or shield from your starting equipment. </span></li>
+            </ul>
           </div>
         )}
 
         {isTalents && (
           <div>
-            <h2>Bard Class Talents</h2>
+            <h1>Bard Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
-            <h3>Tier 1 Class Talents</h3>
-            <h4>Expanded Bardic Magic</h4>
-            <p>Learn a battle spell or magic tradition from one listed in arcanist magic. You can take this class talent multiple times.</p>
+            <h2>Tier 1 Class Talents</h2>
+            <h3>Expanded Bardic Magic</h3>
+            <p>Learn a battle spell or magic tradition from one listed in bardic magic. You can take this class talent multiple times.</p>
 
-            <h4>Far Spell</h4>
+            <h3>Focused Performance</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Far Spell"
+              name="Focused Performance"
               actType="Reaction"
-              descriptor="You extend your magic further than possible."
+              descriptor="You can maintain your mental focus as you perform."
               frequency="At-will"
-              keywords="Spellshape"
-              trigger="You Spellcast a battle spell that targets a creature or zone"
-              effect="For a range spell, increase the range by 1 zone, or for a melee spell, you can instead target a creature within your zone." 
+              trigger="You use a bardic performance"
+              effect="Focus on an ability" 
             />
 
-            <h4>Powerful Spell</h4>
+            <h3>Inspiring Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Powerful Spell"
+              name="Inspiring Spell"
               actType="Reaction"
-              descriptor="You amplify your dangerous magic."
+              descriptor="You weave together a tale of knowledge."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell of tier 1 or higher that deals initial damage"
-              effect="Increase the triggering spell’s initial damage by the spell tier." 
+              trigger="You Spellcast a battle spell"
+              effect="Choose one creature within 1 zone to gain temporary hit points equal to the triggering spell tier (scene ends)." 
             />
 
-            <h4>Safe Spell</h4>
+            <h3>Many Peformances</h3>
+            <p>Learn a new bardic performance. You can take this class talent multiple times.</p>
+
+            <h3>Running Performance</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Safe Spell"
+              name="Running Performance"
               actType="Reaction"
-              descriptor="You shield your allies from your magic."
+              descriptor="You have mastered the art of moving and performing."
               frequency="At-will"
-              keywords="Spellshape"
-              trigger="You Spellcast a battle spell that targets an entire zone or zone border"
-              effect="Choose a number of creatures equal to your proficiency bonus to be unaffected by the triggering spell." 
+              trigger="You use a bardic performance"
+              effect="Disengage or Move" 
             />
-
-            <h4>Substitute Spell</h4>
-            <p>During a short rest, you can replace one of your known battle spells with another battle spell of the same tier and from the same magic tradition.</p>
             
-            <h3>Tier 2 Class Talents</h3>
-            <h4>Advanced Learning</h4>
-            <p style={{marginBottom: 0}}><b>Requirement:</b> wizard subclass</p>
-            <p>You learn a battle spell from one of your known magic traditions of a spell tier no higher than your tier. Make this choice again.</p>
+            <h2>Tier 2 Class Talents</h2>
+            <h3>Arcane Secrets</h3>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> muse of lore subclass</p>
+            <p>You learn a battle spell from any magic tradition, even if you don’t know the tradition. You can take this class talent multiple times.</p>
 
-            <h4>Arcane Vitality</h4>
-            <p style={{marginBottom: 0}}><b>Requirement:</b> sorcerer subclass</p>
+            <h3>Distant Performance</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Arcane Vitality"
-              actType="Free"
-              descriptor="You transmute some of your life force into magical essence."
-              frequency="Encounter"
-              keywords="Magical"
-              effect="Spend a recovery, but instead of regaining hit points, you regain mana equal to your tier." 
-            />
-
-            <h4>Effortless Spell</h4>
-            <p>You gain the following ability:</p>
-            <AbilityCard
-              name="Effortless Spell"
+              name="Distant Performance"
               actType="Reaction"
-              descriptor="With little strain, you cast a familiar spell."
+              descriptor="You amplify your performance to catch further away crowds."
               frequency="Encounter"
-              keywords="Spellshape"
-              trigger="You Spellcast a battle spell of tier 1 or higher"
-              effect="You don’t spend mana on the triggering spell." 
+              trigger="You use a bardic performance"
+              effect="Extend the range of targets to within 1 zone" 
             />
 
-            <h4>Magic Surge</h4>
-            <p style={{marginBottom: 0}}><b>Requirement:</b> warmage subclass</p>
-            <p>When you use high magic, arcane energy leaps out from you at a number of creatures equal to the spell’s tier within 1 zone. Target creatures take arcane damage equal to the spell’s tier.</p>
+            <h3>Extend Performance</h3>
+            <p>When you use a bardic performance, you can spend mana equal to your tier to increase the duration to last the scene. If the bardic performance affects enemies, then enemies make overcome rolls at the end of their turns to end the performance’s effect on themselves.</p>
 
-            <h4>Immediate Spell</h4>
+            <h3>Inspiring Drama</h3>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> muse of drama subclass</p>
+            <p>When you tempt fate, choose an ally within 1 zone to gain temporary hit points equal to your tier (scene ends).</p> 
+            
+            <h3>Violent Rewards</h3>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> muse of valor subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Immediate Spell"
               actType="Reaction"
-              descriptor="With great effort, you quickly cast a spell."
-              frequency="Encounter"
-              keywords="Spellshape"
-              trigger="You Spellcast a battle spell that takes an action"
-              effect="You can instead use a maneuver to Spellcast the triggering spell" 
+              descriptor="You reward your newest muse."
+              frequency="At-will"
+              keywords="Magical"
+              trigger="You see a creature within 1 zone get a critical success on an attack roll"
+              effect="Triggering creature gains temporary hit points equal to your proficiency bonus (scene ends)" 
             />
 
 
-            <h3>Tier 3 Class Talents</h3>
-            <h4>All Knowing</h4>
-            <p style={{marginBottom: 0}}><b>Requirement:</b> wizard subclass</p>
-            <p>You are permanently hastened, but you can only use this extra maneuver to Study.</p>
+            <h2>Tier 3 Class Talents</h2>
+            <h3>Bloodlust Performance</h3>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> muse of valor subclass</p>
+            <p>When you use a bardic performance, you and allies within the target range can add your tier to initial damage from attack rolls until the start of your next turn.</p>
 
-            <h4>Arcane Ascension</h4>
-            <p style={{marginBottom: 0}}><b>Requirement:</b> sorcerer subclass</p>
-            <p>During unleash arcane, you gain a fly speed equal to your land speed and when you start your turn without mana, you regain 2 mana.</p>
+            <h3>Constant Performer</h3>
+            <p>You are permanently hastened, but you can only use the extra maneuver on a bardic performance.</p>
 
-            <h4>Master Arcanist</h4>
-            <p>You gain a second reaction that you can only use on features from this class such as countermagic.</p>
+            <h3>Greater Performance</h3>
+            <p>Any bonus granted by a bardic performance increases to <b>+2 <img className="icon" src={fortune} alt="fortune icon" /></b>, and any penalty from a bardic performance increases to <b>+2 <img className="icon" src={misfortune} alt="misfortune icon" /></b>. The temporary hit points gained by performance of restoration equals your proficiency bonus, and the speed boost gained by performance of alacrity increases to +2.</p>
 
-            <h4>Overpower Magic</h4>
-            <p style={{marginBottom: 0}}><b>Requirement:</b> warmage subclass</p>
-            <p>All your magical abilities ignore damage resistances.</p>
+            <h3>Ignore Fate</h3>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> muse of drama subclass</p>
+            <p>When you tempt fate in combat, make an overcome roll. On a success, you ignore the extra complication from tempt fate.</p>
 
-            <h4>Unparalleled Magic</h4>
-            <p>You can use high magic a second time per short rest.</p>
+            <h3>Loremaster</h3>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> muse of lore subclass</p>
+            <p>When you Study, you can target a number of targets equal to your tier.</p>
+          </div>
+        )}
+
+        {isPerformances && (
+          <div>
+            <h1>Bardic Performances</h1>
+            <p>When you learn a bardic performance, you choose from the following options:</p>
+            
+            <div className="performances">
+              <AbilityCard
+                name="Performance of Alacrity"
+                actType="Maneuver"
+                descriptor="With a hurried performance, you urge your allies to double time it."
+                frequency="At-will"
+                keywords="Magical"
+                duration="Start of your next turn"
+                target="You and all allies within your zone"
+                effect="Targets’ speeds increase by +1" 
+              />
+
+              <AbilityCard
+                name="Performance of Dread"
+                actType="Maneuver"
+                descriptor="With an intimidating performance, you cause despair among your foes."
+                frequency="At-will"
+                keywords="Magical"
+                target="All enemies within your zone"
+                effect="Targets take +1 misfortune to attack rolls (turn ends)" 
+              />
+
+              <AbilityCard
+                name="Performance of Discord"
+                actType="Maneuver"
+                descriptor="With a chaotic performance, you sow confusion among your foes."
+                frequency="At-will"
+                keywords="Magical"
+                target="All enemies within your zone"
+                effect="Targets take +1 misfortune to overcome rolls (turn ends)" 
+              />
+
+              <AbilityCard
+                name="Performance of Harmony"
+                actType="Maneuver"
+                descriptor="With a harmonious performance, you call upon your allies to find clarity."
+                frequency="At-will"
+                keywords="Magical"
+                duration="Start of your next turn"
+                target="You and all allies within your zone"
+                effect="Targets gain +1 fortune to overcome rolls" 
+              />
+
+              <AbilityCard
+                name="Performance of Restoration"
+                actType="Maneuver"
+                descriptor="With an uplifting performance, you soothe your allies."
+                frequency="At-will"
+                keywords="Magical"
+                duration="Start of your next turn"
+                target="You and all allies within your zone"
+                effect="Targets gain 1 temporary hit point per your tier" 
+              />
+
+              <AbilityCard
+                name="Performance of Rock"
+                actType="Maneuver"
+                descriptor="With a loud song or echoing instrumental beat, you blast nearby foes with sonic force."
+                frequency="At-will"
+                keywords="Magical"
+                target="1d4+1 enemies within your zone"
+                defense="PD" 
+                damage="1 force damage per your tier"
+              />
+            </div>           
           </div>
         )}
       </div>

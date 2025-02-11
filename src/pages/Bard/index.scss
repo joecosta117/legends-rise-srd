@@ -6,4 +6,9 @@
 
 .bard-content {
   @include class-page-content();
+
+  .performances {
+    display: grid;
+    grid-gap: 25px;
+  }
 }

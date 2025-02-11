@@ -115,11 +115,11 @@ function Arcanist() {
 
         {isSubclasses && (
           <div>
-            <h2>Arcanist Subclasses</h2>
+            <h1>Arcanist Subclasses</h1>
             <p>These are the subclass choices for the arcanist.</p>
-            <h3>Wizard</h3>
+            <h2>Wizard</h2>
             <p>Wizards take a studious approach in learning all forms of magic.</p>
-            <h4>Studious Spell (1st-Level Feature)</h4>
+            <h3>Studious Spell (1st-Level Feature)</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Studious Spell"
@@ -130,9 +130,9 @@ function Arcanist() {
               effect="Study" 
             />
 
-            <h3>Sorcerer</h3>
+            <h2>Sorcerer</h2>
             <p>Sorcerers imbue their bodies with arcane energy, becoming one with magic. Some are born this way, while others achieve this state through dangerous magical experiments.</p>
-            <h4>Unleash Arcane (1st-Level Feature)</h4>
+            <h3>Unleash Arcane (1st-Level Feature)</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Unleash Arcane"
@@ -144,22 +144,22 @@ function Arcanist() {
               effect="You gain +1 fortune to attack rolls with magical abilities and resistance to arcane damage, but you are exposed." 
             />
 
-            <h3>Warmage</h3>
+            <h2>Warmage</h2>
             <p>You specialize in casting from the frontlines, using magic to bolster your defenses and destruction.</p>
-            <h4>War Magic (1st-Level Feature)</h4>
+            <h3>War Magic (1st-Level Feature)</h3>
             <p>While unarmored, you gain +1 to your PD. Also, when you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier.</p>
           </div>
         )}
 
         {isTalents && (
           <div>
-            <h2>Arcanist Class Talents</h2>
+            <h1>Arcanist Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
-            <h3>Tier 1 Class Talents</h3>
-            <h4>Expanded Arcanist Magic</h4>
+            <h2>Tier 1 Class Talents</h2>
+            <h3>Expanded Arcanist Magic</h3>
             <p>Learn a battle spell or magic tradition from one listed in arcanist magic. You can take this class talent multiple times.</p>
 
-            <h4>Far Spell</h4>
+            <h3>Far Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Far Spell"
@@ -171,7 +171,7 @@ function Arcanist() {
               effect="For a range spell, increase the range by 1 zone, or for a melee spell, you can instead target a creature within your zone." 
             />
 
-            <h4>Powerful Spell</h4>
+            <h3>Powerful Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Powerful Spell"
@@ -183,7 +183,7 @@ function Arcanist() {
               effect="Increase the triggering spell’s initial damage by the spell tier." 
             />
 
-            <h4>Safe Spell</h4>
+            <h3>Safe Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Safe Spell"
@@ -195,15 +195,15 @@ function Arcanist() {
               effect="Choose a number of creatures equal to your proficiency bonus to be unaffected by the triggering spell." 
             />
 
-            <h4>Substitute Spell</h4>
+            <h3>Substitute Spell</h3>
             <p>During a short rest, you can replace one of your known battle spells with another battle spell of the same tier and from the same magic tradition.</p>
             
-            <h3>Tier 2 Class Talents</h3>
-            <h4>Advanced Learning</h4>
+            <h2>Tier 2 Class Talents</h2>
+            <h3>Advanced Learning</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> wizard subclass</p>
             <p>You learn a battle spell from one of your known magic traditions of a spell tier no higher than your tier. Make this choice again.</p>
 
-            <h4>Arcane Vitality</h4>
+            <h3>Arcane Vitality</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> sorcerer subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -215,7 +215,7 @@ function Arcanist() {
               effect="Spend a recovery, but instead of regaining hit points, you regain mana equal to your tier." 
             />
 
-            <h4>Effortless Spell</h4>
+            <h3>Effortless Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Effortless Spell"
@@ -227,11 +227,11 @@ function Arcanist() {
               effect="You don’t spend mana on the triggering spell." 
             />
 
-            <h4>Magic Surge</h4>
+            <h3>Magic Surge</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> warmage subclass</p>
             <p>When you use high magic, arcane energy leaps out from you at a number of creatures equal to the spell’s tier within 1 zone. Target creatures take arcane damage equal to the spell’s tier.</p>
 
-            <h4>Immediate Spell</h4>
+            <h3>Immediate Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Immediate Spell"
@@ -244,23 +244,23 @@ function Arcanist() {
             />
 
 
-            <h3>Tier 3 Class Talents</h3>
-            <h4>All Knowing</h4>
+            <h2>Tier 3 Class Talents</h2>
+            <h3>All Knowing</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> wizard subclass</p>
             <p>You are permanently hastened, but you can only use this extra maneuver to Study.</p>
 
-            <h4>Arcane Ascension</h4>
+            <h3>Arcane Ascension</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> sorcerer subclass</p>
             <p>During unleash arcane, you gain a fly speed equal to your land speed and when you start your turn without mana, you regain 2 mana.</p>
 
-            <h4>Master Arcanist</h4>
+            <h3>Master Arcanist</h3>
             <p>You gain a second reaction that you can only use on features from this class such as countermagic.</p>
 
-            <h4>Overpower Magic</h4>
+            <h3>Overpower Magic</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> warmage subclass</p>
             <p>All your magical abilities ignore damage resistances.</p>
 
-            <h4>Unparalleled Magic</h4>
+            <h3>Unparalleled Magic</h3>
             <p>You can use high magic a second time per short rest.</p>
           </div>
         )}
