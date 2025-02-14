@@ -8,6 +8,13 @@ import Ancestries from './pages/Ancestries';
 import Classes from './pages/Classes';
 import Arcanist from './pages/Arcanist';
 import Bard from './pages/Bard';
+import Cleric from './pages/Cleric';
+import Commander from './pages/Commander';
+import Druid from './pages/Druid';
+import Magesmith from './pages/Magesmith';
+import Occultist from './pages/Occultist';
+import Paladin from './pages/Paladin';
+import Ranger from './pages/Ranger';
 
 function App() {
   return (
@@ -22,6 +29,13 @@ function App() {
             <Route path="/classes" element={<Classes />} />
             <Route path="/classes/arcanist" element={<Arcanist />} />
             <Route path="/classes/bard" element={<Bard />} />
+            <Route path="/classes/cleric" element={<Cleric />} />
+            <Route path="/classes/commander" element={<Commander />} />
+            <Route path='/classes/druid' element={<Druid />} />
+            <Route path='/classes/magesmith' element={<Magesmith />} />
+            <Route path='/classes/occultist' element={<Occultist />} />
+            <Route path='/classes/paladin' element={<Paladin />} />
+            <Route path='/classes/ranger' element={<Ranger />} />
           </Routes>
         </div>
     </Router>

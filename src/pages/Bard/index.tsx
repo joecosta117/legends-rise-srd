@@ -3,6 +3,7 @@ import AbilityCard from "../../components/AbilityCard";
 import { useState } from "react";
 import fortune from "../../assets/fortune-icon-v2.png";
 import misfortune from "../../assets/misfortune-icon-v2.png";
+import ClassHeader from "../../components/ClassHeader";
 
 function Bard() {
   const [isDetails, setDetails] = useState(true);
@@ -49,6 +50,7 @@ function Bard() {
   return (
     <div className="bard">
       <div className="bard-content">
+        <ClassHeader />
         <div className="tab-items">
           <div onClick={toggleDetails} className="tab">Bard Details</div>
           <div className="divider">|</div>
@@ -122,7 +124,7 @@ function Bard() {
             <h2>Muse of Drama</h2>
             <p>Your creativity gains inspiration from the magic of narration and storytelling. Your performances interject thrilling heroic moments, but not without the risk of danger.</p>
             <h3>Plot Twist (1st-Level Feature)</h3>
-            <p>You know how to raise the stakes and create a good story. You can tempt fate on any roll, and when you or an ally tempt fate, the bonus increases by +1 fortune.</p>
+            <p>You know how to raise the stakes and create a good story. You can tempt fate on any roll, and when you or an ally tempt fate, the bonus increases by <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b>.</p>
 
             <h2>Muse of Lore</h2>
             <p>Unlike other bards, you focus your creativity on the history and the lore of the world around you, and use it to weave grand performances.</p>

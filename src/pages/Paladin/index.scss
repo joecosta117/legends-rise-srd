@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.paladin {
+  @include page-layout();
+}
+
+.paladin-content {
+  @include class-page-content();
+}

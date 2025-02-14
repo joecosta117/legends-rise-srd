@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.cleric {
+  @include page-layout();
+}
+
+.cleric-content {
+  @include class-page-content();
+}

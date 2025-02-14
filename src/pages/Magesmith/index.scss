@@ -1,0 +1,14 @@
+@import "../../styles/index.scss";
+
+.magesmith {
+  @include page-layout();
+}
+
+.magesmith-content {
+  @include class-page-content();
+
+  .performances {
+    display: grid;
+    grid-gap: 25px;
+  }
+}

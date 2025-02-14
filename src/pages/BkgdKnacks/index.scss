@@ -59,22 +59,11 @@
   }
 
   .collapsed-section, .expanded-section {
-    @include mq(s) {
-      margin-left: 50px;
-      margin-right: 50px;
-
+    @include mq(s) { 
       p, h2, h3, h4, li {
         padding-left: 10px;
         padding-right: 10px;
       }
-    }
-    @include mq(m) {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-    @include mq(xl) {
-      margin-left: 150px;
-      margin-right: 150px;
     }
   }
 }

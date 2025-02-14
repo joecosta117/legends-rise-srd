@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.commander {
+  @include page-layout();
+}
+
+.commander-content {
+  @include class-page-content();
+}

@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.occultist {
+  @include page-layout();
+}
+
+.occultist-content {
+  @include class-page-content();
+}

@@ -1,10 +1,12 @@
 import "./index.scss";
 import { Link } from 'react-router-dom';
+import ClassHeader from "../../components/ClassHeader";
 
 function Classes() {
   return (
     <div className="classes">
       <div className="classes-content">
+        <ClassHeader />
         <h1>Classes</h1>
         <p>Your Class represents your training and talents as an adventurer, as a hero. If you live long enough, your mighty deeds will become legend.</p>
         <h2>Choosing a Class</h2>
@@ -12,13 +14,13 @@ function Classes() {
         <ul>
           <li><span><b><Link to="/classes/arcanist">Arcanist</Link>:</b> You are a mage that has learned arcane magic.</span></li>
           <li><span><b><Link to="/classes/bard">Bard</Link>:</b> You are a performer that weaves magic through art.</span></li>
-          <li><span><b>Cleric:</b> You are a priest blessed with divine magic from your faith.</span></li>
-          <li><span><b>Commander:</b> You marshall your allies to victory in battle.</span></li>
-          <li><span><b>Druid:</b> You are attuned to the magic of the natural world.</span></li>
-          <li><span><b>Magesmith:</b> You tinker with magical items.</span></li>
-          <li><span><b>Occultist:</b> You tap into dark and forbidden magic.</span></li>
-          <li><span><b>Paladin:</b> You are a divinely empowered warrior.</span></li>
-          <li><span><b>Ranger:</b> You are a survivalist that stalks monsters.</span></li>
+          <li><span><b><Link to="/classes/cleric">Cleric</Link>:</b> You are a priest blessed with divine magic from your faith.</span></li>
+          <li><span><b><Link to="/classes/commander">Commander</Link>:</b> You marshall your allies to victory in battle.</span></li>
+          <li><span><b><Link to="/classes/druid">Druid</Link>:</b> You are attuned to the magic of the natural world.</span></li>
+          <li><span><b><Link to="/classes/magesmith">Magesmith</Link>:</b> You tinker with magical items.</span></li>
+          <li><span><b><Link to="/classes/occultist">Occultist</Link>:</b> You tap into dark and forbidden magic.</span></li>
+          <li><span><b><Link to="/classes/paladin">Paladin</Link>:</b> You are a divinely empowered warrior.</span></li>
+          <li><span><b><Link to="/classes/ranger">Ranger</Link>:</b> You are a survivalist that stalks monsters.</span></li>
           <li><span><b>Rogue:</b> You are a skillful and cunning combatant.</span></li>
           <li><span><b>Summoner:</b> By binding yourself to the outer realms, you can summon creatures to aid you.</span></li>
           <li><span><b>Swordmage:</b> You blend magic with fighting.</span></li>

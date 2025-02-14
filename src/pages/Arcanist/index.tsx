@@ -1,6 +1,7 @@
 import "./index.scss";
 import AbilityCard from "../../components/AbilityCard";
 import { useState } from "react";
+import ClassHeader from "../../components/ClassHeader";
 
 function Arcanist() {
   const [isDetails, setDetails] = useState(true);
@@ -34,6 +35,7 @@ function Arcanist() {
   return (
     <div className="arcanist">
       <div className="arcanist-content">
+        <ClassHeader />
         <div className="tab-items">
           <div onClick={toggleDetails} className="tab">Arcanist Details</div>
           <div className="divider">|</div>
@@ -108,6 +110,7 @@ function Arcanist() {
               descriptor="You utilize your knowledge of the arcane to disrupt another caster’s magic."
               frequency="At-will"
               keywords="Magical, Range"
+              trigger="You see a creature within 1 zone use a magical ability"
               effect="The ability’s attack roll takes +1 misfortune." 
             />
           </div>

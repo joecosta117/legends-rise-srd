@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+.ranger {
+  @include page-layout();
+}
+
+.ranger-content {
+  @include class-page-content();
+
+  .no-spacing {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

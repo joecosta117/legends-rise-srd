@@ -5,9 +5,6 @@
   @include mq(m) {
     grid-template-columns: auto 900px auto;
   }
-  @include mq(xl) {
-    grid-template-columns: auto 1200px auto;
-  }
 }
 
 @mixin page-content() {
@@ -16,24 +13,19 @@
   padding-top: 25px;
   width: 100%;
 
+  @include mq(s) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   @include mq(m) {
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 50px;
     grid-column: 2;
   }
-
-  h2, h3, h4, p, li {
-    @include mq(s) {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @include mq(m) {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    @include mq(xl) {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
+  @include mq(xl) {
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   p, h2, h3, h4 {
@@ -84,19 +76,6 @@
     font-size: 18px;
     font-weight: bold;
 
-    @include mq(s) {
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @include mq(m) {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
-    @include mq(xl) {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-
     .tab {
       cursor: pointer;
     }
@@ -117,6 +96,33 @@
         padding-left: 0;
         padding-right: 0;
       }
+    }
+  }
+
+  table, th, td {
+    border: 1px solid $gold;
+    font-size: 14px;
+  }
+
+  table {
+    @include mq(s) {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    @include mq(m) {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    @include mq(xl) {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  }
+
+  th, td {
+    @include mq(s) {
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }

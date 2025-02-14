@@ -1,7 +1,46 @@
 @import "../../styles/index.scss";
 
 .ability {
-  max-width: 800px;
+  max-width: 600px;
+  margin-bottom: 16px;
+
+  &[data-type="Action"] {
+    .ability__details {
+      border-color: $actionred;
+    }
+
+    .ability__title {
+      background: $actionred;
+    }
+    
+  }
+  &[data-type="Maneuver"] {
+    .ability__details {
+      border-color: $maneuvergreen;
+    }
+
+    .ability__title {
+      background: $maneuvergreen;
+    }
+  }
+  &[data-type="Reaction"] {
+    .ability__details {
+      border-color: $reactionorange;
+    }
+
+    .ability__title {
+      background: $reactionorange;
+    }
+  }
+  &[data-type="Free"] {
+    .ability__details {
+      border-color: $freepurple;
+    }
+
+    .ability__title {
+      background: $freepurple;
+    }
+  }
   
   &__title {
     font-size: 16px;
@@ -12,35 +51,14 @@
     justify-content: space-between;
     align-items: center;
 
-    @include mq(s) {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-    @include mq(m) {
-      margin-left: 100px;
-      margin-right: 100px;
-    }
-    @include mq(xl) {
-      margin-left: 150px;
-      margin-right: 150px;
-    }
-
     &__name {
       font-size: 18px;
     }
+  }
 
-    &[data-type="Action"] {
-      background: $actionred;
-    }
-    &[data-type="Maneuver"] {
-      background: $maneuvergreen;
-    }
-    &[data-type="Reaction"] {
-      background: $reactionorange;
-    }
-    &[data-type="Free"] {
-      background: $freepurple;
-    }
+  &__details {
+    padding: 8px;
+    border: 2px solid $white;
   }
 
   p {
@@ -52,25 +70,6 @@
     font-style: italic;
     border-bottom: 2px solid white;
     padding-bottom: 5px;
-
-    @include mq(s) {
-      margin-left: 50px;
-      margin-right: 50px;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-    @include mq(m) {
-      margin-left: 100px;
-      margin-right: 100px;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-    @include mq(xl) {
-      margin-left: 150px;
-      margin-right: 150px;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
   }
 
   &__top {
@@ -89,7 +88,7 @@
   ul {
     font-size: 14px;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 0 !important;
 
     li {
       margin-bottom: 0;
