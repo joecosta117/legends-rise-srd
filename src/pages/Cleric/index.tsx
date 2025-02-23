@@ -62,7 +62,7 @@ function Cleric() {
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack and an implement.</span>
+              <li><span><b>Starting Equipment:</b> You gain an implement.</span>
                 <ul className="secondary-list">
                   <li><span><i>Suggestion:</i> You gain a holy symbol as your implement.</span></li>
                 </ul>
@@ -138,7 +138,7 @@ function Cleric() {
                   <li><span><i>Suggestion:</i> You learn the holy and life magic traditions. From the holy tradition, you learn the sacred bolt and boon battle spells, and from the life tradition you learn stabilize and mass heal battle spells.</span></li>
                 </ul>
               </li>
-              <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition, except for eldritch, holy, nature, or unholy.</span></li>
+              <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition associated with your faith.</span></li>
             </ul>
     
             <h3>Prayer of Healing</h3>

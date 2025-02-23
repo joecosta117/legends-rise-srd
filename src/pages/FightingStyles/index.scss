@@ -1,0 +1,14 @@
+@import "../../styles/index.scss";
+
+.fighting-styles {
+  @include page-layout();
+}
+
+.fighting-styles-content {
+  @include class-page-content();
+
+  .techniques {
+    display: grid;
+    grid-gap: 10px;
+  }
+}

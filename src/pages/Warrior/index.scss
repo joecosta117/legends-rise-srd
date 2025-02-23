@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.warrior {
+  @include page-layout();
+}
+
+.warrior-content {
+  @include class-page-content();
+}

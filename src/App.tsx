@@ -15,6 +15,14 @@ import Magesmith from './pages/Magesmith';
 import Occultist from './pages/Occultist';
 import Paladin from './pages/Paladin';
 import Ranger from './pages/Ranger';
+import Rogue from './pages/Rogue';
+import Summoner from './pages/Summoner';
+import Swordmage from './pages/Swordmage';
+import Warrior from './pages/Warrior';
+import DualClass from './pages/DualClass';
+import ThemeTalents from './pages/ThemeTalents';
+import FightingStyles from './pages/FightingStyles';
+import Spells from './pages/Spells';
 
 function App() {
   return (
@@ -36,6 +44,14 @@ function App() {
             <Route path='/classes/occultist' element={<Occultist />} />
             <Route path='/classes/paladin' element={<Paladin />} />
             <Route path='/classes/ranger' element={<Ranger />} />
+            <Route path='/classes/rogue' element={<Rogue />} />
+            <Route path='/classes/summoner' element={<Summoner />} />
+            <Route path='/classes/swordmage' element={<Swordmage />} />
+            <Route path='/classes/warrior' element={<Warrior />} />
+            <Route path='/classes/dual-class' element={<DualClass />} />
+            <Route path='/theme-talents' element={<ThemeTalents />} />
+            <Route path='/fighting-styles' element={<FightingStyles />} />
+            <Route path='/spells' element={<Spells />} />
           </Routes>
         </div>
     </Router>

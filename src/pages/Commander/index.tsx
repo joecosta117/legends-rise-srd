@@ -56,9 +56,9 @@ function Commander() {
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> All armor and weapons</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack, one armor, one weapon, and either a shield or weapon.</span>
+              <li><span><b>Starting Equipment:</b> You gain one armor, one weapon, and either a shield or weapon.</span>
                 <ul className="secondary-list">
-                  <li><span><i>Suggestion:</i> You gain heavy armor, a standard melee blade, and a long range bow.</span></li>
+                  <li><span><i>Suggestion:</i> You gain heavy armor, a standard melee blade, and a long ranged bow.</span></li>
                 </ul>
               </li>
             </ul>
@@ -206,7 +206,7 @@ function Commander() {
 
             <h3>Terrifying Attack</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> warlord subclass</p>
-            <p>When you use inspiring attack, make an attack roll against the MD of each enemy within 1 zone. On a success, a target is hindered (turn ends), or for the scene (overcome ends) on a critical success.</p>
+            <p>When you use inspiring attack, make an attack roll against the MD of each enemy within 1 zone. On a success, a target is hindered (turn ends), or for the scene (scene ends) on a critical success.</p>
 
             <h3>Twin Command</h3>
             <p>When you use an action ability from this class that lets you target an ally, such as command attack, you can choose a second ally.</p>

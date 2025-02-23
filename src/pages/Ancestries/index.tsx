@@ -268,7 +268,7 @@ function Ancestries() {
           frequency="Encounter"
           target="1d4+1 enemies within your zone"
           defense="MD"
-          critical="exposed (overcome ends)"
+          critical="exposed (scene ends)"
           success="exposed (turn ends)"
         />
 

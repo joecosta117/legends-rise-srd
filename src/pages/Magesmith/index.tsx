@@ -63,7 +63,7 @@ function Magesmith() {
         {isDetails && (
           <div>
             <h1>Magesmith</h1>
-            <p>Bards are performers that weave magic with words, rhythm, and art to aid allies, bewitch foes, and create dazzling illusions. Bards might be a traveling artist, a scoundrel that's picked up a few magical tricks, or an adventuring scholar that’s unlocked the magic of words. Play a bard if you create magical performances.</p>
+            <p>Magesmiths approach magic with an engineering mind, eager to create wondrous magical tools. Magesmiths might be magical tinkerers, warriors enhanced through arcane technology, or adventuring scholars eager to uncover magical relics of past ages. Play a magesmith if you want to create magical items to bolster yourself and allies.</p>
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Arcane</span></li>
@@ -71,7 +71,7 @@ function Magesmith() {
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> Light armor and all weapons</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack, one armor, one weapon, and an implement.</span>
+              <li><span><b>Starting Equipment:</b> You gain one armor, one weapon, and an implement.</span>
                 <ul className="secondary-list">
                   <li><span><i>Suggestion:</i> You gain light armor, long ranged bow, and a standard melee blade as your implement.</span></li>
                 </ul>
@@ -81,7 +81,7 @@ function Magesmith() {
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
             <h3>Magesmith Magic</h3>
-            <p>You channel elemental and battle magic through your weapon.</p>
+            <p>You invoke magic through items.</p>
             <ul>
               <li><span><b>Mana:</b> 1, increasing to 3 at 5th level, and 5 at 8th level</span></li>
               <li><span><b>Magic Tradition:</b> You learn a magic tradition from the following list: arcane, life, protection, teleportation, or war. You learn a battle spell from your chosen tradition.</span>
@@ -128,14 +128,14 @@ function Magesmith() {
               keywords="Magical, Summon"
               // @ts-ignore
               effect={(
-                <div>
-                  <p>You create a turret within 1 zone of you. The turret’s defenses equal 8 plus your proficiency bonus, and hit points equal double your proficiency bonus. When you command your turret, it can only Move or use one of the following actions:</p>
+                <span>
+                  <span>You create a turret within 1 zone of you. The turret’s defenses equal 8 plus your proficiency bonus, and hit points equal double your proficiency bonus. When you command your turret, it can only Move or use one of the following actions:</span>
                   <ul>
                     <li><span><i>Fire:</i> The turret’s zone becomes a dangerous zone (1 arcane damage per your tier) for enemies until the start of your next turn.</span></li>
                     <li><span><i>Magnify:</i> The turret’s zone becomes a difficult zone for enemies until the start of your next turn.</span></li>
                     <li><span><i>Shield</i> All creatures of your choice within the turret’s zone, except the turret, gain temporary hit points equal to your tier (scene ends).</span></li>
                   </ul>
-                </div>
+                </span>
               )}  
             />
 
@@ -178,16 +178,15 @@ function Magesmith() {
               duration="End of your next turn"
               target="1 creature within 1 zone"
               keywords="Magical, Range"
-              // @ts-ignore
               effect={(
-                <div>
-                  <p>Choose one of the following effects:</p>
+                <span>
+                  <span>Choose one of the following effects:</span>
                   <ul>
                     <li><span><i>Destruction:</i> Whenever the target takes damage, they take 1 additional arcane damage per your tier.</span></li>
                     <li><span><i>Protection:</i> Target gains temporary hit points equal to your proficiency bonus.</span></li>
                     <li><span><i>Strength</i> Target gains <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to attack rolls.</span></li>
                   </ul>
-                </div>
+                </span>
               )}  
             />
           </div>

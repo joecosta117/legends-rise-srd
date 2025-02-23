@@ -90,7 +90,7 @@ const Navigation = () => {
           >
             <div className="navigation__links-container__nav" data-type="5E">
               <div className="navigation__links-container__link" data-type="5E">
-                Character Rules
+                Hero Rules
               </div>
               <button
                 className="navigation__links-container__dropdown-arrow"
@@ -130,6 +130,27 @@ const Navigation = () => {
                 onClick={toggleMobileNav}
               >
                 Classes
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/fighting-styles"
+                onClick={toggleMobileNav}
+              >
+                Fighting Styles
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/spells"
+                onClick={toggleMobileNav}
+              >
+                Spells
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/theme-talents"
+                onClick={toggleMobileNav}
+              >
+                Theme Talents
               </Link>
             </div>
           </div>

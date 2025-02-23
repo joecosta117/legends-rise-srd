@@ -61,7 +61,7 @@ function Arcanist() {
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack and an implement.</span>
+              <li><span><b>Starting Equipment:</b> You gain an implement.</span>
                 <ul className="secondary-list">
                   <li><span><i>Suggestion:</i> You gain a wand as your implement.</span></li>
                 </ul>

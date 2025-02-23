@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.summoner {
+  @include page-layout();
+}
+
+.summoner-content {
+  @include class-page-content();
+}

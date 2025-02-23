@@ -4,6 +4,14 @@
   max-width: 600px;
   margin-bottom: 16px;
 
+  &[data-is-accordion="true"] {
+    margin-bottom: 0;
+    
+    .ability__details {
+      border: none;
+    }
+  }
+
   &[data-type="Action"] {
     .ability__details {
       border-color: $actionred;
@@ -39,6 +47,15 @@
 
     .ability__title {
       background: $freepurple;
+    }
+  }
+  &[data-type="Ritual"] {
+    .ability__details {
+      border-color: $ritualblue;
+    }
+
+    .ability__title {
+      background: $ritualblue;
     }
   }
   
@@ -83,6 +100,10 @@
     & span[data-type="MD"] {
       color: $mysticalblue;
     }
+  }
+
+  &__degrees-of-success {
+    margin-left: 5px;
   }
 
   ul {

@@ -3,6 +3,10 @@
 .monster {
   max-width: 600px;
 
+  &[data-accordion="true"] {
+    padding: 8px;
+  }
+
   h3, h4 {
     margin-bottom: 0 !important;
   }
@@ -35,10 +39,14 @@
       list-style-type: none;
     }
 
-    .degrees-of-success {
+    .monster-degrees-of-success {
       li {
         list-style-type: disc;
         margin-bottom: 0;
+
+        span {
+          margin-left: -10px;
+        }
       }
     }
     p, h4 {
@@ -55,10 +63,12 @@
         padding-right: 0;
       }
     }
-    .icon {
+    .attack-icon {
       padding-bottom: 0;
       background-color: $white;
       border-radius: 50%;
+      width: 15px;
+      vertical-align: middle;
     }
   }
 }

@@ -56,7 +56,7 @@ function Paladin() {
               <li><span><b>Starting Hit Points:</b> 12</span></li>
               <li><span><b>Recoveries:</b> 7</span></li>
               <li><span><b>Training:</b> All armor and weapons</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack, one armor, one weapon, and either a shield or weapon.</span>
+              <li><span><b>Starting Equipment:</b> You gain one armor, one weapon, and either a shield or weapon.</span>
                 <ul className="secondary-list">
                   <li><span><i>Suggestion:</i> You gain heavy armor, a standard melee blade, and a shield.</span></li>
                 </ul>
@@ -194,11 +194,11 @@ function Paladin() {
             
             <h2>Tier 2 Class Talents</h2>
             <h3>Blinding Smite</h3>
-            <p>Your smite can blind a foe. On a critical success of divine smite, the target is blinded (overcome ends).</p>
+            <p>Your smite can blind a foe. On a critical success of divine smite, the target is blinded (scene ends).</p>
 
             <h3>Chains of Judgement</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> censor subclass</p>
-            <p>Your smite can place chains of judgment on a foe. On a success of divine smite, the target is seized (turn ends), or seized (overcome ends) on a critical success.</p>
+            <p>Your smite can place chains of judgment on a foe. On a success of divine smite, the target is seized (turn ends), or seized (scene ends) on a critical success.</p>
 
             <h3>Divine Matyr</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> guardian subclass</p>
@@ -230,7 +230,7 @@ function Paladin() {
             <p>While you aren’t defeated, your zone is a difficult zone only for enemies.</p>
 
             <h3>Banishing Smite</h3>
-            <p>When you use holy smite on a target not from this realm, you can choose to banish your foe. On a success, the target returns to their home realm (turn ends), or for the scene (overcome ends) on a critical success.</p>
+            <p>When you use holy smite on a target not from this realm, you can choose to banish your foe. On a success, the target returns to their home realm (turn ends), or for the scene (scene ends) on a critical success.</p>
 
             <h3>Guardian's Aura</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> guardian subclass</p>

@@ -19,12 +19,13 @@ interface MonsterProps {
   actions: Abilities[];
   maneuvers?: Abilities[];
   reactions?: Abilities[];
+  accordion?: boolean;
 }
 
 interface Abilities {
   basic?: boolean;
   name: string;
-  keywords: string;
+  keywords?: string;
   defense?: string;
   target?: string;
   duration?: string;
@@ -34,6 +35,8 @@ interface Abilities {
   partial?: string;
   failure?: string;
   effect?: string;
+  frequency?: string;
+  trigger?: string;
 }
 
 interface Traits {
@@ -41,10 +44,8 @@ interface Traits {
   description: string;
 }
 
-const Monster: React.FC<MonsterProps> = ({ name, vision, summons, hp, pd, md, pb, type, speeds, resistances, traits, actions, maneuvers, reactions }) => {
-  console.log('actions', actions)
+const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp, pd, md, pb, type, speeds, resistances, traits, actions, maneuvers, reactions }) => {
   const transformEffect = (effect: string) => {
-    console.log('effect', effect)
     const fortuneRegex = /(\+?\d*)\s*(fortune)/gi;
     const misfortuneRegex = /(\+?\d*)\s*(misfortune)/gi;
 
@@ -62,7 +63,7 @@ const Monster: React.FC<MonsterProps> = ({ name, vision, summons, hp, pd, md, pb
   };
   
   return (
-    <div className="monster">
+    <div className="monster" data-accordion={accordion}>
       <h3>{name}</h3>
       <div className="monster-content">
       <p><i>{type}</i></p>
@@ -84,9 +85,7 @@ const Monster: React.FC<MonsterProps> = ({ name, vision, summons, hp, pd, md, pb
           <h4>Traits</h4>
           <ul>
             {traits.map((trait, index) => (
-              <li key={index}>
-                <p><b>{trait.name}:</b> {trait.description}</p>
-              </li>
+              <p key={index}><b>{trait.name}:</b> {transformEffect(trait.description)}</p>
             ))}
           </ul>
         </div>
@@ -96,22 +95,20 @@ const Monster: React.FC<MonsterProps> = ({ name, vision, summons, hp, pd, md, pb
           <h4 data-type="action">Actions</h4>
           <ul>
             {actions.map((action, index) => (
-              <li key={index}>
-                <p>{action.basic && <img className="icon" src={basicAtk} alt="attack icon" />}<b> {action.name} ({action.keywords})</b></p>
+              <div key={index}>
+                <p>{action.basic && <img className="attack-icon" src={basicAtk} alt="attack icon" />}<b> {action.name} ({action.keywords})</b></p>
+                {action.frequency && <p><i>Frequency:</i> {action.frequency}</p>}
                 {action.target && <p><i>Target:</i> {action.target}</p>}
                 {action.duration && <p><i>Duration:</i> {action.duration}</p>}
                 {action.defense && <p><i>Attack vs {action.defense}:</i> {action.damage}</p>}
-                <ul className='degrees-of-success'>
+                <ul className='monster-degrees-of-success'>
                   {action.critical && <li><span><i>Critical:</i> {action.critical}</span></li>}
                   {action.success && <li><span><i>Success:</i> {action.success}</span></li>}
                   {action.partial && <li><span><i>Partial:</i> {action.partial}</span></li>}
                   {action.failure && <li><span><i>Failure:</i> {action.failure}</span></li>}
                 </ul>
-                {action.effect && <p>Hello</p>}
-                {action.effect && (typeof action.effect === 'string' ? 
-                <p className="ability__line2"><b>Effect:</b> {transformEffect(action.effect)}</p> 
-                : <p className="ability__line1"><b>Effect:</b> {action.effect}</p>)}
-              </li>
+                {action.effect && (typeof action.effect === 'string' ? <p className="ability__line"><i>Effect:</i> {transformEffect(action.effect)}</p> : <p className="ability__line"><i>Effect:</i> {action.effect}</p>)}
+              </div>
             ))}
           </ul>
         </div>
@@ -121,19 +118,19 @@ const Monster: React.FC<MonsterProps> = ({ name, vision, summons, hp, pd, md, pb
           <h4 data-type="maneuver">Maneuvers</h4>
           <ul>
             {maneuvers.map((maneuver, index) => (
-              <li key={index}>
-                <p><b>{maneuver.name} {maneuver.keywords}</b></p>
+              <div key={index}>
+                <p><b>{maneuver.name} ({maneuver.keywords})</b></p>
                 {maneuver.target && <p><i>Target:</i> {maneuver.target}</p>}
                 {maneuver.duration && <p><i>Duration:</i> {maneuver.duration}</p>}
                 {maneuver.defense && <p><i>Attack vs {maneuver.defense}:</i> {maneuver.damage}</p>}
-                <ul className='degrees-of-success'>
+                <ul className='monster-degrees-of-success'>
                   {maneuver.critical && <li><span><i>Critical:</i> {maneuver.critical}</span></li>}
                   {maneuver.success && <li><span><i>Success:</i> {maneuver.success}</span></li>}
                   {maneuver.partial && <li><span><i>Partial:</i> {maneuver.partial}</span></li>}
                   {maneuver.failure && <li><span><i>Failure:</i> {maneuver.failure}</span></li>}
                 </ul>
-                {maneuver.effect && (typeof maneuver.effect === 'string' ? <p className="ability__line"><b>Effect:</b> {transformEffect(maneuver.effect)}</p> : <p className="ability__line"><b>Effect:</b> {maneuver.effect}</p>)}
-              </li>
+                {maneuver.effect && (typeof maneuver.effect === 'string' ? <p className="ability__line"><i>Effect:</i> {maneuver.effect}</p> : <p className="ability__line"><i>Effect:</i> {transformEffect(maneuver.effect)}</p>)}
+              </div>
             ))}
           </ul>
         </div>
@@ -143,19 +140,20 @@ const Monster: React.FC<MonsterProps> = ({ name, vision, summons, hp, pd, md, pb
           <h4 data-type="reaction">Reactions</h4>
           <ul>
             {reactions.map((reaction, index) => (
-              <li key={index}>
-                <p><b>{reaction.name} {reaction.keywords}</b></p>
+              <div key={index}>
+                <p><b>{reaction.name} ({reaction.keywords})</b></p>
+                {reaction.trigger && <p><i>Trigger:</i> {reaction.trigger}</p>}
                 {reaction.target && <p><i>Target:</i> {reaction.target}</p>}
                 {reaction.duration && <p><i>Duration:</i> {reaction.duration}</p>}
                 {reaction.defense && <p><i>Attack vs {reaction.defense}:</i> {reaction.damage}</p>}
-                <ul className='degrees-of-success'>
+                <ul className='monster-degrees-of-success'>
                   {reaction.critical && <li><span><i>Critical:</i> {reaction.critical}</span></li>}
                   {reaction.success && <li><span><i>Success:</i> {reaction.success}</span></li>}
                   {reaction.partial && <li><span><i>Partial:</i> {reaction.partial}</span></li>}
                   {reaction.failure && <li><span><i>Failure:</i> {reaction.failure}</span></li>}
                 </ul>
-                {reaction.effect && (typeof reaction.effect === 'string' ? <p className="ability__line"><b>Effect:</b> {transformEffect(reaction.effect)}</p> : <p className="ability__line"><b>Effect:</b> {reaction.effect}</p>)}
-              </li>
+                {reaction.effect && (typeof reaction.effect === 'string' ? <p className="ability__line"><i>Effect:</i> {reaction.effect}</p> : <p className="ability__line"><i>Effect:</i> {transformEffect(reaction.effect)}</p>)}
+              </div>
             ))}
           </ul>
         </div>

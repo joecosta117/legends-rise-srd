@@ -58,9 +58,9 @@ function Ranger() {
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> Light armor and all weapons</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack, light armor, and two weapons.</span>
+              <li><span><b>Starting Equipment:</b> You gain light armor and two weapons.</span>
                 <ul className="secondary-list">
-                  <li><span><i>Suggestion:</i> You gain light armor, a long range bow, and a standard melee blade.</span></li>
+                  <li><span><i>Suggestion:</i> You gain light armor, a long ranged bow, and a standard melee blade.</span></li>
                 </ul>
               </li>
             </ul>
@@ -201,7 +201,7 @@ function Ranger() {
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Spring the Trap"
-              actType="Maneuver"
+              actType="Reaction"
               descriptor="When your prey is distracted, you bring them down."
               trigger="You see your prey Move or use a ranged or magical ability within 1 zone"
               frequency="At-will"

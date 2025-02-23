@@ -1,0 +1,15 @@
+@import "../../styles/index.scss";
+
+.rogue {
+  @include page-layout();
+}
+
+.rogue-content {
+  @include class-page-content();
+
+  .no-spacing {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

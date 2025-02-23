@@ -21,6 +21,16 @@ const ClassHeader = () => {
       <div className="class-tabs__tab"><Link to="/classes/paladin">Paladin</Link></div>
       <div className="divider">|</div>
       <div className="class-tabs__tab"><Link to="/classes/ranger">Ranger</Link></div>
+      <div className="divider">|</div>
+      <div className="class-tabs__tab"><Link to="/classes/rogue">Rogue</Link></div>
+      <div className="divider">|</div>
+      <div className="class-tabs__tab"><Link to="/classes/summoner">Summoner</Link></div>
+      <div className="divider">|</div>
+      <div className="class-tabs__tab"><Link to="/classes/swordmage">Swordmage</Link></div>
+      <div className="divider">|</div>
+      <div className="class-tabs__tab"><Link to="/classes/warrior">Warrior</Link></div>
+      <div className="divider">|</div>
+      <div className="class-tabs__tab"><Link to="/classes/dual-class">Dual Class</Link></div>
     </div>
   )
 }

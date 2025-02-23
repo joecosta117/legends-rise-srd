@@ -64,7 +64,7 @@ function Occultist() {
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack and an implement.</span>
+              <li><span><b>Starting Equipment:</b> You gain an implement.</span>
                 <ul className="secondary-list">
                   <li><span><i>Suggestion:</i> You gain a wand as your implement.</span></li>
                 </ul>
@@ -74,7 +74,7 @@ function Occultist() {
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
             <h3>Occultist Magic</h3>
-            <p>You begin untapping the power of arcane magic.</p>
+            <p>You channel strange and dark magic.</p>
             <ul>
               <li><span><b>Mana:</b> 2, increasing to 5 at 5th level, and 8 at 8th level</span></li>
               <li><span><b>Magic Tradition:</b> You learn two of the following magic traditions: death, eldritch, enchantment, gravity, illusion, shadow, teleportation, time, or unholy. You learn a battle spell from each chosen tradition.</span>
@@ -82,7 +82,7 @@ function Occultist() {
                   <li><span><i>Suggestion:</i> You learn the eldritch and teleportation magic traditions. From the eldritch tradition, you learn the telekinetic push and otherworldly whispers battle spells, and from the teleportation tradition you learn dimensional shutter and dimensional step battle spells.</span></li>
                 </ul>
               </li>
-              <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition, except for eldritch, holy, nature, or unholy.</span></li>
+              <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition from the previous list.</span></li>
             </ul>
     
             <h3>Hex</h3>
@@ -150,7 +150,7 @@ function Occultist() {
               pd="10 + PB"
               md="8 + PB"
               pb="PB"
-              resistances="unholy (fiend only), mental (aberration only), necrotic (undead only)"
+              resistances="unholy (fiend only), necrotic (undead only), psychic (aberration only)"
               traits={[{name: "Hex Challenger", description: "The target of your hex is taunted by your familiar."}]}
               summons
               actions={[{

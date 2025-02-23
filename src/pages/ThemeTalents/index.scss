@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.theme-talents {
+  @include page-layout();
+}
+
+.theme-talents-content {
+  @include class-page-content();
+}

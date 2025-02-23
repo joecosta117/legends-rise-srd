@@ -1,0 +1,112 @@
+@import "../../styles/index.scss";
+
+.accordion {
+  max-width: 600px;
+  margin-bottom: 16px;
+
+  &[data-is-stacked="true"] {
+    margin-bottom: 0;
+
+    .accordion__header {
+      border-radius: 0;
+    }
+    .accordion__content {
+      border-radius: 0;
+    }
+  }
+
+  &[data-act-type="Action"] {
+    .accordion__header {
+      border-color: $actionred;
+      background: $actionred;
+    }
+    .accordion__content {
+      border-color: $actionred;
+    }
+  }
+  &[data-act-type="Maneuver"] {
+    .accordion__header {
+      border-color: $maneuvergreen;
+      background: $maneuvergreen;
+    }
+    .accordion__content {
+      border-color: $maneuvergreen;
+    }
+  }
+  &[data-act-type="Reaction"] {
+    .accordion__header {
+      border-color: $reactionorange;
+      background: $reactionorange;
+    }
+    .accordion__content {
+      border-color: $reactionorange;
+    }
+  }
+  &[data-act-type="Free"] {
+    .accordion__header {
+      border-color: $freepurple;
+      background: $freepurple;
+    }
+    .accordion__content {
+      border-color: $freepurple;
+    }
+  }
+  &[data-act-type="Ritual"] {
+    .accordion__header {
+      border-color: $ritualblue;
+      background: $ritualblue;
+    }
+    .accordion__content {
+      border-color: $ritualblue;
+    }
+  }
+
+  &[data-type="spell"] {
+    margin-bottom: 5px;
+
+    .accordion__content {
+      padding: 0;
+    }
+  }
+  
+  &__header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border: 1px solid $gold;
+    text-align: center;
+    background: $lightblack;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+
+    h4 {
+      margin: 0 !important;
+    }
+
+    &[data-is-expanded="true"] {
+      background-color: $dimgrey;
+      margin-bottom: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &__content {
+    padding: 10px;
+    border: 1px solid $gold;
+    border-top: none;
+    background: $lightblack;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    ul:last-child, p:last-child {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+  }
+}

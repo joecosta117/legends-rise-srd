@@ -21,14 +21,14 @@ function Classes() {
           <li><span><b><Link to="/classes/occultist">Occultist</Link>:</b> You tap into dark and forbidden magic.</span></li>
           <li><span><b><Link to="/classes/paladin">Paladin</Link>:</b> You are a divinely empowered warrior.</span></li>
           <li><span><b><Link to="/classes/ranger">Ranger</Link>:</b> You are a survivalist that stalks monsters.</span></li>
-          <li><span><b>Rogue:</b> You are a skillful and cunning combatant.</span></li>
-          <li><span><b>Summoner:</b> By binding yourself to the outer realms, you can summon creatures to aid you.</span></li>
-          <li><span><b>Swordmage:</b> You blend magic with fighting.</span></li>
-          <li><span><b>Warrior:</b> You are tough and deadly in combat.</span></li>
+          <li><span><b><Link to="/classes/rogue">Rogue</Link>:</b> You are a skillful and cunning combatant.</span></li>
+          <li><span><b><Link to="/classes/summoner">Summoner</Link>:</b> By binding yourself to the outer realms, you can summon creatures to aid you.</span></li>
+          <li><span><b><Link to="/classes/swordmage">Swordmage</Link>:</b> You blend magic with fighting.</span></li>
+          <li><span><b><Link to="/classes/warrior">Warrior</Link>:</b> You are tough and deadly in combat.</span></li>
         </ul>
 
         <h3>Dual Class</h3>
-        <p>Some heroes blend skills from two different professions, called a dual class. A dual class is a combination of features from two different classes. See the this page (TODO link) for more rules on picking a dual class.</p>
+        <p>Some heroes blend skills from two different professions, called a dual class. A dual class is a combination of features from two different classes. See this <Link to="/classes/dual-class">page</Link> for more rules on picking a dual class.</p>
         <h3>Themes</h3>
         <p>Each class is categorized into a theme, which determines what theme talents you can choose at later levels.</p>
         <h3>Level Progression</h3>

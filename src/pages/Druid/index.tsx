@@ -63,7 +63,7 @@ function Druid() {
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
-              <li><span><b>Starting Equipment:</b> You gain an adventurer's pack and an implement.</span>
+              <li><span><b>Starting Equipment:</b> You gain an implement.</span>
                 <ul className="secondary-list">
                   <li><span><i>Suggestion:</i> You gain a staff as your implement.</span></li>
                 </ul>
@@ -73,7 +73,7 @@ function Druid() {
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
             <h3>Druid Magic</h3>
-            <p>You begin channeling the power of divine magic.</p>
+            <p>You invoke the elemental powers of nature.</p>
             <ul>
               <li><span><b>Mana:</b> 2, increasing to 5 at 5th level, and 8 at 8th level</span></li>
               <li><span><b>Magic Tradition:</b> You learn the nature magic tradition and another magic tradition from the following list: air, earth, fire, gravity, ice, life, light, tохic, or water. You learn a battle spell from each chosen tradition.</span>
@@ -81,7 +81,7 @@ function Druid() {
                   <li><span><i>Suggestion:</i> You learn the nature and fire magic traditions. From the nature tradition, you learn the vine whip and entangle battle spells, and from the fire tradition you learn flamebolt and fireball battle spells.</span></li>
                 </ul>
               </li>
-              <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition, except for eldritch, holy, nature, or unholy.</span></li>
+              <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition, from the previous list.</span></li>
             </ul>
     
             <h3>Shape Terrain</h3>
@@ -170,14 +170,14 @@ function Druid() {
               target="1 zone within 2 zones"
               // @ts-ignore
               effect={(
-                <div>
-                  <p>You spend mana equal to your tier to summon a spirit animal (owl, bear, or wolf) in the target zone:</p>
+                <span>
+                  <span>You spend mana equal to your tier to summon a spirit animal (owl, bear, or wolf) in the target zone:</span>
                   <ul>
                     <li><span><i>Bear:</i> When you first use this ability and when you focus on it, all creatures of your choice within the targeted zone gain temporary hit points equal to your tier (scene ends).</span></li>
                     <li><span><i>Owl:</i> All creatures of your choice within the zone gain <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to overcome rolls.</span></li>
                     <li><span><i>Wolf:</i> You and allies gain <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> on attack rolls against exposed creatures within the targeted zone.</span></li>
                   </ul>
-                </div>
+                </span>
               )} 
             />
 
@@ -194,8 +194,8 @@ function Druid() {
               duration="Scene ends"
               // @ts-ignore
               effect={(
-                <div>
-                  <p>You expend mana equal to your tier to transform your body and equipment into a medium sized animal of your choice. While in this form:</p>
+                <span>
+                  <span>You expend mana equal to your tier to transform your body and equipment into a medium sized animal of your choice. While in this form:</span>
                   <ul>
                     <li><span>You can’t Spellcast or use any abilities you can’t do as an animal, but you can focus on abilities.</span></li>
                     <li><span>You gain temporary hit points equal to half your shaken value while in this form.</span></li>
@@ -204,7 +204,7 @@ function Druid() {
                     <li><span>You have traits your animal would have such as a fly speed if you shift into a large bird. Any new speeds equal the same speed as your land speed.</span></li>
                     <li><span>Once you are defeated, or you end the magic as a free action on your turn, you revert back to your normal form and the magic ends.</span></li>
                   </ul>
-                </div>
+                </span>
               )} 
             /> 
           </div>
@@ -289,14 +289,14 @@ function Druid() {
               trigger="You see a creature take damage within your call spirit animal zone"
               // @ts-ignore
               effect={(
-                <div>
-                  <p>Effect depends on your call spirit animal:</p>
+                <span>
+                  <span>Effect depends on your call spirit animal:</span>
                   <ul>
                     <li><span><i>Bear:</i> The triggering damage is reduced by your tier before resistances.</span></li>
                     <li><span><i>Owl:</i> The damaged creature can Disengage as a free action.</span></li>
                     <li><span><i>Wolf</i> The attacker takes force damage equal to your proficiency bonus.</span></li>
                   </ul>
-                </div>
+                </span>
               )}  
             />
 

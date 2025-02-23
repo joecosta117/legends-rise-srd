@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.swordmage {
+  @include page-layout();
+}
+
+.swordmage-content {
+  @include class-page-content();
+}
