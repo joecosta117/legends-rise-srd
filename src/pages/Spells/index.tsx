@@ -1,10 +1,7 @@
 import "./index.scss";
 import { useState } from "react";
 import Accordion from "../../components/Accordion";
-import Modifier from "../../components/Modifier";
 import Dropdown from "../../components/Dropdown";
-import AbilityCard from "../../components/AbilityCard";
-import Monster from "../../components/Monster";
 import { ritualSpells } from "./ritual-spells";
 import { airSpells, arcaneSpells, deathSpells, earthSpells, enchantmentSpells, eldritchSpells, fireSpells, gravitySpells, lightSpells, holySpells, iceSpells, illusionSpells, lifeSpells, natureSpells, protectionSpells, shadowSpells, teleportationSpells, timeSpells, toxicSpells, unholySpells, warSpells, waterSpells } from "./battle-spells";
 

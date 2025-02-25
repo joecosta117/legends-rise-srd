@@ -13,9 +13,9 @@ export const airSpells = [
           descriptor="You conjure a small blast of air."
           frequency="Spell 0 (Air)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="MGT"
           keywords="Magical, Range"
-          damage="2 force damage per your tier"
+          damage="2 physical damage per your tier"
           critical="Pushed within their zone"
         />
       )
@@ -30,7 +30,7 @@ export const airSpells = [
           frequency="Spell 0 (Air)"
           target="1 creature within 3 zones"
           keywords="Magical, Range"
-          defense="PD"
+          defense="EVN"
           damage="2 lightning damage per your tier"
           critical="Choose a second target within the same zone as the original target to take the same damage"
         />
@@ -62,7 +62,7 @@ export const airSpells = [
           frequency="Spell 1 (Air)"
           keywords="Escalation, Magical, Range"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="EVN"
           damage="5 lightning damage per your tier"
         />
       )
@@ -77,8 +77,8 @@ export const airSpells = [
           frequency="Spell 1 (Air)"
           keywords="Escalation, Magical"
           target="1d4+1 enemies within your zone"
-          defense="PD"
-          damage="2 force damage per spell tier"
+          defense="MGT"
+          damage="2 physical damage per spell tier"
           success="Hindered (turn ends)"
         />
       )
@@ -98,8 +98,8 @@ export const airSpells = [
             <span>
               <span>The wall has the following properties:</span>
               <ul>
-                <li><span>Range abilities using attack rolls against PD fail if the target is beyond the wall.</span></li>
-                <li><span>When a creature attempts to pass through the wall, you can stop their movement on a successful attack roll against their PD.</span></li>
+                <li><span>Range abilities using attack rolls if the target is beyond the wall.</span></li>
+                <li><span>When a creature attempts to pass through the wall, you can stop their movement on a successful attack roll against their Might.</span></li>
               </ul>
             </span>
           )}
@@ -118,10 +118,9 @@ export const airSpells = [
           frequency="Spell 2 (Air)"
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="EVN"
           damage="3 lightning damage per spell tier"
-          failure="Spell ends"
-          partial="Make the same attack roll against another target within 1 zone of the previous target unless you stop the spell. No target can be affected more than once."
+          effect="Lightning leaps to another target within 1 zone of the first target, then jumps to another creature within 1 zone of the second target, and so on. You can stop the chain at any point and you can't target the same creature twice. The chain ends if you get a failure on an attack roll."
         />
       )
     },
@@ -142,11 +141,12 @@ export const airSpells = [
           name="Air Elemental" 
           type="Large Elemental" 
           hp="6 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="12 + PB"
+          mgt="10 + PB"
+          res="8 + PB"
           pb="double ST"
           speeds="fly 1"
-          resistances="lightning"
+          resistances="lightning ST"
           summons
           accordion
           actions={[{
@@ -154,8 +154,8 @@ export const airSpells = [
             name: "Slam",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "triple ST force damage",
+            defense: "EVN",
+            damage: "triple ST physical damage",
             success: "Prone"
           },
           {
@@ -163,7 +163,7 @@ export const airSpells = [
             name: "Zap",
             keywords: "range, weapon",
             target: "1 creature within 3 zones",
-            defense: "PD",
+            defense: "EVN",
             damage: "double ST lightning damage",
           }]}
           />
@@ -182,7 +182,7 @@ export const airSpells = [
           frequency="Spell 3 (Air)"
           target="1 zone within 5 zones"
           keywords="Magical, Range"
-          effect="A cyclone turns the targeted zone into a difficult zone and dangerous zone (1 force damage per spell tier). When a huge or smaller creature takes this damage, make an attack roll against their PD, and on a success, they are seized (turn starts). Zones adjacent to the targeted zone become dangerous zones (1 lightning damage per spell tier). Once a turn, as a maneuver you can move the cyclone up to 1 zone away."
+          effect="A cyclone turns the targeted zone into a difficult zone and dangerous zone (1 physical damage per spell tier). When a huge or smaller creature takes this damage, make an attack roll against their Might, and on a success, they are seized (turn starts). Zones adjacent to the targeted zone become dangerous zones (1 lightning damage per spell tier). Once a turn, as a maneuver you can move the cyclone up to 1 zone away."
         />
       )
     },
@@ -199,7 +199,7 @@ export const arcaneSpells = [
           descriptor="You fire a small dart of raw magical energy."
           frequency="Spell 0 (Arcane)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="EVN"
           keywords="Magical, Range"
           damage="2 arcane damage per your tier"
           critical="1 additional damage per your tier"
@@ -216,8 +216,8 @@ export const arcaneSpells = [
           frequency="Spell 0 (Arcane)"
           target="1d4+1 enemies within your zone"
           keywords="Magical"
-          defense="PD"
-          damage="1 damage per your tier. Roll 1d6 to determine the damage type: 1) toxic, 2) fire, 3) cold, 4) lightning, 5) force, and 6) arcane"
+          defense="EVN"
+          damage="1 damage per your tier. Roll 1d6 to determine the damage type: 1) toxic, 2) fire, 3) cold, 4) lightning, 5) physical, and 6) arcane"
         />
       )
     }
@@ -233,7 +233,7 @@ export const arcaneSpells = [
           frequency="Spell 1 (Arcane)"
           target="1 creature per dart within 3 zones"
           keywords="Magical, Range"
-          defense="MD"
+          defense="EVN"
           damage="2 arcane damage"
           effect="You create 2 darts per spell tier"
         />
@@ -249,8 +249,8 @@ export const arcaneSpells = [
           frequency="Spell 1 (Arcane)"
           keywords="Escalation, Magical, Range"
           target="All creatures in 1 zone within 3 zones"
-          defense="PD"
-          damage="3 damage per spell tier. Roll 1d6 to determine the damage type: 1) toxic, 2) fire, 3) cold, 4) lightning, 5) force, and 6) arcane"
+          defense="EVN"
+          damage="3 damage per spell tier. Roll 1d6 to determine the damage type: 1) toxic, 2) fire, 3) cold, 4) lightning, 5) physical, and 6) arcane"
         />
       )
     },
@@ -264,7 +264,7 @@ export const arcaneSpells = [
           frequency="Spell 1 (Arcane)"
           keywords="Magical, Range"
           target="1 magical effect within 1 zone"
-          effect="If this spell’s tier is equal to or higher than the magical effect’s tier (spell tier if the effect originates from a spell), then the targeted effect ends. Otherwise, you must succeed on an attack roll against the MD of the targeted effect’s origin (spellcaster for a spell) or a TN of 10 + double the effect’s tier."
+          effect="If this spell’s tier is equal to or higher than the magical effect’s tier (spell tier if the effect originates from a spell), then the targeted effect ends. Otherwise, you must succeed on an attack roll against the Resolve of the targeted effect’s origin (spellcaster for a spell) or a TN of 10 + double the effect’s tier."
         />
       )
     },
@@ -285,11 +285,12 @@ export const arcaneSpells = [
             name="Dragon Spirit" 
             type="Large Dragon" 
             hp="6 per spell tier (ST)"
-            pd="12 + double ST"
-            md="8 + double ST"
+            evn="10 + PB"
+            mgt="12 + PB"
+            res="8 + PB"
             pb="double ST"
             speeds="fly 1"
-            resistances="chosen element"
+            resistances="chosen element double ST, physical ST"
             summons
             accordion
             actions={[{
@@ -297,8 +298,8 @@ export const arcaneSpells = [
               name: "Rend",
               keywords: "melee, weapon",
               target: "1 engaged creature",
-              defense: "PD",
-              damage: "double ST force damage",
+              defense: "EVN",
+              damage: "double ST physical damage",
             },
             {
               basic: false,
@@ -306,7 +307,7 @@ export const arcaneSpells = [
               frequency: "Once per spell",
               keywords: "range",
               target: "1d4+1 enemies within the dragon spirit’s zone",
-              defense: "PD",
+              defense: "EVN",
               damage: "2 damage of the chosen damage type per spell tier",
             }]}
           />
@@ -332,11 +333,12 @@ export const arcaneSpells = [
           name="Arcane Hand" 
           type="Large export Construct" 
           hp="5 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
           speeds="fly 1"
-          resistances="arcane"
+          resistances="arcane ST"
           summons
           accordion
           actions={[{
@@ -344,8 +346,8 @@ export const arcaneSpells = [
             name: "Punch",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "double ST force damage",
+            defense: "EVN",
+            damage: "double ST physical damage",
             success: "Seized (scene ends), but the hand can only have creature seized at a time"
           }]}
           reactions={[{
@@ -369,15 +371,15 @@ export const arcaneSpells = [
           keywords="Magical"
           effect={(
             <span>
-              <span>sYou transform into a large dragon (huge dragon at spell tier 3) and choose cold, fire, lightning, or toxic as your dragon’s damage type. While transformed:</span>s
+              <span>You transform into a large dragon (huge dragon at spell tier 3) and choose cold, fire, lightning, or toxic as your dragon’s damage type. While transformed:</span>s
               <ul>
                 <li><span>You can’t Spellcast or use any abilities you can’t do as a dragon.</span></li>
                 <li><span>You gain 4 temporary hit points per the spell tier</span></li>
-                <li><span>Your PD equals 12 + double the spell tier</span></li>
-                <li><span>Your natural melee weapons deal 3 force damage</span></li>
+                <li><span>Your Evasion equals 10 + double the spell tier, and Might equals 12 + double the spell tier</span></li>
+                <li><span>Your natural melee weapons deal 3 physical damage</span></li>
                 <li><span>You gain fly speed of 1</span></li>
-                <li><span>You gain resistance to your chosen damage type</span></li>
-                <li><span>Once per spell, you unleash energy as an action. Make an attack roll against the PD of each creature in 1 zone within 3 zones, dealing 3 damage per spell tier of the chosen damage type</span></li>
+                <li><span>You gain resistance to your chosen damage type equal to double the spell tier, and physical damage equal to the spell tier</span></li>
+                <li><span>Once per spell, you unleash energy as an action. Make an attack roll against the Evasion of each creature in 1 zone within 3 zones, dealing 3 damage per spell tier of the chosen damage type</span></li>
                 <li><span>Once you start dying, you revert back to your form and the magic ends</span></li>
               </ul>
             </span>
@@ -388,16 +390,16 @@ export const arcaneSpells = [
   ],
   [
     {
-      title: "Erase (Action)",
+      title: "Disintegrate (Action)",
       actType: "Action",
       spell: (
         <AbilityCard 
           accordion
-          descriptor="You undo the very essence of your foe."
+          descriptor="You fire a ray of deadly arcane energy that reduces a foe to fine dust."
           frequency="Spell 3 (Arcane)"
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="EVN"
           damage="5 arcane damage per spell tier. If this damage kills the target, then their essence is removed from reality and they can’t be resurrected outside of mythical magic from deities or other powerful sources."
         />
       )
@@ -415,7 +417,7 @@ export const deathSpells = [
           descriptor="As your hand glows with dark power, you steal a foe’s lifeforce."
           frequency="Spell 0 (Death)"
           target="1 creature engaged to you"
-          defense="MD"
+          defense="MGT"
           keywords="Magical, Melee"
           damage="3 necrotic damage per your tier"
           critical="You gain temporary hit points equal to your proficiency bonus (scene ends)"
@@ -432,7 +434,7 @@ export const deathSpells = [
           frequency="Spell 0 (Death)"
           target="1 creature within 3 zones"
           keywords="Magical, Range"
-          defense="MD"
+          defense="EVN"
           damage="2 necrotic damage per your tier"
           critical="hindered (scene ends)"
         />
@@ -450,7 +452,7 @@ export const deathSpells = [
           frequency="Spell 1 (Death)"
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="MGT"
           damage="4 necrotic damage per spell tier"
           success="hindered (turn ends)"
         />
@@ -466,7 +468,7 @@ export const deathSpells = [
           frequency="Spell 1 (Death)"
           keywords="Escalation, Magical, Range"
           target="All creatures in 1 zone within 3 zones"
-          defense="MD"
+          defense="MGT"
           damage="2 necroitc damage per spell tier"
           effect="Targeted zone becomes a dangerous zone (1 necrotic damage per spell tier) for the scene"
         />
@@ -489,10 +491,12 @@ export const deathSpells = [
             name="Undead" 
             type="Medium Undead" 
             hp="5 per spell tier (ST)"
-            pd="10 + double ST"
-            md="8 + double ST"
+            evn="10 + double ST"
+            mgt="12 + double ST"
+            res="8 + double ST"
             pb="double ST"
-            resistances="necrotic, force (ghost only)"
+            resistances="necrotic ST, physical ST (ghost only)"
+            weaknesses="holy double ST" 
             summons
             accordion
             traits={[{
@@ -508,8 +512,8 @@ export const deathSpells = [
               name: "Rend",
               keywords: "melee, weapon",
               target: "1 engaged creature",
-              defense: "PD or MD (ghost only)",
-              damage: "double ST force damage or necrotic damage (ghost only)",
+              defense: "Evasion",
+              damage: "double ST physical damage or necrotic damage (ghost only)",
             }]}
           />
         </div>
@@ -526,7 +530,7 @@ export const deathSpells = [
             frequency="Spell 1 (Death)"
             keywords="Escalation, Magical, Melee"
             target="1 creature engaged to you"
-            defense="MD"
+            defense="MGT"
             damage="5 necrotic damage per spell tier"
             success="You regain hit points equal to half the damage dealt"
           />
@@ -546,7 +550,7 @@ export const deathSpells = [
           frequency="Spell 2 (Death)"
           target="1 creature within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="MGT"
           damage="4 necrotic damage per spell tier"
           effect="Whenever you deal damage from this spell, you gain temporary hit points equal to half the damage dealt (scene ends)"
           success="You become linked to the target for the scene while you focus. When you focus on this spell, the target takes 2 necrotic damage per spell tier."
@@ -564,7 +568,7 @@ export const deathSpells = [
           frequency="Spell 2 (Death)"
           target="1d4+1 enemies in your zone"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="MGT"
           damage="2 necrotic damage per spell tier"
           success="hindered (scene ends)"
         />
@@ -583,18 +587,20 @@ export const deathSpells = [
             frequency="Spell 3 (Death)"
             target="1 creature within 3 zones"
             keywords="Escalation, Magical, Range"
-            defense="MD"
+            defense="MGT"
             damage="5 necrotic damage per spell tier. If this damage kills the target, then they are reanimated as a death wraith (see below statistics) under your control, and this spell gains the summon keyword. The death wraith lasts as long as you focus on it during the scene."
           />
           <Monster 
             name="Death Wraith" 
             type="Undead (same size as original target)" 
             hp="6 per spell tier (ST)"
-            pd="10 + double ST"
-            md="8 + double ST"
+            evn="10 + PB"
+            mgt="12 + PB"
+            res="8 + PB"
             pb="double ST"
             speeds="other speeds depending on the original target"
-            resistances="necrotic"
+            resistances="necrotic ST"
+            weaknesses="holy double ST"
             summons
             accordion
             actions={[{
@@ -602,7 +608,7 @@ export const deathSpells = [
               name: "Death Touch",
               keywords: "melee, weapon",
               target: "1 engaged creature",
-              defense: "MD",
+              defense: "EVN",
               damage: "triple ST necrotic damage",
               success: "hindered (scene ends)"
             }]}
@@ -623,9 +629,9 @@ export const earthSpells = [
           descriptor="You launch a small stone at a foe."
           frequency="Spell 0 (Earth)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="EVN"
           keywords="Magical, Range"
-          damage="2 force damage per your tier"
+          damage="2 physical damage per your tier"
           critical="Prone"
         />
       )
@@ -640,8 +646,8 @@ export const earthSpells = [
           frequency="Spell 0 (Earth)"
           target="1d4+1 enemies within your zone"
           keywords="Magical"
-          defense="PD"
-          critical="Same as success, and 1 force damage per your tier"
+          defense="MGT"
+          critical="Same as success, and 1 physical damage per your tier"
           success="Prone"
         />
       )
@@ -658,10 +664,10 @@ export const earthSpells = [
           frequency="Spell 1 (Earth)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
-          critical="Same as success, and 1 ongoing force damage per spell tier while seized"
+          defense="MGT"
+          critical="Same as success, and 1 ongoing physical damage per spell tier while seized"
           success="Seized (scene ends)"
-          partial="Seized (turn ends)"
+          partialOrLower="Seized (turn ends)"
         />
       )
     },
@@ -675,8 +681,8 @@ export const earthSpells = [
           frequency="Spell 1 (Earth)"
           keywords="Magical, Range"
           target="All creatures in 1 zone within 3 zones"
-          defense="PD"
-          damage="2 force damage per spell tier"
+          defense="MGT"
+          damage="2 physical damage per spell tier"
           effect="Targeted zone becomes a difficult zone for the scene"
         />
       )
@@ -693,7 +699,7 @@ export const earthSpells = [
             target="1 zone per spell tier within 2 zones"
             keywords="Magical, Range"
             duration="Scene ends"
-            effect="Targeted zones become same choice of difficult zones, dangerous zones (1 force damage per spell tier), defensive zones, or elevated zones."
+            effect="Targeted zones become same choice of difficult zones, dangerous zones (1 physical damage per spell tier), defensive zones, or elevated zones."
           />
         </div>
       )
@@ -710,7 +716,7 @@ export const earthSpells = [
             keywords="Magical"
             target="1 creature per spell tier in your zone"
             duration="Scene ends"
-            effect="Target's PD increases by +1"
+            effect="Target's Evasion increases by +1"
           />
         </div>
       )
@@ -759,9 +765,11 @@ export const earthSpells = [
           name="Earth Elemental" 
           type="Large Elemental" 
           hp="6 per spell tier (ST)"
-          pd="12 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
+          resistances="physical ST"
           summons
           accordion
           actions={[{
@@ -769,8 +777,8 @@ export const earthSpells = [
             name: "Slam",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "double ST force damage",
+            defense: "EVN",
+            damage: "double ST physical damage",
             success: "Prone"
           },
           {
@@ -778,8 +786,8 @@ export const earthSpells = [
             name: "Rock Throw",
             keywords: "range, weapon",
             target: "1 creature within 3 zones",
-            defense: "PD",
-            damage: "double ST force damage",
+            defense: "EVN",
+            damage: "double ST physical damage",
           }]}
           />
         </div>
@@ -799,7 +807,7 @@ export const earthSpells = [
             target="1 zone per spell tier within 5 zones"
             keywords="Magical, Range"
             duration="Scene ends"
-            effect="Targeted zones become difficult zones and dangerous zones (1 force damage per spell tier). When a creature takes this damage, make an attack roll against their PD, and on a success, they fall prone. Any huge or smaller structure within the targeted zones are reduced to rubble."
+            effect="Targeted zones become difficult zones and dangerous zones (1 physical damage per spell tier). When a creature takes this damage, make an attack roll against their Might, and on a success, they fall prone. Any huge or smaller structure within the targeted zones are reduced to rubble."
           />
         </div>
       )
@@ -817,9 +825,9 @@ export const eldritchSpells = [
           descriptor="With the powers of your mind, you shove a creature away."
           frequency="Spell 0 (Eldritch)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="MGT"
           keywords="Magical, Range"
-          damage="2 force damage per your tier"
+          damage="2 physical damage per your tier"
           critical="Pushed within their zone"
         />
       )
@@ -834,8 +842,8 @@ export const eldritchSpells = [
           frequency="Spell 0 (Eldritch)"
           target="1 creature within 3 zones"
           keywords="Magical, Range"
-          defense="MD"
-          damage="2psychic damage per your tier"
+          defense="RES"
+          damage="2 psychic damage per your tier"
           critical="Confused (turn ends)"
         />
       )
@@ -852,10 +860,10 @@ export const eldritchSpells = [
           frequency="Spell 1 (Eldritch)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
-          critical="Same as success, and 1 ongoingpsychic damage per spell tier while confused"
+          defense="RES"
+          critical="Same as success, and 1 ongoing psychic damage per spell tier while confused"
           success="Confused (scene ends)"
-          partial="Confused (turn ends)"
+          partialOrLower="Confused (turn ends)"
         />
       )
     },
@@ -870,7 +878,7 @@ export const eldritchSpells = [
           keywords="Magical, Range"
           target="1 zone per spell tier within 2 zones"
           duration="Scene ends"
-          effect="Targeted zones become dangerous zones (1 force damage per spell tier). When a creature takes this damage, make an attack roll against their PD, and on a success, the creature becomes seized (scene ends)."
+          effect="Targeted zones become dangerous zones (1 physical damage per spell tier). When a creature takes this damage, make an attack roll against their Might, and on a success, the creature becomes seized (scene ends)."
         />
       )
     },
@@ -885,8 +893,8 @@ export const eldritchSpells = [
             frequency="Spell 1 (Eldritch)"
             target="All creatures in 1 zone within 3 zones"
             keywords="Escalation, Magical, Range"
-            defense="MD"
-            damage="2psychic damage per spell tier"
+            defense="RES"
+            damage="2 psychic damage per spell tier"
             success="Confused (turn ends)"
           />
         </div>
@@ -927,9 +935,10 @@ export const eldritchSpells = [
           name="Aberration" 
           type="Large Aberration" 
           hp="6 per spell tier (ST)"
-          pd="9 + double ST"
-          md="9 + double ST"
-          resistances="mental"
+          evn="10 + PB"
+          mgt="10 + PB"
+          res="10 + PB"
+          resistances="mental ST"
           pb="double ST"
           summons
           accordion
@@ -938,8 +947,8 @@ export const eldritchSpells = [
             name: "Tentacle",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "double ST force damage",
+            defense: "EVN",
+            damage: "double ST physical damage",
             success: "Seized (scene ends)"
           },
           {
@@ -947,8 +956,8 @@ export const eldritchSpells = [
             name: "Mind Blast",
             keywords: "magical, range",
             target: "1 creature within 3 zones",
-            defense: "MD",
-            damage: "double STpsychic damage",
+            defense: "RES",
+            damage: "double ST psychic damage",
           }]}
           />
         </div>
@@ -966,10 +975,10 @@ export const eldritchSpells = [
           target="1 huge or smaller creatures within 2 zones"
           duration="Focus until scene ends"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="MGT"
           critical="Same as success, but you can move the target up to 1 zone away"
           success="Seized (scene ends) and you can move the target within their zone"
-          partial="Seized (turn ends)"
+          partialOrLower="Seized (turn ends)"
           effect="When you focus on this spell, you can move the seized target up to 1 zone or let go of a seized target to repeat this spell’s attack roll against another target. You can only have one seized target at a time. Your attack roll automatically critically succeeds against an unworn object if it's huge or smaller."
         />
         </div>
@@ -988,8 +997,8 @@ export const eldritchSpells = [
             frequency="Spell 3 (Eldritch)"
             target="All enemies within 1 zone"
             keywords="Escalation, Magical, Range"
-            defense="MD"
-            damage="3psychic damage per spell tier. If any damage from this spell kills the target, then their head explodes (assuming they have one)."
+            defense="RES"
+            damage="3 psychic damage per spell tier. If any damage from this spell kills the target, then their head explodes (assuming they have one)."
             success="Dazed (scene ends)"
           />
         </div>
@@ -1008,9 +1017,9 @@ export const enchantmentSpells = [
           descriptor="You disturb your foe’s mind."
           frequency="Spell 0 (Enchantment)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="RES"
           keywords="Magical, Range"
-          damage="2psychic damage per your tier"
+          damage="2 psychic damage per your tier"
           critical="Exposed (turn ends)"
         />
       )
@@ -1041,10 +1050,10 @@ export const enchantmentSpells = [
           frequency="Spell 1 (Enchantment)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           critical="Charmed (scene ends)"
           success="Charmed (turn ends)"
-          partial="Hindered (turn ends)"
+          partialOrLower="Hindered (turn ends)"
         />
       )
     },
@@ -1058,10 +1067,10 @@ export const enchantmentSpells = [
           frequency="Spell 1 (Enchantment)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           critical="Same as success, but the target uses both their action and maneuver to follow your command."
           success="Target uses their action or maneuver to follow your one word command, such as “run” or “drop”."
-          partial="Hindered (turn ends)"
+          partialOrLower="Hindered (turn ends)"
         />
       )
     },
@@ -1075,10 +1084,10 @@ export const enchantmentSpells = [
           frequency="Spell 1 (Enchantment)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           critical="Falls prone and asleep, but can be woken up with a maneuver from an engaged creature"
           success="Dazed (scene ends)"
-          partial="Dazed (turn ends)"
+          partialOrLower="Dazed (turn ends)"
         />
       )
     },
@@ -1092,10 +1101,10 @@ export const enchantmentSpells = [
           frequency="Spell 1 (Enchantment)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           critical="Same as a success, and the target must use their next maneuver to Move away from you"
           success="Hindered (scene ends)"
-          partial="Hindered (turn ends)"
+          partialOrLower="Hindered (turn ends)"
         />
       )
     }
@@ -1112,8 +1121,8 @@ export const enchantmentSpells = [
           frequency="Spell 2 (Enchantment)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
-          damage="2psychic damage per spell tier"
+          defense="RES"
+          damage="2 psychic damage per spell tier"
           success="Confused (scene ends)"
         />
         </div>
@@ -1129,11 +1138,11 @@ export const enchantmentSpells = [
           descriptor="You dominate another’s mind to control them."
           frequency="Spell 2 (Enchantment)"
           target="1 creature (+1 creatures for each higher spell tier) within 3 zones"
-          defense="MD"
+          defense="RES"
           keywords="Escalation, Magical, Range"
           critical="Same as a success, but the target takes +1 misfortune to their overcome rolls to end this spell"
           success="Same as a partial, but you control the target for the scene (scene ends)."
-          partial="You control the target (turn ends). While controlled, you direct all of the target’s acts on their turn, including reactions."
+          partialOrLower="You control the target (turn ends). While controlled, you direct all of the target’s acts on their turn, including reactions."
         />
         </div>
       )
@@ -1151,10 +1160,10 @@ export const enchantmentSpells = [
             frequency="Spell 3 (Enchantment)"
             target="All enemies within 1 zone"
             keywords="Escalation, Magical, Range"
-            defense="MD"
+            defense="RES"
             critical="Same as a success, but also prone"
             success="Same as a partial, but charmed (scene ends)"
-            partial="Charmed (turn ends), and dazed while charmed as they bask in your glory"
+            partialOrLower="Charmed (turn ends), and dazed while charmed as they bask in your glory"
           />
         </div>
       )
@@ -1172,7 +1181,7 @@ export const fireSpells = [
           descriptor="Flames explode from your hands."
           frequency="Spell 0 (Fire)"
           target="1d4+1 enemies in your zone"
-          defense="PD"
+          defense="EVN"
           keywords="Magical"
           damage="1 fire damage per your tier"
         />
@@ -1187,7 +1196,7 @@ export const fireSpells = [
           descriptor="You send out a ray of fire"
           frequency="Spell 0 (Fire)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="EVN"
           keywords="Magical, Range"
           damage="2 fire damage per your tier"
           critical="1 ongoing fire damage per your tier"
@@ -1206,7 +1215,7 @@ export const fireSpells = [
           frequency="Spell 1 (Fire)"
           target="1 creature per spell tier within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="EVN"
           damage="4 fire damage per spell tier"
           success="1 ongoing fire damage per spell tier"
         />
@@ -1222,7 +1231,7 @@ export const fireSpells = [
           frequency="Spell 1 (Fire)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="EVN"
           damage="3 fire damage per spell tier"
         />
       )
@@ -1252,10 +1261,10 @@ export const fireSpells = [
           frequency="Spell 1 (Fire)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="EVN"
           critical="Same as a success, and the target is hindered while taking this ongoing damage"
           success="2 ongoing fire damage per spell tier"
-          partial="1 ongoing fire damage per spell tier"
+          partialOrLower="1 ongoing fire damage per spell tier"
         />
       )
     }
@@ -1304,10 +1313,12 @@ export const fireSpells = [
           name="Fire Elemental" 
           type="Large Elemental" 
           hp="6 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
-          resistances="fire"
+          resistances="fire double ST"
+          weaknesses="cold double ST"
           summons
           accordion
           actions={[{
@@ -1315,7 +1326,7 @@ export const fireSpells = [
             name: "Slam",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
+            defense: "EVN",
             damage: "triple ST fire damage",
             success: "1 ongoing fire damage per spell tier"
           },
@@ -1324,7 +1335,7 @@ export const fireSpells = [
             name: "Throw Fire",
             keywords: "range",
             target: "1 creature within 3 zones",
-            defense: "PD",
+            defense: "EVN",
             damage: "double ST fire damage",
           }]}
           />
@@ -1344,7 +1355,7 @@ export const fireSpells = [
             frequency="Spell 3 (Fire)"
             target="All creatures in 1 zone per spell tier within 5 zones"
             keywords="Escalation, Magical, Range"
-            defense="PD"
+            defense="EVN"
             damage="3 fire damage per spell tier"
             success="Prone"
           />
@@ -1364,9 +1375,9 @@ export const gravitySpells = [
           descriptor="You double the gravity to slow your foes."
           frequency="Spell 0 (Gravity)"
           target="1d4+1 enemies in your zone"
-          defense="PD"
+          defense="MGT"
           keywords="Magical"
-          critical="Same as success, and 1 force damage per your spell tier"
+          critical="Same as success, and 1 physical damage per your spell tier"
           success="Slowed (turn ends)"
         />
       )
@@ -1380,14 +1391,15 @@ export const gravitySpells = [
           descriptor="You draw gravity close to immobilize a foe."
           frequency="Spell 0 (Gravity)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="MGT"
           keywords="Magical, Range"
-          damage="2 force damage per your tier"
+          damage="2 physical damage per your tier"
           critical="Seized (turn ends)"
         />
       )
     }
   ],
+  // TODO: add back t1 spells!!!
   [
     {
       title: "Astral Pressure (Action)",
@@ -1398,9 +1410,9 @@ export const gravitySpells = [
           descriptor="You double the gravity to slow your foes."
           frequency="Spell 0 (Gravity)"
           target="1d4+1 enemies in your zone"
-          defense="PD"
+          defense="MGT"
           keywords="Magical"
-          critical="Same as success, and 1 force damage per your spell tier"
+          critical="Same as success, and 1 physical damage per your spell tier"
           success="Slowed (turn ends)"
         />
       )
@@ -1414,9 +1426,9 @@ export const gravitySpells = [
           descriptor="You draw gravity close to immobilize a foe."
           frequency="Spell 0 (Gravity)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="MGT"
           keywords="Magical, Range"
-          damage="2 force damage per your tier"
+          damage="2 physical damage per your tier"
           critical="Seized (turn ends)"
         />
       )
@@ -1447,10 +1459,10 @@ export const gravitySpells = [
           descriptor="You concentrate the density of a foe to crush them with gravitational force."
           frequency="Spell 2 (Gravity)"
           target="1 creature within 2 zones"
-          defense="PD"
-          damage="4 force damage per spell tier"
+          defense="MGT"
+          damage="4 physical damage per spell tier"
           keywords="Escalation, Magical, Range"
-          success="Seized (scene ends), and 1 ongoing force damage per spell tier while seized"
+          success="Seized (scene ends), and 1 ongoing physical damage per spell tier while seized"
         />
       )
     }
@@ -1468,7 +1480,7 @@ export const gravitySpells = [
             target="1 zone within 5 zones"
             keywords="Magical, Range"
             duration="Scene ends"
-            effect="Targeted zone becomes a difficult zone and dangerous zone (1 force damage per spell tier) filled with darkness and blocks out any sound. When a creature takes this damage, make an attack roll against their PD, and on a success, they are pulled to the center of the targeted zone. If a creature is killed while within the targeted zone, then their body is disintegrated and consumed by the blackhole."
+            effect="Targeted zone becomes a difficult zone and dangerous zone (1 physical damage per spell tier) filled with darkness and blocks out any sound. When a creature takes this damage, make an attack roll against their Might, and on a success, they are pulled to the center of the targeted zone. If a creature is killed while within the targeted zone, then their body is disintegrated and consumed by the blackhole."
           />
         </div>
       )
@@ -1498,10 +1510,10 @@ export const holySpells = [
       spell: (
         <AbilityCard 
           accordion
-          descriptor="You burn a foe with celestial flames while  blessing an ally"
+          descriptor="You burn a foe with celestial flames while blessing an ally"
           frequency="Spell 0 (Holy)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="EVN"
           keywords="Magical, Range"
           damage="2 holy damage per your tier"
           critical="Choose one creature within 3 zones to gain temporary hit points equal to your proficiency bonus (scene ends)"
@@ -1550,7 +1562,7 @@ export const holySpells = [
           frequency="Spell 1 (Holy)"
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           damage="4 holy damage per spell tier"
           success="Exposed (turn ends)"
         />
@@ -1567,7 +1579,7 @@ export const holySpells = [
           target="1 creature within 1 zone"
           keywords="Magical, Range"
           duration="Focus for the scene"
-          defense="PD"
+          defense="EVN"
           damage="2 holy damage per spell tier"
           effect="When you focus on this spell, you can move the weapon up to 1 zone to become engaged to a creature and then make this spell's attack roll against that creature."
         />
@@ -1592,11 +1604,13 @@ export const holySpells = [
           name="Angelic Warrior" 
           type="Medium Celestial" 
           hp="6 per spell tier (ST)"
-          pd="11 + double ST"
-          md="9 + double ST"
+          evn="10 + PB"
+          mgt="10 + PB"
+          res="10 + PB"
           pb="double ST"
           speeds="fly 1"
-          resistances="holy"
+          resistances="holy ST"
+          weaknesses="unholy double ST"
           summons
           accordion
           traits={[{
@@ -1608,7 +1622,7 @@ export const holySpells = [
             name: "Holy Sword",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
+            defense: "EVN",
             damage: "double ST holy damage",
           }]}
           maneuvers={[{
@@ -1631,11 +1645,11 @@ export const holySpells = [
           descriptor="With a prayer you attempt to send a creature back to its home realm of existence."
           frequency="Spell 2 (Holy)"
           target="1 creature (+1 creatures for each higher spell tier) within 2 zones that is not native to the current realm"
-          defense="MD"
+          defense="RES"
           keywords="Escalation, Magical, Range"
-          critical="Same as a success, but after a minute of being banished, the creature can't make overcome rolls to return."
-          success="Returned to their home realm (scene ends)"
-          partial="Returned to their home realm (turn ends)"
+          critical="Same as a success, but if the creature fails an overcome roll against this spell, then they can't return unless through other means"
+          success="Returned to their home realm (overcome ends)"
+          partialOrLower="Returned to their home realm (turn ends)"
         />
       )
     }
@@ -1652,9 +1666,9 @@ export const holySpells = [
             frequency="Spell 3 (Holy)"
             target="All enemies within 1 zone"
             keywords="Escalation, Magical, Range"
-            defense="MD"
+            defense="RES"
             damage="2 holy damage per spell tier"
-            critical="Same as a success, but the target is banished for the scene (scene ends)"
+            critical="Same as a success, but the target is banished (overcome ends)"
             success="If the target isn’t from this realm, then they’re returned to their home realm (turn ends)"
             effect="You and each ally within 1 zone gain 2 temporary hit points per spell tier (scene ends)"
           />
@@ -1689,7 +1703,7 @@ export const iceSpells = [
           descriptor="You shoot a foe with a freezing snowball."
           frequency="Spell 0 (Ice)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="EVN"
           keywords="Magical, Range"
           damage="2 cold damage per your tier"
           critical="Slowed (turn ends)"
@@ -1722,10 +1736,10 @@ export const iceSpells = [
           frequency="Spell 1 (Ice)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="MGT"
           critical="Seized (scene ends)"
           success="Seized (turn ends)"
-          partial="Slowed (turn ends)"
+          partialOrLower="Slowed (turn ends)"
         />
       )
     },
@@ -1745,7 +1759,7 @@ export const iceSpells = [
               <span>The wall has the following properties:</span>
               <ul>
                 <li><span>Nothing can pass through the wall.</span></li>
-                <li><span>Each part of the wall (one zone border) has defenses of 8 + double the spell tier and 4 hit points per spell tier. It has resistance to cold damage.</span></li>
+                <li><span>Each part of the wall (one zone border) has defenses of 8 + double the spell tier and 4 hit points per spell tier. It has resistance to cold damage equal to double the spell tier, but weakness to fire damage equal to the spell tier.</span></li>
               </ul>
             </span>
           )}
@@ -1762,7 +1776,7 @@ export const iceSpells = [
           frequency="Spell 1 (Ice)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="MGT"
           damage="2 cold damage per spell tier"
           effect="Targeted zone becomes a difficult zone for the scene"
         />
@@ -1781,7 +1795,7 @@ export const iceSpells = [
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
           duration="Scene ends"
-          effect="Targeted zones become difficult zones and dangerous zones (1 cold damage per spell tier). When a creature takes this damage, make an attack roll against their PD. On a success, the creature is slowed (turn starts)."
+          effect="Targeted zones become difficult zones and dangerous zones (1 cold damage per spell tier). When a creature takes this damage, make an attack roll against their Might. On a success, the creature is slowed (turn starts)."
         />
       )
     },
@@ -1802,10 +1816,12 @@ export const iceSpells = [
           name="Ice Elemental" 
           type="Large Elemental" 
           hp="6 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
-          resistances="cold"
+          resistances="cold double ST"
+          weaknesses="fire double ST"
           summons
           accordion
           actions={[{
@@ -1813,7 +1829,7 @@ export const iceSpells = [
             name: "Slam",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
+            defense: "EVN",
             damage: "triple ST cold damage",
             success: "dazed (turn ends)"
           },
@@ -1822,7 +1838,7 @@ export const iceSpells = [
             name: "Ice Spike",
             keywords: "ranged, weapon",
             target: "1 creature within 3 zones",
-            defense: "PD",
+            defense: "EVN",
             damage: "double ST cold damage"
           }]}
           />
@@ -1842,7 +1858,7 @@ export const iceSpells = [
             frequency="Spell 3 (Ice)"
             target="All creatures in 1 zone per spell tier within 5 zones"
             keywords="Escalation, Magical, Range"
-            defense="PD"
+            defense="MGT"
             damage="2 cold damage per spell tier"
             critical="Same as a success, but seized (scene ends)"
             success="Seized (turn ends), and 1 ongoing cold damage per spell tier while seized"
@@ -1878,9 +1894,9 @@ export const illusionSpells = [
           descriptor="You make your foe see their nightmare lash out at them."
           frequency="Spell 0 (Illusion)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="RES"
           keywords="Magical, Range"
-          damage="2psychic damage per your tier"
+          damage="2 psychic damage per your tier"
           critical="Hindered (turn ends)"
         />
       )
@@ -1897,7 +1913,7 @@ export const illusionSpells = [
           frequency="Spell 1 (Illusion)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           critical="Exposed (scene ends)"
           success="Exposed (turn ends)"
         />
@@ -1935,10 +1951,11 @@ export const illusionSpells = [
           name="Illusionary Creature" 
           type="Medium export Construct" 
           hp="5 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
-          resistances="mental"
+          resistances="mental ST"
           summons
           accordion
           actions={[{
@@ -1946,8 +1963,8 @@ export const illusionSpells = [
             name: "Rend",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "double STpsychic damage",
+            defense: "RES",
+            damage: "double ST psychic damage",
           },
           {
             basic: false,
@@ -1955,7 +1972,7 @@ export const illusionSpells = [
             keywords: "magical, ranged",
             frequency: "Once per spell",
             target: "1d4+1 enemies within the illusionary creature’s zone",
-            defense: "MD",
+            defense: "RES",
             critical: "hindered (scene ends)",
             success: "hindered (turn ends)"
           }]}
@@ -2006,10 +2023,10 @@ export const illusionSpells = [
           frequency="Spell 2 (Illusion)"
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
-          damage="4psychic damage per spell tier"
-          defense="MD"
-          success="Seized (scene ends), and if the target attempts to escape, then they take 2psychic damage per spell tier"
-          partial="Seized (turn ends)"
+          damage="4 psychic damage per spell tier"
+          defense="RES"
+          success="Seized (scene ends), and if the target attempts to escape, then they take 2 psychic damage per spell tier"
+          partialOrLower="Seized (turn ends)"
         />
         </div>
       )
@@ -2027,10 +2044,10 @@ export const illusionSpells = [
             frequency="Spell 3 (Illusion)"
             target="All creatures in 1 zone per spell tier within 5 zones"
             keywords="Escalation, Magical, Range"
-            defense="MD"
-            damage="2psychic damage per spell tier"
+            defense="RES"
+            damage="2 psychic damage per spell tier"
             critical="Same as a partial, but ongoing damage increases to 2 per spell tier"
-            success="Hindered (scene ends), and 1 ongoingpsychic damage per spell tier while hindered"
+            success="Hindered (scene ends), and 1 ongoing psychic damage per spell tier while hindered"
           />
         </div>
       )
@@ -2080,7 +2097,7 @@ export const lifeSpells = [
           target="1 creature per spell tier within your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Target gains resistance to all damage. Each time the target takes damage, you take the same amount after resistance is applied."
+          effect="Each time the target takes damage, they take half the damage and you take the same amount before resistances are applied."
         />
       )
     },
@@ -2199,7 +2216,7 @@ export const lightSpells = [
           frequency="Spell 0 (Light)"
           target="1d4+1 enemies within your zone"
           keywords="Magical"
-          defense="PD"
+          defense="MGT"
           critical="blinded (turn ends)"
           success="hindered (turn ends)"
         />
@@ -2214,7 +2231,7 @@ export const lightSpells = [
           descriptor="You unleash a ray of blinding light at a foe."
           frequency="Spell 0 (Light)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="EVN"
           damage="2 fire damage per your tier"
           keywords="Magical, Range"
           critical="hindered (turn ends)"
@@ -2248,7 +2265,7 @@ export const lightSpells = [
           frequency="Spell 1 (Light)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="MGT"
           damage="2 fire damage per spell tier"
           success="Hindered (turn ends)"
         />
@@ -2298,7 +2315,7 @@ export const lightSpells = [
           target="1 creature within 2 zones"
           duration="Focus for the scene"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="MGT"
           damage="2 fire damage per spell tier"
           success="Blinded (turn ends)"
           effect="When you focus on this spell, you can repeat this spell’s attack roll against a creature within 2 zones"
@@ -2322,8 +2339,8 @@ export const lightSpells = [
               <span>The wall has the following properties:</span>
               <ul>
                 <li><span>Creatures can’t see through the wall</span></li>
-                <li><span>As a maneuver, you can fire a light beam at a creature within 2 zones of the wall. Make an attack roll against the target’s PD, dealing 2 fire damage per spell tier.</span></li>
-                <li><span></span>Make an attack roll against the PD of any creature that starts their turn within a zone touching the wall or enters a zone touching the wall. On a success, the target is blinded (turn ends).</li>
+                <li><span>As a maneuver, you can fire a light beam at a creature within 2 zones of the wall. Make an attack roll against the target’s Evasion, dealing 2 fire damage per spell tier.</span></li>
+                <li><span></span>Make an attack roll against the Might of any creature that starts their turn within a zone touching the wall or enters a zone touching the wall. On a success, the target is blinded (turn ends).</li>
               </ul>
             </span>
           )}
@@ -2343,7 +2360,7 @@ export const lightSpells = [
             descriptor="You conjure a miniature sun to only explode it in a blinding display of light."
             frequency="Spell 3 (Light)"
             target="All creatures in 1 zone within 5 zones"
-            defense="PD"
+            defense="MGT"
             damage="3 fire damage per spell tier"
             keywords="Escalation, Magical, Range"
             critical="Same as a success, but also dazed while blinded"
@@ -2366,9 +2383,9 @@ export const natureSpells = [
           frequency="Spell 0 (Nature)"
           target="1 creature engaged to you"
           keywords="Magical, Melee"
-          defense="PD"
-          damage="3 force damage per your tier"
-          critical="1 ongoing force damage per your tier"
+          defense="EVN"
+          damage="3 physical damage per your tier"
+          critical="1 ongoing physical damage per your tier"
         />
       )
     },
@@ -2381,8 +2398,8 @@ export const natureSpells = [
           descriptor="You conjure a vine that lashes at the target."
           frequency="Spell 0 (Nature)"
           target="1 creature within 3 zones"
-          defense="PD"
-          damage="2 force damage per your tier"
+          defense="EVN"
+          damage="2 physical damage per your tier"
           keywords="Magical, Range"
           critical="seized (turn ends)"
         />
@@ -2401,7 +2418,7 @@ export const natureSpells = [
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
           duration="Scene ends"
-          effect="Targeted zones become difficult zones. When a creature starts their turn in a targeted zone or moves through a targeted zone, make an attack roll against their PD, and on a success, the creature becomes seized (scene ends). You can only make this attack roll against a creature once per turn."
+          effect="Targeted zones become difficult zones. When a creature starts their turn in a targeted zone or moves through a targeted zone, make an attack roll against their Might, and on a success, the creature becomes seized (scene ends). You can only make this attack roll against a creature once per turn."
         />
       )
     },
@@ -2436,11 +2453,11 @@ export const natureSpells = [
             name="Nature Spirit" 
             type="Medium Animal or Plant" 
             hp="5 per spell tier (ST), or 4 per ST (air only)"
-            pd="10 + double ST"
-            md="8 + double ST"
+            evn="10 + PB"
+            mgt="12 + PB"
+            res="8 + PB"
             pb="double ST"
             speeds="fly 1 (air only), swim 1 (water only)"
-            resistances="necrotic, force (ghost only)"
             summons
             accordion
             traits={[{
@@ -2456,8 +2473,8 @@ export const natureSpells = [
               name: "Slam",
               keywords: "melee, weapon",
               target: "1 engaged creature",
-              defense: "PD or MD (ghost only)",
-              damage: "double ST force damage or triple ST force damage (land only)",
+              defense: "EVN",
+              damage: "double ST physical damage or triple ST physical damage (land only)",
             }]}
             reactions={[{
               name: "Nature's Fury",
@@ -2507,12 +2524,12 @@ export const natureSpells = [
           target="1 creature within 2 zones"
           effect={(
             <span>
-              <span>You transform the target’s body and equipment into a small, medium, or large creature of your choice. If the target is unwilling, then the spell only works on a successful attack roll against the target’s MD,  and they can make an overcome roll at the end of their turns to end the effect. While transformed:</span>
+              <span>You transform the target’s body and equipment into a small, medium, or large creature of your choice. If the target is unwilling, then the spell only works on a successful attack roll against the target’s Resolve,  and they can make an overcome roll at the end of their turns to end the effect. While transformed:</span>
               <ul>
                 <li><span>Target can’t Spellcast or use any abilities you can’t do as an animal</span></li>
                 <li><span>Target gains 4 temporary hit points per the spell tier</span></li>
-                <li><span>Target’s PD equals 10 + double the spell tier, and MD equals 8 + double the spell tier</span></li>
-                <li><span>Target’s natural melee weapons deal force damage depending on the animal’s size: 2 for small, 3 for medium, 4 for large</span></li>
+                <li><span>Target’s Evasion and Might equals 10 + double the spell tier, and Resolve equals 8 + double the spell tier</span></li>
+                <li><span>Target’s natural melee weapons deal physical damage depending on the animal’s size: 2 for small, 3 for medium, 4 for large</span></li>
                 <li><span>Target gains traits the animal would have such as breathing underwater if they become a shark. Any new speeds equal the same speed as their land speed.</span></li>
                 <li><span>Once the target is defeated, they revert back to their form and the magic ends</span></li>
               </ul>
@@ -2538,8 +2555,9 @@ export const natureSpells = [
             name="Faerie Warrior" 
             type="Small Faerie" 
             hp="5 per spell tier (ST)"
-            pd="9 + double ST"
-            md="9 + double ST"
+            evn="12 + PB"
+            mgt="8 + PB"
+            res="10 + PB"
             pb="double ST"
             speeds="fly 1"
             summons
@@ -2549,8 +2567,8 @@ export const natureSpells = [
               name: "Sleepy Bow",
               keywords: "range, weapon",
               target: "1 creature within 3 zones",
-              defense: "PD",
-              damage: "double ST force damage",
+              defense: "EVN",
+              damage: "double ST physical damage",
               success: "slowed (turn ends)"
             },
             {
@@ -2559,7 +2577,7 @@ export const natureSpells = [
               keywords: "magical, range",
               target: "1 creature per spell tier within 3 zones",
               frequency: "Once per spell",
-              defense: "MD",
+              defense: "RES",
               critical: "charmed (scene ends)",
               success: "charmed (turn ends)"
             }]}
@@ -2591,8 +2609,9 @@ export const natureSpells = [
             name="Kaiju" 
             type="Colossal Monstrosity" 
             hp="6 per spell tier (ST)"
-            pd="10 + double ST"
-            md="8 + double ST"
+            evn="10 + PB"
+            mgt="12 + PB"
+            res="8 + PB"
             pb="double ST"
             speeds="land 2"
             summons
@@ -2602,8 +2621,8 @@ export const natureSpells = [
               name: "Bite",
               keywords: "melee, weapon",
               target: "1 creature engaged to the kaiju",
-              defense: "PD",
-              damage: "4 force damage per ST",
+              defense: "EVN",
+              damage: "4 physical damage per ST",
               success: "Target is swallowed if they are huge or smaller. While swallowed, a target is blinded, seized, and takes 1 ongoing toxic damage per ST. If a swallowed creature deals 4 or more damage per ST on a single turn, the kaiju throws up the target."
             }]}
           />
@@ -2637,7 +2656,7 @@ export const protectionSpells = [
           accordion
           descriptor="You create a magical barrier around yourself."
           frequency="Spell 0 (Protection)"
-          trigger="You see a creature make an attack roll against your PD"
+          trigger="You see a creature make an attack roll against your Evasion"
           effect="Triggering attack roll takes +1 misfortune"
           keywords="Magical"
         />
@@ -2686,7 +2705,7 @@ export const protectionSpells = [
             keywords="Magical"
             target="1 creature per spell tier within your zone"
             duration="Scene ends"
-            effect="Choose a damage type and the target gains resistance to it"
+            effect="Choose a damage type and the target gains resistance to it equal to the spell tier"
           />
         </div>
       )
@@ -2735,7 +2754,7 @@ export const protectionSpells = [
             duration="Scene ends"
             keywords="Magical"
             target="1 creature (+1 creatures for each higher spell tier) in your zone"
-            effect="Target gains resistance to all damage from magical abilities"
+            effect="Target gains resistance to all damage from magical abilities equal to the spell tier"
           />
         </div>
       )
@@ -2754,7 +2773,7 @@ export const protectionSpells = [
             duration="Scene ends"
             keywords="Magical, Range"
             target="1 creature (+1 creatures for each higher spell tier) within 1 zone"
-            effect="Target gains resistance to all damage. Whenever a creature deals damage to the target, they take arcane damage equal to half of the original damage."
+            effect="Target gains resistance to all damage equal to double the spell tier. Whenever a creature deals damage to the target, they take arcane damage equal to double the spell tier."
           />
         </div>
       )
@@ -2787,7 +2806,7 @@ export const shadowSpells = [
           descriptor="You fire a shadowy projectile that distracts your foe with imaginary threats."
           frequency="Spell 0 (Shadow)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="EVN"
           keywords="Magical, Range"
           damage="2 necrotic damage per your tier"
           critical="Exposed (turn ends)"
@@ -2814,10 +2833,12 @@ export const shadowSpells = [
             name="Living Shadow" 
             type="Medium Undead" 
             hp="5 per spell tier (ST)"
-            pd="10 + double ST"
-            md="8 + double ST"
+            evn="12 + PB"
+            mgt="10 + PB"
+            res="8 + PB"
             pb="double ST"
-            resistances="necrotic"
+            resistances="necrotic ST"
+            weaknesses="holy double ST"
             vision="night"
             summons
             accordion
@@ -2830,7 +2851,7 @@ export const shadowSpells = [
               name: "Shadow Claw",
               keywords: "melee, weapon",
               target: "1 engaged creature",
-              defense: "MD",
+              defense: "EVN",
               damage: "double ST necrotic damage",
             }]}
           />
@@ -2847,8 +2868,8 @@ export const shadowSpells = [
           frequency="Spell 1 (Shadow)"
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
-          partial="Hinderd (turn ends)"
+          defense="MGT"
+          partialOrLower="Hinderd (turn ends)"
           success="Blinded (turn ends)"
           critical="Blinded (scene ends)"
         />
@@ -2905,7 +2926,7 @@ export const shadowSpells = [
           frequency="Spell 2 (Shadow)"
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
-          effect="Targeted zones become dangerous zones (1 necrotic damage per spell tier) that only hurts enemies. You are obscured in the targeted zones as you are nearly indistinguishable from your shadows."
+          effect="Targeted zones become dangerous zones (1 necrotic damage per spell tier) that only hurts enemies. You have concealment in the targeted zones as you are nearly indistinguishable from your shadows."
           duration="Scene ends"
         />
         </div>
@@ -2923,7 +2944,7 @@ export const shadowSpells = [
           duration="Scene ends"
           keywords="Magical"
           target="1 creature (+1 creatures per higher spell tier) within your zone"
-          effect="Target becomes obscured. When a creature damages the target with a melee ability, they take 2 necrotic damage per spell tier."
+          effect="Target gains concealment. When a creature damages the target with a melee ability, they take 2 necrotic damage per spell tier."
         />
         </div>
       )
@@ -2941,7 +2962,7 @@ export const shadowSpells = [
             frequency="Spell 3 (Shadow)"
             target="1 zone per spell tier within 5 zones"
             keywords="Magical, Range"
-            effect="Targeted zones become dangerous zones (1 necrotic damage per spell tier) filled with magical darkness. When a creature takes this damage, make an attack roll against their MD, and on a success, they are seized (turn starts) by shadowy tendrils."
+            effect="Targeted zones become dangerous zones (1 necrotic damage per spell tier) filled with magical darkness. When a creature takes this damage, make an attack roll against their Might, and on a success, they are seized (turn starts) by shadowy tendrils."
           />
         </div>
       )
@@ -2959,7 +2980,7 @@ export const teleportationSpells = [
           descriptor="You undo space within a foe."
           frequency="Spell 0 (Teleportation)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="RES"
           keywords="Magical, Range"
           damage="2 arcane damage per your tier"
           critical="Teleported up to 1 zone away on a standing surface"
@@ -2993,7 +3014,7 @@ export const teleportationSpells = [
             frequency="Spell 1 (Teleportation)"
             target="1 creature within 2 zones"
             keywords="Escalation, Magical, Range"
-            defense="MD"
+            defense="RES"
             damage="4 arcane damage per spell tier"
             success="Teleported to a standing surface up to a number of zones away equal to the spell tier"
           />
@@ -3039,7 +3060,7 @@ export const teleportationSpells = [
           frequency="Spell 1 (Teleportation)"
           target="1 creature within 1 zone per spell tier"
           keywords="Magical, Range"
-          effect="You and the target teleport to switch places. If the target is unwilling, you must succeed on an attack roll against the target’s MD."
+          effect="You and the target teleport to switch places. If the target is unwilling, you must succeed on an attack roll against the target’s Resolve."
         />
       )
     }
@@ -3091,7 +3112,7 @@ export const teleportationSpells = [
             frequency="Spell 3 (Teleportation)"
             target="1 creature within 3 zones"
             keywords="Escalation, Magical, Range"
-            defense="MD"
+            defense="RES"
             damage="4 arcane damage per spell tier. If this damage kills the target, then their body is lost within a random realm"
             critical="Same as a success, but target becomes confused (scene ends) when they reappear"
             success="Target disappears and then reappears at the end of their next turn"
@@ -3116,7 +3137,7 @@ export const timeSpells = [
           keywords="Magical, Range"
           effect={(
             <span>
-              <span>Choose to speed up to slow down the target. If the target is unwilling, you must succeed on an attack roll against their MD</span>
+              <span>Choose to speed up to slow down the target. If the target is unwilling, you must succeed on an attack roll against their Might</span>
               <ul>
                 <li><span><i>Speed Up:</i> Target’s speeds are doubled</span></li>
                 <li><span><i>Slow Down:</i> Target is slowed</span></li>
@@ -3135,7 +3156,7 @@ export const timeSpells = [
           descriptor="You rapidly age and deage a foe as their body suffers from erratic time fluctuations."
           frequency="Spell 0 (Time)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="MGT"
           damage="2 arcane damage per your tier"
           critical="Dazed (turn ends)"
           keywords="Magical, Range"
@@ -3185,8 +3206,8 @@ export const timeSpells = [
           frequency="Spell 1 (Time)"
           target="1 creature per spell tier within 2 zones"
           keywords="Magical, Range"
-          defense="MD"
-          partial="Dazed (turn ends)"
+          defense="MGT"
+          partialOrLower="Dazed (turn ends)"
           success="Dazed (scene ends)"
           critical="Same as a success, and slowed while dazed"
         />
@@ -3224,7 +3245,7 @@ export const timeSpells = [
               <span>Choose to speed up to slow down the targeted zones:</span>
               <ul>
                 <li><span><i>Speed Up:</i> Any creature that starts their turn in the targeted zones becomes hastened (turn starts)</span></li>
-                <li><span><i>Slow Down:</i> Whenever a creature starts their turn in the targeted zones or enters the targeted zones, make an attack roll against their MD. On a success, they are dazed (turn starts). You can only make this attack roll against the same creature once per turn.</span></li>
+                <li><span><i>Slow Down:</i> Whenever a creature starts their turn in the targeted zones or enters the targeted zones, make an attack roll against their Might. On a success, they are dazed (turn starts). You can only make this attack roll against the same creature once per turn.</span></li>
               </ul>
             </span>
           )}
@@ -3242,10 +3263,10 @@ export const timeSpells = [
           frequency="Spell 2 (Time)"
           target="1 creature (+1 creatures per higher tier) within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="MGT"
           critical="Same as success, but time pauses for the scene (scene ends)"
           success="Time pauses for the target and they can’t act or be interacted with (turn ends). Any current effects already on the target like ongoing damage is paused until time resumes for the target."
-          partial="Slowed (turn ends) and dazed (turn ends)"
+          partialOrLower="Slowed (turn ends) and dazed (turn ends)"
         />
         </div>
       )
@@ -3280,7 +3301,7 @@ export const toxicSpells = [
           descriptor="You launch a spray of acid at multiple foes."
           frequency="Spell 0 (Toxic)"
           target="1d4+1 enemies within your zone"
-          defense="PD"
+          defense="EVN"
           damage="1 acid damage per your tier"
           keywords="Magical"
         />
@@ -3295,7 +3316,7 @@ export const toxicSpells = [
           descriptor="You throw toxic venom at a foe."
           frequency="Spell 0 (Toxic)"
           target="1 creature within 3 zones"
-          defense="PD"
+          defense="EVN"
           damage="2 toxic damage per your tier"
           critical="Hindered (turn ends)"
           keywords="Magical, Range"
@@ -3316,7 +3337,7 @@ export const toxicSpells = [
             target="1 zone per spell tier within 2 zones"
             keywords="Magical, Range"
             duration="Scene ends"
-            effect="Targeted zones become dangerous zones (1 toxic damage per spell tier). When a creature takes this damage, make an attack roll against their PD, and on a success, the creature becomes hindered (turn starts)."
+            effect="Targeted zones become dangerous zones (1 toxic damage per spell tier). When a creature takes this damage, make an attack roll against their Might, and on a success, the creature becomes hindered (turn starts)."
           />
         </div>
       )
@@ -3331,7 +3352,7 @@ export const toxicSpells = [
           frequency="Spell 1 (Toxic)"
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="EVN"
           damage="4 toxic damage per spell tier"
           success="1 ongoing toxic damage per spell tier"
         />
@@ -3347,7 +3368,7 @@ export const toxicSpells = [
           frequency="Spell 1 (Toxic)"
           target="1 creature engaged to you"
           keywords="Escalation, Magical, Melee"
-          defense="PD"
+          defense="MGT"
           damage="5 toxic damage per spell tier"
           success="Dazed (turn ends)"
         />
@@ -3363,7 +3384,7 @@ export const toxicSpells = [
           frequency="Spell 1 (Toxic)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="PD"
+          defense="MGT"
           damage="2 toxic damage per spell tier"
           success="Hindered (turn ends)"
         />
@@ -3380,7 +3401,7 @@ export const toxicSpells = [
           descriptor="You spray burning acid from your fingertips."
           frequency="Spell 2 (Toxic)"
           target="1d4+1 creatures within your zone"
-          defense="PD"
+          defense="EVN"
           damage="2 toxic damage per spell tier"
           keywords="Escalation, Magical, Range"
           success="1 ongoing toxic damage per spell tier and hindered while taking this ongoing damage"
@@ -3399,7 +3420,7 @@ export const toxicSpells = [
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
           duration="Scene ends"
-          effect="The targeted zones become dangerous zones (1 toxic damage per spell tier). When a creature takes this damage, make an attack roll against their PD, and on a success, they are dazed (turn ends). On your turn, you can spend a maneuver to move each cloud up to 1 zone."
+          effect="The targeted zones become dangerous zones (1 toxic damage per spell tier). When a creature takes this damage, make an attack roll against their Might, and on a success, they are dazed (turn ends). On your turn, you can spend a maneuver to move each cloud up to 1 zone."
         />
         </div>
       )
@@ -3416,7 +3437,7 @@ export const toxicSpells = [
             descriptor="You infect an enemy with a sickness that quickly eats them away from the inside and can possibly infect others."
             frequency="Spell 3 (Toxic)"
             target="1 creature within 5 zones"
-            defense="PD"
+            defense="MGT"
             damage="4 toxic damage per spell tier. If any damage from this spell kills the target, then you can choose to infect another creature within the same zone as the previous target. Repeat this spell’s attack roll against the new target."
             keywords="Escalation, Magical, Range"
             success="1 ongoing toxic damage per spell tier"
@@ -3437,7 +3458,7 @@ export const unholySpells = [
           descriptor="You burn a foe’s soul with corrupting flames."
           frequency="Spell 0 (Unholy)"
           target="1 creature within 3 zones"
-          defense="MD"
+          defense="EVN"
           damage="2 unholy damage per your tier"
           keywords="Magical, Range"
           critical="Hindered (turn ends)"
@@ -3453,7 +3474,7 @@ export const unholySpells = [
           descriptor="You summon forth grasping hands of sinners to capture your enemies."
           frequency="Spell 0 (Unholy)"
           target="1d4+1 enemies in your zone"
-          defense="PD"
+          defense="MGT"
           success="Seized (turn ends)"
           critical="Same as a success, and 1 unholy damage per your tier"
           keywords="Magical"
@@ -3473,10 +3494,10 @@ export const unholySpells = [
             frequency="Spell 1 (Unholy)"
             target="1 creature per spell tier within 2 zones"
             keywords="Escalation, Magical, Range"
-            defense="MD"
+            defense="RES"
             critical="Same as a success, and hindered while marked"
             success="Same as a partial, but marked (scene ends)"
-            partial="Marked (turn ends). While marked, the target takes additional 1 unholy damage per spell tier whenever they take damage"
+            partialOrLower="Marked (turn ends). While marked, the target takes additional 1 unholy damage per spell tier whenever they take damage"
           />
         </div>
       )
@@ -3491,7 +3512,7 @@ export const unholySpells = [
           frequency="Spell 1 (Unholy)"
           target="All creatures in 1 zone within 3 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="EVN"
           damage="2 unholy damage per spell tier"
           success="Hindered (turn ends)"
         />
@@ -3522,7 +3543,7 @@ export const unholySpells = [
           frequency="Spell 1 (Unholy)"
           target="1 creature within 2 zones"
           keywords="Escalation, Magical, Range"
-          defense="MD"
+          defense="RES"
           damage="4 unholy damage per spell tier"
           success="Dazed (turn ends)"
         />
@@ -3547,10 +3568,12 @@ export const unholySpells = [
           name="Demon" 
           type="Large Fiend" 
           hp="6 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
-          resistances="unholy"
+          resistances="unholy ST"
+          weaknesses="holy double ST"
           summons
           accordion
           traits={[{
@@ -3562,8 +3585,8 @@ export const unholySpells = [
             name: "Corrupting Rend",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "triple ST force damage",
+            defense: "EVN",
+            damage: "triple ST unholy damage",
             success: "hindered (turn ends)"
           }]}
           />
@@ -3588,7 +3611,7 @@ export const unholySpells = [
               <ul>
                 <li><span>Creatures, objects, and physical effects can’t pass through the wall.</span></li>
                 <li><span>Each part of the wall (one zone border) has defenses equal to 10 + double spell tier and 5 hit points per spell tier.</span></li>
-                <li><span>Make an attack roll against the MD of any creature that starts their turn within a zone touching the wall or enters a zone touching the wall. On a success, the target must use a maneuver to Move up to the wall, and then take 2 unholy damage per spell tier.</span></li>
+                <li><span>Make an attack roll against the Resolve of any creature that starts their turn within a zone touching the wall or enters a zone touching the wall. On a success, the target must use a maneuver to Move up to the wall, and then take 2 unholy damage per spell tier.</span></li>
               </ul>
             </div>
           )}
@@ -3608,7 +3631,7 @@ export const unholySpells = [
             descriptor="After you utter a damned word, you scourge the souls of your foes with infernal wrath."
             frequency="Spell 3 (Unholy)"
             target="All enemies within 1 zone"
-            defense="MD"
+            defense="RES"
             damage="2 unholy damage per spell tier, and if this damage kills the target, then their soul is dragged to the lower realms."
             keywords="Escalation, Magical, Range"
             critical="Same as a success, but hindered (scene ends)"
@@ -3630,7 +3653,7 @@ export const warSpells = [
           descriptor="You conjure spectral spikes on your armor."
           frequency="Spell 0 (War)"
           duration="Turn ends"
-          effect="When you take damage from a melee ability, the attacker takes 1 force damage per your tier."
+          effect="When you take damage from a melee ability, the attacker takes 1 physical damage per your tier."
           keywords="Magical"
         />
       )
@@ -3660,7 +3683,7 @@ export const warSpells = [
             descriptor="As you attack, your weapon radiates elemental energy."
             frequency="Spell 1 (War)"
             keywords="Escalation, Magical"
-            effect="Choose cold, fire, force, lightning, or toxic. Strike, and your weapon deals an additional 2 damage per spell tier of the chosen damage type."
+            effect="Choose cold, fire, lightning, physical, or toxic. Strike, and your weapon deals an additional 2 damage per spell tier of the chosen damage type."
           />
         </div>
       )
@@ -3703,8 +3726,8 @@ export const warSpells = [
           frequency="Spell 1 (War)"
           target="All enemies in your zone"
           keywords="Escalation, Magical"
-          defense="PD"
-          damage="3 force damage per spell tier"
+          defense="EVN"
+          damage="3 physical damage per spell tier"
         />
       )
     }
@@ -3722,7 +3745,7 @@ export const warSpells = [
           target="1 zone per spell tier within 2 zones"
           duration="Scene ends"
           keywords="Magical, Range"
-          effect="Targeted zones become dangerous zones (1 force damage per spell tier), and when creatures take this damage, they also take 1 ongoing force damage per spell tier. As a maneuver, you can move each targeted blade storm up to 1 zone away."
+          effect="Targeted zones become dangerous zones (1 physical damage per spell tier), and when creatures take this damage, they also take 1 ongoing physical damage per spell tier. As a maneuver, you can move each targeted blade storm up to 1 zone away."
         />
         </div>
       )
@@ -3739,7 +3762,7 @@ export const warSpells = [
           target="1 creature within your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Choose cold, fire, lightning, or toxic. Target gains resistance to the chosen damage type, and when a creature damages the target with a melee ability, they take 2 damage per spell tier of the chosen damage type."
+          effect="Choose cold, fire, lightning, or toxic. Target gains resistance to the chosen damage type equal to double the spell tier, and when a creature damages the target with a melee ability, they take 2 damage per spell tier of the chosen damage type."
         />
         </div>
       )
@@ -3774,7 +3797,7 @@ export const waterSpells = [
           descriptor="A wave of water bursts from you to push nearby foes away."
           frequency="Spell 0 (Water)"
           target="1d4+1 enemies in your zone"
-          defense="PD"
+          defense="MGT"
           critical="Pushed up to 1 zone away"
           success="Pushed within your zone"
           keywords="Magical"
@@ -3789,9 +3812,9 @@ export const waterSpells = [
           accordion
           descriptor="You launch a small wave at your enemy."
           frequency="Spell 0 (Water)"
-          defense="PD"
+          defense="EVN"
           target="1 creature within 3 zones"
-          damage="2 force damage per your tier"
+          damage="2 physical damage per your tier"
           critical="Pushed within their zone"
           keywords="Magical, Range"
         />
@@ -3810,7 +3833,7 @@ export const waterSpells = [
           trigger="You see a creature Move or teleport within 1 zone"
           keywords="Escalation, Magical, Range"
           target="Triggering creature"
-          defense="PD"
+          defense="MGT"
           critical="Pushed up to 1 zone away"
           success="Pushed within their zone"
         />
@@ -3825,8 +3848,8 @@ export const waterSpells = [
             accordion
             descriptor="You send forth a giant wave of water to knock your foes off their feet."
             target="All creatures in 1 zone within 3 zones"
-            defense="PD"
-            damage="2 force damage per spell tier"
+            defense="MGT"
+            damage="2 physical damage per spell tier"
             frequency="Spell 1 (Water)"
             keywords="Escalation, Magical, Range"
             success="Prone"
@@ -3845,7 +3868,7 @@ export const waterSpells = [
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
           duration="Scene ends"
-          effect="Targeted zones become difficult zones. When a creature starts their turn in the zone or moves through the zone, make an attack roll against their PD, and on a success, the creature falls prone You can only make this attack roll against a creature once per turn."
+          effect="Targeted zones become difficult zones. When a creature starts their turn in the zone or moves through the zone, make an attack roll against their Evasion, and on a success, the creature falls prone You can only make this attack roll against a creature once per turn."
         />
       )
     },
@@ -3866,7 +3889,7 @@ export const waterSpells = [
               <ul>
                 <li><span>Range abilities using attack rolls take +1 if the target is beyond the wall. Any abilities that pass through the wall that deal fire damage only deals half damage.</span></li>
                 <li><span>Any cold damage abilities that pass through the wall instead freeze one zone border of the wall. The frozen section has defenses of 8 + double spell tier and 4 hit points per spell tier.</span></li>
-                <li><span>When a creature attempts to pass through the wall, you can stop their movement on a successful attack roll against their PD.</span></li>
+                <li><span>When a creature attempts to pass through the wall, you can stop their movement on a successful attack roll against their Might.</span></li>
               </ul>
             </div>
           )}
@@ -3892,10 +3915,12 @@ export const waterSpells = [
           name="Water Elemental" 
           type="Large Elemental" 
           hp="6 per spell tier (ST)"
-          pd="10 + double ST"
-          md="8 + double ST"
+          evn="10 + PB"
+          mgt="12 + PB"
+          res="8 + PB"
           pb="double ST"
-          resistances="fire"
+          resistances="fire ST"
+          weaknesses="cold double ST"
           speeds="swim 1"
           summons
           accordion
@@ -3905,8 +3930,8 @@ export const waterSpells = [
             name: "Slam",
             keywords: "melee, weapon",
             target: "1 engaged creature",
-            defense: "PD",
-            damage: "triple ST force damage",
+            defense: "EVN",
+            damage: "triple ST physical damage",
             success: "prone"
           },
           {
@@ -3914,8 +3939,8 @@ export const waterSpells = [
             name: "Splash",
             keywords: "ranged, weapon",
             target: "1 creature within 3 zones",
-            defense: "PD",
-            damage: "double ST force damage"
+            defense: "EVN",
+            damage: "double ST physical damage"
           }]}
           />
         </div>
@@ -3932,10 +3957,10 @@ export const waterSpells = [
           frequency="Spell 2 (Water)"
           target="1 creature (+1 creatures per higher spell tier) within 1 zone"
           keywords="Escalation, Magical, Range"
-          defense="PD"
-          critical="Same as success, but 1 ongoing force damage per spell tier while seized"
+          defense="MGT"
+          critical="Same as success, but 1 ongoing physical damage per spell tier while seized"
           success="Same as a partial success, but seized (scene ends)"
-          partial="Seized (turn ends), and the target must hold their breath or begin drowning while seized"
+          partialOrLower="Seized (turn ends), and the target must hold their breath or begin drowning while seized"
         />
         </div>
       )
@@ -3953,8 +3978,8 @@ export const waterSpells = [
             frequency="Spell 3 (Water)"
             target="All creatures in 1 zone within 5 zones"
             keywords="Escalation, Magical, Range"
-            defense="PD"
-            damage="2 force damage per spell tier"
+            defense="MGT"
+            damage="2 physical damage per spell tier"
             success="seized (scene ends) if huge or smaller, or prone if colossal"
             effect="Anyone within the affected zone is submerged in water, and must hold their breath. At the start of your subsequent turns, the wave moves forward in a straight line, targeting all creatures in an adjacent zone, and bringing any seized creatures with the wave. The wave stops and collapses at the end of the scene."
           />

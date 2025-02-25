@@ -232,7 +232,7 @@ function ThemeTalents() {
     },
     {
         title: "Risk Taker",
-        content: "You gain resistance to damage you take as a consequence from tempt fate or poor skill rolls."
+        content: "You gain resistance to damage equal to your tier you take as a consequence from tempt fate or poor skill rolls."
     },
     {
         title: "Show Rank",
@@ -282,7 +282,7 @@ function ThemeTalents() {
     },
     {
         title: "Extreme Survivalist",
-        content: "You know how to keep your allies safe from elemental hazards usually found in the wilds. You and your companions gain resistance to damage taken from environmental hazards and gain +1 on skill rolls to navigate environmental hazards. These types of hazards could include landslides, slipping off a cliffside, enduring a snowstorm, or weathering the fire realm’s supernatural heat."
+        content: "You know how to keep your allies safe from elemental hazards usually found in the wilds. You and your companions gain resistance to damage equal to your tier taken from environmental hazards and gain +1 on skill rolls to navigate environmental hazards. These types of hazards could include landslides, slipping off a cliffside, enduring a snowstorm, or weathering the fire realm’s supernatural heat."
     },
     {
         title: "Nature Companion",

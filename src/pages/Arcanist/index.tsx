@@ -57,7 +57,7 @@ function Arcanist() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Arcane</span></li>
-              <li><span><b>Defense Bonus:</b> +2 to MD</span></li>
+              <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
@@ -144,13 +144,13 @@ function Arcanist() {
               frequency="At-will"
               keywords="Magical"
               duration="Scene ends"
-              effect="You gain +1 fortune to attack rolls with magical abilities and resistance to arcane damage, but you are exposed." 
+              effect="You gain +1 fortune to attack rolls with magical abilities and resistance to arcane damage equal to your tier, but you are exposed." 
             />
 
             <h2>Warmage</h2>
             <p>You specialize in casting from the frontlines, using magic to bolster your defenses and destruction.</p>
             <h3>War Magic (1st-Level Feature)</h3>
-            <p>While unarmored, you gain +1 to your PD. Also, when you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier.</p>
+            <p>While unarmored, you gain +1 to your Evasion. Also, when you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier.</p>
           </div>
         )}
 

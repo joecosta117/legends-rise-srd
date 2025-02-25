@@ -58,7 +58,7 @@ function Cleric() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Divine</span></li>
-              <li><span><b>Defense Bonus:</b> +2 to MD</span></li>
+              <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
@@ -180,7 +180,7 @@ function Cleric() {
             <h2>Invoker</h2>
             <p>You bring down the wrath of your deity upon your foes.</p>
             <h3>Divine Wrath (1st-Level Feature)</h3>
-            <p>When you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier. You also gain resistance to a damage type appropriate to your deity.</p>
+            <p>When you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier. You also gain resistance equal to your tier to a damage type appropriate to your deity.</p>
           </div>
         )}
 

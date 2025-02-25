@@ -67,7 +67,7 @@ function Magesmith() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Arcane</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD and MD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Evasion and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> Light armor and all weapons</span></li>
@@ -212,7 +212,7 @@ function Magesmith() {
               frequency="At-will"
               keywords="Spellshape"
               trigger="You Spellcast"
-              effect="Choose a creature within 1 zone. The target’s PD increases by +1 until the start of your next turn." 
+              effect="Choose a creature within 1 zone. The target’s Evasion increases by +1 until the start of your next turn." 
             />
 
             <h3>Infuse Weapon</h3>
@@ -310,11 +310,11 @@ function Magesmith() {
 
             <h2>Aegis Upgrade</h2>
             <p style={{marginBottom: 0}}><b>Requirement:</b> tier 2</p>
-            <p>While the upgraded item is equipped, the wielder’s PD increases by +1.</p>
+            <p>While the upgraded item is equipped, the wielder’s Evasion increases by +1.</p>
 
             <h2>Aether Upgrade</h2>
             <p style={{marginBottom: 0}}><b>Requirement:</b> tier 2</p>
-            <p>While the upgraded item is equipped, the wielder’s MD increases by +1.</p>
+            <p>While the upgraded item is equipped, the wielder’s Resolve increases by +1.</p>
 
             <h2>Awareness Upgrade</h2>
             <p style={{marginBottom: 0}}><b>Requirement:</b> tier 2</p>
@@ -351,6 +351,10 @@ function Magesmith() {
             <p style={{marginBottom: 0}}><b>Requirement:</b> tier 2</p>
             <p>While the upgraded item is equipped, the wielder gains a fly speed of 1.</p>
 
+            <h2>Fortitude Upgrade</h2>
+            <p style={{marginBottom: 0}}><b>Requirement:</b> tier 2</p>
+            <p>While the upgraded item is equipped, the wielder’s Might increases by +1.</p>
+
             <h2>Gravity Upgrade</h2>
             <p style={{marginBottom: 0}}><b>Requirement:</b> tier 2</p>
             <p>While the upgraded item is equipped, the wielder gains the following ability:</p>
@@ -366,13 +370,13 @@ function Magesmith() {
 
             <h2>Keen Upgrade</h2>
             <p style={{marginBottom: 0}}><b>Requirement:</b> only on weapons</p>
-            <p>When a creature gets a critical success on a Strike with the upgraded weapon, the target takes 1 ongoing force damage per your tier.</p>
+            <p>When a creature gets a critical success on a Strike with the upgraded weapon, the target takes 1 ongoing physical damage per your tier.</p>
 
             <h2>Phase Upgrade</h2>   
             <p>While the upgraded item is equipped, the wielder has phasing.</p>
 
             <h2>Resistance Upgrade</h2>   
-            <p>Choose one damage type except for force. While the upgraded item is equipped, the wielder gains resistance to the chosen damage type.</p>
+            <p>Choose one damage type except for physical. While the upgraded item is equipped, the wielder gains resistance to the chosen damage type equal to your tier.</p>
 
             <h2>Shield Upgrade</h2>   
             <p>While the upgraded item is equipped, the wielder starts any encounter with temporary hit points equal to your proficiency bonus (scene ends).</p>

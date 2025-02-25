@@ -301,7 +301,7 @@ function FightingStyles() {
                 descriptor="You bolster your body’s might to overcome incoming harm."
                 requirement="You’re wearing heavy armor"
                 frequency="At-will"
-                trigger="You see an attack roll made against your PD"
+                trigger="You see an attack roll made against your Might"
                 effect="Triggering attack roll takes +1 misfortune" 
               />
             </div>
@@ -396,7 +396,7 @@ function FightingStyles() {
                 descriptor="As your foe attacks you, you bring up your sole weapon to expertly block."
                 requirement="You’re wielding a standard melee weapon and your other hand is empty"
                 frequency="At-will"
-                trigger="You see an attack roll made against your PD"
+                trigger="You see an attack roll made against your Evasion"
                 effect="Triggering attack roll takes +1 misfortune" 
               />
             </div>
@@ -465,8 +465,8 @@ function FightingStyles() {
                 descriptor="You bring your giant weapon crashing into the ground, causing the earth to shake around you."
                 requirement="You’re wielding a heavy melee weapon"
                 target="1d4+1 enemies within your zone"
-                defense="PD"
-                critical="Same as success, and 1 force damage per your tier"
+                defense="MGT"
+                critical="Same as success, and 1 physical damage per your tier"
                 success="Prone"
                 frequency="At-will"
               />
@@ -665,7 +665,7 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="Your light weapon knicks a foe hard enough to make them bleed."
                 frequency="At-will"
-                effect="Strike and on a success or higher, the target takes 1 ongoing force damage per your tier" 
+                effect="Strike and on a success or higher, the target takes 1 ongoing physical damage per your tier" 
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
               />
               <AbilityCard
@@ -705,7 +705,7 @@ function FightingStyles() {
                 actType="Reaction"
                 descriptor="You throw a weapon to deflect a foe’s attack."
                 frequency="At-will"
-                trigger="You see a creature within 1 zone make an attack roll against a creature's PD"
+                trigger="You see a creature within 1 zone make an attack roll against a creature's Evasion"
                 effect="Triggering attack roll takes +1 misfortune"
               />
               <AbilityCard
@@ -773,7 +773,7 @@ function FightingStyles() {
               <AbilityCard
                 name="Twin Parry"
                 actType="Reaction"
-                trigger="You see an attack roll made against your PD"
+                trigger="You see an attack roll made against your Evasion"
                 frequency="At-will"
                 descriptor="As your foe attacks you, you bring up your dual weapons to deflect."
                 effect="Triggering attack roll takes +1 misfortune" 

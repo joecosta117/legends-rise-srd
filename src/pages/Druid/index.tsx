@@ -59,7 +59,7 @@ function Druid() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Nature</span></li>
-              <li><span><b>Defense Bonus:</b> +2 to MD</span></li>
+              <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
@@ -106,7 +106,7 @@ function Druid() {
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
             <h3>Nature’s Ally</h3>
-            <p>You and allies in your zone ignore the movement penalties from difficult zones and have resistance to damage from dangerous zones.</p>
+            <p>You and allies in your zone ignore the movement penalties from difficult zones and have resistance equal to your tier to damage from dangerous zones.</p>
           </div>
         )}
 
@@ -135,8 +135,8 @@ function Druid() {
                 </tr>
                 <tr>
                   <td>Earth</td>
-                  <td>PD increases by +1 when unarmored</td>
-                  <td>force</td>
+                  <td>Evasion increases by +1 when unarmored</td>
+                  <td>physical</td>
                 </tr>
                 <tr>
                   <td>Fire</td>
@@ -151,7 +151,7 @@ function Druid() {
                 <tr>
                   <td>Water</td>
                   <td>Breath underwater and gain swim speed equal to your land speed</td>
-                  <td>force</td>
+                  <td>physical</td>
                 </tr>
               </tbody>
             </table>
@@ -199,8 +199,8 @@ function Druid() {
                   <ul>
                     <li><span>You can’t Spellcast or use any abilities you can’t do as an animal, but you can focus on abilities.</span></li>
                     <li><span>You gain temporary hit points equal to half your shaken value while in this form.</span></li>
-                    <li><span>Your PD equals your MD.</span></li>
-                    <li><span>Your natural melee weapons deal 3 force damage.</span></li>
+                    <li><span>Your Evasion and Might gain +2.</span></li>
+                    <li><span>Your natural melee weapons deal 3 physical damage.</span></li>
                     <li><span>You have traits your animal would have such as a fly speed if you shift into a large bird. Any new speeds equal the same speed as your land speed.</span></li>
                     <li><span>Once you are defeated, or you end the magic as a free action on your turn, you revert back to your normal form and the magic ends.</span></li>
                   </ul>
@@ -216,7 +216,7 @@ function Druid() {
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
             <h3>Dangerous Terrain</h3>
-            <p>When you use shape terrain, you can choose for the targeted zone to instead become a dangerous zone (damage equal to your tier). Choose the damage type from cold, fire, force, lightning, or toxic.</p>
+            <p>When you use shape terrain, you can choose for the targeted zone to instead become a dangerous zone (damage equal to your tier). Choose the damage type from cold, fire, lightning, physical, or toxic.</p>
             
             <h3>Elemental Spell</h3>
             <p>You gain the following ability:</p>
@@ -227,7 +227,7 @@ function Druid() {
               frequency="At-will"
               keywords="Spellshape"
               trigger="You Spellcast a battle spell that deals damage"
-              effect="Change the triggering spell’s damage type to cold, fire, force, lightning, or toxic." 
+              effect="Change the triggering spell’s damage type to cold, fire, lightning, physical, or toxic." 
             />
 
             <h3>Expanded Druid Magic</h3>
@@ -292,9 +292,9 @@ function Druid() {
                 <span>
                   <span>Effect depends on your call spirit animal:</span>
                   <ul>
-                    <li><span><i>Bear:</i> The triggering damage is reduced by your tier before resistances.</span></li>
+                    <li><span><i>Bear:</i> Creature gains resistance equal to your tier only against the triggering damage.</span></li>
                     <li><span><i>Owl:</i> The damaged creature can Disengage as a free action.</span></li>
-                    <li><span><i>Wolf</i> The attacker takes force damage equal to your proficiency bonus.</span></li>
+                    <li><span><i>Wolf</i> The attacker takes physical damage equal to your proficiency bonus.</span></li>
                   </ul>
                 </span>
               )}  

@@ -68,7 +68,7 @@ function Summoner() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Determined by your subclass</span></li>
-              <li><span><b>Defense Bonus:</b> +2 to MD</span></li>
+              <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
@@ -104,8 +104,9 @@ function Summoner() {
               name="Minor Summons" 
               type="Medium Creature (type determined by your subclass)" 
               hp="your proficiency bonus (PB)"
-              pd="10 + PB"
-              md="8 + PB"
+              evn="10 + PB"
+              mgt="12 + PB"
+              res="8 + PB"
               pb="PB"
               summons
               actions={[{
@@ -113,8 +114,8 @@ function Summoner() {
                 name: "Assault",
                 keywords: "melee, weapon",
                 target: "1 engaged creature",
-                defense: "PD",
-                damage: "1 force damage per tier"
+                defense: "EVN",
+                damage: "1 physical damage per tier"
               }]}
             />
 
@@ -135,8 +136,9 @@ function Summoner() {
               name="Major Summons" 
               type="Medium Creature (type determined by your subclass)" 
               hp="8 per your tier"
-              pd="10 + PB"
-              md="8 + PB"
+              evn="10 + PB"
+              mgt="12 + PB"
+              res="8 + PB"
               pb="PB"
               summons
               actions={[{
@@ -144,8 +146,8 @@ function Summoner() {
                 name: "Assault",
                 keywords: "melee, weapon",
                 target: "1 engaged creature",
-                defense: "PD",
-                damage: "PB force damage"
+                defense: "EVN",
+                damage: "PB physical damage"
               }]}
             />
 
@@ -179,11 +181,11 @@ function Summoner() {
               <li><span><b>Theme:</b> Nature</span></li>
               <li><span><b>Summons:</b> Your minor and major summons gains the following modifications:</span>
                 <ul style={{marginLeft: '10px', marginTop: '0'}}>
-                  <li><span><i>Air:</i> Resistance to lightning damage and a fly speed of 1.</span></li>
-                  <li><span><i>Earth:</i> PD increases by +2, and your major summons’ hit points increase by your proficiency bonus.</span></li>
-                  <li><span><i>Fire:</i> Resistance to fire damage and their assault damage deals fire damage. On a critical successful rend from the major summons, the target takes ongoing fire damage equal to your tier.</span></li>
-                  <li><span><i>Ice:</i> Resistance to cold damage and their assault damage deals cold damage. On a critical successful rend from the major summons, the target is seized (turn ends).</span></li>
-                  <li><span><i>Water:</i> Swim speed of 1, can breathe underwater, and resistance to fire damage.</span></li>
+                  <li><span><i>Air:</i> Resistance to lightning damage equal to your tier and a fly speed of 1.</span></li>
+                  <li><span><i>Earth:</i> Resistance to physical damage equal to your tier, and your major summons’ hit points increase by your proficiency bonus.</span></li>
+                  <li><span><i>Fire:</i> Resistance to fire damage equal to your proficiency bonus, weakness to cold damage equal to your proficiency bonus, and their assault damage deals fire damage. On a critical successful rend from the major summons, the target takes ongoing fire damage equal to your tier.</span></li>
+                  <li><span><i>Ice:</i> Resistance to cold damage equal to your proficiency bonus, and their assault damage deals cold damage. On a critical successful rend from the major summons, the target is seized (turn ends).</span></li>
+                  <li><span><i>Water:</i> Swim speed of 1, can breathe underwater, and resistance to fire damage equal to your tier but weakness to cold damage equal to your proficiency bonus.</span></li>
                 </ul>
               </li>
             </ul>
@@ -197,8 +199,8 @@ function Summoner() {
               target="1d4+1 enemies within the zone of your major summons"
               frequency="At-will"
               keywords="Magical"
-              defense="PD"
-              damage="1 force (air, earth, or water) / fire (fire) / cold (ice) damage per your tier"
+              defense="EVN"
+              damage="1 physical (air, earth, or water) / fire (fire) / cold (ice) damage per your tier"
             />
 
             <h2>Angels</h2>
@@ -210,9 +212,8 @@ function Summoner() {
               <li><span><b>Theme:</b> Divine</span></li>
               <li><span><b>Summons:</b> Your minor and major summons gains the following modifications:</span>
                 <ul style={{marginLeft: '10px', marginTop: '0'}}>
-                  <li><span>Resistance to holy damage</span></li>
+                  <li><span>Resistance to holy damage and physical damage equal to your tier</span></li>
                   <li><span>Assault damage deals holy damage</span></li>
-                  <li><span>+1 to PD and MD</span></li>
                   <li><span>Allies within major summons’ zone gain <Modifier type="f" count="1" /> to overcome rolls.</span></li>
                 </ul>
               </li>
@@ -266,7 +267,7 @@ function Summoner() {
                   <li><span>Resistance to necrotic damage</span></li>
                   <li><span>Assault damage deal necrotic damage</span></li>
                   <li><span>Night vision</span></li>
-                  <li><span>While in cover or obscured, the penalty to target the summons increases to <Modifier type="mf" count="2" /></span></li>
+                  <li><span>While having cover or concealment, the penalty to target the summons increases to <Modifier type="mf" count="2" /></span></li>
                 </ul>
               </li>
             </ul>
@@ -311,7 +312,7 @@ function Summoner() {
               frequency="At-will"
               keywords="Magical"
               target="1d4+1 enemies in the same zone as your minor or major summons"
-              defense="PD"
+              defense="EVN"
               damage="1 arcane damage per your tier (minor summons) or double the same damage (major summons)"
               effect="The attacking summons immediately dies as it explodes" 
             />
@@ -381,7 +382,7 @@ function Summoner() {
 
             <h3>Greater Angels</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> angels subclass</p>
-            <p>All of your summons gain a fly speed equal to their land speed, and the PD of your summons increases by +1.</p>
+            <p>All of your summons gain a fly speed equal to their land speed, and the Evasion of your summons increases by +1.</p>
 
             <h3>Master Summoner</h3>
             <p>You are permanently hastened, but you can only use the extra maneuver to command creatures from your summon abilities.</p>

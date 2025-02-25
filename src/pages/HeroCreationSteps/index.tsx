@@ -20,18 +20,19 @@ function HeroCreationSteps() {
           <p>Each class determines your starting equipment. For heroes trained in armor and weapons, you can consult this page (TODO) for a list of armor and weapons.</p>
 
           <h2>Step 5: Finalize Defenses</h2>
-          <p>Heroes in Legends Rise have two <b>defenses</b>. These determine how hard it is for enemies to hurt your hero. Each defense has a number associated with it that serves as the TN that attack rolls are made against.</p>
+          <p>Heroes in Legends Rise have three <b>defenses</b>. These determine how hard it is for enemies to hurt your hero. Each defense has a number associated with it that serves as the TN that attack rolls are made against.</p>
           <ul>
-            <li className="defense"><b>Physical Defense (PD):</b> Represents your hero’s protection from physical threats, such as blocking weapon attacks, overcoming poison, or dodging a dragon’s fire breath.</li>
-            <li className="defense"><b>Mystical Defense (MD):</b> Represents your hero’s protection from threats that affect your mind, soul, and very essence, such as overcoming mind control, resisting unholy corruption, or withstanding raw magical energy.</li>
+            <li className="defense"><b data-type="EVN">Evasion (EVN):</b> Represents your hero’s protection from physical threats that test their agility, such as blocking weapon attacks or dodging a dragon’s fire breath.</li>
+            <li className="defense"><b data-type="MGT">Might (MGT):</b> Represents your hero’s protection from physical threats that test their strength or hardiness, such as resisting being pushed or withstanding poison.</li>
+            <li className="defense"><b data-type="RES">Resolve (RES):</b> Represents your hero’s protection from esoteric threats that test their mind and spirit, such as overcoming mind control or resisting unholy corruption.</li>
           </ul>
           <h3>Calculating Defenses</h3>
-          <p>Your PD and MD both equal <b>8 + your proficiency bonus</b> (10 at 1st level). Your defenses are also improved in the following order:</p>
+          <p>Your defenses start at <b>8 + your proficiency bonus</b> (10 at 1st level). Your defenses are also improved in the following order:</p>
           <ol>
             <li>Your class gives you bonuses to one or two defenses.</li>
             <li>Your defenses can also be improved by wearing certain armor.</li>
           </ol>
-          <p>For example, Darian’s proficiency bonus is +2 at 1st level, so both PD and MD start at 10. Their class gives them +1 to PD, which brings their PD to 11. Darian then decides to wear light armor, which increases their PD to 12.</p>
+          <p>For example, Darian’s proficiency bonus is +2 at 1st level, so all three defenses start at 10. Their class gives them +2 to Evasion and Resolve, which brings their Evasion and Resolve to 12. Darian then decides to wear light armor, which increases their Evasion by +2 to 14.</p>
 
           <h2>Optional Step 6: Starting at Higher Level</h2>
           <p>Although it's recommended to start at 1st level, some campaigns might begin at higher levels. When starting at a higher level, look at the level progression table (TODO link) to see what features you get from higher levels. For equipment, you can still use your class’s starting equipment, but depending on the level, you might start with gold and permanent magic items:

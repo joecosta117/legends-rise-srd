@@ -23,6 +23,9 @@ import DualClass from './pages/DualClass';
 import ThemeTalents from './pages/ThemeTalents';
 import FightingStyles from './pages/FightingStyles';
 import Spells from './pages/Spells';
+import Equipment from './pages/Equipment';
+import HeroicArchetypes from './pages/HeroicArchetypes';
+import LegendaryArchetypes from './pages/LegendaryArchetypes';
 
 function App() {
   return (
@@ -52,6 +55,9 @@ function App() {
             <Route path='/theme-talents' element={<ThemeTalents />} />
             <Route path='/fighting-styles' element={<FightingStyles />} />
             <Route path='/spells' element={<Spells />} />
+            <Route path='/equipment' element={<Equipment />} />
+            <Route path='/heroic-archetypes' element={<HeroicArchetypes />} />
+            <Route path='/legendary-archetypes' element={<LegendaryArchetypes />} />
           </Routes>
         </div>
     </Router>
