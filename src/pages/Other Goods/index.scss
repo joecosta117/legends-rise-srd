@@ -1,10 +1,10 @@
 @import "../../styles/index.scss";
 
-.theme-talents {
+.equipment {
   @include page-layout();
 }
 
-.theme-talents-content {
+.equipment-content {
   @include class-page-content();
 
   &__tabs {

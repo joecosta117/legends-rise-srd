@@ -3,7 +3,6 @@ import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import HeroCreationSteps from './pages/HeroCreationSteps';
-import BkgdKnacks from './pages/BkgdKnacks';
 import Ancestries from './pages/Ancestries';
 import Classes from './pages/Classes';
 import Arcanist from './pages/Arcanist';
@@ -22,10 +21,14 @@ import Warrior from './pages/Warrior';
 import DualClass from './pages/DualClass';
 import ThemeTalents from './pages/ThemeTalents';
 import FightingStyles from './pages/FightingStyles';
-import Spells from './pages/Spells';
-import Equipment from './pages/Equipment';
+import BattleSpells from './pages/BattleSpells';
 import HeroicArchetypes from './pages/HeroicArchetypes';
 import LegendaryArchetypes from './pages/LegendaryArchetypes';
+import RitualSpells from './pages/RitualSpells';
+import Armor from './pages/Armor';
+import Weapons from './pages/Weapons';
+import Mounts from './pages/Mounts';
+import OtherGoods from './pages/Other Goods';
 
 function App() {
   return (
@@ -35,7 +38,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hero-creation-steps" element={<HeroCreationSteps />} />
-            <Route path="/background-and-knacks" element={<BkgdKnacks />} />
             <Route path="/ancestries" element={<Ancestries />} />
             <Route path="/classes" element={<Classes />} />
             <Route path="/classes/arcanist" element={<Arcanist />} />
@@ -54,10 +56,14 @@ function App() {
             <Route path='/classes/dual-class' element={<DualClass />} />
             <Route path='/theme-talents' element={<ThemeTalents />} />
             <Route path='/fighting-styles' element={<FightingStyles />} />
-            <Route path='/spells' element={<Spells />} />
-            <Route path='/equipment' element={<Equipment />} />
+            <Route path='/battle-spells' element={<BattleSpells />} />
+            <Route path='/armor' element={<Armor />} />
+            <Route path='/weapons' element={<Weapons />} />
+            <Route path='/other-goods' element={<OtherGoods />} />
+            <Route path='/mounts' element={<Mounts />} />
             <Route path='/heroic-archetypes' element={<HeroicArchetypes />} />
             <Route path='/legendary-archetypes' element={<LegendaryArchetypes />} />
+            <Route path='/ritual-spells' element={<RitualSpells />} />
           </Routes>
         </div>
     </Router>

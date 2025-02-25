@@ -1,0 +1,23 @@
+@import "../../styles/index.scss";
+
+.class-tabs {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex-flow: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid $gold;
+
+  .tab {
+    cursor: pointer;
+  }
+
+  .divider {
+    color: $gold;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,5 +1,6 @@
 import "./index.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Modifier from "../../components/Modifier";
 import Monster from "../../components/Monster";
 
@@ -8,26 +9,54 @@ function Equipment() {
   const [isArmor, setArmor] = useState(true);
   const [isWeapons, setWeapons] = useState(false);
   const [isOtherGoods, setOtherGoods] = useState(false);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const path = window.location.pathname.split("/").pop();
+    console.log('useffect being hit', path)
+    switch (path) {
+      case "armor":
+        handleArmor();
+        break;
+      case "weapons":
+        handleWeapons();
+        break;
+      case "mounts":
+        handleMounts();
+        break;
+      case "other-goods":
+        handleOtherGoods();
+        break;
+      default:
+        handleArmor(); // Default to armor if no match
+        break;
+    }
+  }, [isMounts, isArmor, isWeapons, isOtherGoods]);
 
   function handleMounts() {
+    navigate("/mounts");
     setMounts(true);
     setArmor(false);
     setWeapons(false);
     setOtherGoods(false);
   }
   function handleArmor() {
+    console.log('inside handleArmor')
     setMounts(false);
     setArmor(true);
     setWeapons(false);
     setOtherGoods(false);
+    navigate("/armor");
   }
   function handleWeapons() {
+    navigate("/weapons");
     setMounts(false);
     setArmor(false);
     setWeapons(true);
     setOtherGoods(false);
   }
   function handleOtherGoods() {
+    navigate("/other-goods");
     setMounts(false);
     setArmor(false);
     setWeapons(false);

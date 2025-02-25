@@ -1,10 +1,10 @@
 @import "../../styles/index.scss";
 
-.theme-talents {
+.spells {
   @include page-layout();
 }
 
-.theme-talents-content {
+.spells-content {
   @include class-page-content();
 
   &__tabs {
@@ -35,3 +35,4 @@
     }
   }
 }
+
