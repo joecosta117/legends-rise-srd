@@ -52,7 +52,7 @@ function Swordmage() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Arcane</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD and MD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Evasion and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> Light armor and all weapons</span></li>
@@ -115,7 +115,7 @@ function Swordmage() {
             <h2>Elemental Knight</h2>
             <p>You manipulate destructive elemental magic from your weapon to wreak havoc.</p>
             <h3>Elemental Enspell (1st-Level Feature)</h3>
-            <p>You siphon energy from a chosen elemental realm to empower your weapon. Choose one damage type from cold, fire, force, or lightning. When you use enspell weapon, your next Strike deals 1 additional damage per your tier of the chosen damage type.</p>
+            <p>You siphon energy from a chosen elemental realm to empower your weapon. Choose one damage type from cold, fire, lightning, or physical. When you use enspell weapon, your next Strike deals 1 additional damage per your tier of the chosen damage type.</p>
             
             <h2>Aegis</h2>
             <p>You focus on protecting others from harm by channeling abjuration magic through your weapon.</p>

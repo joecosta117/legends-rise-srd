@@ -67,7 +67,7 @@ function Bard() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Cunning</span></li>
-              <li><span><b>Defense Bonus:</b> +2 to MD</span></li>
+              <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
@@ -320,8 +320,8 @@ function Bard() {
                 frequency="At-will"
                 keywords="Magical"
                 target="1d4+1 enemies within your zone"
-                defense="PD" 
-                damage="1 force damage per your tier"
+                defense="MGT" 
+                damage="1 physical damage per your tier"
               />
             </div>           
           </div>

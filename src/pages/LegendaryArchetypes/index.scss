@@ -1,0 +1,89 @@
+@import "../../styles/index.scss";
+
+.archetypes {
+  @include page-layout();
+}
+
+.archetypes-content {
+  @include page-content();
+
+  &__tabs {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-flow: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid $gold;
+    width: 90%;
+    justify-content: center;
+  
+    &__tab {
+      cursor: pointer;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  
+    &__divider {
+      color: $gold;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-color: $gold;
+    border-width: 2px;
+
+    @include mq(s) {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    @include mq(m) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    @include mq(xl) {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+  }
+
+  .list {
+    padding-bottom: 10px;
+
+    @include mq(s) {
+      padding-bottom: 20px;
+    }
+
+    li {
+      list-style-type: none;
+
+      span {
+        padding-left: 8px;
+      }
+    }
+  }
+
+  ul {
+    li {
+      margin-bottom: 0;
+    }
+  }
+
+  h5 {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+}

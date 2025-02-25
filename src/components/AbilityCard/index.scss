@@ -94,11 +94,14 @@
   }
 
   &__line {
-    & span[data-type="PD"] {
+    & span[data-type="MGT"] {
       color: $physicalred;
     }
-    & span[data-type="MD"] {
+    & span[data-type="RES"] {
       color: $mysticalblue;
+    }
+    & span[data-type="EVN"] {
+      color: $evasiongold;
     }
   }
 

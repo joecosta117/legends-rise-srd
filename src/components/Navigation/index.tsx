@@ -133,10 +133,31 @@ const Navigation = () => {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/equipment"
+                onClick={toggleMobileNav}
+              >
+                Equipment
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/fighting-styles"
                 onClick={toggleMobileNav}
               >
                 Fighting Styles
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/heroic-archetypes"
+                onClick={toggleMobileNav}
+              >
+                Heroic Archetypes
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/legendary-archetypes"
+                onClick={toggleMobileNav}
+              >
+                Legendary Archetypes
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"

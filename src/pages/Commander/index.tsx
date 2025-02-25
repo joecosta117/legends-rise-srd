@@ -52,7 +52,7 @@ function Commander() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Martial</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Might and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> All armor and weapons</span></li>
@@ -206,7 +206,7 @@ function Commander() {
 
             <h3>Terrifying Attack</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> warlord subclass</p>
-            <p>When you use inspiring attack, make an attack roll against the MD of each enemy within 1 zone. On a success, a target is hindered (turn ends), or for the scene (scene ends) on a critical success.</p>
+            <p>When you use inspiring attack, make an attack roll against the Resolve of each enemy within 1 zone. On a success, a target is hindered (turn ends), or for the scene (scene ends) on a critical success.</p>
 
             <h3>Twin Command</h3>
             <p>When you use an action ability from this class that lets you target an ally, such as command attack, you can choose a second ally.</p>

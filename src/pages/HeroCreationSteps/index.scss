@@ -11,6 +11,16 @@
     list-style-type: none;
     text-align: left;
     margin-bottom: 1em;
+
+    b[data-type="EVN"] {
+      color: $evasiongold;
+    }
+    b[data-type="MGT"] {
+      color: $physicalred;
+    }
+    b[data-type="RES"] {
+      color: $mysticalblue;
+    } 
   }
 
   .higher-level {

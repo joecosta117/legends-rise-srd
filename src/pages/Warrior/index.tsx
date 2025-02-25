@@ -51,7 +51,7 @@ function Warrior() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Martial</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Evasion and Might</span></li>
               <li><span><b>Starting Hit Points:</b> 12</span></li>
               <li><span><b>Recoveries:</b> 6</span></li>
               <li><span><b>Training:</b> All armor and weapons</span></li>
@@ -129,7 +129,7 @@ function Warrior() {
             <h2>Juggernaut</h2>
             <p>You rely on your fury and focus in battle to push yourself beyond mortal limits.</p>
             <h3>Unstoppable (1st-Level Feature)</h3>
-            <p>You gain <Modifier type="f" count="1" /> to overcome rolls, and attack rolls against you take <Modifier type="mf" count="1" />. While unarmored, you gain +1 to your PD.</p>
+            <p>You gain <Modifier type="f" count="1" /> to overcome rolls, and your defenses all increase by +1.</p>
 
             <h2>Slayer</h2>
             <p>You focus your fighting tactics on pure offense, hoping to finish off foes as quickly as possible.</p>

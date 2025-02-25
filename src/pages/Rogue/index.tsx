@@ -52,7 +52,7 @@ function Rogue() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Martial</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Evasion and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> Light armor, standard melee weapons, and all ranged weapons</span></li>
@@ -82,7 +82,7 @@ function Rogue() {
             />
 
             <h3>Cunning Strike</h3>
-            <p>You know how to best hurt an off guarded foe. When you Strike with at least one <Modifier type="f" />, you deal additional force damage equal to your tier. You don’t gain this additional damage when using a heavy melee weapon or wearing heavy armor.</p>
+            <p>You know how to best hurt an off guarded foe. When you Strike with at least one <Modifier type="f" />, you deal additional physical damage equal to your tier. You don’t gain this additional damage when using a heavy melee weapon or wearing heavy armor.</p>
 
             <h3>Opportunist</h3>
             <p>You gain the following ability:</p>
@@ -108,8 +108,8 @@ function Rogue() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Evasion</h3>
-            <p>You ignore any effects from a partially successful attack roll against your PD.</p>
+            <h3>Agile</h3>
+            <p>You ignore any effects from a failed attack roll against your Evasion.</p>
           </div>
         )}
 
@@ -160,11 +160,8 @@ function Rogue() {
               actType="Ability"
               descriptor="With a clever trick, you open your foe up for a deadly attack."
               frequency="At-will"
-              effect="Strike, but make your attack roll against the target’s MD." 
-            />
-
-            <h3>Finisher</h3>
-            <p>You gain <Modifier type="f" count="1" /> to Strike a shaken target.</p>
+              effect="Strike, but make your attack roll against the target’s Resolve." 
+            /> 
 
             <h3>Lightning Reflexes</h3>
             <p>You gain the following ability:</p>
@@ -172,10 +169,20 @@ function Rogue() {
               name="Lightning Reflexes"
               actType="Reaction"
               descriptor="You quickly dodge to avoid harm."
-              trigger="When you see an enemy make an attack roll against your PD"
+              trigger="When you see an enemy make an attack roll against your Evasion"
               frequency="At-will"
               effect="Triggering attack roll takes +1 misfortune" 
             />
+
+            <h3>Slip the Knife</h3>
+            <p>You gain the following ability:</p>
+            <AbilityCard
+              name="Slip the Knife"
+              actType="Ability"
+              descriptor="You strike the gap between a foe's armor."
+              frequency="At-will"
+              effect="Strike, but make your attack roll against the target’s Might." 
+            /> 
             
             <h2>Tier 2 Class Talents</h2>
             <h3>Greater Opportunist</h3>
@@ -197,7 +204,7 @@ function Rogue() {
             <p>When you use shadow leap, you become invisible (turn starts) or until you use a hostile act.</p> 
 
             <h3>Slippery Mind</h3>
-            <p>You ignore any effects from a partially successful attack roll against your MD.</p>
+            <p>You ignore any effects from a failed attack roll against your Resolve.</p>
 
             <h3>Start with Style</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> swashbuckler subclass</p>

@@ -54,7 +54,7 @@ function Ranger() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Martial</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Evasion and Might</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
               <li><span><b>Recoveries:</b> 5</span></li>
               <li><span><b>Training:</b> Light armor and all weapons</span></li>
@@ -118,13 +118,13 @@ function Ranger() {
             <h3>Favored Environment</h3>
             <p>You have learned how to adapt to certain environments. Choose one of the following as your favored environment. You gain <Modifier type='f' count='1' /> on skill rolls in your favored environment and another benefit depending on your chosen environment.</p>
             <ul className="no-spacing">
-              <li><span><b>Artic:</b> You gain resistance to cold damage</span></li>
+              <li><span><b>Artic:</b> You gain resistance to cold damage equal to your tier. If you already have this resistance, use your proficiency bonus instead.</span></li>
               <li><span><b>Coastal:</b> You gain a swim speed of 1.</span></li>
-              <li><span><b>Desert:</b> You gain resistance to fire damage.</span></li>
+              <li><span><b>Desert:</b> You gain resistance to fire damage equal to your tier. If you already have this resistance, use your proficiency bonus instead.</span></li>
               <li><span><b>Forest:</b> You ignore the movement penalties from difficult zones.</span></li>
               <li><span><b>Mountain:</b> You gain a climb speed of 1.</span></li>
               <li><span><b>Subterranean:</b> You gain night vision, or blind vision of 1 zone if you already have night vision.</span></li>
-              <li><span><b>Swamp:</b> You gain resistance to toxic damage.</span></li>
+              <li><span><b>Swamp:</b> You gain resistance to toxic damage equal to your tier. If you already have this resistance, use your proficiency bonus instead.</span></li>
             </ul>
           </div>
         )}
@@ -147,8 +147,9 @@ function Ranger() {
               name="Primal Beast" 
               type="Medium Animal" 
               hp="triple your proficiency bonus (PB) or double your PB (Air only)"
-              pd="10 + PB"
-              md="8 + PB"
+              evn="10 + PB"
+              mgt="12 + PB"
+              res="8 + PB"
               pb="PB"
               speeds="fly 1 (Air only), swim 1 (Water only)"
               traits={[{name: "Aquatic (Water only)", description: "The primal beast can breath only underwater."}]}
@@ -158,8 +159,8 @@ function Ranger() {
                 name: "Slam",
                 keywords: "melee, weapon",
                 target: "1 engaged creature",
-                defense: "PD",
-                damage: "PB force damage",
+                defense: "EVN",
+                damage: "PB physical damage",
                 success: "Prone (Land Only)"
               }]}
             />
@@ -251,7 +252,7 @@ function Ranger() {
             <p>When you mark prey, choose two creatures.</p>
 
             <h3>Predator Sight</h3>
-            <p>You are supernaturally aware of the target of your mark prey. You always know their location, even if they’re hidden, obscured, or undiscovered.</p>
+            <p>You are supernaturally aware of the target of your mark prey. You always know their location, even if they’re hidden, have concealment, or undiscovered.</p>
 
             <h3>Undying Companion</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> beast companion subclass</p>

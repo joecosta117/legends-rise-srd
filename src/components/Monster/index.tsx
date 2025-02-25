@@ -8,13 +8,15 @@ interface MonsterProps {
   name: string;
   summons?: boolean;
   hp: string;
-  pd: string;
-  md: string;
+  evn: string;
+  mgt: string;
+  res: string;
   pb: string;
   vision?: string;
   type: string;
   speeds?: string;
   resistances?: string;
+  weaknesses?: string;
   traits?: Traits[];
   actions: Abilities[];
   maneuvers?: Abilities[];
@@ -37,6 +39,7 @@ interface Abilities {
   effect?: string;
   frequency?: string;
   trigger?: string;
+  partialOrLower?: string;
 }
 
 interface Traits {
@@ -44,7 +47,7 @@ interface Traits {
   description: string;
 }
 
-const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp, pd, md, pb, type, speeds, resistances, traits, actions, maneuvers, reactions }) => {
+const Monster: React.FC<MonsterProps> = ({ name, weaknesses, accordion, vision, summons, hp, evn, mgt, res, pb, type, speeds, resistances, traits, actions, maneuvers, reactions }) => {
   const transformEffect = (effect: string) => {
     const fortuneRegex = /(\+?\d*)\s*(fortune)/gi;
     const misfortuneRegex = /(\+?\d*)\s*(misfortune)/gi;
@@ -61,6 +64,8 @@ const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp,
       }
     });
   };
+
+  const shaken = Math.floor(+hp / 2)
   
   return (
     <div className="monster" data-accordion={accordion}>
@@ -70,14 +75,16 @@ const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp,
       {summons ? 
         <div className="basics">
           <p><b>HP</b> {hp}</p>
-          <p><b>PD</b> {pd}  <b>|</b>  <b>MD</b> {md}  <b>|</b>  <b>PB</b> +{pb}</p>
+          <p><b>EVN</b> {evn}  <b>|</b>  <b>MGT</b> {mgt}  <b>|</b>  <b>RES</b> {res}  <b>|</b>  <b>PB</b> +{pb}</p>
         </div> 
         :
         <div className="basics">
-          <p><b>HP</b> {hp}  <b>|</b>  <b>PD</b> {pd}  <b>|</b>  <b>MD</b> {md}  <b>|</b>  <b>PB</b> +{pb}</p>
+          <p><b>HP</b> {hp} ({shaken})  <b>|</b>  <b>EVN</b> {evn}  <b>|</b>  <b>MGT</b> {mgt}  <b>|</b>  <b>RES</b> {res}  <b>|</b>  <b>PB</b> +{pb}</p>
         </div> 
       }
-      {resistances && <p><b>Resistances</b> {resistances}</p>}
+      {(resistances && weaknesses) && <p><b>Resistances</b> {resistances}; <b>Weaknesses</b> {weaknesses}</p>}
+      {(resistances && !weaknesses) && <p><b>Resistances</b> {resistances}</p>}
+      {(!resistances && weaknesses) && <p><b>Weaknesses</b> {weaknesses}</p>}
       {speeds && <p><b>Speeds</b> {speeds}</p>}
       {vision && <p><b>Vision</b> {vision}</p>}
       {traits && traits.length > 0 && (
@@ -105,6 +112,7 @@ const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp,
                   {action.critical && <li><span><i>Critical:</i> {action.critical}</span></li>}
                   {action.success && <li><span><i>Success:</i> {action.success}</span></li>}
                   {action.partial && <li><span><i>Partial:</i> {action.partial}</span></li>}
+                  {action.partialOrLower && <li><span><i>Partial or Lower:</i> {action.partialOrLower}</span></li>}
                   {action.failure && <li><span><i>Failure:</i> {action.failure}</span></li>}
                 </ul>
                 {action.effect && (typeof action.effect === 'string' ? <p className="ability__line"><i>Effect:</i> {transformEffect(action.effect)}</p> : <p className="ability__line"><i>Effect:</i> {action.effect}</p>)}
@@ -127,6 +135,7 @@ const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp,
                   {maneuver.critical && <li><span><i>Critical:</i> {maneuver.critical}</span></li>}
                   {maneuver.success && <li><span><i>Success:</i> {maneuver.success}</span></li>}
                   {maneuver.partial && <li><span><i>Partial:</i> {maneuver.partial}</span></li>}
+                  {maneuver.partialOrLower && <li><span><i>Partial or Lower:</i> {maneuver.partialOrLower}</span></li>}
                   {maneuver.failure && <li><span><i>Failure:</i> {maneuver.failure}</span></li>}
                 </ul>
                 {maneuver.effect && (typeof maneuver.effect === 'string' ? <p className="ability__line"><i>Effect:</i> {maneuver.effect}</p> : <p className="ability__line"><i>Effect:</i> {transformEffect(maneuver.effect)}</p>)}
@@ -150,6 +159,7 @@ const Monster: React.FC<MonsterProps> = ({ name, accordion, vision, summons, hp,
                   {reaction.critical && <li><span><i>Critical:</i> {reaction.critical}</span></li>}
                   {reaction.success && <li><span><i>Success:</i> {reaction.success}</span></li>}
                   {reaction.partial && <li><span><i>Partial:</i> {reaction.partial}</span></li>}
+                  {reaction.partialOrLower && <li><span><i>Partial or Lower:</i> {reaction.partialOrLower}</span></li>}
                   {reaction.failure && <li><span><i>Failure:</i> {reaction.failure}</span></li>}
                 </ul>
                 {reaction.effect && (typeof reaction.effect === 'string' ? <p className="ability__line"><i>Effect:</i> {reaction.effect}</p> : <p className="ability__line"><i>Effect:</i> {transformEffect(reaction.effect)}</p>)}

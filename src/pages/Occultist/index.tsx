@@ -60,7 +60,7 @@ function Occultist() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Arcane</span></li>
-              <li><span><b>Defense Bonus:</b> +2 to MD</span></li>
+              <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
               <li><span><b>Recoveries:</b> 4</span></li>
               <li><span><b>Training:</b> None</span></li>
@@ -147,10 +147,12 @@ function Occultist() {
               name="Empowered Familiar" 
               type="Medium Aberration, Fiend, or Undead (same as your familiar)" 
               hp="triple your proficiency bonus (PB)"
-              pd="10 + PB"
-              md="8 + PB"
+              evn="10 + PB"
+              mgt="12 + PB"
+              res="8 + PB"
               pb="PB"
-              resistances="unholy (fiend only), necrotic (undead only), psychic (aberration only)"
+              resistances="unholy tier (fiend only), necrotic tier (undead only), psychic tier (aberration only)"
+              weaknesses="holy PB (fiend and undead only)"
               traits={[{name: "Hex Challenger", description: "The target of your hex is taunted by your familiar."}]}
               summons
               actions={[{
@@ -158,8 +160,8 @@ function Occultist() {
                 name: "Rend",
                 keywords: "melee, weapon",
                 target: "1 engaged creature",
-                defense: "PD",
-                damage: "PB force damage"
+                defense: "EVN",
+                damage: "PB physical damage"
               }]}
             />
 
@@ -238,7 +240,7 @@ function Occultist() {
             />
 
             <h3>Burning Hex</h3>
-            <p>The target of your hex takes necrotic, mental, or unholy (your choice) ongoing damage equal to your tier. This ongoing damage only ends when the creature is no longer the target of your hex.</p>
+            <p>The target of your hex takes necrotic, psychic, or unholy (your choice) ongoing damage equal to your tier. This ongoing damage only ends when the creature is no longer the target of your hex.</p>
 
             <h3>Defensive Sacrifice</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> binder subclass</p>

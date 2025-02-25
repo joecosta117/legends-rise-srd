@@ -18,13 +18,15 @@ interface AbilityCardProps {
   critical?: string | JSX.element;
   success?: string | JSX.element;
   partial?: string | JSX.element;
+  partialOrLower?: string;
   failure?: string | JSX.element;
   cast?: string;
   effect?: string | JSX.element;
   requirement?: string;
+  effectTiers?: boolean;
 }
 
-const AbilityCard: React.FC<AbilityCardProps> = ({ name, cast, accordion, actType, descriptor, frequency, keywords, duration, trigger, target, damage, defense, critical, success, partial, failure, effect, requirement }) => {
+const AbilityCard: React.FC<AbilityCardProps> = ({ name, effectTiers, partialOrLower, cast, accordion, actType, descriptor, frequency, keywords, duration, trigger, target, damage, defense, critical, success, partial, failure, effect, requirement }) => {
   const topLine = `${frequency} ${keywords ? `| ${keywords}` : ''}`;
   
   const transformEffect = (effect: string) => {
@@ -59,15 +61,23 @@ const AbilityCard: React.FC<AbilityCardProps> = ({ name, cast, accordion, actTyp
         {target && <p className="ability__line"><b>Target:</b> {target}</p>}
         {duration && <p className="ability__line"><b>Duration:</b> {duration}</p>}
         {defense && <p className="ability__line"><b>Attack vs <span data-type={defense}>{defense}</span>{damage ? <span>:</span> : ''}</b> {damage}</p>}
-        {!cast && <div className='ability__degrees-of-success'>
+        {(!cast && !effectTiers) && <div className='ability__degrees-of-success'>
           {critical && <p><b>• Critical:</b> {transformEffect(critical)}</p>}
           {success && <p><b>• Success:</b> {transformEffect(success)}</p>}
           {partial && <p><b>• Partial:</b> {transformEffect(partial)}</p>}
+          {partialOrLower && <p><b>• Partial or Lower:</b> {transformEffect(partialOrLower)}</p>}
           {failure && <p><b>• Failure:</b> {transformEffect(failure)}</p>}
         </div>}
         {effect && (typeof effect === 'string' ? 
         <p className="ability__line"><b>Effect:</b> {transformEffect(effect)}</p> 
         : <p className="ability__line"><b>Effect:</b> {effect}</p>)}
+        {(!cast && effectTiers) && <div className='ability__degrees-of-success'>
+          {critical && <p><b>• Critical:</b> {transformEffect(critical)}</p>}
+          {success && <p><b>• Success:</b> {transformEffect(success)}</p>}
+          {partial && <p><b>• Partial:</b> {transformEffect(partial)}</p>}
+          {partialOrLower && <p><b>• Partial or Lower:</b> {transformEffect(partialOrLower)}</p>}
+          {failure && <p><b>• Failure:</b> {transformEffect(failure)}</p>}
+        </div>}
         {cast && (
           <div>
             <p><b>Ritual Skill Roll</b></p>

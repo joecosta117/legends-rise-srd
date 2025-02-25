@@ -52,7 +52,7 @@ function Paladin() {
             <h2>Core Features</h2>
             <ul>
               <li><span><b>Theme:</b> Martial</span></li>
-              <li><span><b>Defense Bonus:</b> +1 to PD and MD</span></li>
+              <li><span><b>Defense Bonus:</b> +2 to Evasion, Might, and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 12</span></li>
               <li><span><b>Recoveries:</b> 7</span></li>
               <li><span><b>Training:</b> All armor and weapons</span></li>
@@ -117,7 +117,7 @@ function Paladin() {
             <h3>Zealous Blessing</h3>
             <p>Choose one of the following blessings:</p>
             <ul>
-              <li><span><b>Aegis:</b> Increase your PD and MD both by +1.</span></li>
+              <li><span><b>Aegis:</b> Increase all your defenses by +1.</span></li>
               <li><span><b>Wrath:</b> When you Strike, you deal additional holy or unholy (your choice) damage equal to your tier.</span></li>
             </ul>
             <p>After a short rest, you can change your blessing.</p>
