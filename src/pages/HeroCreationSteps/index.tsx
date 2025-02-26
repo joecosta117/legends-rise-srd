@@ -129,12 +129,12 @@ function HeroCreationSteps() {
         <p>For example, Darian’s proficiency bonus is +2 at 1st level, so all three defenses start at 10. Their class gives them +2 to Evasion and Resolve, which brings their Evasion and Resolve to 12. Darian then decides to wear light armor, which increases their Evasion by +2 to 14.</p>
 
         <h2>Optional Step 6: Starting at Higher Level</h2>
-        <p>Although it's recommended to start at 1st level, some campaigns might begin at higher levels. When starting at a higher level, look at the level progression table (TODO link) to see what features you get from higher levels. For equipment, you can still use your class’s starting equipment, but depending on the level, you might start with gold and permanent magic items:
+        <p>Although it's recommended to start at 1st level, some campaigns might begin at higher levels. When starting at a higher level, look at the level progression table (TODO link) to see what features you get from higher levels. For equipment, you can still use your class’s starting equipment, but depending on the level, you might start with gold and relics:
         </p>
         <ul>
           <li className="higher-level"><b>Levels 2-4:</b> 1 gold</li>
-          <li className="higher-level"><b>Levels 5-7:</b> 3 gold, one permanent tier 1 magic item</li>
-          <li className="higher-level"><b>Levels 8-10:</b> 9 gold, one permanent tier 1 magic item, and one permament tier 2 magic item</li>
+          <li className="higher-level"><b>Levels 5-7:</b> 3 gold, one permanent tier 1 relic</li>
+          <li className="higher-level"><b>Levels 8-10:</b> 9 gold, one permanent tier 1 relic, and one permament tier 2 relic</li>
         </ul>
       </div>
     </div>

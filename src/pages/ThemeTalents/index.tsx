@@ -69,7 +69,7 @@ function ThemeTalents() {
   const arcaneT1Talents = [
     {
       title: 'Artificer',
-      content: "You gain +1 fortune to skill rolls to identify, craft, or upgrade magic items, as well as transfer magic between items."
+      content: "You gain +1 fortune to skill rolls to identify, craft, or upgrade relics, as well as transfer magic between items."
     },
     {
       title: 'Familiar',

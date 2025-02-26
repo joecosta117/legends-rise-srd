@@ -29,6 +29,8 @@ import Armor from './pages/Armor';
 import Weapons from './pages/Weapons';
 import Mounts from './pages/Mounts';
 import OtherGoods from './pages/Other Goods';
+import Consumables from './pages/Consumables';
+import Relics from './pages/Relics';
 
 function App() {
   return (
@@ -64,6 +66,8 @@ function App() {
             <Route path='/heroic-archetypes' element={<HeroicArchetypes />} />
             <Route path='/legendary-archetypes' element={<LegendaryArchetypes />} />
             <Route path='/ritual-spells' element={<RitualSpells />} />
+            <Route path='/consumables' element={<Consumables />} />
+            <Route path='/relics' element={<Relics />} />
           </Routes>
         </div>
     </Router>
