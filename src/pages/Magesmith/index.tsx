@@ -108,7 +108,7 @@ function Magesmith() {
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
             <h3>Expert Relic User</h3>
-            <p>The number of permanent magic items you can align to increases to 1 plus your tier.</p>
+            <p>The number of relics you can align to increases to 1 plus your tier.</p>
           </div>
         )}
 
@@ -288,7 +288,7 @@ function Magesmith() {
             <p>When you command your arcane turret, you can choose two actions.</p>
 
             <h3>Legendary Relic User</h3>
-            <p>The number of permanent magic items you can align to increases to your proficiency bonus.</p>
+            <p>The number of relics you can align to increases to your proficiency bonus.</p>
 
             <h3>Master Upgrader</h3>
             <p>The maximum number of upgrades you can have equals your proficiency bonus.</p>

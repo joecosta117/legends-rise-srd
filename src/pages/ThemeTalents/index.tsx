@@ -5,6 +5,7 @@ import Modifier from "../../components/Modifier";
 import Dropdown from "../../components/Dropdown";
 
 function ThemeTalents() {
+  const [isRules, setRules] = useState(true);
   const [isArcane, setArcane] = useState(false);
   const [isCunning, setCunning] = useState(false);
   const [isDivine, setDivine] = useState(false);
@@ -17,6 +18,7 @@ function ThemeTalents() {
     setDivine(false);
     setMartial(false);
     setNature(false);
+    setRules(false);
   };
   
   const handleCunning = () => {
@@ -25,10 +27,12 @@ function ThemeTalents() {
     setDivine(false);
     setMartial(false);
     setNature(false);
+    setRules(false);
   };
 
   const handleDivine = () => {
     setArcane(false);
+    setRules(false);
     setCunning(false);
     setDivine(true);
     setMartial(false);
@@ -38,6 +42,7 @@ function ThemeTalents() {
   const handleMartial = () => {
     setArcane(false);
     setCunning(false);
+    setRules(false);
     setDivine(false);
     setMartial(true);
     setNature(false);
@@ -46,15 +51,25 @@ function ThemeTalents() {
   const handleNature = () => {
     setArcane(false);
     setCunning(false);
+    setRules(false);
     setDivine(false);
     setMartial(false);
     setNature(true);
   };
 
+  const handleOverview = () => {
+    setArcane(false);
+    setCunning(false);
+    setRules(true);
+    setDivine(false);
+    setMartial(false);
+    setNature(false);
+  };
+
   const arcaneT1Talents = [
     {
       title: 'Artificer',
-      content: "You gain +1 fortune to skill rolls to identify, craft, or upgrade magic items, as well as transfer magic between items."
+      content: "You gain +1 fortune to skill rolls to identify, craft, or upgrade relics, as well as transfer magic between items."
     },
     {
       title: 'Familiar',
@@ -322,43 +337,61 @@ function ThemeTalents() {
     }
   ]
 
-  const dropdownItems = [
-    { label: "Arcane", onClick: handleArcane },
-    { label: "Cunning", onClick: handleCunning },
-    { label: "Divine", onClick: handleDivine },
-    { label: "Martial", onClick: handleMartial },
-    { label: "Nature", onClick: handleNature }
-  ]
+  // const dropdownItems = [
+  //   { label: "Arcane", onClick: handleArcane },
+  //   { label: "Cunning", onClick: handleCunning },
+  //   { label: "Divine", onClick: handleDivine },
+  //   { label: "Martial", onClick: handleMartial },
+  //   { label: "Nature", onClick: handleNature }
+  // ]
 
   return (
     <div className="theme-talents">
       <div className="theme-talents-content">
-        <h1>Themes</h1>
-        <p>Each class is categorized by Themes, which determines what theme talents you can choose at later levels. There are five themes:</p>
-        <ul>
-          <li><span><b>Arcane:</b> You use arcane magic to manifest creative solutions.</span></li>
-          <li><span><b>Cunning:</b> You excel at subterfuge and employ cunning.</span></li>
-          <li><span><b>Divine:</b> You pray to your faith for aid to handle challenges.</span></li>
-          <li><span><b>Martial:</b> You rely on your physical prowess and presence outside of fighting.</span></li>
-          <li><span><b>Nature:</b> You are an expert in navigating beyond civilization.</span></li>
-        </ul>
-        <p>At 2nd, 4th, 6th, and 9th level, choose a theme talent from your class’s theme. You can only pick a theme talent of your tier or lower.</p>
+        <div className="theme-talents-content__tabs">
+          <div className="theme-talents-content__tabs__tab" onClick={handleOverview}><p>Overview</p></div>
+          <div className="theme-talents-content__tabs__divider">|</div>
+          <div className="theme-talents-content__tabs__tab" onClick={handleArcane}><p>Arcane</p></div>
+          <div className="theme-talents-content__tabs__divider">|</div>
+          <div className="theme-talents-content__tabs__tab" onClick={handleCunning}><p>Cunning</p></div>
+          <div className="theme-talents-content__tabs__divider">|</div>
+          <div className="theme-talents-content__tabs__tab" onClick={handleDivine}><p>Divine</p></div>
+          <div className="theme-talents-content__tabs__divider">|</div>
+          <div className="theme-talents-content__tabs__tab" onClick={handleMartial}><p>Martial</p></div>
+          <div className="theme-talents-content__tabs__divider">|</div>
+          <div className="theme-talents-content__tabs__tab" onClick={handleNature}><p>Nature</p></div>
+        </div>
 
-        <Dropdown items={dropdownItems} startLabel="Select a theme" />
+        {isRules && (
+          <div>
+            <h1>Themes</h1>
+            <p>Each class is categorized by Themes, which determines what theme talents you can choose at later levels. There are five themes:</p>
+            <ul>
+              <li><span><b>Arcane:</b> You use arcane magic to manifest creative solutions.</span></li>
+              <li><span><b>Cunning:</b> You excel at subterfuge and employ cunning.</span></li>
+              <li><span><b>Divine:</b> You pray to your faith for aid to handle challenges.</span></li>
+              <li><span><b>Martial:</b> You rely on your physical prowess and presence outside of fighting.</span></li>
+              <li><span><b>Nature:</b> You are an expert in navigating beyond civilization.</span></li>
+            </ul>
+            <p>At 2nd, 4th, 6th, and 9th level, choose a theme talent from your class’s theme. You can only pick a theme talent of your tier or lower.</p>
+          </div>
+        )}
+
+        {/* <Dropdown items={dropdownItems} startLabel="Select a theme" /> */}
 
         {isArcane && (
         <div>
-            <h2>Arcane Theme</h2>
+            <h1>Arcane Theme</h1>
             <p>You see challenges as puzzles to solve through clever use of magic, usually arcane in nature.</p>
-            <h3>Tier 1 Theme Talents</h3>
+            <h2>Tier 1 Theme Talents</h2>
             {arcaneT1Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 2 Theme Talents</h3>
+            <h2>Tier 2 Theme Talents</h2>
             {arcaneT2Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 3 Theme Talents</h3>
+            <h2>Tier 3 Theme Talents</h2>
             {arcaneT3Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
@@ -366,17 +399,17 @@ function ThemeTalents() {
         )}
         {isCunning && (
           <div>
-            <h2>Cunning Theme</h2>
+            <h1>Cunning Theme</h1>
             <p>With clever tricks and expert knowledge, you navigate challenges out of combat.</p>
-            <h3>Tier 1 Theme Talents</h3>
+            <h2>Tier 1 Theme Talents</h2>
             {cunningT1Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 2 Theme Talents</h3>
+            <h2>Tier 2 Theme Talents</h2>
             {cunningT2Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 3 Theme Talents</h3>
+            <h2>Tier 3 Theme Talents</h2>
             {cunningT3Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
@@ -384,17 +417,17 @@ function ThemeTalents() {
         )}
         {isDivine && (
           <div>
-            <h2>Divine Theme</h2>
+            <h1>Divine Theme</h1>
             <p>You resolve challenges through prayer or magic you channel from a higher power, such as a deity or the heavens.</p>
-            <h3>Tier 1 Theme Talents</h3>
+            <h2>Tier 1 Theme Talents</h2>
             {divineT1Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 2 Theme Talents</h3>
+            <h2>Tier 2 Theme Talents</h2>
             {divineT2Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 3 Theme Talents</h3>
+            <h2>Tier 3 Theme Talents</h2>
             {divineT3Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
@@ -402,17 +435,17 @@ function ThemeTalents() {
         )}
         {isMartial && (
           <div>
-            <h2>Martial Theme</h2>
+            <h1>Martial Theme</h1>
             <p>You rely on your warrior training as well as your physical prowess to surpass any challenge you face.</p>
-            <h3>Tier 1 Theme Talents</h3>
+            <h2>Tier 1 Theme Talents</h2>
             {martialT1Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 2 Theme Talents</h3>
+            <h2>Tier 2 Theme Talents</h2>
             {martialT2Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 3 Theme Talents</h3>
+            <h2>Tier 3 Theme Talents</h2>
             {martialT3Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
@@ -420,17 +453,17 @@ function ThemeTalents() {
         )}
         {isNature && (
           <div>
-            <h2>Nature Theme</h2>
+            <h1>Nature Theme</h1>
             <p>You feel at home in the wilds. You understand how to best navigate the dangers of nature, as well as tap into ancient, primal magic.</p>
-            <h3>Tier 1 Theme Talents</h3>
+            <h2>Tier 1 Theme Talents</h2>
             {natureT1Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 2 Theme Talents</h3>
+            <h2>Tier 2 Theme Talents</h2>
             {natureT2Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}
-            <h3>Tier 3 Theme Talents</h3>
+            <h2>Tier 3 Theme Talents</h2>
             {natureT3Talents.map(({ title, content }) => (
               <Accordion stacked title={title} content={content} />
             ))}

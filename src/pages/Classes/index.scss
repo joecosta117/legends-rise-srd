@@ -11,6 +11,10 @@
     border: 1px solid $gold;
     font-size: 14px;
   }
+  table {
+    max-width: 600px;
+    width: 100%;
+  }
 
   th, td {
     @include mq(s) {

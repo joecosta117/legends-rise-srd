@@ -85,23 +85,23 @@ const Navigation = () => {
         <div className="navigation__links" data-is-active={isMobileNavOpen}>
           <div
             className="navigation__links-container"
-            data-type="5E"
+            data-type="hero-creation"
             onClick={toggleDropdown}
           >
-            <div className="navigation__links-container__nav" data-type="5E">
-              <div className="navigation__links-container__link" data-type="5E">
-                Hero Rules
+            <div className="navigation__links-container__nav" data-type="hero-creation">
+              <div className="navigation__links-container__link" data-type="hero-creation">
+                Hero Creation
               </div>
               <button
                 className="navigation__links-container__dropdown-arrow"
-                data-type="5E"
                 data-active="false"
+                data-type="hero-creation"
               ></button>
             </div>
             <div
               className="navigation__links-container__dropdown"
-              data-type="5E"
               data-active="false"
+              data-type="hero-creation"
             >
               <Link
                 className="navigation__links-container__dropdown__item"
@@ -119,31 +119,10 @@ const Navigation = () => {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/background-and-knacks"
-                onClick={toggleMobileNav}
-              >
-                Background & Knacks
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
                 to="/classes"
                 onClick={toggleMobileNav}
               >
                 Classes
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/equipment"
-                onClick={toggleMobileNav}
-              >
-                Equipment
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/fighting-styles"
-                onClick={toggleMobileNav}
-              >
-                Fighting Styles
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
@@ -161,10 +140,10 @@ const Navigation = () => {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/spells"
+                to="/fighting-styles"
                 onClick={toggleMobileNav}
               >
-                Spells
+                Fighting Styles
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
@@ -178,23 +157,181 @@ const Navigation = () => {
 
           <div
             className="navigation__links-container"
-            data-type="2E"
             onClick={toggleDropdown}
+            data-type="equipment"
           >
-            <div className="navigation__links-container__nav" data-type="2E">
-              <div className="navigation__links-container__link" data-type="2E">
-                Game Rules
+            <div className="navigation__links-container__nav" data-type="equipment">
+              <div className="navigation__links-container__link" data-type="equipment">
+                Equipment
               </div>
               <button
-                className="navigation__links-container__dropdown-arrow"
-                data-type="2E"
+                className="navigation__links-container__dropdown-arrow" data-type="equipment"
               ></button>
             </div>
 
             <div
               className="navigation__links-container__dropdown"
-              data-type="2E"
               data-active="false"
+              data-type="equipment"
+            >
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/armor"
+                onClick={toggleMobileNav}
+              >
+                Armor
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/consumables"
+                onClick={toggleMobileNav}
+              >
+                Consumables
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/mounts"
+                onClick={toggleMobileNav}
+              >
+                Mounts
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/other-goods"
+                onClick={toggleMobileNav}
+              >
+                Other Goods
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/relics"
+                onClick={toggleMobileNav}
+              >
+                Relics
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/weapons"
+                onClick={toggleMobileNav}
+              >
+                Weapons
+              </Link>
+            </div>
+          </div>
+
+          <div
+            className="navigation__links-container"
+            onClick={toggleDropdown}
+            data-type="magic"
+          >
+            <div className="navigation__links-container__nav" data-type="magic">
+              <div className="navigation__links-container__link" data-type="magic">
+                Spells
+              </div>
+              <button
+                className="navigation__links-container__dropdown-arrow" data-type="magic"
+              ></button>
+            </div>
+
+            <div
+              className="navigation__links-container__dropdown"
+              data-active="false"
+              data-type="magic"
+            >
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/battle-spells"
+                onClick={toggleMobileNav}
+              >
+                Battle Spells
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/ritual-spells"
+                onClick={toggleMobileNav}
+              >
+                Ritual Spells
+              </Link>
+            </div>
+          </div>
+
+          <div
+            className="navigation__links-container"
+            onClick={toggleDropdown}
+            data-type="rules"
+          >
+            <div className="navigation__links-container__nav" data-type="rules">
+              <div className="navigation__links-container__link" data-type="rules">
+                Rules
+              </div>
+              <button
+                className="navigation__links-container__dropdown-arrow"
+                data-type="rules"
+              ></button>
+            </div>
+
+            <div
+              className="navigation__links-container__dropdown"
+              data-active="false"
+              data-type="rules"
+            >
+              {/* <Link
+                className="navigation__links-container__dropdown__item"
+                to="/2e-ancestries"
+                onClick={toggleMobileNav}
+              >
+                Ancestries
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/2e-archetypes"
+                onClick={toggleMobileNav}
+              >
+                Archetypes
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/2e-classes"
+                onClick={toggleMobileNav}
+              >
+                Classes
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/2e-magic-items"
+                onClick={toggleMobileNav}
+              >
+                Magic Items
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/2e-monsters"
+                onClick={toggleMobileNav}
+              >
+                Monsters
+              </Link> */}
+            </div>
+          </div>
+
+          <div
+            className="navigation__links-container"
+            onClick={toggleDropdown}
+            data-type="gm"
+          >
+            <div className="navigation__links-container__nav" data-type="gm">
+              <div className="navigation__links-container__link" data-type="gm">
+                Running the Game
+              </div>
+              <button
+                className="navigation__links-container__dropdown-arrow"
+                data-type="gm"
+              ></button>
+            </div>
+
+            <div
+              className="navigation__links-container__dropdown"
+              data-active="false"
+              data-type="gm"
             >
               {/* <Link
                 className="navigation__links-container__dropdown__item"
@@ -257,8 +394,8 @@ const Navigation = () => {
 
             <div
               className="navigation__links-container__dropdown"
-              data-type="contact"
               data-active="false"
+              data-type="contact"
             >
               {/* <Link
                 className="navigation__links-container__dropdown__item"

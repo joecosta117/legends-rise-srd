@@ -1,6 +1,7 @@
 import "./index.scss";
 import { Link } from 'react-router-dom';
 import ClassHeader from "../../components/ClassHeader";
+import Accordion from "../../components/Accordion";
 
 function Classes() {
   return (
@@ -34,6 +35,12 @@ function Classes() {
         <h3>Level Progression</h3>
         <p>Most heroes start off at 1st level, and as you progress, you become more powerful. You can see the below level progression table to see what you gain at each level.</p>
         <p>At levels 5 and 8, you enter a new tier of play. At both levels, your background expands. At 5th level, you choose a heroic archetype, or a legendary archetype at 8th level.</p>
+        <Accordion title="Background Expands Rules" content={(
+          <div>
+            <p>As your hero gains experience, so too does their skillset. When your tier increases at 5th and 8th levels, you can add to your background. You can expand your background by adding a small phrase detailing your hero’s continued journey.</p>
+            <p>For example, at 1st level Damarin chooses the “Orphaned Rogue from the Capital'' as his background. At 5th level, when Damarin’s tier becomes 2, he expands his background to “Orphaned Rogue from the Capital that is hunting demons'' to better reflect the knowledge he’s gained on fiends during his past adventure. At 8th level, when Damarin’s tier becomes 3, he further expands his background to “Orphaned Rogue from the Capital that hunts demons and travels to otherworldly realms” to represent his time spent traversing other realms during his adventures.</p>
+          </div>
+        )} />
 
         <h4>Level Progression Table</h4>
         <table>
