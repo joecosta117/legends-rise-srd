@@ -62,7 +62,7 @@ function Mounts() {
             damage: "2 physical damage per T"
           }]}
         />
-        <h3>Mount Traits</h3>
+        <h3 className="header" style={{marginTop: '25px'}}>Mount Traits</h3>
         <p>Mounts get a number of mount traits equal to their tier.</p>
         <ul>
           <li><span>Resistance to a damage type equal to the mount's tier, with physical counting as two mount traits.</span></li>
@@ -78,7 +78,7 @@ function Mounts() {
           <li><span>Choose an effect to happen when your mount gets a success on their attack roll for slam: target falls prone, target shoved within their zone, target is seized (overcome ends).</span></li>
           <li><span>You and your mount can telepathically speak to one another</span></li>
         </ul>
-        <h3>Mount Examples</h3>
+        <h3 className="header">Mount Examples</h3>
         <p>Here are some examples of mounts:</p>
         <Monster 
           name="Warhorse (Tier 1 Mount)" 
@@ -116,7 +116,7 @@ function Mounts() {
             target: "1 engaged creature",
             defense: "EVN",
             damage: "4 physical damage",
-            success: "seized (overcome ends)"
+            success: "seized (scene ends)"
           }]}
         />
         <div style={{paddingTop: '25px'}}></div>

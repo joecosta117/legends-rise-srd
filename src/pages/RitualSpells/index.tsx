@@ -28,39 +28,43 @@ function RitualSpells() {
   return (
     <div className="spells">
       <div className="spells-content">
-        <div className="spells-content__tabs">
-          <div className="spells-content__tabs__tab" onClick={handleT1}><p>Tier 1</p></div>
-          <div className="spells-content__tabs__divider">|</div>
-          <div className="spells-content__tabs__tab" onClick={handleT2}><p>Tier 2</p></div>
-          <div className="spells-content__tabs__divider">|</div>
-          <div className="spells-content__tabs__tab" onClick={handleT3}><p>Tier 3</p></div>
-        </div>
-
+    
         <h1>Ritual Spells</h1>
         <p>Scrying on a distant foe or speaking with animals are examples of ritual spells. These spells tend to take a long time to cast and might cost gold in order to produce powerful and lasting magical effects. Like battle spells, ritual spells are ranked by tier.</p>
         <p>TODO: see full rules on ritual spells</p>
 
+        <div className="tab-items">
+          <div className="tab-items__tab" onClick={handleT1} data-selected={isT1}><p>Tier 1</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleT2} data-selected={isT2}><p>Tier 2</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleT3} data-selected={isT3}><p>Tier 3</p></div>
+        </div>
+
         {isT1 && (
           <div>
             <h2>Tier 1 Ritual Spells</h2>
-            {ritualSpells[0].map(({ title, spell, actType }) => (
-                <Accordion stacked title={title} content={spell} type="spell" actType={actType} />
+            <p>Below are all ritual spells of this spell tier.</p>
+            {ritualSpells[0].map(({ title, spell, actType }, index) => (
+                <Accordion key={index} stacked title={title} content={spell} type="spell" actType={actType} />
               ))}
           </div>
         )}
         {isT2 && (
           <div>
             <h2>Tier 2 Ritual Spells</h2>
-            {ritualSpells[1].map(({ title, spell, actType }) => (
-                <Accordion stacked title={title} content={spell} type="spell" actType={actType} />
+            <p>Below are all ritual spells of this spell tier.</p>
+            {ritualSpells[1].map(({ title, spell, actType }, index) => (
+                <Accordion key={index} stacked title={title} content={spell} type="spell" actType={actType} />
               ))}
           </div>
         )}
         {isT3 && (
           <div>
             <h2>Tier 3 Ritual Spells</h2>
-            {ritualSpells[2].map(({ title, spell, actType }) => (
-                <Accordion stacked title={title} content={spell} type="spell" actType={actType} />
+            <p>Below are all ritual spells of this spell tier.</p>
+            {ritualSpells[2].map(({ title, spell, actType }, index) => (
+                <Accordion key={index} stacked title={title} content={spell} type="spell" actType={actType} />
               ))}
           </div>
         )}

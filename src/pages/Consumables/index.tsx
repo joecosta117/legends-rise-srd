@@ -31,11 +31,11 @@ function Consumables() {
         <h1>Consumables</h1>
         <p>Potions, scrolls, talismans, and other small trinkets with limited, one-time magical effects are all consumables.</p>
         <div className="equipment-content__tabs">
-          <div className="equipment-content__tabs__tab" onClick={handleT1}><p>Tier 1</p></div>
-          <div className="equipment-content__tabs__divider">|</div>
-          <div className="equipment-content__tabs__tab" onClick={handleT2}><p>Tier 2</p></div>
-          <div className="equipment-content__tabs__divider">|</div>
-          <div className="equipment-content__tabs__tab" onClick={handleT3}><p>Tier 3</p></div>
+          <div className="tab-items__tab" onClick={handleT1} data-selected={isT1}><p>Tier 1</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleT2} data-selected={isT2}><p>Tier 2</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleT3} data-selected={isT3}><p>Tier 3</p></div>
         </div>
 
         {isT1 && (
@@ -50,7 +50,7 @@ function Consumables() {
             <Accordion stacked title="Potion of Water Breathing" content="This vial of watery-green liquid makes you amphibious. When you drink this potion, you can breathe underwater for 1 hour." />
             <Accordion stacked title="Tier 1 Spell Scroll" content={(
               <div>
-                <p>A scroll with careful arcane instructions for one specific tier 1 battle or ritual spell. A creature that knows the spell’s magic tradition can use this scroll to Spellcast the item’s spell once and then the scroll’s magic fades. If you don’t know the spell’s tradition, you can still attempt to Spellcast, but you must succeed on a challenge tier 1 skill roll.</p>
+                <p>A scroll with careful arcane instructions for one specific tier 1 battle or ritual spell. A creature that knows the spell’s magic tradition can use this scroll to cast the item’s spell once and then the scroll’s magic fades. If you don’t know the spell’s tradition, you can still attempt to cast the spell, but you must succeed on a tier 1 skill roll.</p>
                 <p>For a ritual spell scroll, a spellcaster can instead attempt to permanently learn the ritual spell.</p>
                 <p>Once the magic is successfully used from a scroll, the scroll can’t be used again.</p>
               </div>
@@ -70,7 +70,7 @@ function Consumables() {
             <Accordion stacked title="Potion of Water" content="When this deep blue potion is drunk, you gain a swim speed of 1 and can breathe underwater (scene ends)." />
             <Accordion stacked title="Tier 2 Spell Scroll" content={(
               <div>
-                <p>A scroll with careful arcane instructions for one specific tier 2 battle or ritual spell. A creature that knows the spell’s magic tradition can use this scroll to Spellcast the item’s spell once and then the scroll’s magic fades. If you don’t know the spell’s tradition, you can still attempt to Spellcast, but you must succeed on a challenge tier 2 skill roll.</p>
+                <p>A scroll with careful arcane instructions for one specific tier 2 battle or ritual spell. A creature that knows the spell’s magic tradition can use this scroll to cast the item’s spell once and then the scroll’s magic fades. If you don’t know the spell’s tradition, you can still attempt to cast the spell, but you must succeed on a tier 2 skill roll.</p>
                 <p>For a ritual spell scroll, a spellcaster can instead attempt to permanently learn the ritual spell.</p>
                 <p>Once the magic is successfully used from a scroll, the scroll can’t be used again.</p>
               </div>
@@ -86,7 +86,7 @@ function Consumables() {
             <Accordion stacked title="Superior Potion of Mana" content="This vial of cool blue liquid restores magical essence beyond your normal limits. When you drink this potion, you regain 3 mana. You can only gain the benefits of this potion once per long rest." />
             <Accordion stacked title="Tier 3 Spell Scroll" content={(
               <div>
-                <p>A scroll with careful arcane instructions for one specific tier 3 battle or ritual spell. A creature that knows the spell’s magic tradition can use this scroll to Spellcast the item’s spell once and then the scroll’s magic fades. If you don’t know the spell’s tradition, you can still attempt to Spellcast, but you must succeed on a challenge tier 3 skill roll.</p>
+                <p>A scroll with careful arcane instructions for one specific tier 3 battle or ritual spell. A creature that knows the spell’s magic tradition can use this scroll to cast the item’s spell once and then the scroll’s magic fades. If you don’t know the spell’s tradition, you can still attempt to cast the spell, but you must succeed on a tier 3 skill roll.</p>
                 <p>For a ritual spell scroll, a spellcaster can instead attempt to permanently learn the ritual spell.</p>
                 <p>Once the magic is successfully used from a scroll, the scroll can’t be used again.</p>
               </div>

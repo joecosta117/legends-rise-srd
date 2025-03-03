@@ -91,7 +91,7 @@
     &__nav {
       display: flex;
       justify-content: space-between;
-      border-top: 1px solid #964437;
+      border-top: 1px solid $lightblack;
 
       @include mq(m) {
         border-top: none;
@@ -118,15 +118,6 @@
 
       &:hover {
         color: $redwood;
-      }
-
-      &[data-type="patreon"] {
-        font-weight: bold;
-        color: #ed361e;
-
-        &:hover {
-          color: $redwood;
-        }
       }
     }
 
@@ -160,9 +151,13 @@
 
       @include mq(m) {
         box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
-        margin-left: -30px;
+        margin-left: -14px;
         position: absolute;
         z-index: 200;
+        top: 102px;
+      }
+      @media (min-width: 1085px) {
+        top: auto;
       }
 
       &[data-active="true"] {
@@ -180,27 +175,28 @@
         text-decoration: none;
         min-width: 200px;
         padding-left: 25px;
-        border-top: 1px solid $redwood;
-        background: #964437;
+        border-top: 1px solid $lightblack;
+        background: $dimgrey;
         text-align: left;
 
         &:hover,
         &:focus,
         &:active {
-          background: #ed361e;
+          background: $lightblack;
           color: $offwhite;
         }
 
         @include mq(m) {
           padding: 15px;
-          border-top: none;
+          // border-top: none;
           background: $offwhite;
           color: black;
 
           &:hover,
           &:focus,
           &:active {
-            background: #964437;
+            // background: #964437;
+            background: $dimgrey;
             color: $offwhite;
           }
         }

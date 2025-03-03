@@ -38,7 +38,7 @@ function OtherGoods() {
             </tr>
             <tr>
               <td>Spellcasting</td>
-              <td>Hiring someone to Spellcast a spell. Cost is the listed amount plus any other costs needed for the spell.</td>
+              <td>Hiring someone to cast a spell. Cost is the listed amount plus any other costs needed for the spell.</td>
               <td>1 for tier 1 spell, 3 for tier 2 spell, 6 for tier 3 spell</td>
               <td>Equals the spell tier</td>
             </tr>

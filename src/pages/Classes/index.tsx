@@ -28,11 +28,11 @@ function Classes() {
           <li><span><b><Link to="/classes/warrior">Warrior</Link>:</b> You are tough and deadly in combat.</span></li>
         </ul>
 
-        <h3>Dual Class</h3>
+        <h3 className="header" style={{marginTop: '25px'}}>Dual Class</h3>
         <p>Some heroes blend skills from two different professions, called a dual class. A dual class is a combination of features from two different classes. See this <Link to="/classes/dual-class">page</Link> for more rules on picking a dual class.</p>
-        <h3>Themes</h3>
+        <h3 className="header" style={{marginTop: '25px'}}>Themes</h3>
         <p>Each class is categorized into a theme, which determines what theme talents you can choose at later levels.</p>
-        <h3>Level Progression</h3>
+        <h3 className="header" style={{marginTop: '25px'}}>Level Progression</h3>
         <p>Most heroes start off at 1st level, and as you progress, you become more powerful. You can see the below level progression table to see what you gain at each level.</p>
         <p>At levels 5 and 8, you enter a new tier of play. At both levels, your background expands. At 5th level, you choose a heroic archetype, or a legendary archetype at 8th level.</p>
         <Accordion title="Background Expands Rules" content={(
@@ -116,7 +116,7 @@ function Classes() {
           </tbody>
         </table>
 
-        <h3>Class Basics</h3>
+        <h3 className="header" style={{marginTop: '25px'}}>Class Basics</h3>
         <p>Once you pick a class at 1st level, your class determines the following:</p>
         <ul>
           <li><span>Theme</span></li>

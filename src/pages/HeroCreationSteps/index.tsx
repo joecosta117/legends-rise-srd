@@ -10,16 +10,16 @@ function HeroCreationSteps() {
       <p><b>Professions, Trades, or Connections:</b> Did your hero have any professional training prior to adventuring, such as being a blacksmith or being a diplomat? Or maybe they belong to a thieves guild or another organization?</p>
       <p><b>Class:</b> Choose a background tied to your class in some way. An arcanist with the background “smith” isn’t informative if the hero knows about magic. A better background would be “magical smith” or “smith that awoke with magical powers” so your hero can leverage their class’s magical talents during skill rolls.</p>
 
-      <h3>Background Examples</h3>
+      <h3 className="header">Background Examples</h3>
       <p>Take a look at some of these examples of backgrounds and how they can be applicable out of combat.</p>
-      <h4>“Templar of the Sun God”</h4>
+      <h4 className="header">“Templar of the Sun God”</h4>
       <p>This hero could use their background in the following situations:</p>
       <ul>
         <li><span>To recall information on obscure religious lore.</span></li>
         <li><span>To use their militant training to break down a heavy door.</span></li>
         <li><span>Find their party shelter for the night with a local church.</span></li>
       </ul>
-      <h4>“Magician of the Thousand Eye Cult”</h4>
+      <h4 className="header">“Magician of the Thousand Eye Cult”</h4>
       <p>This hero could use their background in the following situations:</p>
       <ul>
         <li><span>Identify the magical effects of a magical object.</span></li>
@@ -27,7 +27,7 @@ function HeroCreationSteps() {
         <li><span>Understand forbidden magic.</span></li>
       </ul>
 
-      <h4>Other Background Examples</h4>
+      <h4 className="header">Other Background Examples</h4>
       <p>Besides the ones mentioned in detail, see the below list for some other ideas. In general, it's better to come up with your own backgrounds that are tailored towards your hero.</p>
       <ul>
         <li><span>“Acrobat of the Grand Circus”</span></li>
@@ -42,9 +42,9 @@ function HeroCreationSteps() {
         <li><span>“Survivor of a Dragon Attack by the Red Death”</span></li>
       </ul>
 
-      <h3>Tips on Creating Backgrounds</h3>
+      <h3 className="header">Tips on Creating Backgrounds</h3>
       <p>Your hero is unique because of their own story, so here are some guidelines for coming up with your own background.</p>
-      <h4>Evocative, Not Simple</h4>
+      <h4 className="header">Evocative, Not Simple</h4>
       <p>A background shouldn’t be a single word, but instead should be a short phrase or title. Instead of picking the background “fighter” for your warrior, figure out what type of fighting your hero did in the past. Did your hero learn combat as a gladiator, mercenary, bounty-hunter, soldier, or knight? Now you know the type of fighting, where did your hero learn to use weapons or who taught them or did they earn any prestige for their combat prowess? Now your warrior’s background could be “mercenary of the dreaded Sun Company”!</p>
       <p>A good rule of thumb is that a background should follow the same structure: <b>“[Noun] of the [Setting Information]”</b> or <b>“[Noun] from the [Location]”</b> or <b>“[Adjective] [Noun]”</b>. Feel free to deviate from this structure, but take a look at the below examples of simple versions vs more evocative backgrounds.</p>
       <ul>
@@ -103,10 +103,10 @@ function HeroCreationSteps() {
       
         <h2>Step 3: Choose Background and Knacks</h2>
         <p>At 1st level, you choose one <b>background</b> and two <b>knacks</b>. Your background represents the story of where your hero came from and summarizes their training. Knacks represent your hero’s expertise and talents. Your hero’s background and knacks contribute to their ability to overcome non-combat challenges with skill rolls. You can read more about the rules on skill rolls here (TODO).</p>
-        <h3>Invoking Backgrounds</h3>
+        <h3 className="header">Invoking Backgrounds</h3>
         <p>You can <b>invoke</b> your background when you make a skill roll to add your proficiency bonus to the result. You can only invoke your background if the background is relevant towards the challenge. For example, a hero with the background “dragon hunter” could invoke this background to add their proficiency bonus on their skill roll to track a monster in the forest.</p>
         <Accordion title="Choosing Your Background" content={backgroundInfo} />
-        <h3>Invoking Knacks</h3>
+        <h3 className="header">Invoking Knacks</h3>
         <p>You can invoke your knacks when you make a skill roll to add <Modifier type="f" count="1" /> to the result. For example, a hero can invoke their knack “stealth” to try to move past goblin sentires without being noticed. The hero then gains <Modifier type="f" count="1" /> to their skill roll. You can only invoke up to one knack per skill roll.</p>
         <Accordion title="Choosing Your Knacks" content={knackInfo} />
       
@@ -120,7 +120,7 @@ function HeroCreationSteps() {
           <li className="defense"><b data-type="MGT">Might (MGT):</b> Represents your hero’s protection from physical threats that test their strength or hardiness, such as resisting being pushed or withstanding poison.</li>
           <li className="defense"><b data-type="RES">Resolve (RES):</b> Represents your hero’s protection from esoteric threats that test their mind and spirit, such as overcoming mind control or resisting unholy corruption.</li>
         </ul>
-        <h3>Calculating Defenses</h3>
+        <h3 className="header">Calculating Defenses</h3>
         <p>Your defenses start at <b>8 + your proficiency bonus</b> (10 at 1st level). Your defenses are also improved in the following order:</p>
         <ol>
           <li>Your class gives you bonuses to one or two defenses.</li>
@@ -133,8 +133,8 @@ function HeroCreationSteps() {
         </p>
         <ul>
           <li className="higher-level"><b>Levels 2-4:</b> 1 gold</li>
-          <li className="higher-level"><b>Levels 5-7:</b> 3 gold, one permanent tier 1 relic</li>
-          <li className="higher-level"><b>Levels 8-10:</b> 9 gold, one permanent tier 1 relic, and one permament tier 2 relic</li>
+          <li className="higher-level"><b>Levels 5-7:</b> 3 gold, one tier 1 relic</li>
+          <li className="higher-level"><b>Levels 8-10:</b> 9 gold, one tier 1 relic, and one tier 2 relic</li>
         </ul>
       </div>
     </div>

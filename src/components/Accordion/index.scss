@@ -10,17 +10,16 @@
     .accordion__header {
       border-radius: 0;
     }
-    .accordion__content {
+    .accordion__content__container {
       border-radius: 0;
     }
   }
-
   &[data-act-type="Action"] {
     .accordion__header {
       border-color: $actionred;
       background: $actionred;
     }
-    .accordion__content {
+    .accordion__content__container {
       border-color: $actionred;
     }
   }
@@ -29,7 +28,7 @@
       border-color: $maneuvergreen;
       background: $maneuvergreen;
     }
-    .accordion__content {
+    .accordion__content__container {
       border-color: $maneuvergreen;
     }
   }
@@ -38,7 +37,7 @@
       border-color: $reactionorange;
       background: $reactionorange;
     }
-    .accordion__content {
+    .accordion__content__container {
       border-color: $reactionorange;
     }
   }
@@ -47,7 +46,7 @@
       border-color: $freepurple;
       background: $freepurple;
     }
-    .accordion__content {
+    .accordion__content__container {
       border-color: $freepurple;
     }
   }
@@ -56,16 +55,21 @@
       border-color: $ritualblue;
       background: $ritualblue;
     }
-    .accordion__content {
+    .accordion__content__container {
       border-color: $ritualblue;
     }
   }
-
   &[data-type="spell"] {
     margin-bottom: 5px;
 
-    .accordion__content {
+    .smaller {
+      font-size: 14px;
+      padding-left: 3px;
+    }
+
+    .accordion__content__container {
       padding: 0;
+      border-width: 2px;
     }
   }
   
@@ -79,7 +83,6 @@
     background: $lightblack;
     display: flex;
     justify-content: space-between;
-    border-radius: 15px;
 
     h4 {
       margin: 0 !important;
@@ -88,25 +91,29 @@
     &[data-is-expanded="true"] {
       background-color: $dimgrey;
       margin-bottom: 0;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
     }
   }
 
   &__content {
-    padding: 10px;
-    border: 1px solid $gold;
-    border-top: none;
-    background: $lightblack;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
 
-    ul:last-child, p:last-child {
-      margin-bottom: 0;
+    &__container {
+      padding: 10px;
+      border: 1px solid $gold;
+      border-top: none;
+      background: $lightblack;
+
+      ul:last-child, p:last-child {
+        margin-bottom: 0;
+      }
+  
+      h3 {
+        margin-top: 0;
+      }
     }
 
-    h3 {
-      margin-top: 0;
-    }
+    
   }
 }

@@ -422,8 +422,8 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This wand is empowered with magic.</i></p>
-            <p>This magical wand is infused with a tier 1 battle spell. Once per short rest, you can Spellcast the wand’s spell of a spell tier equal to your tier without spending mana.</p>
-            <p>If you don’t know the spell’s tradition of the wand, you can still attempt to Spellcast, but you must make either a skill roll with the challenge tier matching the spell’s tier.</p>
+            <p>This magical wand is infused with a tier 1 battle spell. Once per short rest, you can cast the wand’s spell of a spell tier equal to your tier without spending mana.</p>
+            <p>If you don’t know the spell’s tradition of the wand, you can still attempt to cast the spell, but you must make either a skill roll with the skill tier matching the spell’s tier.</p>
           </div>
         )
       },
@@ -450,7 +450,7 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This staff is empowered with magic.</i></p>
-            <p>This magical staff is infused with a magic tradition and a tier 0 battle spell from that tradition that you can Spellcast using the staff. While holding the staff, you can Spellcast spells from the infused tradition without making a skill roll.</p>
+            <p>This magical staff is infused with a magic tradition and a tier 0 battle spell from that tradition that you can cast using the staff. While holding the staff, you can cast spells from the infused tradition without making a skill roll.</p>
           </div>
         )
       },
@@ -470,8 +470,8 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This wand is empowered with magic.</i></p>
-            <p>This magical wand is infused with a tier 2 battle spell. Once per short rest, you can Spellcast the wand’s spell of a spell tier equal to your tier without spending mana.</p>
-            <p>If you don’t know the spell’s tradition of the wand, you can still attempt to Spellcast, but you must make either a skill roll with the challenge tier matching the spell’s tier.</p>
+            <p>This magical wand is infused with a tier 2 battle spell. Once per short rest, you can cast the wand’s spell of a spell tier equal to your tier without spending mana.</p>
+            <p>If you don’t know the spell’s tradition of the wand, you can still attempt to cast the spell, but you must make either a skill roll with the skill tier matching the spell’s tier.</p>
           </div>
         )
       },
@@ -480,7 +480,7 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This staff is empowered with magic.</i></p>
-            <p>This magical staff is infused with a magic tradition, and a tier 0 battle spell and tier 1 battle spell from that tradition. You can Spellcast these spells using the staff. While holding the staff, you can Spellcast spells from the infused tradition without making a skill roll.</p>
+            <p>This magical staff is infused with a magic tradition, and a tier 0 battle spell and tier 1 battle spell from that tradition. You can cast these spells using the staff. While holding the staff, you can cast spells from the infused tradition without making a skill roll.</p>
           </div>
         )
       },
@@ -505,8 +505,8 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This wand is empowered with magic.</i></p>
-            <p>This magical wand is infused with a tier 3 battle spell. Once per short rest, you can Spellcast the wand’s spell of a spell tier equal to your tier without spending mana.</p>
-            <p>If you don’t know the spell’s tradition of the wand, you can still attempt to Spellcast, but you must make either a skill roll with the challenge tier matching the spell’s tier.</p>
+            <p>This magical wand is infused with a tier 3 battle spell. Once per short rest, you can cast the wand’s spell of a spell tier equal to your tier without spending mana.</p>
+            <p>If you don’t know the spell’s tradition of the wand, you can still attempt to cast the spell, but you must make either a skill roll with the skill tier matching the spell’s tier.</p>
           </div>
         )
       },
@@ -515,7 +515,7 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This staff is empowered with magic.</i></p>
-            <p>This magical staff is infused with a magic tradition, and a tier 0 battle spell, tier 1 battle spell, and tier 2 battle spel from that tradition. You can Spellcast these spells using the staff. While holding the staff, you can Spellcast spells from the infused tradition without making a skill roll.</p>
+            <p>This magical staff is infused with a magic tradition, and a tier 0 battle spell, tier 1 battle spell, and tier 2 battle spel from that tradition. You can cast these spells using the staff. While holding the staff, you can cast spells from the infused tradition without making a skill roll.</p>
           </div>
         )
       },
@@ -555,7 +555,7 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>You can teleport short distances using these boots.</i></p>
-            <p>Once per short rest, while wearing these boots, you can Spellcast the dimensional step battle spell at a spell tier equal to your tier without spending mana.</p>
+            <p>Once per short rest, while wearing these boots, you can cast the dimensional step battle spell at a spell tier equal to your tier without spending mana.</p>
           </div>
         )
       },
@@ -673,7 +673,7 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This magical weapon possesses an elemental rune.</i></p>
-            <p>While aligned to this item, you gain <Modifier type="f" count="1" /> on skill rolls on sneaky actions to avoid detection. You can Spellcast the invisibility ritual spell at spell tier 2 through the cloak and can add your proficiency bonus to the skill roll even if you don't know magic.</p>
+            <p>While aligned to this item, you gain <Modifier type="f" count="1" /> on skill rolls on sneaky actions to avoid detection. You can cast the invisibility ritual spell at spell tier 2 through the cloak and can add your proficiency bonus to the skill roll even if you don't know magic.</p>
           </div>
         )
       },
@@ -784,7 +784,7 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description"><i>This ring is made of almost translucent silver.</i></p>
-            <p>While wearing this ring, you can use an action to become invisible. The invisibility ends if you take a hostile act like attacking a creature or end the invisibility as a free action.</p>
+            <p>While wearing this ring, you can use an action to become invisible. The invisibility ends if you use a hostile ability like attacking a creature or end the invisibility as a free action.</p>
           </div>
         )
       },
@@ -825,23 +825,23 @@ function Relics() {
         <h1>Relics</h1>
         <p>Magic armor, weapons, wands, and other items of power with reliable magical effects are all relics. You must align yourself to a relics before you can properly use it.</p>
         <div className="equipment-content__tabs">
-          <div className="equipment-content__tabs__tab" onClick={handleArmor}><p>Armor</p></div>
-          <div className="equipment-content__tabs__divider">|</div>
-          <div className="equipment-content__tabs__tab" onClick={handleImplement}><p>Implements</p></div>
-          <div className="equipment-content__tabs__divider">|</div>
-          <div className="equipment-content__tabs__tab" onClick={handleWeapon}><p>Weapons</p></div>
-          <div className="equipment-content__tabs__divider">|</div>
-          <div className="equipment-content__tabs__tab" onClick={handleOther}><p>Other Items</p></div>
+          <div className="tab-items__tab" onClick={handleArmor} data-selected={isArmor}><p>Armor</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleImplement} data-selected={isImplement}><p>Implements</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleWeapon} data-selected={isWeapons}><p>Weapons</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleOther} data-selected={isOther}><p>Other Items</p></div>
         </div>
 
         {isArmor && (
           <div>
             <h2>Relic Armor</h2>
             {armor.map((armor, index) => (
-              <div>
+              <div key={index}>
                 <h3>Tier {index + 1} Armor</h3>
-                {armor.map(({ title, content }) => (
-                  <Accordion stacked title={title} content={content} />
+                {armor.map(({ title, content }, index) => (
+                  <Accordion key={index} stacked title={title} content={content} />
                 ))}
               </div>
             ))}
@@ -851,10 +851,10 @@ function Relics() {
           <div>
             <h2>Relic Weapons</h2>
             {weapons.map((weapon, index) => (
-              <div>
+              <div key={index}>
                 <h3>Tier {index + 1} Weapons</h3>
-                {weapon.map(({ title, content }) => (
-                  <Accordion stacked title={title} content={content} />
+                {weapon.map(({ title, content }, index) => (
+                  <Accordion key={index} stacked title={title} content={content} />
                 ))}
               </div>
             ))}
@@ -864,10 +864,10 @@ function Relics() {
           <div>
             <h2>Relic Implements</h2>
             {magicImplements.map((implement, index) => (
-              <div>
+              <div key={index}>
                 <h3>Tier {index + 1} Implements</h3>
-                {implement.map(({ title, content }) => (
-                  <Accordion stacked title={title} content={content} />
+                {implement.map(({ title, content }, index) => (
+                  <Accordion key={index} stacked title={title} content={content} />
                 ))}
               </div>
             ))}
@@ -877,10 +877,10 @@ function Relics() {
           <div>
             <h2>Other Relic Items</h2>
             {other.map((item, index) => (
-              <div>
+              <div key={index}>
                 <h3>Tier {index + 1} Item</h3>
-                {item.map(({ title, content }) => (
-                  <Accordion stacked title={title} content={content} />
+                {item.map(({ title, content }, index) => (
+                  <Accordion key={index} stacked title={title} content={content} />
                 ))}
               </div>
             ))}

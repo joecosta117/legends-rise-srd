@@ -38,18 +38,18 @@ function Warrior() {
       <div className="warrior-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Warrior Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Warrior Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Warrior Talents</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Warrior Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Warrior Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Warrior Talents</div>
         </div>
         {isDetails && (
           <div>
             <h1>Warrior</h1>
             <p>Soldiers, gladiators, mercenaries, noble knights, and more can all be Warriors. You rely on martial prowess to eliminate any dangers while weathering incoming violence. Play a warrior if you want to be a tough fighter that is skilled with weapons.</p>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Martial</span></li>
               <li><span><b>Defense Bonus:</b> +2 to Evasion and Might</span></li>
               <li><span><b>Starting Hit Points:</b> 12</span></li>
@@ -64,13 +64,13 @@ function Warrior() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Fightng Style</h3>
+            <h3 className="header">Fightng Style</h3>
             <p>You have mastered a certain way of fighting. Learn a fighting style.</p>
               <ul>
                 <li><span><i>Suggestion:</i> You learn the bastion fighting style and guard attack technique.</span></li>
               </ul>
     
-            <h3>Precision Attack</h3>
+            <h3 className="header">Precision Attack</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Precision Attack"
@@ -80,7 +80,7 @@ function Warrior() {
               effect="Strike with +1 fortune" 
             />
 
-            <h3>Comeback Attack</h3>
+            <h3 className="header">Comeback Attack</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Comeback Attack"
@@ -91,7 +91,7 @@ function Warrior() {
               effect="Spend a recovery then Strike" 
             />
 
-            <h3>Interrupt Attack</h3>
+            <h3 className="header">Interrupt Attack</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Interrupt Attack"
@@ -103,7 +103,7 @@ function Warrior() {
               effect="Strike the triggering creature" 
             />
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the weapon master subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -112,7 +112,7 @@ function Warrior() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Indomitable</h3>
+            <h3 className="header">Indomitable</h3>
             <p>You shrug off harmful effects easier than most. You make overcome rolls against effects at the start of your turn, instead of at the end, except for dying.</p>
           </div>
         )}
@@ -123,17 +123,17 @@ function Warrior() {
             <p>These are the subclass choices for the warrior.</p>
             <h2>Weapon Master</h2>
             <p>You use well practiced maneuvers to throw off your foes.</p>
-            <h3>Extraordinary Technique (1st-Level Feature)</h3>
+            <h3 className="header">Extraordinary Technique (1st-Level Feature)</h3>
             <p>When you get a success on a Strike, you can apply the critical effect of your weapon’s weapon group.</p>
 
             <h2>Juggernaut</h2>
             <p>You rely on your fury and focus in battle to push yourself beyond mortal limits.</p>
-            <h3>Unstoppable (1st-Level Feature)</h3>
+            <h3 className="header">Unstoppable (1st-Level Feature)</h3>
             <p>You gain <Modifier type="f" count="1" /> to overcome rolls, and your defenses all increase by +1.</p>
 
             <h2>Slayer</h2>
             <p>You focus your fighting tactics on pure offense, hoping to finish off foes as quickly as possible.</p>
-            <h3>Super Critical (1st-Level Feature)</h3>
+            <h3 className="header">Super Critical (1st-Level Feature)</h3>
             <p>When you Strike, and your attack roll total is 10 or more over the target’s defense, then the bonus damage from a critical success is doubled.</p>
           </div>
         )}
@@ -143,56 +143,56 @@ function Warrior() {
             <h1>Warrior Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
-            <h3>Expanded Training</h3>
+            <h3 className="header">Expanded Training</h3>
             <p>You learn a technique or fighting style. You can take this class talent multiple times.</p>
             
-            <h3>Greater Comeback</h3>
+            <h3 className="header">Greater Comeback</h3>
             <p>When you use comeback attack, you gain a number of <Modifier type="f" /> to your Strike equal to your momentum.</p>
             
-            <h3>Tough</h3>
+            <h3 className="header">Tough</h3>
             <p>Your maximum hit points increases by your proficiency bonus, and you are defeated at four wounds instead of three.</p>
 
-            <h3>Unmatched Precision</h3>
+            <h3 className="header">Unmatched Precision</h3>
             <p>When you roll a <Modifier type="f" /> on an attack roll, you can reroll the <Modifier type="f" /> and take the highest result.</p>
 
-            <h3>Warrior's Charge</h3>
+            <h3 className="header">Warrior's Charge</h3>
             <p>When you Charge, instead of a Strike you can comeback attack, precision attack, or another technique from your fighting styles that takes an action, but doesn’t include the Charge action.</p>
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Comeback Technique</h3>
+            <h3 className="header">Comeback Technique</h3>
             <p>When you use comeback attack, you can use a technique that takes an action instead of a Strike.</p>
 
-            <h3>Expanded Techniques</h3>
+            <h3 className="header">Expanded Techniques</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> weapon master subclass</p>
             <p>Learn a fighting style or technique. Make this choice again.</p>
 
-            <h3>Improved Indomitable</h3>
+            <h3 className="header">Improved Indomitable</h3>
             <p>You add your proficiency bonus to overcome rolls.</p>
 
-            <h3>Undying</h3>
+            <h3 className="header">Undying</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> juggernaut subclass</p>
             <p>When you are shaken, but not dying, you gain regeneration equal to your tier.</p>
 
-            <h3>Unerring Accuracy</h3>
+            <h3 className="header">Unerring Accuracy</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> slayer subclass</p>
             <p>When you Strike with <Modifier type="f" />, increase the number of <Modifier type="f" /> by +1. </p> 
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Greater Technique</h3>
+            <h3 className="header">Greater Technique</h3>
             <p>When you use a technique ability that has an effect on a success, you still get the effect on a partial success.</p>
             
-            <h3>Juggernaut's Comeback</h3>
+            <h3 className="header">Juggernaut's Comeback</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> juggernaut subclass</p>
             <p>When you use comeback attack, you end all negative conditions on yourself.</p>
 
-            <h3>Mega Critical</h3>
+            <h3 className="header">Mega Critical</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> slayer subclass</p>
             <p>Once per long rest, you can turn a Strike into a super critical.</p>
 
-            <h3>Swift Interrupt</h3>
+            <h3 className="header">Swift Interrupt</h3>
             <p>You gain a second reaction that you can only use to interrupt attack.</p>
 
-            <h3>Weapon Flexibility</h3>
+            <h3 className="header">Weapon Flexibility</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> weapon master subclass</p>
             <p>Choose a critical effect from a weapon group. When you apply a critical effect on a Strike, you can choose the weapon’s normal weapon group critical effect or the chosen critical effect.</p>
           </div>

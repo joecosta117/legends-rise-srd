@@ -38,11 +38,11 @@ function Swordmage() {
       <div className="swordmage-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Swordmage Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Swordmage Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Swordmage Talents</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Swordmage Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Swordmage Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Swordmage Talents</div>
         </div>
         {isDetails && (
           <div>
@@ -50,7 +50,7 @@ function Swordmage() {
             <p>Swordmages are unique warriors that learn magic and how to wield weapons. Swordmages might be elite bodyguards, members of a mystic order, or magical soldiers. Play a swordmage if you want to blend magic with weapons to be an arcane combatant.</p>
         
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Arcane</span></li>
               <li><span><b>Defense Bonus:</b> +2 to Evasion and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
@@ -65,13 +65,13 @@ function Swordmage() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Fightng Style</h3>
+            <h3 className="header">Fightng Style</h3>
             <p>You have mastered a certain way of fighting. Learn a fighting style.</p>
             <ul>
               <li><span><i>Suggestion:</i> You learn the skirmish fighting style and hit and run technique.</span></li>
             </ul>
 
-            <h3>Swordmage Magic</h3>
+            <h3 className="header">Swordmage Magic</h3>
             <p>You channel elemental and battle magic through your weapon.</p>
             <ul>
               <li><span><b>Mana:</b> 1, increasing to 3 at 5th level, and 5 at 8th level</span></li>
@@ -79,10 +79,10 @@ function Swordmage() {
               <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition associated with your subclass.</span></li>
             </ul>
 
-            <h3>Arcane Weapon</h3>
+            <h3 className="header">Arcane Weapon</h3>
             <p>You have attuned yourself to a specific weapon that typically serves as your implement. Choose one weapon to be your arcane weapon that you can change during a short rest. As a maneuver, you can teleport your arcane weapon to your hand if it is within 1 mile of you.</p>
     
-            <h3>Enspell Weapon</h3>
+            <h3 className="header">Enspell Weapon</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Enspell Weapon"
@@ -91,10 +91,10 @@ function Swordmage() {
               requirement="You’re wielding your arcane weapon."
               duration="End of your next turn"
               frequency="At-will"
-              effect="You Spellcast a battle spell that takes either a maneuver or action, has a target, but the spell’s effect doesn’t happen until your next Strike. If you don’t Strike before the duration of this ability, then the spell’s magic fizzles out. If the chosen spell requires an attack roll, then use the attack roll of your Strike. If the spell targets a creature, the target is the target of your Strike, or one of the targeted creatures if the spell targets multiple creatures. If the spell targets a zone, the zone of your target is the targeted zone, or one of the targeted zones if the spell targets multiple zones. If the spell targets a zone border, then choose a zone border of your target’s zone." 
+              effect="You cast a battle spell that takes either a maneuver or action, has a target, but the spell’s effect doesn’t happen until your next Strike. If you don’t Strike before the duration of this ability, then the spell’s magic fizzles out. If the chosen spell requires an attack roll, then use the attack roll of your Strike. If the spell targets a creature, the target is the target of your Strike, or one of the targeted creatures if the spell targets multiple creatures. If the spell targets a zone, the zone of your target is the targeted zone, or one of the targeted zones if the spell targets multiple zones. If the spell targets a zone border, then choose a zone border of your target’s zone." 
             />
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the elemental knight subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -103,7 +103,7 @@ function Swordmage() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Dimensional Enspell</h3>
+            <h3 className="header">Dimensional Enspell</h3>
             <p>You can siphon some of your spell energy to teleport across the battlefield. When you enspell weapon with a tier 1 or higher battle spell, you can teleport up to 1 zone.</p>
           </div>
         )}
@@ -114,12 +114,12 @@ function Swordmage() {
             <p>These are the subclass choices for the swordmage.</p>
             <h2>Elemental Knight</h2>
             <p>You manipulate destructive elemental magic from your weapon to wreak havoc.</p>
-            <h3>Elemental Enspell (1st-Level Feature)</h3>
+            <h3 className="header">Elemental Enspell (1st-Level Feature)</h3>
             <p>You siphon energy from a chosen elemental realm to empower your weapon. Choose one damage type from cold, fire, lightning, or physical. When you use enspell weapon, your next Strike deals 1 additional damage per your tier of the chosen damage type.</p>
             
             <h2>Aegis</h2>
             <p>You focus on protecting others from harm by channeling abjuration magic through your weapon.</p>
-            <h3>Aegis Shield</h3>
+            <h3 className="header">Aegis Shield</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Aegis Shield"
@@ -133,7 +133,7 @@ function Swordmage() {
 
             <h2>Mage Hunter</h2>
             <p>You specialize in using magical fighting skills to hunt down rogue spellcasters and other supernatural threats.</p>
-            <h3>Dimensional Interrupt</h3>
+            <h3 className="header">Dimensional Interrupt</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Dimensional Interrupt"
@@ -153,13 +153,13 @@ function Swordmage() {
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
 
-            <h3>Expanded Swordmage Magic</h3>
+            <h3 className="header">Expanded Swordmage Magic</h3>
             <p>Learn a battle spell or magic tradition from one listed in swordmage magic. You can take this class talent multiple times.</p>
 
-            <h3>Expanded Training</h3>
+            <h3 className="header">Expanded Training</h3>
             <p>You learn a technique or fighting style. You can take this class talent multiple times.</p>
 
-            <h3>Focused Enspell</h3>
+            <h3 className="header">Focused Enspell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Focused Enspell"
@@ -169,7 +169,7 @@ function Swordmage() {
               effect="Focus on a magical ability, then enspell weapon" 
             />
 
-            <h3>Safe Enspell</h3>
+            <h3 className="header">Safe Enspell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Safe Enspell"
@@ -181,7 +181,7 @@ function Swordmage() {
               effect="Choose a number of creatures equal to your proficiency bonus to be unaffected by the triggering spell" 
             />
 
-            <h3>Studious Enspell</h3>
+            <h3 className="header">Studious Enspell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Studious Enspell"
@@ -192,7 +192,7 @@ function Swordmage() {
             />      
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Dimensional Lunge</h3>
+            <h3 className="header">Dimensional Lunge</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Dimensional Lunge"
@@ -203,19 +203,19 @@ function Swordmage() {
               effect="Strike, but your weapon’s range is extended by 1 zone" 
             />
 
-            <h3>Dimensional Switch</h3>
+            <h3 className="header">Dimensional Switch</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> aegis subclass</p>
             <p>When you use aegis shield and after the result of the attack roll, you can magically swap places with your ally if they are willing.</p>
 
-            <h3>Greater Elemental Enspell</h3>
+            <h3 className="header">Greater Elemental Enspell</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> elemental knight subclass</p>
             <p>When you get critical success on a Strike empowered by elemental enspell, the target takes 1 ongoing damage per your tier of the damage type chosen for elemental enspell.</p>
 
-            <h3>Greater Interrupt</h3>
+            <h3 className="header">Greater Interrupt</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> mage hunter subclass</p>
             <p>When you use dimensional interrupt, on a critical successful Strike, your target’s magical ability has no effect or the ability they’re focusing on ends.</p>
 
-            <h3>Spell Parry</h3>
+            <h3 className="header">Spell Parry</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Spell Parry"
@@ -228,7 +228,7 @@ function Swordmage() {
             />
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Elemental Retaliation</h3>
+            <h3 className="header">Elemental Retaliation</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> elemental knight subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -241,18 +241,18 @@ function Swordmage() {
               effect="Triggering creature takes 1 damage per your tier of the damage type you chose for elemental enspell." 
             />
 
-            <h3>Frequent Interrupt</h3>
+            <h3 className="header">Frequent Interrupt</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> mage hunter subclass</p>
             <p>You gain a second reaction you can use only for dimensional interrupt.</p>
 
-            <h3>Greater Dimensional Enspell</h3>
+            <h3 className="header">Greater Dimensional Enspell</h3>
             <p>For dimensional enspell, the teleportation range changes to up to 1 zone per spell tier, or within your zone for a tier 0 battle spell.</p>
 
-            <h3>Rapid Aegis</h3>
+            <h3 className="header">Rapid Aegis</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> aegis subclass</p>
             <p>You gain a second reaction you can use only for aegis shield.</p>
 
-            <h3>Supreme Swordmage</h3>
+            <h3 className="header">Supreme Swordmage</h3>
             <p>You are permanently hastened, but you can only use the extra maneuver to enspell weapon.</p>
           </div>
         )}

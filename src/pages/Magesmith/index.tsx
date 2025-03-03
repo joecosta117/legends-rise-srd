@@ -52,20 +52,20 @@ function Magesmith() {
       <div className="magesmith-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Magesmith Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Magesmith Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Magesmith Talents</div>
-          <div className="divider">|</div>
-          <div onClick={toggleUpgrades} className="tab">Magesmith Upgrades</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Magesmith Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Magesmith Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Magesmith Talents</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleUpgrades} className="tab-items__tab" data-selected={isUpgrades}>Magesmith Upgrades</div>
         </div>
         {isDetails && (
           <div>
             <h1>Magesmith</h1>
             <p>Magesmiths approach magic with an engineering mind, eager to create wondrous magical tools. Magesmiths might be magical tinkerers, warriors enhanced through arcane technology, or adventuring scholars eager to uncover magical relics of past ages. Play a magesmith if you want to create magical items to bolster yourself and allies.</p>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Arcane</span></li>
               <li><span><b>Defense Bonus:</b> +2 to Evasion and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
@@ -80,7 +80,7 @@ function Magesmith() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Magesmith Magic</h3>
+            <h3 className="header">Magesmith Magic</h3>
             <p>You invoke magic through items.</p>
             <ul>
               <li><span><b>Mana:</b> 1, increasing to 3 at 5th level, and 5 at 8th level</span></li>
@@ -92,13 +92,13 @@ function Magesmith() {
               <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition from the previous list.</span></li>
             </ul>
     
-            <h3>Talented Artificer</h3>
+            <h3 className="header">Talented Artificer</h3>
             <p>You gain the artificer theme talent, and the bonus from this talent increases to <b>+2 <img className="icon" src={fortune} alt="fortune icon" /></b>.</p>
     
-            <h3>Arcane Upgrades</h3>
+            <h3 className="header">Arcane Upgrades</h3>
             <p>You can infuse items with magical power. During a short rest, you can infuse a single item in your possession with an upgrade. The maximum number of upgrades you can have equals 1 plus your tier. An item can have a number of upgrades up to your tier, but can’t have the same upgrade multiple times. You start off knowing 4 upgrades and learn an additional upgrade at 5th level and 8th level. Upgrades are listed at the end of this class. If you die, then any upgrades you created fade after several days.</p>
 
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the machinist subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -107,7 +107,7 @@ function Magesmith() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Expert Relic User</h3>
+            <h3 className="header">Expert Relic User</h3>
             <p>The number of relics you can align to increases to 1 plus your tier.</p>
           </div>
         )}
@@ -118,7 +118,7 @@ function Magesmith() {
             <p>These are the subclass choices for the magesmith.</p>
             <h2>Machinist</h2>
             <p>You create arcane machines that blast your foes or protect your allies.</p>
-            <h3>Arcane Turret (1st-Level Feature)</h3>
+            <h3 className="header">Arcane Turret (1st-Level Feature)</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Arcane Turret"
@@ -141,7 +141,7 @@ function Magesmith() {
 
             <h2>Magemech</h2>
             <p>You have created a magical suit of armor that encases your body in premier protection. </p>
-            <h3>Mech Suit (1st-Level Feature)</h3>
+            <h3 className="header">Mech Suit (1st-Level Feature)</h3>
             <p>You design a mech suit that only you can wear, which takes an action to equip on or off. Choose the type of suit you’ve created:</p>
             <ul>
               <li><span><b>Stalker:</b> This model counts as light armor. While wearing the stalker mech, you gain the following ability:</span></li>
@@ -168,7 +168,7 @@ function Magesmith() {
 
             <h2>Runesmith</h2>
             <p>You have studied the magic of runes, and have learned to apply arcane runes to armor of allies and enemies.</p>
-            <h3>Etch Rune (1st-Level Feature)</h3>
+            <h3 className="header">Etch Rune (1st-Level Feature)</h3>
             <p>You gain the following ability: </p>
             <AbilityCard
               name="Etch Rune"
@@ -197,13 +197,13 @@ function Magesmith() {
             <h1>Magesmith Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
-            <h3>Additional Upgrades</h3>
+            <h3 className="header">Additional Upgrades</h3>
             <p>Learn another upgrade from arcane upgrades. You can take this class talent multiple times.</p>
 
-            <h3>Expanded Magesmith Magic</h3>
+            <h3 className="header">Expanded Magesmith Magic</h3>
             <p>Learn a battle spell or magic tradition from one listed in magesmith magic. You can take this class talent multiple times.</p>
 
-            <h3>Infuse Armor</h3>
+            <h3 className="header">Infuse Armor</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Infuse Armor"
@@ -211,11 +211,11 @@ function Magesmith() {
               descriptor="As you use magic, you siphon some of the arcane energy to empower an ally’s armor."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast"
+              trigger="You cast a spell"
               effect="Choose a creature within 1 zone. The target’s Evasion increases by +1 until the start of your next turn." 
             />
 
-            <h3>Infuse Weapon</h3>
+            <h3 className="header">Infuse Weapon</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Infuse Weapon"
@@ -223,11 +223,11 @@ function Magesmith() {
               descriptor="As you use magic, you siphon some of the arcane energy to empower an ally’s weapon."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast"
+              trigger="You cast a spell"
               effect="Choose a creature within 1 zone. When the target deals damage from an attack roll, they deal 1 additional arcane damage per the triggering spell tier (turn ends)." 
             />
 
-            <h3>Rapid Upgrade</h3>
+            <h3 className="header">Rapid Upgrade</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Rapid Upgrade"
@@ -240,7 +240,7 @@ function Magesmith() {
             />
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Advanced Mech</h3>
+            <h3 className="header">Advanced Mech</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> magemech subclass</p>
             <p>Your mech suit is boosted depending on the model:</p>
             <ul>
@@ -248,15 +248,15 @@ function Magesmith() {
               <li><span><i>Vanguard:</i> When you use vanguard challenge, you can choose an ally within 1 zone to gain the same temporary hit points adn the abilty gains the range keyword.</span></li>
             </ul>
 
-            <h3>Mass Rune</h3>
+            <h3 className="header">Mass Rune</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> runesmith subclass</p>
             <p>When you use etch rune, you can spend mana equal to your tier to target 1d4+1 creatures within 1 zone.</p>
 
-            <h3>No Friendly Fire</h3>
+            <h3 className="header">No Friendly Fire</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> machinist subclass</p>
             <p>When your arcane turret uses the Fire or Magnify actions, you and allies are unaffected.</p>
 
-            <h3>Recharge Magic Item</h3>
+            <h3 className="header">Recharge Magic Item</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Recharge Magic Item"
@@ -269,7 +269,7 @@ function Magesmith() {
               effect="Targeted item regains another use of its encounter ability." 
             />
 
-            <h3>Spell Store</h3>
+            <h3 className="header">Spell Store</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Spell Store"
@@ -278,26 +278,26 @@ function Magesmith() {
               frequency="At-will"
               keywords="Magical"
               duration="Until after your next rest"
-              trigger="You Spellcast a battle spell"
+              trigger="You cast a battle spell"
               effect="The spell’s effect doesn’t immediately happen. Instead, the spell is stored within an item in your hand. As a maneuver, anyone holding the enchanted item can activate the spell’s effect." 
             />
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Dual Functioning Turret</h3>
+            <h3 className="header">Dual Functioning Turret</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> machinist subclass</p>
             <p>When you command your arcane turret, you can choose two actions.</p>
 
-            <h3>Legendary Relic User</h3>
+            <h3 className="header">Legendary Relic User</h3>
             <p>The number of relics you can align to increases to your proficiency bonus.</p>
 
-            <h3>Master Upgrader</h3>
+            <h3 className="header">Master Upgrader</h3>
             <p>The maximum number of upgrades you can have equals your proficiency bonus.</p>
 
-            <h3>Signature Rune</h3>
+            <h3 className="header">Signature Rune</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> runesmith subclass</p>
             <p>Choose one of the rune options from etch rune to become your signature rune. When you use your signature rune, the ability lasts for the scene. For the destruction option, the target can make overcome rolls at the end of their turn to end the effect.</p>
           
-            <h3>Superior Mech</h3>
+            <h3 className="header">Superior Mech</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> magemech subclass</p>
             <p>When wearing your mech suit, you gain a fly speed equal to your land speed and you gain to <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> overcome rolls.</p>
           </div>
@@ -337,7 +337,7 @@ function Magesmith() {
             />
 
             <h2>Dimensional Upgrade</h2>
-            <p>While the upgraded item is equipped, the wielder can Spellcast dimensional step once per short rest without spending mana, even if they don’t know the spell.</p>
+            <p>While the upgraded item is equipped, the wielder can cast the dimensional step battle spell once per short rest without spending mana, even if they don’t know the spell.</p>
 
             <h2>Elemental Upgrade</h2>
             <p style={{marginBottom: 0}}><b>Requirement:</b> only on weapons</p>

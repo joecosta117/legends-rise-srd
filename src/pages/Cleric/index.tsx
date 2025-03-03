@@ -38,11 +38,11 @@ function Cleric() {
       <div className="cleric-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Cleric Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Cleric Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Cleric Talents</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Cleric Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Cleric Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Cleric Talents</div>
         </div>
         {isDetails && (
           <div>
@@ -56,7 +56,7 @@ function Cleric() {
               <li><span><b>Innate:</b> Thanks to a blessed bloodline, experimentation, or divine exposure, magic flows through your veins and is a part of you.</span></li>
             </ul>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Divine</span></li>
               <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
@@ -71,7 +71,7 @@ function Cleric() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Divine Origin</h3>
+            <h3 className="header">Divine Origin</h3>
             <p>All clerics receive their magic from the divine, usually deities, but others by belief in an important cause or morality. The origin of your divine magic influences what magic you can learn. Work with your GM to determine the source of your divine power, and pick three magic traditions associated with your source. If unsure, here are some examples of deities you can use:</p>
             <h4>Deity Example Table</h4>
             <table>
@@ -129,7 +129,7 @@ function Cleric() {
               </tbody>
             </table>
             
-            <h3>Cleric Magic</h3>
+            <h3 className="header">Cleric Magic</h3>
             <p>You begin channeling the power of divine magic.</p>
             <ul>
               <li><span><b>Mana:</b> 2, increasing to 5 at 5th level, and 8 at 8th level</span></li>
@@ -141,10 +141,10 @@ function Cleric() {
               <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition associated with your faith.</span></li>
             </ul>
     
-            <h3>Prayer of Healing</h3>
-            <p>You learn the quick heal battle spell even if you don’t know the life magic tradition. Once per short rest, you can Spellcast this spell at your highest spell tier without spending mana.</p>
+            <h3 className="header">Prayer of Healing</h3>
+            <p>You learn the quick heal battle spell even if you don’t know the life magic tradition. Once per short rest, you can cast this spell at your highest spell tier without spending mana.</p>
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the shepherd subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -153,7 +153,7 @@ function Cleric() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Opening Prayer</h3>
+            <h3 className="header">Opening Prayer</h3>
             <p>At the start of combat, choose one creature to gain <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to all rolls until the end of their first turn.</p>
           </div>
         )}
@@ -164,12 +164,12 @@ function Cleric() {
             <p>These are the subclass choices for the arcanist.</p>
             <h2>Shepherd</h2>
             <p>You focus your divine powers to nourish and support the faithful.</p>
-            <h3>Divine Inspiration (1st-Level Feature)</h3>
+            <h3 className="header">Divine Inspiration (1st-Level Feature)</h3>
             <p>When you target an ally with a tier 1 or higher battle spell, they gain temporary hit points equal to double the spell tier (scene ends).</p>
 
             <h2>Champion</h2>
             <p>You emphasize martial prowess to serve a higher purpose.</p>
-            <h3>Sacred Armaments (1st-Level Feature)</h3>
+            <h3 className="header">Sacred Armaments (1st-Level Feature)</h3>
             <p>You are trained for battle. You gain the following ability:</p>
             <ul>
               <li><span>Your starting hit points increase to 10, and your recoveries increase to 5.</span></li>
@@ -179,7 +179,7 @@ function Cleric() {
 
             <h2>Invoker</h2>
             <p>You bring down the wrath of your deity upon your foes.</p>
-            <h3>Divine Wrath (1st-Level Feature)</h3>
+            <h3 className="header">Divine Wrath (1st-Level Feature)</h3>
             <p>When you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier. You also gain resistance equal to your tier to a damage type appropriate to your deity.</p>
           </div>
         )}
@@ -189,28 +189,28 @@ function Cleric() {
             <h1>Cleric Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
-            <h3>Cleansing Prayer</h3>
-            <p>When you Spellcast quick heal, the target can make an overcome roll against an effect.</p> 
+            <h3 className="header">Cleansing Prayer</h3>
+            <p>When you cast quick heal, the target can make an overcome roll against an effect.</p> 
 
-            <h3>Expanded Cleric Magic</h3>
+            <h3 className="header">Expanded Cleric Magic</h3>
             <p>Learn a battle spell or magic tradition related to your faith. You can take this class talent multiple times.</p>
 
-            <h3>Guiding Spell</h3>
+            <h3 className="header">Guiding Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Guiding Spell"
               actType="Reaction"
-              descriptor="You bless an ally as you spellcast."
+              descriptor="You bless an ally as you use magic."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell"
+              trigger="You cast a battle spell"
               effect=" Choose a creature within your zone to gain +1 fortune on their next roll before the end of their next turn." 
             />
 
-            <h3>Sanctified Energy</h3>
+            <h3 className="header">Sanctified Energy</h3>
             <p>Choose a damage type associated with your deity, such as lightning for a storm god. When you deal holy or unholy damage from a magical ability, you can change the damage to the chosen damage type and the ability gains the damage type’s keyword. You also gain resistance to the chosen damage type.</p>
 
-            <h3>Vitality Spell</h3>
+            <h3 className="header">Vitality Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Vitality Spell"
@@ -218,12 +218,12 @@ function Cleric() {
               descriptor="Your magic better heals an ally’s wounds."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell that lets a creature regain hit points"
+              trigger="You cast a battle spell that heals a creature"
               effect="Choose one target of the spell to regain additional hit points equal to your proficiency bonus." 
             />
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Invigorating Spell</h3>
+            <h3 className="header">Invigorating Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Invigorating Spell"
@@ -231,15 +231,15 @@ function Cleric() {
               descriptor="As you wield divine magic, you bestow a blessing upon an ally."
               frequency="Encounter"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell"
+              trigger="You cast a battle spell"
               effect="Choose a creature within 1 zone to gain temporary hit points equal to double the triggering spell tier (1 for tier 0 spell) for the scene." 
             />
 
-            <h3>Mass Inspiration</h3>
+            <h3 className="header">Mass Inspiration</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> Shepherd subclass</p>
             <p>When you use divine inspiration, you can choose a second creature within 1 zone that’s not the target of your spell to gain the same temporary hit points.</p>
 
-            <h3>Purifying Spell</h3>
+            <h3 className="header">Purifying Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Purifying Spell"
@@ -247,36 +247,36 @@ function Cleric() {
               descriptor="You cleanse an ally of debilitations with a spell."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell of tier 1 or higher that targets a friendly creature"
+              trigger="You cast a battle spell of tier 1 or higher that targets a friendly creature"
               effect="Triggering creatures can make an overcome roll against an effect." 
             />
 
-            <h3>Wartime Healing</h3>
+            <h3 className="header">Wartime Healing</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> champion subclass</p>
-            <p>When you use spellcast quick heal on a target other than you, you also regain hit points equal to your proficiency bonus.</p>
+            <p>When you use cast quick heal on a target other than you, you also heal equal to your proficiency bonus.</p>
 
-            <h3>Wrathful Healing</h3>
+            <h3 className="header">Wrathful Healing</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> invoker subclass</p>
             <p>When you use quick heal, choose 1 enemy per spell tier within the target’s zone. Chosen enemies take 1 holy or unholy damage (your choice) per your tier.</p>
 
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Battle Blessings</h3>
+            <h3 className="header">Battle Blessings</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> champion subclass</p>
             <p>When you target an ally with a magical ability, they are empowered with divine energy until the end of their next turn. While empowered, any damage they deal from attack rolls deals additional holy or unholy (your choice) damage equal to your tier.</p>
 
-            <h3>Greater Inspiration</h3>
+            <h3 className="header">Greater Inspiration</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shepherd subclass</p>
             <p>When you use divine inspiration, the temporary hit points gained equals triple the spell tier.</p>
 
-            <h3>Mass Prayer</h3>
+            <h3 className="header">Mass Prayer</h3>
             <p>For opening prayer, you can target yourself and all allies.</p>
 
-            <h3>Opening Condemnation</h3>
+            <h3 className="header">Opening Condemnation</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> invoker subclass</p>
             <p>When you use opening prayer, you can choose one enemy within sight. Make an attack roll against the target, dealing holy or unholy damage (your choice) equal to double your proficiency bonus.</p>
 
-            <h3>Plentiful Prayers</h3>
+            <h3 className="header">Plentiful Prayers</h3>
             <p>You can use prayer of healing a second time per short rest.</p>
           </div>
         )}

@@ -94,6 +94,9 @@
   }
 
   &__line {
+    text-align: left;
+    font-size: 14px;
+    
     & span[data-type="MGT"] {
       color: $physicalred;
     }

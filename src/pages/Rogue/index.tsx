@@ -39,18 +39,18 @@ function Rogue() {
       <div className="rogue-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Rogue Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Rogue Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Rogue Talents</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Rogue Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Rogue Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Rogue Talents</div>
         </div>
         {isDetails && (
           <div>
             <h1>Rogue</h1>
             <p>Assassins, thieves, diplomats, scouts, explorers, and other talented and cunning heroes can all be Rogues. You rely on your wits, skills, and guile to help your allies. Play a rogue if you want to play a nimble combatant with plenty of talents outside of combat.</p>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Martial</span></li>
               <li><span><b>Defense Bonus:</b> +2 to Evasion and Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 10</span></li>
@@ -65,13 +65,13 @@ function Rogue() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Fightng Style</h3>
+            <h3 className="header">Fightng Style</h3>
             <p>You have mastered a certain way of fighting. Learn a fighting style.</p>
             <ul>
               <li><span><i>Suggestion:</i> You learn the lurking fighting style and unseen attack technique.</span></li>
             </ul>
     
-            <h3>Evasive Attack</h3>
+            <h3 className="header">Evasive Attack</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Evasive Attack"
@@ -81,10 +81,10 @@ function Rogue() {
               effect="Disengage then Strike, or Strike then Disengage" 
             />
 
-            <h3>Cunning Strike</h3>
+            <h3 className="header">Cunning Strike</h3>
             <p>You know how to best hurt an off guarded foe. When you Strike with at least one <Modifier type="f" />, you deal additional physical damage equal to your tier. You don’t gain this additional damage when using a heavy melee weapon or wearing heavy armor.</p>
 
-            <h3>Opportunist</h3>
+            <h3 className="header">Opportunist</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Opportunist"
@@ -96,10 +96,10 @@ function Rogue() {
               effect="You take your turn next" 
             />
 
-            <h3>Expertise</h3>
+            <h3 className="header">Expertise</h3>
             <p>You gain two knacks.</p>
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the shadow subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -108,7 +108,7 @@ function Rogue() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Agile</h3>
+            <h3 className="header">Agile</h3>
             <p>You ignore any effects from a failed attack roll against your Evasion.</p>
           </div>
         )}
@@ -119,7 +119,7 @@ function Rogue() {
             <p>These are the subclass choices for the rogue.</p>
             <h2>Shadow</h2>
             <p>You have a magical affinity with darkness.</p>
-            <h3>Umbral Techniques (1st-Level Feature)</h3>
+            <h3 className="header">Umbral Techniques (1st-Level Feature)</h3>
             <p>You gain night vision, and you gain the following ability:</p>
             <AbilityCard
               name="Shadow Leap"
@@ -132,13 +132,13 @@ function Rogue() {
 
             <h2>Investigator</h2>
             <p>You intently study your environment and foes, and can use any minor detail to your advantage.</p>
-            <h3>Eye for Detail (1st-Level Feature)</h3>
+            <h3 className="header">Eye for Detail (1st-Level Feature)</h3>
             <p>When you Study a creature, you gain +1 fortune on your next Strike against them (turn ends). At the start of combat, you can Study as a free action.</p>
 
             <h2>Swashbuckler</h2>
             <p>You fight with bravados and panache.</p>
-            <h3>Panache (1st-Level Feature)</h3>
-            <p>Your stylish moves build your confidence. When you Disarm, Help, Hinder, Shove, Taunt, Trip, or another act of significant style (GM’s discretion), you gain a panache token that lasts for the scene. When you make a roll, you can spend any number of panache tokens to gain an equal number of <Modifier type="f" /> to the roll.</p>
+            <h3 className="header">Panache (1st-Level Feature)</h3>
+            <p>Your stylish moves build your confidence. When you Disarm, Help, Hinder, Shove, Taunt, Trip, or another ability of significant style (GM’s discretion), you gain a panache token that lasts for the scene. When you make a roll, you can spend any number of panache tokens to gain an equal number of <Modifier type="f" /> to the roll.</p>
           </div>
         )}
 
@@ -147,13 +147,13 @@ function Rogue() {
             <h1>Rogue Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
-            <h3>Cull the Weak</h3>
+            <h3 className="header">Cull the Weak</h3>
             <p>A hindered creature is also exposed only to you.</p>
 
-            <h3>Expanded Training</h3>
+            <h3 className="header">Expanded Training</h3>
             <p>You learn a technique or fighting style. You can take this class talent multiple times.</p>
             
-            <h3>Feint Attack</h3>
+            <h3 className="header">Feint Attack</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Feint Attack"
@@ -163,7 +163,7 @@ function Rogue() {
               effect="Strike, but make your attack roll against the target’s Resolve." 
             /> 
 
-            <h3>Lightning Reflexes</h3>
+            <h3 className="header">Lightning Reflexes</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Lightning Reflexes"
@@ -174,7 +174,7 @@ function Rogue() {
               effect="Triggering attack roll takes +1 misfortune" 
             />
 
-            <h3>Slip the Knife</h3>
+            <h3 className="header">Slip the Knife</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Slip the Knife"
@@ -185,10 +185,10 @@ function Rogue() {
             /> 
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Greater Opportunist</h3>
+            <h3 className="header">Greater Opportunist</h3>
             <p>When you use opportunist, you gain <Modifier type="f" count="1" /> to your next attack roll on that turn.</p>
 
-            <h3>Insightful Movement</h3>
+            <h3 className="header">Insightful Movement</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> investigator subclass</p>
             <p>You gain the following ability:</p> 
             <AbilityCard
@@ -199,19 +199,19 @@ function Rogue() {
               effect="Disengage or Move, then Study" 
             />
 
-            <h3>Meld the Shadows</h3>
+            <h3 className="header">Meld the Shadows</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shadow subclass</p>
             <p>When you use shadow leap, you become invisible (turn starts) or until you use a hostile act.</p> 
 
-            <h3>Slippery Mind</h3>
+            <h3 className="header">Slippery Mind</h3>
             <p>You ignore any effects from a failed attack roll against your Resolve.</p>
 
-            <h3>Start with Style</h3>
+            <h3 className="header">Start with Style</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> swashbuckler subclass</p>
             <p>You always start a combat encounter with a number of panache tokens equal to 1 plus your momentum.</p>
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Cunning Precision</h3>
+            <h3 className="header">Cunning Precision</h3>
             <p>You gain the following ability:</p> 
             <AbilityCard
               name="Cunning Precision"
@@ -222,19 +222,19 @@ function Rogue() {
               effect="Reroll your Strike’s attack roll, and take the highest result" 
             />
 
-            <h3>Investigator's Sight</h3>
+            <h3 className="header">Investigator's Sight</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> investigator subclass</p>
             <p>You are always aware of your surroundings. You gain blind vision within 1 zone.</p>
 
-            <h3>Mobile Panache</h3>
+            <h3 className="header">Mobile Panache</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> swashbuckler subclass</p>
             <p>When you spend a panache token on your turn, you become hastened until the end of your turn.</p> 
 
-            <h3>Shadow Afterimage</h3>
+            <h3 className="header">Shadow Afterimage</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shadow subclass</p>
             <p>When you shadow leap, you leave behind a shadowy duplicate of yourself that lasts until the end of your next turn. The duplicate has the same defenses as you, but disappears if it takes any damage.</p>
 
-            <h3>Uncanny Opportunist</h3>
+            <h3 className="header">Uncanny Opportunist</h3>
             <p>You gain a second reaction that you can only use on opportunist.</p>
           </div>
         )}

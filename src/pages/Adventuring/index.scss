@@ -1,0 +1,49 @@
+@import "../../styles/index.scss";
+
+.general {
+  @include page-layout();
+}
+
+.general-content {
+  @include class-page-content();
+
+  &__tabs {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-flow: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid $gold;
+    width: 90%;
+    justify-content: center;
+  
+    &__tab {
+      cursor: pointer;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  
+    &__divider {
+      color: $gold;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.attack-icon {
+  padding-bottom: 0;
+  background-color: $white;
+  border-radius: 50%;
+  width: 15px;
+  vertical-align: middle;
+}
+
+.degrees {
+  margin-left: 5px
+}

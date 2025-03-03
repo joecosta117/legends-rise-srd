@@ -11,8 +11,12 @@
   font-weight: bold;
   border-bottom: 2px solid $gold;
 
-  .tab {
+  &__tab {
     cursor: pointer;
+
+    &[data-selected="true"] {
+      text-decoration: underline;
+    }
   }
 
   .divider {

@@ -39,11 +39,11 @@ function Druid() {
       <div className="druid-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Druid Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Druid Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Druid Talents</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Druid Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Druid Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Druid Talents</div>
         </div>
         {isDetails && (
           <div>
@@ -57,7 +57,7 @@ function Druid() {
               <li><span><b>Innate:</b> Thanks to a primordial bloodline, experimentation, or elemental exposure, nature magic flows through your veins and is a part of you.</span></li>
             </ul>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Nature</span></li>
               <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
@@ -72,7 +72,7 @@ function Druid() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Druid Magic</h3>
+            <h3 className="header">Druid Magic</h3>
             <p>You invoke the elemental powers of nature.</p>
             <ul>
               <li><span><b>Mana:</b> 2, increasing to 5 at 5th level, and 8 at 8th level</span></li>
@@ -84,7 +84,7 @@ function Druid() {
               <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition, from the previous list.</span></li>
             </ul>
     
-            <h3>Shape Terrain</h3>
+            <h3 className="header">Shape Terrain</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Shape Terrain"
@@ -96,7 +96,7 @@ function Druid() {
               effect="The targeted zone becomes a difficult zone" 
             />
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the elementalist subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -105,7 +105,7 @@ function Druid() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Nature’s Ally</h3>
+            <h3 className="header">Nature’s Ally</h3>
             <p>You and allies in your zone ignore the movement penalties from difficult zones and have resistance equal to your tier to damage from dangerous zones.</p>
           </div>
         )}
@@ -116,7 +116,7 @@ function Druid() {
             <p>These are the subclass choices for the druid.</p>
             <h2>Elementalist</h2>
             <p>You are one with the elemental realms.</p>
-            <h3>Elemental Attunement (1st-Level Feature)</h3>
+            <h3 className="header">Elemental Attunement (1st-Level Feature)</h3>
             <p>Attune to an elemental realm. You gain a utility benefit depending on the chosen realm, and when you deal damage of the realm’s associated damage type, you deal additional damage equal to your tier. You can change your realm attunement after a long rest.</p>
             <h4>Elemenalist Table</h4>
             <table>
@@ -158,7 +158,7 @@ function Druid() {
 
             <h2>Shaman</h2>
             <p>You call upon animal spirits to aid you.</p>
-            <h3>Call Spirit Animal (1st-Level Feature)</h3>
+            <h3 className="header">Call Spirit Animal (1st-Level Feature)</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Call Spirit Animal"
@@ -183,7 +183,7 @@ function Druid() {
 
             <h2>Shifter</h2>
             <p>You worship the primal spirits, and call upon them to transform into a terrifying beast.</p>
-            <h3>Primal Form (1st-Level Feature)</h3>
+            <h3 className="header">Primal Form (1st-Level Feature)</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Primal Form"
@@ -197,7 +197,7 @@ function Druid() {
                 <span>
                   <span>You expend mana equal to your tier to transform your body and equipment into a medium sized animal of your choice. While in this form:</span>
                   <ul>
-                    <li><span>You can’t Spellcast or use any abilities you can’t do as an animal, but you can focus on abilities.</span></li>
+                    <li><span>You can’t cast spells or use any abilities you can’t do as an animal, but you can focus on abilities.</span></li>
                     <li><span>You gain temporary hit points equal to half your shaken value while in this form.</span></li>
                     <li><span>Your Evasion and Might gain +2.</span></li>
                     <li><span>Your natural melee weapons deal 3 physical damage.</span></li>
@@ -215,10 +215,10 @@ function Druid() {
             <h1>Druid Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
-            <h3>Dangerous Terrain</h3>
+            <h3 className="header">Dangerous Terrain</h3>
             <p>When you use shape terrain, you can choose for the targeted zone to instead become a dangerous zone (damage equal to your tier). Choose the damage type from cold, fire, lightning, physical, or toxic.</p>
             
-            <h3>Elemental Spell</h3>
+            <h3 className="header">Elemental Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Elemental Spell"
@@ -226,14 +226,14 @@ function Druid() {
               descriptor="You shift the elements of your magic."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell that deals damage"
+              trigger="You cast a battle spell that deals damage"
               effect="Change the triggering spell’s damage type to cold, fire, lightning, physical, or toxic." 
             />
 
-            <h3>Expanded Druid Magic</h3>
+            <h3 className="header">Expanded Druid Magic</h3>
             <p>Learn a battle spell or magic tradition from one listed in druid magic. You can take this class talent multiple times.</p>
 
-            <h3>Grasping Spell</h3>
+            <h3 className="header">Grasping Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Grasping Spell"
@@ -241,11 +241,11 @@ function Druid() {
               descriptor="Your magic conjures vines that enwrap your foe."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell that targets at least one creature with an attack roll"
+              trigger="You cast a battle spell that targets at least one creature with an attack roll"
               effect="Choose one of triggering spell’s targets. On a success or higher, the chosen target is seized (turn ends)." 
             />
 
-            <h3>Safe Terrain</h3>
+            <h3 className="header">Safe Terrain</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Safe Terrain"
@@ -257,15 +257,15 @@ function Druid() {
             />
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Behemoth Form</h3>
+            <h3 className="header">Behemoth Form</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shifter subclass</p>
             <p>When you use primal transformation, your size can become large, or huge starting at 8th level. While large, you can melee Strike with <b>+1 <img className="icon" src={misfortune} alt="misfortune icon" /></b> a creature not engaged with you, but still in your zone. </p>
 
-            <h3>Dual Attunement</h3>
+            <h3 className="header">Dual Attunement</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> elementalist subclass</p>
             <p>Choose two elements to be attuned to from your elemental attunement feature.</p>
 
-            <h3>Nature's Shield</h3>
+            <h3 className="header">Nature's Shield</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Nature's Shield"
@@ -277,7 +277,7 @@ function Druid() {
               effect="The creature gains resistance only to the triggering damage." 
             />
 
-            <h3>Spirit’s Aid</h3>
+            <h3 className="header">Spirit’s Aid</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shaman subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -300,11 +300,11 @@ function Druid() {
               )}  
             />
 
-            <h3>Wider Terrain</h3>
+            <h3 className="header">Wider Terrain</h3>
             <p>When you use shape terrain, you can choose to target a number of zones equal to your tier.</p>
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Elemental Rage</h3>
+            <h3 className="header">Elemental Rage</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> elementalist subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -312,22 +312,22 @@ function Druid() {
               actType="Reaction"
               descriptor="You unleash elemental fury around you as you use your magic."
               frequency="At-will"
-              trigger="You Spellcast a battle spell of tier 1 or higher"
+              trigger="You cast a battle spell of tier 1 or higher"
               effect="Enemies within your zone take 1 damage per triggering spell tier. The damage type matches the damage type of your elemental attunement. If you have dual attunement class talent, then choose one of your attuned elements’ damage types."
             />
 
-            <h3>Nature's Respite</h3>
+            <h3 className="header">Nature's Respite</h3>
             <p>You and allies both ignore difficult zones and have resistance to dangerous zones created by you.</p>
 
-            <h3>Perfect Transformation</h3>
+            <h3 className="header">Perfect Transformation</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shifter subclass</p>
-            <p>While you are in primal transformation, you can Spellcast and as a maneuver, you can spend mana equal to your tier to gain temporary hit points equal to your shaken value.</p>
+            <p>While you are in primal transformation, you can cast spells, and as a maneuver, you can spend mana equal to your tier to gain temporary hit points equal to your shaken value.</p>
 
-            <h3>Spirit Shift</h3>
+            <h3 className="header">Spirit Shift</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> shaman subclass</p>
             <p>When you focus on call spirit animal, you can move the spirit up to one zone away and also change the type of spirit.</p>
 
-            <h3>Terrain Manipulator</h3>
+            <h3 className="header">Terrain Manipulator</h3>
             <p>When you use shape terrain, you can spend 1 mana for the ability to last for the scene without focusing.</p>
           </div>
         )}

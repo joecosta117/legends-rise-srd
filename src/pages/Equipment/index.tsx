@@ -13,7 +13,7 @@ function Equipment() {
 
   useEffect(() => {
     const path = window.location.pathname.split("/").pop();
-    console.log('useffect being hit', path)
+
     switch (path) {
       case "armor":
         handleArmor();
@@ -79,7 +79,7 @@ function Equipment() {
         <h1>Equipment</h1>
         <p>Your hero can purchase any number of equipment. Depending on your class, you start off with certain equipment. As you adventure, you earn gold, which you can use to purchase other equipment.</p>
 
-        <p>How much your hero can carry isn’t a useful or fun question in Legends Rise. Instead, you can assume your hero can carry basic equipment that fictionally makes sense. However, you can’t carry more than one non-shield armor on you.</p>
+        <p>How much your hero can carry isn’t a useful or fun question in Legends Rise. Instead, you can assume your hero carries basic adventuring gear and any special items such as weapons or magical items that fictionally makes sense. However, you can’t carry more than one non-shield armor on you.</p>
      
         {isArmor && (
           <div>
@@ -208,7 +208,7 @@ function Equipment() {
                 <tr>
                   <td>Clubs</td>
                   <td>Club, Morningstar, Staff</td>
-                  <td>target takes <Modifier type="mf" count="1" /> to overcome rolls (turn ends)</td>
+                  <td>target is confused (turn ends)</td>
                 </tr>
                 <tr>
                   <td>Firearms</td>
@@ -273,7 +273,7 @@ function Equipment() {
                 </tr>
                 <tr>
                   <td>Spellcasting</td>
-                  <td>Hiring someone to Spellcast a spell. Cost is the listed amount plus any other costs needed for the spell.</td>
+                  <td>Hiring someone to cast a spell. Cost is the listed amount plus any other costs needed for the spell.</td>
                   <td>1 for tier 1 spell, 3 for tier 2 spell, 6 for tier 3 spell</td>
                   <td>Equals the spell tier</td>
                 </tr>

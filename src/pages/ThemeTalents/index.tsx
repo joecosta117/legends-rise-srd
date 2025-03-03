@@ -81,7 +81,7 @@ function ThemeTalents() {
     },
     {
       title: 'Risky Ritual',
-      content: "Once per long rest, you can Spellcast a ritual spell you don’t know, but the spell’s tier must be equal to or lower than your tier. You take +1 misfortune to the ritual skill roll."
+      content: "Once per long rest, you can cast a ritual spell you don’t know, but the spell’s tier must be equal to or lower than your tier. You take +1 misfortune to the ritual skill roll."
     },
     {
       title: 'Ritual Caster',
@@ -103,7 +103,7 @@ function ThemeTalents() {
     },
     {
       title: 'Quick Ritual',
-      content: "Once per long rest, you can Spellcast a ritual spell as an action, even if it normally takes a longer time."
+      content: "Once per long rest, you can cast a ritual spell as an action, even if it normally takes a longer time."
     },
   ]
   const arcaneT3Talents = [
@@ -117,7 +117,7 @@ function ThemeTalents() {
     },
     {
       title: 'Permament Ritual',
-      content: "You can extend a ritual’s magic to last forever. When you Spellcast a ritual spell with a duration, you can spend an additional 30 gold worth of precious materials to enhance the spell’s duration. Make the ritual spell’s skill roll, and on a success or higher, the duration becomes permanent. Otherwise, the spell works as normal."
+      content: "You can extend a ritual’s magic to last forever. When you cast a ritual spell with a duration, you can spend an additional 30 gold worth of precious materials to enhance the spell’s duration. Make the ritual spell’s skill roll, and on a success or higher, the duration becomes permanent. Otherwise, the spell works as normal."
     },
   ]
   const cunningT1Talents = [
@@ -247,7 +247,7 @@ function ThemeTalents() {
     },
     {
         title: "Risk Taker",
-        content: "You gain resistance to damage equal to your tier you take as a consequence from tempt fate or poor skill rolls."
+        content: "You gain resistance equal to your tier to damage equal taken as a consequence from tempt fate or poor skill rolls."
     },
     {
         title: "Show Rank",
@@ -275,7 +275,7 @@ function ThemeTalents() {
     },
     {
         title: "Heroic Champion",
-        content: "Your legendary heroism inspires others. You start off each game session with an additional hero point, and your maximum amount of hero points you can have at once increases by +1. When you spend a hero point on a skill roll, all allies gain a stacking +1 to their next skill roll that lasts until after a long rest."
+        content: "Your legendary heroism inspires others. You start off each game session with an additional hero point, and your maximum amount of hero points you can have at once increases by +1. When you spend a hero point on a skill roll, all allies gain a stacking +1 fortune to their next skill roll that lasts until after a long rest."
     },
     {
         title: "Legendary Athlete",
@@ -297,7 +297,7 @@ function ThemeTalents() {
     },
     {
         title: "Extreme Survivalist",
-        content: "You know how to keep your allies safe from elemental hazards usually found in the wilds. You and your companions gain resistance to damage equal to your tier taken from environmental hazards and gain +1 on skill rolls to navigate environmental hazards. These types of hazards could include landslides, slipping off a cliffside, enduring a snowstorm, or weathering the fire realm’s supernatural heat."
+        content: "You know how to keep your allies safe from elemental hazards usually found in the wilds. You and your companions gain resistance equal to your tier to damage taken from environmental hazards and gain +1 fortune on skill rolls to navigate environmental hazards. These types of hazards could include landslides, slipping off a cliffside, enduring a snowstorm, or weathering the fire realm’s supernatural heat."
     },
     {
         title: "Nature Companion",
@@ -348,18 +348,18 @@ function ThemeTalents() {
   return (
     <div className="theme-talents">
       <div className="theme-talents-content">
-        <div className="theme-talents-content__tabs">
-          <div className="theme-talents-content__tabs__tab" onClick={handleOverview}><p>Overview</p></div>
-          <div className="theme-talents-content__tabs__divider">|</div>
-          <div className="theme-talents-content__tabs__tab" onClick={handleArcane}><p>Arcane</p></div>
-          <div className="theme-talents-content__tabs__divider">|</div>
-          <div className="theme-talents-content__tabs__tab" onClick={handleCunning}><p>Cunning</p></div>
-          <div className="theme-talents-content__tabs__divider">|</div>
-          <div className="theme-talents-content__tabs__tab" onClick={handleDivine}><p>Divine</p></div>
-          <div className="theme-talents-content__tabs__divider">|</div>
-          <div className="theme-talents-content__tabs__tab" onClick={handleMartial}><p>Martial</p></div>
-          <div className="theme-talents-content__tabs__divider">|</div>
-          <div className="theme-talents-content__tabs__tab" onClick={handleNature}><p>Nature</p></div>
+        <div className="tab-items">
+          <div className="tab-items__tab" onClick={handleOverview} data-selected={isRules}><p>Overview</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleArcane} data-selected={isArcane}><p>Arcane</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleCunning} data-selected={isCunning}><p>Cunning</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleDivine} data-selected={isDivine}><p>Divine</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleMartial} data-selected={isMartial}><p>Martial</p></div>
+          <div className="tab-items__divider">|</div>
+          <div className="tab-items__tab" onClick={handleNature} data-selected={isNature}><p>Nature</p></div>
         </div>
 
         {isRules && (
@@ -384,16 +384,16 @@ function ThemeTalents() {
             <h1>Arcane Theme</h1>
             <p>You see challenges as puzzles to solve through clever use of magic, usually arcane in nature.</p>
             <h2>Tier 1 Theme Talents</h2>
-            {arcaneT1Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {arcaneT1Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 2 Theme Talents</h2>
-            {arcaneT2Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {arcaneT2Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 3 Theme Talents</h2>
-            {arcaneT3Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {arcaneT3Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
           </div>
         )}
@@ -402,16 +402,16 @@ function ThemeTalents() {
             <h1>Cunning Theme</h1>
             <p>With clever tricks and expert knowledge, you navigate challenges out of combat.</p>
             <h2>Tier 1 Theme Talents</h2>
-            {cunningT1Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {cunningT1Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 2 Theme Talents</h2>
-            {cunningT2Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {cunningT2Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 3 Theme Talents</h2>
-            {cunningT3Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {cunningT3Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
           </div>
         )}
@@ -420,16 +420,16 @@ function ThemeTalents() {
             <h1>Divine Theme</h1>
             <p>You resolve challenges through prayer or magic you channel from a higher power, such as a deity or the heavens.</p>
             <h2>Tier 1 Theme Talents</h2>
-            {divineT1Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {divineT1Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 2 Theme Talents</h2>
-            {divineT2Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {divineT2Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 3 Theme Talents</h2>
-            {divineT3Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {divineT3Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
           </div>
         )}
@@ -438,16 +438,16 @@ function ThemeTalents() {
             <h1>Martial Theme</h1>
             <p>You rely on your warrior training as well as your physical prowess to surpass any challenge you face.</p>
             <h2>Tier 1 Theme Talents</h2>
-            {martialT1Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {martialT1Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 2 Theme Talents</h2>
-            {martialT2Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {martialT2Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 3 Theme Talents</h2>
-            {martialT3Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {martialT3Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
           </div>
         )}
@@ -456,16 +456,16 @@ function ThemeTalents() {
             <h1>Nature Theme</h1>
             <p>You feel at home in the wilds. You understand how to best navigate the dangers of nature, as well as tap into ancient, primal magic.</p>
             <h2>Tier 1 Theme Talents</h2>
-            {natureT1Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {natureT1Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 2 Theme Talents</h2>
-            {natureT2Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {natureT2Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
             <h2>Tier 3 Theme Talents</h2>
-            {natureT3Talents.map(({ title, content }) => (
-              <Accordion stacked title={title} content={content} />
+            {natureT3Talents.map(({ title, content }, index) => (
+              <Accordion key={index} stacked title={title} content={content} />
             ))}
           </div>
         )}

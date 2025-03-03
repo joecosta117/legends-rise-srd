@@ -14,7 +14,7 @@ function Weapons() {
         <h2>Weapon Creativity</h2>
         <p>There are no strict lists of predefined weapons in Legends Rise. Instead weapons are divided by <b>type</b> and <b>group</b>. Your weapon’s type determines basic statistics of your weapon such as damage or at what range you can hit someone. Your weapon’s group describes what kind of weapon it is like an axe or bow.</p>
         <p>As a player, flavor your hero's weapons however you want by using the weapon types and groups as guidelines. For example, a standard melee blade could be a curved scimitar or a longsword.</p>
-        <h3>Weapon Types</h3>
+        <h3 className="header">Weapon Types</h3>
         <p>Each weapon has a weapon type, which specifies more about the weapon. There are five types of weapons divided into two categories.</p>
         <ul>
           <li><span><b>Melee:</b> Weapons useful at close range, and can only target engaged creatures.</span></li>
@@ -84,7 +84,7 @@ function Weapons() {
           </tbody>
         </table>
 
-        <h3>Weapon Groups</h3>
+        <h3 className="header" style={{marginTop: '25px'}}>Weapon Groups</h3>
         <p>Besides a type, each weapon belongs to a certain weapon group. Each weapon group has a <b>critical effect</b> that can occur when you get a critical success on a Strike with that weapon. For natural melee weapons, they are usually only the unarmed weapon group.</p>
         <table>
           <thead>
@@ -113,7 +113,7 @@ function Weapons() {
             <tr>
               <td>Clubs</td>
               <td>Club, Morningstar, Staff</td>
-              <td>target takes <Modifier type="mf" count="1" /> to overcome rolls (turn ends)</td>
+              <td>target is confused (turn ends)</td>
             </tr>
             <tr>
               <td>Firearms</td>
