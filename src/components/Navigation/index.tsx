@@ -5,21 +5,6 @@ import { Link } from 'react-router-dom';
 import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
 
 const Navigation = () => {
-//   const [isMobile, setIsMobile] = useState(false);
-
-//   useEffect(() => {
-//     const handleResize = () => {
-//       setIsMobile(getBreakpoint() === "MOBILE");
-//     };
-
-//     handleResize();
-
-//     window.addEventListener("resize", handleResize);
-//     return () => {
-//       window.removeEventListener("resize", handleResize);
-//     };
-//   }, []);
-
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   useEffect(() => {
@@ -32,13 +17,48 @@ const Navigation = () => {
           if (nav) nav.style.top = "0";
         } else {
           const nav = document.getElementById("nav");
-          if (nav) nav.style.top = "-60px";
+          if (nav) nav.style.top = "-66px";
         }
       }
 
       setPrevScrollPos(currentScrollPos);
     };
   }, [prevScrollPos]);
+
+  useEffect(() => {
+    const dropdowns = document.querySelectorAll('.navigation__links-container__dropdown');
+    dropdowns.forEach(dropdown => {
+      dropdown.addEventListener('mouseenter', handleMouseEnter);
+      dropdown.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    return () => {
+      dropdowns.forEach(dropdown => {
+        dropdown.removeEventListener('mouseenter', handleMouseEnter);
+        dropdown.removeEventListener('mouseleave', handleMouseLeave);
+      });
+    };
+  }, []);
+
+  function handleMouseEnter(event: any) {
+    const dropdownType = event.target.dataset.type;
+    document.querySelectorAll(`.navigation__links-container__dropdown[data-type="${dropdownType}"]`).forEach((element: any) => {
+      element.dataset.active = "true";
+    });
+    document.querySelectorAll(`.navigation__links-container__dropdown-arrow[data-type="${dropdownType}"]`).forEach((element: any) => {
+      element.dataset.active = "true";
+    });
+  }
+
+  function handleMouseLeave(event: any) {
+    const dropdownType = event.target.dataset.type;
+    document.querySelectorAll(`.navigation__links-container__dropdown[data-type="${dropdownType}"]`).forEach((element: any) => {
+      element.dataset.active = "false";
+    });
+    document.querySelectorAll(`.navigation__links-container__dropdown-arrow[data-type="${dropdownType}"]`).forEach((element: any) => {
+      element.dataset.active = "false";
+    });
+  }
 
   function toggleMobileNav() {
     if (window.innerWidth < BREAKPOINTS.DESKTOP) {
@@ -79,7 +99,7 @@ const Navigation = () => {
       <div className="navigation__container">
         <div className="navigation__title-container">
           <Link to="/" className="navigation__title-container__title">
-            Legends Rise TTRPG
+            Legends Rise
           </Link>
         </div>
         <div className="navigation__links" data-is-active={isMobileNavOpen}>
@@ -275,41 +295,34 @@ const Navigation = () => {
               data-active="false"
               data-type="rules"
             >
-              {/* <Link
+              <Link
                 className="navigation__links-container__dropdown__item"
-                to="/2e-ancestries"
+                to="/combat-abilities"
                 onClick={toggleMobileNav}
               >
-                Ancestries
+                Basic Combat Abilities
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/2e-archetypes"
+                to="/conditions"
                 onClick={toggleMobileNav}
               >
-                Archetypes
+                Conditions
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/2e-classes"
+                to="/abilities-and-keywords"
                 onClick={toggleMobileNav}
               >
-                Classes
+                Abilities & Keywords
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/2e-magic-items"
+                to="/rules"
                 onClick={toggleMobileNav}
               >
-                Magic Items
+                All Rules
               </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/2e-monsters"
-                onClick={toggleMobileNav}
-              >
-                Monsters
-              </Link> */}
             </div>
           </div>
 

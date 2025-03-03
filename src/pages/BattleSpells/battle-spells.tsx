@@ -373,7 +373,7 @@ export const arcaneSpells = [
             <span>
               <span>You transform into a large dragon (huge dragon at spell tier 3) and choose cold, fire, lightning, or toxic as your dragon’s damage type. While transformed:</span>s
               <ul>
-                <li><span>You can’t Spellcast or use any abilities you can’t do as a dragon.</span></li>
+                <li><span>You can’t cast a spell or use any abilities you can’t do as a dragon.</span></li>
                 <li><span>You gain 4 temporary hit points per the spell tier</span></li>
                 <li><span>Your Evasion equals 10 + double the spell tier, and Might equals 12 + double the spell tier</span></li>
                 <li><span>Your natural melee weapons deal 3 physical damage</span></li>
@@ -532,7 +532,7 @@ export const deathSpells = [
             target="1 creature engaged to you"
             defense="MGT"
             damage="5 necrotic damage per spell tier"
-            success="You regain hit points equal to half the damage dealt"
+            success="You heal equal to half the damage dealt"
           />
         </div>
       )
@@ -667,7 +667,7 @@ export const earthSpells = [
           defense="MGT"
           critical="Same as success, and 1 ongoing physical damage per spell tier while seized"
           success="Seized (scene ends)"
-          partialOrLower="Seized (turn ends)"
+          partial="Seized (turn ends)"
         />
       )
     },
@@ -863,12 +863,12 @@ export const eldritchSpells = [
           defense="RES"
           critical="Same as success, and 1 ongoing psychic damage per spell tier while confused"
           success="Confused (scene ends)"
-          partialOrLower="Confused (turn ends)"
+          partial="Confused (turn ends)"
         />
       )
     },
     {
-      title: "Eldritch Tentacles",
+      title: "Eldritch Tentacles (Action)",
       actType: "Action",
       spell: (
         <AbilityCard 
@@ -978,7 +978,7 @@ export const eldritchSpells = [
           defense="MGT"
           critical="Same as success, but you can move the target up to 1 zone away"
           success="Seized (scene ends) and you can move the target within their zone"
-          partialOrLower="Seized (turn ends)"
+          partial="Seized (turn ends)"
           effect="When you focus on this spell, you can move the seized target up to 1 zone or let go of a seized target to repeat this spell’s attack roll against another target. You can only have one seized target at a time. Your attack roll automatically critically succeeds against an unworn object if it's huge or smaller."
         />
         </div>
@@ -1053,7 +1053,7 @@ export const enchantmentSpells = [
           defense="RES"
           critical="Charmed (scene ends)"
           success="Charmed (turn ends)"
-          partialOrLower="Hindered (turn ends)"
+          partial="Hindered (turn ends)"
         />
       )
     },
@@ -1070,7 +1070,7 @@ export const enchantmentSpells = [
           defense="RES"
           critical="Same as success, but the target uses both their action and maneuver to follow your command."
           success="Target uses their action or maneuver to follow your one word command, such as “run” or “drop”."
-          partialOrLower="Hindered (turn ends)"
+          partial="Hindered (turn ends)"
         />
       )
     },
@@ -1087,7 +1087,7 @@ export const enchantmentSpells = [
           defense="RES"
           critical="Falls prone and asleep, but can be woken up with a maneuver from an engaged creature"
           success="Dazed (scene ends)"
-          partialOrLower="Dazed (turn ends)"
+          partial="Dazed (turn ends)"
         />
       )
     },
@@ -1104,7 +1104,7 @@ export const enchantmentSpells = [
           defense="RES"
           critical="Same as a success, and the target must use their next maneuver to Move away from you"
           success="Hindered (scene ends)"
-          partialOrLower="Hindered (turn ends)"
+          partial="Hindered (turn ends)"
         />
       )
     }
@@ -1142,7 +1142,7 @@ export const enchantmentSpells = [
           keywords="Escalation, Magical, Range"
           critical="Same as a success, but the target takes +1 misfortune to their overcome rolls to end this spell"
           success="Same as a partial, but you control the target for the scene (scene ends)."
-          partialOrLower="You control the target (turn ends). While controlled, you direct all of the target’s acts on their turn, including reactions."
+          partial="You control the target (turn ends). While controlled, you direct all of the target’s acts on their turn, including reactions."
         />
         </div>
       )
@@ -1163,7 +1163,7 @@ export const enchantmentSpells = [
             defense="RES"
             critical="Same as a success, but also prone"
             success="Same as a partial, but charmed (scene ends)"
-            partialOrLower="Charmed (turn ends), and dazed while charmed as they bask in your glory"
+            partial="Charmed (turn ends), and dazed while charmed as they bask in your glory"
           />
         </div>
       )
@@ -1264,7 +1264,7 @@ export const fireSpells = [
           defense="EVN"
           critical="Same as a success, and the target is hindered while taking this ongoing damage"
           success="2 ongoing fire damage per spell tier"
-          partialOrLower="1 ongoing fire damage per spell tier"
+          partial="1 ongoing fire damage per spell tier"
         />
       )
     }
@@ -1399,37 +1399,75 @@ export const gravitySpells = [
       )
     }
   ],
-  // TODO: add back t1 spells!!!
   [
     {
-      title: "Astral Pressure (Action)",
+      title: "Astral Breach (Action)",
       actType: "Action",
       spell: (
         <AbilityCard 
           accordion
-          descriptor="You double the gravity to slow your foes."
-          frequency="Spell 0 (Gravity)"
-          target="1d4+1 enemies in your zone"
-          defense="MGT"
-          keywords="Magical"
-          critical="Same as success, and 1 physical damage per your spell tier"
-          success="Slowed (turn ends)"
+          descriptor="You create a line of intense gravitational force that draws everything towards it."
+          frequency="Spell 1 (Gravity)"
+          target="1 zone border per spell tier (borders must connect) within 2 zones"
+          duration="Scene ends"
+          keywords="Magical, Range"
+          effect="Make an attack roll against any creature’s Might that first enters or starts their turn in a zone touching a targeted zone border. On a success, the target is pulled next to the zone border. You can only make this attack roll against a creature once per turn. "
         />
       )
     },
     {
-      title: "Crush (Action)",
+      title: "Graviton Shift (Action)",
       actType: "Action",
       spell: (
         <AbilityCard 
           accordion
-          descriptor="You draw gravity close to immobilize a foe."
-          frequency="Spell 0 (Gravity)"
-          target="1 creature within 3 zones"
+          descriptor="You invert the gravity around a creature."
+          frequency="Spell 1 (Gravity)"
+          target="1 creature per spell tier within 2 zones"
           defense="MGT"
+          keywords="Escalation, Magical, Range"
+          success="Same as a partial, but the effect lasts for the scene."
+          partial="Gravity on the target flips (turn ends) and they fly up a number zones equal to the spell tier. If they are already in the air, then they instead fall a number of zones equal to the spell tier."
+          critical="Same as a success, but target is also seized while the gravity effect lasts."
+        />
+      )
+    },
+    {
+      title: "Pressure Wave (Action)",
+      actType: "Action",
+      spell: (
+        <AbilityCard 
+          accordion
+          descriptor="You manipulate gravity around you to either draw your enemies closer or push them away."
+          frequency="Spell 1 (Gravity)"
+          target="1d4+1 enemies within your zone"
+          defense="MGT"
+          damage="2 physical damage per spell tier"
+          keywords="Escalation, Magical, Range"
+          success="Pull the target to become engaged with you or push them away within your zone (your choice)"
+        />
+      )
+    },
+    {
+      title: "Weight Field (Action)",
+      actType: "Action",
+      spell: (
+        <AbilityCard 
+          accordion
+          descriptor="You adjust the gravity in an area to speed or slow down creatures."
+          frequency="Spell 1 (Gravity)"
+          target="1 zone per spell tier within 2 zones"
+          duration="Scene ends"
+          effect={(
+            <span>
+              <span>Choose to lighten or increase weight of gravity in the targeted area:</span>
+              <ul>
+                <li><span><i>Lighten:</i> Creatures that start their turn within the zone have their speeds increased by +1 until the end of their turn.</span></li>
+                <li><span><i>Heavier:</i> Targeted zones become difficult zones.</span></li>
+              </ul>
+            </span>
+          )}
           keywords="Magical, Range"
-          damage="2 physical damage per your tier"
-          critical="Seized (turn ends)"
         />
       )
     }
@@ -1649,7 +1687,7 @@ export const holySpells = [
           keywords="Escalation, Magical, Range"
           critical="Same as a success, but if the creature fails an overcome roll against this spell, then they can't return unless through other means"
           success="Returned to their home realm (overcome ends)"
-          partialOrLower="Returned to their home realm (turn ends)"
+          partial="Returned to their home realm (turn ends)"
         />
       )
     }
@@ -1739,7 +1777,7 @@ export const iceSpells = [
           defense="MGT"
           critical="Seized (scene ends)"
           success="Seized (turn ends)"
-          partialOrLower="Slowed (turn ends)"
+          partial="Slowed (turn ends)"
         />
       )
     },
@@ -2026,7 +2064,7 @@ export const illusionSpells = [
           damage="4 psychic damage per spell tier"
           defense="RES"
           success="Seized (scene ends), and if the target attempts to escape, then they take 2 psychic damage per spell tier"
-          partialOrLower="Seized (turn ends)"
+          partial="Seized (turn ends)"
         />
         </div>
       )
@@ -2526,7 +2564,7 @@ export const natureSpells = [
             <span>
               <span>You transform the target’s body and equipment into a small, medium, or large creature of your choice. If the target is unwilling, then the spell only works on a successful attack roll against the target’s Resolve,  and they can make an overcome roll at the end of their turns to end the effect. While transformed:</span>
               <ul>
-                <li><span>Target can’t Spellcast or use any abilities you can’t do as an animal</span></li>
+                <li><span>Target can’t cast a spell or use any abilities you can’t do as an animal</span></li>
                 <li><span>Target gains 4 temporary hit points per the spell tier</span></li>
                 <li><span>Target’s Evasion and Might equals 10 + double the spell tier, and Resolve equals 8 + double the spell tier</span></li>
                 <li><span>Target’s natural melee weapons deal physical damage depending on the animal’s size: 2 for small, 3 for medium, 4 for large</span></li>
@@ -2869,7 +2907,7 @@ export const shadowSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="MGT"
-          partialOrLower="Hinderd (turn ends)"
+          partial="Hinderd (turn ends)"
           success="Blinded (turn ends)"
           critical="Blinded (scene ends)"
         />
@@ -3207,7 +3245,7 @@ export const timeSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Magical, Range"
           defense="MGT"
-          partialOrLower="Dazed (turn ends)"
+          partial="Dazed (turn ends)"
           success="Dazed (scene ends)"
           critical="Same as a success, and slowed while dazed"
         />
@@ -3266,7 +3304,7 @@ export const timeSpells = [
           defense="MGT"
           critical="Same as success, but time pauses for the scene (scene ends)"
           success="Time pauses for the target and they can’t act or be interacted with (turn ends). Any current effects already on the target like ongoing damage is paused until time resumes for the target."
-          partialOrLower="Slowed (turn ends) and dazed (turn ends)"
+          partial="Slowed (turn ends) and dazed (turn ends)"
         />
         </div>
       )
@@ -3283,7 +3321,7 @@ export const timeSpells = [
             descriptor="You briefly stop time for everyone except yourself."
             frequency="Spell 3 (Time)"
             keywords="Magical"
-            effect="Time stops and you have 2 turns after your current turn before time returns to normal. Any current conditions on you continue and you can use abilities that only affect yourself as normal. If you use any ability that affects others, then the ability doesn’t start until time returns to normal. For example, if you Spellcast fireball at enemies during the time freeze, the spell doesn’t damage your foes until time resumes normally."
+            effect="Time stops and you have 2 turns after your current turn before time returns to normal. Any current conditions on you continue and you can use abilities that only affect yourself as normal. If you use any ability that affects others, then the ability doesn’t start until time returns to normal. For example, if you cast fireball at enemies during the time freeze, the spell doesn’t damage your foes until time resumes normally."
           />
         </div>
       )
@@ -3497,7 +3535,7 @@ export const unholySpells = [
             defense="RES"
             critical="Same as a success, and hindered while marked"
             success="Same as a partial, but marked (scene ends)"
-            partialOrLower="Marked (turn ends). While marked, the target takes additional 1 unholy damage per spell tier whenever they take damage"
+            partial="Marked (turn ends). While marked, the target takes additional 1 unholy damage per spell tier whenever they take damage"
           />
         </div>
       )
@@ -3572,14 +3610,11 @@ export const unholySpells = [
           mgt="12 + PB"
           res="8 + PB"
           pb="double ST"
+          vision="night"
           resistances="unholy ST"
           weaknesses="holy double ST"
           summons
           accordion
-          traits={[{
-            name: "Fiendish Aura",
-            description: "Enemies within the fiend’s zone gain +1 misfortune to overcome rolls"
-          }]}
           actions={[{
             basic: true,
             name: "Corrupting Rend",
@@ -3588,6 +3623,14 @@ export const unholySpells = [
             defense: "EVN",
             damage: "triple ST unholy damage",
             success: "hindered (turn ends)"
+          }]}
+          reactions={[{
+            name: "Death Throes",
+            keywords: "magical",
+            target: "1d4+1 enemies within the demon's zone",
+            defense: "EVN",
+            damage: "double ST unholy damage",
+            trigger: "Demon dies"
           }]}
           />
         </div>
@@ -3960,7 +4003,7 @@ export const waterSpells = [
           defense="MGT"
           critical="Same as success, but 1 ongoing physical damage per spell tier while seized"
           success="Same as a partial success, but seized (scene ends)"
-          partialOrLower="Seized (turn ends), and the target must hold their breath or begin drowning while seized"
+          partial="Seized (turn ends), and the target must hold their breath or begin drowning while seized"
         />
         </div>
       )

@@ -40,11 +40,11 @@ function Occultist() {
       <div className="occultist-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Occultist Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Occultist Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Occultist Talents</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Occultist Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Occultist Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Occultist Talents</div>
         </div>
         {isDetails && (
           <div>
@@ -58,7 +58,7 @@ function Occultist() {
               <li><span><b>Learned:</b> You have studied from forbidden texts to unlock the secrets of forbidden magic.</span></li>
             </ul>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Arcane</span></li>
               <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
@@ -73,7 +73,7 @@ function Occultist() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Occultist Magic</h3>
+            <h3 className="header">Occultist Magic</h3>
             <p>You channel strange and dark magic.</p>
             <ul>
               <li><span><b>Mana:</b> 2, increasing to 5 at 5th level, and 8 at 8th level</span></li>
@@ -85,7 +85,7 @@ function Occultist() {
               <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition from the previous list.</span></li>
             </ul>
     
-            <h3>Hex</h3>
+            <h3 className="header">Hex</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Hex"
@@ -97,7 +97,7 @@ function Occultist() {
               effect="Target is hindered" 
             />
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the warlock subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -106,7 +106,7 @@ function Occultist() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Disrupting Curse</h3>
+            <h3 className="header">Disrupting Curse</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Disrupting Curse"
@@ -127,12 +127,12 @@ function Occultist() {
 
             <h2>Warlock</h2>
             <p>Through dark deals and forbidden studies you unlock unnatural pathways to power best left forgotten.</p>
-            <h3>Dark Empowerment (1st-Level Feature)</h3>
+            <h3 className="header">Dark Empowerment (1st-Level Feature)</h3>
             <p>When you make a roll, you can take damage equal to your proficiency bonus to gain <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b> to the roll. This damage can’t be reduced in any way.</p>
 
             <h2>Binder</h2>
             <p>You have bound a dark spirit to serve you, and can empower it in battle.</p>
-            <h3>Binder’s Familiar (1st-Level Feature)</h3>
+            <h3 className="header">Binder’s Familiar (1st-Level Feature)</h3>
             <p>You gain the familiar theme talent, but your familiar is either an aberration, fiend, or undead. You also gain the following ability:</p>
             <AbilityCard
               name="Empower Familiar"
@@ -167,7 +167,7 @@ function Occultist() {
 
             <h2>Curseblade</h2>
             <p>Unlike other occultists, you prefer to cast dark magic alongside your weapons.</p>
-            <h3>Curseblade Training (1st-Level Feature)</h3>
+            <h3 className="header">Curseblade Training (1st-Level Feature)</h3>
             <p>You gain the following benefits:</p>
             <ul>
               <li><span>Your starting hit points increase to 10, and your recoveries increase to 5.</span></li>
@@ -183,7 +183,7 @@ function Occultist() {
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
 
-            <h3>Curse Spell</h3>
+            <h3 className="header">Curse Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Curse Spell"
@@ -191,17 +191,17 @@ function Occultist() {
               descriptor="You siphon spell energy to place a minor hex on an enemy."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell"
+              trigger="You cast a battle spell"
               effect="Choose one target within your zone. The target takes +1 misfortune to their next roll (turn ends)." 
             />
 
-            <h3>Dark Favor</h3>
+            <h3 className="header">Dark Favor</h3>
             <p>When you see the target of your hex die, you gain temporary hit points equal to your proficiency bonus (scene ends).</p>
 
-            <h3>Expanded Occultist Magic</h3>
+            <h3 className="header">Expanded Occultist Magic</h3>
             <p>Learn a battle spell or magic tradition from one listed in occultist magic. You can take this class talent multiple times.</p>
 
-            <h3>Punishing Spell</h3>
+            <h3 className="header">Punishing Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Punishing Spell"
@@ -209,11 +209,11 @@ function Occultist() {
               descriptor="Your spell punishes a foe's resilience."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell that forces targets to make overcome rolls"
-              effect="Choose one target of the triggering spell, and they take +1 misfortune to overcome rolls against the spell’s effect." 
+              trigger="You cast a battle spell that imposes a condition with duration turn ends"
+              effect="Choose one target of the triggering spell, and extend the duration of the condition on that target to the end of the scene" 
             />
 
-            <h3>Rapid Hex</h3>
+            <h3 className="header">Rapid Hex</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Rapid Hex"
@@ -227,7 +227,7 @@ function Occultist() {
             
             <h2>Tier 2 Class Talents</h2>
 
-            <h3>Blinding Spell</h3>
+            <h3 className="header">Blinding Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Blinding Spell"
@@ -239,10 +239,10 @@ function Occultist() {
               effect="Target of the triggering attack roll becomes blinded (turn ends)" 
             />
 
-            <h3>Burning Hex</h3>
+            <h3 className="header">Burning Hex</h3>
             <p>The target of your hex takes necrotic, psychic, or unholy (your choice) ongoing damage equal to your tier. This ongoing damage only ends when the creature is no longer the target of your hex.</p>
 
-            <h3>Defensive Sacrifice</h3>
+            <h3 className="header">Defensive Sacrifice</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> binder subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -256,23 +256,23 @@ function Occultist() {
               effect="Triggering damage is instead taken by your familiar. If the damage reduces your familiar to 0 hit points, then any remaining damage is dealt to the original target." 
             />
 
-            <h3>Dimensional Hex</h3>
+            <h3 className="header">Dimensional Hex</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> curseblade subclass</p>
             <p>When you use hex, you can teleport to become engaged to the target. On subsequent turns as a maneuver, you can teleport to become engaged to the target of your hex as long as they are within 1 zone.</p>
 
-            <h3>Risky Exchange</h3>
+            <h3 className="header">Risky Exchange</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> warlock subclass</p>
-            <p>When you Spellcast a spell, you can take damage equal to your shaken value to increase the spell’s tier by one. This damage taken can’t be reduced in any way.</p>
+            <p>When you cast a spell, you can take damage equal to your shaken value to increase the spell’s tier by one. This damage taken can’t be reduced in any way.</p>
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Constant Curse</h3>
+            <h3 className="header">Constant Curse</h3>
             <p>You get a second reaction that you can only use on disrupting curse.</p>
 
-            <h3>Dark Link</h3>
+            <h3 className="header">Dark Link</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> warlock subclass</p>
             <p>You create a bond between you and your hex target. When you take damage, your hex target takes the same amount of damage. The damage taken can’t be reduced in any way.</p>
 
-            <h3>Greater Familiar</h3>
+            <h3 className="header">Greater Familiar</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> binder subclass</p>
             <p>Your familiar when empowered through empower familiar is improved depending on the creature type:</p>
             <ul>
@@ -281,11 +281,11 @@ function Occultist() {
               <li><span><i>Undead:</i> When your familiar is reduced to 0 hit points, then make an overcome roll. On a success, your familiar is instead reduced to 1 hit point. Any damage from a critical success or holy damage ignores this feature.</span></li>
             </ul>
 
-            <h3>Lifedrinker</h3>
+            <h3 className="header">Lifedrinker</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> curseblade subclass</p>
             <p>When you Strike the target of your hex, you gain temporary hit points equal to your tier  (scene ends).</p>
 
-            <h3>Twin Hex</h3>
+            <h3 className="header">Twin Hex</h3>
             <p>When you use hex, choose two targets.</p>
           </div>
         )}

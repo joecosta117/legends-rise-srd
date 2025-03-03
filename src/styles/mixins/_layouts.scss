@@ -1,31 +1,34 @@
 @mixin page-layout() {
   display: grid;
   justify-items: center;
+  padding: 0 16px;
 
-  @include mq(m) {
-    grid-template-columns: auto 900px auto;
+  @include mq('s') {
+    padding: 0 32px;
+  }
+  @include mq('xl') {
+    padding: 0;
   }
 }
 
 @mixin page-content() {
   // TODO: Add a background color
   // background: $parchment;
-  padding-top: 25px;
+  padding-top: 50px;
   width: 100%;
 
-  @include mq(s) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
   @include mq(m) {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
+    padding-top: 100px;
     grid-column: 2;
   }
-  @include mq(xl) {
-    padding-left: 150px;
-    padding-right: 150px;
+
+  a {
+    color: $textwhite;
+    text-decoration: none;
+  }
+
+  .header {
+    margin-top: 0;
   }
 
   p, h2, h3, h4 {
@@ -57,8 +60,30 @@
     }
   }
 
-  ul {
+  ol {
+    li {
+      span {
+        margin-left: 0;
+      }
+    }
+  }
+
+  ul, ol {
     margin-top: -10px;
+  }
+
+  h2 {
+    background: $softred;
+    color: $textwhite;
+    padding: 5px 10px;
+  }
+  h3.header {
+    background: $bkgdgolddark;
+    padding: 5px 10px;
+  }
+  h4.header {
+    background: $dimgrey;
+    padding: 5px 5px;
   }
 }
 
@@ -76,11 +101,15 @@
     font-size: 18px;
     font-weight: bold;
 
-    .tab {
+    &__tab {
       cursor: pointer;
+
+      &[data-selected="true"] {
+        text-decoration: underline;
+      }
     }
 
-    .divider {
+    &__divider {
       color: $gold;
       padding-left: 10px;
       padding-right: 10px;

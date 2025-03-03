@@ -31,14 +31,24 @@ import Mounts from './pages/Mounts';
 import OtherGoods from './pages/Other Goods';
 import Consumables from './pages/Consumables';
 import Relics from './pages/Relics';
+import CombatActs from './pages/CombatActs';
+import Conditions from './pages/Conditions';
+import CombatRules from './pages/CombatRules';
+import ReadingAbilities from './pages/ReadingAbilities';
+import RollingRules from './pages/RollingRules';
+import SkillRules from './pages/SkillRules';
+import Adventuring from './pages/Adventuring';
+import RulesPage from './pages/RulesPage';
+import WealthRules from './pages/WealthRules';
+import MagicRules from './pages/MagicRules';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <Router>
       <Navigation />
-      <div className="page-content">
+      {/* <div className="page-content"> */}
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/hero-creation-steps" element={<HeroCreationSteps />} />
             <Route path="/ancestries" element={<Ancestries />} />
             <Route path="/classes" element={<Classes />} />
@@ -68,8 +78,19 @@ function App() {
             <Route path='/ritual-spells' element={<RitualSpells />} />
             <Route path='/consumables' element={<Consumables />} />
             <Route path='/relics' element={<Relics />} />
+            <Route path='/combat-abilities' element={<CombatActs />} />
+            <Route path='/conditions' element={<Conditions />} />
+            <Route path='/abilities-and-keywords' element={<ReadingAbilities />} />
+            <Route path='/rules/rolling' element={<RollingRules />} />
+            <Route path='/rules/skills' element={<SkillRules />} />
+            <Route path='/rules/adventuring' element={<Adventuring />} />
+            <Route path='/rules' element={<RulesPage />} />
+            <Route path='/rules/combat' element={<CombatRules />} />
+            <Route path='/rules/gold' element={<WealthRules />} />
+            <Route path='/rules/magic' element={<MagicRules />} />
+            <Route path='/' element={<HomePage />} />
           </Routes>
-        </div>
+        {/* </div> */}
     </Router>
   )
 }

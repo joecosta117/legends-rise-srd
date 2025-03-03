@@ -29,10 +29,11 @@ interface AbilityCardProps {
 const AbilityCard: React.FC<AbilityCardProps> = ({ name, effectTiers, partialOrLower, cast, accordion, actType, descriptor, frequency, keywords, duration, trigger, target, damage, defense, critical, success, partial, failure, effect, requirement }) => {
   const topLine = `${frequency} ${keywords ? `| ${keywords}` : ''}`;
   
-  const transformEffect = (effect: string) => {
+  const transformEffect = (effect: any) => {
     const fortuneRegex = /(\+?\d*)\s*(fortune)/gi;
     const misfortuneRegex = /(\+?\d*)\s*(misfortune)/gi;
 
+    //@ts-ignore
     return effect.split(' ').map((word, index, array) => {
       if (misfortuneRegex.test(word)) {
         return <span key={index}><img className="icon" src={misfortune} alt="misfortune icon" /> </span>;
@@ -60,7 +61,8 @@ const AbilityCard: React.FC<AbilityCardProps> = ({ name, effectTiers, partialOrL
         {trigger && <p className="ability__line"><b>Trigger:</b> {trigger}</p>}
         {target && <p className="ability__line"><b>Target:</b> {target}</p>}
         {duration && <p className="ability__line"><b>Duration:</b> {duration}</p>}
-        {defense && <p className="ability__line"><b>Attack vs <span data-type={defense}>{defense}</span>{damage ? <span>:</span> : ''}</b> {damage}</p>}
+        {defense && <p className="ability__line"><b>Attack vs <span data-type={defense}>{defense.length === 3 ? (<span>{defense}</span>) : (transformEffect(defense))}</span></b>{damage ? 
+        (<span><b>:</b> {transformEffect(damage)}</span>) : (<span></span>)}</p>}
         {(!cast && !effectTiers) && <div className='ability__degrees-of-success'>
           {critical && <p><b>• Critical:</b> {transformEffect(critical)}</p>}
           {success && <p><b>• Success:</b> {transformEffect(success)}</p>}
@@ -69,8 +71,8 @@ const AbilityCard: React.FC<AbilityCardProps> = ({ name, effectTiers, partialOrL
           {failure && <p><b>• Failure:</b> {transformEffect(failure)}</p>}
         </div>}
         {effect && (typeof effect === 'string' ? 
-        <p className="ability__line"><b>Effect:</b> {transformEffect(effect)}</p> 
-        : <p className="ability__line"><b>Effect:</b> {effect}</p>)}
+        <div className="ability__line"><b>Effect:</b> {transformEffect(effect)}</div> 
+        : <div className="ability__line"><b>Effect:</b> {effect}</div>)}
         {(!cast && effectTiers) && <div className='ability__degrees-of-success'>
           {critical && <p><b>• Critical:</b> {transformEffect(critical)}</p>}
           {success && <p><b>• Success:</b> {transformEffect(success)}</p>}

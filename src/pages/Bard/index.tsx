@@ -52,20 +52,20 @@ function Bard() {
       <div className="bard-content">
         <ClassHeader />
         <div className="tab-items">
-          <div onClick={toggleDetails} className="tab">Bard Details</div>
-          <div className="divider">|</div>
-          <div onClick={toggleSubclasses} className="tab">Bard Subclasses</div>
-          <div className="divider">|</div>
-          <div onClick={toggleTalents} className="tab">Bard Talents</div>
-          <div className="divider">|</div>
-          <div onClick={togglePerformances} className="tab">Bardic Performances</div>
+          <div onClick={toggleDetails} className="tab-items__tab" data-selected={isDetails}>Bard Details</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleSubclasses} className="tab-items__tab" data-selected={isSubclasses}>Bard Subclasses</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={toggleTalents} className="tab-items__tab" data-selected={isTalents}>Bard Talents</div>
+          <div className="tab-items__divider">|</div>
+          <div onClick={togglePerformances} className="tab-items__tab" data-selected={isPerformances}>Bardic Performances</div>
         </div>
         {isDetails && (
           <div>
             <h1>Bard</h1>
             <p>Bards are performers that weave magic with words, rhythm, and art to aid allies, bewitch foes, and create dazzling illusions. Bards might be a traveling artist, a scoundrel that's picked up a few magical tricks, or an adventuring scholar that’s unlocked the magic of words. Play a bard if you create magical performances.</p>
             <h2>Core Features</h2>
-            <ul>
+            <ul style={{marginTop: '10px'}}>
               <li><span><b>Theme:</b> Cunning</span></li>
               <li><span><b>Defense Bonus:</b> +4 to Resolve</span></li>
               <li><span><b>Starting Hit Points:</b> 8</span></li>
@@ -80,7 +80,7 @@ function Bard() {
     
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3>Bardic Magic</h3>
+            <h3 className="header">Bardic Magic</h3>
             <p>You weave magic through words, dance, or music.</p>
             <ul>
               <li><span><b>Mana:</b> 2, increasing to 5 at 5th level, and 8 at 8th level</span></li>
@@ -92,7 +92,7 @@ function Bard() {
               <li><span><b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition from the previous list.</span></li>
             </ul>
     
-            <h3>Bardic Performance</h3>
+            <h3 className="header">Bardic Performance</h3>
             <p>You weave music, art, or dance to magically inspire allies or disrupt your foes with demonstrations called bardic performances. You learn the performance of courage bardic performance.</p>
             <AbilityCard
               name="Bardic Performance"
@@ -103,7 +103,7 @@ function Bard() {
               effect="Targets gain +1 fortune to attack rolls" 
             />
     
-            <h3>Subclass</h3>
+            <h3 className="header">Subclass</h3>
             <p>Choose the muse of drama subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass.</p>
     
             <h2>2nd Level Features</h2>
@@ -112,7 +112,7 @@ function Bard() {
     
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3>Expanded Performances</h3>
+            <h3 className="header">Expanded Performances</h3>
             <p>You learn another bardic performance.</p>
           </div>
         )}
@@ -123,12 +123,12 @@ function Bard() {
             <p>These are the subclass choices for the bard.</p>
             <h2>Muse of Drama</h2>
             <p>Your creativity gains inspiration from the magic of narration and storytelling. Your performances interject thrilling heroic moments, but not without the risk of danger.</p>
-            <h3>Plot Twist (1st-Level Feature)</h3>
+            <h3 className="header">Plot Twist (1st-Level Feature)</h3>
             <p>You know how to raise the stakes and create a good story. You can tempt fate on any roll, and when you or an ally tempt fate, the bonus increases by <b>+1 <img className="icon" src={fortune} alt="fortune icon" /></b>.</p>
 
             <h2>Muse of Lore</h2>
             <p>Unlike other bards, you focus your creativity on the history and the lore of the world around you, and use it to weave grand performances.</p>
-            <h3>Student of Lore (1st-Level Feature)</h3>
+            <h3 className="header">Student of Lore (1st-Level Feature)</h3>
             <p>You gain a knack related to a knowledgeable topic such as ancient history. You also gain the following ability:</p>
             <AbilityCard
               name="Lore Drop"
@@ -141,7 +141,7 @@ function Bard() {
 
             <h2>Muse of Valor</h2>
             <p>You find artistic inspiration from the sounds and thrill of battle.</p>
-            <h3>Bardic Warrior (1st-Level Feature)</h3>
+            <h3 className="header">Bardic Warrior (1st-Level Feature)</h3>
             <p>You wield a weapon as well as you weave magic. You gain the following benefits:</p>
             <ul>
               <li><span>Your starting hit points increase to 10, and your recoveries increase to 5.</span></li>
@@ -156,10 +156,10 @@ function Bard() {
             <h1>Bard Class Talents</h1>
             <p>At 2nd, 4th, 6th, and 9th level, choose a class talent from the below list. You can only pick a class talent of your tier or lower.</p>
             <h2>Tier 1 Class Talents</h2>
-            <h3>Expanded Bardic Magic</h3>
+            <h3 className="header">Expanded Bardic Magic</h3>
             <p>Learn a battle spell or magic tradition from one listed in bardic magic. You can take this class talent multiple times.</p>
 
-            <h3>Focused Performance</h3>
+            <h3 className="header">Focused Performance</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Focused Performance"
@@ -170,7 +170,7 @@ function Bard() {
               effect="Focus on an ability" 
             />
 
-            <h3>Inspiring Spell</h3>
+            <h3 className="header">Inspiring Spell</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Inspiring Spell"
@@ -178,14 +178,14 @@ function Bard() {
               descriptor="You weave together a tale of knowledge."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You Spellcast a battle spell"
+              trigger="You cast a battle spell"
               effect="Choose one creature within 1 zone to gain temporary hit points equal to the triggering spell tier (scene ends)." 
             />
 
-            <h3>Many Peformances</h3>
+            <h3 className="header">Many Peformances</h3>
             <p>Learn a new bardic performance. You can take this class talent multiple times.</p>
 
-            <h3>Running Performance</h3>
+            <h3 className="header">Running Performance</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Running Performance"
@@ -197,11 +197,11 @@ function Bard() {
             />
             
             <h2>Tier 2 Class Talents</h2>
-            <h3>Arcane Secrets</h3>
+            <h3 className="header">Arcane Secrets</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> muse of lore subclass</p>
             <p>You learn a battle spell from any magic tradition, even if you don’t know the tradition. You can take this class talent multiple times.</p>
 
-            <h3>Distant Performance</h3>
+            <h3 className="header">Distant Performance</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Distant Performance"
@@ -212,14 +212,14 @@ function Bard() {
               effect="Extend the range of targets to within 1 zone" 
             />
 
-            <h3>Extend Performance</h3>
+            <h3 className="header">Extend Performance</h3>
             <p>When you use a bardic performance, you can spend mana equal to your tier to increase the duration to last the scene. If the bardic performance affects enemies, then enemies make overcome rolls at the end of their turns to end the performance’s effect on themselves.</p>
 
-            <h3>Inspiring Drama</h3>
+            <h3 className="header">Inspiring Drama</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> muse of drama subclass</p>
             <p>When you tempt fate, choose an ally within 1 zone to gain temporary hit points equal to your tier (scene ends).</p> 
             
-            <h3>Violent Rewards</h3>
+            <h3 className="header">Violent Rewards</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> muse of valor subclass</p>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -234,21 +234,21 @@ function Bard() {
 
 
             <h2>Tier 3 Class Talents</h2>
-            <h3>Bloodlust Performance</h3>
+            <h3 className="header">Bloodlust Performance</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> muse of valor subclass</p>
             <p>When you use a bardic performance, you and allies within the target range can add your tier to initial damage from attack rolls until the start of your next turn.</p>
 
-            <h3>Constant Performer</h3>
+            <h3 className="header">Constant Performer</h3>
             <p>You are permanently hastened, but you can only use the extra maneuver on a bardic performance.</p>
 
-            <h3>Greater Performance</h3>
+            <h3 className="header">Greater Performance</h3>
             <p>Any bonus granted by a bardic performance increases to <b>+2 <img className="icon" src={fortune} alt="fortune icon" /></b>, and any penalty from a bardic performance increases to <b>+2 <img className="icon" src={misfortune} alt="misfortune icon" /></b>. The temporary hit points gained by performance of restoration equals your proficiency bonus, and the speed boost gained by performance of alacrity increases to +2.</p>
 
-            <h3>Ignore Fate</h3>
+            <h3 className="header">Ignore Fate</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> muse of drama subclass</p>
             <p>When you tempt fate in combat, make an overcome roll. On a success, you ignore the extra complication from tempt fate.</p>
 
-            <h3>Loremaster</h3>
+            <h3 className="header">Loremaster</h3>
             <p style={{marginBottom: 0}}><b>Requirement:</b> muse of lore subclass</p>
             <p>When you Study, you can target a number of targets equal to your tier.</p>
           </div>
@@ -284,11 +284,11 @@ function Bard() {
               <AbilityCard
                 name="Performance of Discord"
                 actType="Maneuver"
-                descriptor="With a chaotic performance, you sow confusion among your foes."
+                descriptor="With a chaotic performance, you cause foes' feet to move erratically and slow them down."
                 frequency="At-will"
                 keywords="Magical"
                 target="All enemies within your zone"
-                effect="Targets take +1 misfortune to overcome rolls (turn ends)" 
+                effect="Targets are slowed (turn ends)" 
               />
 
               <AbilityCard
