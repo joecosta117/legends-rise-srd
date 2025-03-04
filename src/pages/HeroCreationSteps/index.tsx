@@ -1,8 +1,14 @@
 import "./index.scss";
 import Accordion from "../../components/Accordion";
 import Modifier from "../../components/Modifier";
+import { useNavigate, Link } from 'react-router-dom';
 
 function HeroCreationSteps() {
+  const navigate = useNavigate()
+  function handleLink(link: string) {
+    navigate(`/${link}`)
+  }
+
   const backgroundInfo = (
     <div>
       <p>You choose a background at 1st level. Here are some suggestions on the context of your background:</p>
@@ -96,13 +102,15 @@ function HeroCreationSteps() {
         <p>You can create a hero using an <b><a target='blank' href='https://docs.google.com/document/d/1-rIBiG8WjHG-kw4yfBgI__ks7ZFQjKbCklnnrQ1l31w/edit?usp=sharing'>empty hero sheet</a></b>. I suggest making a copy of the sheet in your google drive, and then editing from there. You will build a hero using the following steps.</p>
 
         <h2>Step 1: Choose an Ancestry</h2>
-        <p>Your ancestry represents who your hero’s people are, whether they be humans or elves. Ancestries grant your hero special powers. You can look at the list of ancestries here (TODO add link)</p>
-
+        <p>Your ancestry represents who your hero’s people are, whether they be humans or elves. Ancestries grant your hero special powers.</p>
+        <button className="link-button" onClick={() => handleLink('ancestries')}>ANCESTRIES LIST</button>
         <h2>Step 2: Choose a Class</h2>
-        <p>Choose a class for your hero, which represents your training and talents as an adventurer. Classes grant your hero many abilities and powers. You can look at the list of classes here (TODO add link)</p>
+        <p>Choose a class for your hero, which represents your training and talents as an adventurer. Classes grant your hero many abilities and powers.</p>
+        <button className="link-button" onClick={() => handleLink('classes')}>CLASSES LIST</button>
       
         <h2>Step 3: Choose Background and Knacks</h2>
-        <p>At 1st level, you choose one <b>background</b> and two <b>knacks</b>. Your background represents the story of where your hero came from and summarizes their training. Knacks represent your hero’s expertise and talents. Your hero’s background and knacks contribute to their ability to overcome non-combat challenges with skill rolls. You can read more about the rules on skill rolls here (TODO).</p>
+        <p>At 1st level, you choose one <b>background</b> and two <b>knacks</b>. Your background represents the story of where your hero came from and summarizes their training. Knacks represent your hero’s expertise and talents. Your hero’s background and knacks contribute to their ability to overcome non-combat challenges with skill rolls.</p>
+        <button style={{marginBottom: '16px'}} className="link-button" onClick={() => handleLink('rules/skills')}>SKILL RULES</button>
         <h3 className="header">Invoking Backgrounds</h3>
         <p>You can <b>invoke</b> your background when you make a skill roll to add your proficiency bonus to the result. You can only invoke your background if the background is relevant towards the challenge. For example, a hero with the background “dragon hunter” could invoke this background to add their proficiency bonus on their skill roll to track a monster in the forest.</p>
         <Accordion title="Choosing Your Background" content={backgroundInfo} />
@@ -111,7 +119,11 @@ function HeroCreationSteps() {
         <Accordion title="Choosing Your Knacks" content={knackInfo} />
       
         <h2>Step 4: Choose Equipment</h2>
-        <p>Each class determines your starting equipment. For heroes trained in armor and weapons, you can consult this page (TODO) for a list of armor and weapons.</p>
+        <p>Each class determines your starting equipment. For heroes trained in armor and weapons, you can pick from a number of different armor and weapons.</p>
+        <div className="two-buttons">
+          <button className="link-button" onClick={() => handleLink('equipment/armor')}>ARMOR LIST</button>
+          <button className="link-button" onClick={() => handleLink('equipment/weapons')}>WEAPONS LIST</button>
+        </div>
 
         <h2>Step 5: Finalize Defenses</h2>
         <p>Heroes in Legends Rise have three <b>defenses</b>. These determine how hard it is for enemies to hurt your hero. Each defense has a number associated with it that serves as the TN that attack rolls are made against.</p>
@@ -129,7 +141,7 @@ function HeroCreationSteps() {
         <p>For example, Darian’s proficiency bonus is +2 at 1st level, so all three defenses start at 10. Their class gives them +2 to Evasion and Resolve, which brings their Evasion and Resolve to 12. Darian then decides to wear light armor, which increases their Evasion by +2 to 14.</p>
 
         <h2>Optional Step 6: Starting at Higher Level</h2>
-        <p>Although it's recommended to start at 1st level, some campaigns might begin at higher levels. When starting at a higher level, look at the level progression table (TODO link) to see what features you get from higher levels. For equipment, you can still use your class’s starting equipment, but depending on the level, you might start with gold and relics:
+        <p>Although it's recommended to start at 1st level, some campaigns might begin at higher levels. When starting at a higher level, look at the <Link className="internal-link" to="/classes#progression-table">level progression table</Link> to see what features you get from higher levels. For equipment, you can still use your class’s starting equipment, but depending on the level, you might start with gold and relics:
         </p>
         <ul>
           <li className="higher-level"><b>Levels 2-4:</b> 1 gold</li>

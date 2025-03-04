@@ -42,7 +42,7 @@ function Classes() {
           </div>
         )} />
 
-        <h4>Level Progression Table</h4>
+        <h4 id="progression-table">Level Progression Table</h4>
         <table>
           <thead>
             <tr>

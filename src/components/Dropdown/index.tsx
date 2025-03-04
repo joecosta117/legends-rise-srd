@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.scss";
 
 interface DropdownProps {
   items: { label: string; onClick: (label?: any) => void }[];
   startLabel: string;
+  selected: string;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ items, startLabel }) => {
+const Dropdown: React.FC<DropdownProps> = ({ items, startLabel, selected }) => {
   const [dropdownLabel, setDropdownLabel] = useState(startLabel);
+  useEffect(() => {
+    selected && setDropdownLabel(selected)
+  }, [selected])
 
   function toggleDropdown() {
     const arrow = document.querySelectorAll('.dropdown-button__dropdown-arrow')[0] as HTMLElement;

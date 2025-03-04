@@ -85,6 +85,43 @@
     background: $dimgrey;
     padding: 5px 5px;
   }
+
+  .link-button {
+    padding: 10px 5px;
+    width: 100%;
+    border: 2px solid $gold;
+    background: $redwood;
+    border-radius: 2px;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $dimgrey;
+    }
+
+    @include mq('s') {
+      max-width: 200px;
+    }
+  }
+
+  .two-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include mq('s') {
+      flex-direction: row;
+      gap: 25px;
+    }
+  }
+
+  .internal-link {
+    text-decoration: underline;
+  }
 }
 
 @mixin class-page-content {

@@ -1,7 +1,7 @@
 import "./index.scss";
 import { useState } from "react";
 import Accordion from "../../components/Accordion";
-import Dropdown from "../../components/Dropdown";
+import { useNavigate } from 'react-router-dom';
 import { ritualSpells } from "./ritual-spells";
 
 function RitualSpells() {
@@ -25,13 +25,18 @@ function RitualSpells() {
     setT3(true);
   }
 
+  const navigate = useNavigate()
+  function handleRules() {
+    navigate("/rules/magic")
+  }
+
   return (
     <div className="spells">
       <div className="spells-content">
     
         <h1>Ritual Spells</h1>
         <p>Scrying on a distant foe or speaking with animals are examples of ritual spells. These spells tend to take a long time to cast and might cost gold in order to produce powerful and lasting magical effects. Like battle spells, ritual spells are ranked by tier.</p>
-        <p>TODO: see full rules on ritual spells</p>
+        <button className="link-button" onClick={handleRules}>MAGIC RULES</button>
 
         <div className="tab-items">
           <div className="tab-items__tab" onClick={handleT1} data-selected={isT1}><p>Tier 1</p></div>

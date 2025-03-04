@@ -6,6 +6,11 @@
 
 .hcs-content {
   @include page-content();
+  text-align: left;
+
+  h1 {
+    text-align: center;
+  }
 
   .defense {
     list-style-type: none;
