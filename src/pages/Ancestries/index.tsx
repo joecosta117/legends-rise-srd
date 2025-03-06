@@ -5,6 +5,7 @@ import { useState } from "react";
 import Dropdown from "../../components/Dropdown";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
+import Modifier from "../../components/Modifier";
 
 function Ancestries() {
   const [selectedAncestry, setSelectedAncestry] = useState("");
@@ -324,7 +325,19 @@ function Ancestries() {
                 frequency="Encounter"
                 keywords="Magical"
                 duration="Scene ends"
-                effect="You gain temporary hit points equal to your proficiency bonus. When you deal damage from an attack roll, you deal additional unholy damage equal to your tier."
+                effect={
+                  <span>
+                    You gain temporary hit points equal to your proficiency
+                    bonus. When you deal damage from an{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>
+                    , you deal additional unholy damage equal to your tier.
+                  </span>
+                }
               />
             </div>
           )}
@@ -497,10 +510,43 @@ function Ancestries() {
                   <span>
                     <b>Elemental Magic (P):</b> You learn a battle spell
                     depending on your elemental soul even if you don’t know the
-                    spell’s magic tradition: lightning bolts (air), stone armor
-                    (earth), fireball (fire), frozen prison (ice), or crashing
-                    wave (water). Once per short rest, you can cast this spell
-                    at a spell tier equal to your tier without spending mana.
+                    spell’s magic tradition:{" "}
+                    <Link
+                      className="internal-link"
+                      to="/battle-spells#air-lightning-bolt"
+                    >
+                      lightning bolt
+                    </Link>{" "}
+                    (air),{" "}
+                    <Link
+                      className="internal-link"
+                      to="/battle-spells#earth-stone-armor"
+                    >
+                      stone armor
+                    </Link>{" "}
+                    (earth),{" "}
+                    <Link
+                      className="internal-link"
+                      to="/battle-spells#fire-fireball"
+                    >
+                      fireball
+                    </Link>{" "}
+                    (fire),{" "}
+                    <Link
+                      className="internal-link"
+                      to="/battle-spells#ice-frozen-prison"
+                    >
+                      frozen prison
+                    </Link>{" "}
+                    (ice), or{" "}
+                    <Link
+                      className="internal-link"
+                      to="/battle-spells#water-crashing-wave"
+                    >
+                      crashing wave
+                    </Link>{" "}
+                    (water). Once per short rest, you can cast this spell at a
+                    spell tier equal to your tier without spending mana.
                   </span>
                 </li>
               </ul>
@@ -553,8 +599,25 @@ function Ancestries() {
                 actType="Free"
                 descriptor="Relying on your heightened senses and agility, you strike true."
                 frequency="Encounter"
-                trigger="You see the result of your attack roll"
-                effect="Reroll the triggering attack roll, and take the higher result"
+                trigger={
+                  <span>
+                    You see the result of your{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>
+                  </span>
+                }
+                effect={
+                  <div>
+                    <p>
+                      Reroll the triggering attack roll, and take the higher
+                      result
+                    </p>
+                  </div>
+                }
               />
             </div>
           )}
@@ -668,7 +731,18 @@ function Ancestries() {
                 actType="Reaction"
                 descriptor="As you see an attack coming, you dart away."
                 frequency="Encounter"
-                trigger="You see a creature make an attack roll against you"
+                trigger={
+                  <span>
+                    You see a creature make an{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>{" "}
+                    against you
+                  </span>
+                }
                 effect="Disengage. If your movement puts you out of range of the triggering attack roll, then the roll has no effect on you."
               />
             </div>
@@ -733,14 +807,26 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Resolve (S):</b> You gain +1 to overcome rolls.
+                    <b>Resolve (S):</b> You gain <Modifier type="f" count="1" />{" "}
+                    to{" "}
+                    <Link className="internal-link" to="/rules/combat#overcome">
+                      overcome rolls
+                    </Link>{" "}
+                    .
                   </span>
                 </li>
                 <li>
                   <span>
                     <b>Lucky (P):</b> You start off each game session with an
-                    additional hero point, and your maximum amount of hero
-                    points you can have at once increases by +1.
+                    additional{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/rolling#hero-point"
+                    >
+                      hero point
+                    </Link>{" "}
+                    , and your maximum amount of hero points you can have at
+                    once increases by +1.
                   </span>
                 </li>
               </ul>
@@ -768,7 +854,14 @@ function Ancestries() {
                       +1{" "}
                       <img className="icon" src={fortune} alt="fortune icon" />
                     </b>{" "}
-                    to attack rolls against targets engaged to an ally.
+                    to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack rolls
+                    </Link>{" "}
+                    against targets engaged to an ally.
                   </span>
                 </li>
                 <li>
@@ -784,8 +877,22 @@ function Ancestries() {
                 frequency="Encounter"
                 target="1d4+1 enemies within your zone"
                 defense="RES"
-                critical="exposed (scene ends)"
-                success="exposed (turn ends)"
+                critical={
+                  <span>
+                    <Link className="internal-link" to="/conditions#exposed">
+                      exposed
+                    </Link>{" "}
+                    (scene ends)
+                  </span>
+                }
+                success={
+                  <span>
+                    <Link className="internal-link" to="/conditions#exposed">
+                      exposed
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                }
               />
             </div>
           )}
@@ -813,7 +920,14 @@ function Ancestries() {
                       +1{" "}
                       <img className="icon" src={fortune} alt="fortune icon" />
                     </b>{" "}
-                    to attack rolls against shaken targets.
+                    to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack rolls
+                    </Link>{" "}
+                    against shaken targets.
                   </span>
                 </li>
                 <li>
@@ -829,7 +943,18 @@ function Ancestries() {
                 frequency="Encounter"
                 keywords="Magical"
                 duration="Scene ends"
-                effect="You gain temporary hit points equal to your proficiency bonus, your natural melee weapons deal 3 physical damage, and +1 fortune to Disarm, Grab, Shove, Trip, and any skill rolls requiring athleticism."
+                effect={
+                  <span>
+                    You gain temporary hit points equal to your proficiency
+                    bonus, your natural melee weapons deal 3 physical damage,
+                    and <Modifier type="f" count="1" /> to Disarm, Grab, Shove,
+                    Trip, and any{" "}
+                    <Link className="internal-link" to="/rules/skills">
+                      skill rolls
+                    </Link>{" "}
+                    requiring athleticism.
+                  </span>
+                }
               />
             </div>
           )}
@@ -870,7 +995,19 @@ function Ancestries() {
                 frequency="Encounter"
                 keywords="Magical"
                 duration="Scene ends"
-                effect="You gain a fly speed equal to your land speed. When you deal damage from an attack roll, you deal additional holy damage equal to your tier."
+                effect={
+                  <span>
+                    You gain a fly speed equal to your land speed. When you deal
+                    damage from an{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>
+                    , you deal additional holy damage equal to your tier.
+                  </span>
+                }
               />
             </div>
           )}
@@ -896,7 +1033,14 @@ function Ancestries() {
                       +1{" "}
                       <img className="icon" src={fortune} alt="fortune icon" />
                     </b>{" "}
-                    to attack rolls.
+                    to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack rolls
+                    </Link>
+                    .
                   </span>
                 </li>
                 <li>
@@ -980,10 +1124,16 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Umbral Magic (P):</b> You learn the darkness battle spell
-                    even if you don’t know the shadow tradition. Once per short
-                    rest, you can cast this spell at a spell tier equal to your
-                    tier without spending mana.
+                    <b>Umbral Magic (P):</b> You learn the{" "}
+                    <Link
+                      className="internal-link"
+                      to="/battle-spells#shadow-darkness"
+                    >
+                      darkness
+                    </Link>{" "}
+                    battle spell even if you don’t know the shadow tradition.
+                    Once per short rest, you can cast this spell at a spell tier
+                    equal to your tier without spending mana.
                   </span>
                 </li>
               </ul>
@@ -1031,7 +1181,21 @@ function Ancestries() {
                 keywords="Magical"
                 target="1 creature within 1 zone"
                 duration="Scene ends or the target dies"
-                effect="When you deal damage from an attack roll against the target, you deal additional necrotic damage equal to your tier. When the target dies, you gain temporary hit points equal to double your proficiency bonus until your next rest."
+                effect={
+                  <span>
+                    When you deal damage from an{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>{" "}
+                    against the target, you deal additional necrotic damage
+                    equal to your tier. When the target dies, you gain temporary
+                    hit points equal to double your proficiency bonus until your
+                    next rest.
+                  </span>
+                }
               />
             </div>
           )}

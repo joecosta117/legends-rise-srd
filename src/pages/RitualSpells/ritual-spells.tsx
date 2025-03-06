@@ -1,5 +1,6 @@
 import AbilityCard from "../../components/AbilityCard";
 import Modifier from "../../components/Modifier";
+import { Link } from "react-router-dom";
 
 export const ritualSpells = [
   [
@@ -7,7 +8,7 @@ export const ritualSpells = [
       title: "Alarm",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You create invisible sensors that warn you when a creature enters the area."
           frequency="Spell 1 (Ritual)"
@@ -15,19 +16,29 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 zone per tier (each zone must be connected) within 1 zone"
           duration="8 hours"
-          effect="When you cast the spell, you can designate creatures that the spell ignores. A creature can succeed on a skill roll to either detect the sensors or move without triggering the alarm. The skill tier matches your tier."
+          effect={
+            <span>
+              When you cast the spell, you can designate creatures that the
+              spell ignores. A creature can succeed on a{" "}
+              <Link className="internal-link" to="/rules/skills">
+                skill roll
+              </Link>{" "}
+              to either detect the sensors or move without triggering the alarm.
+              The skill tier matches your tier.
+            </span>
+          }
           critical="Same as success, and the sensors see through invisibility"
           success="Sensors have night vision"
           partial="Sensors can see in normal light"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Arcane Servant",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You create an Invisible, mindless force that performs simple tasks at your command."
           frequency="Spell 1 (Ritual)"
@@ -39,13 +50,13 @@ export const ritualSpells = [
           partial="Servant lasts for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Create Item",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You create a temporary, non-magical item such as a shovel, rope, or a weapon."
           frequency="Spell 1 (Ritual)"
@@ -57,13 +68,13 @@ export const ritualSpells = [
           partial="Item lasts for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Create Steed",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You conjure a large land creature that a small or medium sized creature can ride."
           frequency="Spell 1 (Ritual)"
@@ -75,32 +86,41 @@ export const ritualSpells = [
           partial="Steed lasts for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Disguise",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You make the target look different by changing their clothes, armor, weapons, or body."
           frequency="Spell 1 (Ritual)"
           keywords="Magical, Melee"
           cast="10 minutes"
           target="1 creature per your tier you can touch"
-          effect="You make the target look like another creature of the same size. A creature can see through the illusion with a successful skill roll with the skill tier matching the spellcaster’s tier."
+          effect={
+            <span>
+              You make the target look like another creature of the same size. A
+              creature can see through the illusion with a successful{" "}
+              <Link className="internal-link" to="/rules/skills">
+                skill roll
+              </Link>{" "}
+              with the skill tier matching the spellcaster’s tier.
+            </span>
+          }
           critical="Same as success, but the size of the disguise can be one larger or smaller"
           success="Disguise lasts for 8 hours"
           partial="Disguise lasts for 1 hour, and creatures have +1 fortune on skill rolls to see through the illusion"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Enhance Sight",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You magically sharpen the target’s vision."
           frequency="Spell 1 (Ritual)"
@@ -113,13 +133,13 @@ export const ritualSpells = [
           partial="Target gains night vision for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Invisibility",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You cloak the target in illusionary magic, making them and their belongings invisible."
           frequency="Spell 1 (Ritual)"
@@ -132,32 +152,42 @@ export const ritualSpells = [
           partial="Target becomes invisible for 10 minutes"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Lock",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You magically lock an item from everyone, but you."
           frequency="Spell 1 (Ritual)"
           keywords="Magical"
           cast="10 minutes"
           target="1 lock, door, or container with a latch you can touch"
-          effect="Target’s latch mechanism is magically locked to everyone but you and other creatures you designate. The target can be opened by a skill roll with the skill tier matching your tier. When the target is opened by anyone not designated by you, the spell ends."
+          effect={
+            <span>
+              Target’s latch mechanism is magically locked to everyone but you
+              and other creatures you designate. The target can be opened by a{" "}
+              <Link className="internal-link" to="/rules/skills">
+                skill roll
+              </Link>{" "}
+              with the skill tier matching your tier. When the target is opened
+              by anyone not designated by you, the spell ends.
+            </span>
+          }
           critical="Lock duration is unlimited"
           success="Lock duration is a full day"
           partial="Lock duration is 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Spider Climb",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You give an ally the power of spiders."
           frequency="Spell 1 (Ritual)"
@@ -170,13 +200,13 @@ export const ritualSpells = [
           partial="Duration is 10 minutes"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Understand Languages",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You understand all languages."
           frequency="Spell 1 (Ritual)"
@@ -189,7 +219,7 @@ export const ritualSpells = [
           partial="Target doesn’t understand the language perfectly, but instead only makes out bits and pieces of words correctly"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
   ],
   [
@@ -197,7 +227,7 @@ export const ritualSpells = [
       title: "Duplicate",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You create a duplicate of a creature by transmuting rare metal with arcane energy."
           frequency="Spell 2 (Ritual)"
@@ -205,19 +235,33 @@ export const ritualSpells = [
           cast="12 hours"
           requirement="Hair or blood of the target and 3 gold worth of precious material"
           target="1 living creature"
-          effect="You create a duplicate of the target. The duplicate has no memories of the original target, but can pass itself off as the original through a skill roll with +1 fortune. The duplicate has no special abilities that the original has such as casting spells. The duplicate’s defenses equal 8 + double the spell tier, they have hit points equal to double the spell tier, and their proficiency bonus equals double the spell tier."
+          effect={
+            <span>
+              You create a duplicate of the target. The duplicate has no
+              memories of the original target, but can pass itself off as the
+              original through a{" "}
+              <Link className="internal-link" to="/rules/skills">
+                skill roll
+              </Link>{" "}
+              with <Modifier type="f" count="1" />. The duplicate has no special
+              abilities that the original has such as casting spells. The
+              duplicate’s defenses equal 8 + double the spell tier, they have
+              hit points equal to double the spell tier, and their proficiency
+              bonus equals double the spell tier.
+            </span>
+          }
           critical="Same as a success, but you and the duplicate can communicate telepathically with one another"
           success="You have control over the duplicate and can give it verbal commands"
           partial="Duplicate is not under your control, and might regard you as neutral or hostile"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Flight",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You give a creature the power of flight."
           frequency="Spell 2 (Ritual)"
@@ -230,13 +274,13 @@ export const ritualSpells = [
           partial="Spell lasts for 10 minutes"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Locate",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You divine the location of a specific object or person that is near you."
           frequency="Spell 2 (Ritual)"
@@ -249,13 +293,13 @@ export const ritualSpells = [
           partial="Range of the spell is 1 mile"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Magic Eye",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You create an hovering, invisible eye that can scout for you."
           frequency="Spell 2 (Ritual)"
@@ -268,13 +312,13 @@ export const ritualSpells = [
           partial="Eye has normal vision"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Message",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You send a short message to a creature."
           frequency="Spell 2 (Ritual)"
@@ -287,32 +331,42 @@ export const ritualSpells = [
           partial="Target can't be more than 10 miles away"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Safe Haven",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You construct a small structure of arcane energy that you can safely rest in."
           frequency="Spell 2 (Ritual)"
           duration="8 hours"
           keywords="Magical"
           cast="10 minutes"
-          effect="Your zone is surrounded by a dome of transparent arcane energy. You and designated creatures can freely move in and out of the dome. Other creatures can’t enter without succeeding on a skill roll with the skill tier matching the spell tier."
+          effect={
+            <span>
+              Your zone is surrounded by a dome of transparent arcane energy.
+              You and designated creatures can freely move in and out of the
+              dome. Other creatures can’t enter without succeeding on a{" "}
+              <Link className="internal-link" to="/rules/skills">
+                skill roll
+              </Link>{" "}
+              with the skill tier matching the spell tier.
+            </span>
+          }
           critical="Other creatures take +1 misfortune to enter the dome"
           success="Spell works"
           partial="Other creatures gain +1 fortune to enter the dome"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Scry",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You magically spy on a creature."
           frequency="Spell 2 (Ritual)"
@@ -327,15 +381,15 @@ export const ritualSpells = [
           partial="Spell works, but the target is aware they’re being magically spied on"
           failure="Spell fails, target gains a brief glimpse of you and knows your location, and you can't attempt this spell again until after a long rest"
         />
-      )
-    }
+      ),
+    },
   ],
   [
     {
       title: "Create Sanctuary",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You create a castle, tower, or temple to serve as a home base."
           frequency="Spell 3 (Ritual)"
@@ -348,13 +402,13 @@ export const ritualSpells = [
           partial="Structure is the size of a normal house"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Realm Shift",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You teleport yourself and allies to another realm."
           frequency="Spell 3 (Ritual)"
@@ -368,31 +422,39 @@ export const ritualSpells = [
           partial="Teleport to a location 2d12+6 miles away from the intended target"
           failure="Teleport to a random location within a random realm, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Resurrect",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You bring someone back from death."
           frequency="Spell 3 (Ritual)"
           keywords="Magical"
           cast="1 day"
-          requirement="1 dead creature. If you don’t have access to the body, then you take +1 misfortune to this spell’s skill roll"
+          requirement={
+            <span>
+              1 dead creature. If you don’t have access to the body, then you
+              take <Modifier type="mf" count="1" /> to this spell’s{" "}
+              <Link className="internal-link" to="/rules/skills">
+                skill roll
+              </Link>
+            </span>
+          }
           critical="Same as a success, but the target isn’t hindered"
           success="If the target is willing, they are resurrected with 1 hit point and any resources are already spent, such as recoveries. The journey from the afterlife leaves the target weak, and they’re hindered until after a long rest."
           partial="Same as a success, but the target is hindered for a week"
           failure="Spell fails, you can't attempt this spell again until after a long rest, and you take a growing +1 misfortune on this spell to resurrect the same target again."
         />
-      )
+      ),
     },
     {
       title: "Teleport",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="As you all gather around, you teleport everyone across the world."
           frequency="Spell 3 (Ritual)"
@@ -406,13 +468,13 @@ export const ritualSpells = [
           partial="Teleport to a location 2d12+6 miles away from the intended target"
           failure="Teleport to a random location within your realm, and you can't attempt this spell again until after a long rest"
         />
-      )
+      ),
     },
     {
       title: "Wish",
       actType: "Ritual",
       spell: (
-        <AbilityCard 
+        <AbilityCard
           accordion
           descriptor="You change the fabric of reality to your whims with a wish."
           frequency="Spell 3 (Ritual)"
@@ -424,7 +486,7 @@ export const ritualSpells = [
           partial="Same as a success, but the wish isn’t granted nor are there complications"
           failure="Same as a partial, but an ironic complication occurs such as being trapped in a vault of treasure or achieving divinity in a reality with no one else"
         />
-      )
-    }
-  ]
-]
+      ),
+    },
+  ],
+];

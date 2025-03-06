@@ -4,6 +4,7 @@ import Accordion from "../../components/Accordion";
 import Dropdown from "../../components/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { getHash } from "../../utils/getPath";
+import removeParenthesisPart from "../../utils/removeParenthesisPart";
 import {
   airSpells,
   arcaneSpells,
@@ -57,16 +58,17 @@ function BattleSpells() {
       Object.entries(spellRefs.current).forEach(([key, ref]) => {
         if (ref && key.includes(selectedSpell.toLowerCase())) {
           setTimeout(() => {
-            ref.scrollIntoView({ behavior: "smooth", block: "end" });
+            ref.scrollIntoView({ behavior: "smooth", block: "center" });
           }, 500);
         }
       });
     }
   }, [selectedSpell]);
 
-  const isOpen = (name: String) => {
+  const isOpen = (name: string) => {
     if (selectedSpell) {
-      return name.toLocaleLowerCase().includes(selectedSpell);
+      const spellName = removeParenthesisPart(name).toLocaleLowerCase();
+      return selectedSpell === spellName;
     }
   };
 
