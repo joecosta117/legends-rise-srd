@@ -195,10 +195,14 @@ function CombatRules() {
         </p>
         <h3 className="header">Moving With Zones</h3>
         <p>
-          When you use the Move maneuver, you can stride anywhere within your
-          zone or up to a number of zones equal to your speed. Most heroes and
-          monsters have a speed of 1, so they can Move up to an adjacent zone.
-          There are other types of speeds too:
+          When you use the{" "}
+          <Link className="internal-link" to="/combat-abilities#move">
+            move
+          </Link>{" "}
+          maneuver, you can stride anywhere within your zone or up to a number
+          of zones equal to your speed. Most heroes and monsters have a speed of
+          1, so they can move up to an adjacent zone. There are other types of
+          speeds too:
         </p>
         <ul>
           <li>
@@ -239,10 +243,17 @@ function CombatRules() {
         </ul>
         <h4 className="header">Speed 0</h4>
         <p>
-          If your speed ever becomes 0, then you can only Move within your zone,
-          or to an adjacent zone if you’re at a zone’s border. You can’t
-          Disengage while your speed is 0. If you’re in a difficult zone, then
-          you can’t Move at all.
+          If your speed ever becomes 0, then you can only{" "}
+          <Link className="internal-link" to="/combat-abilities#move">
+            move
+          </Link>{" "}
+          within your zone, or to an adjacent zone if you’re at a zone’s border.
+          You can’t
+          <Link className="internal-link" to="/combat-abilities#disengage">
+            disengage
+          </Link>{" "}
+          while your speed is 0. If you’re in a difficult zone, then you can’t
+          move at all.
         </p>
         <h4 className="header">Special Types of Movement</h4>
         <p>
@@ -277,7 +288,11 @@ function CombatRules() {
               </li>
               <li>
                 <span>
-                  If you are prone, then you are still prone after teleporting.
+                  If you are{" "}
+                  <Link className="internal-link" to="/conditions#prone">
+                    prone
+                  </Link>
+                  , then you are still prone after teleporting.
                 </span>
               </li>
               <li>
@@ -318,12 +333,19 @@ function CombatRules() {
           <li>
             <span>
               <b>Difficult Zone:</b> If a zone is difficult, magic or natural
-              obstacles make it hard to easily move through the area. Difficult
-              zones count as two zones for the purpose of moving through them.
-              If your speed is 1, then when you Move to enter or exit a
-              difficult zone, you only get to the border of the zone, and next
-              time you Move, you can fully enter or exit the zone. You also
-              can’t crawl or Disengage inside a difficult zone.
+              obstacles make it hard to easily traverse through the area.
+              Difficult zones count as two zones for the purpose of moving
+              through them. If your speed is 1, then when you{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>{" "}
+              to enter or exit a difficult zone, you only get to the border of
+              the zone, and next time you move, you can fully enter or exit the
+              zone. You also can’t crawl or{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              inside a difficult zone.
             </span>
           </li>
           <li>
@@ -603,10 +625,13 @@ function CombatRules() {
           amount of recoveries.
         </p>
         <p>
-          You can spend a single recovery by using the Rally action in combat.
-          Outside of combat, you can spend any number of recoveries during a
-          short rest. When you spend a recovery, you heal equal to your shaken
-          value.
+          You can spend a single recovery by using the{" "}
+          <Link className="internal-link" to="/combat-abilities#rally">
+            rally
+          </Link>{" "}
+          action in combat. Outside of combat, you can spend any number of
+          recoveries during a short rest. When you spend a recovery, you heal
+          equal to your shaken value.
         </p>
         <h4 className="header">Regeneration</h4>
         <p>
@@ -643,7 +668,11 @@ function CombatRules() {
               <b>Vanquished:</b> You fall unconscious and are narratively
               removed from the combat, but you don’t die. You can’t heal until
               the combat is over. Once you heal, your wounds are decreased to 2
-              but you are hindered until you take a long rest.
+              but you are{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              until you take a long rest.
             </span>
           </li>
           <li>
@@ -769,19 +798,29 @@ function CombatRules() {
         <h3 className="header">Stealth</h3>
         <p>
           Sometimes in or out of combat, creatures might attempt to sneak to go
-          unnoticed. You can become <b>hidden</b> if you use the Hide maneuver
-          while having cover or concealment. While hidden, you can't be targeted
-          by hostile abilities, except ones that affect a zone. You also have{" "}
-          <Modifier type="f" count="1" /> on rolls against creatures that you
-          are hidden from. You become visible if you use a hostile ability, your
-          concealment ends, your cover disappears, you stride with sneaking (see
-          below), or you are spotted.
+          unnoticed. You can become <b>hidden</b> if you use the{" "}
+          <Link className="internal-link" to="/combat-abilities#hide">
+            hide
+          </Link>{" "}
+          maneuver while having cover or concealment. While hidden, you can't be
+          targeted by hostile abilities, except ones that affect a zone. You
+          also have <Modifier type="f" count="1" /> on rolls against creatures
+          that you are hidden from. You become visible if you use a hostile
+          ability, your concealment ends, your cover disappears, you stride with
+          sneaking (see below), or you are spotted.
         </p>
         <h4 className="header">Sneaking</h4>
         <p>
-          While hidden, you can Disengage or Move without avoiding detection if
-          reduce your speed by half. You must also end your movement behind
-          cover or still concealed.
+          While hidden, you can{" "}
+          <Link className="internal-link" to="/combat-abilities#disengage">
+            disengage
+          </Link>{" "}
+          or{" "}
+          <Link className="internal-link" to="/combat-abilities#move">
+            move
+          </Link>{" "}
+          without avoiding detection if reduce your speed by half. You must also
+          end your movement behind cover or still concealed.
         </p>
         <h4 className="header">Spotting Hidden Creatures</h4>
         <p>
@@ -818,7 +857,13 @@ function CombatRules() {
             <span>Mounts must be one size larger than the rider.</span>
           </li>
           <li>
-            <span>When a mount dies, the rider falls prone.</span>
+            <span>
+              When a mount dies, the rider falls{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+              .
+            </span>
           </li>
         </ul>
 
@@ -826,10 +871,14 @@ function CombatRules() {
         <p>
           When fighting underwater, certain actions are more difficult. If you
           don’t have a swim speed, then you take{" "}
-          <Modifier type="mf" count="1" /> on weapon abilities and are slowed.
-          Any creature fully immersed in water gains resistance to fire damage
+          <Modifier type="mf" count="1" /> on weapon abilities and are{" "}
+          <Link className="internal-link" to="/conditions#slowed">
+            slowed
+          </Link>
+          . Any creature fully immersed in water gains resistance to fire damage
           equal to their tier.
         </p>
+
         <h3 className="header">Drowning</h3>
         <p>
           A creature can hold their breath for a number of rounds equal to

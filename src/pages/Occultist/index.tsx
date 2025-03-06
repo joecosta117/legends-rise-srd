@@ -5,6 +5,7 @@ import ClassHeader from "../../components/ClassHeader";
 import fortune from "../../assets/fortune-icon-v2.png";
 import { Link } from "react-router-dom";
 import Monster from "../../components/Monster";
+import Modifier from "../../components/Modifier";
 
 function Occultist() {
   const [isDetails, setDetails] = useState(true);
@@ -225,7 +226,14 @@ function Occultist() {
               frequency="At-will"
               target="1 creature within 2 zones"
               duration="Scene ends, target is defeated, or you use this ability again on another creature"
-              effect="Target is hindered"
+              effect={
+                <span>
+                  Target is{" "}
+                  <Link className="internal-link" to="/conditions#hindered">
+                    hindered
+                  </Link>
+                </span>
+              }
             />
 
             <h3 className="header">Subclass</h3>
@@ -247,16 +255,26 @@ function Occultist() {
 
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3 className="header">Disrupting Curse</h3>
+            <h3 className="header">Weakening Curse</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Disrupting Curse"
+              name="Weakening Curse"
               actType="Reaction"
-              descriptor="You interrupt a foe's resolve with a curse."
+              descriptor="You further weaken a debilitated foe."
               frequency="At-will"
               keywords="Magical, Range"
-              trigger="You see a creature within 1 zone make an overcome roll"
-              effect="The triggering creature takes +1 misfortune to their overcome roll, or +2 misfortune if the creature is the target of your hex."
+              trigger={
+                <span>
+                  You see a creature make a roll with at least one{" "}
+                  <Modifier type="mf" />
+                </span>
+              }
+              effect={
+                <span>
+                  Increase the number of <Modifier type="mf" /> by +1 on the
+                  triggering roll.
+                </span>
+              }
             />
           </div>
         )}
@@ -313,8 +331,15 @@ function Occultist() {
               traits={[
                 {
                   name: "Hex Challenger",
-                  description:
-                    "The target of your hex is taunted by your familiar.",
+                  description: (
+                    <span>
+                      The target of your hex is{" "}
+                      <Link className="internal-link" to="/conditions#taunted">
+                        taunted
+                      </Link>{" "}
+                      by your familiar
+                    </span>
+                  ),
                 },
               ]}
               summons
@@ -526,8 +551,11 @@ function Occultist() {
             <ul>
               <li>
                 <span>
-                  <i>Aberration:</i> On a successful Strike against your hex
-                  target, the target becomes{" "}
+                  <i>Aberration:</i> On a successful{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  against your hex target, the target becomes{" "}
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
@@ -558,8 +586,12 @@ function Occultist() {
               <b>Requirement:</b> curseblade subclass
             </p>
             <p>
-              When you Strike the target of your hex, you gain temporary hit
-              points equal to your tier (scene ends).
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              the target of your hex, you gain temporary hit points equal to
+              your tier (scene ends).
             </p>
 
             <h3 className="header">Twin Hex</h3>

@@ -18,7 +18,10 @@ function Weapons() {
         <p>
           Your class determines what weapons you're trained in. If you aren’t
           trained in a weapon, then you don’t add your proficiency bonus to
-          Strike with the weapon. Everyone is trained in natural melee weapons.
+          <Link className="internal-link" to="/combat-abilities#strike">
+            strike
+          </Link>{" "}
+          with the weapon. Everyone is trained in natural melee weapons.
         </p>
         <h2>Weapon Creativity</h2>
         <p>
@@ -49,8 +52,11 @@ function Weapons() {
             <span>
               <b>Ranged:</b> Weapons useful at far ranges, and can target
               creatures within a number of zones. Creatures take{" "}
-              <Modifier type="mf" count="1" /> to Strike an engaged target with
-              a short or long ranged weapon.
+              <Modifier type="mf" count="1" /> to{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              an engaged target with a short or long ranged weapon.
             </span>
           </li>
         </ul>
@@ -66,8 +72,11 @@ function Weapons() {
             <span>
               <b>Range:</b> Melee weapons can only target engaged creatures.
               Ranged weapons list a range. For these weapons, you can make a
-              Strike at a target within the listed range. If you Strike beyond
-              this range, you take <Modifier type="mf" count="1" /> for each
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              at a target within the listed range. If you strike beyond this
+              range, you take <Modifier type="mf" count="1" /> for each
               additional zone up to double the listed range.
             </span>
           </li>
@@ -145,8 +154,12 @@ function Weapons() {
         <p>
           Besides a type, each weapon belongs to a certain weapon group. Each
           weapon group has a <b>critical effect</b> that can occur when you get
-          a critical success on a Strike with that weapon. For natural melee
-          weapons, they are usually only the unarmed weapon group.
+          a critical success on a{" "}
+          <Link className="internal-link" to="/combat-abilities#strike">
+            strike
+          </Link>{" "}
+          with that weapon. For natural melee weapons, they are usually only the
+          unarmed weapon group.
         </p>
         <table>
           <thead>
@@ -165,7 +178,13 @@ function Weapons() {
             <tr>
               <td>Bows</td>
               <td>Crossbow, longbow, shortbow</td>
-              <td>target is slowed (turn ends)</td>
+              <td>
+                target is{" "}
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (turn ends)
+              </td>
             </tr>
             <tr>
               <td>Blades</td>
@@ -197,7 +216,12 @@ function Weapons() {
             <tr>
               <td>Flails</td>
               <td>Flail, heavy flail, whip</td>
-              <td>target falls prone</td>
+              <td>
+                target falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </td>
             </tr>
             <tr>
               <td>Hammers</td>
@@ -207,7 +231,13 @@ function Weapons() {
             <tr>
               <td>Polearms</td>
               <td>Javelin, Spear, Staff</td>
-              <td>target is hindered (turn ends)</td>
+              <td>
+                target is{" "}
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </td>
             </tr>
             <tr>
               <td>Unarmed</td>

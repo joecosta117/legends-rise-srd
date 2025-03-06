@@ -79,8 +79,13 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    Strike with a ranged weapon. On a success or higher, the
-                    next{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a ranged weapon. On a success or higher, the next{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -100,7 +105,13 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    Strike each target with a ranged weapon, but treat each{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    each target with a ranged weapon, but treat each{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -116,22 +127,70 @@ function FightingStyles() {
                 actType="Reaction"
                 descriptor="You fire an arrow at a fleeing target."
                 frequency="At-will"
-                trigger="You see a creature within 1 zone Move"
-                effect="Strike with a ranged weapon at +1 misfortune."
+                trigger={
+                  <span>
+                    You see a creature within 1 zone{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>
+                  </span>
+                }
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a ranged weapon at <Modifier type="mf" count="1" />
+                  </span>
+                }
               />
               <AbilityCard
                 name="Pinning Shot"
                 actType="Action"
                 descriptor="You shoot for a foe’s leg in hopes of slowing them down."
                 frequency="At-will"
-                effect="Strike with a ranged weapon. On a success or higher, the target is slowed (turn ends)."
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a ranged weapon, on a success or higher, the target is{" "}
+                    <Link className="internal-link" to="/conditions#slowed">
+                      slowed
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Retreating Shot"
                 actType="Action"
                 descriptor="As you run away, you fire a quick shot."
                 frequency="At-will"
-                effect="Disengage then Strike with a ranged weapon"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      Disengage
+                    </Link>{" "}
+                    then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>{" "}
+                    with a ranged weapon
+                  </span>
+                }
               />
             </div>
           </div>
@@ -149,7 +208,13 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    Defend, and the penalty to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#defend"
+                    >
+                      Defend
+                    </Link>
+                    , and the penalty to{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -166,7 +231,23 @@ function FightingStyles() {
                 descriptor="You attack while brandishing your weapon or shield to also guard yourself."
                 requirement="You’re wearing heavy armor"
                 frequency="At-will"
-                effect="Strike with a melee weapon, and on a success or higher, you Defend"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a melee weapon, and on a success or higher, you{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#defend"
+                    >
+                      defend
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Juggernaut's Charge"
@@ -174,7 +255,27 @@ function FightingStyles() {
                 descriptor="You rush forward with such force that you knock your foe to their feet."
                 requirement="You’re wearing heavy armor"
                 frequency="At-will"
-                effect="Charge to Strike, and on a success or higher, the target is knocked prone"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#charge"
+                    >
+                      charge
+                    </Link>{" "}
+                    to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>
+                    , and on a success or higher, the target is knocked{" "}
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Resilient Attack"
@@ -188,7 +289,14 @@ function FightingStyles() {
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>{" "}
-                    against an effect, then Strike.
+                    against an effect, then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>
+                    .
                   </span>
                 }
               />
@@ -227,8 +335,14 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    Strike with a natural melee weapon, and on a success or
-                    higher, the target is{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a natural melee weapon, and on a success or higher, the
+                    target is{" "}
                     <Link className="internal-link" to="/conditions#confused">
                       confused
                     </Link>{" "}
@@ -241,29 +355,80 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="You punch your foe and grab them."
                 frequency="At-will"
-                effect="Strike with a natural melee weapon, and on a success or higher, the target is seized (turn ends)"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a natural melee weapon, and on a success or higher, the
+                    target is{" "}
+                    <Link className="internal-link" to="/conditions#seized">
+                      seized
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Interrupt Grab"
                 actType="Reaction"
                 descriptor="You grab someone as they try to flee."
-                trigger="You see a creature engaged to you Move or use a magical or ranged ability"
+                trigger={
+                  <span>
+                    You see a creature engaged to you{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>
+                    , or use a magical or ranged ability
+                  </span>
+                }
                 frequency="At-will"
-                effect="Grab the triggering creature"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#grab">
+                      Grab
+                    </Link>{" "}
+                    the triggering creature
+                  </span>
+                }
               />
               <AbilityCard
                 name="Shoving Kick"
                 actType="Action"
                 descriptor="You kick a foe hard enough to send them flying."
                 frequency="At-will"
-                effect="Strike with a natural melee weapon, and on a success or higher, the target is shoved within your zone"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a natural melee weapon, and on a success or higher, the
+                    target is shoved within their zone
+                  </span>
+                }
               />
               <AbilityCard
                 name="Sweeping Knockdown"
                 actType="Maneuver"
                 descriptor="As you grab your enemy, you shove them to the ground."
                 frequency="At-will"
-                effect="Grab and on a success or higher, the target is knocked prone"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#grab">
+                      Grab
+                    </Link>{" "}
+                    and on a success or higher, the target is knocked{" "}
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                }
               />
             </div>
           </div>
@@ -279,7 +444,24 @@ function FightingStyles() {
                 descriptor="With a mocking taunt, you enrage a foe enough to lose their composure."
                 requirement="You’re wielding a standard melee weapon and your other hand is empty"
                 frequency="At-will"
-                effect="Hinder then Taunt the same target"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#hinder"
+                    >
+                      Hinder
+                    </Link>{" "}
+                    then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#taunt"
+                    >
+                      taunt
+                    </Link>{" "}
+                    the same target
+                  </span>
+                }
               />
               <AbilityCard
                 name="Bravado Charge"
@@ -289,7 +471,13 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    Charge and on a success or higher, the target is{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#charge"
+                    >
+                      Charge
+                    </Link>{" "}
+                    and on a success or higher, the target is{" "}
                     <Link className="internal-link" to="/conditions#exposed">
                       exposed
                     </Link>{" "}
@@ -303,7 +491,18 @@ function FightingStyles() {
                 descriptor="You attack with the aim to disarm your foe of their weapon."
                 requirement="You’re wielding a standard melee weapon and your other hand is empty"
                 frequency="At-will"
-                effect="Strike and on a success or higher, choose an item for the target to drop or you take the chosen item (your choice)"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    and on a success or higher, choose an item for the target to
+                    drop or you take the chosen item (your choice)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Disarming Interrupt"
@@ -312,7 +511,17 @@ function FightingStyles() {
                 requirement="You’re wielding a standard melee weapon and your other hand is empty"
                 frequency="At-will"
                 trigger="You see a creature engaged to you use a magical or ranged ability"
-                effect="Disarm the triggering creature"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disarm"
+                    >
+                      Disarm
+                    </Link>{" "}
+                    the triggering creature
+                  </span>
+                }
               />
               <AbilityCard
                 name="Dueling Parry"
@@ -347,14 +556,44 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="Your attack aims to debilitate your foe as much as hurt them."
                 frequency="At-will"
-                effect="Strike and on a success or higher, the target is hindered (turn ends)"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    and on a success or higher, the target is{" "}
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Dirty Escape"
                 actType="Maneuver"
                 descriptor="With a disarming word or quick distraction, you throw your enemy off before darting away."
                 frequency="At-will"
-                effect="Hinder then Disengage"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#hinder"
+                    >
+                      Hinder
+                    </Link>{" "}
+                    then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      disengage
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Distracting Attack"
@@ -363,7 +602,13 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    Strike and on a success or higher, the target is{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    and on a success or higher, the target is{" "}
                     <Link className="internal-link" to="/conditions#exposed">
                       exposed
                     </Link>{" "}
@@ -400,7 +645,17 @@ function FightingStyles() {
                 descriptor="With a cunning move you debilitate multiple foes at once."
                 target="1d4+1 enemies within your zone"
                 frequency="At-will"
-                effect="Hinder each target"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#hinder"
+                    >
+                      Hinder
+                    </Link>{" "}
+                    each target
+                  </span>
+                }
               />
             </div>
           </div>
@@ -415,7 +670,17 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="You attack multiple foes with a wide sweep of your weapon."
                 frequency="At-will"
-                effect="Melee Strike two creatures with a heavy melee weapon"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    two creatures with a heavy melee weapon
+                  </span>
+                }
               />
               <AbilityCard
                 name="Ground Slam"
@@ -425,7 +690,13 @@ function FightingStyles() {
                 target="1d4+1 enemies within your zone"
                 defense="MGT"
                 critical="Same as success, and 1 physical damage per your tier"
-                success="Prone"
+                success={
+                  <span>
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                }
                 frequency="At-will"
               />
               <AbilityCard
@@ -433,22 +704,62 @@ function FightingStyles() {
                 actType="Reaction"
                 descriptor="You use the weight of your weapon to shove a distracted creature to the ground."
                 frequency="At-will"
-                trigger="You see a creature engaged to you Move or use a magical or ranged ability"
+                trigger={
+                  <span>
+                    You see a creature engaged to you{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>
+                    , or use a magical or ranged ability
+                  </span>
+                }
                 requirement="You're wielding a heavy melee weapon"
-                effect="Trip the triggering creature"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#trip">
+                      Trip
+                    </Link>{" "}
+                    the triggering creature
+                  </span>
+                }
               />
               <AbilityCard
                 name="Knockdown Attack"
                 actType="Action"
                 descriptor="You attack with such strength, you push your foe to the ground."
                 frequency="At-will"
-                effect="Strike with a heavy melee weapon, and on a success or higher, the target is knocked prone"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a heavy melee weapon, and on a success or higher, the
+                    target is knocked{" "}
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Lunge Attack"
                 actType="Action"
                 descriptor="You take a step and swipe widely with your large weapon."
-                effect="Strike with a heavy melee weapon, but you can target any creature within your zone."
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a heavy melee weapon, but you can target any creature
+                    within your zone
+                  </span>
+                }
                 frequency="At-will"
               />
             </div>
@@ -464,14 +775,51 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="You slip into the shadows before attacking."
                 frequency="At-will"
-                effect="Hide then Strike, or Strike then Hide"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#hide">
+                      Hide
+                    </Link>{" "}
+                    then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>
+                    , or{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>{" "}
+                    then{" "}
+                    <Link className="internal-link" to="/combat-abilities#hide">
+                      hide
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Blown Cover"
                 actType="Reaction"
                 descriptor="When your hiding spot is discovered, you flee."
                 trigger="You become visible after being hidden"
-                effect="Disengage or Move"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      Disengage
+                    </Link>{" "}
+                    or{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>
+                  </span>
+                }
                 frequency="At-will"
               />
               <AbilityCard
@@ -486,7 +834,17 @@ function FightingStyles() {
                 actType="Maneuver"
                 descriptor="You dart into the shadows to fade from sight."
                 frequency="At-will"
-                effect="Move then Hide"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
+                    </Link>{" "}
+                    then{" "}
+                    <Link className="internal-link" to="/combat-abilities#hide">
+                      hide
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Unseen Attack"
@@ -494,7 +852,17 @@ function FightingStyles() {
                 descriptor="You attack from the shadows without a trace."
                 requirement="You’re hidden"
                 frequency="At-will"
-                effect="Strike, but you remain hidden"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>
+                    , but you remain hidden
+                  </span>
+                }
               />
             </div>
           </div>
@@ -519,7 +887,22 @@ function FightingStyles() {
                 target="1 willing creature you can touch"
                 descriptor="You stride to an ally and help quickly patch up their wounds."
                 frequency="At-will"
-                effect="Target can spend a recovery. You can Disengage or Move to the target before they spend the recovery."
+                effect={
+                  <span>
+                    Target can spend a recovery. You can{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      disengage
+                    </Link>{" "}
+                    or{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>{" "}
+                    to the target before they spend the recovery.
+                  </span>
+                }
               />
               <AbilityCard
                 name="Medical Assistance"
@@ -527,7 +910,14 @@ function FightingStyles() {
                 descriptor="As an ally pulls themself together, your medical advice improves the process."
                 trigger={
                   <span>
-                    You see an ally with your zone Rally or make an{" "}
+                    You see an ally with your zone{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#rally"
+                    >
+                      rally
+                    </Link>{" "}
+                    or make an{" "}
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>
@@ -575,16 +965,54 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="You strike with such ferocity that you demand your foe’s attention."
                 frequency="At-will"
-                effect="Strike with a melee weapon, and on a success or higher, the target is taunted (turn ends)"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a melee weapon, and on a success or higher, the target
+                    is{" "}
+                    <Link className="internal-link" to="/conditions#taunted">
+                      taunted
+                    </Link>{" "}
+                    by you (turn ends)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Come and Get It"
                 actType="Action"
                 keywords="Range"
-                target="1 creature taunted by you within 1 zone"
+                target={
+                  <span>
+                    1 creature{" "}
+                    <Link className="internal-link" to="/conditions#taunted">
+                      taunted
+                    </Link>{" "}
+                    by you within 1 zone
+                  </span>
+                }
                 descriptor="You taunt a foe forward, then surprise them with a swift attack."
                 frequency="At-will"
-                effect="Target must Move to you, then you Strike them with a melee weapon"
+                effect={
+                  <span>
+                    Target must{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>{" "}
+                    to you, then you{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>{" "}
+                    them with a melee weapon
+                  </span>
+                }
               />
               <AbilityCard
                 name="Defender's Sacrifice"
@@ -592,14 +1020,37 @@ function FightingStyles() {
                 descriptor="You rush forward to throw yourself between a foe’s attack and your ally."
                 trigger="You see an ally within your zone take damage"
                 frequency="At-will"
-                effect="Move next to the ally, and you take the triggering damage instead"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
+                    </Link>{" "}
+                    next to the ally, and you take the triggering damage instead
+                  </span>
+                }
               />
               <AbilityCard
                 name="Defensive Taunt"
                 actType="Maneuver"
                 descriptor="As you challenge a foe to battle, you take a defensive stance."
                 frequency="At-will"
-                effect="Taunt then Defend"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#taunt"
+                    >
+                      Taunt
+                    </Link>{" "}
+                    then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#defend"
+                    >
+                      defend
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Punishing Interrupt"
@@ -618,7 +1069,17 @@ function FightingStyles() {
                     against your ally
                   </span>
                 }
-                effect="Strike the triggering creature with a melee weapon"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    the triggering creature with a melee weapon
+                  </span>
+                }
               />
             </div>
           </div>
@@ -634,7 +1095,21 @@ function FightingStyles() {
                 descriptor="You dash across the battlefield before foes can react."
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
                 frequency="At-will"
-                effect="Charge, but you Move twice as part of your Charge"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#charge"
+                    >
+                      Charge
+                    </Link>
+                    , but you{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>{" "}
+                    twice as part of your charge
+                  </span>
+                }
               />
               <AbilityCard
                 name="Hit and Run"
@@ -642,14 +1117,38 @@ function FightingStyles() {
                 descriptor="After you attack, you dart across the battlefield."
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
                 frequency="At-will"
-                effect="Strike then Move"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    then{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>
+                  </span>
+                }
               />
               <AbilityCard
                 name="Knife's Edge"
                 actType="Action"
                 descriptor="Your light weapon knicks a foe hard enough to make them bleed."
                 frequency="At-will"
-                effect="Strike and on a success or higher, the target takes 1 ongoing physical damage per your tier"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    and on a success or higher, the target takes 1 ongoing
+                    physical damage per your tier
+                  </span>
+                }
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
               />
               <AbilityCard
@@ -657,7 +1156,16 @@ function FightingStyles() {
                 actType="Reaction"
                 descriptor="As an enemy catches you, you swiftly roll away to avoid further harm."
                 frequency="At-will"
-                effect="Disengage"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      Disengage
+                    </Link>
+                  </span>
+                }
                 trigger="You take damage"
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
               />
@@ -666,7 +1174,17 @@ function FightingStyles() {
                 actType="Maneuver"
                 frequency="At-will"
                 descriptor="You escape from danger impossibly fast."
-                effect="Disengage twice"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      Disengage
+                    </Link>{" "}
+                    twice
+                  </span>
+                }
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
               />
             </div>
@@ -682,7 +1200,18 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="Your weapon bounces off a wall to hit a covered foe."
                 frequency="At-will"
-                effect="Strike with a thrown ranged weapon, and you ignore the penalty from cover"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a thrown ranged weapon, and you ignore the penalty from
+                    cover
+                  </span>
+                }
               />
               <AbilityCard
                 name="Deflecting Throw"
@@ -708,21 +1237,54 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="With steady aim, you throw your weapon at a far away foe."
                 frequency="At-will"
-                effect="Strike with a thrown ranged weapon, but your weapon’s range increases by +1 zone"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a thrown ranged weapon, but your weapon's range
+                    increases by +1 zone
+                  </span>
+                }
               />
               <AbilityCard
                 name="Improvised Throw"
                 actType="Action"
                 descriptor="Pebble, quill, chunk of wood - anything is deadly in your hands when thrown."
                 frequency="At-will"
-                effect="Pick up a small object within reach, then Strike with it, treating the object as a thrown ranged weapon."
+                effect={
+                  <span>
+                    Pick up a small object within reach, then{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>{" "}
+                    with it, treating the object as a thrown ranged weapon
+                  </span>
+                }
               />
               <AbilityCard
                 name="Ricochet Throw"
                 actType="Action"
                 frequency="At-will"
                 descriptor="You throw your weapon to return back to you after it slices your enemy."
-                effect="Strike with a thrown ranged weapon, and the weapon then returns to your hand."
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with a thrown ranged weapon, and the weapon then returns to
+                    your hand
+                  </span>
+                }
               />
             </div>
           </div>
@@ -738,7 +1300,18 @@ function FightingStyles() {
                 descriptor="As your first weapon slices your foe, you follow up with your second weapon."
                 frequency="At-will"
                 requirement="You’re wielding a weapon in each hand"
-                effect="Strike with each weapon at +1 misfortune against the same target"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    with each weapon at <Modifier type="mf" count="1" /> against
+                    the same target
+                  </span>
+                }
               />
               <AbilityCard
                 name="Offhand Attack"
@@ -748,7 +1321,13 @@ function FightingStyles() {
                 requirement="You’re wielding a weapon in each hand"
                 effect={
                   <span>
-                    Strike, but treat the result of your{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>
+                    , but treat the result of your{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -765,7 +1344,25 @@ function FightingStyles() {
                 descriptor="You rush forward then unleash a flurry of attacks with your two weapons."
                 frequency="At-will"
                 requirement="You’re wielding a weapon in each hand"
-                effect="Charge to Strike with each weapon at +1 misfortune against the same target"
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#charge"
+                    >
+                      Charge
+                    </Link>{" "}
+                    to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>{" "}
+                    with each weapon at <Modifier type="mf" count="1" /> against
+                    the same target
+                  </span>
+                }
               />
               <AbilityCard
                 name="Twin Flurry"
@@ -776,7 +1373,13 @@ function FightingStyles() {
                 requirement="You’re wielding a weapon in each hand"
                 effect={
                   <span>
-                    Strike each target, but treat each{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      Strike
+                    </Link>{" "}
+                    each target, but treat each{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"

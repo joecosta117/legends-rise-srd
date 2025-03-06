@@ -254,8 +254,27 @@ function LegendaryArchetypes() {
 
             <h4 className="header">Unerring Accuracy (10th-Level Feature)</h4>
             <p>
-              You gain <Modifier type="f" count="1" /> to Disarm, Grab, Strike,
-              Shove, or Trip.
+              You gain <Modifier type="f" count="1" /> to{" "}
+              <Link className="internal-link" to="/combat-abilities#disarm">
+                disarm
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#grab">
+                grab
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#shove">
+                shove
+              </Link>
+              , or{" "}
+              <Link className="internal-link" to="/combat-abilities#trip">
+                trip
+              </Link>
+              .
             </p>
             <h4 className="header">Finish the Fight (10th-Level Feature)</h4>
             <p>
@@ -399,7 +418,10 @@ function LegendaryArchetypes() {
                     attack roll
                   </Link>{" "}
                   against their Resolve, and on a success, the target is also
-                  hindered (turn starts).
+                  <Link className="internal-link" to="/conditions#hindered">
+                    hindered
+                  </Link>{" "}
+                  (turn starts).
                 </span>
               }
             />
@@ -426,9 +448,11 @@ function LegendaryArchetypes() {
               </Link>{" "}
               against each foe’s Resolve within 1 zone, dealing unholy damage
               equal to your proficiency bonus. On a success, a target is also
-              hindered (scene ends). At the end of the combat, the ground opens
-              up to hell, and you step out with hit points equal to your shaken
-              value.
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (scene ends). At the end of the combat, the ground opens up to
+              hell, and you step out with hit points equal to your shaken value.
             </p>
             <p>
               At the end of your adventures, you descend to the lower realms to
@@ -702,7 +726,16 @@ function LegendaryArchetypes() {
                   against you
                 </span>
               }
-              effect="After the triggering attack roll is resolved, you teleport up to 1 zone and become invisible (turn starts)"
+              effect={
+                <span>
+                  After the triggering attack roll is resolved, you teleport up
+                  to 1 zone and become{" "}
+                  <Link className="internal-link" to="/conditions#invisible">
+                    invisible
+                  </Link>{" "}
+                  (turn starts)
+                </span>
+              }
             />
             <h4 className="header">
               Supernatural Slippery (10th-Level Feature)
@@ -776,7 +809,15 @@ function LegendaryArchetypes() {
               keywords="Magical, Range"
               duration="Scene ends"
               target="1 zone within 3 zones"
-              effect="Enemies treat the targeted zone as a difficult zone. You and allies within the targeted zone are invisible."
+              effect={
+                <span>
+                  Enemies treat the targeted zone as a difficult zone. You and
+                  allies within the targeted zone are{" "}
+                  <Link className="internal-link" to="/conditions#invisible">
+                    invisible
+                  </Link>
+                </span>
+              }
             />
             <h4 className="header">Faerie Aura (10th-Level Feature)</h4>
             <p>
@@ -838,8 +879,15 @@ function LegendaryArchetypes() {
 
             <h4 className="header">Wanderer’s Step (8th-Level Feature)</h4>
             <p>
-              You move across space with every step. Whenever you Disengage or
-              Move, you can choose to teleport the distance instead.
+              You move across space with every step. Whenever you{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              or
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>
+              , you can choose to teleport the distance instead.
             </p>
 
             <h4 className="header">
@@ -949,9 +997,20 @@ function LegendaryArchetypes() {
             </p>
             <h4 className="header">Rally to Me! (8th-Level Feature)</h4>
             <p>
-              When you Rally, each ally within 1 zone can also Rally as a free
-              action. Then you or any affected allies can also Disengage or Move
-              as part of their Rally.
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#rally">
+                rally
+              </Link>
+              , each ally within 1 zone can also rally as a free action. Then
+              you or any affected allies can also{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              or{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>{" "}
+              as part of their rally.
             </p>
 
             <h4 className="header">Domain (8th-Level Feature)</h4>
@@ -975,17 +1034,32 @@ function LegendaryArchetypes() {
               descriptor="You command with near supernatural authority to inspire your allies or frighten your foes."
               frequency="At-will"
               keywords="Magical"
-              effect="Choose to Help 1d4+1 allies or Hinder 1d4+1 enemies"
+              effect={
+                <span>
+                  Choose to{" "}
+                  <Link className="internal-link" to="/combat-abilities#help">
+                    help
+                  </Link>{" "}
+                  1d4+1 allies or{" "}
+                  <Link className="internal-link" to="/combat-abilities#hinder">
+                    hinder
+                  </Link>{" "}
+                  1d4+1 enemies
+                </span>
+              }
             />
             <h4 className="header">Golden Age (10th-Level Feature)</h4>
             <p>
-              Once per long rest, when you are vanquished, you instead Stand and
-              heal equal to your shaken value. At the end of your adventures,
-              you fully ascend to your throne and begin a long and prosperous
-              rule over your domain. Your renown guarantees prosperity for your
-              people for decades to come. Your descendants will one day earn
-              your throne and cement your legacy as one of the greatest
-              sovereigns in history.
+              Once per long rest, when you are vanquished, you instead{" "}
+              <Link className="internal-link" to="/combat-abilities#stand">
+                stand
+              </Link>{" "}
+              and heal equal to your shaken value. At the end of your
+              adventures, you fully ascend to your throne and begin a long and
+              prosperous rule over your domain. Your renown guarantees
+              prosperity for your people for decades to come. Your descendants
+              will one day earn your throne and cement your legacy as one of the
+              greatest sovereigns in history.
             </p>
           </div>
         )}
@@ -1051,9 +1125,12 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against their Resolve. On a success, the target is hindered (turn
-              ends). You can only make this attack roll against the same target
-              once per turn.
+              against their Resolve. On a success, the target is{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn starts). You can only make this attack roll against the same
+              target once per turn.
             </p>
 
             <h4 className="header">True Lichdom (10th-Level Feature)</h4>
@@ -1116,7 +1193,10 @@ function LegendaryArchetypes() {
               <li>
                 <span>
                   <i>All Seeing:</i> You have blind vision and can see anything
-                  invisible.
+                  <Link className="internal-link" to="/conditions#invisible">
+                    invisible
+                  </Link>
+                  .
                 </span>
               </li>
               <li>
@@ -1281,7 +1361,7 @@ function LegendaryArchetypes() {
               frequency="At-will"
               keywords="Magical, Melee"
               target="1 creature you can touch"
-              effect="Target can Stand, end all negative conditions affecting them, and if they’re dying, then they heal equal to your proficiency bonus."
+              effect="Target can end all negative conditions affecting them, and if they’re dying, then they heal equal to your proficiency bonus."
             />
             <h4 className="header">Immortal Saint (10th-Level Feature)</h4>
             <p>

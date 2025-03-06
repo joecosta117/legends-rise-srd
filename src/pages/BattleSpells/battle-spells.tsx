@@ -80,7 +80,14 @@ export const airSpells = [
           target="1d4+1 enemies within your zone"
           defense="MGT"
           damage="2 physical damage per spell tier"
-          success="Hindered (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -189,7 +196,13 @@ export const airSpells = [
                 target: "1 engaged creature",
                 defense: "EVN",
                 damage: "triple ST physical damage",
-                success: "Prone",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                ),
               },
               {
                 basic: false,
@@ -225,10 +238,13 @@ export const airSpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against their Might, and on a success, they are seized (turn
-                starts). Zones adjacent to the targeted zone become dangerous
-                zones (1 lightning damage per spell tier). Once a turn, as a
-                maneuver you can move the cyclone up to 1 zone away.
+                against their Might, and on a success, they are{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn starts). Zones adjacent to the targeted zone become
+                dangerous zones (1 lightning damage per spell tier). Once a
+                turn, as a maneuver you can move the cyclone up to 1 zone away.
               </span>
             </span>
           }
@@ -414,8 +430,15 @@ export const arcaneSpells = [
                 target: "1 engaged creature",
                 defense: "EVN",
                 damage: "double ST physical damage",
-                success:
-                  "Seized (scene ends), but the hand can only have creature seized at a time",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#seized">
+                      seized
+                    </Link>{" "}
+                    (scene ends), but the hand can only have one creature seized
+                    at a time
+                  </span>
+                ),
               },
             ]}
             reactions={[
@@ -554,7 +577,14 @@ export const deathSpells = [
           keywords="Magical, Range"
           defense="EVN"
           damage="2 necrotic damage per your tier"
-          critical="hindered (scene ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (scene ends)
+            </span>
+          }
         />
       ),
     },
@@ -572,7 +602,14 @@ export const deathSpells = [
           keywords="Escalation, Magical, Range"
           defense="MGT"
           damage="4 necrotic damage per spell tier"
-          success="hindered (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -657,7 +694,11 @@ export const deathSpells = [
                       >
                         overcome roll
                       </Link>{" "}
-                      or become hindered (turn ends).
+                      or become{" "}
+                      <Link className="internal-link" to="/conditions#hindered">
+                        hindered
+                      </Link>{" "}
+                      (turn ends).
                     </p>
                   </div>
                 ),
@@ -729,7 +770,14 @@ export const deathSpells = [
           keywords="Escalation, Magical, Range"
           defense="MGT"
           damage="2 necrotic damage per spell tier"
-          success="hindered (scene ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (scene ends)
+            </span>
+          }
         />
       ),
     },
@@ -793,7 +841,13 @@ export const earthSpells = [
           defense="EVN"
           keywords="Magical, Range"
           damage="2 physical damage per your tier"
-          critical="Prone"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+            </span>
+          }
         />
       ),
     },
@@ -809,7 +863,13 @@ export const earthSpells = [
           keywords="Magical"
           defense="MGT"
           critical="Same as success, and 1 physical damage per your tier"
-          success="Prone"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+            </span>
+          }
         />
       ),
     },
@@ -827,7 +887,14 @@ export const earthSpells = [
           keywords="Escalation, Magical, Range"
           defense="MGT"
           critical="Same as success, and 1 ongoing physical damage per spell tier while seized"
-          success="Seized (scene ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (scene ends)
+            </span>
+          }
           partial="Seized (turn ends)"
         />
       ),
@@ -948,7 +1015,13 @@ export const earthSpells = [
                 target: "1 engaged creature",
                 defense: "EVN",
                 damage: "double ST physical damage",
-                success: "Prone",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                ),
               },
               {
                 basic: false,
@@ -989,8 +1062,11 @@ export const earthSpells = [
                   >
                     attack roll
                   </Link>{" "}
-                  against their Might, and on a success, they fall prone. Any
-                  huge or smaller structure within the targeted zones are
+                  against their Might, and on a success, they fall{" "}
+                  <Link className="internal-link" to="/conditions#prone">
+                    prone
+                  </Link>
+                  . Any huge or smaller structure within the targeted zones are
                   reduced to rubble.
                 </span>
               </span>
@@ -1095,7 +1171,10 @@ export const eldritchSpells = [
                   attack roll
                 </Link>{" "}
                 against their Might, and on a success, the creature becomes
-                seized (scene ends).
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (scene ends).
               </span>
             </span>
           }
@@ -1190,7 +1269,15 @@ export const eldritchSpells = [
                 target: "1 engaged creature",
                 defense: "EVN",
                 damage: "double ST physical damage",
-                success: "Seized (scene ends)",
+                success: (
+                  <span>
+                    {" "}
+                    <Link className="internal-link" to="/conditions#seized">
+                      seized
+                    </Link>{" "}
+                    (scene ends)
+                  </span>
+                ),
               },
               {
                 basic: false,
@@ -1219,14 +1306,24 @@ export const eldritchSpells = [
             keywords="Escalation, Magical, Range"
             defense="MGT"
             critical="Same as success, but you can move the target up to 1 zone away"
-            success="Seized (scene ends) and you can move the target within their zone"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (scene ends) and you can move the target within their zone
+              </span>
+            }
             partial="Seized (turn ends)"
             effect={
               <span>
                 <span>
-                  When you focus on this spell, you can move the seized target
-                  up to 1 zone or let go of a seized target to repeat this
-                  spell’s{" "}
+                  When you focus on this spell, you can move the{" "}
+                  <Link className="internal-link" to="/conditions#seized">
+                    seized
+                  </Link>{" "}
+                  target up to 1 zone or let go of a seized target to repeat
+                  this spell’s{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -1381,7 +1478,14 @@ export const enchantmentSpells = [
           defense="RES"
           critical="Same as success, but the target uses both their action and maneuver to follow your command."
           success="Target uses their action or maneuver to follow your one word command, such as “run” or “drop”."
-          partial="Hindered (turn ends)"
+          partial={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -1396,7 +1500,16 @@ export const enchantmentSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="RES"
-          critical="Falls prone and asleep, but can be woken up with a maneuver from an engaged creature"
+          critical={
+            <span>
+              Falls{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>{" "}
+              and asleep, but can be woken up with a maneuver from an engaged
+              creature
+            </span>
+          }
           success={
             <span>
               <Link className="internal-link" to="/conditions#dazed">
@@ -1427,9 +1540,24 @@ export const enchantmentSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="RES"
-          critical="Same as a success, and the target must use their next maneuver to Move away from you"
-          success="Hindered (scene ends)"
-          partial="Hindered (turn ends)"
+          critical={
+            <span>
+              Same as a success, and the target must use their next maneuver to{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>{" "}
+              away from you
+            </span>
+          }
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (scene ends)
+            </span>
+          }
+          partial="hindered (turn ends)"
         />
       ),
     },
@@ -1617,7 +1745,15 @@ export const fireSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="EVN"
-          critical="Same as a success, and the target is hindered while taking this ongoing damage"
+          critical={
+            <span>
+              Same as a success, and the target is{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              while taking this ongoing damage
+            </span>
+          }
           success="2 ongoing fire damage per spell tier"
           partial="1 ongoing fire damage per spell tier"
         />
@@ -1729,7 +1865,13 @@ export const fireSpells = [
             keywords="Escalation, Magical, Range"
             defense="EVN"
             damage="3 fire damage per spell tier"
-            success="Prone"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            }
           />
         </div>
       ),
@@ -1750,7 +1892,14 @@ export const gravitySpells = [
           defense="MGT"
           keywords="Magical"
           critical="Same as success, and 1 physical damage per your spell tier"
-          success="Slowed (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -1766,7 +1915,14 @@ export const gravitySpells = [
           defense="MGT"
           keywords="Magical, Range"
           damage="2 physical damage per your tier"
-          critical="Seized (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -1813,7 +1969,15 @@ export const gravitySpells = [
           keywords="Escalation, Magical, Range"
           success="Same as a partial, but the effect lasts for the scene."
           partial="Gravity on the target flips (turn ends) and they fly up a number zones equal to the spell tier. If they are already in the air, then they instead fall a number of zones equal to the spell tier."
-          critical="Same as a success, but target is also seized while the gravity effect lasts."
+          critical={
+            <span>
+              Same as a success, but the target is also{" "}
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              while the gravity effect lasts
+            </span>
+          }
         />
       ),
     },
@@ -1898,7 +2062,15 @@ export const gravitySpells = [
           defense="MGT"
           damage="4 physical damage per spell tier"
           keywords="Escalation, Magical, Range"
-          success="Seized (scene ends), and 1 ongoing physical damage per spell tier while seized"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (scene ends), and 1 ongoing physical damage per spell tier while
+              seized
+            </span>
+          }
         />
       ),
     },
@@ -1997,7 +2169,15 @@ export const holySpells = [
           target="1 weapon in your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="When a creature uses the target weapon to Strike, they deal an additional 1 holy damage per spell tier."
+          effect={
+            <span>
+              When a creature uses the target weapon to{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , they deal an additional 1 holy damage per spell tier
+            </span>
+          }
         />
       ),
     },
@@ -2219,7 +2399,14 @@ export const iceSpells = [
           defense="EVN"
           keywords="Magical, Range"
           damage="2 cold damage per your tier"
-          critical="Slowed (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -2250,9 +2437,23 @@ export const iceSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="MGT"
-          critical="Seized (scene ends)"
-          success="Seized (turn ends)"
-          partial="Slowed (turn ends)"
+          critical="seized (scene ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
+          partial={
+            <span>
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -2326,8 +2527,11 @@ export const iceSpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against their Might. On a success, the creature is slowed (turn
-                starts).
+                against their Might. On a success, the creature is{" "}
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (turn starts).
               </span>
             </span>
           }
@@ -2405,7 +2609,15 @@ export const iceSpells = [
             defense="MGT"
             damage="2 cold damage per spell tier"
             critical="Same as a success, but seized (scene ends)"
-            success="Seized (turn ends), and 1 ongoing cold damage per spell tier while seized"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn ends), and 1 ongoing cold damage per spell tier while
+                seized
+              </span>
+            }
             effect="Targeted zone becomes a difficult zone until cleared"
           />
         </div>
@@ -2441,7 +2653,14 @@ export const illusionSpells = [
           defense="RES"
           keywords="Magical, Range"
           damage="2 psychic damage per your tier"
-          critical="Hindered (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -2560,7 +2779,14 @@ export const illusionSpells = [
                 target: "1d4+1 enemies within the illusionary creature’s zone",
                 defense: "RES",
                 critical: "hindered (scene ends)",
-                success: "hindered (turn ends)",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                ),
               },
             ]}
           />
@@ -2582,9 +2808,13 @@ export const illusionSpells = [
             <span>
               Designate any number of creatures that can see through the
               illusionary wall. For non-designated creatures, they believe the
-              wall is solid unless they try to interact with the wall such as
-              moving through it, using the Interact maneuver, or being told that
-              the wall is fake. The creature can then succeed on an{" "}
+              wall is solid unless they try to{" "}
+              <Link className="internal-link" to="/combat-abilities#interact">
+                interact
+              </Link>{" "}
+              with the wall such as moving through it, using the Interact
+              maneuver, or being told that the wall is fake. The creature can
+              then succeed on an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
@@ -2607,7 +2837,14 @@ export const illusionSpells = [
           target="1 creature (+1 creatures for each higher spell tier) within your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Target becomes invisible"
+          effect={
+            <span>
+              Target becomes{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>
+            </span>
+          }
         />
       ),
     },
@@ -2625,7 +2862,14 @@ export const illusionSpells = [
             damage="4 psychic damage per spell tier"
             defense="RES"
             success="Seized (scene ends), and if the target attempts to escape, then they take 2 psychic damage per spell tier"
-            partial="Seized (turn ends)"
+            partial={
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn ends)
+              </span>
+            }
           />
         </div>
       ),
@@ -2645,8 +2889,16 @@ export const illusionSpells = [
             keywords="Escalation, Magical, Range"
             defense="RES"
             damage="2 psychic damage per spell tier"
-            critical="Same as a partial, but ongoing damage increases to 2 per spell tier"
-            success="Hindered (scene ends), and 1 ongoing psychic damage per spell tier while hindered"
+            critical="Same as a success, but ongoing damage increases to 2 per spell tier"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (scene ends), and 1 ongoing psychic damage per spell tier while
+                hindered
+              </span>
+            }
           />
         </div>
       ),
@@ -2739,7 +2991,7 @@ export const lifeSpells = [
           frequency="Spell 1 (Life)"
           keywords="Magical"
           target="1 creature per spell tier within your zone"
-          effect="End 1 condition affecting the target except for prone"
+          effect="End 1 condition affecting the target"
         />
       ),
     },
@@ -2804,7 +3056,7 @@ export const lifeSpells = [
             frequency="Spell 3 (Life)"
             target="1 creature within 3 zones"
             keywords="Magical, Range"
-            effect="Target can spend a recovery, but regains 12 hit points per spell tier, can Stand, and ends all negative conditions affecting them."
+            effect="Target can spend a recovery, but regains 12 hit points per spell tier, and ends all negative conditions affecting them."
           />
         </div>
       ),
@@ -2855,7 +3107,14 @@ export const lightSpells = [
           defense="EVN"
           damage="2 fire damage per your tier"
           keywords="Magical, Range"
-          critical="hindered (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -2888,7 +3147,14 @@ export const lightSpells = [
           keywords="Escalation, Magical, Range"
           defense="MGT"
           damage="2 fire damage per spell tier"
-          success="Hindered (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -3087,7 +3353,14 @@ export const natureSpells = [
           defense="EVN"
           damage="2 physical damage per your tier"
           keywords="Magical, Range"
-          critical="seized (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -3187,7 +3460,18 @@ export const natureSpells = [
                 name: "Nature's Fury",
                 trigger:
                   "Nature spirit sees ally within their zone take damage",
-                effect: "Nature spirit can Charge to use Slam",
+                effect: (
+                  <span>
+                    "Nature spirit can{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#charge"
+                    >
+                      charge
+                    </Link>{" "}
+                    to use slam"
+                  </span>
+                ),
               },
             ]}
           />
@@ -3328,7 +3612,14 @@ export const natureSpells = [
                 target: "1 creature within 3 zones",
                 defense: "EVN",
                 damage: "double ST physical damage",
-                success: "slowed (turn ends)",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#slowed">
+                      slowed
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                ),
               },
               {
                 basic: false,
@@ -3359,8 +3650,16 @@ export const natureSpells = [
               {
                 name: "Faerie Glamour",
                 keywords: "magical",
-                effect:
-                  "Faerie warrior becomes invisible (turn starts), but this effect ends early if they use a hostile act",
+                effect: (
+                  <span>
+                    Faerie warrior becomes{" "}
+                    <Link className="internal-link" to="/conditions#invisible">
+                      invisible
+                    </Link>{" "}
+                    (turn starts), but this effect ends early if they use a
+                    hostile ability
+                  </span>
+                ),
               },
             ]}
           />
@@ -3843,8 +4142,11 @@ export const shadowSpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>{" "}
-                against their Might, and on a success, they are seized (turn
-                starts) by shadowy tendrils.
+                against their Might, and on a success, they are{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn starts) by shadowy tendrils.
               </span>
             }
           />
@@ -4122,7 +4424,14 @@ export const timeSpells = [
           target="1 creature per spell tier in your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Target becomes hastened"
+          effect={
+            <span>
+              Target becomes{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>
+            </span>
+          }
         />
       ),
     },
@@ -4175,7 +4484,23 @@ export const timeSpells = [
           frequency="Spell 1 (Time)"
           duration="Focus for the scene"
           keywords="Magical, Range"
-          effect="You create a slightly translucent duplicate of yourself within 1 zone. The duplicate’s defenses equal 10 + double the spell tier and hit points equal 4 per spell tier. When you focus on this spell, your duplicate can Disengage or Move. You can see and hear through your duplicate and take any acts from the duplicate’s position."
+          effect={
+            <span>
+              You create a slightly translucent duplicate of yourself within 1
+              zone. The duplicate’s defenses equal 10 + double the spell tier
+              and hit points equal 4 per spell tier. When you focus on this
+              spell, your duplicate can{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              or{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>
+              . You can see and hear through your duplicate and take any acts
+              from the duplicate’s position.
+            </span>
+          }
         />
       ),
     },
@@ -4199,9 +4524,14 @@ export const timeSpells = [
                 <li>
                   <span>
                     <i>Speed Up:</i> Any creature that starts their turn in the
-                    targeted zones becomes hastened (turn starts)
+                    targeted zones becomes{" "}
+                    <Link className="internal-link" to="/conditions#hastened">
+                      hastened
+                    </Link>{" "}
+                    (turn starts)
                   </span>
                 </li>
+
                 <li>
                   <span>
                     <i>Slow Down:</i> Whenever a creature starts their turn in
@@ -4303,7 +4633,14 @@ export const toxicSpells = [
           target="1 creature within 3 zones"
           defense="EVN"
           damage="2 toxic damage per your tier"
-          critical="Hindered (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
           keywords="Magical, Range"
         />
       ),
@@ -4330,7 +4667,10 @@ export const toxicSpells = [
                   attack roll
                 </Link>{" "}
                 against their Might, and on a success, the creature becomes
-                hindered (turn starts).
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn starts).
               </span>
             }
           />
@@ -4388,7 +4728,14 @@ export const toxicSpells = [
           keywords="Escalation, Magical, Range"
           defense="MGT"
           damage="2 toxic damage per spell tier"
-          success="Hindered (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -4406,7 +4753,15 @@ export const toxicSpells = [
           defense="EVN"
           damage="2 toxic damage per spell tier"
           keywords="Escalation, Magical, Range"
-          success="1 ongoing toxic damage per spell tier and hindered while taking this ongoing damage"
+          success={
+            <span>
+              1 ongoing toxic damage per spell tier and{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              while taking this ongoing damage
+            </span>
+          }
         />
       ),
     },
@@ -4488,7 +4843,14 @@ export const unholySpells = [
           defense="EVN"
           damage="2 unholy damage per your tier"
           keywords="Magical, Range"
-          critical="Hindered (turn ends)"
+          critical={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -4502,7 +4864,14 @@ export const unholySpells = [
           frequency="Spell 0 (Unholy)"
           target="1d4+1 enemies in your zone"
           defense="MGT"
-          success="Seized (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
           critical="Same as a success, and 1 unholy damage per your tier"
           keywords="Magical"
         />
@@ -4522,7 +4891,15 @@ export const unholySpells = [
             target="1 creature per spell tier within 2 zones"
             keywords="Escalation, Magical, Range"
             defense="RES"
-            critical="Same as a success, and hindered while marked"
+            critical={
+              <span>
+                Same as a success, and{" "}
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                while marked
+              </span>
+            }
             success="Same as a partial, but marked (scene ends)"
             partial="Marked (turn ends). While marked, the target takes additional 1 unholy damage per spell tier whenever they take damage"
           />
@@ -4541,7 +4918,14 @@ export const unholySpells = [
           keywords="Escalation, Magical, Range"
           defense="EVN"
           damage="2 unholy damage per spell tier"
-          success="Hindered (turn ends)"
+          success={
+            <span>
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends)
+            </span>
+          }
         />
       ),
     },
@@ -4556,7 +4940,15 @@ export const unholySpells = [
           target="1 weapon in your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="When a creature uses the target weapon to Strike, they deal an additional 1 unholy damage per spell tier."
+          effect={
+            <span>
+              When a creature uses the target weapon to{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , they deal an additional 1 unholy damage per spell tier
+            </span>
+          }
         />
       ),
     },
@@ -4619,7 +5011,14 @@ export const unholySpells = [
                 target: "1 engaged creature",
                 defense: "EVN",
                 damage: "triple ST unholy damage",
-                success: "hindered (turn ends)",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                ),
               },
             ]}
             reactions={[
@@ -4676,8 +5075,14 @@ export const unholySpells = [
                       against the Resolve of any creature that starts their turn
                       within a zone touching the wall or enters a zone touching
                       the wall. On a success, the target must use a maneuver to
-                      Move up to the wall, and then take 2 unholy damage per
-                      spell tier.
+                      <Link
+                        className="internal-link"
+                        to="/combat-abilities#move"
+                      >
+                        move
+                      </Link>{" "}
+                      up to the wall, and then take 2 unholy damage per spell
+                      tier.
                     </span>
                   </li>
                 </ul>
@@ -4745,7 +5150,14 @@ export const warSpells = [
           accordion
           descriptor="You attack with a magically empowered weapon."
           frequency="Spell 0 (War)"
-          effect="Strike and you deal 1 additional arcane damage per your tier"
+          effect={
+            <span>
+              <Link className="internal-link" to="/combat-abilities#strike">
+                Strike
+              </Link>{" "}
+              and you deal 1 additional arcane damage per your tier
+            </span>
+          }
           keywords="Magical"
         />
       ),
@@ -4762,7 +5174,16 @@ export const warSpells = [
             descriptor="As you attack, your weapon radiates elemental energy."
             frequency="Spell 1 (War)"
             keywords="Escalation, Magical"
-            effect="Choose cold, fire, lightning, physical, or toxic. Strike, and your weapon deals an additional 2 damage per spell tier of the chosen damage type."
+            effect={
+              <span>
+                Choose cold, fire, lightning, physical, or toxic.{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  Strike
+                </Link>
+                , and your weapon deals an additional 2 damage per spell tier of
+                the chosen damage type
+              </span>
+            }
           />
         </div>
       ),
@@ -4793,11 +5214,14 @@ export const warSpells = [
           keywords="Magical"
           effect={
             <span>
-              Strike with <Modifier type="f" count="1" /> per spell tier. Your{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                Strike
+              </Link>{" "}
+              with <Modifier type="f" count="1" /> per spell tier. Your{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              ignores any misfortune on the roll.
+              ignores any <Modifier type="mf" /> on the roll.
             </span>
           }
         />
@@ -4866,7 +5290,15 @@ export const warSpells = [
             descriptor="You flourish your weapon then teleport around the battlefield, striking each foe within sight."
             frequency="Spell 3 (War)"
             target="All enemies within 1 zone"
-            effect="Strike each target, and you can teleport to each target before you Strike"
+            effect={
+              <span>
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  Strike
+                </Link>{" "}
+                each target, and you can teleport to each target before you
+                strike
+              </span>
+            }
           />
         </div>
       ),
@@ -4917,7 +5349,15 @@ export const waterSpells = [
           accordion
           descriptor="You blast back someone with a small wave of water."
           frequency="Spell 1 (Water)"
-          trigger="You see a creature Move or teleport within 1 zone"
+          trigger={
+            <span>
+              You see a creature{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>{" "}
+              or teleport within 1 zone
+            </span>
+          }
           keywords="Escalation, Magical, Range"
           target="Triggering creature"
           defense="MGT"
@@ -4939,7 +5379,13 @@ export const waterSpells = [
             damage="2 physical damage per spell tier"
             frequency="Spell 1 (Water)"
             keywords="Escalation, Magical, Range"
-            success="Prone"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            }
           />
         </div>
       ),
@@ -4962,7 +5408,10 @@ export const waterSpells = [
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against their Evasion, and on a success, the creature falls prone
+              against their Evasion, and on a success, the creature falls{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
               You can only make this attack roll against a creature once per
               turn.
             </span>
@@ -5062,7 +5511,13 @@ export const waterSpells = [
                 target: "1 engaged creature",
                 defense: "EVN",
                 damage: "triple ST physical damage",
-                success: "prone",
+                success: (
+                  <span>
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
+                  </span>
+                ),
               },
               {
                 basic: false,
@@ -5090,7 +5545,15 @@ export const waterSpells = [
             keywords="Escalation, Magical, Range"
             defense="MGT"
             critical="Same as success, but 1 ongoing physical damage per spell tier while seized"
-            success="Same as a partial success, but seized (scene ends)"
+            success={
+              <span>
+                Same as a partial success, but{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (scene ends)
+              </span>
+            }
             partial="Seized (turn ends), and the target must hold their breath or begin drowning while seized"
           />
         </div>
@@ -5111,7 +5574,18 @@ export const waterSpells = [
             keywords="Escalation, Magical, Range"
             defense="MGT"
             damage="2 physical damage per spell tier"
-            success="seized (scene ends) if huge or smaller, or prone if colossal"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (scene ends) if huge or smaller, or{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>{" "}
+                if colossal
+              </span>
+            }
             effect="Anyone within the affected zone is submerged in water, and must hold their breath. At the start of your subsequent turns, the wave moves forward in a straight line, targeting all creatures in an adjacent zone, and bringing any seized creatures with the wave. The wave stops and collapses at the end of the scene."
           />
         </div>

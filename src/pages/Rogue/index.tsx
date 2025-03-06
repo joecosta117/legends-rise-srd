@@ -146,15 +146,36 @@ function Rogue() {
               actType="Action"
               descriptor="You dart around as you attack."
               frequency="At-will"
-              effect="Disengage then Strike, or Strike then Disengage"
+              effect={
+                <span>
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    Disengage
+                  </Link>{" "}
+                  then{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  , or{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  then disengage
+                </span>
+              }
             />
 
             <h3 className="header">Cunning Strike</h3>
             <p>
-              You know how to best hurt an off guarded foe. When you Strike with
-              at least one <Modifier type="f" />, you deal additional physical
-              damage equal to your tier. You don’t gain this additional damage
-              when using a heavy melee weapon or wearing heavy armor.
+              You know how to best hurt an off guarded foe. When you{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with at least one <Modifier type="f" />, you deal additional
+              physical damage equal to your tier. You don’t gain this additional
+              damage when using a heavy melee weapon or wearing heavy armor.
             </p>
 
             <h3 className="header">Opportunist</h3>
@@ -216,7 +237,16 @@ function Rogue() {
               descriptor="You teleport through the darkness."
               target="area in darkness within 1 zone per tier, including another creature’s shadow"
               frequency="At-will"
-              effect="You teleport to the targeted area, and you gain +1 fortune to your next Strike (turn ends)"
+              effect={
+                <span>
+                  You teleport to the targeted area, and you gain{" "}
+                  <Modifier type="f" count="1" /> to your next{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  (turn ends)
+                </span>
+              }
             />
 
             <h2>Investigator</h2>
@@ -226,22 +256,50 @@ function Rogue() {
             </p>
             <h3 className="header">Eye for Detail (1st-Level Feature)</h3>
             <p>
-              When you Study a creature, you gain{" "}
-              <Modifier type="f" count="1" /> on your next Strike against them
-              (turn ends). At the start of combat, you can Study as a free
-              action.
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#study">
+                study
+              </Link>{" "}
+              a creature, you gain <Modifier type="f" count="1" /> on your next{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              against them (turn ends). At the start of combat, you can study as
+              a free action.
             </p>
 
             <h2>Swashbuckler</h2>
             <p>You fight with bravados and panache.</p>
             <h3 className="header">Panache (1st-Level Feature)</h3>
             <p>
-              Your stylish moves build your confidence. When you Disarm, Help,
-              Hinder, Shove, Taunt, Trip, or another ability of significant
-              style (GM’s discretion), you gain a panache token that lasts for
-              the scene. When you make a roll, you can spend any number of
-              panache tokens to gain an equal number of <Modifier type="f" /> to
-              the roll.
+              Your stylish moves build your confidence. When you{" "}
+              <Link className="internal-link" to="/combat-abilities#disarm">
+                disarm
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#help">
+                help
+              </Link>
+              ,
+              <Link className="internal-link" to="/combat-abilities#hinder">
+                hinder
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#shove">
+                shove
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#taunt">
+                taunt
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#trip">
+                trip
+              </Link>
+              , or another ability of significant style (GM’s discretion), you
+              gain a panache token that lasts for the scene. When you make a
+              roll, you can spend any number of panache tokens to gain an equal
+              number of <Modifier type="f" /> to the roll.
             </p>
           </div>
         )}
@@ -286,7 +344,10 @@ function Rogue() {
               frequency="At-will"
               effect={
                 <span>
-                  Strike, but make your{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , but make your{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -329,7 +390,10 @@ function Rogue() {
               frequency="At-will"
               effect={
                 <span>
-                  Strike, but make your{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , but make your{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -362,7 +426,24 @@ function Rogue() {
               actType="Maneuver"
               descriptor="As you dart around the battlefield, you carefully examine your surroundings."
               frequency="At-will"
-              effect="Disengage or Move, then Study"
+              effect={
+                <span>
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    Disengage
+                  </Link>{" "}
+                  or{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                  , then{" "}
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    study
+                  </Link>
+                </span>
+              }
             />
 
             <h3 className="header">Meld the Shadows</h3>
@@ -370,8 +451,11 @@ function Rogue() {
               <b>Requirement:</b> shadow subclass
             </p>
             <p>
-              When you use shadow leap, you become invisible (turn starts) or
-              until you use a hostile act.
+              When you use shadow leap, you become{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>{" "}
+              (turn starts) or until you use a hostile ability.
             </p>
 
             <h3 className="header">Slippery Mind</h3>
@@ -404,10 +488,14 @@ function Rogue() {
               actType="Reaction"
               descriptor="With near supernatural skill, you turn a fumble into a deadly strike."
               frequency="At-will"
-              trigger="You get a failure on a Strike with cunning strike"
+              trigger="You get a failure on a strike with cunning strike"
               effect={
                 <span>
-                  Reroll your Strike's{" "}
+                  Reroll your{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  's{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -433,7 +521,10 @@ function Rogue() {
               <b>Requirement:</b> swashbuckler subclass
             </p>
             <p>
-              When you spend a panache token on your turn, you become hastened
+              When you spend a panache token on your turn, you become{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>{" "}
               until the end of your turn.
             </p>
 

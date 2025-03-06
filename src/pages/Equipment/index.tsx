@@ -107,7 +107,7 @@ function Equipment() {
           <div>
             <h2>Armor</h2>
             <p>
-              Armor helps defend you from incoming physical harm. All armor
+              Armor helps protect you from incoming physical harm. All armor
               unless magical or made out of special material is item tier 1 and
               costs 1 gold. All armor takes 1 minute to take on or off, except
               for shields. You can remove or wield a shield with the Interact

@@ -312,7 +312,13 @@ function Bard() {
               descriptor="You weave together a tale of knowledge."
               frequency="At-will"
               trigger="You use a bardic performance"
-              effect="Study"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    study
+                  </Link>
+                </span>
+              }
             />
 
             <h2>Muse of Valor</h2>
@@ -403,7 +409,20 @@ function Bard() {
               descriptor="You have mastered the art of moving and performing."
               frequency="At-will"
               trigger="You use a bardic performance"
-              effect="Disengage or Move"
+              effect={
+                <span>
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    Disengage
+                  </Link>{" "}
+                  or{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                </span>
+              }
             />
 
             <h2>Tier 2 Class Talents</h2>
@@ -484,8 +503,11 @@ function Bard() {
 
             <h3 className="header">Constant Performer</h3>
             <p>
-              You are permanently hastened, but you can only use the extra
-              maneuver on a bardic performance.
+              You are permanently{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>
+              , but you can only use the extra maneuver on a bardic performance.
             </p>
 
             <h3 className="header">Greater Performance</h3>
@@ -525,8 +547,11 @@ function Bard() {
               <b>Requirement:</b> muse of lore subclass
             </p>
             <p>
-              When you Study, you can target a number of targets equal to your
-              tier.
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#study">
+                study
+              </Link>
+              , you can target a number of targets equal to your tier.
             </p>
           </div>
         )}
@@ -568,7 +593,15 @@ function Bard() {
                 frequency="At-will"
                 keywords="Magical"
                 target="All enemies within your zone"
-                effect="Targets are slowed (turn ends)"
+                effect={
+                  <span>
+                    Targets are{" "}
+                    <Link className="internal-link" to="/conditions#slowed">
+                      slowed
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                }
               />
 
               <AbilityCard

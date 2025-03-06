@@ -226,17 +226,21 @@ function Swordmage() {
                 <span>
                   You cast a battle spell that takes either a maneuver or
                   action, has a target, but the spell’s effect doesn’t happen
-                  until your next Strike. If you don’t Strike before the
-                  duration of this ability, then the spell’s magic fizzles out.
-                  If the chosen spell requires an{" "}
+                  until your next{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  . If you don’t strike before the duration of this ability,
+                  then the spell’s magic fizzles out. If the chosen spell
+                  requires an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
                   >
                     attack roll
                   </Link>
-                  , then use the attack roll of your Strike. If the spell
-                  targets a creature, the target is the target of your Strike,
+                  , then use the attack roll of your strike. If the spell
+                  targets a creature, the target is the target of your strike,
                   or one of the targeted creatures if the spell targets multiple
                   creatures. If the spell targets a zone, the zone of your
                   target is the targeted zone, or one of the targeted zones if
@@ -287,8 +291,11 @@ function Swordmage() {
             <p>
               You siphon energy from a chosen elemental realm to empower your
               weapon. Choose one damage type from cold, fire, lightning, or
-              physical. When you use enspell weapon, your next Strike deals 1
-              additional damage per your tier of the chosen damage type.
+              physical. When you use enspell weapon, your next{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              deals 1 additional damage per your tier of the chosen damage type.
             </p>
 
             <h2>Aegis</h2>
@@ -333,7 +340,15 @@ function Swordmage() {
               trigger="You see a creature within 1 zone use or focus on a magical ability"
               keywords="Magical, Range"
               frequency="At-will"
-              effect="Strike the triggering creature, and you can teleport to become engaged with them before your Strike"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  the triggering creature, and you can teleport to become
+                  engaged with them before your strike
+                </span>
+              }
             />
           </div>
         )}
@@ -396,7 +411,14 @@ function Swordmage() {
               actType="Maneuver"
               descriptor="As you channel your weapon with magic, you survey the battlefield."
               frequency="At-will"
-              effect="Study, then enspell weapon"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    Study
+                  </Link>{" "}
+                  then enspell weapon
+                </span>
+              }
             />
 
             <h2>Tier 2 Class Talents</h2>
@@ -408,7 +430,14 @@ function Swordmage() {
               descriptor="You slash your weapon through a dimensional portal to reach a far enemy."
               frequency="At-will"
               keywords="Magical, Range"
-              effect="Strike, but your weapon’s range is extended by 1 zone"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , but your weapon's range extends by +1 zone
+                </span>
+              }
             />
 
             <h3 className="header">Dimensional Switch</h3>
@@ -429,9 +458,12 @@ function Swordmage() {
               <b>Requirement:</b> elemental knight subclass
             </p>
             <p>
-              When you get critical success on a Strike empowered by elemental
-              enspell, the target takes 1 ongoing damage per your tier of the
-              damage type chosen for elemental enspell.
+              When you get critical success on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              empowered by elemental enspell, the target takes 1 ongoing damage
+              per your tier of the damage type chosen for elemental enspell.
             </p>
 
             <h3 className="header">Greater Interrupt</h3>
@@ -440,7 +472,10 @@ function Swordmage() {
             </p>
             <p>
               When you use dimensional interrupt, on a critical successful
-              Strike, your target’s magical ability has no effect or the ability
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , your target’s magical ability has no effect or the ability
               they’re focusing on ends.
             </p>
 
@@ -464,7 +499,16 @@ function Swordmage() {
                 </span>
               }
               keywords="Magical, Range"
-              effect="Triggering attack roll against you takes +1 misfortune, and your next Strike deals 1 additional arcane damage per your tier (turn ends)."
+              effect={
+                <span>
+                  Triggering attack roll against you takes{" "}
+                  <Modifier type="mf" count="1" />, and your next{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  deals 1 additional arcane damage per your tier (turn ends)
+                </span>
+              }
             />
 
             <h2>Tier 3 Class Talents</h2>
@@ -507,8 +551,11 @@ function Swordmage() {
 
             <h3 className="header">Supreme Swordmage</h3>
             <p>
-              You are permanently hastened, but you can only use the extra
-              maneuver to enspell weapon.
+              You are permanently{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>
+              , but you can only use the extra maneuver to enspell weapon.
             </p>
           </div>
         )}

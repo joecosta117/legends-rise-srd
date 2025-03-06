@@ -150,7 +150,15 @@ function Paladin() {
               descriptor="As you attack your foe, you shield an ally with grace."
               frequency="At-will"
               keywords="Magical"
-              effect="Strike, and choose a creature within your zone to gain temporary hit points equal to your tier (scene ends)."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and choose a creature within your zone to gain temporary hit
+                  points equal to your tier (scene ends)
+                </span>
+              }
             />
 
             <h3 className="header">Divine Smite</h3>
@@ -161,7 +169,15 @@ function Paladin() {
               descriptor="You channel the powers of the divine into your attack."
               frequency="Encounter"
               keywords="Escalation, Magical"
-              effect="Strike, and you deal additional holy or unholy (your choice) damage equal to your proficiency bonus."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and you deal additional holy or unholy (your choice) damage
+                  equal to your proficiency bonus
+                </span>
+              }
             />
 
             <h3 className="header">Restorative Touch</h3>
@@ -214,8 +230,12 @@ function Paladin() {
               </li>
               <li>
                 <span>
-                  <b>Wrath:</b> When you Strike, you deal additional holy or
-                  unholy (your choice) damage equal to your tier.
+                  <b>Wrath:</b> When you{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  , you deal additional holy or unholy (your choice) damage
+                  equal to your tier.
                 </span>
               </li>
             </ul>
@@ -275,8 +295,15 @@ function Paladin() {
             <h3 className="header">Divine Judgement (1st-Level Feature)</h3>
             <p>
               Through your weapon, you mark foes for debilitating condemnation.
-              When you get a success or higher on a Strike against creature, the
-              target is hindered (turn ends).
+              When you get a success or higher on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              against creature, the target is{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         )}
@@ -335,8 +362,11 @@ function Paladin() {
               frequency="At-will"
               effect={
                 <span>
-                  Strike, and the target is marked (turn ends). While marked, if
-                  the target makes an{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and the target is marked (turn ends). While marked, if the
+                  target makes an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -366,8 +396,11 @@ function Paladin() {
             </p>
             <p>
               Your smite can place chains of judgment on a foe. On a success of
-              divine smite, the target is seized (turn ends), or seized (scene
-              ends) on a critical success.
+              divine smite, the target is{" "}
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (turn ends), or seized (scene ends) on a critical success.
             </p>
 
             <h3 className="header">Divine Matyr</h3>
@@ -382,7 +415,7 @@ function Paladin() {
             <h3 className="header">Purifying Touch</h3>
             <p>
               When you use restorative touch, you can immediately end one
-              condition on the target, except for prone.
+              condition on the target.
             </p>
 
             <h3 className="header">Vengeful Reprisal</h3>
@@ -398,7 +431,11 @@ function Paladin() {
               keywords="Magical"
               trigger={
                 <span>
-                  You see the target of your oath of vengeance Move or make an{" "}
+                  You see the target of your oath of vengeance{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>{" "}
+                  or make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -408,7 +445,16 @@ function Paladin() {
                   against an ally
                 </span>
               }
-              effect="Strike the target of your oath of vengeance. If the target is within 1 zone of you, you can teleport to become engaged with them before you Strike."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  the target of your oath of vengeance. If the target is within
+                  1 zone of you, you can teleport to become engaged with them
+                  before you strike.
+                </span>
+              }
             />
 
             <h2>Tier 3 Class Talents</h2>
@@ -444,7 +490,10 @@ function Paladin() {
             </p>
             <p>
               While you aren’t defeated, all enemies within your zone are
-              taunted by you.
+              <Link className="internal-link" to="/conditions#taunted">
+                taunted
+              </Link>{" "}
+              by you.
             </p>
 
             <h3 className="header">Rejuvenating Touch</h3>

@@ -149,7 +149,25 @@ function Commander() {
               actType="Action"
               descriptor="As you attack, you urge your ally to seize the moment."
               frequency="At-will"
-              effect="Strike, and choose an ally within 1 zone. The chosen ally can Disengage, Move, Strike, or cast a tier 0 Battle spell as a reaction."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and choose an an ally within 1 zone. The chosen ally can{" "}
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    disengage
+                  </Link>
+                  ,{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                  , strike, or cast a tier 0 Battle spell as a reaction.
+                </span>
+              }
             />
 
             <h3 className="header">Inspiring Attack</h3>
@@ -160,7 +178,16 @@ function Commander() {
               descriptor="As you attack, you urge your ally to seize the moment."
               frequency="Encounter"
               keywords="Escalation"
-              effect="Strike, and choose an ally within 1 zone. The chosen ally can spend a recovery, and they regain additional hit points equal to your proficiency bonus."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and choose an ally within 1 zone. The chosen ally can spend
+                  a recovery, and they regain additional hit points equal to
+                  your proficiency bonus.
+                </span>
+              }
             />
 
             <h3 className="header">Quick Aid</h3>
@@ -187,7 +214,16 @@ function Commander() {
                   .
                 </span>
               }
-              effect="You Help the ally, with the ally adding the bonus from Help to the triggering roll."
+              effect={
+                <span>
+                  You{" "}
+                  <Link className="internal-link" to="/combat-abilities#help">
+                    help
+                  </Link>{" "}
+                  the ally, with the ally adding the bonus from help to the
+                  triggering roll.
+                </span>
+              }
             />
 
             <h3 className="header">Commanding Presence</h3>
@@ -257,8 +293,12 @@ function Commander() {
             </p>
             <h3 className="header">Tactical Attack (1st-Level Feature)</h3>
             <p>
-              When you Strike or use an ability that requires you to Strike, you
-              can choose an ally within 1 zone to Strike instead.
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              or use an ability that requires you to strike, you can choose an
+              ally within 1 zone to strike instead.
             </p>
 
             <h2>Warlord</h2>
@@ -289,7 +329,30 @@ function Commander() {
               actType="Action"
               descriptor="As you attack, you urge your ally to hinder a foe."
               frequency="At-will"
-              effect="Strike, and choose an ally within 1 zone. The chosen ally can Grab, Hinder, Shove, or Trip as a reaction."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and choose an ally within 1 zone. The chosen ally can{" "}
+                  <Link className="internal-link" to="/combat-abilities#grab">
+                    grab
+                  </Link>
+                  ,{" "}
+                  <Link className="internal-link" to="/combat-abilities#hinder">
+                    hinder
+                  </Link>
+                  ,{" "}
+                  <Link className="internal-link" to="/combat-abilities#shove">
+                    shove
+                  </Link>
+                  , or{" "}
+                  <Link className="internal-link" to="/combat-abilities#trip">
+                    trip
+                  </Link>{" "}
+                  as a reaction.
+                </span>
+              }
             />
 
             <h3 className="header">Defend Command</h3>
@@ -299,7 +362,18 @@ function Commander() {
               actType="Action"
               descriptor="As you attack, you push your ally to guard themselves."
               frequency="At-will"
-              effect="Strike, and choose an ally within 1 zone. The chosen ally can Defend as a reaction."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and choose an ally within 1 zone. The chosen ally can{" "}
+                  <Link className="internal-link" to="/combat-abilities#defend">
+                    defend
+                  </Link>{" "}
+                  as a reaction.
+                </span>
+              }
             />
 
             <h3 className="header">Expanded Training</h3>
@@ -313,7 +387,11 @@ function Commander() {
 
             <h3 className="header">Expert Helper</h3>
             <p>
-              When you Help an ally, the bonus increases to{" "}
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#help">
+                help
+              </Link>{" "}
+              an ally, the bonus increases to{" "}
               <b>
                 +2 <img className="icon" src={fortune} alt="fortune icon" />
               </b>
@@ -322,8 +400,19 @@ function Commander() {
 
             <h3 className="header">Greater Inspiration</h3>
             <p>
-              When you use inspiring attack, the chosen ally can Disengage,
-              Move, Strike, or cast a tier 0 Battle spell as a free action.
+              When you use inspiring attack, the chosen ally can{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>
+              ,
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , or cast a tier 0 Battle spell as a free action.
             </p>
 
             <h2>Tier 2 Class Talents</h2>
@@ -334,7 +423,10 @@ function Commander() {
             <p>
               At the start of a combat encounter, choose a number of enemies
               that you can see equal to your tier. Targeted enemies become
-              hindered until the end of their first turn.
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              until the end of their first turn.
             </p>
 
             <h3 className="header">Inspiring Presence</h3>
@@ -364,14 +456,21 @@ function Commander() {
               <b>Requirement:</b> tactician subclass
             </p>
             <p>
-              At the start of a combat encounter, choose an ally to Strike or
-              cast a tier 0 Battle spell as a free action.
+              At the start of a combat encounter, choose an ally to{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              or cast a tier 0 Battle spell as a free action.
             </p>
 
             <h3 className="header">Uplifting Aid</h3>
             <p>
-              When you Help an ally, they gain temporary hit points equal to
-              your tier (scene ends).
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#help">
+                help
+              </Link>{" "}
+              an ally, they gain temporary hit points equal to your tier (scene
+              ends).
             </p>
 
             <h2>Tier 3 Class Talents</h2>
@@ -384,7 +483,15 @@ function Commander() {
             </p>
             <p>
               When you use inspiring attack, you and all allies within 1 zone
-              can Disengage or Move as a free action.
+              can{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              or{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>{" "}
+              as a free action.
             </p>
 
             <h3 className="header">Terrifying Attack</h3>
@@ -397,8 +504,11 @@ function Commander() {
                 attack roll
               </Link>{" "}
               against the Resolve of each enemy within 1 zone. On a success, a
-              target is hindered (turn ends), or for the scene (scene ends) on a
-              critical success.
+              target is{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends), or for the scene (scene ends) on a critical success.
             </p>
 
             <h3 className="header">Twin Command</h3>

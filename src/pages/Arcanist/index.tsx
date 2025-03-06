@@ -259,7 +259,13 @@ function Arcanist() {
               descriptor="You analyze your surroundings as you unleash your magic."
               frequency="At-will"
               trigger="You cast a battle spell"
-              effect="Study"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    study
+                  </Link>
+                </span>
+              }
             />
 
             <h2>Sorcerer</h2>
@@ -465,8 +471,15 @@ function Arcanist() {
               <b>Requirement:</b> wizard subclass
             </p>
             <p>
-              You are permanently hastened, but you can only use this extra
-              maneuver to Study.
+              You are permanently{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>
+              , but you can only use this extra maneuver to{" "}
+              <Link className="internal-link" to="/combat-abilities#study">
+                study
+              </Link>
+              .
             </p>
 
             <h3 className="header">Arcane Ascension</h3>

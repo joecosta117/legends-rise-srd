@@ -266,7 +266,8 @@ function Ancestries() {
                     </li>
                     <li>
                       <span>
-                        <b>Scales:</b> Your EVN increases by +1 while unarmored.
+                        <b>Scales:</b> Your Evasion increases by +1 while
+                        unarmored.
                       </span>
                     </li>
                     <li>
@@ -278,9 +279,21 @@ function Ancestries() {
                     </li>
                     <li>
                       <span>
-                        <b>Venomous:</b> On a critically successful Strike with
-                        your natural melee weapon, the target is hindered (turn
-                        ends).
+                        <b>Venomous:</b> On a critically successful{" "}
+                        <Link
+                          className="internal-link"
+                          to="/combat-abilities#strike"
+                        >
+                          strike
+                        </Link>{" "}
+                        with a natural melee weapon, the target is{" "}
+                        <Link
+                          className="internal-link"
+                          to="/conditions#hindered"
+                        >
+                          hindered
+                        </Link>{" "}
+                        (turn ends).
                       </span>
                     </li>
                   </ul>
@@ -584,8 +597,14 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Nimble Steps (Ligh Elf Only) (S):</b> When you Disengage,
-                    you can traverse up to 1 zone away.{" "}
+                    <b>Nimble Steps (Ligh Elf Only) (S):</b> When you{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      disengage
+                    </Link>
+                    , you can traverse up to 1 zone away.{" "}
                   </span>
                 </li>
                 <li>
@@ -654,7 +673,14 @@ function Ancestries() {
                 descriptor="You push your constructed body to the limits."
                 frequency="Encounter"
                 duration="End of your turn"
-                effect="You become hastened"
+                effect={
+                  <span>
+                    You become{" "}
+                    <Link className="internal-link" to="/conditions#hastened">
+                      hastened
+                    </Link>
+                  </span>
+                }
               />
             </div>
           )}
@@ -743,7 +769,18 @@ function Ancestries() {
                     against you
                   </span>
                 }
-                effect="Disengage. If your movement puts you out of range of the triggering attack roll, then the roll has no effect on you."
+                effect={
+                  <span>
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disengage"
+                    >
+                      Disengage
+                    </Link>
+                    . If your movement puts you out of range of the triggering
+                    attack roll, then the roll has no effect on you.
+                  </span>
+                }
               />
             </div>
           )}
@@ -947,8 +984,29 @@ function Ancestries() {
                   <span>
                     You gain temporary hit points equal to your proficiency
                     bonus, your natural melee weapons deal 3 physical damage,
-                    and <Modifier type="f" count="1" /> to Disarm, Grab, Shove,
-                    Trip, and any{" "}
+                    and <Modifier type="f" count="1" /> to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#disarm"
+                    >
+                      disarm
+                    </Link>
+                    ,{" "}
+                    <Link className="internal-link" to="/combat-abilities#grab">
+                      grab
+                    </Link>
+                    ,{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#shove"
+                    >
+                      shove
+                    </Link>
+                    ,{" "}
+                    <Link className="internal-link" to="/combat-abilities#trip">
+                      trip
+                    </Link>
+                    , and any{" "}
                     <Link className="internal-link" to="/rules/skills">
                       skill rolls
                     </Link>{" "}

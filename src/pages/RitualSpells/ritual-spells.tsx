@@ -40,11 +40,22 @@ export const ritualSpells = [
       spell: (
         <AbilityCard
           accordion
-          descriptor="You create an Invisible, mindless force that performs simple tasks at your command."
+          descriptor="You create an transculent, mindless force that performs simple tasks at your command."
           frequency="Spell 1 (Ritual)"
           keywords="Magical"
           cast="10 minutes"
-          effect="You create an invisible servant next to you that follows your commands and can interact with objects. The servant has defenses of 10 and automatically is destroyed if they take any damage, or if they are more than a mile from you."
+          effect={
+            <span>
+              You create a servant next to you that follows your commands and
+              can{" "}
+              <Link className="internal-link" to="/combat-abilities#interact">
+                interact
+              </Link>{" "}
+              with objects. The servant has defenses of 10 and automatically is
+              destroyed if they take any damage, or if they are more than a mile
+              from you.
+            </span>
+          }
           critical="Servant lasts for a full day"
           success="Servant lasts for 8 hours"
           partial="Servant lasts for 1 hour"
@@ -148,7 +159,15 @@ export const ritualSpells = [
           target="1 creature per your tier you can touch"
           effect="Invisibility ends early if the target uses a hostile ability."
           critical="Target becomes invisible for 8 hours"
-          success="Target becomes invisible for 1 hour"
+          success={
+            <span>
+              Target becomes{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>{" "}
+              for 1 hour
+            </span>
+          }
           partial="Target becomes invisible for 10 minutes"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
@@ -306,7 +325,17 @@ export const ritualSpells = [
           keywords="Magical"
           cast="10 minutes"
           duration="1 hour"
-          effect="You create an invisible eye next to you that you can see through. You can move the eye with your mind with a fly speed of 1, but the eye can’t pass through solid barriers."
+          effect={
+            <span>
+              You create an{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>{" "}
+              eye next to you that you can see through. You can move the eye
+              with your mind with a fly speed of 1, but the eye can’t pass
+              through solid barriers.
+            </span>
+          }
           critical="Eye has blind vision"
           success="Eye has night vision"
           partial="Eye has normal vision"
@@ -375,7 +404,16 @@ export const ritualSpells = [
           keywords="Magical"
           cast="10 minutes"
           target="1 creature in your realm"
-          effect="You create an invisible sensor floating above the target that lets you see and hear everything nearby."
+          effect={
+            <span>
+              You create an{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>{" "}
+              sensor floating above the target that lets you see and hear
+              everything nearby.
+            </span>
+          }
           critical="Your sensor can see anything invisible"
           success="Spell works"
           partial="Spell works, but the target is aware they’re being magically spied on"
@@ -444,7 +482,17 @@ export const ritualSpells = [
             </span>
           }
           critical="Same as a success, but the target isn’t hindered"
-          success="If the target is willing, they are resurrected with 1 hit point and any resources are already spent, such as recoveries. The journey from the afterlife leaves the target weak, and they’re hindered until after a long rest."
+          success={
+            <span>
+              If the target is willing, they are resurrected with 1 hit point
+              and any resources are already spent, such as recoveries. The
+              journey from the afterlife leaves the target weak, and they’re{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              until after a long rest.
+            </span>
+          }
           partial="Same as a success, but the target is hindered for a week"
           failure="Spell fails, you can't attempt this spell again until after a long rest, and you take a growing +1 misfortune on this spell to resurrect the same target again."
         />

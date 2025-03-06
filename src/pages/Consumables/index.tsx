@@ -161,7 +161,16 @@ function Consumables() {
             <Accordion
               stacked
               title="Greater Potion of Speed"
-              content="This vial of yellow liquid quickens your stride. When you drink this potion, you become hastened (scene ends)."
+              content={
+                <span>
+                  This vial of yellow liquid quickens your stride. When you
+                  drink this potion, you become{" "}
+                  <Link className="internal-link" to="/conditions#hastened">
+                    hastened
+                  </Link>{" "}
+                  (scene ends).
+                </span>
+              }
             />
             <Accordion
               stacked

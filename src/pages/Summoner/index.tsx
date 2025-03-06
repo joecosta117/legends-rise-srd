@@ -60,12 +60,15 @@ function Summoner() {
 
       <h4 className="header">Group Attack</h4>
       <p>
-        Minions within the same group and zone can Strike the same target using
-        one{" "}
+        Minions within the same group and zone can{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        the same target using one{" "}
         <Link className="internal-link" to="/rules/combat#attack-roll">
           attack roll
         </Link>
-        . Multiply the Strike’s base damage by the number of attacking minions.
+        . Multiply the strike’s base damage by the number of attacking minions.
       </p>
     </div>
   );
@@ -353,7 +356,11 @@ function Summoner() {
                       <i>Ice:</i> Resistance to cold damage equal to your
                       proficiency bonus, and their assault damage deals cold
                       damage. On a critical successful assault from the major
-                      summons, the target is seized (turn ends).
+                      summons, the target is{" "}
+                      <Link className="internal-link" to="/conditions#seized">
+                        seized
+                      </Link>{" "}
+                      (turn ends).
                     </span>
                   </li>
                   <li>
@@ -450,7 +457,16 @@ function Summoner() {
               actType="Action"
               descriptor="Your angelic warrior’s attack forces their foe’s attention on them."
               frequency="At-will"
-              effect="Your major summons can use assault, and on a success or higher, the target becomes taunted by your major summons (turn ends)."
+              effect={
+                <span>
+                  Your major summons can use assault, and on a success or
+                  higher, the target becomes{" "}
+                  <Link className="internal-link" to="/conditions#taunted">
+                    taunted
+                  </Link>{" "}
+                  by your major summons (turn ends)
+                </span>
+              }
             />
 
             <h2>Constructs</h2>
@@ -580,7 +596,16 @@ function Summoner() {
               actType="Action"
               descriptor="Your demon’s attack causes visions of sin."
               frequency="At-will"
-              effect="Your major summons can use assault, and on a success or higher, the target becomes hindered (turn ends)."
+              effect={
+                <span>
+                  Your major summons can use assault, and on a success or
+                  higher, the target becomes{" "}
+                  <Link className="internal-link" to="/conditions#hindered">
+                    hindered
+                  </Link>{" "}
+                  (turn ends)
+                </span>
+              }
             />
 
             <h2>Shadows</h2>
@@ -669,7 +694,20 @@ function Summoner() {
               descriptor="You move along your conjured creatures."
               frequency="At-will"
               trigger="You command a summoned creature"
-              effect="Disengage or Move"
+              effect={
+                <span>
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    Disengage
+                  </Link>{" "}
+                  or{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                </span>
+              }
             />
 
             <h3 className="header">Expanded Summoner Magic</h3>
@@ -865,7 +903,11 @@ function Summoner() {
             </p>
             <p>
               The damage for elemental burst increases to equal your proficiency
-              bonus, and on a critical success, a target is knocked prone.
+              bonus, and on a critical success, a target is knocked{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+              .
             </p>
 
             <h3 className="header">Greater Angels</h3>
@@ -879,8 +921,12 @@ function Summoner() {
 
             <h3 className="header">Master Summoner</h3>
             <p>
-              You are permanently hastened, but you can only use the extra
-              maneuver to command creatures from your summon abilities.
+              You are permanently{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>
+              , but you can only use the extra maneuver to command creatures
+              from your summon abilities.
             </p>
 
             <h3 className="header">Rapid Reconstruction</h3>

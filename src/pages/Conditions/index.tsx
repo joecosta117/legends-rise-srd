@@ -51,10 +51,20 @@ function Conditions() {
             </li>
             <li>
               <span>
-                On your turn, you must use a maneuver to Move to the closest
-                creature and then use an action to Strike or cast a tier 0
-                battle spell against the creature. If there are no nearby
-                creatures, then you just Defend
+                On your turn, you must use a maneuver to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                to the closest creature and then use an action to{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>{" "}
+                or cast a tier 0 battle spell against the creature. If there are
+                no nearby creatures, then you just{" "}
+                <Link className="internal-link" to="/combat-abilities#defend">
+                  defend
+                </Link>
+                .
               </span>
             </li>
           </ul>
@@ -73,7 +83,13 @@ function Conditions() {
               </span>
             </li>
             <li>
-              <span>If you’re hastened, you still gain the extra maneuver</span>
+              <span>
+                If you’re{" "}
+                <Link className="internal-link" to="/conditions#hastened">
+                  hastened
+                </Link>
+                , you still gain the extra maneuver
+              </span>
             </li>
           </ul>
         </div>
@@ -150,7 +166,10 @@ function Conditions() {
             </li>
             <li>
               <span>
-                An ally within reach can use a maneuver to help you Stand
+                An ally within reach can use a maneuver to help you{" "}
+                <Link className="internal-link" to="/combat-abilities#stand">
+                  stand
+                </Link>
               </span>
             </li>
           </ul>
@@ -181,12 +200,28 @@ function Conditions() {
               </span>
             </li>
             <li>
-              <span>You can't Disengage or Move</span>
+              <span>
+                You can't{" "}
+                <Link
+                  className="internal-link"
+                  to="/combat-abilities#disengage"
+                >
+                  disengage
+                </Link>{" "}
+                or{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+              </span>
             </li>
             <li>
               <span>
                 If a creature is holding you in place, they can drag you when
-                they Move, but they can only Move at half their speed
+                they{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+                , but they can only move at half their speed
               </span>
             </li>
           </ul>

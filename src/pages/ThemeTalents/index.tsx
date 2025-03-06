@@ -299,7 +299,7 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
-          to interact with your contact.
+          with your contact.
         </span>
       ),
     },
@@ -365,8 +365,18 @@ function ThemeTalents() {
     },
     {
       title: "Veil of Night",
-      content:
-        "Your trickery has tapped into deep magic that enshrouds you from the sight of others. You are always invisible unless you choose to be visible. At the start of a combat encounter, you become visible for the scene as you can’t maintain concentration while in imminent danger.",
+      content: (
+        <span>
+          "Your trickery has tapped into deep magic that enshrouds you from the
+          sight of others. You are always{" "}
+          <Link className="internal-link" to="/conditions#invisible">
+            invisible
+          </Link>{" "}
+          unless you choose to be visible. At the start of a combat encounter,
+          you become visible for the scene as you can’t maintain concentration
+          while in imminent danger.
+        </span>
+      ),
     },
   ];
   const divineT1Talents = [

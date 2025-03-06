@@ -50,8 +50,12 @@ function Relics() {
               </i>
             </p>
             <p>
-              When you Rally, you regain additional hit points equal to your
-              proficiency bonus.
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#rally">
+                rally
+              </Link>
+              , you regain additional hit points equal to your proficiency
+              bonus.
             </p>
           </div>
         ),
@@ -87,7 +91,11 @@ function Relics() {
             </p>
             <p>
               Creatures take <Modifier type="mf" count="1" /> on abilities that
-              push you or knock you prone.
+              push you or knock you{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+              .
             </p>
           </div>
         ),
@@ -142,13 +150,13 @@ function Relics() {
         content: (
           <div className="item">
             <p className="item__description">
-              <i>This shield can be animated to defend you or others.</i>
+              <i>This shield can be animated to protect you or others.</i>
             </p>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Animate Shield"
               actType="Maneuver"
-              descriptor="You set free your shield from your hand to defend your allies."
+              descriptor="You set free your shield from your hand to protect your allies."
               keywords="Magic"
               duration="Focus for the scene"
               frequency="Encounter"
@@ -377,8 +385,11 @@ function Relics() {
               <i>This weapon is crafted with a magically sharp edge.</i>
             </p>
             <p>
-              The extra damage on a critical success with a Strike using this
-              weapon increases to triple your tier.
+              The extra damage on a critical success with a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon increases to triple your tier.
             </p>
           </div>
         ),
@@ -408,8 +419,15 @@ function Relics() {
               <i>This weapon strikes magical fear in the minds of your foes.</i>
             </p>
             <p>
-              On a successful Strike using this weapon, the target becomes
-              hindered (turn ends).
+              On a successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon, the target becomes
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         ),
@@ -439,8 +457,12 @@ function Relics() {
               </i>
             </p>
             <p>
-              On a critical successful Strike using this weapon, you gain
-              temporary hit points equal to your proficiency bonus (scene ends).
+              On a critical successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon, you gain temporary hit points equal to your
+              proficiency bonus (scene ends).
             </p>
           </div>
         ),
@@ -456,8 +478,12 @@ function Relics() {
               </i>
             </p>
             <p>
-              On a critically successful Strike using this weapon, the target
-              takes 1 ongoing physical damage per your tier.
+              On a critically successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon, the target takes 1 ongoing physical damage per
+              your tier.
             </p>
           </div>
         ),
@@ -474,8 +500,12 @@ function Relics() {
             <p>
               Each energy weapon is attuned to a damage type upon creation. This
               weapon deals additional damage equal to your tier of the weapon’s
-              attuned damage type. On a critical successful Strike, the target
-              takes 1 ongoing damage per your tier of the chosen damage type.
+              attuned damage type. On a critical successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , the target takes 1 ongoing damage per your tier of the chosen
+              damage type.
             </p>
           </div>
         ),
@@ -492,8 +522,12 @@ function Relics() {
             </p>
             <p>
               This weapon deals additional necrotic damage equal to your tier.
-              On a critical successful Strike using this weapon, you gain
-              temporary hit points equal to your proficiency bonus (scene ends).
+              On a critical successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon, you gain temporary hit points equal to your
+              proficiency bonus (scene ends).
             </p>
           </div>
         ),
@@ -509,8 +543,12 @@ function Relics() {
               </i>
             </p>
             <p>
-              On a successful Strike using this weapon, the target takes 1
-              ongoing physical damage per your tier.
+              On a successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon, the target takes 1 ongoing physical damage per
+              your tier.
             </p>
           </div>
         ),
@@ -526,8 +564,11 @@ function Relics() {
               </i>
             </p>
             <p>
-              This relic can only be a ranged weapon. When Strike using this
-              weapon, ignore any penalty from cover.
+              This relic can only be a ranged weapon. When{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              using this weapon, ignore any penalty from cover.
             </p>
           </div>
         ),
@@ -549,7 +590,17 @@ function Relics() {
               keywords="Magic"
               duration="Focus for the scene"
               frequency="Encounter"
-              effect="The weapon can Strike a creature and move up to 1 zone before the Strike. Each time you focus on this ability, the weapon can move up to 1 zone and Strike."
+              effect={
+                <span>
+                  The weapon can{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  a creature and move up to 1 zone before the strike. Each time
+                  you focus on this ability, the weapon can move up to 1 zone
+                  and strike
+                </span>
+              }
             />
           </div>
         ),
@@ -562,8 +613,11 @@ function Relics() {
               <i>This weapon is imbued with good fortune.</i>
             </p>
             <p>
-              Whenever you get a failure on a Strike with this weapon, you can
-              reroll the{" "}
+              Whenever you get a failure on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with this weapon, you can reroll the{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -582,8 +636,12 @@ function Relics() {
             <p>
               Each energy weapon is attuned to a damage type upon creation. This
               weapon deals additional damage equal to your tier of the weapon’s
-              attuned damage type. On a critical successful Strike, the target
-              takes 1 ongoing damage per your tier of the chosen damage type.
+              attuned damage type. On a critical successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , the target takes 1 ongoing damage per your tier of the chosen
+              damage type.
             </p>
             <p>You also gain the following ability:</p>
             <AbilityCard
@@ -615,7 +673,15 @@ function Relics() {
               actType="Reaction"
               descriptor="As you land a sure strike, your magically sharp blade slices off your foe’s head."
               keywords="Magic"
-              trigger="You get a critical success on a Strike with this weapon against a creature with a head"
+              trigger={
+                <span>
+                  You get a critical success on a{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  with this weapon against a creature with a head
+                </span>
+              }
               effect={
                 <span>
                   Target must succeed on an{" "}
@@ -874,8 +940,11 @@ function Relics() {
               <i>You can spring to your feet in an instant with these boots.</i>
             </p>
             <p>
-              While wearing the boots, you can Stand as a free action on your
-              turn.
+              While wearing the boots, you can{" "}
+              <Link className="internal-link" to="/combat-abilities#stand">
+                stand
+              </Link>{" "}
+              as a free action on your turn.
             </p>
           </div>
         ),
@@ -945,8 +1014,23 @@ function Relics() {
             </p>
             <p>
               While wearing these gauntlets, you gain{" "}
-              <Modifier count="1" type="f" /> to Grab, Disarm, Shove, and skill
-              rolls involving physical strength.
+              <Modifier count="1" type="f" /> to{" "}
+              <Link className="internal-link" to="/combat-abilities#disarm">
+                disarm
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#grab">
+                grab
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#shove">
+                shove
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#trip">
+                trip
+              </Link>
+              , and skill rolls involving physical strength.
             </p>
           </div>
         ),
@@ -1021,7 +1105,20 @@ function Relics() {
               actType="Free"
               frequency="Encounter"
               keywords="Magical"
-              effect="Disengage or Move"
+              effect={
+                <span>
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    Disengage
+                  </Link>{" "}
+                  or{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                </span>
+              }
             />
           </div>
         ),
@@ -1096,8 +1193,11 @@ function Relics() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against the target’s Might. On a success, the target is seized and
-              can’t teleport while seized. The target can’t make{" "}
+              against the target’s Might. On a success, the target is{" "}
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              and can’t teleport while seized. The target can’t make{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>{" "}
@@ -1166,9 +1266,24 @@ function Relics() {
             </p>
             <p>
               While wearing these gauntlets, you gain{" "}
-              <Modifier type="f" count="1" /> to Grab, Disarm, Shove, and Skill
-              Rolls involving physical strength. You also gain the following
-              ability:
+              <Modifier type="f" count="1" /> to{" "}
+              <Link className="internal-link" to="/combat-abilities#disarm">
+                disarm
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#grab">
+                grab
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#shove">
+                shove
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#trip">
+                trip
+              </Link>
+              , and skill rolls involving athleticism. You also gain the
+              following ability:
             </p>
             <AbilityCard
               descriptor="The gauntlets enlarge your body."
@@ -1256,7 +1371,16 @@ function Relics() {
               frequency="Encounter"
               keywords="Magical"
               target="Your zone"
-              effect="Any invisible creature that starts their turn in the affected zone or enters the affected zone becomes visible"
+              effect={
+                <span>
+                  Any{" "}
+                  <Link className="internal-link" to="/conditions#invisible">
+                    invisible
+                  </Link>{" "}
+                  creature or objects that starts their turn in the affected
+                  zone or enters the affected zone becomes visible (scene ends)
+                </span>
+              }
             />
           </div>
         ),
@@ -1286,7 +1410,13 @@ function Relics() {
             <p className="item__description">
               <i>These glasses let you see anyone hidden from you.</i>
             </p>
-            <p>While wearing these glasses, you can see anyone invisible.</p>
+            <p>
+              While wearing these glasses, you can see anyone{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>
+              .
+            </p>
           </div>
         ),
       },
@@ -1314,8 +1444,11 @@ function Relics() {
             </p>
             <p>
               While wearing this ring, you can use an action to become
-              invisible. The invisibility ends if you use a hostile ability like
-              attacking a creature or end the invisibility as a free action.
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>
+              . The invisibility ends if you use a hostile ability or end the
+              invisibility as a free action.
             </p>
           </div>
         ),

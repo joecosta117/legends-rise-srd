@@ -5,6 +5,7 @@ import ClassHeader from "../../components/ClassHeader";
 import fortune from "../../assets/fortune-icon-v2.png";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import { Link } from "react-router-dom";
+import Modifier from "../../components/Modifier";
 
 function Druid() {
   const [isDetails, setDetails] = useState(true);
@@ -513,7 +514,16 @@ function Druid() {
                   </Link>
                 </span>
               }
-              effect="Choose one of triggering spell’s targets. On a success or higher, the chosen target is seized (turn ends)."
+              effect={
+                <span>
+                  Choose one of triggering spell’s targets. On a success or
+                  higher, the chosen target is{" "}
+                  <Link className="internal-link" to="/conditions#seized">
+                    seized
+                  </Link>{" "}
+                  (turn ends)
+                </span>
+              }
             />
 
             <h3 className="header">Safe Terrain</h3>
@@ -534,12 +544,12 @@ function Druid() {
             </p>
             <p>
               When you use primal transformation, your size can become large, or
-              huge starting at 8th level. While large, you can melee Strike with{" "}
-              <b>
-                +1{" "}
-                <img className="icon" src={misfortune} alt="misfortune icon" />
-              </b>{" "}
-              a creature not engaged with you, but still in your zone.{" "}
+              huge starting at 8th level. While large, you can melee{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with <Modifier type="mf" count="1" /> a creature not engaged with
+              you, but still in your zone.{" "}
             </p>
 
             <h3 className="header">Dual Attunement</h3>
@@ -588,8 +598,14 @@ function Druid() {
                     </li>
                     <li>
                       <span>
-                        <i>Owl:</i> The damaged creature can Disengage as a free
-                        action.
+                        <i>Owl:</i> The damaged creature can{" "}
+                        <Link
+                          className="internal-link"
+                          to="/combat-abilities#disengage"
+                        >
+                          disengage
+                        </Link>{" "}
+                        as a free action.
                       </span>
                     </li>
                     <li>

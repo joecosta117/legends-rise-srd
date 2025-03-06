@@ -144,7 +144,14 @@ function Warrior() {
               actType="Action"
               descriptor="You attack with unerring accuracy from countless practice."
               frequency="At-will"
-              effect="Strike with +1 fortune"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  with <Modifier type="f" count="1" />
+                </span>
+              }
             />
 
             <h3 className="header">Comeback Attack</h3>
@@ -155,7 +162,14 @@ function Warrior() {
               descriptor="You pull yourself together as you attack."
               frequency="Encounter"
               keywords="Escalation"
-              effect="Spend a recovery then Strike"
+              effect={
+                <span>
+                  Spend a recovery then{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                </span>
+              }
             />
 
             <h3 className="header">Interrupt Attack</h3>
@@ -165,9 +179,24 @@ function Warrior() {
               actType="Reaction"
               descriptor="As you see your foe distracted, you strike with your weapon."
               frequency="At-will"
-              trigger="You see an engaged creature Move or use a range or magical ability"
+              trigger={
+                <span>
+                  You see a creature{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                  , or use a range or magical ability
+                </span>
+              }
               keywords="Melee"
-              effect="Strike the triggering creature"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  the triggering creature
+                </span>
+              }
             />
 
             <h3 className="header">Subclass</h3>
@@ -208,8 +237,11 @@ function Warrior() {
               Extraordinary Technique (1st-Level Feature)
             </h3>
             <p>
-              When you get a success on a Strike, you can apply the critical
-              effect of your weapon’s weapon group.
+              When you get a success on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , you can apply the critical effect of your weapon’s weapon group.
             </p>
 
             <h2>Juggernaut</h2>
@@ -233,7 +265,11 @@ function Warrior() {
             </p>
             <h3 className="header">Super Critical (1st-Level Feature)</h3>
             <p>
-              When you Strike, and your{" "}
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , and your{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -264,7 +300,11 @@ function Warrior() {
             <h3 className="header">Greater Comeback</h3>
             <p>
               When you use comeback attack, you gain a number of{" "}
-              <Modifier type="f" /> to your Strike equal to the{" "}
+              <Modifier type="f" /> to your{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              equal to the{" "}
               <Link className="internal-link" to="/rules/combat#momentum">
                 momentum die
               </Link>{" "}
@@ -289,16 +329,28 @@ function Warrior() {
 
             <h3 className="header">Warrior's Charge</h3>
             <p>
-              When you Charge, instead of a Strike you can comeback attack,
-              precision attack, or another technique from your fighting styles
-              that takes an action, but doesn’t include the Charge action.
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#charge">
+                charge
+              </Link>
+              , instead of a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              you can use comeback attack, precision attack, or another
+              technique from your fighting styles that takes an action, but
+              doesn’t include the charge action.
             </p>
 
             <h2>Tier 2 Class Talents</h2>
             <h3 className="header">Comeback Technique</h3>
             <p>
               When you use comeback attack, you can use a technique that takes
-              an action instead of a Strike.
+              an action instead of a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              .
             </p>
 
             <h3 className="header">Expanded Techniques</h3>
@@ -336,7 +388,11 @@ function Warrior() {
               <b>Requirement:</b> slayer subclass
             </p>
             <p>
-              When you Strike with <Modifier type="f" />, increase the number of{" "}
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with <Modifier type="f" />, increase the number of{" "}
               <Modifier type="f" /> by +1.{" "}
             </p>
 
@@ -361,7 +417,11 @@ function Warrior() {
               <b>Requirement:</b> slayer subclass
             </p>
             <p>
-              Once per long rest, you can turn a Strike into a super critical.
+              Once per long rest, you can turn a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              into a super critical.
             </p>
 
             <h3 className="header">Swift Interrupt</h3>
@@ -376,8 +436,12 @@ function Warrior() {
             </p>
             <p>
               Choose a critical effect from a weapon group. When you apply a
-              critical effect on a Strike, you can choose the weapon’s normal
-              weapon group critical effect or the chosen critical effect.
+              critical effect on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , you can choose the weapon’s normal weapon group critical effect
+              or the chosen critical effect.
             </p>
           </div>
         )}

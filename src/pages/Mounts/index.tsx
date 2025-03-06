@@ -136,8 +136,15 @@ function Mounts() {
           <li>
             <span>
               Choose an effect to happen when your mount gets a success on their
-              attack roll for slam: target falls prone, target shoved within
-              their zone, target is seized (overcome ends).
+              attack roll for slam: target falls{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+              , target shoved within their zone, target is{" "}
+              <Link className="internal-link" to="/conditions#seized">
+                seized
+              </Link>{" "}
+              (overcome ends).
             </span>
           </li>
           <li>
@@ -164,7 +171,13 @@ function Mounts() {
               target: "1 engaged creature",
               defense: "EVN",
               damage: "2 physical damage",
-              success: "prone",
+              success: (
+                <span>
+                  <Link className="internal-link" to="/conditions#prone">
+                    prone
+                  </Link>
+                </span>
+              ),
             },
           ]}
         />

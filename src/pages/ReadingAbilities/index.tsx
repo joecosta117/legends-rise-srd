@@ -116,8 +116,11 @@ function ReadingAbilities() {
                 <span>
                   When you use this ability and on later turns as a maneuver,
                   you can command the summoned creature to use a maneuver or
-                  action, otherwise it uses Defend. You can only command a
-                  summoned creature once per your turn.
+                  action, otherwise it uses{" "}
+                  <Link className="internal-link" to="/combat-abilities#defend">
+                    defend
+                  </Link>
+                  . You can only command a summoned creature once per your turn.
                 </span>
               </li>
               <li>
@@ -132,7 +135,11 @@ function ReadingAbilities() {
                     alt="attack icon"
                   />{" "}
                   that appears next to a summoned creature’s ability indicates
-                  the ability is treated as a Strike.
+                  the ability is treated as a{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  .
                 </span>
               </li>
               <li>

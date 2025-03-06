@@ -1,14 +1,17 @@
 import "./index.scss";
 import AbilityCard from "../../components/AbilityCard";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
+import { getHash } from "../../utils/getPath";
 
 function CombatActs() {
   const [all, setAll] = useState(true);
   const [actions, setActions] = useState(false);
   const [maneuvers, setManeuvers] = useState(false);
+  const actRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
   function handleAll() {
     setAll(true);
     setActions(false);
@@ -25,9 +28,24 @@ function CombatActs() {
     setManeuvers(true);
   }
 
+  useEffect(() => {
+    const hash = getHash().toLocaleLowerCase();
+    Object.entries(actRefs.current).forEach(([key, ref]) => {
+      if (ref && key === hash) {
+        ref.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    });
+  }, []);
+
+  const isOpen = (name: string) => {
+    const hash = getHash().toLocaleLowerCase();
+    return hash === name;
+  };
+
   const actionsContent = [
     {
       title: "Charge (Action)",
+      id: "charge",
       actType: "Action",
       content: (
         <div>
@@ -35,13 +53,14 @@ function CombatActs() {
             accordion
             descriptor="You rush forward before attacking."
             frequency="At-will"
-            effect="Move and end your movement to Disarm, Grab, Shove, Trip, or Strike with a melee weapon."
+            effect="Move and end your movement to disarm, grab, shove, trip, or strike with a melee weapon."
           />
         </div>
       ),
     },
     {
       title: "Prepare (Action)",
+      id: "prepare",
       actType: "Action",
       content: (
         <div>
@@ -57,6 +76,7 @@ function CombatActs() {
     },
     {
       title: "Rally (Action)",
+      id: "rally",
       actType: "Action",
       content: (
         <div>
@@ -64,13 +84,21 @@ function CombatActs() {
             accordion
             descriptor="You push yourself to stay in the fight longer."
             frequency="Encounter"
-            effect="Spend a recovery and Defend"
+            effect={
+              <span>
+                Spend a recovery then{" "}
+                <Link className="internal-link" to="/combat-abilities#defend">
+                  defend
+                </Link>
+              </span>
+            }
           />
         </div>
       ),
     },
     {
       title: "Strike (Action)",
+      id: "strike",
       actType: "Action",
       content: (
         <div>
@@ -90,6 +118,7 @@ function CombatActs() {
   const maneuversContent = [
     {
       title: "Aim (Maneuver)",
+      id: "aim",
       actType: "Maneuver",
       content: (
         <div>
@@ -112,6 +141,7 @@ function CombatActs() {
     },
     {
       title: "Defend (Maneuver)",
+      id: "defend",
       actType: "Maneuver",
       content: (
         <div>
@@ -135,6 +165,7 @@ function CombatActs() {
     },
     {
       title: "Disarm (Maneuver)",
+      id: "disarm",
       actType: "Maneuver",
       content: (
         <div>
@@ -153,6 +184,7 @@ function CombatActs() {
     },
     {
       title: "Disengage (Maneuver)",
+      id: "disengage",
       actType: "Maneuver",
       content: (
         <div>
@@ -168,6 +200,7 @@ function CombatActs() {
     },
     {
       title: "Grab (Maneuver)",
+      id: "grab",
       actType: "Maneuver",
       content: (
         <div>
@@ -180,13 +213,21 @@ function CombatActs() {
             keywords="Melee"
             defense="MGT"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success="Seized (overcome ends)"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                until you let go
+              </span>
+            }
           />
         </div>
       ),
     },
     {
       title: "Help (Maneuver)",
+      id: "help",
       actType: "Maneuver",
       content: (
         <div>
@@ -216,6 +257,7 @@ function CombatActs() {
     },
     {
       title: "Hide (Maneuver)",
+      id: "hide",
       actType: "Maneuver",
       content: (
         <div>
@@ -231,6 +273,7 @@ function CombatActs() {
     },
     {
       title: "Hinder (Maneuver)",
+      id: "hinder",
       actType: "Maneuver",
       content: (
         <div>
@@ -240,13 +283,22 @@ function CombatActs() {
             frequency="At-will"
             keywords="Range"
             target="1 creature within 1 zone"
-            effect="Target becomes hindered (turn ends)"
+            effect={
+              <span>
+                Target becomes{" "}
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            }
           />
         </div>
       ),
     },
     {
       title: "Interact (Maneuver)",
+      id: "interact",
       actType: "Maneuver",
       content: (
         <div>
@@ -261,6 +313,7 @@ function CombatActs() {
     },
     {
       title: "Move (Maneuver)",
+      id: "move",
       actType: "Maneuver",
       content: (
         <div>
@@ -275,6 +328,7 @@ function CombatActs() {
     },
     {
       title: "Shove (Maneuver)",
+      id: "shove",
       actType: "Maneuver",
       content: (
         <div>
@@ -286,14 +340,15 @@ function CombatActs() {
             keywords="Melee"
             defense="MGT"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success="Shove target within their zone"
-            critical="Shove target up to 1 zone away"
+            success="Push target within their zone"
+            critical="Push target up to 1 zone away"
           />
         </div>
       ),
     },
     {
       title: "Stand (Maneuver)",
+      id: "stand",
       actType: "Maneuver",
       content: (
         <div>
@@ -301,13 +356,21 @@ function CombatActs() {
             accordion
             descriptor="You pull yourself up from the ground."
             frequency="At-will"
-            effect="You are no longer prone"
+            effect={
+              <span>
+                You are no long{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            }
           />
         </div>
       ),
     },
     {
       title: "Study (Maneuver)",
+      id: "study",
       actType: "Maneuver",
       content: (
         <div>
@@ -348,6 +411,7 @@ function CombatActs() {
     },
     {
       title: "Taunt (Maneuver)",
+      id: "taunt",
       actType: "Maneuver",
       content: (
         <div>
@@ -357,13 +421,22 @@ function CombatActs() {
             frequency="At-will"
             keywords="Range"
             target="1 creature within 1 zone"
-            effect="Target becomes taunted by you (turn ends)"
+            effect={
+              <span>
+                Target becomes{" "}
+                <Link className="internal-link" to="/conditions#taunted">
+                  taunted
+                </Link>{" "}
+                by you (turn ends)
+              </span>
+            }
           />
         </div>
       ),
     },
     {
       title: "Trip (Maneuver)",
+      id: "trip",
       actType: "Maneuver",
       content: (
         <div>
@@ -375,7 +448,13 @@ function CombatActs() {
             keywords="Melee"
             defense="MGT"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success="Target falls prone"
+            success={
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            }
             critical="Same as a success, and the target takes 1 physical damage per your tier"
           />
         </div>
@@ -395,6 +474,7 @@ function CombatActs() {
           combat, you can use <b>two maneuvers, or a maneuver and an action</b>.
           You also have <b>one reaction per round</b>.
         </p>
+
         <Accordion
           title="Types of Basic Abilities"
           content={
@@ -438,16 +518,28 @@ function CombatActs() {
           }
         />
 
-        <div className="acts-content__tabs">
-          <div className="acts-content__tabs__tab" onClick={handleAll}>
+        <div className="tab-items">
+          <div
+            className="tab-items__tab"
+            onClick={handleAll}
+            data-selected={all}
+          >
             <p>All </p>
           </div>
-          <div className="acts-content__tabs__divider">|</div>
-          <div className="acts-content__tabs__tab" onClick={handleActions}>
+          <div className="tab-items__divider">|</div>
+          <div
+            className="tab-items__tab"
+            onClick={handleActions}
+            data-selected={actions}
+          >
             <p>Actions</p>
           </div>
-          <div className="acts-content__tabs__divider">|</div>
-          <div className="acts-content__tabs__tab" onClick={handleManeuvers}>
+          <div className="tab-items__divider">|</div>
+          <div
+            className="tab-items__tab"
+            onClick={handleManeuvers}
+            data-selected={maneuvers}
+          >
             <p>Maneuvers</p>
           </div>
         </div>
@@ -456,13 +548,21 @@ function CombatActs() {
           <div>
             <h2>All Basic Abilities</h2>
             <p>Below are all basic abilities each hero can do.</p>
-            {allContent.map(({ title, content, actType }) => (
+            {allContent.map(({ title, content, actType, id }, index) => (
               <Accordion
+                open={isOpen(id)}
+                key={index}
+                id={id}
                 stacked
                 title={title}
                 content={content}
                 type="spell"
                 actType={actType}
+                ref={(el) =>
+                  (actRefs.current[id] = el?.querySelector(
+                    ".accordion__content",
+                  ))
+                }
               />
             ))}
           </div>
@@ -471,13 +571,21 @@ function CombatActs() {
           <div>
             <h2>Basic Actions</h2>
             <p>Below are all basic actions each hero can do.</p>
-            {actionsContent.map(({ title, content, actType }) => (
+            {actionsContent.map(({ title, content, actType, id }, index) => (
               <Accordion
+                open={isOpen(id)}
                 stacked
+                key={index}
                 title={title}
                 content={content}
                 type="spell"
                 actType={actType}
+                id={id}
+                ref={(el) =>
+                  (actRefs.current[id] = el?.querySelector(
+                    ".accordion__content",
+                  ))
+                }
               />
             ))}
           </div>
@@ -486,13 +594,21 @@ function CombatActs() {
           <div>
             <h2>Basic Maneuvers</h2>
             <p>Below are all basic maneuvers each hero can do.</p>
-            {maneuversContent.map(({ title, content, actType }) => (
+            {maneuversContent.map(({ title, content, actType, id }, index) => (
               <Accordion
+                open={isOpen(id)}
                 stacked
+                key={index}
                 title={title}
                 content={content}
                 type="spell"
                 actType={actType}
+                id={id}
+                ref={(el) =>
+                  (actRefs.current[id] = el?.querySelector(
+                    ".accordion__content",
+                  ))
+                }
               />
             ))}
           </div>

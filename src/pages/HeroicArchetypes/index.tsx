@@ -289,7 +289,16 @@ function HeroicArchetypes() {
               descriptor="Your surprise attack leaves your foe bleeding if not dead."
               frequency="Encounter"
               keywords="Escalation"
-              effect="Strike, and you deal additional damage equal to your proficiency bonus. On a success or higher, the target also takes 1 ongoing physical damage per your tier."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , and you deal additional damage equal to your proficiency
+                  bonus. On a success or higher, the target also takes 1 ongoing
+                  physical damage per your tier.
+                </span>
+              }
             />
             <h4 className="header">Dread Lurker (7th-Level Feature)</h4>
             <p>
@@ -363,8 +372,12 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  When you Strike with a ranged weapon, you ignore penalties
-                  from cover or concealment
+                  When you{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  with a ranged weapon, you ignore penalties from cover or
+                  concealment
                 </span>
               </li>
             </ul>
@@ -376,12 +389,23 @@ function HeroicArchetypes() {
               descriptor="You fire off multiple arrows at once."
               frequency="Encounter"
               keywords="Escalation"
-              effect="Strike with a ranged weapon at all creatures in 1 zone within your weapon’s range"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  with a ranged weapon at all creatures in 1 zone within your
+                  weapon’s range
+                </span>
+              }
             />
             <h4 className="header">Heroic Aim (7th-Level Feature)</h4>
             <p>
-              You have mastered the bow. When you Aim, the bonus increases to{" "}
-              <Modifier type="f" count="2" />.
+              You have mastered the bow. When you{" "}
+              <Link className="internal-link" to="/combat-abilities#aim">
+                aim
+              </Link>
+              , the bonus increases to <Modifier type="f" count="2" />.
             </p>
           </div>
         )}
@@ -460,7 +484,14 @@ function HeroicArchetypes() {
               frequency="Encounter"
               keywords="Escalation"
               effectTiers
-              effect="Strike with a natural melee weapon"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  with a natural melee weapon
+                </span>
+              }
               success={
                 <span>
                   <Link className="internal-link" to="/conditions#dazed">
@@ -477,7 +508,23 @@ function HeroicArchetypes() {
             <h4 className="header">Brawling Technique (7th-Level Feature)</h4>
             <p>
               You know how to best use your body despite your size. You ignore
-              any penalties from being smaller for Disarm, Grab, Shove, or Trip.
+              any penalties from being smaller for{" "}
+              <Link className="internal-link" to="/combat-abilities#disarm">
+                disarm
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#grab">
+                grab
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#shove">
+                shove
+              </Link>
+              , or{" "}
+              <Link className="internal-link" to="/combat-abilities#trip">
+                trip
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -701,7 +748,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals cold damage, the target is also slowed (turn ends).
+              that deals cold damage, the target is also{" "}
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         )}
@@ -841,8 +892,23 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  Creatures take <Modifier type="mf" count="1" /> to Disarm,
-                  Grab, Shove, or Trip you
+                  Creatures take <Modifier type="mf" count="1" /> to{" "}
+                  <Link className="internal-link" to="/combat-abilities#disarm">
+                    disarm
+                  </Link>
+                  ,
+                  <Link className="internal-link" to="/combat-abilities#grab">
+                    grab
+                  </Link>
+                  ,{" "}
+                  <Link className="internal-link" to="/combat-abilities#shove">
+                    shove
+                  </Link>
+                  , or{" "}
+                  <Link className="internal-link" to="/combat-abilities#trip">
+                    trip
+                  </Link>{" "}
+                  you
                 </span>
               </li>
             </ul>
@@ -957,13 +1023,31 @@ function HeroicArchetypes() {
               keywords="Escalation"
               target="All enemies in your zone"
               requirement="You’re wielding a weapon in each hand"
-              effect="Strike at each target, and you can Disengage before each Strike"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  at each target, and you can{" "}
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#disengage"
+                  >
+                    disengage
+                  </Link>{" "}
+                  before each strike
+                </span>
+              }
             />
             <h4 className="header">Dual Laceration (7th-Level Feature)</h4>
             <p>
               Your flurry of attacks leave a foe bleeding. When you damage a
-              creature with a Strike from each weapon in your hands on the same
-              turn, the target takes 1 ongoing physical damage per your tier.
+              creature with a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              from each weapon in your hands on the same turn, the target takes
+              1 ongoing physical damage per your tier.
             </p>
           </div>
         )}
@@ -1012,12 +1096,39 @@ function HeroicArchetypes() {
               keywords="Range"
               target="1 enemy within 1 zone"
               requirement="You’re wielding a standard melee weapon and have a free hand"
-              effect="Taunted by you (scene ends), and you gain +1 fortune to Strike the target while they’re taunted by you"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/conditions#taunted">
+                    taunted
+                  </Link>{" "}
+                  by you (scene ends), and you gain{" "}
+                  <Modifier type="f" count="1" /> to{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>{" "}
+                  the target while they're taunted by you
+                </span>
+              }
             />
             <h4 className="header">Duelist Movement (7th-Level Feature)</h4>
             <p>
-              When a creature is taunted by you, you are hastened, but can only
-              use the extra maneuver to Disengage or Move.
+              When a creature is{" "}
+              <Link className="internal-link" to="/conditions#taunted">
+                taunted
+              </Link>{" "}
+              by you, you are{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>
+              , but can only use the extra maneuver to{" "}
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              or{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -1061,8 +1172,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals psychic damage, the target becomes hindered (turn
-              ends).
+              that deals psychic damage, the target becomes{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         )}
@@ -1108,7 +1222,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals physical damage, you can knock the target prone.
+              that deals physical damage, you can knock the target{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -1191,7 +1309,10 @@ function HeroicArchetypes() {
             <h4 className="header">Wave Magic (7th-Level Feature)</h4>
             <p>
               You glide around like on water. When you cast a spell, you can
-              Disengage as a free action.
+              <Link className="internal-link" to="/combat-abilities#disengage">
+                disengage
+              </Link>{" "}
+              as a free action.
             </p>
           </div>
         )}
@@ -1234,7 +1355,11 @@ function HeroicArchetypes() {
             <p>
               Your illusions constantly hide you and your allies. When you cast
               a battle spell of tier 1 or higher, choose a willing creature
-              within 1 zone. The target becomes invisible (turn ends).
+              within 1 zone. The target becomes{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         )}
@@ -1332,7 +1457,13 @@ function HeroicArchetypes() {
               descriptor="With a vicious cut, you aim for a foe’s eyes."
               frequency="Encounter"
               keywords="Escalation"
-              effect="Strike"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                </span>
+              }
               effectTiers
               success={
                 <span>
@@ -1460,9 +1591,12 @@ function HeroicArchetypes() {
             <p>
               After you cast a battle spell of tier 1 or higher, you empower
               your weapon with magic (turn ends). While charged, your next
-              Strike deals 1 additional damage per the spell tier. The damage
-              type matches the damage type of the triggering spell, or arcane if
-              the spell didn’t deal damage.{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              deals 1 additional damage per the spell tier. The damage type
+              matches the damage type of the triggering spell, or arcane if the
+              spell didn’t deal damage.{" "}
             </p>
           </div>
         )}
@@ -1612,7 +1746,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals toxic damage, the target becomes hindered (turn ends).
+              that deals toxic damage, the target becomes{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         )}
@@ -1646,8 +1784,12 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  When you start your turn with a creature taunted by you, you
-                  gain temporary hit points equal to your tier (scene ends)
+                  When you start your turn with a creature{" "}
+                  <Link className="internal-link" to="/conditions#taunted">
+                    taunted
+                  </Link>{" "}
+                  by you, you gain temporary hit points equal to your tier
+                  (scene ends)
                 </span>
               </li>
             </ul>
@@ -1661,14 +1803,33 @@ function HeroicArchetypes() {
               keywords="Range"
               target="Each enemy of your choice within 1 zone"
               defense="RES"
-              success="Taunted by you (scene ends)"
-              critical="Same as a success, and on their next turn, the target must spend a maneuver to Move towards you"
+              success={
+                <span>
+                  <Link className="internal-link" to="/conditions#taunted">
+                    taunted
+                  </Link>{" "}
+                  by you (scene ends)
+                </span>
+              }
+              critical={
+                <span>
+                  Same as a success, and on their next turn, the target must
+                  spend a maneuver to{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>{" "}
+                  towards you
+                </span>
+              }
               partial="Taunted by you (turn ends)"
             />
             <h4 className="header">Protector’s Aura (7th-Level Feature)</h4>
             <p>
-              You best draw the ire of your foes. When a creature is taunted by
-              you, the penalty on{" "}
+              You best draw the ire of your foes. When a creature is{" "}
+              <Link className="internal-link" to="/conditions#taunted">
+                taunted
+              </Link>{" "}
+              by you, the penalty on{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack rolls
               </Link>{" "}
@@ -1726,8 +1887,24 @@ function HeroicArchetypes() {
 
             <h4 className="header">Minor Telekinesis (7th-Level Feature)</h4>
             <p>
-              You can Disarm, Grab, Shove, and Trip with a range of 1 zone, and
-              those abilities gain the magical and range keyword for you.
+              You can{" "}
+              <Link className="internal-link" to="/combat-abilities#disarm">
+                disarm
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#grab">
+                grab
+              </Link>
+              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#shove">
+                shove
+              </Link>
+              , and{" "}
+              <Link className="internal-link" to="/combat-abilities#trip">
+                trip
+              </Link>{" "}
+              with a range of 1 zone, and those abilities gain the magical and
+              range keyword for you.
             </p>
           </div>
         )}
@@ -1920,7 +2097,15 @@ function HeroicArchetypes() {
               frequency="At-will"
               keywords="Magical"
               trigger="You take damage"
-              effect="Teleport up to 1 zone. If you teleport into darkness, you can also Hide."
+              effect={
+                <span>
+                  Teleport up to 1 zone. If you teleport into darkness, you can
+                  also{" "}
+                  <Link className="internal-link" to="/combat-abilities#hide">
+                    hide
+                  </Link>
+                </span>
+              }
             />
           </div>
         )}
@@ -1956,7 +2141,13 @@ function HeroicArchetypes() {
                 </span>
               </li>
               <li>
-                <span>When you Move, you don't trigger reactions</span>
+                <span>
+                  When you{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                  , you don't trigger reactions
+                </span>
               </li>
             </ul>
             <h4 className="header">Dashing Flurry (5th-Level Feature)</h4>
@@ -1967,13 +2158,32 @@ function HeroicArchetypes() {
               descriptor="With near supernatural speed, you attack twice as you dart across the battlefield."
               frequency="Encounter"
               keywords="Escalation"
-              effect="Strike twice with a standard melee weapon, thrown ranged weapon, or short ranged weapon. You can Move before each Strike."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  twice with a standard melee weapon, thrown ranged weapon, or
+                  short ranged weapon. You can{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>{" "}
+                  before each strike
+                </span>
+              }
             />
             <h4 className="header">First to Strike (7th-Level Feature)</h4>
             <p>
               At the start of your first turn of each combat encounter, you
-              become hastened until the end of your turn. If you Strike on that
-              turn, you also deal additional damage equal to your tier.
+              become{" "}
+              <Link className="internal-link" to="/conditions#hastened">
+                hastened
+              </Link>{" "}
+              until the end of your turn. If you{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              on that turn, you also deal 1 additional damage per your tier.
             </p>
           </div>
         )}
@@ -2018,7 +2228,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals fire damage, the target becomes hindered (turn ends).
+              that deals fire damage, the target becomes{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (turn ends).
             </p>
           </div>
         )}
@@ -2173,7 +2387,10 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  You learn the ricochet throw technique. Whenever you Strike
+                  You learn the ricochet throw technique. Whenever you{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
                   with a thrown ranged weapon, you can use the ricochet throw
                   ability.
                 </span>
@@ -2314,9 +2531,18 @@ function HeroicArchetypes() {
               keywords="Escalation"
               effect={
                 <span>
-                  Charge to Strike or Strike with a heavy melee weapon, and you
-                  knock the target prone on a success or higher. Additionally,
-                  make an{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  with a heavy melee weapon, and you knock the target{" "}
+                  <Link className="internal-link" to="/conditions#prone">
+                    prone
+                  </Link>{" "}
+                  on a success or higher. You can{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>{" "}
+                  before your strike. Additionally, make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -2330,9 +2556,13 @@ function HeroicArchetypes() {
             />
             <h4 className="header">Wrecker’s Reach (7th-Level Feature)</h4>
             <p>
-              When wielding a heavy melee weapon, you can Strike any creature
-              within your zone. If the creature isn’t engaged to you, then you
-              take <Modifier type="mf" count="1" /> to your Strike.
+              When wielding a heavy melee weapon, you can{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              any creature within your zone. If the creature isn’t engaged to
+              you, then you take <Modifier type="mf" count="1" /> to your
+              strike.
             </p>
           </div>
         )}

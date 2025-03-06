@@ -11,10 +11,11 @@ interface AccordionProps {
   type?: string;
   actType?: string;
   open?: boolean;
+  id?: string;
 }
 
 const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
-  ({ actType, open, title, content, style, stacked, type }, ref) => {
+  ({ actType, open, title, content, style, stacked, type, id }, ref) => {
     const [isOpen, setIsOpen] = useState(false);
     const [maxHeight, setMaxHeight] = useState("0px");
     const contentRef = useRef<HTMLDivElement>(null);
@@ -94,6 +95,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
         data-type={type}
         data-act-type={actType}
         ref={ref}
+        id={id}
       >
         <div
           className="accordion__header"

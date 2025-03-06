@@ -99,7 +99,11 @@ function Adventuring() {
             <span>
               <b>Failure:</b>
             </span>{" "}
-            You take full damage and fall prone.
+            You take full damage and fall{" "}
+            <Link className="internal-link" to="/conditions#prone">
+              prone
+            </Link>
+            .
           </li>
         </ul>
         <h4 className="header">Crashing Into Creatures</h4>
@@ -236,8 +240,7 @@ function Adventuring() {
           <li>
             <span>
               <b>Friendly:</b> The NPC trusts you, and you gain{" "}
-              <Modifier type="f" count="1" /> on skill rolls to interact with
-              them.
+              <Modifier type="f" count="1" /> on skill rolls with them.
             </span>
           </li>
           <li>
@@ -249,8 +252,7 @@ function Adventuring() {
           <li>
             <span>
               <b>Hostile:</b> The NPC mistrusts you, and you take{" "}
-              <Modifier type="mf" count="1" /> on skill rolls to interact with
-              them.
+              <Modifier type="mf" count="1" /> on skill rolls with them.
             </span>
           </li>
         </ul>

@@ -146,7 +146,18 @@ function Ranger() {
               actType="Action"
               descriptor="As you attack your prey, you learn more about them."
               frequency="At-will"
-              effect="Strike then Study the same target"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  then{" "}
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    study
+                  </Link>{" "}
+                  the same target
+                </span>
+              }
             />
 
             <h3 className="header">Mark Prey</h3>
@@ -160,9 +171,12 @@ function Ranger() {
               duration="Until a long rest or you use this ability on another creature."
               effect={
                 <span>
-                  The target becomes your prey. When you Strike your prey, you
-                  deal additional damage equal to your tier. You also gain{" "}
-                  <Modifier type="f" count="1" /> on{" "}
+                  The target becomes your prey. When you{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    trike
+                  </Link>{" "}
+                  your prey, you deal additional damage equal to your tier. You
+                  also gain <Modifier type="f" count="1" /> on{" "}
                   <Link className="internal-link" to="/rules/skills">
                     skill roll
                   </Link>{" "}
@@ -199,8 +213,12 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  When you Study creatures types in your bestiary, you learn
-                  another significant statistic of your choice.
+                  When you{" "}
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    study
+                  </Link>{" "}
+                  creatures types in your bestiary, you learn another
+                  significant statistic of your choice.
                 </span>
               </li>
             </ul>
@@ -296,8 +314,11 @@ function Ranger() {
             </p>
             <h3 className="header">Stalker’s Fury (1st-Level Feature)</h3>
             <p>
-              You gain <Modifier type="f" count="1" /> to Strike the target of
-              your mark prey.
+              You gain <Modifier type="f" count="1" /> to{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              the target of your mark prey.
             </p>
 
             <h2>Beast Companion</h2>
@@ -345,7 +366,14 @@ function Ranger() {
                   target: "1 engaged creature",
                   defense: "EVN",
                   damage: "PB physical damage",
-                  success: "Prone (Land Only)",
+                  success: (
+                    <span>
+                      <Link className="internal-link" to="/conditions#prone">
+                        prone
+                      </Link>{" "}
+                      (Land only)
+                    </span>
+                  ),
                 },
               ]}
             />
@@ -369,7 +397,11 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  The target of your mark prey is also taunted by you.
+                  The target of your mark prey is also{" "}
+                  <Link className="internal-link" to="/conditions#taunted">
+                    taunted
+                  </Link>{" "}
+                  by you.
                 </span>
               </li>
             </ul>
@@ -398,7 +430,15 @@ function Ranger() {
               actType="Maneuver"
               descriptor="As you discover your prey, you find their weak spot."
               frequency="At-will"
-              effect="Mark prey, then Aim your prey."
+              effect={
+                <span>
+                  Mark prey, then{" "}
+                  <Link className="internal-link" to="/combat-abilities#aim">
+                    aim
+                  </Link>{" "}
+                  your prey
+                </span>
+              }
             />
 
             <h3 className="header">Nature's Magic</h3>
@@ -416,9 +456,24 @@ function Ranger() {
               name="Spring the Trap"
               actType="Reaction"
               descriptor="When your prey is distracted, you bring them down."
-              trigger="You see your prey Move or use a ranged or magical ability within 1 zone"
+              trigger={
+                <span>
+                  You see your prey{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                  , or use a ranged or magical ability within 1 zone
+                </span>
+              }
               frequency="At-will"
-              effect="Strike your prey if they are within your weapon’s range."
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  your prey if they are within your weapon's range
+                </span>
+              }
             />
 
             <h3 className="header">Study Prey</h3>
@@ -428,7 +483,15 @@ function Ranger() {
               actType="Maneuver"
               descriptor="As you find your prey, you quickly recall any information to help best defeat them."
               frequency="At-will"
-              effect="Mark prey, then Study your prey."
+              effect={
+                <span>
+                  Mark prey, then{" "}
+                  <Link className="internal-link" to="/combat-abilities#study">
+                    study
+                  </Link>{" "}
+                  your prey
+                </span>
+              }
             />
 
             <h2>Tier 2 Class Talents</h2>
@@ -438,8 +501,11 @@ function Ranger() {
             </p>
             <p>
               When you use mark prey, you can command your primal beast. Your
-              primal beast also gains the mark prey damage bonus to Strike your
-              prey.
+              primal beast also gains the mark prey damage bonus to{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              your prey.
             </p>
 
             <h3 className="header">Expanded Environments</h3>
@@ -462,8 +528,11 @@ function Ranger() {
 
             <h3 className="header">Studious Slayer</h3>
             <p>
-              When you Study a creature, you gain{" "}
-              <Modifier type="f" count="1" /> to your next{" "}
+              When you{" "}
+              <Link className="internal-link" to="/combat-abilities#study">
+                study
+              </Link>{" "}
+              a creature, you gain <Modifier type="f" count="1" /> to your next{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -481,7 +550,15 @@ function Ranger() {
               descriptor="As your prey escapes or harms your friend, you use the powers of nature to pull them back."
               frequency="At-will"
               keywords="Magical, Range"
-              trigger="You see the target of your mark prey within 1 zone Move or damage an ally"
+              trigger={
+                <span>
+                  You see the target of your mark prey within 1 zone{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>{" "}
+                  or damage an ally
+                </span>
+              }
               effect="Target is pulled to become engaged with you"
             />
 
@@ -516,8 +593,11 @@ function Ranger() {
               <b>Requirement:</b> hunter subclass
             </p>
             <p>
-              When you use mark prey, you become invisible until the end of your
-              next turn.
+              When you use mark prey, you become{" "}
+              <Link className="internal-link" to="/conditions#invisible">
+                invisible
+              </Link>{" "}
+              (turn ends).
             </p>
 
             <h3 className="header">Warden's Vigor</h3>

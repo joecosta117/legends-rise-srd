@@ -273,8 +273,11 @@ function Magesmith() {
                     You create a turret within 1 zone of you. The turret’s
                     defenses equal 8 plus your proficiency bonus, and hit points
                     equal double your proficiency bonus. When you command your
-                    turret, it can only Move or use one of the following
-                    actions:
+                    turret, it can only{" "}
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
+                    </Link>{" "}
+                    or use one of the following actions:
                   </span>
                   <ul>
                     <li>
@@ -354,7 +357,18 @@ function Magesmith() {
                 descriptor="You unleash a pulse of energy that shields your mech suit while drawing a foe’s attention."
                 frequency="At-will"
                 keywords="Magical"
-                effect="You gain 1 temporary hit point per your tier (scene ends) and you can Taunt."
+                effect={
+                  <span>
+                    You gain 1 temporary hit point per your tier (scene ends)
+                    and you can{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#taunt"
+                    >
+                      taunt
+                    </Link>
+                  </span>
+                }
               />
             </ul>
 
@@ -686,8 +700,12 @@ function Magesmith() {
             </p>
             <p>
               Choose one damage type. A creature deals 1 additional damage per
-              your tier on a Strike with the upgraded weapon. The additional
-              damage type matches the chosen damage type.
+              your tier on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with the upgraded weapon. The additional damage type matches the
+              chosen damage type.
             </p>
 
             <h2>Explosive Upgrade</h2>
@@ -695,9 +713,12 @@ function Magesmith() {
               <b>Requirement:</b> only on weapons
             </p>
             <p>
-              When a creature gets a critical success on a Strike with the
-              upgraded weapon, 1d4+1 other enemies within the target’s zone take
-              1 arcane damage per your tier.
+              When a creature gets a critical success on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with the upgraded weapon, 1d4+1 other enemies within the target’s
+              zone take 1 arcane damage per your tier.
             </p>
 
             <h2>Fly Upgrade</h2>
@@ -741,9 +762,12 @@ function Magesmith() {
               <b>Requirement:</b> only on weapons
             </p>
             <p>
-              When a creature gets a critical success on a Strike with the
-              upgraded weapon, the target takes 1 ongoing physical damage per
-              your tier.
+              When a creature gets a critical success on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              with the upgraded weapon, the target takes 1 ongoing physical
+              damage per your tier.
             </p>
 
             <h2>Phase Upgrade</h2>
