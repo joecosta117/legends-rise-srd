@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // @ts-ignore
 import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
+import ThemeToggle from "../ThemeToggle";
 
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -454,10 +455,19 @@ const Navigation = () => {
                 onClick={() => setIsMobileNavOpen(false)}
                 to="/contact"
               >
-                Contact Me
+                Contact
               </Link>
             </div>
           </div>
+
+          {/* <div className="navigation__links-container">
+            <div
+              className="navigation__links-container__nav"
+              data-type="contact"
+            >
+              <ThemeToggle />
+            </div>
+          </div> */}
         </div>
         <div
           className="navigation__mobile-menu"

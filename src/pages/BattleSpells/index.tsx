@@ -3,7 +3,7 @@ import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import Accordion from "../../components/Accordion";
 import Dropdown from "../../components/Dropdown";
 import { useNavigate } from "react-router-dom";
-import { getHash } from "../../utils/getPath";
+import { getHash, removeHash } from "../../utils/getPath";
 import removeParenthesisPart from "../../utils/removeParenthesisPart";
 import {
   airSpells,
@@ -59,6 +59,7 @@ function BattleSpells() {
         if (ref && key.includes(selectedSpell.toLowerCase())) {
           setTimeout(() => {
             ref.scrollIntoView({ behavior: "smooth", block: "center" });
+            removeHash();
           }, 500);
         }
       });

@@ -661,7 +661,7 @@ function LegendaryArchetypes() {
                       </Link>{" "}
                       to lightning damage equal to your tier. If you already
                       have this resistance, then use your proficiency bonus
-                      isntead.
+                      instead.
                     </span>
                   </li>
                   <li>
@@ -674,7 +674,7 @@ function LegendaryArchetypes() {
                         resistance
                       </Link>{" "}
                       to physical damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus isntead.
+                      this resistance, then use your proficiency bonus instead.
                     </span>
                   </li>
                   <li>
@@ -687,7 +687,7 @@ function LegendaryArchetypes() {
                         resistance
                       </Link>{" "}
                       to fire damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus isntead.
+                      this resistance, then use your proficiency bonus instead.
                     </span>
                   </li>
                   <li>
@@ -701,7 +701,7 @@ function LegendaryArchetypes() {
                         resistance
                       </Link>{" "}
                       to cold damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus isntead.
+                      this resistance, then use your proficiency bonus instead.
                     </span>
                   </li>
                   <li>
@@ -716,7 +716,7 @@ function LegendaryArchetypes() {
                         resistance
                       </Link>{" "}
                       to fire damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus isntead.
+                      this resistance, then use your proficiency bonus instead.
                     </span>
                   </li>
                 </ul>

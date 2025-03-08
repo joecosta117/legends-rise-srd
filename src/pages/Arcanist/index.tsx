@@ -101,7 +101,7 @@ function Arcanist() {
                   <b>Theme:</b>{" "}
                   <Link className="internal-link" to="/theme-talents">
                     Arcane
-                  </Link>{" "}
+                  </Link>
                 </span>
               </li>
               <li>
@@ -328,13 +328,12 @@ function Arcanist() {
 
             <h2>Warmage</h2>
             <p>
-              You specialize in casting from the frontlines, using magic to
-              bolster your defenses and destruction.
+              You specialize in casting from the frontlines of battle, using
+              magic to bolster your defenses and destruction.
             </p>
             <h3 className="header">War Magic (1st-Level Feature)</h3>
             <p>
-              While unarmored, you gain +1 to your Evasion. Also, when you deal
-              damage on an{" "}
+              You gain training in light armor. Also, when you deal damage on an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -409,7 +408,7 @@ function Arcanist() {
               battle spell of the same tier and from the same{" "}
               <Link className="internal-link" to="/battle-spells">
                 magic tradition
-              </Link>{" "}
+              </Link>
               .
             </p>
 

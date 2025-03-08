@@ -4,8 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
-import { getHash } from "../../utils/getPath";
-import ToolTip from "../../components/ToolTip";
+import { getHash, removeHash } from "../../utils/getPath";
 
 function CombatActs() {
   const [all, setAll] = useState(true);
@@ -34,6 +33,10 @@ function CombatActs() {
     Object.entries(actRefs.current).forEach(([key, ref]) => {
       if (ref && key === hash) {
         ref.scrollIntoView({ behavior: "smooth", block: "center" });
+
+        setTimeout(() => {
+          removeHash();
+        }, 500);
       }
     });
   }, []);

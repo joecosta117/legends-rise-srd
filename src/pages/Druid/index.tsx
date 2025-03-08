@@ -317,7 +317,15 @@ function Druid() {
                 </tr>
                 <tr>
                   <td>Earth</td>
-                  <td>Evasion increases by +1 when unarmored</td>
+                  <td>
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to physical damage equal to your tier
+                  </td>
                   <td>physical</td>
                 </tr>
                 <tr>
@@ -349,8 +357,7 @@ function Druid() {
                 <tr>
                   <td>Water</td>
                   <td>
-                    Breath underwater and gain swim speed equal to your land
-                    speed
+                    breath underwater and swim speed equal to your land speed
                   </td>
                   <td>physical</td>
                 </tr>

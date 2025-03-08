@@ -930,7 +930,7 @@ function Ancestries() {
                     to{" "}
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome rolls
-                    </Link>{" "}
+                    </Link>
                     .
                   </span>
                 </li>

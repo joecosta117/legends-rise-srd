@@ -1083,8 +1083,21 @@ export const earthSpells = [
             frequency="Spell 1 (Earth)"
             keywords="Magical"
             target="1 creature per spell tier in your zone"
-            duration="Scene ends"
-            effect="Target's Evasion increases by +1"
+            effect={
+              <span>
+                Target gains 2{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#temporary-hit-points"
+                >
+                  temporary hit points
+                </Link>{" "}
+                per spell tier (scene ends), and the spell ends when the
+                temporary hit points become 0. While the target has these
+                temporary hit points, they gain <Modifier count="1" type="f" />{" "}
+                to melee abilities.
+              </span>
+            }
           />
         </div>
       ),
@@ -1326,7 +1339,7 @@ export const eldritchSpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against their Might, and on a success, the creature becomes
+                against their Might, and on a success, the creature becomes{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}

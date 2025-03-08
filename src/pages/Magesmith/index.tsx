@@ -246,8 +246,11 @@ function Magesmith() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Expert Relic User</h3>
             <p>
-              The number of relics you can align to increases to 1 plus your
-              tier.
+              Your{" "}
+              <Link className="internal-link" to="/relics">
+                align limit
+              </Link>{" "}
+              for relics increases to 1 plus your tier.
             </p>
           </div>
         )}
@@ -609,8 +612,11 @@ function Magesmith() {
 
             <h3 className="header">Legendary Relic User</h3>
             <p>
-              The number of relics you can align to increases to your
-              proficiency bonus.
+              Your{" "}
+              <Link className="internal-link" to="/relics">
+                align limit
+              </Link>{" "}
+              for relics increases to your proficiency bonus.
             </p>
 
             <h3 className="header">Master Upgrader</h3>

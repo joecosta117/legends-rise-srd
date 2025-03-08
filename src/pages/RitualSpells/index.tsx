@@ -1,6 +1,6 @@
 import "./index.scss";
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
-import { getHash } from "../../utils/getPath";
+import { getHash, removeHash } from "../../utils/getPath";
 import Accordion from "../../components/Accordion";
 import { useNavigate } from "react-router-dom";
 import { ritualSpells } from "./ritual-spells";
@@ -49,6 +49,7 @@ function RitualSpells() {
         if (ref && key.includes(selectedSpell.toLowerCase())) {
           setTimeout(() => {
             ref.scrollIntoView({ behavior: "smooth", block: "center" });
+            removeHash();
           }, 500);
         }
       });

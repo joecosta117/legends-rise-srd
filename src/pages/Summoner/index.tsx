@@ -1046,7 +1046,7 @@ function Summoner() {
 
             <h3 className="header">Elemental Destruction</h3>
             <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> elements subclass
+              <b>Requirement:</b> elementals subclass
             </p>
             <p>
               The damage for elemental burst increases to equal your proficiency

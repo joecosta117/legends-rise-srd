@@ -103,7 +103,7 @@ function Bard() {
                   <b>Theme:</b>{" "}
                   <Link className="internal-link" to="/theme-talents">
                     Cunning
-                  </Link>{" "}
+                  </Link>
                 </span>
               </li>
               <li>
@@ -158,44 +158,44 @@ function Bard() {
                   the following list:{" "}
                   <Link className="internal-link" to="/battle-spells#arcane">
                     arcane
-                  </Link>{" "}
+                  </Link>
                   ,{" "}
                   <Link
                     className="internal-link"
                     to="/battle-spells#enchantment"
                   >
                     enchantment
-                  </Link>{" "}
+                  </Link>
                   ,{" "}
                   <Link className="internal-link" to="/battle-spells#illusion">
                     illusion
-                  </Link>{" "}
+                  </Link>
                   ,{" "}
                   <Link className="internal-link" to="/battle-spells#life">
                     life
-                  </Link>{" "}
+                  </Link>
                   ,{" "}
                   <Link className="internal-link" to="/battle-spells#nature">
                     nature
-                  </Link>{" "}
+                  </Link>
                   ,{" "}
                   <Link
                     className="internal-link"
                     to="/battle-spells#protection"
                   >
                     protection
-                  </Link>{" "}
+                  </Link>
                   ,{" "}
                   <Link
                     className="internal-link"
                     to="/battle-spells#teleportation"
                   >
                     teleportation
-                  </Link>{" "}
+                  </Link>
                   , or{" "}
                   <Link className="internal-link" to="/battle-spells#time">
                     time
-                  </Link>{" "}
+                  </Link>
                   . You learn a battle spell from each of your chosen
                   traditions.
                 </span>
@@ -573,7 +573,7 @@ function Bard() {
               in combat, make an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
-              </Link>{" "}
+              </Link>
               . On a success, you ignore the extra complication from tempt fate.
             </p>
 
@@ -652,7 +652,7 @@ function Bard() {
                     Targets gain <Modifier type="f" count="1" /> to{" "}
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome rolls
-                    </Link>{" "}
+                    </Link>
                     .
                   </span>
                 }

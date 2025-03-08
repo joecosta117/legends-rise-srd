@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { getHash } from './getPath';
+import { getHash, removeHash } from './getPath';
 
 const scrollToHash = () => {
   useEffect(() => {
@@ -7,11 +7,16 @@ const scrollToHash = () => {
 
     if (hash) {
       const content = document.getElementById(`${hash}`);
-      content &&
+      if (content) {
         content.scrollIntoView({
           behavior: "smooth",
           block: "start",
         });
+
+        setTimeout(() => {
+          removeHash()
+        }, 500)
+      } 
     }
   }, []);
 }

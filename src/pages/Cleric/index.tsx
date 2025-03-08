@@ -365,14 +365,7 @@ function Cleric() {
                 attack roll
               </Link>{" "}
               with a magical ability, you deal additional damage equal to your
-              tier. You also gain{" "}
-              <Link
-                className="internal-link"
-                to="/rules/combat#resistances-and-weaknesses"
-              >
-                resistance
-              </Link>{" "}
-              equal to your tier to a damage type appropriate to your deity.
+              tier. You also gain the sanctified energy class talent.
             </p>
           </div>
         )}

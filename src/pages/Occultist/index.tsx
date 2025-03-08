@@ -552,7 +552,7 @@ function Occultist() {
             <h2>Tier 3 Class Talents</h2>
             <h3 className="header">Constant Curse</h3>
             <p>
-              You get a second reaction that you can only use on disrupting
+              You get a second reaction that you can only use on weakening
               curse.
             </p>
 
