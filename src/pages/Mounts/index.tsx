@@ -1,9 +1,15 @@
 import "./index.scss";
 import Monster from "../../components/Monster";
 import EquipmentHeader from "../../components/EquipmentHeader";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Mounts() {
+  const navigate = useNavigate();
+  function handleLink(link: string) {
+    navigate(`/${link}`);
+  }
+
   return (
     <div className="equipment">
       <div className="equipment-content">
@@ -13,7 +19,13 @@ function Mounts() {
           Heroes can purchase mounts to ride in and out of combat, with some
           mounts being more fantastical.
         </p>
-        <table>
+        <button
+          className="link-button"
+          onClick={() => handleLink("rules/combat#mount")}
+        >
+          MOUNTED COMBAT RULES
+        </button>
+        <table style={{ marginTop: "16px" }}>
           <thead>
             <tr>
               <th>Item</th>
@@ -72,7 +84,15 @@ function Mounts() {
               basic: true,
               name: "Slam",
               keywords: "melee, weapon",
-              target: "1 engaged creature",
+              target: (
+                <span>
+                  1{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  creature
+                </span>
+              ),
               defense: "EVN",
               damage: "2 physical damage per T",
             },
@@ -85,8 +105,14 @@ function Mounts() {
         <ul>
           <li>
             <span>
-              Resistance to a damage type equal to the mount's tier, with
-              physical counting as two mount traits.
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                Resistance
+              </Link>{" "}
+              to a damage type equal to the mount's tier, with physical counting
+              as two mount traits.
             </span>
           </li>
           <li>
@@ -131,7 +157,9 @@ function Mounts() {
             </span>
           </li>
           <li>
-            <span>Mount has night vision</span>
+            <span>
+              Mount has <ToolTip preset="night" />
+            </span>
           </li>
           <li>
             <span>
@@ -168,7 +196,15 @@ function Mounts() {
               basic: true,
               name: "Slam",
               keywords: "melee, weapon",
-              target: "1 engaged creature",
+              target: (
+                <span>
+                  1{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  creature
+                </span>
+              ),
               defense: "EVN",
               damage: "2 physical damage",
               success: (
@@ -197,7 +233,15 @@ function Mounts() {
               basic: true,
               name: "Slam",
               keywords: "melee, weapon",
-              target: "1 engaged creature",
+              target: (
+                <span>
+                  1{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  creature
+                </span>
+              ),
               defense: "EVN",
               damage: "4 physical damage",
               success: "seized (scene ends)",
@@ -221,7 +265,15 @@ function Mounts() {
               basic: true,
               name: "Slam",
               keywords: "melee, weapon",
-              target: "1 engaged creature",
+              target: (
+                <span>
+                  1{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  creature
+                </span>
+              ),
               defense: "EVN",
               damage: "6 physical damage",
             },

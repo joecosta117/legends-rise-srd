@@ -4,6 +4,7 @@ import { useState } from "react";
 import Modifier from "../../components/Modifier";
 import ClassHeader from "../../components/ClassHeader";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Warrior() {
   const [isDetails, setDetails] = useState(true);
@@ -220,9 +221,16 @@ function Warrior() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Indomitable</h3>
             <p>
-              You shrug off harmful effects easier than most. You make overcome
-              rolls against effects at the start of your turn, instead of at the
-              end, except for dying.
+              You shrug off harmful effects easier than most. You make{" "}
+              <Link className="internal-link" to="/rules/combat#overcome">
+                overcome rolls
+              </Link>{" "}
+              against effects at the start of your turn, instead of at the end,
+              except for{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                dying
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -314,7 +322,11 @@ function Warrior() {
             <h3 className="header">Tough</h3>
             <p>
               Your maximum hit points increases by your proficiency bonus, and
-              you are defeated at four wounds instead of three.
+              you are defeated at four{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                wounds
+              </Link>{" "}
+              instead of three.
             </p>
 
             <h3 className="header">Unmatched Precision</h3>
@@ -379,8 +391,8 @@ function Warrior() {
               <b>Requirement:</b> juggernaut subclass
             </p>
             <p>
-              When you are shaken, but not dying, you gain regeneration equal to
-              your tier.
+              When you are <ToolTip preset="shaken" />, but not dying, you gain{" "}
+              <ToolTip preset="regen" /> equal to your tier.
             </p>
 
             <h3 className="header">Unerring Accuracy</h3>
@@ -417,7 +429,11 @@ function Warrior() {
               <b>Requirement:</b> slayer subclass
             </p>
             <p>
-              Once per long rest, you can turn a{" "}
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , you can turn a{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}

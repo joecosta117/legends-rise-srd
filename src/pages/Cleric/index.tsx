@@ -4,6 +4,7 @@ import { useState } from "react";
 import fortune from "../../assets/fortune-icon-v2.png";
 import ClassHeader from "../../components/ClassHeader";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Cleric() {
   const [isDetails, setDetails] = useState(true);
@@ -272,8 +273,12 @@ function Cleric() {
                 quick heal
               </Link>{" "}
               battle spell even if you don’t know the life magic tradition. Once
-              per short rest, you can cast this spell at your highest spell tier
-              without spending mana.
+              per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can cast this spell at your highest spell tier without
+              spending mana.
             </p>
 
             <h3 className="header">Subclass</h3>
@@ -317,8 +322,14 @@ function Cleric() {
             <h3 className="header">Divine Inspiration (1st-Level Feature)</h3>
             <p>
               When you target an ally with a tier 1 or higher battle spell, they
-              gain temporary hit points equal to double the spell tier (scene
-              ends).
+              gain 2{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              per spell tier (scene ends).
             </p>
 
             <h2>Champion</h2>
@@ -354,8 +365,14 @@ function Cleric() {
                 attack roll
               </Link>{" "}
               with a magical ability, you deal additional damage equal to your
-              tier. You also gain resistance equal to your tier to a damage type
-              appropriate to your deity.
+              tier. You also gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              equal to your tier to a damage type appropriate to your deity.
             </p>
           </div>
         )}
@@ -413,7 +430,14 @@ function Cleric() {
               for a storm god. When you deal holy or unholy damage from a
               magical ability, you can change the damage to the chosen damage
               type and the ability gains the damage type’s keyword. You also
-              gain resistance to the chosen damage type.
+              gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to the chosen damage type.
             </p>
 
             <h3 className="header">Vitality Spell</h3>
@@ -425,7 +449,12 @@ function Cleric() {
               frequency="At-will"
               keywords="Spellshape"
               trigger="You cast a battle spell that heals a creature"
-              effect="Choose one target of the spell to regain additional hit points equal to your proficiency bonus."
+              effect={
+                <span>
+                  Choose one target of the spell to <ToolTip preset="heal" />{" "}
+                  equal to your proficiency bonus.
+                </span>
+              }
             />
 
             <h2>Tier 2 Class Talents</h2>
@@ -438,7 +467,19 @@ function Cleric() {
               frequency="Encounter"
               keywords="Spellshape"
               trigger="You cast a battle spell"
-              effect="Choose a creature within 1 zone to gain temporary hit points equal to double the triggering spell tier (1 for tier 0 spell) for the scene."
+              effect={
+                <span>
+                  Choose one creature within 1 zone to gain 2{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  per the triggering spell tier, or 1 temporary hit point for a
+                  tier 0 spell (scene ends)
+                </span>
+              }
             />
 
             <h3 className="header">Mass Inspiration</h3>
@@ -483,8 +524,8 @@ function Cleric() {
               >
                 quick heal
               </Link>{" "}
-              on a target other than you, you also heal equal to your
-              proficiency bonus.
+              on a target other than you, you also <ToolTip preset="heal" />{" "}
+              equal to your proficiency bonus.
             </p>
 
             <h3 className="header">Wrathful Healing</h3>
@@ -499,8 +540,9 @@ function Cleric() {
               >
                 quick heal
               </Link>{" "}
-              , choose 1 enemy per spell tier within the target’s zone. Chosen
-              enemies take 1 holy or unholy damage (your choice) per your tier.
+              , choose 1 enemy per spell tier within the spell target’s zone.
+              Chosen enemies take 1 holy or unholy damage (your choice) per your
+              tier.
             </p>
 
             <h2>Tier 3 Class Talents</h2>
@@ -524,8 +566,14 @@ function Cleric() {
               <b>Requirement:</b> shepherd subclass
             </p>
             <p>
-              When you use divine inspiration, the temporary hit points gained
-              equals triple the spell tier.
+              When you use divine inspiration, the{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              gained equals 3 per spell tier.
             </p>
 
             <h3 className="header">Mass Prayer</h3>
@@ -546,7 +594,13 @@ function Cleric() {
             </p>
 
             <h3 className="header">Plentiful Prayers</h3>
-            <p>You can use prayer of healing a second time per short rest.</p>
+            <p>
+              You can use prayer of healing a second time per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              .
+            </p>
           </div>
         )}
       </div>

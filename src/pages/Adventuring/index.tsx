@@ -2,8 +2,12 @@ import "./index.scss";
 import Modifier from "../../components/Modifier";
 import RulesHeader from "../../components/RulesHeader";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
+import scrollToHash from "../../utils/scrollToHash";
 
 function Adventuring() {
+  scrollToHash();
+
   return (
     <div className="general">
       <div className="general-content">
@@ -47,13 +51,6 @@ function Adventuring() {
             <a href="#resting">
               <span>
                 <b>Resting</b>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#downtime-activities">
-              <span>
-                <b>Downtime Activities</b>
               </span>
             </a>
           </li>
@@ -169,14 +166,8 @@ function Adventuring() {
           </li>
           <li>
             <span>
-              <b>Blind Vision:</b> You can see well regardless of lightning
-              conditions enough while blind, ignoring the penalties from being{" "}
-              <Link className="internal-link" to="/conditions#blinded">
-                blinded
-              </Link>
-              . Blind vision usually has a number of zones next to it,
-              indicating how far a creature can sense normally while
-              blinded.{" "}
+              <b>Blind Vision:</b> You can sense your environment perfectly
+              without sight.
             </span>
           </li>
         </ul>
@@ -268,15 +259,24 @@ function Adventuring() {
               <b>Short Rest:</b> This rest typically requires a few minutes to
               catch your breath and quickly mend wounds, but can be shorter if
               narratively appropriate as decided by the GM. Certain abilities
-              require a short rest before they can be used again.
+              require a short rest before they can be used again. You can also
+              spend recoveries to <ToolTip preset="heal" /> during a short rest.
             </span>
           </li>
           <li>
             <span>
               <b>Long Rest:</b> This rest requires a full night of sleep. After
-              a long rest, you gain the benefits of taking a short rest, regain
-              all hit points, lose any wounds, and regain spent recoveries. A
-              hero can’t benefit from more than one long rest in a day.
+              a long rest, you gain the benefits of taking a short rest,{" "}
+              <ToolTip preset="heal" /> all hit points, lose any{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                wounds
+              </Link>
+              , regain spent recoveries, and the{" "}
+              <Link className="internal-link" to="/rules/combat#momentum">
+                momentum die
+              </Link>{" "}
+              resets to 0. A hero can’t benefit from more than one long rest in
+              a day.
             </span>
           </li>
         </ul>

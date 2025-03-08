@@ -10,13 +10,19 @@
   .title {
     font-size: 3.5em;
     margin-bottom: 0;
+    margin-top: 25px;
+
+    @include mq('m') {
+      font-size: 4em;
+    }
   }
   .subtitle {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0;
+    font-size: 2em;
 
     @include mq('m') {
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
   }
 }

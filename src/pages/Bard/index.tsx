@@ -392,7 +392,18 @@ function Bard() {
               frequency="At-will"
               keywords="Spellshape"
               trigger="You cast a battle spell"
-              effect="Choose one creature within 1 zone to gain temporary hit points equal to the triggering spell tier (scene ends)."
+              effect={
+                <span>
+                  Choose one creature within 1 zone to gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  equal to the triggering spell tier (scene ends)
+                </span>
+              }
             />
 
             <h3 className="header">Many Peformances</h3>
@@ -468,8 +479,14 @@ function Bard() {
               <Link className="internal-link" to="/rules/skills#tempt-fate">
                 tempt fate
               </Link>{" "}
-              , choose an ally within 1 zone to gain temporary hit points equal
-              to your tier (scene ends).
+              , choose an ally within 1 zone to gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your tier (scene ends).
             </p>
 
             <h3 className="header">Violent Rewards</h3>
@@ -484,7 +501,18 @@ function Bard() {
               frequency="At-will"
               keywords="Magical"
               trigger="You see a creature within 1 zone get a critical success on an attack roll"
-              effect="Triggering creature gains temporary hit points equal to your proficiency bonus (scene ends)"
+              effect={
+                <span>
+                  Triggering creature gains{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  equal to your proficiency bonus (scene ends)
+                </span>
+              }
             />
 
             <h2>Tier 3 Class Talents</h2>
@@ -521,9 +549,16 @@ function Bard() {
                 +2{" "}
                 <img className="icon" src={misfortune} alt="misfortune icon" />
               </b>
-              . The temporary hit points gained by performance of restoration
-              equals your proficiency bonus, and the speed boost gained by
-              performance of alacrity increases to +2.
+              . The{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              gained by performance of restoration equals your proficiency
+              bonus, and the speed boost gained by performance of alacrity
+              increases to +2.
             </p>
 
             <h3 className="header">Ignore Fate</h3>

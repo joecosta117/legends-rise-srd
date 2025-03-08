@@ -47,8 +47,11 @@ function ReadingAbilities() {
           </li>
           <li>
             <span>
-              <b>Encounter:</b> These abilities can only be used once per short
-              rest.
+              <b>Encounter:</b> These abilities can only be used once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              .
             </span>
           </li>
           <li>
@@ -72,8 +75,12 @@ function ReadingAbilities() {
             <span>
               <b>Aura:</b> A presence, sometimes magical, emanates from the
               person using this ability up to a certain range. When the user of
-              this ability is defeated, the ability ends, unless otherwise
-              specified by the ability’s duration.
+              this ability is{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                defeated
+              </Link>{" "}
+              or killed, the ability ends, unless otherwise specified by the
+              ability’s duration.
             </span>
           </li>
           <li>
@@ -97,8 +104,11 @@ function ReadingAbilities() {
           </li>
           <li>
             <span>
-              <b>Melee:</b> The ability requires being engaged to a target, such
-              as swinging a sword.
+              <b>Melee:</b> The ability requires being{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              to a target, such as swinging a sword.
             </span>
           </li>
           <li>

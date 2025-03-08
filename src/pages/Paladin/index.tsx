@@ -4,6 +4,7 @@ import { useState } from "react";
 import ClassHeader from "../../components/ClassHeader";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
+import ToolTip from "../../components/ToolTip";
 
 function Paladin() {
   const [isDetails, setDetails] = useState(true);
@@ -191,8 +192,9 @@ function Paladin() {
               keywords="Magical, Melee"
               effect={
                 <span>
-                  Expend a recovery for the target to heal equal to your shaken
-                  value, and they can make an{" "}
+                  Expend a recovery for the target to <ToolTip preset="heal" />{" "}
+                  equal to your <ToolTip preset="shakenVal" />, and they can
+                  make an{" "}
                   <Link className="internal-link" to="/rules/combat#overcome">
                     overcome roll
                   </Link>{" "}
@@ -239,7 +241,13 @@ function Paladin() {
                 </span>
               </li>
             </ul>
-            <p>After a short rest, you can change your blessing.</p>
+            <p>
+              After a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can change your blessing.
+            </p>
           </div>
         )}
 
@@ -258,7 +266,18 @@ function Paladin() {
               frequency="At-will"
               keywords="Magical"
               trigger="You see an ally take damage within your zone"
-              effect="Ally gains resistance only to the triggering damage."
+              effect={
+                <span>
+                  Ally gains{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  only to the triggering damage equal to your tier
+                </span>
+              }
             />
 
             <h2>Avenger</h2>
@@ -321,14 +340,18 @@ function Paladin() {
             <h3 className="header">Burning Smite</h3>
             <p>
               Divine smite sets your foe ablaze. On a success, the target takes
-              ongoing damage equal to your tier. The damage type matches the one
-              chosen for divine smite.
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage equal to your tier. The damage type matches the one chosen
+              for divine smite.
             </p>
 
             <h3 className="header">Communal Restoration</h3>
             <p>
-              When you use restorative touch on an ally, you also heal equal to
-              half your shaken value.
+              When you use restorative touch on an ally, you also{" "}
+              <ToolTip preset="heal" /> equal to half your{" "}
+              <ToolTip preset="shakenVal" />
             </p>
 
             <h3 className="header">Divine Magic</h3>
@@ -451,8 +474,18 @@ function Paladin() {
                     Strike
                   </Link>{" "}
                   the target of your oath of vengeance. If the target is within
-                  1 zone of you, you can teleport to become engaged with them
-                  before you strike.
+                  1 zone of you, you can{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  to become{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  with them before you strike.
                 </span>
               }
             />
@@ -463,8 +496,15 @@ function Paladin() {
               <b>Requirement:</b> avenger subclass
             </p>
             <p>
-              While you aren’t defeated, your zone is a dangerous zone (1 holy
-              damage per your tier) only for enemies.
+              While you aren’t{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                defeated
+              </Link>
+              , your zone is a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zone
+              </Link>{" "}
+              (1 holy damage per your tier) only for enemies.
             </p>
 
             <h3 className="header">Censor's Aura</h3>
@@ -472,8 +512,15 @@ function Paladin() {
               <b>Requirement:</b> censor subclass
             </p>
             <p>
-              While you aren’t defeated, your zone is a difficult zone only for
-              enemies.
+              While you aren’t{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                defeated
+              </Link>
+              , your zone is a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zone
+              </Link>{" "}
+              only for enemies.
             </p>
 
             <h3 className="header">Banishing Smite</h3>
@@ -489,7 +536,11 @@ function Paladin() {
               <b>Requirement:</b> guardian subclass
             </p>
             <p>
-              While you aren’t defeated, all enemies within your zone are
+              While you aren’t{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                defeated
+              </Link>
+              , all enemies within your zone are
               <Link className="internal-link" to="/conditions#taunted">
                 taunted
               </Link>{" "}

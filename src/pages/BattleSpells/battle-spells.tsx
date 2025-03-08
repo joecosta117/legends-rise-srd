@@ -1,6 +1,7 @@
 import AbilityCard from "../../components/AbilityCard";
 import Modifier from "../../components/Modifier";
 import Monster from "../../components/Monster";
+import ToolTip from "../../components/ToolTip";
 import { Link } from "react-router-dom";
 
 export const airSpells = [
@@ -49,7 +50,15 @@ export const airSpells = [
           frequency="Spell 1 (Air)"
           trigger="When you see creatures falling within 1 zone"
           keywords="Magical, Range"
-          effect="Choose up to 2 triggering creatures per spell tier to not take crash damage and they land on their feet."
+          effect={
+            <span>
+              Choose up to 2 triggering creatures per spell tier to not take{" "}
+              <Link className="internal-link" to="/rules/adventuring#crashing">
+                crash
+              </Link>{" "}
+              damage and they land on their feet.
+            </span>
+          }
         />
       ),
     },
@@ -193,7 +202,15 @@ export const airSpells = [
                 basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "triple ST physical damage",
                 success: (
@@ -232,9 +249,12 @@ export const airSpells = [
           effect={
             <span>
               <span>
-                A cyclone turns the targeted zone into a difficult zone and
-                dangerous zone (1 physical damage per spell tier). When a huge
-                or smaller creature takes this damage, make an{" "}
+                A cyclone turns the targeted zone into a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone and dangerous zone
+                </Link>{" "}
+                (1 physical damage per spell tier). When a huge or smaller
+                creature takes this damage, make an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
@@ -377,7 +397,15 @@ export const arcaneSpells = [
                 basic: true,
                 name: "Rend",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "double ST physical damage",
               },
@@ -427,7 +455,15 @@ export const arcaneSpells = [
                 basic: true,
                 name: "Punch",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "double ST physical damage",
                 success: (
@@ -480,7 +516,14 @@ export const arcaneSpells = [
                 </li>
                 <li>
                   <span>
-                    You gain 4 temporary hit points per the spell tier
+                    You gain 4{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    per the spell tier
                   </span>
                 </li>
                 <li>
@@ -497,9 +540,15 @@ export const arcaneSpells = [
                 </li>
                 <li>
                   <span>
-                    You gain resistance to your chosen damage type equal to
-                    double the spell tier, and physical damage equal to the
-                    spell tier
+                    You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to your chosen damage type equal to double the spell tier,
+                    and physical damage equal to the spell tier
                   </span>
                 </li>
                 <li>
@@ -518,8 +567,11 @@ export const arcaneSpells = [
                 </li>
                 <li>
                   <span>
-                    Once you start dying, you revert back to your form and the
-                    magic ends
+                    Once you start{" "}
+                    <Link className="internal-link" to="/rules/combat#dying">
+                      dying
+                    </Link>{" "}
+                    you revert back to your form and the magic ends
                   </span>
                 </li>
               </ul>
@@ -557,11 +609,30 @@ export const deathSpells = [
           accordion
           descriptor="As your hand glows with dark power, you steal a foe’s lifeforce."
           frequency="Spell 0 (Death)"
-          target="1 creature engaged to you"
+          target={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              creature
+            </span>
+          }
           defense="MGT"
           keywords="Magical, Melee"
           damage="3 necrotic damage per your tier"
-          critical="You gain temporary hit points equal to your proficiency bonus (scene ends)"
+          critical={
+            <span>
+              You gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends)
+            </span>
+          }
         />
       ),
     },
@@ -625,7 +696,15 @@ export const deathSpells = [
           target="All creatures in 1 zone within 3 zones"
           defense="MGT"
           damage="2 necroitc damage per spell tier"
-          effect="Targeted zone becomes a dangerous zone (1 necrotic damage per spell tier) for the scene"
+          effect={
+            <span>
+              Targeted zone becomes a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zone
+              </Link>{" "}
+              (1 necrotic damage per spell tier) for the scene
+            </span>
+          }
         />
       ),
     },
@@ -686,8 +765,14 @@ export const deathSpells = [
                 description: (
                   <div>
                     <p>
-                      Creatures that end their turn engaged to the undead must
-                      succeed on an{" "}
+                      Creatures that end their turn{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#engaged"
+                      >
+                        engaged
+                      </Link>{" "}
+                      to the undead must succeed on an{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#overcome"
@@ -709,7 +794,15 @@ export const deathSpells = [
                 basic: true,
                 name: "Rend",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "Evasion",
                 damage:
                   "double ST physical damage or necrotic damage (ghost only)",
@@ -729,10 +822,22 @@ export const deathSpells = [
             descriptor="You touch a foe, and drain their vitality like a vampire."
             frequency="Spell 1 (Death)"
             keywords="Escalation, Magical, Melee"
-            target="1 creature engaged to you"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            }
             defense="MGT"
             damage="5 necrotic damage per spell tier"
-            success="You heal equal to half the damage dealt"
+            success={
+              <span>
+                You <ToolTip preset="heal" /> equal to half the damage dealt
+              </span>
+            }
           />
         </div>
       ),
@@ -752,7 +857,18 @@ export const deathSpells = [
             keywords="Escalation, Magical, Range"
             defense="MGT"
             damage="4 necrotic damage per spell tier"
-            effect="Whenever you deal damage from this spell, you gain temporary hit points equal to half the damage dealt (scene ends)"
+            effect={
+              <span>
+                Whenever you deal damage from this spell, you gain{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#temporary-hit-points"
+                >
+                  temporary hit points
+                </Link>{" "}
+                equal to half the damage dealt (scene ends)
+              </span>
+            }
             success="You become linked to the target for the scene while you focus. When you focus on this spell, the target takes 2 necrotic damage per spell tier."
           />
         </div>
@@ -815,7 +931,15 @@ export const deathSpells = [
                 basic: true,
                 name: "Death Touch",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "triple ST necrotic damage",
                 success: "hindered (scene ends)",
@@ -886,7 +1010,15 @@ export const earthSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="MGT"
-          critical="Same as success, and 1 ongoing physical damage per spell tier while seized"
+          critical={
+            <span>
+              Same as a success, and 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per spell tier while seized
+            </span>
+          }
           success={
             <span>
               <Link className="internal-link" to="/conditions#seized">
@@ -911,7 +1043,15 @@ export const earthSpells = [
           target="All creatures in 1 zone within 3 zones"
           defense="MGT"
           damage="2 physical damage per spell tier"
-          effect="Targeted zone becomes a difficult zone for the scene"
+          effect={
+            <span>
+              Targeted zone becomes a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zone
+              </Link>{" "}
+              (scene ends)
+            </span>
+          }
         />
       ),
     },
@@ -1012,7 +1152,15 @@ export const earthSpells = [
                 basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "double ST physical damage",
                 success: (
@@ -1131,7 +1279,15 @@ export const eldritchSpells = [
           target="1 creature per spell tier within 2 zones"
           keywords="Escalation, Magical, Range"
           defense="RES"
-          critical="Same as success, and 1 ongoing psychic damage per spell tier while confused"
+          critical={
+            <span>
+              Same as a success, and 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              psychic damage per spell tier while confused
+            </span>
+          }
           success={
             <span>
               <Link className="internal-link" to="/conditions#confused">
@@ -1266,7 +1422,15 @@ export const eldritchSpells = [
                 basic: true,
                 name: "Tentacle",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "double ST physical damage",
                 success: (
@@ -1506,7 +1670,10 @@ export const enchantmentSpells = [
               <Link className="internal-link" to="/conditions#prone">
                 prone
               </Link>{" "}
-              and asleep, but can be woken up with a maneuver from an engaged
+              and asleep, but can be woken up with a maneuver from an{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
               creature
             </span>
           }
@@ -1682,7 +1849,15 @@ export const fireSpells = [
           defense="EVN"
           keywords="Magical, Range"
           damage="2 fire damage per your tier"
-          critical="1 ongoing fire damage per your tier"
+          critical={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              fire damage per your tier
+            </span>
+          }
         />
       ),
     },
@@ -1700,7 +1875,15 @@ export const fireSpells = [
           keywords="Escalation, Magical, Range"
           defense="EVN"
           damage="4 fire damage per spell tier"
-          success="1 ongoing fire damage per spell tier"
+          success={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              fire damage per spell tier
+            </span>
+          }
         />
       ),
     },
@@ -1754,7 +1937,15 @@ export const fireSpells = [
               while taking this ongoing damage
             </span>
           }
-          success="2 ongoing fire damage per spell tier"
+          success={
+            <span>
+              2{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              fire damage per spell tier
+            </span>
+          }
           partial="1 ongoing fire damage per spell tier"
         />
       ),
@@ -1832,10 +2023,29 @@ export const fireSpells = [
                 basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "triple ST fire damage",
-                success: "1 ongoing fire damage per spell tier",
+                success: (
+                  <span>
+                    1{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#ongoing-damage"
+                    >
+                      ongoing
+                    </Link>{" "}
+                    fire damage per spell tier
+                  </span>
+                ),
               },
               {
                 basic: false,
@@ -1993,7 +2203,15 @@ export const gravitySpells = [
           defense="MGT"
           damage="2 physical damage per spell tier"
           keywords="Escalation, Magical, Range"
-          success="Pull the target to become engaged with you or push them away within your zone (your choice)"
+          success={
+            <span>
+              Pull the target to become{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              with you or push them away within your zone (your choice)
+            </span>
+          }
         />
       ),
     },
@@ -2045,7 +2263,17 @@ export const gravitySpells = [
           frequency="Spell 2 (Gravity)"
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
-          effect="The targeted zone’s gravity flips and all creatures and unattended objects fly up a number of zones equal to the spell tier, and take crash damage. If a creature walks out of the targeted zone, then regular gravity resumes on them, and they fall to the ground."
+          effect={
+            <span>
+              The targeted zone’s gravity flips and all creatures and unattended
+              objects fly up a number of zones equal to the spell tier, and take{" "}
+              <Link className="internal-link" to="/rules/adventuring#crashing">
+                crash
+              </Link>{" "}
+              damage. If a creature walks out of the targeted zone, then regular
+              gravity resumes on them, and they fall to the ground.
+            </span>
+          }
           duration="Scene ends"
         />
       ),
@@ -2067,8 +2295,11 @@ export const gravitySpells = [
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
-              (scene ends), and 1 ongoing physical damage per spell tier while
-              seized
+              (scene ends), and 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per spell tier while seized
             </span>
           }
         />
@@ -2091,8 +2322,11 @@ export const gravitySpells = [
             effect={
               <span>
                 <span>
-                  Targeted zone becomes a difficult zone and dangerous zone (1
-                  physical damage per spell tier) filled with darkness and
+                  Targeted zone becomes a{" "}
+                  <Link className="internal-link" to="/rules/combat#zone-types">
+                    difficult zone and dangerous zone
+                  </Link>{" "}
+                  (1 physical damage per spell tier) filled with darkness and
                   blocks out any sound. When a creature takes this damage, make
                   an{" "}
                   <Link
@@ -2152,7 +2386,18 @@ export const holySpells = [
           defense="EVN"
           keywords="Magical, Range"
           damage="2 holy damage per your tier"
-          critical="Choose one creature within 3 zones to gain temporary hit points equal to your proficiency bonus (scene ends)"
+          critical={
+            <span>
+              Choose one creature within 3 zones to gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends)
+            </span>
+          }
         />
       ),
     },
@@ -2236,7 +2481,11 @@ export const holySpells = [
             <span>
               <span>
                 When you focus on this spell, you can move the weapon up to 1
-                zone to become engaged to a creature and then make this spell's{" "}
+                zone to become{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                to a creature and then make this spell's{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
@@ -2299,7 +2548,15 @@ export const holySpells = [
                 basic: true,
                 name: "Holy Sword",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "double ST holy damage",
               },
@@ -2363,7 +2620,18 @@ export const holySpells = [
             damage="2 holy damage per spell tier"
             critical="Same as a success, but the target is banished (overcome ends)"
             success="If the target isn’t from this realm, then they’re returned to their home realm (turn ends)"
-            effect="You and each ally within 1 zone gain 2 temporary hit points per spell tier (scene ends)"
+            effect={
+              <span>
+                You and each ally within 1 zone gain 2{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#temporary-hit-points"
+                >
+                  temporary hit points
+                </Link>{" "}
+                per spell tier (scene ends)
+              </span>
+            }
           />
         </div>
       ),
@@ -2383,7 +2651,14 @@ export const iceSpells = [
           target="1 zone within 2 zones"
           keywords="Magical, Range"
           duration="End of your next turn"
-          effect="Targeted zone becomes a difficult zone"
+          effect={
+            <span>
+              Targeted zone becomes a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zone
+              </Link>
+            </span>
+          }
         />
       ),
     },
@@ -2422,7 +2697,20 @@ export const iceSpells = [
           frequency="Spell 1 (Ice)"
           target="1 creature per spell tier in your zone"
           keywords="Magical"
-          effect="Target gains 2 temporary hit points per spell tier (scene ends), and the spell ends when the temporary hit points become 0. When a creature damages the target with a melee ability, the creature takes 2 cold damage per spell tier."
+          effect={
+            <span>
+              Target gains 2{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              per spell tier (scene ends), and the spell ends when the temporary
+              hit points become 0. When a creature damages the target with a
+              melee ability, the creature takes 2 cold damage per spell tier.
+            </span>
+          }
         />
       ),
     },
@@ -2479,8 +2767,21 @@ export const iceSpells = [
                   <span>
                     Each part of the wall (one zone border) has defenses of 8 +
                     double the spell tier and 4 hit points per spell tier. It
-                    has resistance to cold damage equal to double the spell
-                    tier, but weakness to fire damage equal to the spell tier.
+                    has{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to cold damage equal to double the spell tier, but{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      weakness
+                    </Link>
+                    to fire damage equal to the spell tier.
                   </span>
                 </li>
               </ul>
@@ -2501,7 +2802,15 @@ export const iceSpells = [
           keywords="Escalation, Magical, Range"
           defense="MGT"
           damage="2 cold damage per spell tier"
-          effect="Targeted zone becomes a difficult zone for the scene"
+          effect={
+            <span>
+              Targeted zone becomes a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zone
+              </Link>{" "}
+              (scene ends)
+            </span>
+          }
         />
       ),
     },
@@ -2568,7 +2877,15 @@ export const iceSpells = [
                 basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "triple ST cold damage",
                 success: (
@@ -2614,11 +2931,25 @@ export const iceSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends), and 1 ongoing cold damage per spell tier while
-                seized
+                (turn ends), and 1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                cold damage per spell tier while seized
               </span>
             }
-            effect="Targeted zone becomes a difficult zone until cleared"
+            effect={
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                until cleared
+              </span>
+            }
           />
         </div>
       ),
@@ -2637,7 +2968,16 @@ export const illusionSpells = [
           frequency="Spell 0 (Illusion)"
           trigger="You see a creature within 1 zone make a roll"
           keywords="Magical, Range"
-          effect="You impose +1 misfortune on the triggering roll. The target is then immune to this spell until after a short rest."
+          effect={
+            <span>
+              You impose +1 misfortune on the triggering roll. The target is
+              then immune to this spell until after a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              .
+            </span>
+          }
         />
       ),
     },
@@ -2767,7 +3107,15 @@ export const illusionSpells = [
                 basic: true,
                 name: "Rend",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "RES",
                 damage: "double ST psychic damage",
               },
@@ -2895,8 +3243,14 @@ export const illusionSpells = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (scene ends), and 1 ongoing psychic damage per spell tier while
-                hindered
+                (scene ends), and 1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                psychic damage per spell tier while hindered
               </span>
             }
           />
@@ -2929,9 +3283,21 @@ export const lifeSpells = [
           accordion
           descriptor="You infuse a dying creature with life."
           frequency="Spell 0 (Life)"
-          target="1 dying creature within your zone"
+          target={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                dying
+              </Link>{" "}
+              creature within your zone
+            </span>
+          }
           keywords="Magical"
-          effect="Target regains 1 hit point"
+          effect={
+            <span>
+              Target <ToolTip preset="heal" /> 1
+            </span>
+          }
         />
       ),
     },
@@ -2962,7 +3328,12 @@ export const lifeSpells = [
           frequency="Spell 1 (Life)"
           target="Each creature of your choice within your zone"
           keywords="Magical"
-          effect="Target can spend a recovery, but they instead only regain 4 hit points per spell tier."
+          effect={
+            <span>
+              Target can spend a recovery, but they instead{" "}
+              <ToolTip preset="heal" /> 4 per spell tier
+            </span>
+          }
         />
       ),
     },
@@ -2976,7 +3347,12 @@ export const lifeSpells = [
             descriptor="With a word, you mend an ally’s wounds."
             frequency="Spell 1 (Life)"
             keywords="Magical, Range"
-            effect="Target can spend a recovery, but they instead only regain 6 hit points per spell tier."
+            effect={
+              <span>
+                Target can spend a recovery, but they instead{" "}
+                <ToolTip preset="heal" /> 6 per spell tier
+              </span>
+            }
           />
         </div>
       ),
@@ -3005,9 +3381,22 @@ export const lifeSpells = [
           accordion
           descriptor="With a word, you save an ally from near death."
           frequency="Spell 2 (Life)"
-          trigger="You see a creature within 1 zone become vanquished or start dying"
+          trigger={
+            <span>
+              You see a creature within 1 zone become{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                vanquished or dying
+              </Link>
+            </span>
+          }
           keywords="Magical, Range"
-          effect="Triggering creature can spend a recovery, but they instead regain 6 hit points per spell tier, or 1 hit point if they don’t spend a recovery."
+          effect={
+            <span>
+              Triggering creature can spend a recovery, but they instead{" "}
+              <ToolTip preset="heal" /> 6 per spell tier, or only heal 1 if they
+              don't spend a recovery
+            </span>
+          }
         />
       ),
     },
@@ -3028,12 +3417,14 @@ export const lifeSpells = [
                 <ul>
                   <li>
                     <span>
-                      If shaken, then they regain 1 hit point per spell tier
+                      If <ToolTip preset="shaken" />, then they{" "}
+                      <ToolTip preset="heal" /> 1 per spell tier
                     </span>
                   </li>
                   <li>
                     <span>
-                      Regeneration equal to the spell tier while shaken
+                      <ToolTip preset="regen" /> equal to the spell tier while
+                      shaken
                     </span>
                   </li>
                 </ul>
@@ -3056,7 +3447,12 @@ export const lifeSpells = [
             frequency="Spell 3 (Life)"
             target="1 creature within 3 zones"
             keywords="Magical, Range"
-            effect="Target can spend a recovery, but regains 12 hit points per spell tier, and ends all negative conditions affecting them."
+            effect={
+              <span>
+                Target can spend a recovery, but <ToolTip preset="heal" /> 12
+                per spell tier, and ends all negative conditions affecting them
+              </span>
+            }
           />
         </div>
       ),
@@ -3131,7 +3527,15 @@ export const lightSpells = [
           target="1 zone per spell tier within 2 zones"
           keywords="Magical, Range"
           duration="Scene ends"
-          effect="Any hidden creatures are visibile while within the targeted zones"
+          effect={
+            <span>
+              Any{" "}
+              <Link className="internal-link" to="/rules/combat#stealth">
+                hidden
+              </Link>{" "}
+              creatures are visibile while within the targeted zones
+            </span>
+          }
         />
       ),
     },
@@ -3333,11 +3737,27 @@ export const natureSpells = [
           accordion
           descriptor="You lash out with your hand as it briefly transforms into a claw."
           frequency="Spell 0 (Nature)"
-          target="1 creature engaged to you"
+          target={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              creature
+            </span>
+          }
           keywords="Magical, Melee"
           defense="EVN"
           damage="3 physical damage per your tier"
-          critical="1 ongoing physical damage per your tier"
+          critical={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per your tier
+            </span>
+          }
         />
       ),
     },
@@ -3440,8 +3860,14 @@ export const natureSpells = [
               },
               {
                 name: "Reach (plant only)",
-                description:
-                  "Spirit treats anyone within their zone as engaged.",
+                description: (
+                  <span>
+                    Spirit treats anyone within their zone as{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>
+                  </span>
+                ),
               },
             ]}
             actions={[
@@ -3449,7 +3875,15 @@ export const natureSpells = [
                 basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage:
                   "double ST physical damage or triple ST physical damage (land only)",
@@ -3497,7 +3931,9 @@ export const natureSpells = [
                   <span>Breathe underwater and swim speed 1</span>
                 </li>
                 <li>
-                  <span>Night vision</span>
+                  <span>
+                    <ToolTip preset="night" />
+                  </span>
                 </li>
                 <li>
                   <span>Climb speed 1</span>
@@ -3545,7 +3981,14 @@ export const natureSpells = [
                 </li>
                 <li>
                   <span>
-                    Target gains 4 temporary hit points per the spell tier
+                    Target gains 4{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    per the spell tier
                   </span>
                 </li>
                 <li>
@@ -3570,8 +4013,11 @@ export const natureSpells = [
                 </li>
                 <li>
                   <span>
-                    Once the target is defeated, they revert back to their form
-                    and the magic ends
+                    Once the target is{" "}
+                    <Link className="internal-link" to="/rules/combat#dying">
+                      defeated
+                    </Link>
+                    , they revert back to their form and the magic ends
                   </span>
                 </li>
               </ul>
@@ -3697,7 +4143,15 @@ export const natureSpells = [
                 basic: true,
                 name: "Bite",
                 keywords: "melee, weapon",
-                target: "1 creature engaged to the kaiju",
+                target: (
+                  <span>
+                    1 creature{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    to the kaiju
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "4 physical damage per ST",
                 success: (
@@ -3711,9 +4165,16 @@ export const natureSpells = [
                     <Link className="internal-link" to="/conditions#seized">
                       seized
                     </Link>
-                    , and takes 1 ongoing toxic damage per ST. If a swallowed
-                    creature deals 4 or more damage per ST on a single turn, the
-                    kaiju throws up the target.
+                    , and takes 1{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#ongoing-damage"
+                    >
+                      ongoing
+                    </Link>{" "}
+                    toxic damage per ST. If a swallowed creature deals 4 or more
+                    damage per ST on a single turn, the kaiju throws up the
+                    target.
                   </span>
                 ),
               },
@@ -3777,7 +4238,7 @@ export const protectionSpells = [
           frequency="Spell 1 (Protection)"
           trigger="You see a creature deal damage to another creature within 1 zone"
           keywords="Magical, Range"
-          effect="The attacked creature gains resistance only to the triggering damage, and the attacker takes arcane damage equal to half of the triggering damage."
+          effect="The attacked creature takes half of the triggering damage, and the attacker takes arcane damage equal to half of the triggering damage."
         />
       ),
     },
@@ -3816,7 +4277,18 @@ export const protectionSpells = [
             keywords="Magical"
             target="1 creature per spell tier within your zone"
             duration="Scene ends"
-            effect="Choose a damage type and the target gains resistance to it equal to the spell tier"
+            effect={
+              <span>
+                Choose a damage type and the target gains{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#resistances-and-weaknesses"
+                >
+                  resistance
+                </Link>{" "}
+                to it equal to the spell tier
+              </span>
+            }
           />
         </div>
       ),
@@ -3876,7 +4348,18 @@ export const protectionSpells = [
             duration="Scene ends"
             keywords="Magical"
             target="1 creature (+1 creatures for each higher spell tier) in your zone"
-            effect="Target gains resistance to all damage from magical abilities equal to the spell tier"
+            effect={
+              <span>
+                Target gains{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#resistances-and-weaknesses"
+                >
+                  resistance
+                </Link>{" "}
+                to all damage from magical abilities equal to the spell tier
+              </span>
+            }
           />
         </div>
       ),
@@ -3895,7 +4378,20 @@ export const protectionSpells = [
             duration="Scene ends"
             keywords="Magical, Range"
             target="1 creature (+1 creatures for each higher spell tier) within 1 zone"
-            effect="Target gains resistance to all damage equal to double the spell tier. Whenever a creature deals damage to the target, they take arcane damage equal to double the spell tier."
+            effect={
+              <span>
+                Target gains{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#resistances-and-weaknesses"
+                >
+                  resistance
+                </Link>{" "}
+                to all damage equal to double the spell tier. Whenever a
+                creature deals damage to the target, they take arcane damage
+                equal to double the spell tier.
+              </span>
+            }
           />
         </div>
       ),
@@ -3993,7 +4489,15 @@ export const shadowSpells = [
                 basic: true,
                 name: "Shadow Claw",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "double ST necrotic damage",
               },
@@ -4098,7 +4602,17 @@ export const shadowSpells = [
             frequency="Spell 2 (Shadow)"
             target="1 zone per spell tier within 2 zones"
             keywords="Magical, Range"
-            effect="Targeted zones become dangerous zones (1 necrotic damage per spell tier) that only hurts enemies. You have concealment in the targeted zones as you are nearly indistinguishable from your shadows."
+            effect={
+              <span>
+                Targeted zones become dangerous zones (1 necrotic damage per
+                spell tier) that only hurts enemies. You have{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  concealment
+                </Link>{" "}
+                in the targeted zones as you are nearly indistinguishable from
+                your shadows.
+              </span>
+            }
             duration="Scene ends"
           />
         </div>
@@ -4169,7 +4683,17 @@ export const teleportationSpells = [
           defense="RES"
           keywords="Magical, Range"
           damage="2 arcane damage per your tier"
-          critical="Teleported up to 1 zone away on a standing surface"
+          critical={
+            <span>
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                Teleported
+              </Link>{" "}
+              up to 1 zone away on a standing surface
+            </span>
+          }
         />
       ),
     },
@@ -4182,7 +4706,19 @@ export const teleportationSpells = [
           descriptor="You teleport a small item to an ally."
           frequency="Spell 0 (Teleportation)"
           target="1 willing creature within 1 zone"
-          effect="One medium or smaller object that you hold teleports to the target’s hand. If they can’t hold the object, then it falls to the ground."
+          effect={
+            <span>
+              One medium or smaller object that you hold{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleports
+              </Link>{" "}
+              to the target’s hand. If they can’t hold the object, then it falls
+              to the ground.
+            </span>
+          }
           keywords="Magical, Range"
         />
       ),
@@ -4202,7 +4738,18 @@ export const teleportationSpells = [
             keywords="Escalation, Magical, Range"
             defense="RES"
             damage="4 arcane damage per spell tier"
-            success="Teleported to a standing surface up to a number of zones away equal to the spell tier"
+            success={
+              <span>
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  Teleported
+                </Link>{" "}
+                to a standing surface up to a number of zones away equal to the
+                spell tier
+              </span>
+            }
           />
         </div>
       ),
@@ -4217,6 +4764,18 @@ export const teleportationSpells = [
           frequency="Spell 1 (Teleportation)"
           target="Up to 1 zone per spell tier"
           keywords="Magical, Range"
+          effect={
+            <span>
+              You{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              up to anywhere within the targeted zone
+            </span>
+          }
           effect="You teleport up to anywhere within the targeted zone"
         />
       ),
@@ -4232,7 +4791,20 @@ export const teleportationSpells = [
           target="Your zone"
           keywords="Magical, Range"
           duration="Scene ends"
-          effect="Designate willing creatures within your zone equal to the spell tier. During the duration, you can use a maneuver to teleport designated creatures to the targeted zone, even without line of sight. Then the spell ends."
+          effect={
+            <span>
+              Designate willing creatures within your zone equal to the spell
+              tier. During the duration, you can use a maneuver to{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              designated creatures to the targeted zone, even without line of
+              sight. Then the spell ends.
+            </span>
+          }
         />
       ),
     },
@@ -4248,8 +4820,15 @@ export const teleportationSpells = [
           keywords="Magical, Range"
           effect={
             <span>
-              You and the target teleport to switch places. If the target is
-              unwilling, you must succeed on an{" "}
+              You and the target{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              to switch places. If the target is unwilling, you must succeed on
+              an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -4272,7 +4851,31 @@ export const teleportationSpells = [
             frequency="Spell 2 (Teleportation)"
             target="Your zone and another zone within a number of zones equal to the spell tier"
             keywords="Magical, Range"
-            effect="Your zone and another zone within a number of zones equal to the spell tier"
+            effect={
+              <span>
+                Designate any number of creatures and create a linked portal in
+                the two targeted zones. Any designated creature next to a portal
+                can spend a maneuver to{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  teleport
+                </Link>{" "}
+                to the other portal even without line of sight, or{" "}
+                <Link
+                  className="internal-link"
+                  to="/combat-abilities#disengage"
+                >
+                  disengage
+                </Link>{" "}
+                or{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                up to the portal as part of the same maneuver.
+              </span>
+            }
             duration="Scene ends"
           />
         </div>
@@ -4289,7 +4892,19 @@ export const teleportationSpells = [
             frequency="Spell 2 (Teleportation)"
             target="Up to 3 zones per spell tier"
             keywords="Magical, Range"
-            effect="You teleport anywhere within the target zones and can bring a willing creature with you."
+            effect={
+              <span>
+                You{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  teleport
+                </Link>{" "}
+                anywhere within the target zones and can bring a willing
+                creature with you.
+              </span>
+            }
           />
         </div>
       ),
@@ -4689,7 +5304,15 @@ export const toxicSpells = [
           keywords="Escalation, Magical, Range"
           defense="EVN"
           damage="4 toxic damage per spell tier"
-          success="1 ongoing toxic damage per spell tier"
+          success={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              toxic damage per spell tier
+            </span>
+          }
         />
       ),
     },
@@ -4701,7 +5324,15 @@ export const toxicSpells = [
           accordion
           descriptor="With a touch, you magically inject your foe with paralyzing venom."
           frequency="Spell 1 (Toxic)"
-          target="1 creature engaged to you"
+          target={
+            <span>
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              creature
+            </span>
+          }
           keywords="Escalation, Magical, Melee"
           defense="MGT"
           damage="5 toxic damage per spell tier"
@@ -4755,7 +5386,11 @@ export const toxicSpells = [
           keywords="Escalation, Magical, Range"
           success={
             <span>
-              1 ongoing toxic damage per spell tier and{" "}
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              toxic damage per spell tier and{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
@@ -4822,7 +5457,18 @@ export const toxicSpells = [
               </span>
             }
             keywords="Escalation, Magical, Range"
-            success="1 ongoing toxic damage per spell tier"
+            success={
+              <span>
+                1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage per spell tier
+              </span>
+            }
           />
         </div>
       ),
@@ -5008,7 +5654,15 @@ export const unholySpells = [
                 basic: true,
                 name: "Corrupting Rend",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "triple ST unholy damage",
                 success: (
@@ -5199,7 +5853,18 @@ export const warSpells = [
           target="1 creature per spell tier in your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Target gains 4 temporary hit points per spell tier"
+          effect={
+            <span>
+              Target gains 4{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              per spell tier
+            </span>
+          }
         />
       ),
     },
@@ -5256,7 +5921,21 @@ export const warSpells = [
             target="1 zone per spell tier within 2 zones"
             duration="Scene ends"
             keywords="Magical, Range"
-            effect="Targeted zones become dangerous zones (1 physical damage per spell tier), and when creatures take this damage, they also take 1 ongoing physical damage per spell tier. As a maneuver, you can move each targeted blade storm up to 1 zone away."
+            effect={
+              <span>
+                Targeted zones become dangerous zones (1 physical damage per
+                spell tier), and when creatures take this damage, they also take
+                1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                physical damage per spell tier. As a maneuver, you can move each
+                targeted blade storm up to 1 zone away.
+              </span>
+            }
           />
         </div>
       ),
@@ -5273,7 +5952,20 @@ export const warSpells = [
             target="1 creature within your zone"
             keywords="Magical"
             duration="Scene ends"
-            effect="Choose cold, fire, lightning, or toxic. Target gains resistance to the chosen damage type equal to double the spell tier, and when a creature damages the target with a melee ability, they take 2 damage per spell tier of the chosen damage type."
+            effect={
+              <span>
+                Choose cold, fire, lightning, or toxic. Target gains{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#resistances-and-weaknesses"
+                >
+                  resistance
+                </Link>{" "}
+                to the chosen damage type equal to double the spell tier, and
+                when a creature damages the target with a melee ability, they
+                take 2 damage per spell tier of the chosen damage type.
+              </span>
+            }
           />
         </div>
       ),
@@ -5289,14 +5981,21 @@ export const warSpells = [
             accordion
             descriptor="You flourish your weapon then teleport around the battlefield, striking each foe within sight."
             frequency="Spell 3 (War)"
+            keywords="Magical"
             target="All enemies within 1 zone"
             effect={
               <span>
                 <Link className="internal-link" to="/combat-abilities#strike">
                   Strike
                 </Link>{" "}
-                each target, and you can teleport to each target before you
-                strike
+                each target, and you can{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  teleport
+                </Link>{" "}
+                to each target before you strike
               </span>
             }
           />
@@ -5508,7 +6207,15 @@ export const waterSpells = [
                 basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
-                target: "1 engaged creature",
+                target: (
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                ),
                 defense: "EVN",
                 damage: "triple ST physical damage",
                 success: (
@@ -5544,7 +6251,18 @@ export const waterSpells = [
             target="1 creature (+1 creatures per higher spell tier) within 1 zone"
             keywords="Escalation, Magical, Range"
             defense="MGT"
-            critical="Same as success, but 1 ongoing physical damage per spell tier while seized"
+            critical={
+              <span>
+                Same as a success, and 1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                physical damage per spell tier while seized
+              </span>
+            }
             success={
               <span>
                 Same as a partial success, but{" "}
@@ -5554,7 +6272,16 @@ export const waterSpells = [
                 (scene ends)
               </span>
             }
-            partial="Seized (turn ends), and the target must hold their breath or begin drowning while seized"
+            partial={
+              <span>
+                Seized (turn ends), and the target must hold their breath or
+                begin{" "}
+                <Link className="internal-link" to="/rules/combat#underwater">
+                  drowning
+                </Link>{" "}
+                while seized
+              </span>
+            }
           />
         </div>
       ),

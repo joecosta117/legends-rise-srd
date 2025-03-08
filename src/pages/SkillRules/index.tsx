@@ -747,7 +747,13 @@ function SkillRules() {
             <div>
               <p>
                 You spend your downtime relaxing and living carefree. At the
-                start of your next adventure, you gain temporary hit points
+                start of your next adventure, you gain{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#temporary-hit-points"
+                >
+                  temporary hit points
+                </Link>
                 equal to your proficiency bonus that last until you enter
                 downtime again.
               </p>

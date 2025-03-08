@@ -5,6 +5,7 @@ import Dropdown from "../../components/Dropdown";
 import { getHash } from "../../utils/getPath";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function FightingStyles() {
   const [selectedStyle, setSelectedStyle] = useState("");
@@ -378,7 +379,11 @@ function FightingStyles() {
                 descriptor="You grab someone as they try to flee."
                 trigger={
                   <span>
-                    You see a creature engaged to you{" "}
+                    You see an{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
                       move
                     </Link>
@@ -510,7 +515,15 @@ function FightingStyles() {
                 descriptor="After you see an enemy prepare a devastating attack, you disarm them to prevent future harm."
                 requirement="You’re wielding a standard melee weapon and your other hand is empty"
                 frequency="At-will"
-                trigger="You see a creature engaged to you use a magical or ranged ability"
+                trigger={
+                  <span>
+                    You see an{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature use a magical or ranged ability
+                  </span>
+                }
                 effect={
                   <span>
                     <Link
@@ -706,7 +719,11 @@ function FightingStyles() {
                 frequency="At-will"
                 trigger={
                   <span>
-                    You see a creature engaged to you{" "}
+                    You see an{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
                       move
                     </Link>
@@ -805,7 +822,14 @@ function FightingStyles() {
                 name="Blown Cover"
                 actType="Reaction"
                 descriptor="When your hiding spot is discovered, you flee."
-                trigger="You become visible after being hidden"
+                trigger={
+                  <span>
+                    You become visible after being{" "}
+                    <Link className="internal-link" to="/rules/combat#stealth">
+                      hidden
+                    </Link>
+                  </span>
+                }
                 effect={
                   <span>
                     <Link
@@ -827,7 +851,15 @@ function FightingStyles() {
                 actType="Maneuver"
                 descriptor="You kick up a table or lean behind a creature to gain cover that your foes quickly catch onto."
                 frequency="At-will"
-                effect="You use your environment to give yourself cover (turn starts)"
+                effect={
+                  <span>
+                    You use your environment to give yourself{" "}
+                    <Link className="internal-link" to="/rules/combat#stealth">
+                      cover
+                    </Link>{" "}
+                    (turn starts)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Into the Shadows"
@@ -850,7 +882,14 @@ function FightingStyles() {
                 name="Unseen Attack"
                 actType="Action"
                 descriptor="You attack from the shadows without a trace."
-                requirement="You’re hidden"
+                requirement={
+                  <span>
+                    You are{" "}
+                    <Link className="internal-link" to="/rules/combat#stealth">
+                      hidden
+                    </Link>
+                  </span>
+                }
                 frequency="At-will"
                 effect={
                   <span>
@@ -949,8 +988,21 @@ function FightingStyles() {
                 descriptor="You staunch an ally’s bleeding."
                 keywords="Melee"
                 frequency="At-will"
-                target="1 dying creature you can touch"
-                effect="Target regains hit points equal to your proficiency bonus"
+                target={
+                  <span>
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#dying">
+                      dying
+                    </Link>{" "}
+                    creature you can touch
+                  </span>
+                }
+                effect={
+                  <span>
+                    Target <ToolTip preset="heals" /> equal to your proficiency
+                    bonus
+                  </span>
+                }
               />
             </div>
           </div>
@@ -1059,7 +1111,11 @@ function FightingStyles() {
                 descriptor="As your foe attacks your friend, you retaliate."
                 trigger={
                   <span>
-                    You see a creature engaged to you make an{" "}
+                    You see an{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature make an{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -1145,7 +1201,13 @@ function FightingStyles() {
                     >
                       Strike
                     </Link>{" "}
-                    and on a success or higher, the target takes 1 ongoing
+                    and on a success or higher, the target takes 1{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#ongoing-damage"
+                    >
+                      ongoing
+                    </Link>
                     physical damage per your tier
                   </span>
                 }
@@ -1208,8 +1270,10 @@ function FightingStyles() {
                     >
                       Strike
                     </Link>{" "}
-                    with a thrown ranged weapon, and you ignore the penalty from
-                    cover
+                    with a thrown ranged weapon, and you ignore the penalty from{" "}
+                    <Link className="internal-link" to="/rules/combat#stealth">
+                      cover
+                    </Link>
                   </span>
                 }
               />
@@ -1369,7 +1433,15 @@ function FightingStyles() {
                 actType="Action"
                 descriptor="You unleash an onslaught of attacks from your twin weapons at nearby enemies."
                 frequency="At-will"
-                target="1d4+1 enemies engaged to you"
+                target={
+                  <span>
+                    1d4+1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    enemies
+                  </span>
+                }
                 requirement="You’re wielding a weapon in each hand"
                 effect={
                   <span>

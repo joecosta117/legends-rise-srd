@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.contact {
+  @include page-layout();
+}
+
+.contact-content {
+  @include class-page-content();
+}

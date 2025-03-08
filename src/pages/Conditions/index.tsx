@@ -12,8 +12,11 @@ function Conditions() {
       id: "blinded",
       content: (
         <p>
-          Everyone have concealment to you and gains{" "}
-          <Modifier type="f" count="1" /> on{" "}
+          Everyone have{" "}
+          <Link className="internal-link" to="/rules/combat#stealth">
+            concealment
+          </Link>{" "}
+          to you and gains <Modifier type="f" count="1" /> on{" "}
           <Link className="internal-link" to="/rules/combat#attack-roll">
             attack rolls
           </Link>{" "}
@@ -129,8 +132,11 @@ function Conditions() {
       id: "invisible",
       content: (
         <p>
-          You have concealment to everyone and gain{" "}
-          <Modifier type="f" count="1" /> on{" "}
+          You have{" "}
+          <Link className="internal-link" to="/rules/combat#stealth">
+            concealment
+          </Link>{" "}
+          to everyone and gain <Modifier type="f" count="1" /> on{" "}
           <Link className="internal-link" to="/rules/combat#attack-roll">
             attack rolls
           </Link>{" "}
@@ -256,7 +262,7 @@ function Conditions() {
             </li>
             <li>
               <span>
-                This condition ends if your taunter dies or is defeated
+                This condition ends if your taunter dies or surrenders
               </span>
             </li>
           </ul>

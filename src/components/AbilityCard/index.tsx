@@ -11,7 +11,7 @@ interface AbilityCardProps {
   descriptor: string;
   frequency?: string;
   keywords?: string;
-  duration?: string;
+  duration?: string | JSX.element;
   trigger?: string | JSX.element;
   target?: string | JSX.element;
   damage?: string;

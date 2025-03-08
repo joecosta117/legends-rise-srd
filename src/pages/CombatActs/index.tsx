@@ -5,6 +5,7 @@ import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
 import { getHash } from "../../utils/getPath";
+import ToolTip from "../../components/ToolTip";
 
 function CombatActs() {
   const [all, setAll] = useState(true);
@@ -107,7 +108,16 @@ function CombatActs() {
             descriptor="You attack with a weapon."
             frequency="At-will"
             keywords="Weapon, Melee or Range"
-            target="1 engaged creature for a melee weapon, or 1 creature within a ranged weapon’s range"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature for a melee weapon, or 1 creature within a ranged
+                weapon’s range
+              </span>
+            }
             defense="EVN"
             damage="weapon damage per your tier"
           />
@@ -173,7 +183,15 @@ function CombatActs() {
             accordion
             descriptor="You attempt to knock an item from a foe’s grasp."
             frequency="At-will"
-            target="1 engaged creature"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            }
             keywords="Melee"
             defense="MGT"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
@@ -192,7 +210,15 @@ function CombatActs() {
             accordion
             descriptor="You carefully step away."
             frequency="At-will"
-            requirement="You aren’t in a difficult zone and your speed isn’t 0."
+            requirement={
+              <span>
+                You aren't in a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                and your speed isn't 0
+              </span>
+            }
             effect="You traverse anywhere within your zone, or if you’re already at your zone’s border, you can cross into the adjacent zone."
           />
         </div>
@@ -208,7 +234,15 @@ function CombatActs() {
             accordion
             descriptor="You try to grab a creature within reach."
             frequency="At-will"
-            target="1 engaged creature"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            }
             requirement="You have a free hand"
             keywords="Melee"
             defense="MGT"
@@ -265,8 +299,22 @@ function CombatActs() {
             accordion
             descriptor="You stealthily fade away from sight."
             frequency="At-will"
-            requirement="You have cover or concealment"
-            effect="You become hidden"
+            requirement={
+              <span>
+                You have{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  cover or concealment
+                </Link>
+              </span>
+            }
+            effect={
+              <span>
+                You become{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  hidden
+                </Link>
+              </span>
+            }
           />
         </div>
       ),
@@ -336,7 +384,15 @@ function CombatActs() {
             accordion
             descriptor="You push a creature away"
             frequency="At-will"
-            target="1 engaged creature"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            }
             keywords="Melee"
             defense="MGT"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
@@ -444,7 +500,15 @@ function CombatActs() {
             accordion
             descriptor="You knock a foe to the ground."
             frequency="At-will"
-            target="1 engaged creature"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            }
             keywords="Melee"
             defense="MGT"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"

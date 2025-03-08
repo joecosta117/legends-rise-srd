@@ -4,9 +4,15 @@ import Modifier from "../../components/Modifier";
 import Accordion from "../../components/Accordion";
 import scrollToHash from "../../utils/scrollToHash";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
+import { useNavigate } from "react-router-dom";
 
 function CombatRules() {
   scrollToHash();
+  const navigate = useNavigate();
+  function handleLink(link: string) {
+    navigate(`/${link}`);
+  }
 
   return (
     <div className="general">
@@ -16,7 +22,11 @@ function CombatRules() {
         <p>
           When heroes engage monsters and villains in a narratively significant
           combat, follow these rules. For minor squabbles, instead rely on skill
-          rolls such as utilizing a progress countdown.
+          rolls such as utilizing a{" "}
+          <Link className="internal-link" to="/rules/skills#progress-countdown">
+            progress countdown
+          </Link>
+          .
         </p>
         <h2>Table of Contents</h2>
         <ul style={{ marginTop: "0" }}>
@@ -77,7 +87,7 @@ function CombatRules() {
             </a>
           </li>
           <li>
-            <a href="#mounted">
+            <a href="#mount">
               <span>
                 <b>Mounted Combat</b>
               </span>
@@ -177,7 +187,9 @@ function CombatRules() {
           each other (within 10 to 20 feet). If someone is in a nearby zone,
           then they’re close enough to run up to them in a turn.
         </p>
-        <h4 className="header">Engaged</h4>
+        <h4 className="header" id="engaged">
+          Engaged
+        </h4>
         <p>
           If you are close enough to a creature to hit them with a sword, then
           you’re <b>engaged</b> to them. If you’re using miniatures or tokens on
@@ -214,8 +226,11 @@ function CombatRules() {
           <li>
             <span>
               <b>Climb:</b> You climb vertical surfaces easily, which is treated
-              as a difficult zone unless you have a climb speed. A GM might
-              require a{" "}
+              as a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zone
+              </Link>{" "}
+              unless you have a climb speed. A GM might require a{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
@@ -232,8 +247,11 @@ function CombatRules() {
           <li>
             <span>
               <b>Swim:</b> You move through the water easily, which is treated
-              as a difficult zone unless you have a swim speed. A GM might
-              require a{" "}
+              as a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zone
+              </Link>{" "}
+              unless you have a swim speed. A GM might require a{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
@@ -248,14 +266,19 @@ function CombatRules() {
             move
           </Link>{" "}
           within your zone, or to an adjacent zone if you’re at a zone’s border.
-          You can’t
+          You can’t{" "}
           <Link className="internal-link" to="/combat-abilities#disengage">
             disengage
           </Link>{" "}
-          while your speed is 0. If you’re in a difficult zone, then you can’t
-          move at all.
+          while your speed is 0. If you’re in a{" "}
+          <Link className="internal-link" to="/rules/combat#zone-types">
+            difficult zone
+          </Link>
+          , then you can’t move at all.
         </p>
-        <h4 className="header">Special Types of Movement</h4>
+        <h4 className="header" id="special-movement">
+          Special Types of Movement
+        </h4>
         <p>
           Some abilities or features can grant you special types of movement.
         </p>
@@ -271,16 +294,19 @@ function CombatRules() {
           <li>
             <span>
               <b>Phasing:</b> Your form is less substantial. You can stride
-              freely through obstacles, and you ignore difficult zones and
-              impassable zones.
+              freely through obstacles, and you ignore{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zones and impassable zones
+              </Link>
+              .
             </span>
           </li>
           <li>
             <span>
               <b>Teleportation:</b> You can disappear and reappear in an
               unoccupied location, ignoring any obstacles without triggering
-              reactions. Unless otherwise specified, teleportation follows these
-              rules:
+              reactions for moving. Unless otherwise specified, teleportation
+              follows these rules:
             </span>
             <ul style={{ marginTop: "0", marginLeft: "10px" }}>
               <li>
@@ -309,7 +335,9 @@ function CombatRules() {
             </ul>
           </li>
         </ul>
-        <h3 className="header">Types of Zones</h3>
+        <h3 className="header" id="zone-types">
+          Types of Zones
+        </h3>
         <p>
           There are different types of zones that affect anyone within them.
         </p>
@@ -524,7 +552,9 @@ function CombatRules() {
             </div>
           }
         />
-        <h3 className="header">Ongoing Damage</h3>
+        <h3 className="header" id="ongoing-damage">
+          Ongoing Damage
+        </h3>
         <p>
           When you make a foe suffer a bleeding wound or set them ablaze, you
           are dealing ongoing damage. Instead of taking that damage immediately,
@@ -538,7 +568,7 @@ function CombatRules() {
         <h4 className="header">Multiple Ongoing Damage Effects</h4>
         <p>
           You can suffer ongoing damage from more than one source. Each instance
-          of ongoing damage from a different damage type requires its own
+          of ongoing damage from a different damage type requires its own{" "}
           <Link className="internal-link" to="/rules/combat#overcome">
             overcome roll
           </Link>{" "}
@@ -551,16 +581,18 @@ function CombatRules() {
           damage from each effect. At the end of your turns, you make a separate
           overcome roll against each ongoing effect.
         </p>
-        <h3 className="header">Resistances and Weaknesses</h3>
+        <h3 className="header" id="resistances-and-weaknesses">
+          Resistances and Weaknesses
+        </h3>
         <p>
-          When a creature has resistance to a damage type, then any damage taken
-          from the specified type is reduced by a specified number. For example,
-          if a dragon has fire resistance 2, and they take 3 fire damage, their
-          resistance reduces the damage to 1.
+          When a creature has <b>resistance</b> to a damage type, then any
+          damage taken from the specified type is reduced by a specified number.
+          For example, if a dragon has fire resistance 2, and they take 3 fire
+          damage, their resistance reduces the damage to 1.
         </p>
         <p>
-          When a creature has weakness to a damage type, then any damage taken
-          from the specified type is increased by a specified number. For
+          When a creature has <b>weakness</b> to a damage type, then any damage
+          taken from the specified type is increased by a specified number. For
           example, if a demon has holy weakness 2, and they take 3 holy damage,
           their weakness increases the damage to 5.
         </p>
@@ -568,7 +600,9 @@ function CombatRules() {
           Resistances and weaknesses are calculated after damage is reduced by
           other means such as from magic.
         </p>
-        <h3 className="header">Shaken</h3>
+        <h3 className="header" id="shaken">
+          Shaken
+        </h3>
         <p>
           When your current hit points equals half or less of your maximum hit
           points, then you are <b>shaken</b>. Certain features trigger off your
@@ -577,12 +611,14 @@ function CombatRules() {
         </p>
         <h3 className="header">Healing</h3>
         <p>
-          When you regain hit points, you add the hit points regained to your
-          current hit points, which is referred to as <b>heal</b> with the
-          amount specified. The total can’t exceed your maximum amount of hit
-          points, which is your normal hit points without any damage.
+          When you heal, you add the regained hit points to your current hit
+          points, which is referred to as <b>heal</b> with the amount specified.
+          The total can’t exceed your maximum amount of hit points, which is
+          your normal hit points without any damage.
         </p>
-        <h4 className="header">Temporary Hit Points</h4>
+        <h4 className="header" id="temporary-hit-points">
+          Temporary Hit Points
+        </h4>
         <p>
           Some features or spells grant you temporary hit points, which aren’t
           actual hit points, but serve as a buffer against future damage. When
@@ -614,7 +650,11 @@ function CombatRules() {
           <li>
             <span>
               Unless the feature specifies, temporary hit points last until
-              after a long rest.
+              after a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              .
             </span>
           </li>
         </ul>
@@ -630,8 +670,12 @@ function CombatRules() {
             rally
           </Link>{" "}
           action in combat. Outside of combat, you can spend any number of
-          recoveries during a short rest. When you spend a recovery, you heal
-          equal to your shaken value.
+          recoveries during a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            short rest
+          </Link>
+          . When you spend a recovery, you heal equal to your{" "}
+          <ToolTip preset="shakenVal" />.
         </p>
         <h4 className="header">Regeneration</h4>
         <p>
@@ -643,7 +687,7 @@ function CombatRules() {
         <p>
           When your hit points equal 0, you are <b>dying</b>. While dying, you
           take <Modifier type="mf" count="1" /> to attack and skill rolls. You
-          are no longer dying if you regain any hit points.
+          are no longer dying if you <ToolTip preset="heal" />.
         </p>
         <h3 className="header">Wounds</h3>
         <p>
@@ -655,7 +699,11 @@ function CombatRules() {
         </p>
         <p>
           Wounds represent how close your hero is to death after sustaining
-          massive injuries. Wounds always reset to 0 after a long rest.
+          massive injuries. Wounds always reset to 0 after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
         </p>
         <h3 className="header">Defeat</h3>
         <p>
@@ -666,13 +714,17 @@ function CombatRules() {
           <li>
             <span>
               <b>Vanquished:</b> You fall unconscious and are narratively
-              removed from the combat, but you don’t die. You can’t heal until
-              the combat is over. Once you heal, your wounds are decreased to 2
-              but you are{" "}
+              removed from the combat, but you don’t die. You can’t{" "}
+              <ToolTip preset="heal" /> until the combat is over. Once you heal,
+              your wounds are decreased to 2 but you are{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              until you take a long rest.
+              until you take a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              .
             </span>
           </li>
           <li>
@@ -711,7 +763,11 @@ function CombatRules() {
           encounter, or important role playing scenes (determined by the GM),
           the heroes increase the momentum die's value by 1 to a maximum of 4.
           Heroes add the momentum die's value to all rolls. Your momentum die
-          always resets to 0 after a long rest.
+          always resets to 0 after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
         </p>
         <p>
           For example, the heroes defeated a small group of demons, increasing
@@ -766,14 +822,21 @@ function CombatRules() {
           <li>
             <span>
               <b>Huge:</b> A creature between 17 to 32 feet tall, such as a
-              dragon or giant. Huge creatures are engaged to all creatures
-              within their zone.
+              dragon or giant. Huge creatures are{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              to all creatures within their zone.
             </span>
           </li>
           <li>
             <span>
               <b>Colossal:</b> A towering creature bigger than a huge creature.
-              Colossal creatures are engaged to all creatures within 1 zone.
+              Colossal creatures are{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              to all creatures within 1 zone.
             </span>
           </li>
         </ul>
@@ -783,13 +846,17 @@ function CombatRules() {
           Depending on the battlefield, creatures might try hiding or using the
           terrain to gain cover.
         </p>
-        <h3 className="header">Concealment</h3>
+        <h3 className="header" id="concealment">
+          Concealment
+        </h3>
         <p>
           A creature obscured by darkness, thick fog, or invisiblity has{" "}
           <b>concealment</b>. Creatures take <Modifier type="mf" count="1" /> on
           rolls that require sight against a concealed target.
         </p>
-        <h3 className="header">Cover</h3>
+        <h3 className="header" id="cover">
+          Cover
+        </h3>
         <p>
           A creature blocked by an obstacle or other people has <b>cover</b>.
           Creatures take <Modifier type="mf" count="1" /> on rolls that require
@@ -867,6 +934,10 @@ function CombatRules() {
           </li>
         </ul>
 
+        <button className="link-button" onClick={() => handleLink("mounts")}>
+          MOUNT OPTIONS
+        </button>
+
         <h2 id="underwater">Underwater Combat</h2>
         <p>
           When fighting underwater, certain actions are more difficult. If you
@@ -875,8 +946,14 @@ function CombatRules() {
           <Link className="internal-link" to="/conditions#slowed">
             slowed
           </Link>
-          . Any creature fully immersed in water gains resistance to fire damage
-          equal to their tier.
+          . Any creature fully immersed in water gains{" "}
+          <Link
+            className="internal-link"
+            to="/rules/combat#resistances-and-weaknesses"
+          >
+            resistance
+          </Link>{" "}
+          to fire damage equal to their tier.
         </p>
 
         <h3 className="header">Drowning</h3>
@@ -884,12 +961,12 @@ function CombatRules() {
           A creature can hold their breath for a number of rounds equal to
           double their tier. When a creature runs out of breath, the creature
           drops to 0 hit points at the start of their next turn and begins
-          drowning. While drowning, a creature automatically fails dying
-          <Link className="internal-link" to="/rules/combat#overcome">
-            overcome rolls
+          drowning. While drowning, a creature automatically fails{" "}
+          <Link className="internal-link" to="/rules/combat#dying">
+            dying
           </Link>{" "}
-          to avoid getting wounds. The creature can’t heal until they can breath
-          again.
+          overcome rolls to avoid getting wounds. The creature can’t{" "}
+          <ToolTip preset="heal" /> until they can breath again.
         </p>
       </div>
     </div>

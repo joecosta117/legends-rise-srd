@@ -2,7 +2,7 @@ import "./index.scss";
 import AbilityCard from "../../components/AbilityCard";
 import { useState } from "react";
 import fortune from "../../assets/fortune-icon-v2.png";
-import misfortune from "../../assets/misfortune-icon-v2.png";
+import ToolTip from "../../components/ToolTip";
 import ClassHeader from "../../components/ClassHeader";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
@@ -184,8 +184,8 @@ function Commander() {
                     Strike
                   </Link>
                   , and choose an ally within 1 zone. The chosen ally can spend
-                  a recovery, and they regain additional hit points equal to
-                  your proficiency bonus.
+                  a recovery, and they <ToolTip preset="heal" /> additional hit
+                  points equal to your proficiency bonus.
                 </span>
               }
             />
@@ -261,7 +261,11 @@ function Commander() {
               <Link className="internal-link" to="/rules/combat#momentum">
                 momentum die
               </Link>{" "}
-              set to 1 after a long rest.
+              set to 1 after a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -469,8 +473,14 @@ function Commander() {
               <Link className="internal-link" to="/combat-abilities#help">
                 help
               </Link>{" "}
-              an ally, they gain temporary hit points equal to your tier (scene
-              ends).
+              an ally, they gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your tier (scene ends).
             </p>
 
             <h2>Tier 3 Class Talents</h2>
@@ -524,8 +534,14 @@ function Commander() {
             </p>
             <p>
               When you use inspiring attack, you and all allies within 1 zone
-              gain temporary hit points equal to your proficiency bonus (scene
-              ends).
+              gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends).
             </p>
           </div>
         )}

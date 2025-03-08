@@ -6,6 +6,7 @@ import fortune from "../../assets/fortune-icon-v2.png";
 import { Link } from "react-router-dom";
 import Monster from "../../components/Monster";
 import Modifier from "../../components/Modifier";
+import ToolTip from "../../components/ToolTip";
 
 function Occultist() {
   const [isDetails, setDetails] = useState(true);
@@ -225,7 +226,7 @@ function Occultist() {
               descriptor="You curse a foe with dark magic."
               frequency="At-will"
               target="1 creature within 2 zones"
-              duration="Scene ends, target is defeated, or you use this ability again on another creature"
+              duration="Scene ends, target dies, or you use this ability again on another creature"
               effect={
                 <span>
                   Target is{" "}
@@ -348,7 +349,18 @@ function Occultist() {
                   basic: true,
                   name: "Rend",
                   keywords: "melee, weapon",
-                  target: "1 engaged creature",
+                  target: (
+                    <span>
+                      1{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#engaged"
+                      >
+                        engaged
+                      </Link>{" "}
+                      creature
+                    </span>
+                  ),
                   defense: "EVN",
                   damage: "PB physical damage",
                 },
@@ -442,7 +454,7 @@ function Occultist() {
               descriptor="As your cursed foe falls, you curse another."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You see the target of your hex become defeated"
+              trigger="You see the target of your hex die"
               effect="Use hex against a new target"
             />
 
@@ -482,8 +494,12 @@ function Occultist() {
             <h3 className="header">Burning Hex</h3>
             <p>
               The target of your hex takes necrotic, psychic, or unholy (your
-              choice) ongoing damage equal to your tier. This ongoing damage
-              only ends when the creature is no longer the target of your hex.
+              choice){" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage equal to your tier. This ongoing damage only ends when the
+              creature is no longer the target of your hex.
             </p>
 
             <h3 className="header">Defensive Sacrifice</h3>
@@ -507,9 +523,19 @@ function Occultist() {
               <b>Requirement:</b> curseblade subclass
             </p>
             <p>
-              When you use hex, you can teleport to become engaged to the
-              target. On subsequent turns as a maneuver, you can teleport to
-              become engaged to the target of your hex as long as they are
+              When you use hex, you can{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              to become{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              to the target. On subsequent turns as a maneuver, you can teleport
+              to become engaged to the target of your hex as long as they are
               within 1 zone.
             </p>
 
@@ -518,9 +544,9 @@ function Occultist() {
               <b>Requirement:</b> warlock subclass
             </p>
             <p>
-              When you cast a spell, you can take damage equal to your shaken
-              value to increase the spell’s tier by one. This damage taken can’t
-              be reduced in any way.
+              When you cast a spell, you can take damage equal to your{" "}
+              <ToolTip preset="shakenVal" /> to increase the spell’s tier by
+              one. This damage taken can’t be reduced in any way.
             </p>
 
             <h2>Tier 3 Class Talents</h2>
@@ -590,8 +616,14 @@ function Occultist() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              the target of your hex, you gain temporary hit points equal to
-              your tier (scene ends).
+              the target of your hex, you gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your tier (scene ends).
             </p>
 
             <h3 className="header">Twin Hex</h3>

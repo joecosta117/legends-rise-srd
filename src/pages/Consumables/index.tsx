@@ -3,6 +3,7 @@ import EquipmentHeader from "../../components/EquipmentHeader";
 import { useState } from "react";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Consumables() {
   const [isT1, setT1] = useState(true);
@@ -34,6 +35,40 @@ function Consumables() {
           Potions, scrolls, talismans, and other small trinkets with limited,
           one-time magical effects are all consumables.
         </p>
+        <Accordion
+          title="Buying and Selling Consumables"
+          content={
+            <div>
+              <p>
+                Most consumables are found during adventuring, but depending on
+                the GM's setting, consumables might also be for sale in larger
+                settlements. If so, you can use the following prices for
+                consumables depending on their item tier:
+              </p>
+              <ul>
+                <li>
+                  <span>
+                    <b>Tier 1:</b> 1 gold
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Tier 2:</b> 3 gold
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Tier 3:</b> 6 gold
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Tier 3 consumables contain very powerful magic and are rarely
+                found for sale.
+              </p>
+            </div>
+          }
+        />
         <div className="equipment-content__tabs">
           <div
             className="tab-items__tab"
@@ -81,12 +116,39 @@ function Consumables() {
             <Accordion
               stacked
               title="Potion of Healing"
-              content="This vial of warm red liquid soothes aches and closes wounds beyond your normal limits. When you drink this potion, you regain 4 hit points. You can only gain the benefits of this potion once per long rest."
+              content={
+                <span>
+                  This vial of warm red liquid soothes aches and closes wounds
+                  beyond your normal limits. When you drink this potion, you{" "}
+                  <ToolTip preset="heal" /> 4. You can only gain the benefits of
+                  this potion once per{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>
+                  .
+                </span>
+              }
             />
             <Accordion
               stacked
               title="Potion of Mana"
-              content="This vial of cool blue liquid restores magical essence beyond your normal limits. When you drink this potion, you regain 1 mana. You can only gain the benefits of this potion once per long rest."
+              content={
+                <span>
+                  This vial of cool blue liquid restores magical essence beyond
+                  your normal limits. When you drink this potion, you regain 1
+                  mana. You can only gain the benefits of this potion once per{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>
+                  .
+                </span>
+              }
             />
             <Accordion
               stacked
@@ -151,12 +213,39 @@ function Consumables() {
             <Accordion
               stacked
               title="Greater Potion of Healing"
-              content="This vial of warm red liquid soothes aches and closes wounds beyond your normal limits. When you drink this potion, you regain 8 hit points. You can only gain the benefits of this potion once per long rest."
+              content={
+                <span>
+                  This vial of warm red liquid soothes aches and closes wounds
+                  beyond your normal limits. When you drink this potion, you{" "}
+                  <ToolTip preset="heal" /> 8. You can only gain the benefits of
+                  this potion once per{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>
+                  .
+                </span>
+              }
             />
             <Accordion
               stacked
               title="Greater Potion of Mana"
-              content="This vial of cool blue liquid restores magical essence beyond your normal limits. When you drink this potion, you regain 2 mana. You can only gain the benefits of this potion once per long rest."
+              content={
+                <span>
+                  This vial of cool blue liquid restores magical essence beyond
+                  your normal limits. When you drink this potion, you regain 2
+                  mana. You can only gain the benefits of this potion once per{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>
+                  .
+                </span>
+              }
             />
             <Accordion
               stacked
@@ -180,7 +269,23 @@ function Consumables() {
             <Accordion
               stacked
               title="Potion of Resistance"
-              content="Each of these potions is attuned to a certain element: arcane, cold, fire, holy, lightning, mental, necrotic, toxic, or unholy. When this potion is drunk, you gain resistance to the potion’s attuned element equal to your tier (scene ends)."
+              content={
+                <div>
+                  <p>
+                    Each of these potions is attuned to a certain element:
+                    arcane, cold, fire, holy, lightning, mental, necrotic,
+                    toxic, or unholy. When this potion is drunk, you gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to the potion’s attuned element equal to your tier (scene
+                    ends).
+                  </p>
+                </div>
+              }
             />
             <Accordion
               stacked
@@ -240,12 +345,39 @@ function Consumables() {
             <Accordion
               stacked
               title="Superior Potion of Healing"
-              content="This vial of warm red liquid soothes aches and closes wounds beyond your normal limits. When you drink this potion, you regain 12 hit points. You can only gain the benefits of this potion once per long rest."
+              content={
+                <span>
+                  This vial of warm red liquid soothes aches and closes wounds
+                  beyond your normal limits. When you drink this potion, you{" "}
+                  <ToolTip preset="heal" /> 12. You can only gain the benefits
+                  of this potion once per{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>
+                  .
+                </span>
+              }
             />
             <Accordion
               stacked
               title="Superior Potion of Mana"
-              content="This vial of cool blue liquid restores magical essence beyond your normal limits. When you drink this potion, you regain 3 mana. You can only gain the benefits of this potion once per long rest."
+              content={
+                <span>
+                  This vial of cool blue liquid restores magical essence beyond
+                  your normal limits. When you drink this potion, you regain 3
+                  mana. You can only gain the benefits of this potion once per{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>
+                  .
+                </span>
+              }
             />
             <Accordion
               stacked

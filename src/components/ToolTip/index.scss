@@ -1,0 +1,40 @@
+@import "../../styles/index.scss";
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 0 !important;
+}
+
+.initial-text {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  margin-left: 0 !important;
+}
+
+.tooltip {
+  background: $black;
+  opacity: 0.9;
+  font-size: 14px;
+  color: $textwhite;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 200;
+  transform: translateX(-50%);
+  border: 1px solid $white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3)
+}
+
+// .tooltip-arrow {
+//   content: '';
+//   position: absolute;
+//   bottom: 100%; /* At the top of the tooltip */
+//   left: 50%;
+//   margin-left: -5px;
+//   border-width: 5px;
+//   border-style: solid;
+//   border-color: transparent transparent $parchment transparent;
+// }

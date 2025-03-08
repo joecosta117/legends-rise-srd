@@ -45,7 +45,10 @@ function Weapons() {
           <li>
             <span>
               <b>Melee:</b> Weapons useful at close range, and can only target
-              engaged creatures.
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              creatures.
             </span>
           </li>
           <li>
@@ -56,7 +59,11 @@ function Weapons() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              an engaged target with a short or long ranged weapon.
+              an{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              target with a short or long ranged weapon.
             </span>
           </li>
         </ul>
@@ -70,8 +77,12 @@ function Weapons() {
           </li>
           <li>
             <span>
-              <b>Range:</b> Melee weapons can only target engaged creatures.
-              Ranged weapons list a range. For these weapons, you can make a
+              <b>Range:</b> Melee weapons can only target{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              creatures. Ranged weapons list a range. For these weapons, you can
+              make a
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -106,28 +117,45 @@ function Weapons() {
             <tr>
               <td>Natural Melee</td>
               <td>2</td>
-              <td>Engaged</td>
+              <td>
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>
+              </td>
               <td>1</td>
               <td>Claw, Kick, Punch, Headbutt</td>
             </tr>
             <tr>
               <td>Standard Melee</td>
               <td>3</td>
-              <td>Engaged</td>
+              <td>
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>
+              </td>
               <td>1</td>
               <td>Battleaxe, Hammer, Flail, Scimitar, Staff, Sword</td>
             </tr>
             <tr>
               <td>Heavy Melee</td>
               <td>4</td>
-              <td>Engaged</td>
+              <td>
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>
+              </td>
               <td>2</td>
               <td>Greatsword, Spear, Maul, Greataxe</td>
             </tr>
             <tr>
               <td>Thrown Ranged</td>
               <td>2</td>
-              <td>Engaged or 1 zone</td>
+              <td>
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                or 1 zone
+              </td>
               <td>1</td>
               <td>Dagger, Handaxe, Javelin, Shuriken</td>
             </tr>
@@ -173,7 +201,16 @@ function Weapons() {
             <tr>
               <td>Axes</td>
               <td>Throwing axes, greataxe, handaxe</td>
-              <td>target takes 1 ongoing physical damage per your tier</td>
+              <td>
+                target takes 1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                physical damage per your tier
+              </td>
             </tr>
             <tr>
               <td>Bows</td>

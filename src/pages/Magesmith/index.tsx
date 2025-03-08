@@ -212,12 +212,15 @@ function Magesmith() {
 
             <h3 className="header">Arcane Upgrades</h3>
             <p>
-              You can infuse items with magical power. During a short rest, you
-              can infuse a single item in your possession with an upgrade. The
-              maximum number of upgrades you can have equals 1 plus your tier.
-              An item can have a number of upgrades up to your tier, but can’t
-              have the same upgrade multiple times. You start off knowing 4
-              upgrades and learn an additional upgrade at 5th level and 8th
+              You can infuse items with magical power. During a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can infuse a single item in your possession with an upgrade.
+              The maximum number of upgrades you can have equals 1 plus your
+              tier. An item can have a number of upgrades up to your tier, but
+              can’t have the same upgrade multiple times. You start off knowing
+              4 upgrades and learn an additional upgrade at 5th level and 8th
               level. Upgrades are listed at the end of this class. If you die,
               then any upgrades you created fade after several days.
             </p>
@@ -282,15 +285,27 @@ function Magesmith() {
                   <ul>
                     <li>
                       <span>
-                        <i>Fire:</i> The turret’s zone becomes a dangerous zone
-                        (1 arcane damage per your tier) for enemies until the
-                        start of your next turn.
+                        <i>Fire:</i> The turret’s zone becomes a{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#zone-types"
+                        >
+                          dangerous zone
+                        </Link>
+                        (1 arcane damage per your tier) only for enemies until
+                        the start of your next turn.
                       </span>
                     </li>
                     <li>
                       <span>
-                        <i>Magnify:</i> The turret’s zone becomes a difficult
-                        zone for enemies until the start of your next turn.
+                        <i>Magnify:</i> The turret’s zone becomes a{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#zone-types"
+                        >
+                          difficult zone
+                        </Link>{" "}
+                        only for enemies until the start of your next turn.
                       </span>
                     </li>
                     <li>
@@ -399,7 +414,13 @@ function Magesmith() {
                     </li>
                     <li>
                       <span>
-                        <i>Protection:</i> Target gains temporary hit points
+                        <i>Protection:</i> Target gains{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#temporary-hit-points"
+                        >
+                          temporary hit points
+                        </Link>
                         equal to your proficiency bonus.
                       </span>
                     </li>
@@ -514,8 +535,14 @@ function Magesmith() {
             <ul>
               <li>
                 <span>
-                  <i>Stalker:</i> When you use stalker mode, you can teleport up
-                  to 1 zone away and the ability gains the range keyword.
+                  <i>Stalker:</i> When you use stalker mode, you can{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  up to 1 zone away and the ability gains the range keyword.
                 </span>
               </li>
               <li>
@@ -678,7 +705,15 @@ function Magesmith() {
               frequency="At-will"
               keywords="Aura, Magical"
               duration="Scene ends"
-              effect="Your zone becomes a dangerous zone (1 arcane per your tier) for enemies"
+              effect={
+                <span>
+                  Your zone becomes a{" "}
+                  <Link className="internal-link" to="/rules/combat#zone-types">
+                    dangerous zone
+                  </Link>{" "}
+                  (1 arcane damage per your tier) only for enemies
+                </span>
+              }
             />
 
             <h2>Dimensional Upgrade</h2>
@@ -690,8 +725,11 @@ function Magesmith() {
               >
                 dimensional step
               </Link>{" "}
-              battle spell once per short rest without spending mana, even if
-              they don’t know the spell.
+              battle spell once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>{" "}
+              without spending mana, even if they don’t know the spell.
             </p>
 
             <h2>Elemental Upgrade</h2>
@@ -754,7 +792,15 @@ function Magesmith() {
               frequency="At-will"
               keywords="Aura, Magical"
               duration="Scene ends"
-              effect="Your zone becomes a difficult zone for enemies"
+              effect={
+                <span>
+                  Yoru zone becomes a{" "}
+                  <Link className="internal-link" to="/rules/combat#zone-types">
+                    difficult zone
+                  </Link>{" "}
+                  only for enemies
+                </span>
+              }
             />
 
             <h2>Keen Upgrade</h2>
@@ -766,25 +812,49 @@ function Magesmith() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              with the upgraded weapon, the target takes 1 ongoing physical
-              damage per your tier.
+              with the upgraded weapon, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per your tier.
             </p>
 
             <h2>Phase Upgrade</h2>
-            <p>While the upgraded item is equipped, the wielder has phasing.</p>
+            <p>
+              While the upgraded item is equipped, the wielder has{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                phasing
+              </Link>
+              .
+            </p>
 
             <h2>Resistance Upgrade</h2>
             <p>
               Choose one damage type except for physical. While the upgraded
-              item is equipped, the wielder gains resistance to the chosen
-              damage type equal to your tier.
+              item is equipped, the wielder gains{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to the chosen damage type equal to your tier.
             </p>
 
             <h2>Shield Upgrade</h2>
             <p>
               While the upgraded item is equipped, the wielder starts any
-              encounter with temporary hit points equal to your proficiency
-              bonus (scene ends).
+              encounter with{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>
+              temporary hit points equal to your proficiency bonus (scene ends).
             </p>
 
             <h2>Sight Upgrade</h2>

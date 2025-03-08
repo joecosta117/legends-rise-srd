@@ -3,6 +3,7 @@ import { useState } from "react";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
+import ToolTip from "../../components/ToolTip";
 
 function ThemeTalents() {
   const [isRules, setRules] = useState(true);
@@ -82,8 +83,19 @@ function ThemeTalents() {
     },
     {
       title: "Familiar",
-      content:
-        "You gain the service of a minor spirit that takes the form of a tiny creature such as an animal or construct. Your familiar’s defenses equal 8 + your proficiency bonus. You and your familiar can telepathically communicate with one another within 1 mile. The familiar dies after taking any damage, but can be resummoned after a long rest.",
+      content: (
+        <span>
+          You gain the service of a minor spirit that takes the form of a tiny
+          creature such as an animal or construct. Your familiar’s defenses
+          equal 8 + your proficiency bonus. You and your familiar can
+          telepathically communicate with one another within 1 mile. The
+          familiar dies after taking any damage, but can be resummoned after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
+        </span>
+      ),
     },
     {
       title: "Magic Specialist",
@@ -107,7 +119,11 @@ function ThemeTalents() {
       title: "Risky Ritual",
       content: (
         <span>
-          Once per long rest, you can cast a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can cast a{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
           </Link>{" "}
@@ -141,8 +157,18 @@ function ThemeTalents() {
     },
     {
       title: "Sense Magic",
-      content:
-        "You always can detect magic near you, such as in the same room, but you don’t know the precise location or nature of the magic. Once per long rest, you can heighten your senses to discern the precise location and nature of magic within the same room, or within 1 mile at tier 2, or within your realm at tier 3.",
+      content: (
+        <span>
+          You always can detect magic near you, such as in the same room, but
+          you don’t know the precise location or nature of the magic. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can heighten your senses to discern the precise location and
+          nature of magic within the same room, or within 1 mile at tier 2, or
+          within your realm at tier 3.
+        </span>
+      ),
     },
   ];
   const arcaneT2Talents = [
@@ -167,8 +193,14 @@ function ThemeTalents() {
       title: "Spell Learner",
       content: (
         <span>
-          During downtime, when you choose to train as your downtime activity,
-          you can learn a{" "}
+          During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , when you choose to train as your downtime activity, you can learn a{" "}
           <Link className="internal-link" to="/battle-spells">
             magic tradition
           </Link>{" "}
@@ -180,7 +212,11 @@ function ThemeTalents() {
       title: "Quick Ritual",
       content: (
         <span>
-          Once per long rest, you can cast a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can cast a{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
           </Link>{" "}
@@ -208,9 +244,15 @@ function ThemeTalents() {
       content: (
         <span>
           You have acquired enough of a reputation to attract apprentices that
-          are eager to learn from you. During downtime, you gain an extra
-          downtime activity that represents the assistance of your apprentices.
-          You gain the knack “Master Mage” towards{" "}
+          are eager to learn from you. During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , you gain an extra downtime activity that represents the assistance
+          of your apprentices. You gain the knack “Master Mage” towards{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -270,7 +312,11 @@ function ThemeTalents() {
       title: "Flashback",
       content: (
         <span>
-          You’re always prepared. Once per long rest, when you make a{" "}
+          You’re always prepared. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , when you make a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -286,8 +332,16 @@ function ThemeTalents() {
     },
     {
       title: "Right Tool for the Job",
-      content:
-        "Once per long rest, you can declare to have any non-magical item of your tier on your person.",
+      content: (
+        <span>
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can declare to have any non-magical item of your tier on your
+          person.
+        </span>
+      ),
     },
     {
       title: "Wide Network",
@@ -307,8 +361,15 @@ function ThemeTalents() {
   const cunningT2Talents = [
     {
       title: "Always Hidden",
-      content:
-        "You can start any non-combat scene hidden as long as it's narratively possible.",
+      content: (
+        <span>
+          You can start any non-combat scene{" "}
+          <Link className="internal-link" to="/rules/combat#stealth">
+            hidden
+          </Link>{" "}
+          as long as it's narratively possible
+        </span>
+      ),
     },
     {
       title: "Gambler",
@@ -338,9 +399,15 @@ function ThemeTalents() {
       content: (
         <span>
           You have started your own guild of thieves, assassins, spies, or other
-          underhand followers. During downtime, you gain an extra downtime
-          activity that represents the assistance of your guild. You gain the
-          knack 'Guildmaster' towards{" "}
+          underhand followers. During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , you gain an extra downtime activity that represents the assistance
+          of your guild. You gain the knack 'Guildmaster' towards{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -387,15 +454,28 @@ function ThemeTalents() {
     },
     {
       title: "Augury",
-      content:
-        "Once per long rest, you can ask a higher power on the result of a proposed course of action. The entity replies in a one word answer (good, bad, or unknown) to the best of its knowledge.",
+      content: (
+        <span>
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can ask a higher power on the result of a proposed course of
+          action. The entity replies in a one word answer (good, bad, or
+          unknown) to the best of its knowledge.
+        </span>
+      ),
     },
     {
       title: "Desperate Prayer",
       content: (
         <span>
-          Once per long rest, you can quickly ask the higher powers for a
-          creature to gain <Modifier type="f" count="1" /> to a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can quickly ask the higher powers for a creature to gain{" "}
+          <Modifier type="f" count="1" /> to a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -405,18 +485,51 @@ function ThemeTalents() {
     },
     {
       title: "Divine Awareness",
-      content:
-        "Within the same room or nearby area, you can sense the presence of undead and creatures from the outer realms, such as angels, fiends, or faeries. Once per long rest, you can heighten your senses to discern the precise location and nature of the creatures within the same room, or within 1 mile at tier 2, or within your realm at tier 3.",
+      content: (
+        <span>
+          Within the same room or nearby area, you can sense the presence of
+          undead and creatures from the outer realms, such as angels, fiends, or
+          faeries. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can heighten your senses to discern the precise location and
+          nature of the creatures within the same room, or within 1 mile at tier
+          2, or within your realm at tier 3.
+        </span>
+      ),
     },
     {
       title: "Downtime Guidance",
-      content:
-        "During downtime, you can choose to help one ally without spending your downtime activity.",
+      content: (
+        <span>
+          During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , you can choose to help one ally wihtout spending using a downtime
+          activity.
+        </span>
+      ),
     },
     {
       title: "Faithful Servitor",
-      content:
-        "You gain the service of a minor, tiny angelic or fiendish spirit depending on your deity. Your deity’s servitor’s defenses equal 8 + your proficiency bonus. You and the servitor can telepathically communicate with one another within 1 mile. The servitor dies after taking any damage, but can be resummoned after a long rest.",
+      content: (
+        <span>
+          You gain the service of a minor, tiny angelic or fiendish spirit
+          depending on your deity. Your deity’s servitor’s defenses equal 8 +
+          your proficiency bonus. You and the servitor can telepathically
+          communicate with one another within 1 mile. The servitor dies after
+          taking any damage, but can be resummoned after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
+        </span>
+      ),
     },
   ];
   const divineT2Talents = [
@@ -434,8 +547,14 @@ function ThemeTalents() {
       title: "Spell Learner",
       content: (
         <span>
-          During downtime, when you choose to train as your downtime activity,
-          you can learn a{" "}
+          During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , when you choose to train as your downtime activity, you can learn a{" "}
           <Link className="internal-link" to="/battle-spells">
             magic tradition
           </Link>{" "}
@@ -450,9 +569,15 @@ function ThemeTalents() {
       content: (
         <span>
           You have gathered your own following of faithful that believe your
-          teachings and edicts on faith. During downtime, you gain an extra
-          downtime activity that represents the assistance of your flock. You
-          gain the knack 'Archpriest' towards{" "}
+          teachings and edicts on faith. During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , you gain an extra downtime activity that represents the assistance
+          of your flock. You gain the knack 'Archpriest' towards{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -464,8 +589,11 @@ function ThemeTalents() {
       title: "Minor Miracle",
       content: (
         <span>
-          You can channel your faith to manifest a minor miracle. Once per long
-          rest, when you see a creature get a failure or partial success on a{" "}
+          You can channel your faith to manifest a minor miracle. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , when you see a creature get a failure or partial success on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -492,8 +620,11 @@ function ThemeTalents() {
       title: "Adrenaline Rush",
       content: (
         <span>
-          Once per long rest, you can gain <Modifier type="f" count="1" /> to
-          all{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can gain <Modifier type="f" count="1" /> to all{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -506,8 +637,14 @@ function ThemeTalents() {
       title: "Mercenary",
       content: (
         <span>
-          If you use your martial skills to earn gold as a downtime activity,
-          you treat the result of your{" "}
+          If you use your martial skills to earn gold as a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>{" "}
+          activity, you treat the result of your{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
@@ -536,8 +673,14 @@ function ThemeTalents() {
       title: "Risk Taker",
       content: (
         <span>
-          You gain resistance equal to your tier to damage equal taken as a
-          consequence from{" "}
+          You gain{" "}
+          <Link
+            className="internal-link"
+            to="/rules/combat#resistances-and-weaknesses"
+          >
+            resistance
+          </Link>{" "}
+          equal to your tier to damage equal taken as a consequence from{" "}
           <Link className="internal-link" to="/rules/skills#tempt-fate">
             tempt fate
           </Link>{" "}
@@ -567,7 +710,11 @@ function ThemeTalents() {
       title: "Martial Persistence",
       content: (
         <span>
-          Once per long rest, when you get a failure on a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , when you get a failure on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -579,8 +726,14 @@ function ThemeTalents() {
       title: "Technique Learner",
       content: (
         <span>
-          During downtime, when you choose to train as your downtime activity,
-          you can learn a{" "}
+          During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , when you choose to train as your downtime activity, you can learn a{" "}
           <Link className="internal-link" to="/fighting-style">
             fighting style
           </Link>{" "}
@@ -610,8 +763,14 @@ function ThemeTalents() {
       content: (
         <span>
           You have started your own mercenary company of soldiers. During
-          downtime, you gain an extra downtime activity that represents the
-          assistance of your soldiers. You gain the knack 'General' towards{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , you gain an extra downtime activity that represents the assistance
+          of your soldiers. You gain the knack 'General' towards{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -634,7 +793,11 @@ function ThemeTalents() {
             skill roll
           </Link>
           , all allies gain a stacking <Modifier type="f" count="1" /> to their
-          next skill roll that lasts until after a long rest.
+          next skill roll that lasts until after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
         </span>
       ),
     },
@@ -656,8 +819,21 @@ function ThemeTalents() {
   const natureT1Talents = [
     {
       title: "Apothecary",
-      content:
-        "You can craft natural poultices and other herbal remedies that enhance one’s physical capabilities. After a long rest, you can create a number of poultices equal to your proficiency bonus, but their effects fade after the next long rest. When a creature uses one of your poultices, they gain one of the following effects of your choice: Swim speed 1 for a scene, Climb speed 1 for a scene, Night vision for a scene, Cure a non-magical disease.",
+      content: (
+        <span>
+          You can craft natural poultices and other herbal remedies that enhance
+          one’s physical capabilities. After a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can create a number of poultices equal to your proficiency
+          bonus, but their effects fade after the next long rest. When a
+          creature uses one of your poultices, they gain one of the following
+          effects of your choice: swim speed 1 for a scene, climb speed 1 for a
+          scene, <ToolTip preset="night" /> for a scene, cure a non-magical
+          disease.
+        </span>
+      ),
     },
     {
       title: "Capricious Deal",
@@ -675,16 +851,32 @@ function ThemeTalents() {
     },
     {
       title: "Consult Spirits",
-      content:
-        "You reach out to the ancient spirits that inhabit the land, plants, and elements. Once per long rest, you can speak to ancient spirits for a scene. The spirits do their best to answer your questions, but their knowledge is limited to the nearby area.",
+      content: (
+        <span>
+          You reach out to the ancient spirits that inhabit the land, plants,
+          and elements. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          , you can speak to ancient spirits for a scene. The spirits do their
+          best to answer your questions, but their knowledge is limited to the
+          nearby area.
+        </span>
+      ),
     },
     {
       title: "Extreme Survivalist",
       content: (
         <span>
           You know how to keep your allies safe from elemental hazards usually
-          found in the wilds. You and your companions gain resistance equal to
-          your tier to damage taken from environmental hazards and gain{" "}
+          found in the wilds. You and your companions gain{" "}
+          <Link
+            className="internal-link"
+            to="/rules/combat#resistances-and-weaknesses"
+          >
+            resistance
+          </Link>{" "}
+          equal to your tier to damage taken from environmental hazards and gain{" "}
           <Modifier type="f" count="1" /> on{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
@@ -697,20 +889,48 @@ function ThemeTalents() {
     },
     {
       title: "Nature Companion",
-      content:
-        "You befriend an animal, small elemental spirit, or small faerie. Your nature companion’s defenses equal 8 + your proficiency bonus. You and your companion can understand each other well enough that you can give it basic commands, but the nature companion won’t fight for you. Your nature companion dies after taking any damage, but you can befriend a new companion after a long rest.",
+      content: (
+        <span>
+          "You befriend an animal, small elemental spirit, or small faerie. Your
+          nature companion’s defenses equal 8 + your proficiency bonus. You and
+          your companion can understand each other well enough that you can give
+          it basic commands, but the nature companion won’t fight for you. Your
+          nature companion dies after taking any damage, but you can befriend a
+          new companion after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
+        </span>
+      ),
     },
     {
       title: "Primal Talents",
-      content:
-        "You are attuned to the natural world. You gain one of the following: climb speed equal to your land speed, night vision, or swim speed equal to your land speed. You can choose this theme talent multiple times, choosing a different option each time.",
+      content: (
+        <span>
+          You are attuned to the natural world. You gain one of the following:
+          climb speed equal to your land speed, <ToolTip preset="night" />, or
+          swim speed equal to your land speed. You can choose this theme talent
+          multiple times, choosing a different option each time.
+        </span>
+      ),
     },
   ];
   const natureT2Talents = [
     {
       title: "Shapeshifter",
-      content:
-        "You can transform into a tiny or small creature such as a spider, robin, cat, or fish. Your defenses all equal 10, and if you take any damage, you revert back to your normal form and can’t transform again until after a long rest.",
+      content: (
+        <span>
+          You can transform into a tiny or small creature such as a spider,
+          robin, cat, or fish. Your defenses all equal 10, and if you take any
+          damage, you revert back to your normal form and can’t transform again
+          until after a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            long rest
+          </Link>
+          .
+        </span>
+      ),
     },
     {
       title: "Speak with Nature",
@@ -720,8 +940,14 @@ function ThemeTalents() {
       title: "Spell Learner",
       content: (
         <span>
-          During downtime, when you choose to train as your downtime activity,
-          you can learn a{" "}
+          During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , when you choose to train as your downtime activity, you can learn a{" "}
           <Link className="internal-link" to="/battle-spells">
             magic tradition
           </Link>{" "}
@@ -736,9 +962,15 @@ function ThemeTalents() {
       content: (
         <span>
           You have gathered like minded followers of nature around you to form
-          your own grove much like a priest has a temple. During downtime, you
-          gain an extra downtime activity that represents the assistance of your
-          grove. You gain the knack “Grove Leader" towards{" "}
+          your own grove much like a priest has a temple. During{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>
+          , you gain an extra downtime activity that represents the assistance
+          of your grove. You gain the knack “Grove Leader" towards{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}

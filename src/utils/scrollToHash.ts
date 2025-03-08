@@ -10,7 +10,7 @@ const scrollToHash = () => {
       content &&
         content.scrollIntoView({
           behavior: "smooth",
-          block: "center",
+          block: "start",
         });
     }
   }, []);

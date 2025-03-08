@@ -208,9 +208,18 @@ function Swordmage() {
             <p>
               You have attuned yourself to a specific weapon that typically
               serves as your implement. Choose one weapon to be your arcane
-              weapon that you can change during a short rest. As a maneuver, you
-              can teleport your arcane weapon to your hand if it is within 1
-              mile of you.
+              weapon that you can change during a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              . As a maneuver, you can{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              your arcane weapon to your hand if it is within 1 mile of you.
             </p>
 
             <h3 className="header">Enspell Weapon</h3>
@@ -271,9 +280,16 @@ function Swordmage() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Dimensional Enspell</h3>
             <p>
-              You can siphon some of your spell energy to teleport across the
+              You can siphon some of your spell energy to travel across the
               battlefield. When you enspell weapon with a tier 1 or higher
-              battle spell, you can teleport up to 1 zone.
+              battle spell, you can{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              up to 1 zone.
             </p>
           </div>
         )}
@@ -345,8 +361,18 @@ function Swordmage() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     Strike
                   </Link>{" "}
-                  the triggering creature, and you can teleport to become
-                  engaged with them before your strike
+                  the triggering creature, and you can{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  to become{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  with them before your strike
                 </span>
               }
             />
@@ -462,8 +488,12 @@ function Swordmage() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              empowered by elemental enspell, the target takes 1 ongoing damage
-              per your tier of the damage type chosen for elemental enspell.
+              empowered by elemental enspell, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage per your tier of the damage type chosen for elemental
+              enspell.
             </p>
 
             <h3 className="header">Greater Interrupt</h3>

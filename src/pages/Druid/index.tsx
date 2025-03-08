@@ -5,6 +5,7 @@ import ClassHeader from "../../components/ClassHeader";
 import fortune from "../../assets/fortune-icon-v2.png";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 import Modifier from "../../components/Modifier";
 
 function Druid() {
@@ -223,7 +224,14 @@ function Druid() {
               frequency="At-will"
               target="1 zone within 2 zones"
               duration="Focus for the scene"
-              effect="The targeted zone becomes a difficult zone"
+              effect={
+                <span>
+                  Targeted zone becomes a{" "}
+                  <Link className="internal-link" to="/rules/combat#zone-types">
+                    difficult zone
+                  </Link>
+                </span>
+              }
             />
 
             <h3 className="header">Subclass</h3>
@@ -247,9 +255,22 @@ function Druid() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Nature’s Ally</h3>
             <p>
-              You and allies in your zone ignore the movement penalties from
-              difficult zones and have resistance equal to your tier to damage
-              from dangerous zones.
+              You and allies in your zone ignore the movement penalties from{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zones
+              </Link>{" "}
+              and have{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              equal to your tier to damage from{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zones
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -265,7 +286,11 @@ function Druid() {
               Attune to an elemental realm. You gain a utility benefit depending
               on the chosen realm, and when you deal damage of the realm’s
               associated damage type, you deal additional damage equal to your
-              tier. You can change your realm attunement after a long rest.
+              tier. You can change your realm attunement after a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              .
             </p>
             <h4>Elemenalist Table</h4>
             <table>
@@ -279,7 +304,15 @@ function Druid() {
               <tbody>
                 <tr>
                   <td>Air</td>
-                  <td>Resistance to lightning damage</td>
+                  <td>
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to lightning damage equal to your tier
+                  </td>
                   <td>lightning</td>
                 </tr>
                 <tr>
@@ -289,12 +322,28 @@ function Druid() {
                 </tr>
                 <tr>
                   <td>Fire</td>
-                  <td>Resistance to fire damage</td>
+                  <td>
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to fire damage equal to your tier
+                  </td>
                   <td>fire</td>
                 </tr>
                 <tr>
                   <td>Ice</td>
-                  <td>Resistance to cold damage</td>
+                  <td>
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to cold damage equal to your tier
+                  </td>
                   <td>cold</td>
                 </tr>
                 <tr>
@@ -332,8 +381,14 @@ function Druid() {
                       <span>
                         <i>Bear:</i> When you first use this ability and when
                         you focus on it, all creatures of your choice within the
-                        targeted zone gain temporary hit points equal to your
-                        tier (scene ends).
+                        targeted zone gain{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#temporary-hit-points"
+                        >
+                          temporary hit points
+                        </Link>{" "}
+                        equal to your tier (scene ends).
                       </span>
                     </li>
                     <li>
@@ -422,8 +477,15 @@ function Druid() {
                     </li>
                     <li>
                       <span>
-                        You gain temporary hit points equal to half your shaken
-                        value while in this form.
+                        You gain{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#temporary-hit-points"
+                        >
+                          temporary hit points
+                        </Link>{" "}
+                        equal to half your <ToolTip preset="shakenVal" /> while
+                        in this form.
                       </span>
                     </li>
                     <li>
@@ -443,9 +505,15 @@ function Druid() {
                     </li>
                     <li>
                       <span>
-                        Once you are defeated, or you end the magic as a free
-                        action on your turn, you revert back to your normal form
-                        and the magic ends.
+                        Once you are{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#dying"
+                        >
+                          defeated
+                        </Link>
+                        , or you end the magic as a free action on your turn,
+                        you revert back to your normal form and the magic ends.
                       </span>
                     </li>
                   </ul>
@@ -467,9 +535,12 @@ function Druid() {
             <h3 className="header">Dangerous Terrain</h3>
             <p>
               When you use shape terrain, you can choose for the targeted zone
-              to instead become a dangerous zone (damage equal to your tier).
-              Choose the damage type from cold, fire, lightning, physical, or
-              toxic.
+              to instead become a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zone
+              </Link>{" "}
+              (damage equal to your tier). Choose the damage type from cold,
+              fire, lightning, physical, or toxic.
             </p>
 
             <h3 className="header">Elemental Spell</h3>
@@ -548,8 +619,11 @@ function Druid() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              with <Modifier type="mf" count="1" /> a creature not engaged with
-              you, but still in your zone.{" "}
+              with <Modifier type="mf" count="1" /> a creature not{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              with you, but still in your zone.{" "}
             </p>
 
             <h3 className="header">Dual Attunement</h3>
@@ -570,7 +644,18 @@ function Druid() {
               frequency="At-will"
               keywords="Magical, Range"
               trigger="You see a creature within 1 zone take cold, fire, lightning, or toxic damage"
-              effect="The creature gains resistance only to the triggering damage."
+              effect={
+                <span>
+                  The creature gains{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  only to the triggering damage equal to your proficiency bonus
+                </span>
+              }
             />
 
             <h3 className="header">Spirit’s Aid</h3>
@@ -592,8 +677,14 @@ function Druid() {
                   <ul>
                     <li>
                       <span>
-                        <i>Bear:</i> Creature gains resistance equal to your
-                        tier only against the triggering damage.
+                        <i>Bear:</i> Creature gains{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#resistances-and-weaknesses"
+                        >
+                          resistance
+                        </Link>{" "}
+                        equal to your tier only against the triggering damage.
                       </span>
                     </li>
                     <li>
@@ -642,8 +733,22 @@ function Druid() {
 
             <h3 className="header">Nature's Respite</h3>
             <p>
-              You and allies both ignore difficult zones and have resistance to
-              dangerous zones created by you.
+              You and allies both ignore{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zones
+              </Link>{" "}
+              and have{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zones
+              </Link>{" "}
+              created by you.
             </p>
 
             <h3 className="header">Perfect Transformation</h3>
@@ -653,7 +758,13 @@ function Druid() {
             <p>
               While you are in primal transformation, you can cast spells, and
               as a maneuver, you can spend mana equal to your tier to gain
-              temporary hit points equal to your shaken value.
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your <ToolTip preset="shakenVal" />.
             </p>
 
             <h3 className="header">Spirit Shift</h3>

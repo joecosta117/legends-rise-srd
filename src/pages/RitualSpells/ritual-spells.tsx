@@ -1,6 +1,7 @@
 import AbilityCard from "../../components/AbilityCard";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 export const ritualSpells = [
   [
@@ -28,7 +29,11 @@ export const ritualSpells = [
             </span>
           }
           critical="Same as success, and the sensors see through invisibility"
-          success="Sensors have night vision"
+          success={
+            <span>
+              Sensors have <ToolTip preset="night" />
+            </span>
+          }
           partial="Sensors can see in normal light"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
@@ -138,9 +143,12 @@ export const ritualSpells = [
           keywords="Magical, Melee"
           cast="10 minutes"
           target="1 creature per your tier you can touch"
-          effect="The steed appears before you and can take the shape of whichever you choose such as a horse, camel, or giant lizard. The steed’s defenses equal your own, and it has 1 hit point."
           critical="Target gains night vision for a full day"
-          success="Target gains night vision for 8 hours"
+          success={
+            <span>
+              Target gains <ToolTip preset="night" /> for 8 hours
+            </span>
+          }
           partial="Target gains night vision for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
@@ -336,8 +344,16 @@ export const ritualSpells = [
               through solid barriers.
             </span>
           }
-          critical="Eye has blind vision"
-          success="Eye has night vision"
+          critical={
+            <span>
+              Eye has <ToolTip preset="blind" />
+            </span>
+          }
+          success={
+            <span>
+              Eye has <ToolTip preset="night" />
+            </span>
+          }
           partial="Eye has normal vision"
           failure="Spell fails, and you can't attempt this spell again until after a long rest"
         />
@@ -443,6 +459,38 @@ export const ritualSpells = [
       ),
     },
     {
+      title: "Dimensional Travel",
+      actType: "Ritual",
+      spell: (
+        <AbilityCard
+          accordion
+          descriptor="As you all gather around, you teleport everyone across the world."
+          frequency="Spell 3 (Ritual)"
+          keywords="Magical"
+          cast="10 minutes"
+          requirement="A small token from the target realm such as a rock from the earth realm"
+          target="Any location within your realm"
+          effect={
+            <span>
+              You{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              a number of willing creatures next to you, possibly including
+              yourself, equal to your proficiency bonus.
+            </span>
+          }
+          critical="Teleportation works as intended"
+          success="Teleport to a location 1d12 miles away from the intended target"
+          partial="Teleport to a location 2d12+6 miles away from the intended target"
+          failure="Teleport to a random location within your realm, and you can't attempt this spell again until after a long rest"
+        />
+      ),
+    },
+    {
       title: "Realm Shift",
       actType: "Ritual",
       spell: (
@@ -454,7 +502,19 @@ export const ritualSpells = [
           cast="10 minutes"
           requirement="A small token from the target realm such as a rock from the earth realm"
           target="Any location within another realm"
-          effect="You teleport a number of willing creatures next to you, possibly including yourself, equal to your proficiency bonus."
+          effect={
+            <span>
+              You{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              a number of willing creatures next to you, possibly including
+              yourself, equal to your proficiency bonus.
+            </span>
+          }
           critical="Teleportation works as intended"
           success="Teleport to a location 1d12 miles away from the intended target"
           partial="Teleport to a location 2d12+6 miles away from the intended target"
@@ -490,31 +550,15 @@ export const ritualSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              until after a long rest.
+              until after a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              .
             </span>
           }
           partial="Same as a success, but the target is hindered for a week"
           failure="Spell fails, you can't attempt this spell again until after a long rest, and you take a growing +1 misfortune on this spell to resurrect the same target again."
-        />
-      ),
-    },
-    {
-      title: "Teleport",
-      actType: "Ritual",
-      spell: (
-        <AbilityCard
-          accordion
-          descriptor="As you all gather around, you teleport everyone across the world."
-          frequency="Spell 3 (Ritual)"
-          keywords="Magical"
-          cast="10 minutes"
-          requirement="A small token from the target realm such as a rock from the earth realm"
-          target="Any location within your realm"
-          effect="You teleport a number of willing creatures next to you, possibly including yourself, equal to your proficiency bonus."
-          critical="Teleportation works as intended"
-          success="Teleport to a location 1d12 miles away from the intended target"
-          partial="Teleport to a location 2d12+6 miles away from the intended target"
-          failure="Teleport to a random location within your realm, and you can't attempt this spell again until after a long rest"
         />
       ),
     },

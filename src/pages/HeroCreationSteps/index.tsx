@@ -336,16 +336,10 @@ function HeroCreationSteps() {
           weapons.
         </p>
         <div className="two-buttons">
-          <button
-            className="link-button"
-            onClick={() => handleLink("equipment/armor")}
-          >
+          <button className="link-button" onClick={() => handleLink("armor")}>
             ARMOR LIST
           </button>
-          <button
-            className="link-button"
-            onClick={() => handleLink("equipment/weapons")}
-          >
+          <button className="link-button" onClick={() => handleLink("weapons")}>
             WEAPONS LIST
           </button>
         </div>

@@ -5,6 +5,7 @@ import Dropdown from "../../components/Dropdown";
 import Accordion from "../../components/Accordion";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function HeroicArchetypes() {
   const [selectedArchetype, setSelectedArchetype] = useState("");
@@ -276,8 +277,11 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  When you start an encounter, you are hidden if narratively
-                  appropriate
+                  When you start an encounter, you are{" "}
+                  <Link className="internal-link" to="/rules/combat#stealth">
+                    hidden
+                  </Link>{" "}
+                  if narratively appropriate
                 </span>
               </li>
             </ul>
@@ -295,7 +299,13 @@ function HeroicArchetypes() {
                     Strike
                   </Link>
                   , and you deal additional damage equal to your proficiency
-                  bonus. On a success or higher, the target also takes 1 ongoing
+                  bonus. On a success or higher, the target also takes 1{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#ongoing-damage"
+                  >
+                    ongoing
+                  </Link>
                   physical damage per your tier.
                 </span>
               }
@@ -303,8 +313,11 @@ function HeroicArchetypes() {
             <h4 className="header">Dread Lurker (7th-Level Feature)</h4>
             <p>
               You have mastered fighting when unseen. The bonus to your attack
-              rolls from being hidden increases to{" "}
-              <Modifier type="f" count="2" />.
+              rolls from being{" "}
+              <Link className="internal-link" to="/rules/combat#stealth">
+                hidden
+              </Link>{" "}
+              increases to <Modifier type="f" count="2" />.
             </p>
           </div>
         )}
@@ -376,8 +389,10 @@ function HeroicArchetypes() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
                   </Link>{" "}
-                  with a ranged weapon, you ignore penalties from cover or
-                  concealment
+                  with a ranged weapon, you ignore penalties from{" "}
+                  <Link className="internal-link" to="/rules/combat#stealth">
+                    cover or concealment
+                  </Link>
                 </span>
               </li>
             </ul>
@@ -503,7 +518,18 @@ function HeroicArchetypes() {
                   </Link>
                 </span>
               }
-              critical="Same as a success, and 1 ongoing physical damage per your tier"
+              critical={
+                <span>
+                  Same as a success, and 1{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#ongoing-damage"
+                  >
+                    ongoing
+                  </Link>{" "}
+                  physical damage per your tier
+                </span>
+              }
             />
             <h4 className="header">Brawling Technique (7th-Level Feature)</h4>
             <p>
@@ -642,8 +668,15 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  When you or an ally spends a recovery during a short rest,
-                  they regain additional HP equal to your proficiency bonus
+                  When you or an ally spends a recovery during a{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    short rest
+                  </Link>
+                  , they <ToolTip preset="heal" /> additional hit points equal
+                  to your proficiency bonus
                 </span>
               </li>
             </ul>
@@ -651,16 +684,19 @@ function HeroicArchetypes() {
             <p>
               You have learned to create herbal salves that can stem bleeding
               and provide relief in battle. You can create a number of herbal
-              remedies during a short rest equal to your tier, and the remedies'
-              effectiveness fades after the next rest. A creature with the
-              herbal remedy can use a maneuver to apply the salve to gain the
-              following benefits:
+              remedies during a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>{" "}
+              equal to your tier, and the remedies' effectiveness fades after
+              the next rest. A creature with the herbal remedy can use a
+              maneuver to apply the salve to gain the following benefits:
             </p>
             <ul>
               <li>
                 <span>
-                  Spend a recovery and regain additional hit points equal to
-                  your proficiency bonus
+                  Spend a recovery and <ToolTip preset="heal" /> additional hit
+                  points equal to your proficiency bonus
                 </span>
               </li>
               <li>
@@ -676,8 +712,15 @@ function HeroicArchetypes() {
             <h4 className="header">Greater Remedies (7th-Level Feature)</h4>
             <p>
               When a creature regains hit points from your herbal remedies, they
-              can remove a wound. A creature can only remove a wound this way
-              once per long rest.
+              can remove a{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                wound
+              </Link>
+              . A creature can only remove a wound this way once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -735,10 +778,16 @@ function HeroicArchetypes() {
             <h4 className="header">Frozen Soul (5th-Level Feature)</h4>
             <p>
               Your cold magic protects you from the harshness of winter. When
-              you deal damage, you ignore a creature's resistance to cold
-              damage. You gain resistance to cold damage equal to your tier. If
-              you already have this resistance, use your proficiency bonus
-              instead.
+              you deal damage, you ignore a creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to cold damage. You gain resistance to cold damage equal to your
+              tier. If you already have this resistance, use your proficiency
+              bonus instead.
             </p>
 
             <h4 className="header">Winter’s Grasp (7th-Level Feature)</h4>
@@ -784,10 +833,16 @@ function HeroicArchetypes() {
             <h4 className="header">Infernal Heart (5th-Level Feature)</h4>
             <p>
               Your heart is as dark as the fiends whose power you channel. When
-              you deal damage, you ignore a creature's resistance to unholy
-              damage. You gain resistance to unholy damage equal to your tier.
-              If you already have this resistance, use your proficiency bonus
-              instead.
+              you deal damage, you ignore a creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to unholy damage. You gain resistance to unholy damage equal to
+              your tier. If you already have this resistance, use your
+              proficiency bonus instead.
             </p>
 
             <h4 className="header">
@@ -795,7 +850,7 @@ function HeroicArchetypes() {
             </h4>
             <p>
               Your physical appearance begins to match that of the demons you
-              channel. You gain a fly speed of 1 and night vision.
+              channel. You gain a fly speed of 1 and <ToolTip preset="night" />.
             </p>
           </div>
         )}
@@ -832,9 +887,15 @@ function HeroicArchetypes() {
               <li>
                 <span>
                   Choose cold, fire, lightning, or toxic as your draconic
-                  energy. You gain resistance to the chosen damage equal to your
-                  tier. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  energy. You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to the chosen damage equal to your tier. If you already have
+                  this resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -850,15 +911,31 @@ function HeroicArchetypes() {
               target="1d4+1 enemies within your zone and an adjacent zone"
               defense="EVN"
               damage="3 damage per tier of the damage type chosen by draconic power"
-              critical="1 ongoing damage per your tier of the damage type chosen by draconic power"
+              critical={
+                <span>
+                  1{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#ongoing-damage"
+                  >
+                    ongoing
+                  </Link>{" "}
+                  damage per your tier of the damage type chosen by draconic
+                  power
+                </span>
+              }
             />
 
             <h4 className="header">Greater Dragon Power (7th-Level Feature)</h4>
             <p>
               You grow dragon wings that give you a fly speed of 1. Also, after
               you use dragon breath weapon, you regain a use of the ability when
-              you become shaken. You can only gain a second use of this ability
-              once per short rest.
+              you become <ToolTip preset="shaken" />. You can only gain a second
+              use of this ability once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -937,7 +1014,14 @@ function HeroicArchetypes() {
             <h4 className="header">Fortified Titan (7th-Level Feature)</h4>
             <p>
               Your armor fortifies your body and mind. While wearing heavy
-              armor, you have resistance to all damage equal to your tier.
+              armor, you have{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to all damage equal to your tier.
             </p>
           </div>
         )}
@@ -1047,7 +1131,11 @@ function HeroicArchetypes() {
                 strike
               </Link>{" "}
               from each weapon in your hands on the same turn, the target takes
-              1 ongoing physical damage per your tier.
+              1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per your tier.
             </p>
           </div>
         )}
@@ -1159,10 +1247,16 @@ function HeroicArchetypes() {
             <h4 className="header">Potent Enchantments (5th-Level Feature)</h4>
             <p>
               Your heart is as dark as the fiends whose power you channel. When
-              you deal damage, you ignore a creature's resistance to psychic
-              damage. You gain resistance to psychic damage equal to your tier.
-              If you already have this resistance, use your proficiency bonus
-              instead.
+              you deal damage, you ignore a creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to psychic damage. You gain resistance to psychic damage equal to
+              your tier. If you already have this resistance, use your
+              proficiency bonus instead.
             </p>
 
             <h4 className="header">Master Manipulator (7th-Level Feature)</h4>
@@ -1256,8 +1350,12 @@ function HeroicArchetypes() {
 
             <h4 className="header">Astral Manipulations (5th-Level Feature)</h4>
             <p>
-              You take half damage from crashing, and when you make a creature
-              take crash damage, the damage is doubled.
+              You take half damage from{" "}
+              <Link className="internal-link" to="/rules/adventuring#crashing">
+                crashing
+              </Link>
+              , and when you make a creature take crash damage, the damage is
+              doubled.
             </p>
 
             <h4 className="header">Force Magic (7th-Level Feature)</h4>
@@ -1301,8 +1399,14 @@ function HeroicArchetypes() {
             <h4 className="header">Aquatic Soul (5th-Level Feature)</h4>
             <p>
               You gain the protection of the oceans. You can breath underwater,
-              gain a swim speed equal to your land speed, and gain resistance to
-              fire damage equal to your tier. If you already have this
+              gain a swim speed equal to your land speed, and gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to fire damage equal to your tier. If you already have this
               resistance, use your proficiency bonus instead.
             </p>
 
@@ -1390,16 +1494,30 @@ function HeroicArchetypes() {
 
             <h4 className="header">Long Jumper (5th-Level Feature)</h4>
             <p>
-              When you teleport, the range doubles (minimum of 1 zone), and you
-              can bring along a number of willing creatures with you equal to
-              your tier if you can’t normally.
+              When you{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>
+              , the range doubles (minimum of 1 zone), and you can bring along a
+              number of willing creatures with you equal to your tier if you
+              can’t normally.
             </p>
 
             <h4 className="header">Dimensional Jaunt (7th-Level Feature)</h4>
             <p>
               You are constantly teleporting across the battlefield. When you
               cast a battle spell of tier 1 or higher, choose a willing creature
-              within your zone to teleport up to 1 zone.
+              within your zone to{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              up to 1 zone.
             </p>
           </div>
         )}
@@ -1473,7 +1591,18 @@ function HeroicArchetypes() {
                   (scene ends)
                 </span>
               }
-              critical="Same as a success, and takes 1 ongoing physical damage per your tier while blinded"
+              critical={
+                <span>
+                  Same as a success, and takes 1{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#ongoing-damage"
+                  >
+                    ongoing
+                  </Link>{" "}
+                  physical damage per your tier while blinded
+                </span>
+              }
             />
             <h4 className="header">Vicious Hindrances (7th-Level Feature)</h4>
             <p>
@@ -1507,9 +1636,9 @@ function HeroicArchetypes() {
 
             <h4 className="header">Restorative Power (5th-Level Feature)</h4>
             <p>
-              When you use a magical ability to heal a creature, the healing
-              amount increases by the spell’s tier or your tier if the ability
-              isn’t a spell. The creature can also make an{" "}
+              When you use a magical ability to <ToolTip preset="heal" /> a
+              creature, the healing amount increases by the spell’s tier or your
+              tier if the ability isn’t a spell. The creature can also make an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
@@ -1519,8 +1648,16 @@ function HeroicArchetypes() {
             <h4 className="header">Aura of Preservation (7th-Level Feature)</h4>
             <p>
               You radiate life boosting energy to fend off death. While you
-              aren’t defeated, any creature of your choice within your zone
-              regains 1 hit point if they start their turn dying.
+              aren’t{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                defeated
+              </Link>
+              , any creature of your choice within your zone{" "}
+              <ToolTip preset="heals" /> 1 if they start their turn{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                dying
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -1628,9 +1765,15 @@ function HeroicArchetypes() {
             <h4 className="header">Death’s Presence (5th-Level Feature)</h4>
             <p>
               You have grown accustomed to the negative energy of necromancy.
-              When you deal damage, you ignore a creature's resistance to
-              necrotic damage. You gain resistance to necrotic damage equal to
-              your tier. If you already have this resistance, use your
+              When you deal damage, you ignore a creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to necrotic damage. You gain resistance to necrotic damage equal
+              to your tier. If you already have this resistance, use your
               proficiency bonus instead.
             </p>
 
@@ -1640,8 +1783,14 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals necrotic damage, you gain temporary hit points equal to
-              half the damage dealt (scene ends).
+              that deals necrotic damage, you gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to half the damage dealt (scene ends).
             </p>
           </div>
         )}
@@ -1733,10 +1882,16 @@ function HeroicArchetypes() {
             <h4 className="header">Potent Poison (5th-Level Feature)</h4>
             <p>
               Your familiarity with poisons and acids is stronger than most.
-              When you deal damage, you ignore a creature's resistance to toxic
-              damage. You gain resistance to toxic damage equal to your tier. If
-              you already have this resistance, use your proficiency bonus
-              instead.
+              When you deal damage, you ignore a creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to toxic damage. You gain resistance to toxic damage equal to your
+              tier. If you already have this resistance, use your proficiency
+              bonus instead.
             </p>
 
             <h4 className="header">Venomous Magic (7th-Level Feature)</h4>
@@ -1788,8 +1943,14 @@ function HeroicArchetypes() {
                   <Link className="internal-link" to="/conditions#taunted">
                     taunted
                   </Link>{" "}
-                  by you, you gain temporary hit points equal to your tier
-                  (scene ends)
+                  by you, you gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  equal to your tier (scene ends)
                 </span>
               </li>
             </ul>
@@ -1878,9 +2039,14 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  Resistance to psychic damage equal to your tier. If you
-                  already have this resistance, use your proficiency bonus
-                  instead.
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    Resistance
+                  </Link>{" "}
+                  to psychic damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -1937,9 +2103,16 @@ function HeroicArchetypes() {
             <p>
               You welcome the touch of fire while knowing how to best burn even
               those familiar with flames. When you deal damage, you ignore a
-              creature's resistance to fire damage. You gain resistance to fire
-              damage equal to your tier. If you already have this resistance,
-              use your proficiency bonus instead.
+              creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to fire damage. You gain resistance to fire damage equal to your
+              tier. If you already have this resistance, use your proficiency
+              bonus instead.
             </p>
 
             <h4 className="header">Hungry Flames (7th-Level Feature)</h4>
@@ -1948,8 +2121,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals fire damage, the target takes 1 ongoing fire damage per
-              your tier.
+              that deals fire damage, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              fire damage per your tier.
             </p>
           </div>
         )}
@@ -2039,15 +2215,28 @@ function HeroicArchetypes() {
             <p>
               You provide the warm protection of the heavens. After a rest,
               choose a number of creatures equal to your proficiency bonus.
-              Chosen creatures gain 1 temporary hit points per your tier until
-              your next rest.
+              Chosen creatures gain 1{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              per your tier.
             </p>
 
             <h4 className="header">Heavenly Aspect (7th-Level Feature)</h4>
             <p>
               You are granted the powers of angels. You gain a fly speed of 1
-              and resistance to holy damage equal to your tier. If you already
-              have this resistance, use your proficiency bonus instead.
+              and{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to holy damage equal to your tier. If you already have this
+              resistance, use your proficiency bonus instead.
             </p>
           </div>
         )}
@@ -2079,9 +2268,12 @@ function HeroicArchetypes() {
 
             <h4 className="header">Child of Darkness (5th-Level Feature)</h4>
             <p>
-              You are sheltered by shadows. You gain night vision and can also
-              see through magical darkness. While in concealment or in darkness,
-              you gain <Modifier type="f" count="1" /> to{" "}
+              You are sheltered by shadows. You gain <ToolTip preset="night" />{" "}
+              and can also see through magical darkness. While in{" "}
+              <Link className="internal-link" to="/rules/combat#stealth">
+                concealment
+              </Link>{" "}
+              or in darkness, you gain <Modifier type="f" count="1" /> to{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>
@@ -2099,8 +2291,13 @@ function HeroicArchetypes() {
               trigger="You take damage"
               effect={
                 <span>
-                  Teleport up to 1 zone. If you teleport into darkness, you can
-                  also{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  up to 1 zone. If you teleport into darkness, you can also{" "}
                   <Link className="internal-link" to="/combat-abilities#hide">
                     hide
                   </Link>
@@ -2215,10 +2412,16 @@ function HeroicArchetypes() {
             <h4 className="header">Radiant Soul (5th-Level Feature)</h4>
             <p>
               You are stronger in the light. When you spend a recovery in light
-              from the sun, moon, or stars, you regain additional hit points
-              equal to your tier. You gain resistance to fire damage equal to
-              your tier. If you already have this resistance, use your
-              proficiency bonus instead.
+              from the sun, moon, or stars, you <ToolTip preset="heal" />{" "}
+              additional hit points equal to your tier. You gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to fire damage equal to your tier. If you already have this
+              resistance, use your proficiency bonus instead.
             </p>
 
             <h4 className="header">Blinding Magic (7th-Level Feature)</h4>
@@ -2264,9 +2467,16 @@ function HeroicArchetypes() {
             <h4 className="header">Heart of the Storm (5th-Level Feature)</h4>
             <p>
               You are fully attuned to the powers of air. When you deal damage,
-              you ignore a creature's resistance to lightning damage. You gain
-              resistance to lightning damage equal to your tier. If you already
-              have this resistance, use your proficiency bonus instead.
+              you ignore a creature's{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to lightning damage. You gain resistance to lightning damage equal
+              to your tier. If you already have this resistance, use your
+              proficiency bonus instead.
             </p>
 
             <h4 className="header">Bouncing Lightning (7th-Level Feature)</h4>
@@ -2442,16 +2652,28 @@ function HeroicArchetypes() {
             <h4 className="header">Arcane Shield (5th-Level Feature)</h4>
             <p>
               You have surrounded yourself in a constant state of protection.
-              After you rest, you gain temporary hit points equal to your
-              proficiency bonus that last until your next rest.
+              After you rest, you gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus.
             </p>
 
             <h4 className="header">Friendly Ward (7th-Level Feature)</h4>
             <p>
               You can split your magical energy to shield an ally. When you cast
               a battle spell of tier 1 or higher, choose a creature within 1
-              zone of you to gain temporary hit points equal to double the spell
-              tier (scene ends).
+              zone of you to gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to double the spell tier (scene ends).
             </p>
           </div>
         )}
@@ -2560,8 +2782,11 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              any creature within your zone. If the creature isn’t engaged to
-              you, then you take <Modifier type="mf" count="1" /> to your
+              any creature within your zone. If the creature isn’t{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              to you, then you take <Modifier type="mf" count="1" /> to your
               strike.
             </p>
           </div>

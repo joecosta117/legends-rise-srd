@@ -74,8 +74,11 @@ function MagicRules() {
         </p>
         <p>
           When you cast a battle spell of tier 1 or higher, you must spend mana
-          equal to the spell tier. After a short rest, a hero regains all
-          expended mana.
+          equal to the spell tier. After a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            short rest
+          </Link>
+          , a hero regains all expended mana.
         </p>
         <h3 className="header">Learning Spells</h3>
         <p>
@@ -101,8 +104,11 @@ function MagicRules() {
           book, prayer beads, weapon, or holy symbol. If you have an implement
           in one of your hands you can cast spells as long as you can also
           speak. You can only use an implement if you have properly aligned your
-          magical energy to it, which takes a short rest to do so while holding
-          the implement.
+          magical energy to it, which takes a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            short rest
+          </Link>{" "}
+          to do so while holding the implement.
         </p>
 
         <h2 id="battle">Battle Spells</h2>
@@ -227,7 +233,11 @@ function MagicRules() {
               <b>Failure:</b>
             </span>{" "}
             You fail to learn the ritual spell, and can’t try again until after
-            a long rest.
+            a{" "}
+            <Link className="internal-link" to="/rules/adventuring#resting">
+              long rest
+            </Link>
+            .
           </li>
         </ul>
         <h3 className="header">Casting Ritual Spell</h3>

@@ -41,55 +41,69 @@ import RulesPage from "./pages/RulesPage";
 import WealthRules from "./pages/WealthRules";
 import MagicRules from "./pages/MagicRules";
 import HomePage from "./pages/HomePage";
+import ScrollToTop from "./components/ScrollToTop";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
     <Router>
       <Navigation />
-      {/* <div className="page-content"> */}
-      <Routes>
-        <Route path="/hero-creation-steps" element={<HeroCreationSteps />} />
-        <Route path="/ancestries" element={<Ancestries />} />
-        <Route path="/classes" element={<Classes />} />
-        <Route path="/classes/arcanist" element={<Arcanist />} />
-        <Route path="/classes/bard" element={<Bard />} />
-        <Route path="/classes/cleric" element={<Cleric />} />
-        <Route path="/classes/commander" element={<Commander />} />
-        <Route path="/classes/druid" element={<Druid />} />
-        <Route path="/classes/magesmith" element={<Magesmith />} />
-        <Route path="/classes/occultist" element={<Occultist />} />
-        <Route path="/classes/paladin" element={<Paladin />} />
-        <Route path="/classes/ranger" element={<Ranger />} />
-        <Route path="/classes/rogue" element={<Rogue />} />
-        <Route path="/classes/summoner" element={<Summoner />} />
-        <Route path="/classes/swordmage" element={<Swordmage />} />
-        <Route path="/classes/warrior" element={<Warrior />} />
-        <Route path="/classes/dual-class" element={<DualClass />} />
-        <Route path="/theme-talents" element={<ThemeTalents />} />
-        <Route path="/fighting-styles" element={<FightingStyles />} />
-        <Route path="/battle-spells" element={<BattleSpells />} />
-        <Route path="/armor" element={<Armor />} />
-        <Route path="/weapons" element={<Weapons />} />
-        <Route path="/other-goods" element={<OtherGoods />} />
-        <Route path="/mounts" element={<Mounts />} />
-        <Route path="/heroic-archetypes" element={<HeroicArchetypes />} />
-        <Route path="/legendary-archetypes" element={<LegendaryArchetypes />} />
-        <Route path="/ritual-spells" element={<RitualSpells />} />
-        <Route path="/consumables" element={<Consumables />} />
-        <Route path="/relics" element={<Relics />} />
-        <Route path="/combat-abilities" element={<CombatActs />} />
-        <Route path="/conditions" element={<Conditions />} />
-        <Route path="/abilities-and-keywords" element={<ReadingAbilities />} />
-        <Route path="/rules/rolling" element={<RollingRules />} />
-        <Route path="/rules/skills" element={<SkillRules />} />
-        <Route path="/rules/adventuring" element={<Adventuring />} />
-        <Route path="/rules" element={<RulesPage />} />
-        <Route path="/rules/combat" element={<CombatRules />} />
-        <Route path="/rules/gold" element={<WealthRules />} />
-        <Route path="/rules/magic" element={<MagicRules />} />
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-      {/* </div> */}
+      <ScrollToTop>
+        <div id="page-content">
+          <Routes>
+            <Route
+              path="/hero-creation-steps"
+              element={<HeroCreationSteps />}
+            />
+            <Route path="/ancestries" element={<Ancestries />} />
+            <Route path="/classes" element={<Classes />} />
+            <Route path="/classes/arcanist" element={<Arcanist />} />
+            <Route path="/classes/bard" element={<Bard />} />
+            <Route path="/classes/cleric" element={<Cleric />} />
+            <Route path="/classes/commander" element={<Commander />} />
+            <Route path="/classes/druid" element={<Druid />} />
+            <Route path="/classes/magesmith" element={<Magesmith />} />
+            <Route path="/classes/occultist" element={<Occultist />} />
+            <Route path="/classes/paladin" element={<Paladin />} />
+            <Route path="/classes/ranger" element={<Ranger />} />
+            <Route path="/classes/rogue" element={<Rogue />} />
+            <Route path="/classes/summoner" element={<Summoner />} />
+            <Route path="/classes/swordmage" element={<Swordmage />} />
+            <Route path="/classes/warrior" element={<Warrior />} />
+            <Route path="/classes/dual-class" element={<DualClass />} />
+            <Route path="/theme-talents" element={<ThemeTalents />} />
+            <Route path="/fighting-styles" element={<FightingStyles />} />
+            <Route path="/battle-spells" element={<BattleSpells />} />
+            <Route path="/armor" element={<Armor />} />
+            <Route path="/weapons" element={<Weapons />} />
+            <Route path="/other-goods" element={<OtherGoods />} />
+            <Route path="/mounts" element={<Mounts />} />
+            <Route path="/heroic-archetypes" element={<HeroicArchetypes />} />
+            <Route
+              path="/legendary-archetypes"
+              element={<LegendaryArchetypes />}
+            />
+            <Route path="/ritual-spells" element={<RitualSpells />} />
+            <Route path="/consumables" element={<Consumables />} />
+            <Route path="/relics" element={<Relics />} />
+            <Route path="/combat-abilities" element={<CombatActs />} />
+            <Route path="/conditions" element={<Conditions />} />
+            <Route
+              path="/abilities-and-keywords"
+              element={<ReadingAbilities />}
+            />
+            <Route path="/rules/rolling" element={<RollingRules />} />
+            <Route path="/rules/skills" element={<SkillRules />} />
+            <Route path="/rules/adventuring" element={<Adventuring />} />
+            <Route path="/rules" element={<RulesPage />} />
+            <Route path="/rules/combat" element={<CombatRules />} />
+            <Route path="/rules/gold" element={<WealthRules />} />
+            <Route path="/rules/magic" element={<MagicRules />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </div>
+      </ScrollToTop>
     </Router>
   );
 }

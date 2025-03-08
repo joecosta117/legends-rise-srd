@@ -4,6 +4,7 @@ import { useState } from "react";
 import ClassHeader from "../../components/ClassHeader";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Rogue() {
   const [isDetails, setDetails] = useState(true);
@@ -230,7 +231,10 @@ function Rogue() {
             <h2>Shadow</h2>
             <p>You have a magical affinity with darkness.</p>
             <h3 className="header">Umbral Techniques (1st-Level Feature)</h3>
-            <p>You gain night vision, and you gain the following ability:</p>
+            <p>
+              You gain <ToolTip preset="night" />, and you gain the following
+              ability:
+            </p>
             <AbilityCard
               name="Shadow Leap"
               actType="Maneuver"
@@ -239,7 +243,14 @@ function Rogue() {
               frequency="At-will"
               effect={
                 <span>
-                  You teleport to the targeted area, and you gain{" "}
+                  You{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  to the targeted area, and you gain{" "}
                   <Modifier type="f" count="1" /> to your next{" "}
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
@@ -512,8 +523,8 @@ function Rogue() {
               <b>Requirement:</b> investigator subclass
             </p>
             <p>
-              You are always aware of your surroundings. You gain blind vision
-              within 1 zone.
+              You are always aware of your surroundings. You gain{" "}
+              <ToolTip preset="blind" /> within 1 zone.
             </p>
 
             <h3 className="header">Mobile Panache</h3>

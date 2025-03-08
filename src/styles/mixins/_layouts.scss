@@ -1,24 +1,21 @@
 @mixin page-layout() {
-  display: grid;
   justify-items: center;
-  padding: 0 16px;
+  padding-bottom: 50px;
 
-  @include mq('s') {
-    padding: 0 32px;
-  }
-  @include mq('xl') {
-    padding: 0;
+  @include mq(m) {
+    padding-bottom: 100px;
   }
 }
 
 @mixin page-content() {
-  // TODO: Add a background color
-  // background: $parchment;
-  padding-top: 50px;
-  width: 100%;
+  padding: 0 16px;
+  padding-top: 25px;
 
+  @include mq(s) {
+    padding: 0 32px;
+    padding-top: 25px;
+  }
   @include mq(m) {
-    padding-top: 100px;
     grid-column: 2;
   }
 

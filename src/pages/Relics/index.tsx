@@ -5,6 +5,7 @@ import Accordion from "../../components/Accordion";
 import AbilityCard from "../../components/AbilityCard";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Relics() {
   const [isArmor, setArmor] = useState(true);
@@ -54,8 +55,8 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#rally">
                 rally
               </Link>
-              , you regain additional hit points equal to your proficiency
-              bonus.
+              , you <ToolTip preset="heal" /> additional hit points equal to
+              your proficiency bonus.
             </p>
           </div>
         ),
@@ -73,8 +74,14 @@ function Relics() {
             <p>
               Each energy armor is attuned to one of the elements chosen upon
               creation: arcane, cold, holy, fire, lightning, psychic, necrotic,
-              toxic, or unholy. You gain resistance to the armor’s attuned
-              damage type equal to your tier.
+              toxic, or unholy. You gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to the armor’s attuned damage type equal to your tier.
             </p>
           </div>
         ),
@@ -184,8 +191,14 @@ function Relics() {
               frequency="Encounter"
               effect={
                 <span>
-                  You gain phasing and creatures take{" "}
-                  <Modifier type="mf" count="1" /> on{" "}
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    phasing
+                  </Link>{" "}
+                  and creatures take <Modifier type="mf" count="1" /> on{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -220,13 +233,14 @@ function Relics() {
                   <ul>
                     <li>
                       <span>
-                        If you’re shaken, then you immediately regain 1 hit
-                        point per your tier
+                        If you’re <ToolTip preset="shaken" />, then you
+                        immediately <ToolTip preset="heal" /> 1 per your tier
                       </span>
                     </li>
                     <li>
                       <span>
-                        You gain regeneration equal to your tier while shaken
+                        You gain <ToolTip preset="regen" /> equal to your tier
+                        while shaken
                       </span>
                     </li>
                     <li>
@@ -273,8 +287,15 @@ function Relics() {
               </i>
             </p>
             <p>
-              You gain physical resistance equal to your tier. If you already
-              have this resistance, then increase it by +1.
+              You gain physical{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              equal to your tier. If you already have this resistance, then
+              increase it by +1.
             </p>
           </div>
         ),
@@ -312,7 +333,18 @@ function Relics() {
               descriptor="You use your armor to step farther than possible"
               keywords="Magic, Range"
               target="Up to 1 zone"
-              effect="You teleport up to anywhere within the targeted zone"
+              effect={
+                <span>
+                  You{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  up to anywhere within the targeted zone
+                </span>
+              }
               frequency="At-will"
             />
           </div>
@@ -461,8 +493,14 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, you gain temporary hit points equal to your
-              proficiency bonus (scene ends).
+              using this weapon, you gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends).
             </p>
           </div>
         ),
@@ -482,8 +520,11 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, the target takes 1 ongoing physical damage per
-              your tier.
+              using this weapon, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per your tier.
             </p>
           </div>
         ),
@@ -504,8 +545,11 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
-              , the target takes 1 ongoing damage per your tier of the chosen
-              damage type.
+              , the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage per your tier of the chosen damage type.
             </p>
           </div>
         ),
@@ -526,8 +570,14 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, you gain temporary hit points equal to your
-              proficiency bonus (scene ends).
+              using this weapon, you gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends).
             </p>
           </div>
         ),
@@ -547,8 +597,11 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, the target takes 1 ongoing physical damage per
-              your tier.
+              using this weapon, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              physical damage per your tier.
             </p>
           </div>
         ),
@@ -568,7 +621,11 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, ignore any penalty from cover.
+              using this weapon, ignore any penalty from{" "}
+              <Link className="internal-link" to="/rules/combat#stealth">
+                cover
+              </Link>
+              .
             </p>
           </div>
         ),
@@ -640,8 +697,11 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
-              , the target takes 1 ongoing damage per your tier of the chosen
-              damage type.
+              , the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage per your tier of the chosen damage type.
             </p>
             <p>You also gain the following ability:</p>
             <AbilityCard
@@ -712,8 +772,12 @@ function Relics() {
               <Link className="internal-link" to="/battle-spells">
                 battle spell
               </Link>{" "}
-              . Once per short rest, you can cast the wand’s spell of a spell
-              tier equal to your tier without spending mana.
+              . Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can cast the wand’s spell of a spell tier equal to your tier
+              without spending mana.
             </p>
             <p>
               If you don’t know the spell’s tradition of the wand, you can still
@@ -742,7 +806,18 @@ function Relics() {
               actType="Reaction"
               descriptor="You weaken a foe's defenses."
               keywords="Magic, Range"
-              trigger="You deal damage to a creature but their resistance reduces the damage"
+              trigger={
+                <span>
+                  You deal damage to a creature but their{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistances
+                  </Link>{" "}
+                  reduces the damage
+                </span>
+              }
               effect="Ignore the triggering creature's resistances to your damage."
               frequency="At-will"
             />
@@ -783,9 +858,15 @@ function Relics() {
             </p>
             <p>
               When you conjure a creature using a summon ability, the summoned
-              creature gains temporary hit points equal to your proficiency
-              bonus (scene ends), or your tier if you summoned multiple
-              creatures with one ability.
+              creature gains{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends), or your tier if you
+              summoned multiple creatures with one ability.
             </p>
           </div>
         ),
@@ -804,8 +885,12 @@ function Relics() {
               <Link className="internal-link" to="/battle-spells">
                 battle spell
               </Link>{" "}
-              . Once per short rest, you can cast the wand’s spell of a spell
-              tier equal to your tier without spending mana.
+              . Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can cast the wand’s spell of a spell tier equal to your tier
+              without spending mana.
             </p>
             <p>
               If you don’t know the spell’s tradition of the wand, you can still
@@ -890,8 +975,12 @@ function Relics() {
               <Link className="internal-link" to="/battle-spells">
                 battle spell
               </Link>{" "}
-              . Once per short rest, you can cast the wand’s spell of a spell
-              tier equal to your tier without spending mana.
+              . Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can cast the wand’s spell of a spell tier equal to your tier
+              without spending mana.
             </p>
             <p>
               If you don’t know the spell’s tradition of the wand, you can still
@@ -990,7 +1079,11 @@ function Relics() {
               <i>You can teleport short distances using these boots.</i>
             </p>
             <p>
-              Once per short rest, while wearing these boots, you can cast the{" "}
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , while wearing these boots, you can cast the{" "}
               <Link
                 className="internal-link"
                 to="/battle-spells#teleportation-dimensional-step"
@@ -1044,7 +1137,9 @@ function Relics() {
                 These goggles let you see in the dark as if it were daytime.
               </i>
             </p>
-            <p>While wearing these goggles, you have night vision.</p>
+            <p>
+              While wearing these goggles, you have <ToolTip preset="night" />.
+            </p>
           </div>
         ),
       },
@@ -1188,8 +1283,11 @@ function Relics() {
               </i>
             </p>
             <p>
-              As an action can apply these shackles to a creature engaged to you
-              by making an{" "}
+              As an action can apply these shackles to a{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              creature by making an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -1197,11 +1295,18 @@ function Relics() {
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
-              and can’t teleport while seized. The target can’t make{" "}
+              and can’t{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              while seized. The target can’t make{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>{" "}
-              to break out, but instead can spend an action to succeed on a
+              to break out, but instead can spend an action to succeed on a{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
@@ -1461,8 +1566,8 @@ function Relics() {
               <i>This ring is carved with symbols of chains being broken.</i>
             </p>
             <p>
-              While wearing this ring, you gain regeneration equal to your tier
-              while shaken.
+              While wearing this ring, you gain <ToolTip preset="regen" /> equal
+              to your tier while <ToolTip preset="shaken" />.
             </p>
           </div>
         ),
@@ -1500,6 +1605,122 @@ function Relics() {
           magical effects are all relics. You must align yourself to a relics
           before you can properly use it.
         </p>
+        <Accordion
+          title="Rules on Relics"
+          content={
+            <div>
+              <h3 className="header">Aligning Relics</h3>
+              <p>
+                Relics require heroes to align their energy to the item before
+                they can properly use it. You can align to a relic during a{" "}
+                <Link className="internal-link" to="/rules/adventuring#resting">
+                  short rest
+                </Link>
+                . You can align to a number of relics equal to your tier, which
+                is referred to as your <b>align limit</b>. If you try to align
+                to another relic despite already being at your align limit, then
+                you need to unalign from another relic.
+              </p>
+              <p>
+                Only one person can be aligned to a relic at a time. If you
+                align to a relic already aligned by someone else, then you
+                remove that person’s connection to the relic. This connection
+                naturally breaks if the person aligned to the relic dies or
+                voluntarily ends their connection during a short rest.
+              </p>
+              <h3 className="header">Equipping Relic</h3>
+              <p>
+                Relics that require to be worn or wielded usually change size to
+                fit whoever aligns to them. A giant flaming sword used by a
+                giant might shrink down to a smaller blade for a short goblin.
+                The GM can rule that a relic doesn’t change size if it fits the
+                story, such as magical dragon armor only fitting a dragon.
+              </p>
+              <h3 className="header">Transferring Magic</h3>
+              <p>
+                You can transfer the magic of a relic to a mundane item. This
+                process can be done during a short rest. The hero transferring
+                the magic of a relic must be aligned to it. The transferer must
+                succeed on a{" "}
+                <Link className="internal-link" to="/rules/skills">
+                  skill roll
+                </Link>{" "}
+                with the skill tier equaling the relic’s item tier.
+              </p>
+              <ul>
+                <li>
+                  <span>
+                    <b>Critical Success:</b> Same as a success, and the next
+                    time you attempt to transfer a relic's magic, you gain{" "}
+                    <Modifier type="f" count="1" /> to the skill roll.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Success:</b>
+                  </span>{" "}
+                  You successfully transfer the magic from the original item to
+                  the new item.
+                </li>
+                <li>
+                  <span>
+                    <b>Partial Success:</b> You fail to transfer the magic, and
+                    you can’t try again until after a{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/adventuring#resting"
+                    >
+                      long rest
+                    </Link>
+                    .
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Failure:</b> Same as a partial success, but the next time
+                    you attempt to transfer the relic's magic, you take{" "}
+                    <Modifier type="mf" count="1" /> to the skill roll.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          }
+        />
+        <Accordion
+          title="Buying and Selling Relics"
+          content={
+            <div>
+              <p>
+                Most relics are found during adventuring, but depending on the
+                GM's setting, relics might also be for sale in larger
+                settlements. If so, you can use the following prices for relics
+                depending on their item tier:
+              </p>
+              <ul>
+                <li>
+                  <span>
+                    <b>Tier 1:</b> 5 gold
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Tier 2:</b> 15 gold
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Tier 3:</b> 30 gold
+                  </span>
+                </li>
+              </ul>
+              <p>
+                Tier 3 relics are the most powerful magical items in the world,
+                and are rarely found for sale.
+              </p>
+            </div>
+          }
+        />
+
         <div className="equipment-content__tabs">
           <div
             className="tab-items__tab"

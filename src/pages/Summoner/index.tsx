@@ -6,6 +6,7 @@ import Modifier from "../../components/Modifier";
 import Monster from "../../components/Monster";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Summoner() {
   const [isDetails, setDetails] = useState(true);
@@ -45,8 +46,8 @@ function Summoner() {
       <h4 className="header">Easy to Kill</h4>
       <p>
         When a minion takes damage, if the damage is less than the minion’s
-        maximum hit points, then the minion becomes shaken. If the minion is
-        already shaken, then any damage kills it.
+        maximum hit points, then the minion becomes <ToolTip preset="shaken" />.
+        If the minion is already shaken, then any damage kills it.
       </p>
 
       <h4 className="header">Overkill</h4>
@@ -208,7 +209,18 @@ function Summoner() {
                   basic: true,
                   name: "Assault",
                   keywords: "melee, weapon",
-                  target: "1 engaged creature",
+                  target: (
+                    <span>
+                      1{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#engaged"
+                      >
+                        engaged
+                      </Link>{" "}
+                      creature
+                    </span>
+                  ),
                   defense: "EVN",
                   damage: "1 physical damage per tier",
                 },
@@ -246,7 +258,18 @@ function Summoner() {
                   basic: true,
                   name: "Assault",
                   keywords: "melee, weapon",
-                  target: "1 engaged creature",
+                  target: (
+                    <span>
+                      1{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#engaged"
+                      >
+                        engaged
+                      </Link>{" "}
+                      creature
+                    </span>
+                  ),
                   defense: "EVN",
                   damage: "PB physical damage",
                 },
@@ -330,33 +353,70 @@ function Summoner() {
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
                     <span>
-                      <i>Air:</i> Resistance to lightning damage equal to your
-                      tier and a fly speed of 1.
+                      <i>Air:</i>{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to lightning damage equal to your tier and a fly speed of
+                      1.
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i>Earth:</i> Resistance to physical damage equal to your
-                      tier, and your major summons’ hit points increase by your
-                      proficiency bonus.
+                      <i>Earth:</i>{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to physical damage equal to your tier, and your major
+                      summons’ hit points increase by your proficiency bonus.
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i>Fire:</i> Resistance to fire damage equal to your
-                      proficiency bonus, weakness to cold damage equal to your
-                      proficiency bonus, and their assault damage deals fire
-                      damage. On a critical successful assault from the major
-                      summons, the target takes ongoing fire damage equal to
-                      your tier.
+                      <i>Fire:</i>{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to fire damage equal to your proficiency bonus,{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        weakness
+                      </Link>
+                      to cold damage equal to your proficiency bonus, and their
+                      assault damage deals fire damage. On a critical successful
+                      assault from the major summons, the target takes{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#ongoing-damage"
+                      >
+                        ongoing
+                      </Link>{" "}
+                      fire damage equal to your tier.
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i>Ice:</i> Resistance to cold damage equal to your
-                      proficiency bonus, and their assault damage deals cold
-                      damage. On a critical successful assault from the major
-                      summons, the target is{" "}
+                      <i>Ice:</i>{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to cold damage equal to your proficiency bonus, and their
+                      assault damage deals cold damage. On a critical successful
+                      assault from the major summons, the target is{" "}
                       <Link className="internal-link" to="/conditions#seized">
                         seized
                       </Link>{" "}
@@ -366,7 +426,19 @@ function Summoner() {
                   <li>
                     <span>
                       <i>Water:</i> Swim speed of 1, can breathe underwater, and
-                      resistance to fire damage equal to your tier but weakness
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        resistance
+                      </Link>{" "}
+                      to fire damage equal to your tier but{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        weakness
+                      </Link>{" "}
                       to cold damage equal to your proficiency bonus.
                     </span>
                   </li>
@@ -426,8 +498,21 @@ function Summoner() {
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
                     <span>
-                      Resistance to holy damage and physical damage equal to
-                      your tier
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to holy damage and physical damage equal to your tier,
+                      but,{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        weakness
+                      </Link>
+                      to unholy damage equal to your proficiency bonus
                     </span>
                   </li>
                   <li>
@@ -514,8 +599,13 @@ function Summoner() {
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
                     <span>
-                      Resistance to arcane and physical damage equal to your
-                      tier
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to arcane and physical damage equal to your tier
                     </span>
                   </li>
                   <li>
@@ -574,7 +664,22 @@ function Summoner() {
                 </span>
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
-                    <span>Resistance to unholy damage equal to your tier</span>
+                    <span>
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to unholy damage equal to your tier, but{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        weakness
+                      </Link>
+                      to holu damage equal to your proficiency bonus,
+                    </span>
                   </li>
                   <li>
                     <span>
@@ -583,7 +688,9 @@ function Summoner() {
                     </span>
                   </li>
                   <li>
-                    <span>Night vision</span>
+                    <span>
+                      <ToolTip preset="night" />
+                    </span>
                   </li>
                 </ul>
               </li>
@@ -646,19 +753,34 @@ function Summoner() {
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
                     <span>
-                      Resistance to necrotic damage equal to your tier
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        Resistance
+                      </Link>{" "}
+                      to necrotic damage equal to your tier
                     </span>
                   </li>
                   <li>
                     <span>Assault damage deal necrotic damage</span>
                   </li>
                   <li>
-                    <span>Night vision</span>
+                    <span>
+                      <ToolTip preset="night" />
+                    </span>
                   </li>
                   <li>
                     <span>
-                      While having cover or concealment, the penalty to target
-                      the summons increases to <Modifier type="mf" count="2" />
+                      While having{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#stealth"
+                      >
+                        concealment
+                      </Link>
+                      , the penalty to target the summons increases to{" "}
+                      <Modifier type="mf" count="2" />
                     </span>
                   </li>
                 </ul>
@@ -672,7 +794,19 @@ function Summoner() {
               actType="Action"
               descriptor="Your shadow creature’s claws drain their foe’s life force."
               frequency="At-will"
-              effect="Your major summons can use assault, and on a success or higher, they gain temporary hit points equal to your tier (scene ends)."
+              effect={
+                <span>
+                  Your major summons can use assault, and on a success or
+                  higher, they gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  equal to your tier (scene ends).
+                </span>
+              }
             />
           </div>
         )}
@@ -752,8 +886,12 @@ function Summoner() {
                   >
                     attack roll
                   </Link>{" "}
-                  made by a creature engaged to one of your summons, provided
-                  the target isn't your summons.
+                  made by a creature{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  to one of your summons, provided the target isn't your
+                  summons.
                 </span>
               </li>
             </ul>
@@ -784,7 +922,9 @@ function Summoner() {
                 <span>Swim speed of 1, and can breath underwater</span>
               </li>
               <li>
-                <span>Night vision</span>
+                <span>
+                  <ToolTip preset="night" />
+                </span>
               </li>
             </ul>
             <p>You can take this class talent multiple times.</p>
@@ -825,8 +965,8 @@ function Summoner() {
             </p>
             <p>
               When a creature dies within your major summons’ zone, your summons
-              regains hit points equal to your tier. It can only heal in this
-              way once per turn.
+              <ToolTip preset="heals" /> equal to your tier. It can only heal in
+              this way once per turn.
             </p>
 
             <h3 className="header">Damning Summons</h3>
@@ -842,8 +982,12 @@ function Summoner() {
             <h3 className="header">Destructive Aura</h3>
             <p>
               Choose a damage type appropriate to your subclass. Treat the zone
-              of your major summons as a dangerous zone (1 damage per your tier
-              of the chosen damage type) only for enemies.
+              of your major summons as a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zone
+              </Link>{" "}
+              (1 damage per your tier of the chosen damage type) only for
+              enemies.
             </p>
 
             <h3 className="header">Elemental Link</h3>
@@ -892,9 +1036,12 @@ function Summoner() {
             <h2>Tier 3 Class Talents</h2>
             <h3 className="header">Double Conjuring</h3>
             <p>
-              Once per long rest, when you use conjure summons, you conjure two
-              major summons. You can spend one maneuver to command both summons
-              at once.
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you use conjure summons, you conjure two major summons. You
+              can spend one maneuver to command both summons at once.
             </p>
 
             <h3 className="header">Elemental Destruction</h3>
@@ -935,8 +1082,9 @@ function Summoner() {
             </p>
             <p>
               When your major summons is reduced to 0 hit points, you can spend
-              mana equal to your tier for the major summons to heal equal to its
-              shaken value.
+              mana equal to your tier for the major summons to{" "}
+              <ToolTip preset="heal" /> equal to its{" "}
+              <ToolTip preset="shakenVal" />.
             </p>
 
             <h3 className="header">Umbral Entrance</h3>
@@ -945,8 +1093,18 @@ function Summoner() {
             </p>
             <p>
               Your shadow summons can step into the shadows of its victims. When
-              you command your major summons, it can teleport up to 1 zone away
-              to become engaged to a creature.
+              you command your major summons, it can{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              up to 1 zone away to become{" "}
+              <Link className="internal-link" to="/rules/combat#engaged">
+                engaged
+              </Link>{" "}
+              to a creature.
             </p>
 
             <h3 className="header">Winged Terrors</h3>

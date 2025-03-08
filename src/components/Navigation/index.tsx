@@ -1,6 +1,6 @@
 import "./index.scss";
-import React, { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 // @ts-ignore
 import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
 
@@ -26,38 +26,74 @@ const Navigation = () => {
   }, [prevScrollPos]);
 
   useEffect(() => {
-    const dropdowns = document.querySelectorAll('.navigation__links-container__dropdown');
-    dropdowns.forEach(dropdown => {
-      dropdown.addEventListener('mouseenter', handleMouseEnter);
-      dropdown.addEventListener('mouseleave', handleMouseLeave);
+    const dropdowns = document.querySelectorAll(
+      ".navigation__links-container__dropdown",
+    );
+    dropdowns.forEach((dropdown) => {
+      dropdown.addEventListener("mouseenter", handleMouseEnter);
+      dropdown.addEventListener("mouseleave", handleMouseLeave);
     });
 
     return () => {
-      dropdowns.forEach(dropdown => {
-        dropdown.removeEventListener('mouseenter', handleMouseEnter);
-        dropdown.removeEventListener('mouseleave', handleMouseLeave);
+      dropdowns.forEach((dropdown) => {
+        dropdown.removeEventListener("mouseenter", handleMouseEnter);
+        dropdown.removeEventListener("mouseleave", handleMouseLeave);
       });
+    };
+  }, []);
+
+  const adjustContentMarginTop = () => {
+    const navBar = document.getElementById("nav");
+    const content = document.getElementById("page-content");
+
+    if (navBar && content) {
+      content.style.marginTop = `${navBar.offsetHeight}px`;
+    }
+  };
+
+  useEffect(() => {
+    adjustContentMarginTop();
+
+    window.addEventListener("resize", adjustContentMarginTop);
+    return () => {
+      window.removeEventListener("resize", adjustContentMarginTop);
     };
   }, []);
 
   function handleMouseEnter(event: any) {
     const dropdownType = event.target.dataset.type;
-    document.querySelectorAll(`.navigation__links-container__dropdown[data-type="${dropdownType}"]`).forEach((element: any) => {
-      element.dataset.active = "true";
-    });
-    document.querySelectorAll(`.navigation__links-container__dropdown-arrow[data-type="${dropdownType}"]`).forEach((element: any) => {
-      element.dataset.active = "true";
-    });
+    document
+      .querySelectorAll(
+        `.navigation__links-container__dropdown[data-type="${dropdownType}"]`,
+      )
+      .forEach((element: any) => {
+        element.dataset.active = "true";
+      });
+    document
+      .querySelectorAll(
+        `.navigation__links-container__dropdown-arrow[data-type="${dropdownType}"]`,
+      )
+      .forEach((element: any) => {
+        element.dataset.active = "true";
+      });
   }
 
   function handleMouseLeave(event: any) {
     const dropdownType = event.target.dataset.type;
-    document.querySelectorAll(`.navigation__links-container__dropdown[data-type="${dropdownType}"]`).forEach((element: any) => {
-      element.dataset.active = "false";
-    });
-    document.querySelectorAll(`.navigation__links-container__dropdown-arrow[data-type="${dropdownType}"]`).forEach((element: any) => {
-      element.dataset.active = "false";
-    });
+    document
+      .querySelectorAll(
+        `.navigation__links-container__dropdown[data-type="${dropdownType}"]`,
+      )
+      .forEach((element: any) => {
+        element.dataset.active = "false";
+      });
+    document
+      .querySelectorAll(
+        `.navigation__links-container__dropdown-arrow[data-type="${dropdownType}"]`,
+      )
+      .forEach((element: any) => {
+        element.dataset.active = "false";
+      });
   }
 
   function toggleMobileNav() {
@@ -98,7 +134,11 @@ const Navigation = () => {
     <div className="navigation" id="nav">
       <div className="navigation__container">
         <div className="navigation__title-container">
-          <Link to="/" className="navigation__title-container__title">
+          <Link
+            to="/"
+            className="navigation__title-container__title"
+            onClick={() => setIsMobileNavOpen(false)}
+          >
             Legends Rise
           </Link>
         </div>
@@ -108,8 +148,14 @@ const Navigation = () => {
             data-type="hero-creation"
             onClick={toggleDropdown}
           >
-            <div className="navigation__links-container__nav" data-type="hero-creation">
-              <div className="navigation__links-container__link" data-type="hero-creation">
+            <div
+              className="navigation__links-container__nav"
+              data-type="hero-creation"
+            >
+              <div
+                className="navigation__links-container__link"
+                data-type="hero-creation"
+              >
                 Hero Creation
               </div>
               <button
@@ -180,12 +226,19 @@ const Navigation = () => {
             onClick={toggleDropdown}
             data-type="equipment"
           >
-            <div className="navigation__links-container__nav" data-type="equipment">
-              <div className="navigation__links-container__link" data-type="equipment">
+            <div
+              className="navigation__links-container__nav"
+              data-type="equipment"
+            >
+              <div
+                className="navigation__links-container__link"
+                data-type="equipment"
+              >
                 Equipment
               </div>
               <button
-                className="navigation__links-container__dropdown-arrow" data-type="equipment"
+                className="navigation__links-container__dropdown-arrow"
+                data-type="equipment"
               ></button>
             </div>
 
@@ -245,11 +298,15 @@ const Navigation = () => {
             data-type="magic"
           >
             <div className="navigation__links-container__nav" data-type="magic">
-              <div className="navigation__links-container__link" data-type="magic">
+              <div
+                className="navigation__links-container__link"
+                data-type="magic"
+              >
                 Spells
               </div>
               <button
-                className="navigation__links-container__dropdown-arrow" data-type="magic"
+                className="navigation__links-container__dropdown-arrow"
+                data-type="magic"
               ></button>
             </div>
 
@@ -281,7 +338,10 @@ const Navigation = () => {
             data-type="rules"
           >
             <div className="navigation__links-container__nav" data-type="rules">
-              <div className="navigation__links-container__link" data-type="rules">
+              <div
+                className="navigation__links-container__link"
+                data-type="rules"
+              >
                 Rules
               </div>
               <button
@@ -384,55 +444,18 @@ const Navigation = () => {
             </div>
           </div>
 
-          <div
-            className="navigation__links-container"
-            onClick={toggleDropdown}
-            data-type="contact"
-          >
+          <div className="navigation__links-container">
             <div
               className="navigation__links-container__nav"
               data-type="contact"
             >
-              <div
+              <Link
                 className="navigation__links-container__link"
-                data-type="contact"
+                onClick={() => setIsMobileNavOpen(false)}
+                to="/contact"
               >
                 Contact Me
-              </div>
-              <button
-                className="navigation__links-container__dropdown-arrow"
-                data-type="contact"
-              ></button>
-            </div>
-
-            <div
-              className="navigation__links-container__dropdown"
-              data-active="false"
-              data-type="contact"
-            >
-              {/* <Link
-                className="navigation__links-container__dropdown__item"
-                to="/contact"
-                onClick={toggleMobileNav}
-              >
-                Email
-              </Link> */}
-              <a
-                className="navigation__links-container__dropdown__item"
-                href="https://www.reddit.com/u/fanatic66/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Reddit
-              </a>
-              <a
-                className="navigation__links-container__dropdown__item"
-                href="https://twitter.com/FanaticalDm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -450,37 +473,37 @@ const Navigation = () => {
     </div>
   );
 
-//   return (
-//     <nav className="navigation">
-//       <ul className="navigation__list">
-//         <li className="navigation__item">
-//           <a href="/" className="navigation__link">
-//             Home
-//           </a>
-//         </li>
-//         <li className="navigation__item">
-//           <a href="/" className="navigation__link">
-//             Hero Options
-//           </a>
-//         </li>
-//         <li className="navigation__item">
-//           <a href="/" className="navigation__link">
-//             Rules
-//           </a>
-//         </li>
-//         <li className="navigation__item">
-//           <a href="/" className="navigation__link">
-//             Game Mastery
-//           </a>
-//         </li>
-//         <li className="navigation__item">
-//           <a href="/contact" className="navigation__link">
-//             Contact
-//           </a>
-//         </li>
-//       </ul>
-//     </nav>
-//   );
+  //   return (
+  //     <nav className="navigation">
+  //       <ul className="navigation__list">
+  //         <li className="navigation__item">
+  //           <a href="/" className="navigation__link">
+  //             Home
+  //           </a>
+  //         </li>
+  //         <li className="navigation__item">
+  //           <a href="/" className="navigation__link">
+  //             Hero Options
+  //           </a>
+  //         </li>
+  //         <li className="navigation__item">
+  //           <a href="/" className="navigation__link">
+  //             Rules
+  //           </a>
+  //         </li>
+  //         <li className="navigation__item">
+  //           <a href="/" className="navigation__link">
+  //             Game Mastery
+  //           </a>
+  //         </li>
+  //         <li className="navigation__item">
+  //           <a href="/contact" className="navigation__link">
+  //             Contact
+  //           </a>
+  //         </li>
+  //       </ul>
+  //     </nav>
+  //   );
 };
 
 export default Navigation;

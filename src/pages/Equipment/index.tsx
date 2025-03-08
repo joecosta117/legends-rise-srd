@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Modifier from "../../components/Modifier";
 import Monster from "../../components/Monster";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Equipment() {
   const [isMounts, setMounts] = useState(false);
@@ -314,7 +315,16 @@ function Equipment() {
                 <tr>
                   <td>Axes</td>
                   <td>Throwing axes, greataxe, handaxe</td>
-                  <td>target takes 1 ongoing physical damage per your tier</td>
+                  <td>
+                    target takes 1{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#ongoing-damage"
+                    >
+                      ongoing
+                    </Link>{" "}
+                    physical damage per your tier
+                  </td>
                 </tr>
                 <tr>
                   <td>Bows</td>
@@ -568,7 +578,9 @@ function Equipment() {
                 </span>
               </li>
               <li>
-                <span>Mount has night vision</span>
+                <span>
+                  Mount has <ToolTip preset="night" />
+                </span>
               </li>
               <li>
                 <span>

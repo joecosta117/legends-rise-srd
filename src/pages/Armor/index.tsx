@@ -50,8 +50,14 @@ function Armor() {
           </i>
         </p>
         <p>
-          Heavy armor grants +2 to Might and resistance to physical damage equal
-          to your tier.
+          Heavy armor grants +2 to Might and{" "}
+          <Link
+            className="internal-link"
+            to="/rules/combat#resistances-and-weaknesses"
+          >
+            resistance
+          </Link>{" "}
+          to physical damage equal to your tier.
         </p>
         <h3 className="header">Shields</h3>
         <p>

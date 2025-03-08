@@ -5,6 +5,7 @@ import Dropdown from "../../components/Dropdown";
 import Accordion from "../../components/Accordion";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function LegendaryArchetypes() {
   const [selectedArchetype, setSelectedArchetype] = useState("");
@@ -108,9 +109,15 @@ function LegendaryArchetypes() {
               </li>
               <li>
                 <span>
-                  You gain resistance to holy damage equal to your tier. If you
-                  already have this resistance, use your proficiency bonus
-                  instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to holy damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -124,7 +131,20 @@ function LegendaryArchetypes() {
               keywords="Magical"
               duration="Scene ends"
               target="You and each ally within your zone"
-              effect="Each targeted ally gains a fly speed of 1. You and each targeted ally gain temporary hit points equal to your proficiency bonus. If a creature already has temporary hit points, instead increase them by this amount."
+              effect={
+                <span>
+                  Each targeted ally gains a fly speed of 1. You and each
+                  targeted ally gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  equal to your proficiency bonus. If a creature already has
+                  temporary hit points, instead increase them by this amount.
+                </span>
+              }
             />
             <h4 className="header">Holy Radiance (10th-Level Feature)</h4>
             <p>
@@ -137,9 +157,12 @@ function LegendaryArchetypes() {
             </p>
             <h4 className="header">Celestial Ascension (10th-Level Feature)</h4>
             <p>
-              Your soul becomes fully angelic. Once per long rest, when you
-              become vanquished, your body disappears in a flash of radiant
-              light. Make an{" "}
+              Your soul becomes fully angelic. Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you become vanquished, your body disappears in a flash of
+              radiant light. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -149,7 +172,8 @@ function LegendaryArchetypes() {
                 blinded
               </Link>{" "}
               (scene ends). At the end of the scene, you appear in a column of
-              heavenly fire with hit points equal to your shaken value.
+              heavenly fire with hit points equal to your{" "}
+              <ToolTip preset="shakenVal" />.
             </p>
             <p>
               At the end of your adventures, you ascend to the upper realms to
@@ -246,8 +270,11 @@ function LegendaryArchetypes() {
               </li>
               <li>
                 <span>
-                  The number of wounds you can suffer before being defeated
-                  increases by +1
+                  The number of{" "}
+                  <Link className="internal-link" to="/rules/combat#dying">
+                    wounds
+                  </Link>{" "}
+                  you can suffer before being defeated increases by +1
                 </span>
               </li>
             </ul>
@@ -386,13 +413,21 @@ function LegendaryArchetypes() {
                 </span>
               </li>
               <li>
-                <span>You gain night vision.</span>
+                <span>
+                  You gain <ToolTip preset="night" />.
+                </span>
               </li>
               <li>
                 <span>
-                  You gain resistance to unholy damage equal to your tier. If
-                  you already have this resistance, use your proficiency bonus
-                  instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to unholy damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -408,9 +443,12 @@ function LegendaryArchetypes() {
               target="You and each ally within your zone"
               effect={
                 <span>
-                  Your zone becomes a dangerous zone (1 unholy per your tier)
-                  only to your enemies. When a creature takes this damage, make
-                  an{" "}
+                  Your zone becomes a{" "}
+                  <Link className="internal-link" to="/rules/combat#zone-types">
+                    dangerous zone
+                  </Link>{" "}
+                  (1 unholy per your tier) only to your enemies. When a creature
+                  takes this damage, make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -440,9 +478,12 @@ function LegendaryArchetypes() {
             </p>
             <h4 className="header">Hellish Descent (10th-Level Feature)</h4>
             <p>
-              Your soul becomes fully demonic. Once per long rest, when you are
-              vanquished, your body disappears in a flash of unholy energy. Make
-              an{" "}
+              Your soul becomes fully demonic. Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you are vanquished, your body disappears in a flash of
+              unholy energy. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -452,7 +493,8 @@ function LegendaryArchetypes() {
                 hindered
               </Link>{" "}
               (scene ends). At the end of the combat, the ground opens up to
-              hell, and you step out with hit points equal to your shaken value.
+              hell, and you step out with hit points equal to your{" "}
+              <ToolTip preset="shakenVal" />.
             </p>
             <p>
               At the end of your adventures, you descend to the lower realms to
@@ -483,7 +525,9 @@ function LegendaryArchetypes() {
                 <span>Your creature type becomes dragon.</span>
               </li>
               <li>
-                <span>You gain night vision.</span>
+                <span>
+                  You gain <ToolTip preset="night" />.
+                </span>
               </li>
               <li>
                 <span>
@@ -493,9 +537,16 @@ function LegendaryArchetypes() {
               </li>
               <li>
                 <span>
-                  You gain resistance to cold, fire, lightning, or toxic damage
-                  equal to your tier. If you already have this resistance, use
-                  your proficiency bonus instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to cold, fire, lightning, or toxic damage equal to your tier.
+                  If you already have this resistance, use your proficiency
+                  bonus instead.
                 </span>
               </li>
             </ul>
@@ -509,8 +560,12 @@ function LegendaryArchetypes() {
                 dragon transformation
               </Link>{" "}
               battle spell even if you don’t know the arcane magic tradition.
-              Once per short rest, you can cast this spell at a spell tier equal
-              to your tier without spending mana.
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can cast this spell at a spell tier equal to your tier
+              without spending mana.
             </p>
 
             <h4 className="header">Greater Dragon Form (10th-Level Feature)</h4>
@@ -531,7 +586,7 @@ function LegendaryArchetypes() {
               <li>
                 <span>
                   When you unleash energy as a dragon, you regain a use of this
-                  after you become shaken once per spell
+                  after you become <ToolTip preset="shaken" /> once per spell
                 </span>
               </li>
             </ul>
@@ -544,10 +599,14 @@ function LegendaryArchetypes() {
                 attack roll
               </Link>{" "}
               against each enemy’s Evasion within 1 zone, dealing 2 damage per
-              tier and 1 ongoing damage per tier. Both damage types are either
-              cold, fire, lightning, or toxic (your choice) as appropriate to
-              your type of dragon. At the end of the combat, elements coalesce
-              to reform your body with hit points equal to your shaken value.
+              tier and 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage per tier. Both damage types are either cold, fire,
+              lightning, or toxic (your choice) as appropriate to your type of
+              dragon. At the end of the combat, elements coalesce to reform your
+              body with hit points equal to your <ToolTip preset="shakenVal" />.
             </p>
             <p>
               At the end of your adventures, you shed your mortal body and
@@ -593,40 +652,71 @@ function LegendaryArchetypes() {
                   <li>
                     <span>
                       <i>Air:</i> fly speed equal to your land speed, or
-                      increase your current fly speed by +1, and resistance to
-                      lightning damage equal to your tier. If you already have
+                      increase your current fly speed by +1, and{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        resistance
+                      </Link>{" "}
+                      to lightning damage equal to your tier. If you already
+                      have this resistance, then use your proficiency bonus
+                      isntead.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i>Earth:</i>{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        resistance
+                      </Link>{" "}
+                      to physical damage equal to your tier. If you already have
                       this resistance, then use your proficiency bonus isntead.
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i>Earth:</i> resistance to physical damage equal to your
-                      tier. If you already have this resistance, then use your
-                      proficiency bonus isntead.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <i>Fire:</i> night vision and resistance to fire damage
-                      equal to your tier. If you already have this resistance,
-                      then use your proficiency bonus isntead.
+                      <i>Fire:</i> <ToolTip preset="night" /> and{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        resistance
+                      </Link>{" "}
+                      to fire damage equal to your tier. If you already have
+                      this resistance, then use your proficiency bonus isntead.
                     </span>
                   </li>
                   <li>
                     <span>
                       <i>Ice:</i> you ignore movement penalties from difficult
-                      zones, and resistance to cold damage equal to your tier.
-                      If you already have this resistance, then use your
-                      proficiency bonus isntead.
+                      zones, and{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        resistance
+                      </Link>{" "}
+                      to cold damage equal to your tier. If you already have
+                      this resistance, then use your proficiency bonus isntead.
                     </span>
                   </li>
                   <li>
                     <span>
                       <i>Water:</i> swim speed equal to your land speed, or
                       increase your current swim speed by +1, you can breath
-                      underwater, and resistance to fire damage equal to your
-                      tier. If you already have this resistance, then use your
-                      proficiency bonus isntead.
+                      underwater, and{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        resistance
+                      </Link>{" "}
+                      to fire damage equal to your tier. If you already have
+                      this resistance, then use your proficiency bonus isntead.
                     </span>
                   </li>
                 </ul>
@@ -650,8 +740,14 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/conditions#seized">
                     seized
                   </Link>{" "}
-                  (turn ends; ice), 1 ongoing fire damage equal to your tier
-                  (fire),{" "}
+                  (turn ends; ice), 1{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#ongoing-damage"
+                  >
+                    ongoing
+                  </Link>{" "}
+                  fire damage equal to your tier (fire),{" "}
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
@@ -665,9 +761,12 @@ function LegendaryArchetypes() {
             />
             <h4 className="header">Primordial Aura (10th-Level Feature)</h4>
             <p>
-              Your zone becomes a dangerous zone (1 damage per your tier of the
-              same damage type as unleash primordial fury) only for your
-              enemies.
+              Your zone becomes a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zone
+              </Link>{" "}
+              (1 damage per your tier of the same damage type as unleash
+              primordial fury) only for your enemies.
             </p>
             <h4 className="header">
               Birth of Elemental Titan (10th-Level Feature)
@@ -728,8 +827,14 @@ function LegendaryArchetypes() {
               }
               effect={
                 <span>
-                  After the triggering attack roll is resolved, you teleport up
-                  to 1 zone and become{" "}
+                  After the triggering attack roll is resolved, you{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>{" "}
+                  up to 1 zone and become{" "}
                   <Link className="internal-link" to="/conditions#invisible">
                     invisible
                   </Link>{" "}
@@ -789,13 +894,21 @@ function LegendaryArchetypes() {
                 </span>
               </li>
               <li>
-                <span>You gain night vision</span>
+                <span>
+                  You gain <ToolTip preset="night" />
+                </span>
               </li>
               <li>
                 <span>
-                  You gain resistance to psychic damage equal to your tier. If
-                  you already have this resistance, use your proficiency bonus
-                  instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to psychic damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -811,8 +924,11 @@ function LegendaryArchetypes() {
               target="1 zone within 3 zones"
               effect={
                 <span>
-                  Enemies treat the targeted zone as a difficult zone. You and
-                  allies within the targeted zone are{" "}
+                  Enemies treat the targeted zone as a{" "}
+                  <Link className="internal-link" to="/rules/combat#zone-types">
+                    difficult zone
+                  </Link>
+                  . You and allies within the targeted zone are{" "}
                   <Link className="internal-link" to="/conditions#invisible">
                     invisible
                   </Link>
@@ -864,13 +980,13 @@ function LegendaryArchetypes() {
               You learn the{" "}
               <Link
                 className="internal-link"
-                to="/ritual-spells#tier3-teleport"
+                to="/ritual-spells#tier3-dimensional-travel"
               >
-                teleport
+                dimensional travel
               </Link>{" "}
               ritual spell. You can cast wish with ritual spell. You can cast
-              teleport with <Modifier type="f" count="1" />, and you add your
-              proficiency bonus to the ritual’s{" "}
+              dimensional travel with <Modifier type="f" count="1" />, and you
+              add your proficiency bonus to the ritual’s{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
@@ -887,7 +1003,14 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>
-              , you can choose to teleport the distance instead.
+              , you can choose to{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleport
+              </Link>{" "}
+              the distance instead.
             </p>
 
             <h4 className="header">
@@ -1018,9 +1141,16 @@ function LegendaryArchetypes() {
               Work with your GM to establish a land as your domain, typically
               your homeland. You become the ruler of that land along with owning
               an estate that has enough servants and guards to keep it
-              operational. During downtime, you gain an extra downtime activity
-              that represents the assistance of your household. You gain the
-              knack “Sovereign” towards{" "}
+              operational. During{" "}
+              <Link
+                className="internal-link"
+                to="/rules/skills#downtime-activities"
+              >
+                downtime
+              </Link>
+              , you gain an extra downtime activity that represents the
+              assistance of your household. You gain the knack “Sovereign”
+              towards{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill rolls
               </Link>{" "}
@@ -1050,16 +1180,21 @@ function LegendaryArchetypes() {
             />
             <h4 className="header">Golden Age (10th-Level Feature)</h4>
             <p>
-              Once per long rest, when you are vanquished, you instead{" "}
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you are vanquished, you instead{" "}
               <Link className="internal-link" to="/combat-abilities#stand">
                 stand
               </Link>{" "}
-              and heal equal to your shaken value. At the end of your
-              adventures, you fully ascend to your throne and begin a long and
-              prosperous rule over your domain. Your renown guarantees
-              prosperity for your people for decades to come. Your descendants
-              will one day earn your throne and cement your legacy as one of the
-              greatest sovereigns in history.
+              and <ToolTip preset="heal" /> equal to your{" "}
+              <ToolTip preset="shakenVal" />. At the end of your adventures, you
+              fully ascend to your throne and begin a long and prosperous rule
+              over your domain. Your renown guarantees prosperity for your
+              people for decades to come. Your descendants will one day earn
+              your throne and cement your legacy as one of the greatest
+              sovereigns in history.
             </p>
           </div>
         )}
@@ -1106,13 +1241,21 @@ function LegendaryArchetypes() {
                 </span>
               </li>
               <li>
-                <span>You gain night vision</span>
+                <span>
+                  You gain <ToolTip preset="night" />
+                </span>
               </li>
               <li>
                 <span>
-                  You gain resistance to necrotic damage equal to your tier. If
-                  you alreaday have this resistance, then use your proficiency
-                  bonus instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to necrotic damage equal to your tier. If you alreaday have
+                  this resistance, then use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -1181,9 +1324,15 @@ function LegendaryArchetypes() {
               </li>
               <li>
                 <span>
-                  You gain resistance to psychic damage equal to your tier. If
-                  you already have this resistance, use your proficiency bonus
-                  instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to psychic damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -1192,7 +1341,8 @@ function LegendaryArchetypes() {
             <ul>
               <li>
                 <span>
-                  <i>All Seeing:</i> You have blind vision and can see anything
+                  <i>All Seeing:</i> You have <ToolTip preset="blind" /> and can
+                  see anything{" "}
                   <Link className="internal-link" to="/conditions#invisible">
                     invisible
                   </Link>
@@ -1229,8 +1379,12 @@ function LegendaryArchetypes() {
             <h4 className="header">Eldritch Ascendancy (10th-Level Feature)</h4>
             <p>
               Your soul and body transforms into a terribly unknown aberration.
-              Once per long rest, when you are vanquished, your body disappears
-              into a psychic explosion. Make an{" "}
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you are vanquished, your body disappears into a psychic
+              explosion. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -1241,7 +1395,7 @@ function LegendaryArchetypes() {
               </Link>{" "}
               (scene ends). At the end of the combat, reality ripples and shakes
               as a slightly distorted version of yourself appears from nothing
-              with hit points equal to your shaken value.
+              with hit points equal to your <ToolTip preset="shakenVal" />.
             </p>
             <p>
               At the end of your adventures, you disappear to venture deep
@@ -1280,9 +1434,16 @@ function LegendaryArchetypes() {
               One with the Elements (8th-Level Feature)
             </h4>
             <p>
-              You gain resistance to cold, fire, lightning, and toxic damage
-              equal to your tier. If you already have this resistance, then use
-              your proficiency bonus instead.
+              You gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to cold, fire, lightning, and toxic damage equal to your tier. If
+              you already have this resistance, then use your proficiency bonus
+              instead.
             </p>
 
             <h4 className="header">Primal Spirits Aura (10th-Level Feature)</h4>
@@ -1345,9 +1506,16 @@ function LegendaryArchetypes() {
               </li>
               <li>
                 <span>
-                  You gain resistance to holy, necrotic, and unholy damage equal
-                  to your tier. If you alreaday have this resistance, then use
-                  your proficiency bonus instead.
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to holy, necrotic, and unholy damage equal to your tier. If
+                  you alreaday have this resistance, then use your proficiency
+                  bonus instead.
                 </span>
               </li>
             </ul>
@@ -1361,7 +1529,17 @@ function LegendaryArchetypes() {
               frequency="At-will"
               keywords="Magical, Melee"
               target="1 creature you can touch"
-              effect="Target can end all negative conditions affecting them, and if they’re dying, then they heal equal to your proficiency bonus."
+              effect={
+                <span>
+                  Target can end all negative conditions affecting them, and if
+                  they’re{" "}
+                  <Link className="internal-link" to="/rules/combat#dying">
+                    dying
+                  </Link>
+                  , then they <ToolTip preset="heal" /> equal to your
+                  proficiency bonus.
+                </span>
+              }
             />
             <h4 className="header">Immortal Saint (10th-Level Feature)</h4>
             <p>

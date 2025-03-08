@@ -301,7 +301,13 @@ function Arcanist() {
                     </li>
                     <li>
                       <span>
-                        Resistance to arcane damage equal to your tier
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#resistances-and-weaknesses"
+                        >
+                          Resistance
+                        </Link>{" "}
+                        to arcane damage equal to your tier
                       </span>
                     </li>
                     <li>
@@ -395,9 +401,12 @@ function Arcanist() {
 
             <h3 className="header">Substitute Spell</h3>
             <p>
-              During a short rest, you can replace one of your known battle
-              spells with another battle spell of the same tier and from the
-              same{" "}
+              During a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can replace one of your known battle spells with another
+              battle spell of the same tier and from the same{" "}
               <Link className="internal-link" to="/battle-spells">
                 magic tradition
               </Link>{" "}
@@ -505,7 +514,13 @@ function Arcanist() {
             <p>All your magical abilities ignore damage resistances.</p>
 
             <h3 className="header">Unparalleled Magic</h3>
-            <p>You can use high magic a second time per short rest.</p>
+            <p>
+              You can use high magic a second time per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              .
+            </p>
           </div>
         )}
       </div>

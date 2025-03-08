@@ -1,13 +1,15 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
+import Banner from "../../components/Banner";
 import Accordion from "../../components/Accordion";
 
 function HomePage() {
   return (
     <div className="homepage">
+      <Banner />
       <div className="homepage-content">
-        <h1 className="title">Welcome to Legends Rise!</h1>
-        <h1 className="subtitle">TTRPG created by Joe Costa</h1>
+        <h1 className="title">Legends Rise</h1>
+        <h1 className="subtitle">Created by Joe Costa</h1>
 
         <div className="section">
           <div className="section__container">

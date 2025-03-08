@@ -5,6 +5,7 @@ import ClassHeader from "../../components/ClassHeader";
 import Monster from "../../components/Monster";
 import Modifier from "../../components/Modifier";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function Ranger() {
   const [isDetails, setDetails] = useState(true);
@@ -168,7 +169,18 @@ function Ranger() {
               descriptor="You designate an enemy to become the target of your hunt."
               frequency="At-will"
               target="1 creature within 2 zones or whose tracks you discover"
-              duration="Until a long rest or you use this ability on another creature."
+              duration={
+                <span>
+                  Until a{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/adventuring#resting"
+                  >
+                    long rest
+                  </Link>{" "}
+                  or you use this ability on another creature
+                </span>
+              }
               effect={
                 <span>
                   The target becomes your prey. When you{" "}
@@ -259,9 +271,15 @@ function Ranger() {
             <ul className="no-spacing">
               <li>
                 <span>
-                  <b>Artic:</b> You gain resistance to cold damage equal to your
-                  tier. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  <b>Artic:</b> You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to cold damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
               <li>
@@ -271,9 +289,15 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  <b>Desert:</b> You gain resistance to fire damage equal to
-                  your tier. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  <b>Desert:</b> You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to fire damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
               <li>
@@ -289,15 +313,22 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  <b>Subterranean:</b> You gain night vision, or blind vision of
-                  1 zone if you already have night vision.
+                  <b>Subterranean:</b> You gain <ToolTip preset="night" />, or{" "}
+                  <ToolTip preset="blind" /> within 1 zone if you already have
+                  night vision.
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Swamp:</b> You gain resistance to toxic damage equal to
-                  your tier. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  <b>Swamp:</b> You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to toxic damage equal to your tier. If you already have this
+                  resistance, use your proficiency bonus instead.
                 </span>
               </li>
             </ul>
@@ -335,12 +366,16 @@ function Ranger() {
             <p>
               In combat, once per turn, you can use a maneuver to command your
               primal beast to use an action or maneuver, and it uses your
-              reaction. The primal beast regains hit points equal to its shaken
-              value when you heal by spending a recovery. When the primal beast
-              is reduced to 0 hit points, it dies, but you can resummon it at
-              full hit points during a short rest by spending a recovery. After
-              a long rest, you can freely resummon the primal beast and change
-              the type of primal beast.
+              reaction. The primal beast <ToolTip preset="heals" /> equal to its{" "}
+              <ToolTip preset="shakenVal" /> when you heal by spending a
+              recovery. When the primal beast is reduced to 0 hit points, it
+              dies, but you can resummon it at full hit points during a short
+              rest by spending a recovery. After a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , you can freely resummon the primal beast and change the type of
+              primal beast.
             </p>
             <Monster
               name="Primal Beast"
@@ -363,7 +398,18 @@ function Ranger() {
                   basic: true,
                   name: "Slam",
                   keywords: "melee, weapon",
-                  target: "1 engaged creature",
+                  target: (
+                    <span>
+                      1{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#engaged"
+                      >
+                        engaged
+                      </Link>{" "}
+                      creature
+                    </span>
+                  ),
                   defense: "EVN",
                   damage: "PB physical damage",
                   success: (
@@ -559,7 +605,15 @@ function Ranger() {
                   or damage an ally
                 </span>
               }
-              effect="Target is pulled to become engaged with you"
+              effect={
+                <span>
+                  Target is pulled to become{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  with you
+                </span>
+              }
             />
 
             <h2>Tier 3 Class Talents</h2>
@@ -569,8 +623,10 @@ function Ranger() {
             <h3 className="header">Predator Sight</h3>
             <p>
               You are supernaturally aware of the target of your mark prey. You
-              always know their location, even if they’re hidden, have
-              concealment, or undiscovered.
+              always know their location, even if they’re{" "}
+              <Link className="internal-link" to="/rules/combat#stealth">
+                hidden, have concealment, or undiscovered.
+              </Link>
             </p>
 
             <h3 className="header">Undying Companion</h3>
@@ -585,7 +641,12 @@ function Ranger() {
               frequency="Encounter"
               keywords="Magical"
               trigger="Your primal beast is reduced to 0 hit points"
-              effect="Your primal beast regains hit points equal to their shaken value."
+              effect={
+                <span>
+                  Your primal beast <ToolTip preset="heals" /> equal to their{" "}
+                  <ToolTip preset="shakenVal" />
+                </span>
+              }
             />
 
             <h3 className="header">Predator's Camouflage</h3>
@@ -605,9 +666,15 @@ function Ranger() {
               <b>Requirement:</b> warden subclass
             </p>
             <p>
-              When you use mark prey you gain temporary hit points equal to your
-              tier. While you have a prey, you regain these same temporary hit
-              points at the start of each turn.
+              When you use mark prey you gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your tier. While you have a prey, you regain these same
+              temporary hit points at the start of each turn.
             </p>
           </div>
         )}

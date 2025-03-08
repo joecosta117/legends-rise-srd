@@ -6,6 +6,7 @@ import Dropdown from "../../components/Dropdown";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
+import ToolTip from "../../components/ToolTip";
 
 function Ancestries() {
   const [selectedAncestry, setSelectedAncestry] = useState("");
@@ -254,7 +255,7 @@ function Ancestries() {
                     </li>
                     <li>
                       <span>
-                        <b>Hunter:</b> You gain night vision.
+                        <b>Hunter:</b> You gain <ToolTip preset="night" />.
                       </span>
                     </li>
                     <li>
@@ -321,8 +322,14 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Infernal Heart (S):</b> You gain resistance to unholy
-                    damage equal to your tier.
+                    <b>Infernal Heart (S):</b> You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to unholy damage equal to your tier.
                   </span>
                 </li>
                 <li>
@@ -340,8 +347,15 @@ function Ancestries() {
                 duration="Scene ends"
                 effect={
                   <span>
-                    You gain temporary hit points equal to your proficiency
-                    bonus. When you deal damage from an{" "}
+                    You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    equal to your proficiency bonus. When you deal damage from
+                    an{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -373,8 +387,14 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Child of Darkness (S):</b> You gain resistance to
-                    necrotic damage equal to your tier.
+                    <b>Child of Darkness (S):</b> You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to necrotic damage equal to your tier.
                   </span>
                 </li>
                 <li>
@@ -389,10 +409,29 @@ function Ancestries() {
                 descriptor="You bite down on a living foe, draining their blood, and gaining a surge of vitality."
                 frequency="Encounter"
                 keywords="Escalation, Melee"
-                target="1 living engaged creature"
+                target={
+                  <span>
+                    1 living{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    creature
+                  </span>
+                }
                 defense="EVN"
                 damage="5 physical damage per your tier"
-                effect="You gain temporary hit points equal to half the damage dealt (scene ends)"
+                effect={
+                  <span>
+                    You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    equal to half the damage dealt (scene ends)
+                  </span>
+                }
               />
             </div>
           )}
@@ -421,8 +460,15 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Draconic Resistance (S):</b> You gain resistance to the
-                    damage type chosen for draconic heritage equal to your tier.
+                    <b>Draconic Resistance (S):</b> You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to the damage type chosen for draconic heritage equal to
+                    your tier.
                   </span>
                 </li>
                 <li>
@@ -477,7 +523,11 @@ function Ancestries() {
                 actType="Free"
                 descriptor="You dig deep and rely on the stubborn toughness of your ancestors."
                 frequency="Encounter"
-                trigger="You become shaken"
+                trigger={
+                  <span>
+                    You become <ToolTip preset="shaken" />
+                  </span>
+                }
                 effect="Spend a recovery"
               />
             </div>
@@ -511,9 +561,15 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Elemental Affinity (S):</b> You gain resistance to a
-                    damage type depending on your elemental soul equal to your
-                    tier: lightning (air), fire (fire), or cold (ice). For
+                    <b>Elemental Affinity (S):</b> You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to a damage type depending on your elemental soul equal to
+                    your tier: lightning (air), fire (fire), or cold (ice). For
                     water, you can breath underwater and gain a swim speed of 1.
                     For earth, your starting hit points increase by your
                     proficiency bonus.
@@ -558,8 +614,15 @@ function Ancestries() {
                     >
                       crashing wave
                     </Link>{" "}
-                    (water). Once per short rest, you can cast this spell at a
-                    spell tier equal to your tier without spending mana.
+                    (water). Once per{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/adventuring#resting"
+                    >
+                      short rest
+                    </Link>
+                    , you can cast this spell at a spell tier equal to your tier
+                    without spending mana.
                   </span>
                 </li>
               </ul>
@@ -591,8 +654,8 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Subterranean Sight (Dark Elf Only) (S):</b> You gain
-                    night vision.
+                    <b>Subterranean Sight (Dark Elf Only) (S):</b> You gain{" "}
+                    <ToolTip preset="night" />.
                   </span>
                 </li>
                 <li>
@@ -721,7 +784,18 @@ function Ancestries() {
                 frequency="Encounter"
                 keywords="Magical"
                 duration="Scene ends"
-                effect="You gain temporary hit points equal to your proficiency bonus. Your size can become huge."
+                effect={
+                  <span>
+                    You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    equal to your proficiency bonus and your size becomes huge
+                  </span>
+                }
               />
             </div>
           )}
@@ -743,7 +817,8 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Tricksy Eyes (S):</b> You gain night vision.
+                    <b>Tricksy Eyes (S):</b> You gain <ToolTip preset="night" />
+                    .
                   </span>
                 </li>
                 <li>
@@ -820,8 +895,15 @@ function Ancestries() {
                     >
                       dazzling lights
                     </Link>{" "}
-                    battle spell. Once per short rest, you can cast this spell
-                    at a spell tier equal to your tier without spending mana.
+                    battle spell. Once per{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/adventuring#resting"
+                    >
+                      short rest
+                    </Link>
+                    , you can cast this spell at a spell tier equal to your tier
+                    without spending mana.
                   </span>
                 </li>
               </ul>
@@ -898,7 +980,11 @@ function Ancestries() {
                     >
                       attack rolls
                     </Link>{" "}
-                    against targets engaged to an ally.
+                    against targets{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    to an ally.
                   </span>
                 </li>
                 <li>
@@ -964,7 +1050,7 @@ function Ancestries() {
                     >
                       attack rolls
                     </Link>{" "}
-                    against shaken targets.
+                    against <ToolTip preset="shaken" /> targets.
                   </span>
                 </li>
                 <li>
@@ -982,9 +1068,16 @@ function Ancestries() {
                 duration="Scene ends"
                 effect={
                   <span>
-                    You gain temporary hit points equal to your proficiency
-                    bonus, your natural melee weapons deal 3 physical damage,
-                    and <Modifier type="f" count="1" /> to{" "}
+                    You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    equal to your proficiency bonus, your natural melee weapons
+                    deal 3 physical damage, and <Modifier type="f" count="1" />{" "}
+                    to{" "}
                     <Link
                       className="internal-link"
                       to="/combat-abilities#disarm"
@@ -1036,8 +1129,14 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Pure of Heart (S):</b> You gain resistance to holy damage
-                    equal to your tier.
+                    <b>Pure of Heart (S):</b> You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to holy damage equal to your tier.
                   </span>
                 </li>
                 <li>
@@ -1086,7 +1185,8 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Orcish Fury (S):</b> When you are shaken, you gain{" "}
+                    <b>Orcish Fury (S):</b> When you are{" "}
+                    <ToolTip preset="shaken" />, you gain{" "}
                     <b>
                       +1{" "}
                       <img className="icon" src={fortune} alt="fortune icon" />
@@ -1113,7 +1213,18 @@ function Ancestries() {
                 descriptor="You can push your body’s resilience beyond mortal limits."
                 frequency="Encounter"
                 duration="Scene ends"
-                effect="You gain temporary hit points equal to your shaken value."
+                effect={
+                  <span>
+                    You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    equal to your <ToolTip preset="shakenVal" />
+                  </span>
+                }
               />
             </div>
           )}
@@ -1177,7 +1288,7 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Dark Sight (S):</b> You gain night vision.
+                    <b>Dark Sight (S):</b> You gain <ToolTip preset="night" />.
                   </span>
                 </li>
                 <li>
@@ -1190,8 +1301,15 @@ function Ancestries() {
                       darkness
                     </Link>{" "}
                     battle spell even if you don’t know the shadow tradition.
-                    Once per short rest, you can cast this spell at a spell tier
-                    equal to your tier without spending mana.
+                    Once per{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/adventuring#resting"
+                    >
+                      short rest
+                    </Link>
+                    , you can cast this spell at a spell tier equal to your tier
+                    without spending mana.
                   </span>
                 </li>
               </ul>
@@ -1221,8 +1339,14 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Undead Resilience (S):</b> You gain resistance to
-                    necrotic damage equal to your tier.
+                    <b>Undead Resilience (S):</b> You gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#resistances-and-weaknesses"
+                    >
+                      resistance
+                    </Link>{" "}
+                    to necrotic damage equal to your tier.
                   </span>
                 </li>
                 <li>

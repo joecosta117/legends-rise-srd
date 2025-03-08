@@ -29,7 +29,7 @@ interface Abilities {
   name: string;
   keywords?: string;
   defense?: string;
-  target?: string;
+  target?: string | JSX.element;
   duration?: string;
   damage?: string;
   critical?: string | JSX.element;
