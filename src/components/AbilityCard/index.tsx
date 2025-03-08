@@ -1,5 +1,5 @@
 import "./index.scss";
-import React from "react";
+import React, { JSX } from "react";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 import { Link } from "react-router-dom";
@@ -11,19 +11,19 @@ interface AbilityCardProps {
   descriptor: string;
   frequency?: string;
   keywords?: string;
-  duration?: string | JSX.element;
-  trigger?: string | JSX.element;
-  target?: string | JSX.element;
+  duration?: string | JSX.Element;
+  trigger?: string | JSX.Element;
+  target?: string | JSX.Element;
   damage?: string;
   defense?: string;
-  critical?: string | JSX.element;
-  success?: string | JSX.element;
-  partial?: string | JSX.element;
+  critical?: string | JSX.Element;
+  success?: string | JSX.Element;
+  partial?: string | JSX.Element;
   partialOrLower?: string;
-  failure?: string | JSX.element;
+  failure?: string | JSX.Element;
   cast?: string;
-  effect?: string | JSX.element;
-  requirement?: string | JSX.element;
+  effect?: string | JSX.Element;
+  requirement?: string | JSX.Element;
   effectTiers?: boolean;
 }
 

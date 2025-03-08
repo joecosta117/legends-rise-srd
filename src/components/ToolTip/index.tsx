@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useEffect, useRef, JSX } from "react";
 import "./index.scss";
 import { Portal } from "../Portal";
-import Modifier from "../Modifier";
 
 interface TooltipProps {
   text?: string;
