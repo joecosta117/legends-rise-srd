@@ -4789,7 +4789,6 @@ export const teleportationSpells = [
               up to anywhere within the targeted zone
             </span>
           }
-          effect="You teleport up to anywhere within the targeted zone"
         />
       ),
     },

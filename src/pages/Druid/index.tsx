@@ -3,7 +3,6 @@ import AbilityCard from "../../components/AbilityCard";
 import { useState } from "react";
 import ClassHeader from "../../components/ClassHeader";
 import fortune from "../../assets/fortune-icon-v2.png";
-import misfortune from "../../assets/misfortune-icon-v2.png";
 import { Link } from "react-router-dom";
 import ToolTip from "../../components/ToolTip";
 import Modifier from "../../components/Modifier";
