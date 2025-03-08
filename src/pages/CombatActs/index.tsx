@@ -38,7 +38,7 @@ function CombatActs() {
 
         setTimeout(() => {
           removeHash();
-        }, 1000);
+        }, 2000);
       }
     });
   }, []);
