@@ -1,5 +1,5 @@
 import "./index.scss";
-import React from "react";
+import React, { JSX } from "react";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 import basicAtk from "../../assets/monster-strike.png";
@@ -29,22 +29,22 @@ interface Abilities {
   name: string;
   keywords?: string;
   defense?: string;
-  target?: string | JSX.element;
+  target?: string | JSX.Element;
   duration?: string;
   damage?: string;
-  critical?: string | JSX.element;
-  success?: string | JSX.element;
-  partial?: string | JSX.element;
-  failure?: string | JSX.element;
-  effect?: string | JSX.element;
+  critical?: string | JSX.Element;
+  success?: string | JSX.Element;
+  partial?: string | JSX.Element;
+  failure?: string | JSX.Element;
+  effect?: string | JSX.Element;
   frequency?: string;
-  trigger?: string | JSX.element;
+  trigger?: string | JSX.Element;
   partialOrLower?: string;
 }
 
 interface Traits {
   name: string;
-  description: string | JSX.element;
+  description: string | JSX.Element;
 }
 
 const Monster: React.FC<MonsterProps> = ({
