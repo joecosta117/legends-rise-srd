@@ -33,7 +33,9 @@ import {
 function BattleSpells() {
   const [selectedTradition, setSelectedTradition] = useState("");
   const [selectedSpell, setSelectedSpell] = useState("");
-  const spellRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const spellRefs = useRef<{
+    [key: string]: HTMLDivElement | null | undefined;
+  }>({});
 
   function handleMagicTradition(label: string) {
     setSelectedTradition(label);
@@ -146,6 +148,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -175,6 +178,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -204,6 +208,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -233,6 +238,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -262,6 +268,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -291,6 +298,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -320,6 +328,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -349,6 +358,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -378,6 +388,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -407,6 +418,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -430,6 +442,7 @@ function BattleSpells() {
                 {spells.map(({ title, spell, actType }, index) => (
                   <Accordion
                     open={isOpen(title)}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -465,6 +478,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -491,6 +505,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -520,6 +535,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -549,6 +565,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -578,6 +595,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -606,6 +624,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -635,6 +654,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -664,6 +684,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -693,6 +714,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -722,6 +744,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))
@@ -750,6 +773,7 @@ function BattleSpells() {
                     content={spell}
                     type="spell"
                     actType={actType}
+                    //@ts-ignore
                     ref={(el) =>
                       (spellRefs.current[title.toLowerCase()] =
                         el?.querySelector(".accordion__content"))

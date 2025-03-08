@@ -10,7 +10,9 @@ function CombatActs() {
   const [all, setAll] = useState(true);
   const [actions, setActions] = useState(false);
   const [maneuvers, setManeuvers] = useState(false);
-  const actRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const actRefs = useRef<{ [key: string]: HTMLDivElement | null | undefined }>(
+    {},
+  );
 
   function handleAll() {
     setAll(true);
@@ -625,6 +627,7 @@ function CombatActs() {
                 content={content}
                 type="spell"
                 actType={actType}
+                //@ts-ignore
                 ref={(el) =>
                   (actRefs.current[id] = el?.querySelector(
                     ".accordion__content",
@@ -648,6 +651,7 @@ function CombatActs() {
                 type="spell"
                 actType={actType}
                 id={id}
+                //@ts-ignore
                 ref={(el) =>
                   (actRefs.current[id] = el?.querySelector(
                     ".accordion__content",
@@ -671,6 +675,7 @@ function CombatActs() {
                 type="spell"
                 actType={actType}
                 id={id}
+                //@ts-ignore
                 ref={(el) =>
                   (actRefs.current[id] = el?.querySelector(
                     ".accordion__content",

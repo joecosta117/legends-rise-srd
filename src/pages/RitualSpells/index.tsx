@@ -11,7 +11,9 @@ function RitualSpells() {
   const [isT2, setT2] = useState(false);
   const [isT3, setT3] = useState(false);
   const [selectedSpell, setSelectedSpell] = useState("");
-  const spellRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+  const spellRefs = useRef<{
+    [key: string]: HTMLDivElement | null | undefined;
+  }>({});
 
   function handleT1() {
     setT1(true);
@@ -135,6 +137,7 @@ function RitualSpells() {
                 content={spell}
                 type="spell"
                 actType={actType}
+                //@ts-ignore
                 ref={(el) =>
                   (spellRefs.current[title.toLowerCase()] = el?.querySelector(
                     ".accordion__content",
@@ -157,6 +160,7 @@ function RitualSpells() {
                 content={spell}
                 type="spell"
                 actType={actType}
+                //@ts-ignore
                 ref={(el) =>
                   (spellRefs.current[title.toLowerCase()] = el?.querySelector(
                     ".accordion__content",
@@ -179,6 +183,7 @@ function RitualSpells() {
                 content={spell}
                 type="spell"
                 actType={actType}
+                //@ts-ignore
                 ref={(el) =>
                   (spellRefs.current[title.toLowerCase()] = el?.querySelector(
                     ".accordion__content",
