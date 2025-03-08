@@ -15,7 +15,7 @@ const scrollToHash = () => {
 
         setTimeout(() => {
           removeHash()
-        }, 500)
+        }, 1000)
       } 
     }
   }, []);
