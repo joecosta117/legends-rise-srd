@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // @ts-ignore
 import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
-import ThemeToggle from "../ThemeToggle";
+// import ThemeToggle from "../ThemeToggle";
 
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
