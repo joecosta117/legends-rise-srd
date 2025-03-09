@@ -1,5 +1,5 @@
 // import bannerDesktop from "../../assets/banner-desktop.jpg";
-import bannerMobile from "../../assets/banner-mobile.jpg";
+import bannerMobile from "../../assets/banner-mobile-enhanced-2.jpeg";
 import bannerDesktopV2 from "../../assets/banner-desktop-enhanced.jpg";
 import "./index.scss";
 

@@ -8,7 +8,6 @@ function EmailForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Dummy email sending function
     const mailtoLink = `mailto:joecosta117@gmail.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}%0A%0AFrom: ${encodeURIComponent(email)}`;
