@@ -1,21 +1,21 @@
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { getHash, removeHash } from './getPath';
 
 const scrollToHash = () => {
-  useEffect(() => {
+  // useLayOut hits after the render
+  useLayoutEffect(() => {
     const hash = getHash().toLocaleLowerCase();
 
     if (hash) {
       const content = document.getElementById(`${hash}`);
       if (content) {
-        content.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-
         setTimeout(() => {
-          removeHash()
-        }, 2000)
+          content.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+          removeHash();
+        }, 500);
       } 
     }
   }, []);
