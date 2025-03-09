@@ -1,6 +1,6 @@
 import "./index.scss";
 import AbilityCard from "../../components/AbilityCard";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import Accordion from "../../components/Accordion";
 import { Link } from "react-router-dom";
 import Modifier from "../../components/Modifier";
@@ -30,15 +30,14 @@ function CombatActs() {
     setManeuvers(true);
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const hash = getHash().toLocaleLowerCase();
     Object.entries(actRefs.current).forEach(([key, ref]) => {
       if (ref && key === hash) {
-        ref.scrollIntoView({ behavior: "smooth", block: "center" });
-
         setTimeout(() => {
+          ref.scrollIntoView({ behavior: "smooth", block: "center" });
           removeHash();
-        }, 2000);
+        }, 500);
       }
     });
   }, []);
