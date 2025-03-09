@@ -8,7 +8,7 @@ export function getHash(): string {
 }
 
 export function removeHash(): void {
-  history.pushState(
+  history.replaceState(
     "",
     document.title,
     window.location.pathname + window.location.search

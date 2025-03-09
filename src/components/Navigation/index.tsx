@@ -8,24 +8,34 @@ import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+
   useEffect(() => {
-    window.onscroll = function () {
+    const nav = document.getElementById("nav");
+
+    const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
 
       if (currentScrollPos > 41) {
         if (prevScrollPos > currentScrollPos) {
-          const nav = document.getElementById("nav");
           if (nav) nav.style.top = "0";
         } else {
-          const nav = document.getElementById("nav");
           if (nav) nav.style.top = "-66px";
         }
+      } else {
+        if (nav) nav.style.top = "0";
       }
 
       setPrevScrollPos(currentScrollPos);
     };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [prevScrollPos]);
 
+  // useEffect to add event listeners for the dropdowns
   useEffect(() => {
     const dropdowns = document.querySelectorAll(
       ".navigation__links-container__dropdown",
@@ -52,6 +62,7 @@ const Navigation = () => {
     }
   };
 
+  // useEffect to adjust the page content spacing during resizing
   useEffect(() => {
     adjustContentMarginTop();
 

@@ -23,7 +23,10 @@ function CombatRules() {
           When heroes engage monsters and villains in a narratively significant
           combat, follow these rules. For minor squabbles, instead rely on skill
           rolls such as utilizing a{" "}
-          <Link className="internal-link" to="/rules/skills#progress-countdown">
+          <Link
+            className="internal-link"
+            to="/rules/skills#progress-countdowns"
+          >
             progress countdown
           </Link>
           .
