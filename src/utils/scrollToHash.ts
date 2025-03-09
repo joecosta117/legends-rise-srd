@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { getHash, removeHash } from './getPath';
 import { useLocation } from 'react-router-dom';
 
