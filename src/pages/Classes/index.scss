@@ -5,7 +5,7 @@
 }
 
 .classes-content {
-  @include page-content();
+  @include class-page-content();
 
   table, th, td {
     border: 1px solid $gold;

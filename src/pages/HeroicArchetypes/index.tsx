@@ -9,6 +9,7 @@ import ToolTip from "../../components/ToolTip";
 
 function HeroicArchetypes() {
   const [selectedArchetype, setSelectedArchetype] = useState("");
+  const [isAll, setAll] = useState(true);
   const [isCombat, setCombat] = useState(false);
   const [isMystical, setMystical] = useState(false);
   const [isMulticlass, setMulticlass] = useState(false);
@@ -16,17 +17,26 @@ function HeroicArchetypes() {
   function handleArchetype(label: string) {
     setSelectedArchetype(label);
   }
+  function handleAll() {
+    setAll(true);
+    setCombat(false);
+    setMystical(false);
+    setMulticlass(false);
+  }
   function handleCombat() {
+    setAll(false);
     setCombat(true);
     setMystical(false);
     setMulticlass(false);
   }
   function handleMystical() {
+    setAll(false);
     setCombat(false);
     setMystical(true);
     setMulticlass(false);
   }
   function handleMulticlass() {
+    setAll(false);
     setCombat(false);
     setMystical(false);
     setMulticlass(true);
@@ -136,21 +146,35 @@ function HeroicArchetypes() {
   return (
     <div className="archetypes">
       <div className="archetypes-content">
-        <div className="archetypes-content__tabs">
-          <div className="archetypes-content__tabs__tab" onClick={handleCombat}>
+        <div className="tab-items">
+          <div
+            className="tab-items__tab"
+            onClick={handleAll}
+            data-selected={isAll}
+          >
+            <p>All</p>
+          </div>
+          <div className="tab-items__divider">|</div>
+          <div
+            className="tab-items__tab"
+            onClick={handleCombat}
+            data-selected={isCombat}
+          >
             <p>Combat Style</p>
           </div>
-          <div className="archetypes-content__tabs__divider">|</div>
+          <div className="tab-items__divider">|</div>
           <div
-            className="archetypes-content__tabs__tab"
+            className="tab-items__tab"
             onClick={handleMystical}
+            data-selected={isMystical}
           >
             <p>Mystical</p>
           </div>
-          <div className="archetypes-content__tabs__divider">|</div>
+          <div className="tab-items__divider">|</div>
           <div
-            className="archetypes-content__tabs__tab"
+            className="tab-items__tab"
             onClick={handleMulticlass}
+            data-selected={isMulticlass}
           >
             <p>Multiclass</p>
           </div>

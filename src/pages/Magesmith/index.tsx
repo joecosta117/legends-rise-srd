@@ -271,6 +271,7 @@ function Magesmith() {
               actType="Action"
               descriptor="You quickly assemble a magical cannon that scurries away and becomes activated."
               frequency="At-will"
+              duration="Scene ends"
               keywords="Magical, Summon"
               // @ts-ignore
               effect={
