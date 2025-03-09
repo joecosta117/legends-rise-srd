@@ -100,7 +100,7 @@ function HomePage() {
             />
             <Accordion
               title="Easy to Run"
-              content="As a long time game master, I wanted Legends Rise to be very easy to run. Legends Rise provides plenty of tools to game masters to handle all sorts of situations such as negotiations, downtime, and more. Building encounters has never been easier with enemies having defined roles and easy to build enemy rules."
+              content="As a long time game master, I wanted to make running Legends Rise an easy experience. Legends Rise provides plenty of tools to game masters to handle all sorts of situations such as negotiations, downtime, and more. Building encounters has never been easier with enemies having defined roles and easy to build enemy rules."
             />
           </div>
         </div>

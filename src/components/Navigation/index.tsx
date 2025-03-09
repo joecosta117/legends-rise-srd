@@ -109,7 +109,9 @@ const Navigation = () => {
   }
 
   function toggleMobileNav() {
-    if (window.innerWidth < BREAKPOINTS.DESKTOP) {
+    if (window.innerWidth > BREAKPOINTS.TABLET) {
+      setIsMobileNavOpen(false);
+    } else {
       setIsMobileNavOpen(!isMobileNavOpen);
     }
   }
