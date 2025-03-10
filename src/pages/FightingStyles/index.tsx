@@ -161,11 +161,8 @@ function FightingStyles() {
                     >
                       Strike
                     </Link>{" "}
-                    with a ranged weapon, on a success or higher, the target is{" "}
-                    <Link className="internal-link" to="/conditions#slowed">
-                      slowed
-                    </Link>{" "}
-                    (turn ends)
+                    with a ranged weapon, on a success or higher, the target's
+                    speed is halved (turn ends)
                   </span>
                 }
               />

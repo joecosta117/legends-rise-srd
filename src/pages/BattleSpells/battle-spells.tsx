@@ -1394,8 +1394,8 @@ export const eldritchSpells = [
                   overcome roll
                 </Link>{" "}
                 or become{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 (turn ends).
               </span>
@@ -1541,8 +1541,8 @@ export const eldritchSpells = [
             damage="3 psychic damage per spell tier. If any damage from this spell kills the target, then their head explodes (assuming they have one)."
             success={
               <span>
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 (scene ends)
               </span>
@@ -1692,16 +1692,16 @@ export const enchantmentSpells = [
           }
           success={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (scene ends)
             </span>
           }
           partial={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (turn ends)
             </span>
@@ -1821,8 +1821,8 @@ export const enchantmentSpells = [
             partial={
               <span>
                 Charmed (turn ends), and{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 while charmed as they bask in your glory
               </span>
@@ -2115,14 +2115,7 @@ export const gravitySpells = [
           defense="MGT"
           keywords="Magical"
           critical="Same as success, and 1 physical damage per your spell tier"
-          success={
-            <span>
-              <Link className="internal-link" to="/conditions#slowed">
-                slowed
-              </Link>{" "}
-              (turn ends)
-            </span>
-          }
+          success={<span>Target's speed is halved (turn ends)</span>}
         />
       ),
     },
@@ -2687,14 +2680,7 @@ export const iceSpells = [
           defense="EVN"
           keywords="Magical, Range"
           damage="2 cold damage per your tier"
-          critical={
-            <span>
-              <Link className="internal-link" to="/conditions#slowed">
-                slowed
-              </Link>{" "}
-              (turn ends)
-            </span>
-          }
+          critical={<span>Target's speed is halved (turn ends)</span>}
         />
       ),
     },
@@ -2747,14 +2733,7 @@ export const iceSpells = [
               (turn ends)
             </span>
           }
-          partial={
-            <span>
-              <Link className="internal-link" to="/conditions#slowed">
-                slowed
-              </Link>{" "}
-              (turn ends)
-            </span>
-          }
+          partial={<span>Target's speed is halved (turn ends)</span>}
         />
       ),
     },
@@ -2849,11 +2828,8 @@ export const iceSpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against their Might. On a success, the creature is{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
-                </Link>{" "}
-                (turn starts).
+                against their Might. On a success, the creature's speed is
+                halved (turn starts).
               </span>
             </span>
           }
@@ -2903,8 +2879,8 @@ export const iceSpells = [
                 damage: "triple ST cold damage",
                 success: (
                   <span>
-                    <Link className="internal-link" to="/conditions#dazed">
-                      dazed
+                    <Link className="internal-link" to="/conditions#slowed">
+                      slowed
                     </Link>{" "}
                     (turn ends)
                   </span>
@@ -3720,8 +3696,8 @@ export const lightSpells = [
             critical={
               <span>
                 Same as a success, but also{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 while blinded
               </span>
@@ -4071,14 +4047,7 @@ export const natureSpells = [
                 target: "1 creature within 3 zones",
                 defense: "EVN",
                 damage: "double ST physical damage",
-                success: (
-                  <span>
-                    <Link className="internal-link" to="/conditions#slowed">
-                      slowed
-                    </Link>{" "}
-                    (turn ends)
-                  </span>
-                ),
+                success: <span>Target's speed is halved (turn ends)</span>,
               },
               {
                 basic: false,
@@ -4978,12 +4947,12 @@ export const timeSpells = [
               <ul>
                 <li>
                   <span>
-                    <i>Speed Up:</i> Target’s speeds are doubled
+                    <i>Speed Up:</i> Target’s speed is doubled
                   </span>
                 </li>
                 <li>
                   <span>
-                    <i>Slow Down:</i> Target is slowed
+                    <i>Slow Down:</i> Target's speed is halved
                   </span>
                 </li>
               </ul>
@@ -5005,8 +4974,8 @@ export const timeSpells = [
           damage="2 arcane damage per your tier"
           critical={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (turn ends)
             </span>
@@ -5075,28 +5044,22 @@ export const timeSpells = [
           defense="MGT"
           partial={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (turn ends)
             </span>
           }
           success={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (scene ends)
             </span>
           }
           critical={
-            <span>
-              Same as a success, and{" "}
-              <Link className="internal-link" to="/conditions#slowed">
-                slowed
-              </Link>{" "}
-              while dazed
-            </span>
+            <span>Same as a success, and speed halved while slowed</span>
           }
         />
       ),
@@ -5170,8 +5133,8 @@ export const timeSpells = [
                       attack roll
                     </Link>{" "}
                     against their Might. On a success, they are{" "}
-                    <Link className="internal-link" to="/conditions#dazed">
-                      dazed
+                    <Link className="internal-link" to="/conditions#slowed">
+                      slowed
                     </Link>{" "}
                     (turn starts). You can only make this attack roll against
                     the same creature once per turn.
@@ -5199,12 +5162,9 @@ export const timeSpells = [
             success="Time pauses for the target and they can’t act or be interacted with (turn ends). Any current effects already on the target like ongoing damage is paused until time resumes for the target."
             partial={
               <span>
+                Speed halved (turn ends) and{" "}
                 <Link className="internal-link" to="/conditions#slowed">
                   slowed
-                </Link>{" "}
-                (turn ends) and{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -5350,8 +5310,8 @@ export const toxicSpells = [
           damage="5 toxic damage per spell tier"
           success={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (turn ends)
             </span>
@@ -5432,8 +5392,8 @@ export const toxicSpells = [
                   attack roll
                 </Link>{" "}
                 against their Might, and on a success, they are{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 (turn ends). On your turn, you can spend a maneuver to move each
                 cloud up to 1 zone.
@@ -5624,8 +5584,8 @@ export const unholySpells = [
           damage="4 unholy damage per spell tier"
           success={
             <span>
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
+              <Link className="internal-link" to="/conditions#slowed">
+                slowed
               </Link>{" "}
               (turn ends)
             </span>
@@ -5780,8 +5740,8 @@ export const unholySpells = [
                   hindered
                 </Link>{" "}
                 (turn ends), and{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 while hindered
               </span>

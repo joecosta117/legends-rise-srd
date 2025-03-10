@@ -945,11 +945,8 @@ function CombatRules() {
         <p>
           When fighting underwater, certain actions are more difficult. If you
           don’t have a swim speed, then you take{" "}
-          <Modifier type="mf" count="1" /> on weapon abilities and are{" "}
-          <Link className="internal-link" to="/conditions#slowed">
-            slowed
-          </Link>
-          . Any creature fully immersed in water gains{" "}
+          <Modifier type="mf" count="1" /> on weapon abilities and your speed is
+          halved . Any creature fully immersed in water gains{" "}
           <Link
             className="internal-link"
             to="/rules/combat#resistances-and-weaknesses"

@@ -215,13 +215,7 @@ function Weapons() {
             <tr>
               <td>Bows</td>
               <td>Crossbow, longbow, shortbow</td>
-              <td>
-                target is{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
-                </Link>{" "}
-                (turn ends)
-              </td>
+              <td>target's speed is halved (turn ends)</td>
             </tr>
             <tr>
               <td>Blades</td>
@@ -281,8 +275,8 @@ function Weapons() {
               <td>Claw, Foot, Fist</td>
               <td>
                 target is{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
                 </Link>{" "}
                 (turn ends)
               </td>

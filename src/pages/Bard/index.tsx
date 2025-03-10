@@ -628,15 +628,7 @@ function Bard() {
                 frequency="At-will"
                 keywords="Magical"
                 target="All enemies within your zone"
-                effect={
-                  <span>
-                    Targets are{" "}
-                    <Link className="internal-link" to="/conditions#slowed">
-                      slowed
-                    </Link>{" "}
-                    (turn ends)
-                  </span>
-                }
+                effect={<span>Targets' speeds are halved (turn ends)</span>}
               />
 
               <AbilityCard

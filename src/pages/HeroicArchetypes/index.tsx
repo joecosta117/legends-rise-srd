@@ -533,8 +533,8 @@ function HeroicArchetypes() {
               }
               success={
                 <span>
-                  <Link className="internal-link" to="/conditions#dazed">
-                    dazed
+                  <Link className="internal-link" to="/conditions#slowed">
+                    slowed
                   </Link>{" "}
                   (scene ends) and{" "}
                   <Link className="internal-link" to="/conditions#prone">
@@ -821,11 +821,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals cold damage, the target is also{" "}
-              <Link className="internal-link" to="/conditions#slowed">
-                slowed
-              </Link>{" "}
-              (turn ends).
+              that deals cold damage, the target's speed is halved (turn ends).
             </p>
           </div>
         )}

@@ -748,8 +748,8 @@ function LegendaryArchetypes() {
                     ongoing
                   </Link>{" "}
                   fire damage equal to your tier (fire),{" "}
-                  <Link className="internal-link" to="/conditions#dazed">
-                    dazed
+                  <Link className="internal-link" to="/conditions#slowed">
+                    slowed
                   </Link>{" "}
                   (turn ends; air),{" "}
                   <Link className="internal-link" to="/conditions#prone">

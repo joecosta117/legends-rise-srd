@@ -17,13 +17,10 @@ function Armor() {
         <h2>Armor Training</h2>
         <p>
           Your class determines what armor you're trained in. If you aren’t
-          trained in armor while wearing armor, then you are{" "}
+          trained in armor while wearing armor, then your speed is halved and
+          you're{" "}
           <Link className="internal-link" to="/conditions#slowed">
             slowed
-          </Link>{" "}
-          and{" "}
-          <Link className="internal-link" to="/conditions#dazed">
-            dazed
           </Link>
           .
         </p>

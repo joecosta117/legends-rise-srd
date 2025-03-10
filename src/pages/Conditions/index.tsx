@@ -75,30 +75,6 @@ function Conditions() {
       ),
     },
     {
-      title: "Dazed",
-      id: "dazed",
-      content: (
-        <div>
-          <ul style={{ marginTop: "0" }}>
-            <li>
-              <span>
-                On your turn you can only use either a maneuver or an action
-              </span>
-            </li>
-            <li>
-              <span>
-                If you’re{" "}
-                <Link className="internal-link" to="/conditions#hastened">
-                  hastened
-                </Link>
-                , you still gain the extra maneuver
-              </span>
-            </li>
-          </ul>
-        </div>
-      ),
-    },
-    {
       title: "Exposed",
       id: "exposed",
       content: (
@@ -237,7 +213,26 @@ function Conditions() {
     {
       title: "Slowed",
       id: "slowed",
-      content: <p>Your speed is halved</p>,
+      content: (
+        <div>
+          <ul style={{ marginTop: "0" }}>
+            <li>
+              <span>
+                On your turn you can only use either a maneuver or an action
+              </span>
+            </li>
+            <li>
+              <span>
+                If you’re{" "}
+                <Link className="internal-link" to="/conditions#hastened">
+                  hastened
+                </Link>
+                , you still gain the extra maneuver
+              </span>
+            </li>
+          </ul>
+        </div>
+      ),
     },
     {
       title: "Taunted",
