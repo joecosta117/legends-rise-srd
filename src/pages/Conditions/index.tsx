@@ -131,10 +131,6 @@ function Conditions() {
                 You take <Modifier type="mf" count="1" /> on{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
-                </Link>{" "}
-                and physically related{" "}
-                <Link className="internal-link" to="/rules/skills">
-                  skill rolls
                 </Link>
               </span>
             </li>
@@ -169,10 +165,6 @@ function Conditions() {
                 You take <Modifier type="mf" count="1" /> on{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
-                </Link>{" "}
-                and physically related{" "}
-                <Link className="internal-link" to="/rules/skills">
-                  skill rolls
                 </Link>
               </span>
             </li>
