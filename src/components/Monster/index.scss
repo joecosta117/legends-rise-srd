@@ -16,6 +16,8 @@
     color: $black;
     padding: 5px 10px;
     font-size: 18px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .monster-content {
@@ -25,12 +27,22 @@
 
   h4 {
     margin-top: 5px;
-    border-top: 1px solid $gold;
+    // border-top: 1px solid $gold;
   }
   p, span {
     font-size: 14px;
     margin-bottom: 0;
   }
+  .evn {
+    color: $evasiongold;
+  }
+  .mgt {
+    color: $physicalred;
+  }
+  .res {
+    color: $mysticalblue;
+  }
+
   .traits-section, .abilities {
     ul {
       margin: 0;
@@ -44,11 +56,20 @@
         list-style-type: disc;
         margin-bottom: 0;
 
-        span {
+        .degree-effect {
           margin-left: -10px;
         }
       }
     }
+
+    .ability {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
     p, h4 {
       @include mq(s) {
         padding-left: 0;
@@ -61,6 +82,21 @@
       @include mq(xl) {
         padding-left: 0;
         padding-right: 0;
+      }
+    }
+
+    h4 {
+      background: $bkgdgolddark;
+      padding-left: 5px;
+      
+      &[data-type="action"] {
+        background: $actionred;
+      }
+      &[data-type="maneuver"] {
+        background: $maneuvergreen;
+      }
+      &[data-type="reaction"] {
+        background: $reactionorange;
       }
     }
     .attack-icon {

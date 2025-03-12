@@ -70,6 +70,7 @@ function LegendaryArchetypes() {
         <Dropdown
           items={dropdownItems}
           startLabel="Select a Legendary Archetype"
+          type="legendary-archetypes"
         />
 
         {selectedArchetype === "Archangel" && (

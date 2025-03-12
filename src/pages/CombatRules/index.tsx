@@ -683,7 +683,8 @@ function CombatRules() {
         <h4 className="header">Regeneration</h4>
         <p>
           Some effects might give you <b>regeneration</b>, which lets you heal
-          at the start of your turn equal to the amount stated.
+          at the start of your turn equal to the amount stated if you aren't
+          defeated or dead.
         </p>
 
         <h2 id="dying">Defeat and Dying</h2>

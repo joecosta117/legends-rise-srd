@@ -420,41 +420,13 @@ const Navigation = () => {
               data-active="false"
               data-type="gm"
             >
-              {/* <Link
-                className="navigation__links-container__dropdown__item"
-                to="/2e-ancestries"
-                onClick={toggleMobileNav}
-              >
-                Ancestries
-              </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
-                to="/2e-archetypes"
-                onClick={toggleMobileNav}
-              >
-                Archetypes
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/2e-classes"
-                onClick={toggleMobileNav}
-              >
-                Classes
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/2e-magic-items"
-                onClick={toggleMobileNav}
-              >
-                Magic Items
-              </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/2e-monsters"
+                to="/monsters"
                 onClick={toggleMobileNav}
               >
                 Monsters
-              </Link> */}
+              </Link>
             </div>
           </div>
 

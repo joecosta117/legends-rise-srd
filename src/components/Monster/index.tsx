@@ -13,14 +13,18 @@ interface MonsterProps {
   res: string;
   pb: string;
   vision?: string;
-  type: string;
-  speeds?: string;
+  type?: string;
+  speeds?: string | JSX.Element;
   resistances?: string;
   weaknesses?: string;
+  role?: string;
+  tier?: string;
+  threat?: string;
   traits?: Traits[];
   actions: Abilities[];
   maneuvers?: Abilities[];
   reactions?: Abilities[];
+  bossActions?: Abilities[];
   accordion?: boolean;
 }
 
@@ -40,6 +44,7 @@ interface Abilities {
   frequency?: string;
   trigger?: string | JSX.Element;
   partialOrLower?: string;
+  round?: string;
 }
 
 interface Traits {
@@ -65,6 +70,10 @@ const Monster: React.FC<MonsterProps> = ({
   actions,
   maneuvers,
   reactions,
+  role,
+  threat,
+  tier,
+  bossActions,
 }) => {
   const transformEffect = (effect: string) => {
     const fortuneRegex = /(\+?\d*)\s*(fortune)/gi;
@@ -102,7 +111,14 @@ const Monster: React.FC<MonsterProps> = ({
 
   return (
     <div className="monster" data-accordion={accordion}>
-      <h3>{name}</h3>
+      <h3>
+        <span>{name}</span>
+        <span>
+          {summons
+            ? ""
+            : `Tier ${tier} ${threat === "Standard" ? "" : threat} ${role}`}
+        </span>
+      </h3>
       <div className="monster-content">
         <p>
           <i>{type}</i>
@@ -113,16 +129,17 @@ const Monster: React.FC<MonsterProps> = ({
               <b>HP</b> {hp}
             </p>
             <p>
-              <b>EVN</b> {evn} <b>|</b> <b>MGT</b> {mgt} <b>|</b> <b>RES</b>{" "}
-              {res} <b>|</b> <b>PB</b> +{pb}
+              <b className="evn">EVN</b> {evn} <b>|</b>{" "}
+              <b className="mgt">MGT</b> {mgt} <b>|</b>{" "}
+              <b className="res">RES</b> {res} <b>|</b> <b>PB</b> +{pb}
             </p>
           </div>
         ) : (
           <div className="basics">
             <p>
-              <b>HP</b> {hp} ({shaken}) <b>|</b> <b>EVN</b> {evn} <b>|</b>{" "}
-              <b>MGT</b> {mgt} <b>|</b> <b>RES</b> {res} <b>|</b> <b>PB</b> +
-              {pb}
+              <b>HP</b> {hp} ({shaken}) <b>|</b> <b className="evn">EVN</b>{" "}
+              {evn} <b>|</b> <b className="mgt">MGT</b> {mgt} <b>|</b>{" "}
+              <b className="res">RES</b> {res} <b>|</b> <b>PB</b> +{pb}
             </p>
           </div>
         )}
@@ -141,19 +158,24 @@ const Monster: React.FC<MonsterProps> = ({
             <b>Weaknesses</b> {weaknesses}
           </p>
         )}
-        {speeds && (
+        {(vision || speeds) && (
           <p>
-            <b>Speeds</b> {speeds}
-          </p>
-        )}
-        {vision && (
-          <p>
-            <b>Vision</b> {vision}
+            {speeds && (
+              <span>
+                <b>Speeds</b> {speeds}
+                {vision && ";"}
+              </span>
+            )}{" "}
+            {vision && (
+              <span>
+                <b>Vision</b> {vision}
+              </span>
+            )}
           </p>
         )}
         {traits && traits.length > 0 && (
           <div className="traits-section">
-            <h4>Traits</h4>
+            <h4 data-type="trait">Traits</h4>
             <div>
               {traits.map((trait, index) => (
                 <p key={index}>
@@ -171,7 +193,7 @@ const Monster: React.FC<MonsterProps> = ({
             <h4 data-type="action">Actions</h4>
             <ul>
               {actions.map((action, index) => (
-                <div key={index}>
+                <div key={index} className="ability">
                   <p>
                     {action.basic && (
                       <img
@@ -182,7 +204,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     <b>
                       {" "}
-                      {action.name} ({action.keywords})
+                      {action.name} {action.keywords && `(${action.keywords})`}
                     </b>
                   </p>
                   {action.frequency && (
@@ -208,7 +230,7 @@ const Monster: React.FC<MonsterProps> = ({
                   <ul className="monster-degrees-of-success">
                     {action.critical && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Critical:</i>{" "}
                           {typeof action.critical === "string"
                             ? transformEffect(action.critical)
@@ -218,7 +240,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {action.success && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Success:</i>{" "}
                           {typeof action.success === "string"
                             ? transformEffect(action.success)
@@ -228,7 +250,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {action.partial && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Partial:</i>{" "}
                           {typeof action.partial === "string"
                             ? transformEffect(action.partial)
@@ -238,14 +260,14 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {action.partialOrLower && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Partial or Lower:</i> {action.partialOrLower}
                         </span>
                       </li>
                     )}
                     {action.failure && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Failure:</i>{" "}
                           {typeof action.failure === "string"
                             ? transformEffect(action.failure)
@@ -272,10 +294,11 @@ const Monster: React.FC<MonsterProps> = ({
             <h4 data-type="maneuver">Maneuvers</h4>
             <ul>
               {maneuvers.map((maneuver, index) => (
-                <div key={index}>
+                <div key={index} className="ability">
                   <p>
                     <b>
-                      {maneuver.name} ({maneuver.keywords})
+                      {maneuver.name}{" "}
+                      {maneuver.keywords && `(${maneuver.keywords})`}
                     </b>
                   </p>
                   {maneuver.target && (
@@ -296,7 +319,7 @@ const Monster: React.FC<MonsterProps> = ({
                   <ul className="monster-degrees-of-success">
                     {maneuver.critical && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Critical:</i>{" "}
                           {typeof maneuver.critical === "string"
                             ? transformEffect(maneuver.critical)
@@ -306,7 +329,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {maneuver.success && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Success:</i>{" "}
                           {typeof maneuver.success === "string"
                             ? transformEffect(maneuver.success)
@@ -316,7 +339,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {maneuver.partial && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Partial:</i>{" "}
                           {typeof maneuver.partial === "string"
                             ? transformEffect(maneuver.partial)
@@ -326,14 +349,14 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {maneuver.partialOrLower && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Partial or Lower:</i> {maneuver.partialOrLower}
                         </span>
                       </li>
                     )}
                     {maneuver.failure && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Failure:</i>{" "}
                           {typeof maneuver.failure === "string"
                             ? transformEffect(maneuver.failure)
@@ -360,10 +383,11 @@ const Monster: React.FC<MonsterProps> = ({
             <h4 data-type="reaction">Reactions</h4>
             <ul>
               {reactions.map((reaction, index) => (
-                <div key={index}>
+                <div key={index} className="ability">
                   <p>
                     <b>
-                      {reaction.name} ({reaction.keywords})
+                      {reaction.name}{" "}
+                      {reaction.keywords && `(${reaction.keywords})`}
                     </b>
                   </p>
                   {reaction.trigger && (
@@ -392,7 +416,7 @@ const Monster: React.FC<MonsterProps> = ({
                   <ul className="monster-degrees-of-success">
                     {reaction.critical && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Critical:</i>{" "}
                           {typeof reaction.critical === "string"
                             ? transformEffect(reaction.critical)
@@ -402,7 +426,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {reaction.success && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Success:</i>{" "}
                           {typeof reaction.success === "string"
                             ? transformEffect(reaction.success)
@@ -412,7 +436,7 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {reaction.partial && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Partial:</i>{" "}
                           {typeof reaction.partial === "string"
                             ? transformEffect(reaction.partial)
@@ -422,14 +446,14 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     {reaction.partialOrLower && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Partial or Lower:</i> {reaction.partialOrLower}
                         </span>
                       </li>
                     )}
                     {reaction.failure && (
                       <li>
-                        <span>
+                        <span className="degree-effect">
                           <i>Failure:</i>{" "}
                           {typeof reaction.failure === "string"
                             ? transformEffect(reaction.failure)
@@ -444,6 +468,99 @@ const Monster: React.FC<MonsterProps> = ({
                       {typeof reaction.effect === "string"
                         ? transformEffect(reaction.effect)
                         : reaction.effect}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </ul>
+          </div>
+        )}
+        {bossActions && bossActions.length > 0 && (
+          <div className="abilities">
+            <h4 data-type="bossAction">Boss Actions</h4>
+            <p>
+              Boss actions are unique abilities the boss uses in order at the
+              start of round 1, 3, and 5 in combat.
+            </p>
+            <ul>
+              {bossActions.map((bossAction, index) => (
+                <div key={index} className="ability">
+                  <p>
+                    <b>
+                      Round {bossAction.round}: {bossAction.name}{" "}
+                      {bossAction.keywords && `(${bossAction.keywords})`}
+                    </b>
+                  </p>
+                  {bossAction.target && (
+                    <p>
+                      <i>Target:</i> {bossAction.target}
+                    </p>
+                  )}
+                  {bossAction.duration && (
+                    <p>
+                      <i>Duration:</i> {bossAction.duration}
+                    </p>
+                  )}
+                  {bossAction.defense && (
+                    <p>
+                      <i>Attack vs {bossAction.defense}:</i> {bossAction.damage}
+                    </p>
+                  )}
+                  <ul className="monster-degrees-of-success">
+                    {bossAction.critical && (
+                      <li>
+                        <span className="degree-effect">
+                          <i>Critical:</i>{" "}
+                          {typeof bossAction.critical === "string"
+                            ? transformEffect(bossAction.critical)
+                            : bossAction.critical}
+                        </span>
+                      </li>
+                    )}
+                    {bossAction.success && (
+                      <li>
+                        <span className="degree-effect">
+                          <i>Success:</i>{" "}
+                          {typeof bossAction.success === "string"
+                            ? transformEffect(bossAction.success)
+                            : bossAction.success}
+                        </span>
+                      </li>
+                    )}
+                    {bossAction.partial && (
+                      <li>
+                        <span className="degree-effect">
+                          <i>Partial:</i>{" "}
+                          {typeof bossAction.partial === "string"
+                            ? transformEffect(bossAction.partial)
+                            : bossAction.partial}
+                        </span>
+                      </li>
+                    )}
+                    {bossAction.partialOrLower && (
+                      <li>
+                        <span className="degree-effect">
+                          <i>Partial or Lower:</i> {bossAction.partialOrLower}
+                        </span>
+                      </li>
+                    )}
+                    {bossAction.failure && (
+                      <li>
+                        <span className="degree-effect">
+                          <i>Failure:</i>{" "}
+                          {typeof bossAction.failure === "string"
+                            ? transformEffect(bossAction.failure)
+                            : bossAction.failure}
+                        </span>
+                      </li>
+                    )}
+                  </ul>
+                  {bossAction.effect && (
+                    <p className="ability__line">
+                      <i>Effect:</i>{" "}
+                      {typeof bossAction.effect === "string"
+                        ? transformEffect(bossAction.effect)
+                        : bossAction.effect}
                     </p>
                   )}
                 </div>

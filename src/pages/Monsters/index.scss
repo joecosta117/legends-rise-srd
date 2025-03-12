@@ -1,0 +1,135 @@
+@import "../../styles/index.scss";
+
+.monsters {
+  @include page-layout();
+}
+
+.monsters-content {
+  @include class-page-content();
+
+  &__description {
+    font-style: italic;
+  }
+  // &__tactics {}
+
+  .filters {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+
+    @include mq(s) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__section { 
+      width: 100%;
+
+      &__title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+
+    &__button-container {
+      grid-column: span 2;
+
+      @include mq(s) {
+        margin-top: 8px;
+        grid-column: span 4;
+      }
+    }
+
+    &__button {
+      padding: 10px 5px;
+      width: 100%;
+      border: 2px solid $gold;
+      background: $redwood;
+      border-radius: 2px;
+      color: $white;
+      margin: 0;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+
+      &:hover,
+      &:focus,
+      &:active {
+        background: $dimgrey;
+      }
+
+      @include mq('s') {
+        max-width: 300px;
+      }
+    }
+
+    &__reset {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: $lavared;
+      cursor: pointer;
+
+      @include mq(m) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .sort {
+    text-align: left;
+    padding-left: 10px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+    &__arrow {
+      opacity: .3;
+
+      &--active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__monster-section {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+
+  button {
+    padding: 5px 5px;
+    width: 100%;
+    border: 2px solid $dimgrey;
+    background: $bkgdblack;
+    border-radius: 2px;
+    color: $white;
+    margin: 0;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+    max-width: 80px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $redwood;
+    }
+    &:disabled {
+      background: $lightblack;
+    }
+  }
+
+  &__pages {
+    padding: 0 10px;
+    font-weight: 700;
+  }
+}

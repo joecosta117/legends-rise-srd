@@ -5,21 +5,29 @@ interface DropdownProps {
   items: { label: string; onClick: (label?: any) => void }[];
   startLabel: string;
   selected?: string;
+  type: string;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ items, startLabel, selected }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  items,
+  startLabel,
+  selected,
+  type,
+}) => {
   const [dropdownLabel, setDropdownLabel] = useState(startLabel);
   useEffect(() => {
     selected && setDropdownLabel(selected);
   }, [selected]);
 
   function toggleDropdown() {
-    const arrow = document.querySelectorAll(
-      ".dropdown-button__dropdown-arrow",
-    )[0] as HTMLElement;
-    const content = document.querySelectorAll(
-      ".dropdown-content",
-    )[0] as HTMLElement;
+    const arrow = [
+      ...document.querySelectorAll(".dropdown-button__dropdown-arrow"),
+    ].find(
+      (arrow) => (arrow as HTMLElement).dataset.type === type,
+    ) as HTMLElement;
+    const content = [...document.querySelectorAll(".dropdown-content")].find(
+      (content) => (content as HTMLElement).dataset.type === type,
+    ) as HTMLElement;
 
     arrow.dataset.active === "false"
       ? (arrow.dataset.active = "true")
@@ -34,27 +42,30 @@ const Dropdown: React.FC<DropdownProps> = ({ items, startLabel, selected }) => {
     return () => {
       setDropdownLabel(label);
       onClick(label);
-      const arrow = document.querySelectorAll(
-        ".dropdown-button__dropdown-arrow",
-      )[0] as HTMLElement;
-      const content = document.querySelectorAll(
-        ".dropdown-content",
-      )[0] as HTMLElement;
+      const arrow = [
+        ...document.querySelectorAll(".dropdown-button__dropdown-arrow"),
+      ].find(
+        (arrow) => (arrow as HTMLElement).dataset.type === type,
+      ) as HTMLElement;
+      const content = [...document.querySelectorAll(".dropdown-content")].find(
+        (content) => (content as HTMLElement).dataset.type === type,
+      ) as HTMLElement;
       arrow.dataset.active = "false";
       content.dataset.active = "false";
     };
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" data-type={type}>
       <div className="dropdown-button" onClick={toggleDropdown}>
         <p>{dropdownLabel}</p>
         <button
           className="dropdown-button__dropdown-arrow"
           data-active="false"
+          data-type={type}
         ></button>
       </div>
-      <div className="dropdown-content" data-active="false">
+      <div className="dropdown-content" data-active="false" data-type={type}>
         {items.map((item, index) => (
           <div
             key={index}

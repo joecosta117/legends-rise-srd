@@ -1097,8 +1097,6 @@ function ThemeTalents() {
           </div>
         )}
 
-        {/* <Dropdown items={dropdownItems} startLabel="Select a theme" /> */}
-
         {isArcane && (
           <div>
             <h1>Arcane Theme</h1>

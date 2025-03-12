@@ -737,55 +737,42 @@ export const deathSpells = [
               {
                 name: "Unnatural Endurance (zombie only)",
                 description: (
-                  <div>
-                    <p>
-                      When the undead is reduced to 0 hit points, it can succeed
-                      on an{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#overcome"
-                      >
-                        overcome roll
-                      </Link>{" "}
-                      to instead be reduced to 1 hit point. Holy damage or
-                      damage from a critical successful{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#attack-roll"
-                      >
-                        attack roll
-                      </Link>{" "}
-                      ignore this feature.
-                    </p>
-                  </div>
+                  <span>
+                    When the undead is reduced to 0 hit points, it can succeed
+                    on an{" "}
+                    <Link className="internal-link" to="/rules/combat#overcome">
+                      overcome roll
+                    </Link>{" "}
+                    to instead be reduced to 1 hit point. Holy damage or damage
+                    from a critical successful{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>{" "}
+                    ignore this feature.
+                  </span>
                 ),
               },
               {
                 name: "Death Stench (ghoul only)",
                 description: (
-                  <div>
-                    <p>
-                      Creatures that end their turn{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#engaged"
-                      >
-                        engaged
-                      </Link>{" "}
-                      to the undead must succeed on an{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#overcome"
-                      >
-                        overcome roll
-                      </Link>{" "}
-                      or become{" "}
-                      <Link className="internal-link" to="/conditions#hindered">
-                        hindered
-                      </Link>{" "}
-                      (turn ends).
-                    </p>
-                  </div>
+                  <span>
+                    Creatures that end their turn{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
+                    </Link>{" "}
+                    to the undead must succeed on an{" "}
+                    <Link className="internal-link" to="/rules/combat#overcome">
+                      overcome roll
+                    </Link>{" "}
+                    or become{" "}
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
+                    </Link>{" "}
+                    (turn ends).
+                  </span>
                 ),
               },
             ]}
@@ -1780,9 +1767,16 @@ export const enchantmentSpells = [
             target="1 creature (+1 creatures for each higher spell tier) within 3 zones"
             defense="RES"
             keywords="Escalation, Magical, Range"
-            critical="Same as a success, but the target doesn't get overcome rolls to end this effect."
-            success="Same as a partial, but you control the target for the scene (overcome ends)."
-            partial="You control the target (turn ends). While controlled, you direct all of the target’s acts on their turn, including reactions."
+            critical="Same as a success, but the target doesn't get overcome rolls at the end of their turn to end this effect for the scene."
+            success="controlled (overcome ends)."
+            partial={
+              <span>
+                <Link className="internal-link" to="/conditions#controlled">
+                  controlled
+                </Link>{" "}
+                (turn ends)
+              </span>
+            }
           />
         </div>
       ),

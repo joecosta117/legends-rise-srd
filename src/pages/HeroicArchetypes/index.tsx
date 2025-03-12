@@ -230,6 +230,7 @@ function HeroicArchetypes() {
             <Dropdown
               items={combatItems}
               startLabel="Select a Heroic Archetype"
+              type="combat"
             />
           </div>
         )}
@@ -240,6 +241,7 @@ function HeroicArchetypes() {
             <Dropdown
               items={mysticalItems}
               startLabel="Select a Heroic Archetype"
+              type="mystical"
             />
           </div>
         )}
@@ -252,6 +254,7 @@ function HeroicArchetypes() {
             <Dropdown
               items={multiclassItems}
               startLabel="Select a Heroic Archetype"
+              type="multiclass"
             />
           </div>
         )}
@@ -267,6 +270,7 @@ function HeroicArchetypes() {
             <Dropdown
               items={dropdownItems}
               startLabel="Select a Heroic Archetype"
+              type="all"
             />
           </div>
         )}

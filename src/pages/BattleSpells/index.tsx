@@ -127,6 +127,7 @@ function BattleSpells() {
           selected={selectedTradition}
           items={dropdownItems}
           startLabel="Select a magic tradition"
+          type="battle-spells"
         />
 
         {selectedTradition === "Air Tradition" && (

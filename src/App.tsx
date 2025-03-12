@@ -43,6 +43,7 @@ import MagicRules from "./pages/MagicRules";
 import HomePage from "./pages/HomePage";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactPage from "./pages/ContactPage";
+import Monsters from "./pages/Monsters";
 
 function App() {
   return (
@@ -101,6 +102,7 @@ function App() {
             <Route path="/rules/magic" element={<MagicRules />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/monsters" element={<Monsters />} />
           </Routes>
         </div>
       </ScrollToTop>

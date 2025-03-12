@@ -3,6 +3,7 @@ import "./index.scss";
 import basicAtk from "../../assets/monster-strike.png";
 import scrollToHash from "../../utils/scrollToHash";
 import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 function ReadingAbilities() {
   scrollToHash();
@@ -115,6 +116,15 @@ function ReadingAbilities() {
             <span>
               <b>Range:</b> The ability can be used at a far range, such as
               shooting a ray of magic across the battlefield.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Recharge:</b> The ability's frequency is encounter (once per
+              short rest), and the creature regains a use of this ability after
+              they become <ToolTip preset="shaken" />. A creature can only
+              regain a use of this ability once per short rest. This keyword is
+              usually reserved for monsters.
             </span>
           </li>
           <li>

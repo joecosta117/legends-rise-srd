@@ -66,6 +66,7 @@ function FightingStyles() {
           selected={selectedStyle}
           items={dropdownItems}
           startLabel="Select a fighting style"
+          type="fighting-styles"
         />
 
         {selectedStyle === "Archery" && (

@@ -12,10 +12,30 @@ interface AccordionProps {
   actType?: string;
   open?: boolean;
   id?: string;
+  monster?: boolean;
+  tier?: string;
+  threat?: string;
+  role?: string;
 }
 
 const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
-  ({ actType, open, title, content, style, stacked, type, id }, ref) => {
+  (
+    {
+      actType,
+      open,
+      title,
+      content,
+      style,
+      stacked,
+      type,
+      id,
+      monster,
+      tier,
+      threat,
+      role,
+    },
+    ref,
+  ) => {
     const [isOpen, setIsOpen] = useState(false);
     const [maxHeight, setMaxHeight] = useState("0px");
     const contentRef = useRef<HTMLDivElement>(null);
@@ -104,7 +124,13 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           ref={headerRef}
         >
           <h4>{transformTitle(title)}</h4>
-          <h4>{isOpen ? "-" : "+"}</h4>
+          <h4>
+            {monster
+              ? `Tier ${tier} ${threat} ${role} ${isOpen ? "-" : "+"}`
+              : isOpen
+                ? "-"
+                : "+"}
+          </h4>
         </div>
         <div
           className="accordion__content"
@@ -112,7 +138,6 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           style={{ maxHeight: maxHeight }}
           ref={contentRef}
         >
-          {/* {isOpen && ( */}
           <div className="accordion__content__container">
             {typeof content === "string" ? (
               <p>{transformEffect(content)}</p>
@@ -120,7 +145,6 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
               content
             )}
           </div>
-          {/* )} */}
         </div>
       </div>
     );

@@ -177,7 +177,11 @@ function Ancestries() {
           }
         />
 
-        <Dropdown items={dropdownItems} startLabel="Select an ancestry" />
+        <Dropdown
+          items={dropdownItems}
+          startLabel="Select an ancestry"
+          type="ancestry"
+        />
 
         <div style={{ paddingTop: "25px" }}>
           {selectedAncestry === "Human" && (
