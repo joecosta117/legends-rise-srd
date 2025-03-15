@@ -1,7 +1,7 @@
 import Monster from "../../../components/Monster";
 import { Link } from "react-router-dom";
-import ToolTip from "../../../components/ToolTip";
-import Modifier from "../../../components/Modifier";
+// import ToolTip from "../../../components/ToolTip";
+// import Modifier from "../../../components/Modifier";
 
 const DragonMonsters = [
   {
@@ -1363,7 +1363,8 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts).
+                (turn starts). As a maneuver, the dragon can move the tornado
+                one zone.
               </span>
             ),
           },
@@ -1374,6 +1375,176 @@ const DragonMonsters = [
             target: "All creatures in 2 zones within 3 zones",
             defense: "EVN",
             damage: "8 lightning damage",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Ancient Storm Dragon",
+    tier: "3",
+    type: "Dragon",
+    role: "Artillery",
+    threat: "Boss",
+    description:
+      "The impetuous storm dragons live high up in mountains and the clouds. As their name suggests, storm dragons are chaotic in temperament and often a symbol of fear in the skies for smaller mortals.",
+    tactics: (
+      <span>
+        Ancient storm dragons tend to fly far from the heroes to{" "}
+        <Link className="internal-link" to="/combat-abilities#aim">
+          aim
+        </Link>{" "}
+        then use lightning spit or lightning breath if available. Smarter than
+        young dragons, the ancient storm dragon will fly away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Adult Storm Dragon"
+        hp="24"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Huge Dragon"
+        tier="3"
+        threat="Boss"
+        role="Artillery"
+        vision="night"
+        resistances="lightning 6"
+        speeds="fly 2"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+          },
+          {
+            basic: true,
+            name: "Lightning Spit",
+            keywords: "range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "EVN",
+            damage: "9 lightning damage",
+            success:
+              "light arcs to another creature within the same zone, dealing 3 lightning damage",
+          },
+          {
+            basic: false,
+            name: "Wing Gust",
+            keywords: "range",
+            target: <span>1d4 creatures within 3 zones</span>,
+            defense: "MGT",
+            damage: "6 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Lightning Breath",
+            keywords: "range, recharge",
+            target: (
+              <span>All creatures in 2 connected zones within 3 zones</span>
+            ),
+            defense: "EVN",
+            damage: "12 lightning damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while hindered, targets lose their
+                resistance to lightning damage
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Tornadoe",
+            round: "3",
+            keywords: "range",
+            target: <span>1 zone within 3 zones</span>,
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone and dangerous zone
+                </Link>{" "}
+                (3 physical damage). When a creature takes this damage, the
+                dragon makes an attack roll against the creature's Might. On a
+                success, the creature is{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn starts). As a maneuver, the dragon can move the tornado
+                one zone.
+              </span>
+            ),
+          },
+          {
+            name: "Thunder Cloud",
+            round: "5",
+            keywords: "range",
+            target: "All creatures in 3 zones within 3 zones",
+            defense: "EVN",
+            damage: "12 lightning damage",
           },
         ]}
       />
