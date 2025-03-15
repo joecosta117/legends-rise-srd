@@ -1550,6 +1550,923 @@ const DragonMonsters = [
       />
     ),
   },
+  {
+    name: "Young Swamp Dragon",
+    tier: "1",
+    type: "Dragon",
+    role: "Skirmisher",
+    threat: "Major",
+    description:
+      "The cunning swamp dragons live in marshes and swamps. Swamp dragons stalk their prey through swampy water and can quickly escape from harm within their domain.",
+    tactics: (
+      <span>
+        Young swamp dragons start fights with corrosive breath before rushing
+        heroes to use rend. If the heroes aren't acquatic, the swamp dragon will
+        utilize any nearby water to their advantage.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Young Swamp Dragon"
+        hp="20"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Large Dragon"
+        tier="1"
+        threat="Major"
+        role="Skirmisher"
+        vision="night"
+        resistances="toxic 2"
+        speeds="fly 1, swim 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+          {
+            name: "Aquatic",
+            description: <span>The dragon can breath underwater.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "4 physical damage",
+          },
+          {
+            basic: false,
+            name: "Corrosive Breath",
+            keywords: "range, recharge",
+            target: <span>All creatures in 1 zone within 3 zones</span>,
+            defense: "EVN",
+            damage: "3 toxic damage",
+          },
+        ]}
+        reactions={[
+          {
+            name: "Slither Away",
+            trigger: "Dragon takes damage",
+            effect: (
+              <span>
+                Dragon can{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Adult Swamp Dragon",
+    tier: "2",
+    type: "Dragon",
+    role: "Skirmisher",
+    threat: "Boss",
+    description:
+      "The cunning swamp dragons live in marshes and swamps. Swamp dragons stalk their prey through swampy water and can quickly escape from harm within their domain.",
+    tactics: (
+      <span>
+        Adult swamp dragons start fights with corrosive breath before rushing
+        heroes to use rend. If the heroes aren't acquatic, the swamp dragon will
+        utilize any nearby water to their advantage. Smarter than young dragons,
+        the adult swamp dragon will fly or swim away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Adult Swamp Dragon"
+        hp="20"
+        evn="15"
+        mgt="17"
+        res="13"
+        pb="4"
+        type="Huge Dragon"
+        tier="2"
+        threat="Boss"
+        role="Skirmisher"
+        vision="night"
+        resistances="toxic 4"
+        speeds="fly 1, swim 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Aquatic",
+            description: <span>The dragon can breath underwater.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "8 physical damage",
+          },
+          {
+            basic: false,
+            name: "Corrosive Breath",
+            keywords: "range, recharge",
+            target: <span>All creatures in 1 zone within 3 zones</span>,
+            defense: "EVN",
+            damage: "6 toxic damage",
+            success: (
+              <span>
+                2{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+          },
+        ]}
+        reactions={[
+          {
+            name: "Slither Away",
+            trigger: "Dragon takes damage",
+            effect: (
+              <span>
+                Dragon can{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Creeping Marsh",
+            round: "3",
+            keywords: "range",
+            target: <span>2 zones within 3 zones</span>,
+            effect: (
+              <span>
+                Targeted zones becomes{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                that doesn't affect the dragon. Putrid fumes fill the targeted
+                zones, and when a creature enters or starts their turn in the
+                targeted zones, the dragon makes an attack roll against their
+                Might. On a success, the target is hindered (turn starts).
+              </span>
+            ),
+          },
+          {
+            name: "Acid Rain",
+            round: "5",
+            keywords: "range",
+            target: "All creatures in 2 zones within 3 zones",
+            defense: "EVN",
+            damage: "4 toxic damage",
+            success: (
+              <span>
+                2{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Ancient Swamp Dragon",
+    tier: "3",
+    type: "Dragon",
+    role: "Skirmisher",
+    threat: "Boss",
+    description:
+      "The cunning swamp dragons live in marshes and swamps. Swamp dragons stalk their prey through swampy water and can quickly escape from harm within their domain.",
+    tactics: (
+      <span>
+        Ancient swamp dragons start fights with corrosive breath before rushing
+        heroes to use rend. If the heroes aren't acquatic, the swamp dragon will
+        utilize any nearby water to their advantage. Smarter than young dragons,
+        the ancient swamp dragon will fly or swim away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Ancient Swamp Dragon"
+        hp="30"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Colossal Dragon"
+        tier="3"
+        threat="Boss"
+        role="Skirmisher"
+        vision="night"
+        resistances="toxic 6"
+        speeds="fly 2, swim 2"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Aquatic",
+            description: <span>The dragon can breath underwater.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 physical damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Corrosive Breath",
+            keywords: "range, recharge",
+            target: (
+              <span>All creatures in 2 connected zones within 3 zones</span>
+            ),
+            defense: "EVN",
+            damage: "9 toxic damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+          },
+        ]}
+        reactions={[
+          {
+            name: "Slither Away",
+            trigger: "Dragon takes damage",
+            effect: (
+              <span>
+                Dragon can{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while hindered, the target loses any
+                resistance to toxic damage
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Creeping Marsh",
+            round: "3",
+            keywords: "range",
+            target: <span>3 zones within 3 zones</span>,
+            effect: (
+              <span>
+                Targeted zones becomes{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                that doesn't affect the dragon. Putrid fumes fill the targeted
+                zones, and when a creature enters or starts their turn in the
+                targeted zones, the dragon makes an attack roll against their
+                Might. On a success, the target is hindered (turn starts).
+              </span>
+            ),
+          },
+          {
+            name: "Acid Rain",
+            round: "5",
+            keywords: "range",
+            target: "All creatures in 3 zones within 3 zones",
+            defense: "EVN",
+            damage: "6 toxic damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Young Forest Dragon",
+    tier: "1",
+    type: "Dragon",
+    role: "Disabler",
+    threat: "Major",
+    description:
+      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant whil others rule more justly.",
+    tactics: (
+      <span>
+        Young forest dragons will rush the heroes to use poisonous rend or
+        venemous breath if available. Each turn, the forest dragon will use
+        overgrowth to keep heroes from escaping.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Young Forest Dragon"
+        hp="20"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Large Dragon"
+        tier="1"
+        threat="Major"
+        role="Disabler"
+        vision="night"
+        resistances="toxic 2"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Poisonous Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Venemous Breath",
+            keywords: "recharge",
+            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            defense: "EVN",
+            damage: "3 toxic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Overgrowth",
+            target: "1 zone within 2 zones",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                until the start of the dragon's next turn
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Adult Forest Dragon",
+    tier: "2",
+    type: "Dragon",
+    role: "Disabler",
+    threat: "Boss",
+    description:
+      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant whil others rule more justly.",
+    tactics: (
+      <span>
+        Adult forest dragons will rush the heroes to use poisonous rend or
+        venemous breath if available. Each turn, the forest dragon will use
+        overgrowth to keep heroes from escaping. Smarter than young dragons, the
+        adult forest dragon will fly or swim away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Adult Forest Dragon"
+        hp="20"
+        evn="15"
+        mgt="17"
+        res="13"
+        pb="4"
+        type="Huge Dragon"
+        tier="2"
+        threat="Boss"
+        role="Disabler"
+        vision="night"
+        resistances="toxic 4"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Poisonous Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "6 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Venemous Breath",
+            keywords: "recharge",
+            target: (
+              <span>
+                1d4+1 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "EVN",
+            damage: "6 toxic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Overgrowth",
+            target: "1 zone within 2 zones",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                until the start of the dragon's next turn that doesn't affect
+                the dragon. When an enemy starts or enters the targeted zones,
+                the dragon can make an attack roll against the enemy's Might. On
+                a success, the target is{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn start).
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Animated Vines",
+            round: "3",
+            keywords: "magical, range",
+            target: <span>2 creatures within 3 zones</span>,
+            defense: "MGT",
+            partial: "seized (turn ends)",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while seized, the target takes 2{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+            critical:
+              "Same as a success, and the targets can be pulled to become engaged to the dragon",
+          },
+          {
+            name: "Mushroom Spore Toxin",
+            round: "5",
+            keywords: "range",
+            target: "2 zones within 3 zones",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (2 toxic damage). When a creature takes this damage, the dragon
+                can make an attack roll against the enemy's Might. On a success,
+                the target falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>{" "}
+                from coughing.
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Ancient Forest Dragon",
+    tier: "3",
+    type: "Dragon",
+    role: "Disabler",
+    threat: "Boss",
+    description:
+      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant whil others rule more justly.",
+    tactics: (
+      <span>
+        Ancient forest dragons will rush the heroes to use poisonous rend or
+        venemous breath if available. Each turn, the forest dragon will use
+        overgrowth to keep heroes from escaping. Smarter than young dragons, the
+        ancient forest dragon will fly or swim away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Ancient Forest Dragon"
+        hp="30"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Colossal Dragon"
+        tier="3"
+        threat="Boss"
+        role="Disabler"
+        vision="night"
+        resistances="toxic 6"
+        speeds="fly 2"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Poisonous Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Venemous Breath",
+            keywords: "recharge",
+            target: (
+              <span>
+                2d4+2 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 toxic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Overgrowth",
+            target: "1 zone within 2 zones",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone
+                </Link>{" "}
+                until the start of the dragon's next turn that doesn't affect
+                the dragon. When an enemy starts or enters the targeted zones,
+                the dragon can make an attack roll against the enemy's Might. On
+                a success, the target is{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (turn start).
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while hindered, the target loses any
+                resistance to toxic damage
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Animated Vines",
+            round: "3",
+            keywords: "magical, range",
+            target: <span>3 creatures within 3 zones</span>,
+            defense: "MGT",
+            partial: "seized (turn ends)",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while seized, the target takes 3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage
+              </span>
+            ),
+            critical:
+              "Same as a success, and the targets can be pulled to become engaged to the dragon",
+          },
+          {
+            name: "Mushroom Spore Toxin",
+            round: "5",
+            keywords: "range",
+            target: "3 zones within 3 zones",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 toxic damage). When a creature takes this damage, the dragon
+                can make an attack roll against the enemy's Might. On a success,
+                the target falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>{" "}
+                from coughing.
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
 ];
 
 export default DragonMonsters;
