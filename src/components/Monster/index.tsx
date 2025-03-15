@@ -3,6 +3,7 @@ import React, { JSX } from "react";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 import basicAtk from "../../assets/monster-strike.png";
+import { Link } from "react-router-dom";
 
 interface MonsterProps {
   name: string;
@@ -30,6 +31,7 @@ interface MonsterProps {
 
 interface Abilities {
   basic?: boolean;
+  requirement?: string;
   name: string;
   keywords?: string;
   defense?: string;
@@ -204,9 +206,22 @@ const Monster: React.FC<MonsterProps> = ({
                     )}
                     <b>
                       {" "}
-                      {action.name} {action.keywords && `(${action.keywords})`}
+                      {action.name}{" "}
+                      {action.keywords && (
+                        <Link
+                          className="internal-link"
+                          to="/abilities-and-keywords#keywords"
+                        >
+                          ({action.keywords})
+                        </Link>
+                      )}
                     </b>
                   </p>
+                  {action.requirement && (
+                    <p>
+                      <i>Requirement:</i> {action.requirement}
+                    </p>
+                  )}
                   {action.frequency && (
                     <p>
                       <i>Frequency:</i> {action.frequency}
@@ -298,9 +313,21 @@ const Monster: React.FC<MonsterProps> = ({
                   <p>
                     <b>
                       {maneuver.name}{" "}
-                      {maneuver.keywords && `(${maneuver.keywords})`}
+                      {maneuver.keywords && (
+                        <Link
+                          className="internal-link"
+                          to="/abilities-and-keywords#keywords"
+                        >
+                          ({maneuver.keywords})
+                        </Link>
+                      )}
                     </b>
                   </p>
+                  {maneuver.requirement && (
+                    <p>
+                      <i>Requirement:</i> {maneuver.requirement}
+                    </p>
+                  )}
                   {maneuver.target && (
                     <p>
                       <i>Target:</i> {maneuver.target}
@@ -387,7 +414,14 @@ const Monster: React.FC<MonsterProps> = ({
                   <p>
                     <b>
                       {reaction.name}{" "}
-                      {reaction.keywords && `(${reaction.keywords})`}
+                      {reaction.keywords && (
+                        <Link
+                          className="internal-link"
+                          to="/abilities-and-keywords#keywords"
+                        >
+                          ({reaction.keywords})
+                        </Link>
+                      )}
                     </b>
                   </p>
                   {reaction.trigger && (
@@ -396,6 +430,11 @@ const Monster: React.FC<MonsterProps> = ({
                       {typeof reaction.trigger === "string"
                         ? transformEffect(reaction.trigger)
                         : reaction.trigger}
+                    </p>
+                  )}
+                  {reaction.requirement && (
+                    <p>
+                      <i>Requirement:</i> {reaction.requirement}
                     </p>
                   )}
                   {reaction.target && (
@@ -488,7 +527,14 @@ const Monster: React.FC<MonsterProps> = ({
                   <p>
                     <b>
                       Round {bossAction.round}: {bossAction.name}{" "}
-                      {bossAction.keywords && `(${bossAction.keywords})`}
+                      {bossAction.keywords && (
+                        <Link
+                          className="internal-link"
+                          to="/abilities-and-keywords#keywords"
+                        >
+                          ({bossAction.keywords})
+                        </Link>
+                      )}
                     </b>
                   </p>
                   {bossAction.target && (

@@ -1,7 +1,9 @@
 import "./index.scss";
 // import { Link } from "react-router-dom";
-import MonsterList from "./monsters";
+import UndeadMonsters from "./AllMonsters/undead";
 import Accordion from "../../components/Accordion";
+import HumanoidMonsters from "./AllMonsters/humanoids";
+import DragonMonsters from "./AllMonsters/dragons";
 import Dropdown from "../../components/Dropdown";
 import { useState, useEffect, JSX } from "react";
 
@@ -17,15 +19,18 @@ interface MonsterListProps {
 }
 
 function Monsters() {
+  const MonsterList = [
+    ...DragonMonsters,
+    ...HumanoidMonsters,
+    ...UndeadMonsters,
+  ].sort((a, b) => a.name.localeCompare(b.name));
   const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
   const [roleFilter, setRoleFilter] = useState("");
   const [tierFilter, setTierFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
   const [threatFilter, setThreatFilter] = useState("");
-  const [currentMonsters, setCurrentMonsters] = useState<MonsterListProps[]>(
-    //@ts-ignore
-    MonsterList.sort((a, b) => a.name.localeCompare(b.name)),
-  );
+  const [currentMonsters, setCurrentMonsters] =
+    useState<MonsterListProps[]>(MonsterList);
 
   // Pagination State
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,20 +1,20 @@
-import Monster from "../../components/Monster";
+import Monster from "../../../components/Monster";
 import { Link } from "react-router-dom";
-import ToolTip from "../../components/ToolTip";
-import Modifier from "../../components/Modifier";
+import ToolTip from "../../../components/ToolTip";
+import Modifier from "../../../components/Modifier";
 
-const MonsterList = [
+const UndeadMonsters = [
   {
-    name: "Skeleton",
+    name: "Skeleton Minion",
     tier: "1",
     type: "Undead",
     role: "",
     threat: "Minion",
-    description: "Skeletons are the most basic form of undead.",
+    description: "Skeleton minions are the most basic form of undead.",
     tactics: (
       <span>
-        Skeletons mindlessly get close to heroes to use rusty sword or stay afar
-        to shoot their old bow. Skeletons close to heroes can also{" "}
+        Skeleton minions mindlessly get close to heroes to use rusty sword or
+        stay afar to shoot their old bow. Skeletons close to heroes can also{" "}
         <Link className="internal-link" to="/combat-abilities#grab">
           grab
         </Link>{" "}
@@ -31,7 +31,7 @@ const MonsterList = [
     ),
     statBlock: (
       <Monster
-        name="Skeleton"
+        name="Skeleton Minion"
         hp="2"
         evn="13"
         mgt="15"
@@ -2384,4 +2384,4 @@ const MonsterList = [
   },
 ];
 
-export default MonsterList;
+export default UndeadMonsters;
