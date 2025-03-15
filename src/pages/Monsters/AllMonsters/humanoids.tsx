@@ -588,7 +588,6 @@ const HumanoidMonsters = [
             basic: false,
             name: "Smite",
             keywords: "magical",
-            target: "1 creature within 2 zones",
             duration: "Current turn ends",
             effect:
               "The templar's weapons deal an extra 1 holy or unholy damage (your choice).",
@@ -1181,7 +1180,7 @@ const HumanoidMonsters = [
     description: "Toughs are durable fighters that are hard to take down.",
     tactics: (
       <span>
-        Toughs prefer to fight near heroes. On each turn, a templar uses flail,
+        Toughs prefer to fight near heroes. On each turn, a tough uses flail,
         then uses{" "}
         <Link className="internal-link" to="/combat-abilities#defend">
           defend
@@ -2012,7 +2011,6 @@ const HumanoidMonsters = [
             basic: false,
             name: "Smite",
             keywords: "magical",
-            target: "1 creature within 2 zones",
             duration: "Current turn ends",
             effect:
               "The high templar's weapons deal an extra 2 holy or unholy damage (your choice).",
