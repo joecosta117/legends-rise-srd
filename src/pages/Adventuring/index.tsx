@@ -142,7 +142,8 @@ function Adventuring() {
           <li>
             <span>
               <b>Magical Darkness:</b> Same as darkness, but even those with
-              night vision are blinded.
+              night vision are blinded. Areas in magical darkness can't be
+              illuminated except through magic.
             </span>
           </li>
         </ul>
@@ -161,13 +162,13 @@ function Adventuring() {
           <li>
             <span>
               <b>Night Vision:</b> You can see well enough in dark conditions,
-              usually in shades of gray, and ignore the penalties from darkness.
+              usually in shades of gray, so you aren't blinded in darkness.
             </span>
           </li>
           <li>
             <span>
               <b>Blind Vision:</b> You can sense your environment perfectly
-              without sight.
+              without sight and can't be blinded.
             </span>
           </li>
         </ul>

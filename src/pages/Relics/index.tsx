@@ -386,10 +386,10 @@ function Relics() {
             </p>
             <p>
               Each bane weapon is enchanted against a creature type from
-              aberration, beast, celestial, construct, dragon, elemental,
-              fairie, fiend, giant, monstrosity, ooze, plant, or undead. This
-              weapon deals additional damage equal to your proficiency bonus
-              against the item’s chosen creature type.
+              aberration, angel, beast, construct, dragon, elemental, fairie,
+              fiend, giant, monstrosity, ooze, plant, or undead. This weapon
+              deals additional damage equal to your proficiency bonus against
+              the item’s chosen creature type.
             </p>
           </div>
         ),

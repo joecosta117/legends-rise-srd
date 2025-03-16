@@ -103,6 +103,7 @@ const DragonMonsters = [
         vision="night"
         resistances="fire 2"
         weaknesses="cold 2"
+        speeds="fly 1"
         traits={[
           {
             name: "Fiery Death",
@@ -176,6 +177,7 @@ const DragonMonsters = [
         vision="night"
         resistances="cold 2"
         weaknesses="fire 2"
+        speeds="fly 1"
         traits={[
           {
             name: "Chilly Death",
@@ -248,6 +250,7 @@ const DragonMonsters = [
         role="Disabler"
         vision="night"
         resistances="toxic 2"
+        speeds="fly 1"
         traits={[
           {
             name: "Poison Death",
@@ -2054,7 +2057,7 @@ const DragonMonsters = [
             name: "Venemous Breath",
             keywords: "recharge",
             target: <span>1d4+1 creatures within the dragon's zone</span>,
-            defense: "EVN",
+            defense: "MGT",
             damage: "3 toxic damage",
             success: (
               <span>
@@ -2163,7 +2166,7 @@ const DragonMonsters = [
                 1d4+1 creatures within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "MGT",
             damage: "6 toxic damage",
             success: (
               <span>
@@ -2354,7 +2357,7 @@ const DragonMonsters = [
                 2d4+2 creatures within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "MGT",
             damage: "9 toxic damage",
             success: (
               <span>
@@ -2460,6 +2463,1435 @@ const DragonMonsters = [
                   prone
                 </Link>{" "}
                 from coughing.
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Young Infernal Dragon",
+    tier: "1",
+    type: "Dragon Fiend",
+    role: "Bruiser",
+    threat: "Major",
+    description:
+      "The diabolical infernal dragons reside in the hellish lower realms among the demons and tortured souls. Infernal dragons sometimes serve demon lords, while ancient infernal dragons command domains of their own.",
+    tactics: (
+      <span>
+        Young infernal dragons will rush the heroes to use rend or hellfire
+        breath if available, as well as{" "}
+        <Link className="internal-link" to="/combat-abilities#hinder">
+          hinder
+        </Link>
+        ,{" "}
+        <Link className="internal-link" to="/combat-abilities#grab">
+          grab
+        </Link>
+        , or{" "}
+        <Link className="internal-link" to="/combat-abilities#trip">
+          trip
+        </Link>{" "}
+        as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Young Infernal Dragon"
+        hp="24"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Large Dragon Fiend"
+        tier="1"
+        threat="Major"
+        role="Bruiser"
+        vision="night"
+        resistances="fire 1, unholy 2"
+        weaknesses="holy 2"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+          {
+            name: "Profane Aura",
+            description: (
+              <span>
+                The hellfire dragon's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (1 unholy damage).
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "4 physical damage",
+          },
+          {
+            basic: false,
+            name: "Hellfire Breath",
+            keywords: "recharge",
+            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            defense: "EVN",
+            damage: "1 fire damage and 1 unholy damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Adult Infernal Dragon",
+    tier: "2",
+    type: "Dragon Fiend",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "The diabolical infernal dragons reside in the hellish lower realms among the demons and tortured souls. Infernal dragons sometimes serve demon lords, while ancient infernal dragons command domains of their own.",
+    tactics: (
+      <span>
+        Adult infernal dragons will rush the heroes to use rend or hellfire
+        breath if available, as well as expand aura. Smarter than young dragons,
+        the adult infernal dragon will fly away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Adult Infernal Dragon"
+        hp="24"
+        evn="15"
+        mgt="17"
+        res="13"
+        pb="4"
+        type="Huge Dragon Fiend"
+        tier="2"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        resistances="fire 2, unholy 4"
+        weaknesses="holy 4"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Profane Aura",
+            description: (
+              <span>
+                The hellfire dragon's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (2 unholy damage).
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "8 physical damage",
+          },
+          {
+            basic: false,
+            name: "Hellfire Breath",
+            keywords: "recharge",
+            target: (
+              <span>
+                1d4+1 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "EVN",
+            damage: "2 fire damage and 2 unholy damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Expand Aura",
+            effect: "The dragon's profane aura's radius expands by 1 zone.",
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Summon Demons",
+            round: "3",
+            keywords: "magical, range",
+            effect: "The dragon conjures 5 demon minions within 2 zones",
+          },
+          {
+            name: "None Shall Escape",
+            round: "5",
+            effect:
+              "The dragon's profane aura expands to affect the entire battlefield and the damage doubles.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Ancient Infernal Dragon",
+    tier: "3",
+    type: "Dragon Fiend",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "The diabolical infernal dragons reside in the hellish lower realms among the demons and tortured souls. Infernal dragons sometimes serve demon lords, while ancient infernal dragons command domains of their own.",
+    tactics: (
+      <span>
+        Ancient infernal dragons will rush the heroes to use rend or hellfire
+        breath if available, as well as expand aura. Smarter than young dragons,
+        the ancient infernal dragon will fly away to escape harm.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Ancient Infernal Dragon"
+        hp="36"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Colossal Dragon Fiend"
+        tier="3"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        resistances="fire 3, unholy 6"
+        weaknesses="holy 6"
+        speeds="fly 2"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Profane Aura",
+            description: (
+              <span>
+                The hellfire dragon's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 unholy damage).
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 physical damage",
+          },
+          {
+            basic: false,
+            name: "Hellfire Breath",
+            keywords: "recharge",
+            target: (
+              <span>
+                2d4+2 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 fire damage and 3 unholy damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Expand Aura",
+            effect: "The dragon's profane aura's radius expands by 1 zone.",
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while hindered, the target loses any
+                resistance to fire damage or unholy damage
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Summon Demons",
+            round: "3",
+            keywords: "magical, range",
+            effect:
+              "The dragon conjures 6 greater demon minions within 2 zones",
+          },
+          {
+            name: "None Shall Escape",
+            round: "5",
+            effect:
+              "The dragon's profane aura expands to affect the entire battlefield and the damage doubles.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Young Void Dragon",
+    tier: "1",
+    type: "Dragon Aberration",
+    role: "Disabler",
+    threat: "Major",
+    description:
+      "The strange void dragons are an engima. Some believe they were originally dragons captured by the aberrants of the void realm, while others argue void dragons were born in the void realm. Either way, void dragons are dragons shaped by the eldritch powers of the void realm and often seek to spread the realm's maddening influence into other realms.",
+    tactics: (
+      <span>
+        Young void dragons will rush the heroes to use void rend or void breath
+        if available, as well as gaze of madness as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Young Void Dragon"
+        hp="20"
+        evn="11"
+        mgt="15"
+        res="13"
+        pb="2"
+        type="Large Dragon Aberration"
+        tier="1"
+        threat="Major"
+        role="Disabler"
+        vision="night"
+        resistances="cold 1, psychic 2"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Void Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Void Breath",
+            keywords: "recharge",
+            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            defense: "RES",
+            damage: "3 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Gaze of Madness",
+            defense: "RES",
+            target: "1 creature within 2 zones",
+            critical: "confused (overcome ends)",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Adult Void Dragon",
+    tier: "2",
+    type: "Dragon Aberration",
+    role: "Disabler",
+    threat: "Boss",
+    description:
+      "The strange void dragons are an engima. Some believe they were originally dragons captured by the aberrants of the void realm, while others argue void dragons were born in the void realm. Either way, void dragons are dragons shaped by the eldritch powers of the void realm and often seek to spread the realm's maddening influence into other realms.",
+    tactics: (
+      <span>
+        Adult void dragons will rush the heroes to use void rend or void breath
+        if available, as well as gaze of madness as their maneuver. Smarter than
+        young dragons, adult void dragons will fly away from fights if they are
+        weak.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Adult Void Dragon"
+        hp="20"
+        evn="13"
+        mgt="17"
+        res="15"
+        pb="4"
+        type="Huge Dragon Aberration"
+        tier="2"
+        threat="Boss"
+        role="Disabler"
+        vision="night"
+        resistances="cold 2, psychic 4"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Void Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "6 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Void Breath",
+            keywords: "range, recharge",
+            target: (
+              <span>
+                1d4+1 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "RES",
+            damage: "6 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Gaze of Madness",
+            defense: "RES",
+            target: "1 creature within 2 zones",
+            critical: "confused (overcome ends)",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Void Rift",
+            round: "3",
+            keywords: "magical, range",
+            target: "1 zone within 3 zones",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone and dangerous zone
+                </Link>{" "}
+                (2 cold damage). When an enemy enters or starts their turn in a
+                zone adjacent to the targeted zone, the dragon makes an attack
+                roll against the enemy's Might. On a success, the enemy is
+                pulled into the targeted zone.
+              </span>
+            ),
+          },
+          {
+            name: "There is No Escaping the Void",
+            round: "5",
+            keywords: "magical, range",
+            target: "All enemies",
+            defense: "RES",
+            damage: "6 arcane damage",
+            success: (
+              <span>
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  Teleported
+                </Link>{" "}
+                to the void rift
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Ancient Void Dragon",
+    tier: "3",
+    type: "Dragon Aberration",
+    role: "Disabler",
+    threat: "Boss",
+    description:
+      "The strange void dragons are an engima. Some believe they were originally dragons captured by the aberrants of the void realm, while others argue void dragons were born in the void realm. Either way, void dragons are dragons shaped by the eldritch powers of the void realm and often seek to spread the realm's maddening influence into other realms.",
+    tactics: (
+      <span>
+        Ancient void dragons will rush the heroes to use void rend or void
+        breath if available, as well as gaze of madness as their maneuver.
+        Smarter than young dragons, ancient void dragons will fly away from
+        fights if they are weak.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Ancient Void Dragon"
+        hp="30"
+        evn="15"
+        mgt="19"
+        res="17"
+        pb="6"
+        type="Colossal Dragon Aberration"
+        tier="3"
+        threat="Boss"
+        role="Disabler"
+        vision="night"
+        resistances="cold 3, psychic 6"
+        speeds="fly 2"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Maddening Whispers",
+            description:
+              "When a hindered or confused creature starts their turn within the dragon's sight, they take 3 psychic damage as the void whispers maddeness into their mind.",
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Void Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Void Breath",
+            keywords: "range, recharge",
+            target: (
+              <span>
+                2d4+2 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "RES",
+            damage: "9 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Gaze of Madness",
+            defense: "RES",
+            target: "1 creature within 2 zones",
+            critical: "confused (overcome ends)",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while hindered, the target loses any
+                resistance to cold and psychic damage.
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Void Rift",
+            round: "3",
+            keywords: "magical, range",
+            target: "1 zone within 3 zones",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone and dangerous zone
+                </Link>{" "}
+                (3 cold damage). When an enemy enters or starts their turn in a
+                zone adjacent to the targeted zone, the dragon makes an attack
+                roll against the enemy's Might. On a success, the enemy is
+                pulled into the targeted zone.
+              </span>
+            ),
+          },
+          {
+            name: "There is No Escaping the Void",
+            round: "5",
+            keywords: "magical, range",
+            target: "All enemies",
+            defense: "RES",
+            damage: "9 arcane damage",
+            success: (
+              <span>
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  Teleported
+                </Link>{" "}
+                to the void rift
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Young Umbral Dragon",
+    tier: "1",
+    type: "Dragon",
+    role: "Skirmisher",
+    threat: "Major",
+    description:
+      "The elusive umbral dragons live in the dangerous shadow realm, where undead shadows and other horrors dwell. Older umbral dragons often rule over their own domains within the shadow realm or sometimes venture into the mortal realm to spread gloom and darkness,",
+    tactics: (
+      <span>
+        Young umbral dragons will rush the heroes to use rend or shadow breath
+        if available, as well as create darkness around themselves as their
+        maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Young Umbral Dragon"
+        hp="20"
+        evn="15"
+        mgt="13"
+        res="11"
+        pb="2"
+        type="Large Dragon"
+        tier="1"
+        threat="Major"
+        role="Skirmisher"
+        vision="night"
+        resistances="necrotic 2"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+          {
+            name: "Light Vulnerability",
+            description: (
+              <span>
+                When in normal light, the dragon is{" "}
+                <Link className="internal-link" to="/conditions#exposed">
+                  exposed
+                </Link>
+                .
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "4 physical damage",
+          },
+          {
+            basic: false,
+            name: "Shadow Breath",
+            keywords: "recharge",
+            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            defense: "MGT",
+            damage: "3 necrotic damage",
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Create Darkness",
+            duration: "End of the dragon's next turn",
+            target: "1 zone within 2 zones",
+            effect: "Targeted zone is filled with darkness",
+          },
+        ]}
+        reactions={[
+          {
+            name: "Shadow Lurk",
+            trigger: (
+              <span>
+                The dragon ends its turn with{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  concealment or cover
+                </Link>
+              </span>
+            ),
+            effect: (
+              <span>
+                The dragon becomes{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  hidden
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Adult Umbral Dragon",
+    tier: "2",
+    type: "Dragon",
+    role: "Skirmisher",
+    threat: "Boss",
+    description:
+      "The elusive umbral dragons live in the dangerous shadow realm, where undead shadows and other horrors dwell. Older umbral dragons often rule over their own domains within the shadow realm or sometimes venture into the mortal realm to spread gloom and darkness,",
+    tactics: (
+      <span>
+        Adult umbral dragons will rush the heroes to use rend or shadow breath
+        if available, as well as create darkness around themselves as their
+        maneuver. Smarter than young dragons, adult umbral dragons will fly away
+        when weak.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Adult Umbral Dragon"
+        hp="20"
+        evn="17"
+        mgt="15"
+        res="13"
+        pb="4"
+        type="Huge Dragon"
+        tier="2"
+        threat="Boss"
+        role="Skirmisher"
+        vision="night"
+        resistances="necrotic 4"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Light Vulnerability",
+            description: (
+              <span>
+                When in normal light, the dragon is{" "}
+                <Link className="internal-link" to="/conditions#exposed">
+                  exposed
+                </Link>
+                .
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "8 physical damage",
+          },
+          {
+            basic: false,
+            name: "Shadow Breath",
+            keywords: "range, recharge",
+            target: (
+              <span>
+                1d4+1 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "MGT",
+            damage: "6 necrotic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Create Darkness",
+            duration: "End of the dragon's next turn",
+            target: "1 zone within 2 zones",
+            effect: "Targeted zone is filled with darkness",
+          },
+        ]}
+        reactions={[
+          {
+            name: "Shadow Lurk",
+            trigger: (
+              <span>
+                The dragon ends its turn with{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  concealment or cover
+                </Link>
+              </span>
+            ),
+            effect: (
+              <span>
+                The dragon becomes{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  hidden
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Grasping Shadows",
+            round: "3",
+            keywords: "magical, range",
+            target: "2 zones within 3 zones",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (2 necrotic damage). When a creature takes this damage, the
+                dragon can make an attack roll against the creature's Might. On
+                a success, the creature is seized (turn starts) from shadowy
+                claws.
+              </span>
+            ),
+          },
+          {
+            name: "Umbral Veil",
+            round: "5",
+            keywords: "magical",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The dragon becomes{" "}
+                <Link className="internal-link" to="/conditions#invisible">
+                  invisible
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Ancient Umbral Dragon",
+    tier: "3",
+    type: "Dragon",
+    role: "Skirmisher",
+    threat: "Boss",
+    description:
+      "The elusive umbral dragons live in the dangerous shadow realm, where undead shadows and other horrors dwell. Older umbral dragons often rule over their own domains within the shadow realm or sometimes venture into the mortal realm to spread gloom and darkness,",
+    tactics: (
+      <span>
+        Ancient umbral dragons will rush the heroes to use rend or shadow breath
+        if available, as well as create darkness around themselves as their
+        maneuver. Smarter than young dragons, ancient umbral dragons will fly
+        away when weak.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Ancient Umbral Dragon"
+        hp="30"
+        evn="19"
+        mgt="17"
+        res="15"
+        pb="6"
+        type="Colossal Dragon"
+        tier="3"
+        threat="Boss"
+        role="Skirmisher"
+        vision="night"
+        resistances="necrotic 6"
+        speeds="fly 2"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Light Vulnerability",
+            description: (
+              <span>
+                When in normal light, the dragon is{" "}
+                <Link className="internal-link" to="/conditions#exposed">
+                  exposed
+                </Link>
+                .
+              </span>
+            ),
+          },
+          {
+            name: "Superior Night Vision",
+            description: <span>The dragon can see in magical darkness.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 physical damage",
+          },
+          {
+            basic: false,
+            name: "Shadow Breath",
+            keywords: "range, recharge",
+            target: (
+              <span>
+                2d4+2 creatures within the dragon's zone and an adjacent zone
+              </span>
+            ),
+            defense: "MGT",
+            damage: "9 necrotic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Create Greater Darkness",
+            duration: "End of the dragon's next turn",
+            target: "1 zone within 2 zones",
+            effect: "Targeted zone is filled with magical darkness",
+          },
+        ]}
+        reactions={[
+          {
+            name: "Shadow Lurk",
+            trigger: (
+              <span>
+                The dragon ends its turn with{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  concealment or cover
+                </Link>
+              </span>
+            ),
+            effect: (
+              <span>
+                The dragon becomes{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  hidden
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Frightening Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the dragon
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends) and while hindered, the target loses any
+                resistance to necrotic damage.
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Grasping Shadows",
+            round: "3",
+            keywords: "magical, range",
+            target: "3 zones within 3 zones",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (3 necrotic damage). When a creature takes this damage, the
+                dragon can make an attack roll against the creature's Might. On
+                a success, the creature is seized (turn starts) from shadowy
+                claws.
+              </span>
+            ),
+          },
+          {
+            name: "Umbral Veil",
+            round: "5",
+            keywords: "magical",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The dragon becomes{" "}
+                <Link className="internal-link" to="/conditions#invisible">
+                  invisible
+                </Link>
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Wyvern",
+    tier: "1",
+    type: "Dragon",
+    role: "Disabler",
+    threat: "Major",
+    description:
+      "Wyverns are lesser dragons that lack true dragons' intelligence. Wyverns usually live near mountainous regions and prey on smaller creatures.",
+    tactics: (
+      <span>
+        Wyverns rush the heroes to use grabbing rend then use grab and fly to
+        take a seized hero into the air. Once in the air, the wyvern will use
+        tail sting or drop the hero.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Wyvern"
+        hp="20"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Large Dragon"
+        tier="1"
+        threat="Major"
+        role="Disabler"
+        vision="night"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Grabbing Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            basic: true,
+            name: "Tail Sting",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 toxic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+        reactions={[
+          {
+            name: "Grab and Fly",
+            trigger: <span>The dragon gets a creature seized by it</span>,
+            effect: (
+              <span>
+                The dragon can{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
               </span>
             ),
           },

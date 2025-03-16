@@ -94,7 +94,7 @@ function LegendaryArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your creature type becomes celestial.</span>
+                <span>Your creature type becomes angel.</span>
               </li>
               <li>
                 <span>

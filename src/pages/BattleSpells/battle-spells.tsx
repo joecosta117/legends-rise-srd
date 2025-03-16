@@ -2513,7 +2513,7 @@ export const holySpells = [
           />
           <Monster
             name="Angelic Warrior"
-            type="Medium Celestial"
+            type="Medium Angel"
             hp="6 per spell tier (ST)"
             evn="10 + PB"
             mgt="10 + PB"

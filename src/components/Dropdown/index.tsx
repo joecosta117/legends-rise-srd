@@ -55,6 +55,33 @@ const Dropdown: React.FC<DropdownProps> = ({
     };
   };
 
+  // useEffect to make dropdown go away when hover away
+  useEffect(() => {
+    const content = [...document.querySelectorAll(".dropdown")].find(
+      (content) => (content as HTMLElement).dataset.type === type,
+    ) as HTMLElement;
+
+    content.addEventListener("mouseleave", handleMouseLeave);
+
+    return () => {
+      content.removeEventListener("mouseleave", handleMouseLeave);
+    };
+  }, []);
+
+  function handleMouseLeave() {
+    const arrow = [
+      ...document.querySelectorAll(".dropdown-button__dropdown-arrow"),
+    ].find(
+      (arrow) => (arrow as HTMLElement).dataset.type === type,
+    ) as HTMLElement;
+    const content = [...document.querySelectorAll(".dropdown-content")].find(
+      (content) => (content as HTMLElement).dataset.type === type,
+    ) as HTMLElement;
+
+    arrow.dataset.active = "false";
+    content.dataset.active = "false";
+  }
+
   return (
     <div className="dropdown" data-type={type}>
       <div className="dropdown-button" onClick={toggleDropdown}>

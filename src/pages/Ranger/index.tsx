@@ -201,10 +201,10 @@ function Ranger() {
             <p>
               You have studied and picked up tricks on defeating certain
               monsters that you’ve collected in a growing bestiary. Choose
-              aberration, beast, celestial, construct, dragon, elemental,
-              faerie, fiend, giant, monstrosity, ooze, plant, or undead. You
-              gain the following benefits against your creatures of your chosen
-              creature type:
+              aberration, angel, beast, construct, dragon, elemental, faerie,
+              fiend, giant, monstrosity, ooze, plant, or undead. You gain the
+              following benefits against your creatures of your chosen creature
+              type:
             </p>
             <ul className="no-spacing">
               <li>

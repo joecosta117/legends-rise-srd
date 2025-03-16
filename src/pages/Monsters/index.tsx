@@ -24,7 +24,8 @@ function Monsters() {
     ...HumanoidMonsters,
     ...UndeadMonsters,
   ].sort((a, b) => a.name.localeCompare(b.name));
-  const [sortOrder, setSortOrder] = useState<"asc" | "desc">("asc");
+  const [sortNameOrder, setSortNameOrder] = useState<"asc" | "desc">("asc");
+  const [sortTierOrder, setSortTierOrder] = useState<"asc" | "desc">("asc");
   const [roleFilter, setRoleFilter] = useState("");
   const [tierFilter, setTierFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
@@ -74,8 +75,8 @@ function Monsters() {
   const typeDropdownItems = [
     { label: "-", onClick: handleTypeFilter },
     { label: "Aberration", onClick: handleTypeFilter },
+    { label: "Angel", onClick: handleTypeFilter },
     { label: "Beast", onClick: handleTypeFilter },
-    { label: "Celestial", onClick: handleTypeFilter },
     { label: "Construct", onClick: handleTypeFilter },
     { label: "Dragon", onClick: handleTypeFilter },
     { label: "Elemental", onClick: handleTypeFilter },
@@ -104,22 +105,31 @@ function Monsters() {
   // Sort Monsters Logic
   function sortMonsters() {
     const sortedMonsters = [...currentMonsters].sort((a, b) =>
-      sortOrder === "asc"
+      sortNameOrder === "asc"
         ? a.name.localeCompare(b.name)
         : b.name.localeCompare(a.name),
     );
+    sortedMonsters.sort((a, b) =>
+      sortTierOrder === "asc"
+        ? a.tier.localeCompare(b.tier)
+        : b.tier.localeCompare(a.tier),
+    );
     setCurrentMonsters(sortedMonsters);
   }
-  function handleSort() {
-    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+  function handleNameSort() {
+    setSortNameOrder(sortNameOrder === "asc" ? "desc" : "asc");
+  }
+  function handleTierSort() {
+    setSortTierOrder(sortTierOrder === "asc" ? "desc" : "asc");
   }
   useEffect(() => {
     sortMonsters();
-  }, [sortOrder]);
+  }, [sortNameOrder, sortTierOrder]);
 
   // FILTER functions
   function filterMonsters() {
     const newMonsterList = MonsterList.filter((monster) => {
+      console.log("monster", monster, typeFilter);
       const matchesRoleFilter =
         !roleFilter || roleFilter === "-" || monster.role === roleFilter;
       const matchesTierFilter =
@@ -127,7 +137,7 @@ function Monsters() {
         tierFilter === "-" ||
         monster.tier === tierFilter.charAt(tierFilter.length - 1);
       const matchesTypeFilter =
-        !typeFilter || typeFilter === "-" || monster.type === typeFilter;
+        !typeFilter || typeFilter === "-" || monster.type.includes(typeFilter);
       const matchesThreatFilter =
         !threatFilter ||
         threatFilter === "-" ||
@@ -215,18 +225,42 @@ function Monsters() {
         </div>
 
         <div className="monsters-content__monster-section">
-          <div className="sort" onClick={handleSort}>
-            Sort
-            <span
-              className={`sort__arrow${sortOrder === "asc" ? "--active" : ""}`}
-            >
-              ▲
-            </span>
-            <span
-              className={`sort__arrow${sortOrder === "desc" ? "--active" : ""}`}
-            >
-              ▼
-            </span>
+          <div className="sorters">
+            <div className="sort" onClick={handleNameSort}>
+              Name Sort
+              <span
+                className={`sort__arrow${sortNameOrder === "asc" ? "--active" : ""}`}
+              >
+                ▲
+              </span>
+              <span
+                className={`sort__arrow${sortNameOrder === "desc" ? "--active" : ""}`}
+              >
+                ▼
+              </span>
+            </div>
+
+            {!tierFilter || tierFilter === "-" ? (
+              <div className="sort" onClick={handleTierSort}>
+                Tier Sort
+                <span
+                  className={`sort__arrow${sortTierOrder === "asc" ? "--active" : ""}`}
+                >
+                  ▲
+                </span>
+                <span
+                  className={`sort__arrow${sortTierOrder === "desc" ? "--active" : ""}`}
+                >
+                  ▼
+                </span>
+              </div>
+            ) : (
+              <div className="sort--disabled">
+                Tier Sort
+                <span className={`sort__arrow--active`}>▲</span>
+                <span className={`sort__arrow`}>▼</span>
+              </div>
+            )}
           </div>
 
           {currentMonstersToDisplay.map(

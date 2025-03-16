@@ -347,8 +347,8 @@ function Summoner() {
               </li>
               <li>
                 <span>
-                  <b>Summons:</b> Your minor and major summons gains the
-                  following modifications:
+                  <b>Summons:</b> Your minor and major summons are elemental
+                  creatures and gain the following modifications:
                 </span>
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
@@ -460,7 +460,7 @@ function Summoner() {
             />
 
             <h2>Angels</h2>
-            <p>You conjure celestial warriors to fight with you.</p>
+            <p>You conjure angelic warriors to fight with you.</p>
             <h3 className="header">Celestial Alignment (1st-Level Feature)</h3>
             <p>You gain the following features:</p>
             <ul>
@@ -517,6 +517,9 @@ function Summoner() {
                   </li>
                   <li>
                     <span>Assault damage deals holy damage</span>
+                  </li>
+                  <li>
+                    <span>Summons creature type is angel</span>
                   </li>
                   <li>
                     <span>
@@ -609,6 +612,9 @@ function Summoner() {
                     </span>
                   </li>
                   <li>
+                    <span>Summons creature type is construct</span>
+                  </li>
+                  <li>
                     <span>
                       Major summons’ hit points increase by your proficiency
                       bonus
@@ -680,6 +686,9 @@ function Summoner() {
                       </Link>
                       to holu damage equal to your proficiency bonus,
                     </span>
+                  </li>
+                  <li>
+                    <span>Summons creature type is fiend</span>
                   </li>
                   <li>
                     <span>
@@ -769,6 +778,9 @@ function Summoner() {
                     <span>
                       <ToolTip preset="night" />
                     </span>
+                  </li>
+                  <li>
+                    <span>Summons creature type is undead</span>
                   </li>
                   <li>
                     <span>

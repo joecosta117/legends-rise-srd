@@ -2214,7 +2214,7 @@ function HeroicArchetypes() {
           <div>
             <h2>Seraph</h2>
             <p>
-              You have tapped into the celestial energy of the upper realms,
+              You have tapped into the angelic energy of the upper realms,
               channeling the powers of good.
             </p>
             <h3 className="header">Archetype Features</h3>
@@ -2224,7 +2224,7 @@ function HeroicArchetypes() {
             </p>
             <h4 className="header">Celestial Magic (5th-Level Feature)</h4>
             <p>
-              You begin to learn celestial magic. You learn the{" "}
+              You begin to learn angelic magic. You learn the{" "}
               <Link className="internal-link" to="/battle-spells#holy">
                 holy
               </Link>{" "}

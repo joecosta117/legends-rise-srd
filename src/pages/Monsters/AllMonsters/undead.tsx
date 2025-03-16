@@ -1705,7 +1705,7 @@ const UndeadMonsters = [
   {
     name: "Gravewyrm",
     tier: "3",
-    type: "Undead",
+    type: "Dragon Undead",
     role: "Disabler",
     threat: "Boss",
     description:
@@ -1726,7 +1726,7 @@ const UndeadMonsters = [
         res="17"
         pb="6"
         vision="night"
-        type="Colossal Undead"
+        type="Colossal Dragon Undead"
         tier="3"
         threat="Boss"
         role="Disabler"
@@ -1904,7 +1904,7 @@ const UndeadMonsters = [
   {
     name: "Gravewyrm Remnant",
     tier: "3",
-    type: "Undead",
+    type: "Dragon Undead",
     role: "Bruiser",
     threat: "Standard",
     description:
@@ -1933,7 +1933,7 @@ const UndeadMonsters = [
         res="15"
         pb="6"
         vision="night"
-        type="Colossal Undead"
+        type="Colossal Dragon Undead"
         tier="3"
         threat="Standard"
         role="Bruiser"
