@@ -4,6 +4,7 @@ import UndeadMonsters from "./AllMonsters/undead";
 import Accordion from "../../components/Accordion";
 import HumanoidMonsters from "./AllMonsters/humanoids";
 import DragonMonsters from "./AllMonsters/dragons";
+import DemonMonsters from "./AllMonsters/demons";
 import Dropdown from "../../components/Dropdown";
 import { useState, useEffect, JSX } from "react";
 
@@ -21,6 +22,7 @@ interface MonsterListProps {
 function Monsters() {
   const MonsterList = [
     ...DragonMonsters,
+    ...DemonMonsters,
     ...HumanoidMonsters,
     ...UndeadMonsters,
   ].sort((a, b) => a.name.localeCompare(b.name));

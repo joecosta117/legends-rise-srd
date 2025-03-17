@@ -801,7 +801,7 @@ function CombatRules() {
         <ul>
           <li>
             <span>
-              Tiny<b>:</b> A creature as tiny as a house cat, small bird, or
+              <b>Tiny:</b> A creature as tiny as a house cat, small bird, or
               pixie
             </span>
           </li>
