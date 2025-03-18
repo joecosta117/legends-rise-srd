@@ -4,6 +4,8 @@ import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 import basicAtk from "../../assets/monster-strike.png";
 import { Link } from "react-router-dom";
+// @ts-ignore
+import { BREAKPOINTS } from "../../utils/getBreakpoint";
 
 interface MonsterProps {
   name: string;
@@ -111,6 +113,14 @@ const Monster: React.FC<MonsterProps> = ({
 
   const shaken = Math.floor(+hp / 2);
 
+  const getTier = () => {
+    if (tier && window.innerWidth < BREAKPOINTS.MOBILE) {
+      return `T${tier}`;
+    } else {
+      return tier && `Tier ${tier}`;
+    }
+  };
+
   return (
     <div className="monster" data-accordion={accordion}>
       <h3>
@@ -118,7 +128,7 @@ const Monster: React.FC<MonsterProps> = ({
         <span>
           {summons
             ? ""
-            : `Tier ${tier} ${threat === "Standard" ? "" : threat} ${role}`}
+            : `${getTier()} ${threat === "Standard" ? "" : threat} ${role}`}
         </span>
       </h3>
       <div className="monster-content">
@@ -239,7 +249,8 @@ const Monster: React.FC<MonsterProps> = ({
                   )}
                   {action.defense && (
                     <p>
-                      <i>Attack vs {action.defense}:</i> {action.damage}
+                      <i>Attack vs {action.defense}</i>
+                      {action.damage && `: ${action.damage}`}
                     </p>
                   )}
                   <ul className="monster-degrees-of-success">
@@ -340,7 +351,8 @@ const Monster: React.FC<MonsterProps> = ({
                   )}
                   {maneuver.defense && (
                     <p>
-                      <i>Attack vs {maneuver.defense}:</i> {maneuver.damage}
+                      <i>Attack vs {maneuver.defense}</i>
+                      {maneuver.damage && `: ${maneuver.damage}`}
                     </p>
                   )}
                   <ul className="monster-degrees-of-success">
@@ -449,7 +461,8 @@ const Monster: React.FC<MonsterProps> = ({
                   )}
                   {reaction.defense && (
                     <p>
-                      <i>Attack vs {reaction.defense}:</i> {reaction.damage}
+                      <i>Attack vs {reaction.defense}</i>
+                      {reaction.damage && `: ${reaction.damage}`}
                     </p>
                   )}
                   <ul className="monster-degrees-of-success">
@@ -549,7 +562,8 @@ const Monster: React.FC<MonsterProps> = ({
                   )}
                   {bossAction.defense && (
                     <p>
-                      <i>Attack vs {bossAction.defense}:</i> {bossAction.damage}
+                      <i>Attack vs {bossAction.defense}</i>
+                      {bossAction.damage && `: ${bossAction.damage}`}
                     </p>
                   )}
                   <ul className="monster-degrees-of-success">

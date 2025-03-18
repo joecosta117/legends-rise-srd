@@ -2,6 +2,8 @@ import "./index.scss";
 import React, { useState, useRef, useEffect, forwardRef, JSX } from "react";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
+// @ts-ignore
+import { BREAKPOINTS } from "../../utils/getBreakpoint";
 
 interface AccordionProps {
   title: string;
@@ -107,6 +109,14 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
       });
     };
 
+    const getTier = (tier: string) => {
+      if (window.innerWidth < BREAKPOINTS.MOBILE) {
+        return `T${tier}`;
+      } else {
+        return `Tier ${tier}`;
+      }
+    };
+
     return (
       <div
         className="accordion"
@@ -126,7 +136,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           <h4>{transformTitle(title)}</h4>
           <h4>
             {monster
-              ? `Tier ${tier} ${threat} ${role} ${isOpen ? "-" : "+"}`
+              ? `${getTier(tier)} ${threat} ${role} ${isOpen ? "-" : "+"}`
               : isOpen
                 ? "-"
                 : "+"}
