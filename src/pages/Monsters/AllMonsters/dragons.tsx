@@ -418,7 +418,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Volcanic Dragon"
-        hp="24"
+        hp="30"
         evn="13"
         mgt="17"
         res="15"
@@ -591,7 +591,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Volcanic Dragon"
-        hp="36"
+        hp="54"
         evn="15"
         mgt="19"
         res="17"
@@ -855,7 +855,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Tundra Dragon"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         speeds="fly 1"
@@ -1009,7 +1009,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Tundra Dragon"
-        hp="36"
+        hp="54"
         evn="17"
         mgt="19"
         res="15"
@@ -1245,7 +1245,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Storm Dragon"
-        hp="16"
+        hp="22"
         evn="15"
         mgt="17"
         res="13"
@@ -1404,7 +1404,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Storm Dragon"
-        hp="24"
+        hp="42"
         evn="17"
         mgt="19"
         res="15"
@@ -1655,7 +1655,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Swamp Dragon"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="17"
         res="13"
@@ -1825,7 +1825,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Swamp Dragon"
-        hp="30"
+        hp="48"
         evn="17"
         mgt="19"
         res="15"
@@ -2106,7 +2106,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Forest Dragon"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="17"
         res="13"
@@ -2297,7 +2297,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Forest Dragon"
-        hp="30"
+        hp="48"
         evn="17"
         mgt="19"
         res="15"
@@ -2585,7 +2585,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Infernal Dragon"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -2729,7 +2729,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Infernal Dragon"
-        hp="36"
+        hp="54"
         evn="17"
         mgt="19"
         res="15"
@@ -2972,7 +2972,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Void Dragon"
-        hp="20"
+        hp="26"
         evn="13"
         mgt="17"
         res="15"
@@ -3148,7 +3148,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Void Dragon"
-        hp="30"
+        hp="48"
         evn="15"
         mgt="19"
         res="17"
@@ -3436,7 +3436,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Umbral Dragon"
-        hp="20"
+        hp="26"
         evn="17"
         mgt="15"
         res="13"
@@ -3624,7 +3624,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Umbral Dragon"
-        hp="30"
+        hp="48"
         evn="19"
         mgt="17"
         res="15"

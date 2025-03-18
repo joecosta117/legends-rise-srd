@@ -565,7 +565,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Treachery Demon"
-        hp="40"
+        hp="52"
         evn="13"
         mgt="17"
         res="15"
@@ -587,6 +587,10 @@ const DemonMonsters = [
                 appear more friendly to mortals.
               </span>
             ),
+          },
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -703,7 +707,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Greed Demon"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -790,7 +794,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Wrath Demon"
-        hp="48"
+        hp="60"
         evn="15"
         mgt="17"
         res="13"
@@ -802,6 +806,12 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy 4"
         weaknesses="holy 4"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+        ]}
         actions={[
           {
             basic: true,
@@ -877,7 +887,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Pride Demon"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -978,7 +988,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Envy Demon"
-        hp="24"
+        hp="26"
         evn="15"
         mgt="17"
         res="13"
@@ -1048,6 +1058,448 @@ const DemonMonsters = [
             trigger: "The envy demon sees a creature within 1 zone make a roll",
             effect:
               "Creature rerolls and takes the lowest result. The envy demon can instead use the highest result for a roll (turn ends). The creature is then immune to this ability for the scene.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Horned Demon",
+    tier: "2",
+    type: "Fiend",
+    role: "",
+    threat: "Minion",
+    description:
+      "Horned demons are the foot soldiers of hell and answer the generals and demon lords. Horned demons are muscular humanoid red-skinned demons with curved horns and often wield various jagged weapons.",
+    tactics: (
+      <span>
+        Horned demons fight in groups and rush heroes in hopes to prove their
+        worth. Each turn they use weapon and{" "}
+        <Link className="internal-link" to="/conditions#grab">
+          grab
+        </Link>{" "}
+        or{" "}
+        <Link className="internal-link" to="/conditions#trip">
+          trip
+        </Link>{" "}
+        as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Horned Demon"
+        hp="4"
+        evn="15"
+        mgt="17"
+        res="13"
+        pb="4"
+        type="Medium Fiend"
+        tier="2"
+        threat="Minion"
+        vision="night"
+        resistances="fire 2, unholy 4"
+        weaknesses="holy 4"
+        traits={[
+          {
+            name: "Infernal Death",
+            description:
+              "When a horned demon is reduced to 0 hit points, it explodes in profane energy. Each engaged creature to the horned demon takes 2 unholy damage.",
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Weapon",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "2 physical damage",
+          },
+          {
+            basic: true,
+            name: "Throw Hellfire",
+            keywords: "magical, range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "EVN",
+            damage: "1 fire damage and 1 unholy damage",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Infernal Herald",
+    tier: "2",
+    type: "Fiend",
+    role: "Support",
+    threat: "Major",
+    description:
+      "Infernal heralds are representatives of the infamous demon lords, the rulers of the lower realms. Fortunate, or unfortunate depending on their master, chosen demons are promoted to become heralds and are treated with respect by other demons. Each infernal herald appears differntly depending on their patron who reshapes the herald based on their whim.",
+    tactics: (
+      <span>
+        Infernal heralds prefer to stay further away from heroes to use mark of
+        the pit while using summon demons to conjure lackeys to distract heroes.
+        When the infernal herald or many allies are hurt, it will use demon
+        lord's blessing.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Infernal Herald"
+        hp="52"
+        evn="15"
+        mgt="13"
+        res="17"
+        pb="4"
+        type="Large Fiend"
+        tier="2"
+        threat="Major"
+        role="Support"
+        vision="night"
+        resistances="unholy 4"
+        weaknesses="holy 4"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Mark of the Pit",
+            keywords: "magical, ranged",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "RES",
+            damage: "6 unholy damage",
+            success: (
+              <span>
+                Target is cursed until the start of the demon herald's next
+                turn. While cursed, creatures gain{" "}
+                <Modifier type="f" count="1" /> on attack rolls against the
+                target
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Demon Lord's Blessing",
+            keywords: "magical, recharge",
+            target: <span>All enemies within the infernal herald's zone</span>,
+            defense: "RES",
+            damage: "6 unholy damage",
+            effect: (
+              <span>
+                Infernal Herald and allies within the demon's zone{" "}
+                <ToolTip preset="heal" /> 4
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Summon Demons",
+            keywords: "magical, range",
+            effect: "2 horned demons are summoned within 1 zone",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Winged Demon",
+    tier: "3",
+    type: "Fiend",
+    role: "",
+    threat: "Minion",
+    description:
+      "Winged demons are the elit soldiers of hell. Winged demons are large, muscular humanoid demons with bat wings and long, curved claws.",
+    tactics: (
+      <span>
+        Winged demons fight in groups and rush heroes in hopes to prove their
+        worth. Each turn they use claw and{" "}
+        <Link className="internal-link" to="/conditions#taunt">
+          taunt
+        </Link>{" "}
+        or{" "}
+        <Link className="internal-link" to="/conditions#trip">
+          trip
+        </Link>{" "}
+        as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Winged Demon"
+        hp="6"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Large Fiend"
+        tier="3"
+        threat="Minion"
+        vision="night"
+        resistances="unholy 4"
+        weaknesses="holy 4"
+        traits={[
+          {
+            name: "Infernal Death",
+            description:
+              "When a winged demon is reduced to 0 hit points, it explodes in profane energy. Each engaged creature to the winged demon takes 3 unholy damage.",
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Claw",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/combat-abilities#seized">
+                  seized
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Conquest Demon",
+    tier: "3",
+    type: "Fiend",
+    role: "Bruiser",
+    threat: "Major",
+    description:
+      "Conquest demons are the generals of the lower realms, only answering to the demon lords. Conquest demons marshal the armies of hell to fight the celestial hosts of the heavens or even lead demons against other demons in the case of political in fighting. Conquest demons are huge humanoid demons with with fiery skin, large wings, and wield weapons of pure fire.",
+    tactics: (
+      <span>
+        Conquest demons prefer to get close to the heroes to get them in range
+        of their flame aura. A conquest demon will start off combat by using
+        hellfire entrance to teleport to their foes. Each turn the demon will
+        use flaming sword and flaming whip.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Conquest Demon"
+        hp="108"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Huge Fiend"
+        tier="3"
+        threat="Major"
+        role="Bruiser"
+        vision="night"
+        resistances="fire 6, unholy 6"
+        weaknesses="cold 6, holy 6"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monster get two turns per round.</span>,
+          },
+          {
+            name: "Death Throes",
+            description: (
+              <span>
+                When the conquest demon is reduced to 0 hit points, it explodes
+                in hellfire. Make an attack roll against each creature's Evasion
+                within 1 zone of the conquest demon, dealing 6 fire damage and 6
+                unholy damage. Any creature reduced to 0 hit points from this
+                damage is incinerated to ash.
+              </span>
+            ),
+          },
+          {
+            name: "Flame Aura",
+            description: (
+              <span>
+                The conquest demon's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 fire) only for enemies.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Flaming Sword",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 fire damage",
+          },
+          {
+            basic: false,
+            name: "Hellfire Arrival",
+            keywords: "magical, range, recharge",
+            target: <span>All creatures in 1 zone within 3 zones</span>,
+            defense: "EVN",
+            damage: "6 fire damage and 6 unholy damage",
+            effect: (
+              <span>
+                Conquest demon can{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  teleport
+                </Link>{" "}
+                to the targeted zone.
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Flame Whip",
+            keywords: "range, weapon",
+            target: "1 creature within 1 zone",
+            defense: "EVN",
+            damage: "6 fire damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (overcome ends) and the conquest demon can pull the target to
+                their zone
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "War Demon",
+    tier: "3",
+    type: "Fiend",
+    role: "Tank",
+    threat: "Standard",
+    description:
+      "War demons are the greatest warriors of the hells and their arrival on the battlefield ensures doom for their foes. Unlike conquest demons that lead the armies of hell, war demons prefer to be in the thick of battle and revel in bloodshed. War demons are large demons encased in plate armor with dozens of weapons impaled on their body from past attempts to kill them.",
+    tactics: (
+      <span>
+        War demons prefer to get close to the heroes to use giant glaive or all
+        foes to me! if available. If a foe tries to run, the war demon uses
+        their no escape reaction. Against ranged foes, the war demon uses flying
+        weapon to keep them in place.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="War Demon"
+        hp="54"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Large Fiend"
+        tier="3"
+        threat="Standard"
+        role="Tank"
+        vision="night"
+        resistances="physical 3, unholy 6"
+        weaknesses="holy 6"
+        actions={[
+          {
+            basic: true,
+            name: "Giant Glaive",
+            keywords: "weapon",
+            target: <span>1 creature within the war demon's zone</span>,
+            defense: "EVN",
+            damage: "9 physical damage",
+          },
+          {
+            basic: false,
+            name: "All Foes To Me!",
+            keywords: "magical, recharge",
+            target: <span>All enemies within 1 zone</span>,
+            defense: "MGT",
+            damage: "9 physical",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>{" "}
+                and pulled to become{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                to the war demon
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Flying Weapon",
+            keywords: "range, weapon",
+            target: "1 creature within 3 zones",
+            defense: "EVN",
+            damage: "3 physcial damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                until the target uses a maneuver to remove the impaling weapon
+              </span>
+            ),
+          },
+        ]}
+        reactions={[
+          {
+            name: "No Escape",
+            keywords: "range, weapon",
+            target: (
+              <span>
+                1 creature within the war demon's zone uses{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+              </span>
+            ),
+            effect:
+              "The war demon uses giant glaive against the triggering creature. On a success or higher, the target is knocked prone",
           },
         ]}
       />

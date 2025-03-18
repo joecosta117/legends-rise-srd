@@ -1512,7 +1512,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Master Mage"
-        hp="16"
+        hp="22"
         evn="15"
         mgt="13"
         res="17"
@@ -1568,7 +1568,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Dark Archpriest"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="13"
         res="17"
@@ -1647,7 +1647,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Weapon Master"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -1722,7 +1722,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Warlord"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="17"
         res="13"
@@ -1888,7 +1888,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Master Assassin"
-        hp="20"
+        hp="26"
         evn="17"
         mgt="13"
         res="15"
@@ -1971,7 +1971,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="High Templar"
-        hp="24"
+        hp="30"
         evn="13"
         mgt="17"
         res="15"
@@ -2049,7 +2049,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Greater Necromancer"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="13"
         res="17"
@@ -2134,7 +2134,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Master Naturalist"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="13"
         res="17"
@@ -2230,7 +2230,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Grand Knight"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -2319,7 +2319,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Undying Berserker"
-        hp="24"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -2400,7 +2400,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Sharpshooter"
-        hp="16"
+        hp="22"
         evn="17"
         mgt="15"
         res="13"
@@ -2459,7 +2459,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Master Spellsword"
-        hp="20"
+        hp="26"
         evn="17"
         mgt="13"
         res="15"
@@ -2560,7 +2560,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Legendary Mage"
-        hp="24"
+        hp="42"
         evn="17"
         mgt="15"
         res="19"
@@ -2624,7 +2624,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Legendary Priest"
-        hp="30"
+        hp="48"
         evn="17"
         mgt="15"
         res="19"
@@ -2705,7 +2705,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Legendary Fighter"
-        hp="36"
+        hp="54"
         evn="17"
         mgt="19"
         res="15"
@@ -2796,7 +2796,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Legendary Assassin"
-        hp="30"
+        hp="48"
         evn="19"
         mgt="15"
         res="17"
@@ -2898,7 +2898,7 @@ const HumanoidMonsters = [
     statBlock: (
       <Monster
         name="Legendary Necromancer"
-        hp="30"
+        hp="48"
         evn="17"
         mgt="15"
         res="19"
