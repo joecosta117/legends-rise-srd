@@ -109,11 +109,11 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
       });
     };
 
-    const getTier = (tier: string) => {
-      if (window.innerWidth < BREAKPOINTS.MOBILE) {
+    const getTier = () => {
+      if (tier && window.innerWidth < BREAKPOINTS.MOBILE) {
         return `T${tier}`;
       } else {
-        return `Tier ${tier}`;
+        return tier && `Tier ${tier}`;
       }
     };
 
@@ -136,7 +136,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
           <h4>{transformTitle(title)}</h4>
           <h4>
             {monster
-              ? `${getTier(tier)} ${threat} ${role} ${isOpen ? "-" : "+"}`
+              ? `${getTier()} ${threat} ${role} ${isOpen ? "-" : "+"}`
               : isOpen
                 ? "-"
                 : "+"}
