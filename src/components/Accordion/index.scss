@@ -3,6 +3,7 @@
 .accordion {
   max-width: 600px;
   margin-bottom: 16px;
+  cursor: pointer;
 
   &[data-is-stacked="true"] {
     margin-bottom: 0;

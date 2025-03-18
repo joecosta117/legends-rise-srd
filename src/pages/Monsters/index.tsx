@@ -27,7 +27,7 @@ function Monsters() {
     ...UndeadMonsters,
   ].sort((a, b) => a.name.localeCompare(b.name));
   const [sortNameOrder, setSortNameOrder] = useState<"asc" | "desc">("asc");
-  const [sortTierOrder, setSortTierOrder] = useState<"asc" | "desc">("asc");
+  const [sortTierOrder, setSortTierOrder] = useState<"asc" | "desc" | "">("");
   const [roleFilter, setRoleFilter] = useState("");
   const [tierFilter, setTierFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("");
@@ -111,11 +111,14 @@ function Monsters() {
         ? a.name.localeCompare(b.name)
         : b.name.localeCompare(a.name),
     );
-    sortedMonsters.sort((a, b) =>
-      sortTierOrder === "asc"
-        ? a.tier.localeCompare(b.tier)
-        : b.tier.localeCompare(a.tier),
-    );
+    if (sortTierOrder) {
+      sortedMonsters.sort((a, b) =>
+        sortTierOrder === "asc"
+          ? a.tier.localeCompare(b.tier)
+          : b.tier.localeCompare(a.tier),
+      );
+    }
+
     setCurrentMonsters(sortedMonsters);
   }
   function handleNameSort() {
