@@ -339,7 +339,7 @@ function Paladin() {
 
             <h3 className="header">Burning Smite</h3>
             <p>
-              Divine smite sets your foe ablaze. On a success, the target takes
+              Divine smite sets your foe ablaze. On a success, the target takes{" "}
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
               </Link>{" "}

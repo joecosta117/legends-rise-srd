@@ -7,13 +7,13 @@ import { BREAKPOINTS, getBreakpoint } from "../../utils/getBreakpoint";
 
 const Navigation = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
 
   useEffect(() => {
     const nav = document.getElementById("nav");
 
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
 
       if (currentScrollPos > 41) {
         if (prevScrollPos > currentScrollPos) {

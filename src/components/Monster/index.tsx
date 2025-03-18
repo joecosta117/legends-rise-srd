@@ -253,55 +253,55 @@ const Monster: React.FC<MonsterProps> = ({
                       {action.damage && `: ${action.damage}`}
                     </p>
                   )}
-                  <ul className="monster-degrees-of-success">
+                  <div className="monster-degrees-of-success">
                     {action.critical && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Critical:</i>{" "}
+                          <i>• Critical:</i>{" "}
                           {typeof action.critical === "string"
                             ? transformEffect(action.critical)
                             : action.critical}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {action.success && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Success:</i>{" "}
+                          <i>• Success:</i>{" "}
                           {typeof action.success === "string"
                             ? transformEffect(action.success)
                             : action.success}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {action.partial && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial:</i>{" "}
+                          <i>• Partial:</i>{" "}
                           {typeof action.partial === "string"
                             ? transformEffect(action.partial)
                             : action.partial}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {action.partialOrLower && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial or Lower:</i> {action.partialOrLower}
+                          <i>• Partial or Lower:</i> {action.partialOrLower}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {action.failure && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Failure:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof action.failure === "string"
                             ? transformEffect(action.failure)
                             : action.failure}
                         </span>
-                      </li>
+                      </p>
                     )}
-                  </ul>
+                  </div>
                   {action.effect && (
                     <p className="ability__line">
                       <i>Effect:</i>{" "}
@@ -355,55 +355,55 @@ const Monster: React.FC<MonsterProps> = ({
                       {maneuver.damage && `: ${maneuver.damage}`}
                     </p>
                   )}
-                  <ul className="monster-degrees-of-success">
+                  <div className="monster-degrees-of-success">
                     {maneuver.critical && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Critical:</i>{" "}
+                          <i>• Critical:</i>{" "}
                           {typeof maneuver.critical === "string"
                             ? transformEffect(maneuver.critical)
                             : maneuver.critical}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {maneuver.success && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Success:</i>{" "}
+                          <i>• Success:</i>{" "}
                           {typeof maneuver.success === "string"
                             ? transformEffect(maneuver.success)
                             : maneuver.success}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {maneuver.partial && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial:</i>{" "}
+                          <i>• Partial:</i>{" "}
                           {typeof maneuver.partial === "string"
                             ? transformEffect(maneuver.partial)
                             : maneuver.partial}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {maneuver.partialOrLower && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial or Lower:</i> {maneuver.partialOrLower}
+                          <i>• Partial or Lower:</i> {maneuver.partialOrLower}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {maneuver.failure && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Failure:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof maneuver.failure === "string"
                             ? transformEffect(maneuver.failure)
                             : maneuver.failure}
                         </span>
-                      </li>
+                      </p>
                     )}
-                  </ul>
+                  </div>
                   {maneuver.effect && (
                     <p className="ability__line">
                       <i>Effect:</i>{" "}
@@ -465,55 +465,55 @@ const Monster: React.FC<MonsterProps> = ({
                       {reaction.damage && `: ${reaction.damage}`}
                     </p>
                   )}
-                  <ul className="monster-degrees-of-success">
+                  <div className="monster-degrees-of-success">
                     {reaction.critical && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Critical:</i>{" "}
+                          <i>• Critical:</i>{" "}
                           {typeof reaction.critical === "string"
                             ? transformEffect(reaction.critical)
                             : reaction.critical}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {reaction.success && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Success:</i>{" "}
+                          <i>• Success:</i>{" "}
                           {typeof reaction.success === "string"
                             ? transformEffect(reaction.success)
                             : reaction.success}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {reaction.partial && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial:</i>{" "}
+                          <i>• Partial:</i>{" "}
                           {typeof reaction.partial === "string"
                             ? transformEffect(reaction.partial)
                             : reaction.partial}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {reaction.partialOrLower && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial or Lower:</i> {reaction.partialOrLower}
+                          <i>• Partial or Lower:</i> {reaction.partialOrLower}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {reaction.failure && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Failure:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof reaction.failure === "string"
                             ? transformEffect(reaction.failure)
                             : reaction.failure}
                         </span>
-                      </li>
+                      </p>
                     )}
-                  </ul>
+                  </div>
                   {reaction.effect && (
                     <p className="ability__line">
                       <i>Effect:</i>{" "}
@@ -566,55 +566,55 @@ const Monster: React.FC<MonsterProps> = ({
                       {bossAction.damage && `: ${bossAction.damage}`}
                     </p>
                   )}
-                  <ul className="monster-degrees-of-success">
+                  <div className="monster-degrees-of-success">
                     {bossAction.critical && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Critical:</i>{" "}
+                          <i>• Critical:</i>{" "}
                           {typeof bossAction.critical === "string"
                             ? transformEffect(bossAction.critical)
                             : bossAction.critical}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {bossAction.success && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Success:</i>{" "}
+                          <i>• Success:</i>{" "}
                           {typeof bossAction.success === "string"
                             ? transformEffect(bossAction.success)
                             : bossAction.success}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {bossAction.partial && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial:</i>{" "}
+                          <i>• Partial:</i>{" "}
                           {typeof bossAction.partial === "string"
                             ? transformEffect(bossAction.partial)
                             : bossAction.partial}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {bossAction.partialOrLower && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Partial or Lower:</i> {bossAction.partialOrLower}
+                          <i>• Partial or Lower:</i> {bossAction.partialOrLower}
                         </span>
-                      </li>
+                      </p>
                     )}
                     {bossAction.failure && (
-                      <li>
+                      <p>
                         <span className="degree-effect">
-                          <i>Failure:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof bossAction.failure === "string"
                             ? transformEffect(bossAction.failure)
                             : bossAction.failure}
                         </span>
-                      </li>
+                      </p>
                     )}
-                  </ul>
+                  </div>
                   {bossAction.effect && (
                     <p className="ability__line">
                       <i>Effect:</i>{" "}
