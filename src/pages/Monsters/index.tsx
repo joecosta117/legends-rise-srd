@@ -157,7 +157,7 @@ function Monsters() {
     });
 
     setCurrentMonsters(newMonsterList);
-    setSortOrder("asc");
+    setSortNameOrder("asc");
     setCurrentPage(1); // Reset to the first page after filtering
   }
 
