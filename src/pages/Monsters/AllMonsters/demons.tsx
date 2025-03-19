@@ -1415,7 +1415,7 @@ const DemonMonsters = [
     role: "Tank",
     threat: "Standard",
     description:
-      "War demons are the greatest warriors of the hells and their arrival on the battlefield ensures doom for their foes. Unlike conquest demons that lead the armies of hell, war demons prefer to be in the thick of battle and revel in bloodshed. War demons are large demons encased in plate armor with dozens of weapons impaled on their body from past attempts to kill them.",
+      "War demons are the greatest warriors of the hells and their arrival on the battlefield ensures doom for their foes. Unlike conquest demons that lead the armies of hell, war demons prefer to be in the thick of battle and revel in bloodshed. War demons are large demons encased in blood stained armor with dozens of weapons impaled on their body from past attempts to kill them. War demons prefer to wield large jagged glaives while telekinetically pulling weapons from their body to impale their foes.",
     tactics: (
       <span>
         War demons prefer to get close to the heroes to use giant glaive or all
@@ -1500,6 +1500,574 @@ const DemonMonsters = [
             ),
             effect:
               "The war demon uses giant glaive against the triggering creature. On a success or higher, the target is knocked prone",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Death Demon",
+    tier: "3",
+    type: "Fiend",
+    role: "Skirmisher",
+    threat: "Standard",
+    description:
+      "Death demons are the greatest assassins of the hells and their appearance marks doom for their prey. Unlike other demons that enjoy tempting mortals into sin to condemn their soul, death demons consume the souls of their victims. Death demons look like large vulture humanoids that wield two curved daggers that leak necrotic energy.",
+    tactics: (
+      <span>
+        Death demons prefer to get close to the heroes with their quick fly
+        speed to use death blades. Death demons usually focus on the weakest
+        hero, hoping to trigger consume soul and nourished by death. In addition
+        to death blades, death demons use their maneuver to move across the
+        battlefield to evade retaliation.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Death Demon"
+        hp="48"
+        evn="19"
+        mgt="15"
+        res="17"
+        pb="6"
+        type="Large Fiend"
+        tier="3"
+        threat="Standard"
+        role="Skirmisher"
+        vision="night"
+        resistances="necrotic 3, unholy 6"
+        weaknesses="holy 6"
+        speeds="fly 2"
+        traits={[
+          {
+            name: "Nourished By Death",
+            description: (
+              <span>
+                The death demon gains <Modifier type="f" count="1" /> on attack
+                rolls against <ToolTip preset="shaken" /> creatures. When the
+                death demon gets a critical success on an attack roll or reduces
+                a creature to 0 hit points, the death demon{" "}
+                <ToolTip preset="heals" /> 6.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Death Blades",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 physical damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                necrotic damage
+              </span>
+            ),
+          },
+        ]}
+        reactions={[
+          {
+            name: "Consume Soul",
+            keywords: "magical",
+            trigger: (
+              <span>
+                The death demon deals damage to a <ToolTip preset="shaken" />{" "}
+                creature, or deals damage that makes a creature shaken
+              </span>
+            ),
+            target: "Triggering creature",
+            defense: "RES",
+            critical:
+              "Same as a success, and the target is reduced to 0 hit points",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Plague Demon",
+    tier: "3",
+    type: "Fiend",
+    role: "Disabler",
+    threat: "Standard",
+    description:
+      "Plague demons are the feared even by other demons for their ability to spread magical diseases that agonize their victims. A plague demon's arrival in the mortal realms is soon followed by horrendous pandemics that decimate nearby civilizations unless the demon is stopped. Plague demons look like large beetle like humanoid with toxic slime dripping from its mandibles and claws.",
+    tactics: (
+      <span>
+        Plague demons prefer to get close to the heroes to use venemous rend and
+        keep heroes close for plague aura. Plague demons usually start combat by
+        using madness plague on a group of heroes before diving in to use
+        venemous rend.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Plague Demon"
+        hp="48"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Large Fiend"
+        tier="3"
+        threat="Standard"
+        role="Disabler"
+        vision="night"
+        resistances="toxic 3, unholy 6"
+        weaknesses="holy 6"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Plague Aura",
+            description: (
+              <span>
+                The plague demon's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 toxic damage) for enemies. When a creature takes this damage,
+                the plague demon makes an attack roll against the creature's
+                Might. On a success, the creature is{" "}
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>
+                .
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Venemous Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Madness Plague",
+            keywords: "magical, range, recharge",
+            target: <span>All creatures in 1 zone within 3 zones</span>,
+            defense: "MGT",
+            damage: "9 toxic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (overcome ends) and 3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage while confused
+              </span>
+            ),
+          },
+        ]}
+        reactions={[
+          {
+            name: "Persistent Disease",
+            keywords: "magical, range",
+            trigger: (
+              <span>
+                The plague demon sees a creature within 1 zone get a success on
+                an overcome roll against an effect caused by the plague demon
+              </span>
+            ),
+            effect:
+              "The creature rerolls the overcome roll and takes the lower result",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Demon Lord of Greed",
+    tier: "3",
+    type: "Fiend",
+    role: "Artillery",
+    threat: "Boss",
+    description:
+      "The crafty and intelligent demon lord of greed is a master of demonic magic and legends say they created hellfire. Greed rules one of the seven realms of hell, and although they share a greed demon's fascination with treasure, Greed is more interested in acquiring magical knowledge and relics. Many heroes over the ages have tried to fell Greed, but all have fallen, while the arcane demon lord's treasure trove has only grown. The demon lord of greed appears as a tall demonic humanoid with elegant robes and jewels that show off their vast wealth.",
+    tactics: (
+      <span>
+        The demon lord of greed starts combat with rain hellfire to weaken
+        heroes, and prefers to stay far away. Each turn, Greed will use
+        nullifying curse or hellfire rays while their winged demon minions
+        distract the heroes. If a hero gets too close, Greed will use hellfire
+        walk to teleport away.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Demon Lord of Greed"
+        hp="42"
+        evn="17"
+        mgt="15"
+        res="19"
+        pb="6"
+        type="Large Fiend"
+        tier="3"
+        threat="Boss"
+        role="Artillery"
+        vision="night"
+        resistances="fire 6, unholy 6"
+        weaknesses="holy 6"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Claw",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+          },
+          {
+            basic: true,
+            name: "Nullifying Curse",
+            keywords: "magical, range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "EVN",
+            damage: "9 unholy damage",
+            success: "Target can't use or benefit from relics (turn ends)",
+          },
+          {
+            basic: false,
+            name: "Hellfire Rays",
+            keywords: "magical, range",
+            target: <span>1d4 creatures within 3 zones</span>,
+            defense: "EVN",
+            damage: "3 fire damage and 3 unholy damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                fire damage
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Rain Hellfire",
+            keywords: "magical, range, recharge",
+            target: <span>All creatures in 3 zones within 5 zones</span>,
+            defense: "EVN",
+            damage: "6 fire damage and 6 unholy damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                fire damage
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            basic: false,
+            name: "Hellfire Walk",
+            keywords: "magical, range",
+            target: "up to 1 zone",
+            effect: (
+              <span>
+                Demon lord of greed{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#special-movement"
+                >
+                  teleports
+                </Link>{" "}
+                up to anywhere within the targeted zone
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Summon Demons",
+            round: "1",
+            keywords: "magical, range",
+            effect: "Greed conjures 6 greater demon minions within 2 zones",
+          },
+          {
+            name: "Greed's Bounty",
+            round: "3",
+            keywords: "magical, range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            damage: "12 unholy damage",
+            success:
+              "Target chooses one of the following: they expend 3 mana if they have 3 mana to spend, or an encounter ability that hasn't been used yet can't be used for this scene.",
+          },
+          {
+            name: "Greed's Hunger",
+            round: "5",
+            keywords: "magical, range",
+            target: <span>All enemies</span>,
+            defense: "RES",
+            critical: "Same as a success, but the healing increases to 6",
+            success: (
+              <span>
+                Target can't use or benefit from relics (overcome ends), and
+                demon lord of greed <ToolTip preset="heals" /> 3
+              </span>
+            ),
+            partial: "Target can't use or benefit from relics (turn ends)",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Demon Lord of Wrath",
+    tier: "3",
+    type: "Fiend",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "The brutish and dangerous demon lord of wrath is the demonic incarnation of carnage and is a walking apocalypse whose presence signals destruction. Wrath leads hell's armies with many powerful conquest demons under their command. Wrath is a towering muscular demon with volcanic skin encased in hellfire forged armor and wields a giant blade broken by many battles but kept together through powerful magic.",
+    tactics: (
+      <span>
+        The demon lord of wrath prefers to fight near the heroes so they suffer
+        from their scorching blood. Each turn, Wrath will use broken blade
+        unless they have have enough fury to use wrath unbound. As a maneuver,
+        Wrath will use{" "}
+        <Link className="internal-link" to="/combat-abilities#grab">
+          grab
+        </Link>
+        ,{" "}
+        <Link className="internal-link" to="/combat-abilities#shove">
+          shove
+        </Link>
+        , or{" "}
+        <Link className="internal-link" to="/combat-abilities#taunt">
+          taunt
+        </Link>
+        .
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Demon Lord of Wrath"
+        hp="54"
+        evn="15"
+        mgt="19"
+        res="17"
+        pb="6"
+        type="Huge Fiend"
+        tier="3"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        resistances="fire 6, unholy 6"
+        weaknesses="cold 6, holy 6"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Wrath Unbound",
+            description: (
+              <span>
+                When the demon lord of wrath takes damage, they gain 1 fury up
+                to a maximum of 4, which is represented by a d4. Fury can only
+                be increased once per turn. The demon lord adds a number of{" "}
+                <Modifier type="f" /> to their attack rolls equal to their fury.
+              </span>
+            ),
+          },
+          {
+            name: "Scorching Blood",
+            description: (
+              <span>
+                When the demon lord of wrath takes damage, all enemies within
+                their zone takes 3 fire damage.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Broken Blade",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Unleash Wrath",
+            keywords: "magical",
+            target: (
+              <span>All enemies within the demon lord of wrath's zone</span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+            effect: (
+              <span>
+                Wrath swings his sword in a wide arc. Their fury resets to 0,
+                and they <ToolTip preset="heal" /> 6
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Titantic Leap",
+            round: "1",
+            keywords: "range",
+            target: "All creatues in 1 zone within 5 zones",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+            effect:
+              "Wrath leaps across the battlefield, landing in the targeted zone",
+          },
+          {
+            name: "Infernal Rampage",
+            round: "3",
+            keywords: "magical",
+            duration: "Scene ends",
+            effect:
+              "All negative effects end on the demon lord of wrath and their damage ignores all damage resistance. Their sword ignites on fire, making broken blade and unleash wrath deal 3 additional fire damage.",
+          },
+          {
+            name: "Burning Seismic Slam",
+            round: "5",
+            keywords: "magical, range",
+            target: (
+              <span>All enemies within the demon lord of wrath's zone</span>
+            ),
+            defense: "MGT",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+            effect: (
+              <span>
+                {" "}
+                The demon lord's zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 fire damage) for the scene
+              </span>
+            ),
           },
         ]}
       />

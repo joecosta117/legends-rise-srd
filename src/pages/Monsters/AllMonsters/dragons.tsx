@@ -2521,7 +2521,7 @@ const DragonMonsters = [
             name: "Profane Aura",
             description: (
               <span>
-                The hellfire dragon's zone is a{" "}
+                The dragon's zone is a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
@@ -2615,7 +2615,7 @@ const DragonMonsters = [
             name: "Profane Aura",
             description: (
               <span>
-                The hellfire dragon's zone is a{" "}
+                The dragon's zone is a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
@@ -2699,7 +2699,7 @@ const DragonMonsters = [
             name: "Summon Demons",
             round: "3",
             keywords: "magical, range",
-            effect: "The dragon conjures 5 demon minions within 2 zones",
+            effect: "The dragon conjures 5 horned demons within 2 zones",
           },
           {
             name: "None Shall Escape",
@@ -2759,7 +2759,7 @@ const DragonMonsters = [
             name: "Profane Aura",
             description: (
               <span>
-                The hellfire dragon's zone is a{" "}
+                The dragon's zone is a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
@@ -2844,8 +2844,7 @@ const DragonMonsters = [
             name: "Summon Demons",
             round: "3",
             keywords: "magical, range",
-            effect:
-              "The dragon conjures 6 greater demon minions within 2 zones",
+            effect: "The dragon conjures 6 winged demons within 2 zones",
           },
           {
             name: "None Shall Escape",
