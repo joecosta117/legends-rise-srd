@@ -245,6 +245,7 @@ export const airSpells = [
           descriptor="You unleash a localized thunderstorm with a cyclone in the middle of it."
           frequency="Spell 3 (Air)"
           target="1 zone within 5 zones"
+          duration="Scene ends"
           keywords="Magical, Range"
           effect={
             <span>
