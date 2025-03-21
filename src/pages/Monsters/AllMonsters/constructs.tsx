@@ -1025,7 +1025,7 @@ const ConstructMonsters = [
             ),
           },
           {
-            basic: true,
+            basic: false,
             name: "Energy Beam",
             keywords: "magical, range",
             target: <span>1 creature within 5 zones</span>,
@@ -1033,7 +1033,7 @@ const ConstructMonsters = [
             damage: "6 arcane damage",
           },
           {
-            basic: true,
+            basic: false,
             name: "Hyper Beam",
             keywords: "magical, range, recharge",
             target: (
