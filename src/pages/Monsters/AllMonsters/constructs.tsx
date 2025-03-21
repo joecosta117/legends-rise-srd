@@ -62,7 +62,7 @@ const ConstructMonsters = [
     ),
   },
   {
-    name: "construct",
+    name: "Animated Armor",
     tier: "1",
     type: "Construct",
     role: "Tank",
