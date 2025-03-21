@@ -6,6 +6,7 @@ import HumanoidMonsters from "./AllMonsters/humanoids";
 import DragonMonsters from "./AllMonsters/dragons";
 import DemonMonsters from "./AllMonsters/demons";
 import ElementalMonsters from "./AllMonsters/elementals";
+import GiantMonsters from "./AllMonsters/giants";
 import Dropdown from "../../components/Dropdown";
 import { useState, useEffect, JSX } from "react";
 
@@ -25,6 +26,7 @@ function Monsters() {
     ...DragonMonsters,
     ...DemonMonsters,
     ...ElementalMonsters,
+    ...GiantMonsters,
     ...HumanoidMonsters,
     ...UndeadMonsters,
   ].sort((a, b) => a.name.localeCompare(b.name));
