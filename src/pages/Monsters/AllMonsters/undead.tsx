@@ -438,7 +438,7 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Death Burst",
@@ -528,7 +528,7 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Light Vulnerability",
@@ -1068,7 +1068,7 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1400,7 +1400,7 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Misty Escape",
@@ -1544,7 +1544,7 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Regal Presence",

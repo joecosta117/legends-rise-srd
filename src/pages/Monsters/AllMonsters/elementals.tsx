@@ -1053,7 +1053,7 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1163,7 +1163,7 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1269,7 +1269,7 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1373,7 +1373,7 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1474,7 +1474,7 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1921,9 +1921,9 @@ const ElementalMonsters = [
       <Monster
         name="Earth Primordial"
         hp="54"
-        evn="15"
+        evn="17"
         mgt="19"
-        res="17"
+        res="15"
         speeds="burrow 1"
         pb="6"
         type="Colossal Elemental"
@@ -1948,13 +1948,11 @@ const ElementalMonsters = [
             name: "Broken Shell",
             description: (
               <span>
-                When the earth primodrial becomes <ToolTip preset="shaken" />,
-                their shell cracks. The primordial's physical resistance
-                decreases to 3 and they fall{" "}
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
-                </Link>
-                .
+                When a creatue deals damage to the earth primordial with a
+                critical success or the earth primodrial becomes{" "}
+                <ToolTip preset="shaken" />, their shell cracks. The
+                primordial's physical resistance is halved and their Evasion
+                decreases by 2.
               </span>
             ),
           },

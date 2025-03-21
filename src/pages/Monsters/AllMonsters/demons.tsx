@@ -470,7 +470,7 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Shapechanger",
@@ -590,7 +590,7 @@ const DemonMonsters = [
           },
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -809,7 +809,7 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1170,7 +1170,7 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1322,7 +1322,7 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Death Throes",

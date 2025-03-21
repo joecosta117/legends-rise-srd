@@ -188,7 +188,7 @@ const Monster: React.FC<MonsterProps> = ({
         {traits && traits.length > 0 && (
           <div className="traits-section">
             <h4 data-type="trait">Traits</h4>
-            <div>
+            <div className="traits-section__container">
               {traits.map((trait, index) => (
                 <p key={index}>
                   <b>{trait.name}:</b>{" "}

@@ -169,7 +169,7 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -272,7 +272,7 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Troll Regeneration",
@@ -364,7 +364,7 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -707,7 +707,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Dire Troll"
-        hp="48"
+        hp="60"
         evn="15"
         mgt="17"
         res="13"
@@ -721,7 +721,7 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Troll Regeneration",
@@ -831,7 +831,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Troll Warchief"
-        hp="40"
+        hp="52"
         evn="15"
         mgt="17"
         res="13"
@@ -845,7 +845,7 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Troll Regeneration",
@@ -950,7 +950,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Fire Giant"
-        hp="48"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -1035,7 +1035,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Fire Giant Pyromancer"
-        hp="32"
+        hp="22"
         evn="13"
         mgt="17"
         res="15"
@@ -1132,7 +1132,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Frost Giant"
-        hp="48"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -1224,7 +1224,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Frost Giant"
-        hp="40"
+        hp="26"
         evn="13"
         mgt="17"
         res="15"
@@ -1353,7 +1353,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Moutain Giant"
-        hp="48"
+        hp="30"
         evn="15"
         mgt="17"
         res="13"
@@ -1444,7 +1444,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Moutain Giant Geomancer"
-        hp="40"
+        hp="26"
         evn="13"
         mgt="17"
         res="15"

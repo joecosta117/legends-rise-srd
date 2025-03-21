@@ -8,6 +8,7 @@ import DemonMonsters from "./AllMonsters/demons";
 import ElementalMonsters from "./AllMonsters/elementals";
 import GiantMonsters from "./AllMonsters/giants";
 import Dropdown from "../../components/Dropdown";
+import ConstructMonsters from "./AllMonsters/constructs";
 import { useState, useEffect, JSX } from "react";
 
 interface MonsterListProps {
@@ -19,10 +20,12 @@ interface MonsterListProps {
   tactics: string | JSX.Element;
   threat: string;
   statBlock: JSX.Element;
+  secondaryMonster?: JSX.Element;
 }
 
 function Monsters() {
   const MonsterList = [
+    ...ConstructMonsters,
     ...DragonMonsters,
     ...DemonMonsters,
     ...ElementalMonsters,
@@ -37,6 +40,7 @@ function Monsters() {
   const [typeFilter, setTypeFilter] = useState("");
   const [threatFilter, setThreatFilter] = useState("");
   const [currentMonsters, setCurrentMonsters] =
+    //@ts-ignore
     useState<MonsterListProps[]>(MonsterList);
 
   // Pagination State
@@ -274,7 +278,16 @@ function Monsters() {
 
           {currentMonstersToDisplay.map(
             (
-              { name, statBlock, tier, threat, role, description, tactics },
+              {
+                name,
+                statBlock,
+                tier,
+                threat,
+                role,
+                description,
+                tactics,
+                secondaryMonster,
+              },
               index,
             ) => (
               <Accordion
@@ -287,6 +300,11 @@ function Monsters() {
                     </p>
                     <p className="monsters-content__tactics">{tactics}</p>
                     <div>{statBlock}</div>
+                    {secondaryMonster && (
+                      <div style={{ marginTop: "20px" }}>
+                        {secondaryMonster}
+                      </div>
+                    )}
                   </div>
                 }
                 monster

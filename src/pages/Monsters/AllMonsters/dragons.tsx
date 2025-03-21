@@ -344,7 +344,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -789,7 +789,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1182,7 +1182,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -1586,7 +1586,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Aquatic",
@@ -2024,7 +2024,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -2515,7 +2515,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Profane Aura",
@@ -2888,7 +2888,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
@@ -3343,7 +3343,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
           {
             name: "Light Vulnerability",
@@ -3829,7 +3829,7 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monster get two turns per round.</span>,
+            description: <span>Major monsters get two turns per round.</span>,
           },
         ]}
         actions={[
