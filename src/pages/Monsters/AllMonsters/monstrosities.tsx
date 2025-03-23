@@ -1,6 +1,6 @@
 import Monster from "../../../components/Monster";
 import { Link } from "react-router-dom";
-// import ToolTip from "../../../components/ToolTip";
+import ToolTip from "../../../components/ToolTip";
 // import Modifier from "../../../components/Modifier";
 
 const MonstrosityMonsters = [
@@ -135,6 +135,7 @@ const MonstrosityMonsters = [
         tier="1"
         threat="Boss"
         role="Disabler"
+        resistances="toxic 1"
         traits={[
           {
             name: "Boss Monster",
@@ -701,6 +702,383 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Hydra",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "Hydras are legendary monsters known for their many heads and being nearly impossible to kill. Hydras are often used by powerful entities as guardians to ancient sites much like a human would have a guard dog.",
+    tactics: (
+      <span>
+        Hydras prefer to fight close enough to heroes for them to be in range of
+        bite and each turn use{" "}
+        <Link className="internal-link" to="/combat-abilities#trip">
+          trip
+        </Link>{" "}
+        or{" "}
+        <Link className="internal-link" to="/combat-abilities#grab">
+          grab
+        </Link>{" "}
+        as a maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Hydra"
+        hp="12"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Huge Monstrosity"
+        tier="1"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Hydra Regeneration",
+            description: (
+              <span>
+                Hydra has <ToolTip preset="regeneration" /> 2. When the hydra
+                takes fire or toxic damage, then their regeneration doesn't work
+                on their next turn. When the hydra takes 5 or more damage in a
+                single turn, one of its heads dies. When the hydra regenerates,
+                it regrows up to two heads if any heads are dead.
+              </span>
+            ),
+          },
+          {
+            name: "Hydra Heads",
+            description: (
+              <span>
+                When the hydra takes 5 or more damage in a single turn, one of
+                its five heads dies. When the hydra regenerates, it regrows up
+                to two heads if any heads are dead.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: false,
+            name: "Bite",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "4 physical damage",
+          },
+          {
+            basic: false,
+            name: "Frenzy",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature for each head
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Hydra Roar",
+            target: "All enemies",
+            keywords: "range",
+            round: "1",
+            defense: "RES",
+            critical: "hindered (overcome ends)",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            name: "Frenzy",
+            round: "3",
+            target: "Each enemy within the hydra's zone",
+            effect: "Hydra uses bite against each target",
+          },
+          {
+            name: "Hydra Rage",
+            round: "5",
+            duration: "Scene ends",
+            effect:
+              "Hydra gains +1 fortune on all attack rolls and immediately ends all conditions on itself.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Serpentfolk Whisper",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Disabler",
+    threat: "Standard",
+    description:
+      "Serpentfolk were once humans but have been mutated into snake like humanoids by worshipping a vile snake god. Zealous followers of their evil deity, serpentfolk expand their ranks by spreading the faith while secretly undermining civilizations to prepare for serpentfolk to once rule the lands. Serpentfolk whispers are the most human looking of serpentfolks, which makes them the perfect spy and propaganda spreaders.",
+    tactics: (
+      <span>
+        Serpentfolk whispers prefer to fight near heroes but use confusing
+        whisper to turn heroes against each other.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Serpentfolk Whisper"
+        hp="10"
+        evn="13"
+        mgt="11"
+        res="15"
+        resistances="toxic 1"
+        pb="2"
+        type="Medium Monstrosity"
+        tier="1"
+        threat="Standard"
+        role="Disabler"
+        vision="night"
+        actions={[
+          {
+            basic: true,
+            name: "Poisoned Dagger",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Confusing Whisper",
+            keywords: "magical, range",
+            target: <span>1 creature within 2 zones</span>,
+            defense: "EVN",
+            damage: "2 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Serpentfolk Priest",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Support",
+    threat: "Major",
+    description:
+      "Serpentfolk were once humans but have been mutated into snake like humanoids by worshipping a vile snake god. Zealous followers of their evil deity, serpentfolk expand their ranks by spreading the faith while secretly undermining civilizations to prepare for serpentfolk to once rule the lands. Serpentfolk priests are humanoid creatures with snake heads that espouse the vile beliefs of their snake god.",
+    tactics: (
+      <span>
+        Serpentfolk priests prefer to fight near heroes to use profane bite, and
+        always uses serpent's blessing.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Serpentfolk Priest"
+        hp="10"
+        evn="13"
+        mgt="11"
+        res="15"
+        pb="2"
+        type="Medium Monstrosity"
+        tier="1"
+        threat="Major"
+        role="Support"
+        vision="night"
+        resistances="toxic 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monsters get two turns per round.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Profane Bite",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: <span>Gains weakness 1 to all damage (turn ends)</span>,
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Serpent's Blessing",
+            keywords: "magical, range",
+            target: "1 creature within 1 zone",
+            effect:
+              "Target heals 2 and venom sprays around them, dealing 1 toxic damage to all engaged enemies.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Serpentfolk Abomination",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Major",
+    description:
+      "Serpentfolk were once humans but have been mutated into snake like humanoids by worshipping a vile snake god. Zealous followers of their evil deity, serpentfolk expand their ranks by spreading the faith while secretly undermining civilizations to prepare for serpentfolk to once rule the lands. Serpentfolk abominations are large snake like monsters that are the elite warriors of the serpentfolks.",
+    tactics: (
+      <span>
+        Serpentfolk abominations prefer to fight near heroes to use poison
+        scimitar and constrict, and uses{" "}
+        <Link className="internal-link" to="/combat-abilities#taunt">
+          taunt
+        </Link>{" "}
+        as a maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Serpentfolk Abomination"
+        hp="20"
+        evn="13"
+        mgt="11"
+        res="15"
+        pb="2"
+        type="Large Monstrosity"
+        tier="1"
+        threat="Major"
+        role="Bruiser"
+        vision="night"
+        resistances="toxic 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monsters get two turns per round.</span>,
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Poison Scimitar",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "4 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: true,
+            name: "Bow",
+            keywords: "range, weapon",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "EVN",
+            damage: "2 physical damage",
+          },
+          {
+            basic: true,
+            name: "Constrict",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "4 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  seized
+                </Link>{" "}
+                (overcome ends) and the serpentfolk abomination can only have
+                one creature seized in this way at a time
               </span>
             ),
           },

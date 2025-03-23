@@ -665,15 +665,8 @@ const DemonMonsters = [
             target: "1 creatue within 2 zones",
             keywords: "magical, range",
             defense: "RES",
-            critical: "controlled (overcome ends)",
-            success: (
-              <span>
-                <Link className="internal-link" to="/conditions#controlled">
-                  controlled
-                </Link>{" "}
-                (turn ends)
-              </span>
-            ),
+            critical: "Demon controls the target's turns (overcome ends)",
+            success: <span>Demon controls the target's next turn</span>,
           },
         ]}
       />

@@ -571,15 +571,10 @@ const GiantMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "RES",
-            critical: <span>controlled (overcome ends)</span>,
-            success: (
-              <span>
-                <Link className="internal-link" to="/conditions#controlled">
-                  controlled
-                </Link>{" "}
-                (turn ends)
-              </span>
+            critical: (
+              <span>Oni controls the target's turns (overcome ends)</span>
             ),
+            success: <span>Oni controls the target's next turn</span>,
             partial: (
               <span>
                 <Link className="internal-link" to="/conditions#charmed">

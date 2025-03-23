@@ -1769,15 +1769,8 @@ export const enchantmentSpells = [
             defense="RES"
             keywords="Escalation, Magical, Range"
             critical="Same as a success, but the target doesn't get overcome rolls at the end of their turn to end this effect for the scene."
-            success="controlled (overcome ends)."
-            partial={
-              <span>
-                <Link className="internal-link" to="/conditions#controlled">
-                  controlled
-                </Link>{" "}
-                (turn ends)
-              </span>
-            }
+            success="You control the target's turns (overcome ends)."
+            partial={<span>You control the target's next turn</span>}
           />
         </div>
       ),

@@ -1354,14 +1354,9 @@ const UndeadMonsters = [
             critical:
               "Same as a success, and the target takes +1 misfortune to overcome rolls to end this effect",
             success: (
-              <span>
-                <Link className="internal-link" to="/conditions#controlled">
-                  controlled
-                </Link>{" "}
-                (overcome ends)
-              </span>
+              <span>Vampire controls the target's turns (overcome ends)</span>
             ),
-            partial: "controlled (turn ends)",
+            partial: "Vampire controls the target's next turn",
           },
         ]}
       />
@@ -1812,15 +1807,8 @@ const UndeadMonsters = [
             keywords: "magical, range",
             target: "1 creature within 2 zones",
             defense: "RES",
-            critical: "controlled (overcome ends)",
-            success: (
-              <span>
-                <Link className="internal-link" to="/conditions#controlled">
-                  controlled
-                </Link>{" "}
-                (turn ends)
-              </span>
-            ),
+            critical: "Dragon controls the target's turns (overcome ends)",
+            success: <span>Dragon controls the target's next turn</span>,
           },
         ]}
         reactions={[

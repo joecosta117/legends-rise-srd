@@ -75,17 +75,6 @@ function Conditions() {
       ),
     },
     {
-      title: "Controlled",
-      id: "controlled",
-      content: (
-        <p>
-          You are controlled by a controller, who commands what you do on your
-          turn through a telepathic connection. When you take damage, you can
-          make an overcome roll to overthrow this effect on a success.
-        </p>
-      ),
-    },
-    {
       title: "Exposed",
       id: "exposed",
       content: (
