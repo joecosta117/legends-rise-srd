@@ -1,7 +1,7 @@
 import Monster from "../../../components/Monster";
 import { Link } from "react-router-dom";
 import ToolTip from "../../../components/ToolTip";
-// import Modifier from "../../../components/Modifier";
+import Modifier from "../../../components/Modifier";
 
 const MonstrosityMonsters = [
   {
@@ -1081,6 +1081,769 @@ const MonstrosityMonsters = [
                 one creature seized in this way at a time
               </span>
             ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Cave Worm",
+    tier: "2",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "Cave worms are colossal worms that burrow through the earth and leaving behind massive tracts of tunnels. Most travelers rarely see cave worms but the tremors from their incoming arrival is a fear many share.",
+    tactics: (
+      <span>
+        Cave worms prefer to fight close enough to heroes to use bite and each
+        turn use{" "}
+        <Link className="internal-link" to="/combat-abilities#trip">
+          trip
+        </Link>{" "}
+        as a maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Cave Worm"
+        hp="30"
+        evn="15"
+        mgt="17"
+        res="13"
+        pb="4"
+        type="Colossal Monstrosity"
+        tier="2"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        speeds="burrow 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Inexorable Movement",
+            description: (
+              <span>
+                The cave worm ignores movement penalties from difficult zones.
+              </span>
+            ),
+          },
+          {
+            name: "Shifting Ground",
+            description: (
+              <span>
+                The ave worm's colossal movements make the ground shake as it
+                burrows. The cave worm's zone is a difficult zone for huge or
+                smaller creatures.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: false,
+            name: "Bite",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "8 physical damage",
+            success: (
+              <span>
+                If huge or smaller, the target gets swallowed by the cave worm.
+                While swallowed, the target is{" "}
+                <Link className="internal-link" to="/conditions#blinded">
+                  blinded
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>
+                , and takes 2{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage. If a swallowed creature deals 8 or more damage on
+                a single turn, the cave worm throws up the target.
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Regurgitate",
+            keywords: "range, weapon",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "EVN",
+            damage: "4 physical damage",
+            effect:
+              "The cave worm spits out a creature or rock from its stomach. If the spit out entity is a creature, it takes crash damage.",
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Burrow Charge",
+            target: "All creatures in 1 zone",
+            keywords: "range",
+            round: "1",
+            defense: "MGT",
+            damage: "9 physical",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+            effect: (
+              <span>
+                The cave worm burrows underground and pops up in the targeted
+                zone.
+              </span>
+            ),
+          },
+          {
+            name: "Thrash",
+            round: "3",
+            target: "Each other creature within 1 zone of the worm",
+            keywords: "range",
+            defense: "MGT",
+            damage: "9 physical",
+          },
+          {
+            name: "Tail Tremors",
+            round: "5",
+            duration: "Scene ends",
+            target: "All creatures within within 1 zone of the cave worm",
+            critical: "Same as success, and 4 physical damage",
+            success: "prone",
+            effect: "Targeted zones become difficult zones",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Sphinx",
+    tier: "2",
+    type: "Monstrosity",
+    role: "Disabler",
+    threat: "Boss",
+    description:
+      "Sphinxes are majestic and magical creatures that look like a large lion with the head of a human. Sphinxes collect knowledge and have an innate understanding of prophecy and time. They are usually willing to help respectable mortals, but sphinxes are quick to anger.",
+    tactics: (
+      <span>
+        Sphinxs prefer to fight close enough to heroes to use claw and each turn
+        use{" "}
+        <Link className="internal-link" to="/combat-abilities#hinder">
+          hinder
+        </Link>{" "}
+        or infinite knowledge as a maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Sphinx"
+        hp="26"
+        evn="13"
+        mgt="15"
+        res="17"
+        pb="4"
+        type="Large Monstrosity"
+        tier="2"
+        threat="Boss"
+        role="Disabler"
+        vision="night"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Oracle's Curse",
+            description: (
+              <span>
+                Enemies within the sphinx's zone take{" "}
+                <Modifier type="mf" count="1" /> to all rolls.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: false,
+            name: "Claw",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "6 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Unravel Magic",
+            keywords: "magical, range",
+            target: <span>1 magical effect within 1 zone</span>,
+            effect:
+              "If the magical effect's tier (spell tier if the effect originates from a spell) is 2 or less, then the targeted effect ends. Otherwise, the sphinx must succeed on an attack roll against the Resolve of the targeted effect’s origin (spellcaster for a spell) or a TN of 10 + double the effect’s tier. ",
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Infinite Knowledge",
+            effect: (
+              <span>
+                Spinx can use{" "}
+                <Link className="internal-link" to="/combat-abilities#study">
+                  study
+                </Link>{" "}
+                on all enemies
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Time Dilation",
+            target: "All creatures in 1 zone",
+            keywords: "magical, range",
+            round: "1",
+            defense: "RES",
+            damage: "9 arcane",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            name: "Greater Curse",
+            round: "3",
+            keywords: "magical",
+            effect:
+              "The sphinx's oracle's curse penalty increases to +2 misfortunes, and it affects all enemies within 1 zone of the sphinx",
+          },
+          {
+            name: "Desperate Foresight",
+            round: "5",
+            duration: "Scene ends",
+            effect:
+              "When the sphinx makes a roll, it can roll again and take the higher result.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Storm Eagle",
+    tier: "2",
+    type: "Monstrosity",
+    role: "Artillery",
+    threat: "Major",
+    description:
+      "Storm Eagles are huge blue feathered eagles that command the weather around them. They call lightning down upon their prey to fry it before swooping down to claim their prize.",
+    tactics: (
+      <span>
+        Storm Eagles prefer to fight afar from heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#aim">
+          aim
+        </Link>{" "}
+        then either call lightning or cyclone.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Storm Eagle"
+        hp="44"
+        evn="17"
+        mgt="15"
+        res="13"
+        pb="4"
+        type="Huge Monstrosity"
+        tier="2"
+        threat="Major"
+        role="Artillery"
+        resistances="lighting 2"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monsters get two turns per round.</span>,
+          },
+          {
+            name: "Storm Aura",
+            description: (
+              <span>
+                The storm eagle's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (2 lightning damage) only for enemies.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Talon",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "6 physical damage",
+          },
+          {
+            basic: false,
+            name: "Call Lightning",
+            keywords: "magical, range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "EVN",
+            damage: "6 lightning damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Cyclone",
+            keywords: "magical, range, recharge",
+            target: <span>1 zone within 2 zones</span>,
+            duration: "Scene ends",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zone and dangerous zone
+                </Link>{" "}
+                (2 physical damage). As a maneuver, the storm eagle can make an
+                attack roll against 1 creature's Evasion within 1 zone of the
+                cyclone, dealing 3 lightning damage.
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Kraken",
+    tier: "3",
+    type: "Monstrosity",
+    role: "Disabler",
+    threat: "Boss",
+    description:
+      "Krakenes are mysterious and enormous squid-like leviathans that incredibly intelligent and cruel. Legends say the krakens were the first creations of the gods, and once the gods created other mortals, krakens developed an ages old grudge against other creatures. Krakens dwell deep within the ocean while plotting sinister plans that takes centuries to unfold.",
+    tactics: (
+      <span>
+        Krakens prefer to fight close enough to heroes to use tentacle or bite
+        if they have a seized target, and will use constrict if they have anyone
+        seized.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Kraken"
+        hp="48"
+        evn="15"
+        mgt="17"
+        res="19"
+        pb="6"
+        type="Colossal Monstrosity"
+        tier="3"
+        threat="Boss"
+        role="Disabler"
+        vision="night"
+        speeds="swim 2"
+        resistances="cold 3, psychic 3, toxic 3"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Aquatic",
+            description: "The kraken can breath underwater",
+          },
+          {
+            name: "Turbulent Waters",
+            description: (
+              <span>
+                All zones within 1 zone of the kraken are{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zones
+                </Link>{" "}
+                except to the kraken.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Tentacle",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Bite",
+            keywords: "melee, weapon",
+            target: <span>1 creature seized by the kraken</span>,
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                If huge or smaller, the target gets swallowed by the greed
+                demon. While swallowed, the target is{" "}
+                <Link className="internal-link" to="/conditions#blinded">
+                  blinded
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>
+                , and takes 3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage. If a swallowed creature deals 12 or more damage on
+                a single turn, the kraken throws up the target.
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Constrict",
+            target: "All creatures seized by the kraken",
+            damage: "3 physical damage",
+            effect:
+              "If the target is holding their breath, then they lose 1d4 rounds of air",
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Lightning Storm",
+            target: "All creatures in 1 zone",
+            keywords: "magical, range",
+            round: "1",
+            defense: "EVN",
+            damage: "9 lightning",
+            effect: (
+              <span>
+                Targeted zone becomes a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 lightning damage) for the scene
+              </span>
+            ),
+          },
+          {
+            name: "Ink Cloud",
+            round: "3",
+            keywords: "magical, range",
+            duration: "Scene ends",
+            target: "All zones within 1 zone of the kraken",
+            effect: (
+              <span>
+                Targeted zones become filled with black ink, making anyone in
+                them{" "}
+                <Link className="internal-link" to="/rules/combat#stealth">
+                  obscured
+                </Link>{" "}
+                and the zones also become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 toxic damage). When a creature takes this damage, the kraken
+                makes an attack roll against the creatue's Might, and the
+                creatue is{" "}
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn starts) on a success or higher.
+              </span>
+            ),
+          },
+          {
+            name: "Psychic Scream",
+            round: "5",
+            keywords: "magical, range",
+            target: "All enemies",
+            damage: "9 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Terror That Walks",
+    tier: "3",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "The Terror That Walks is colossal kaiju like repitle that hibernates for centuries before eventually awakening to cause massive destruction that can level entire kingdoms and then once satiated, retreats back into the ocean. The origins and motivations of the giant monstrosity are unknown as none except the world's mightiest heroes can get close enough to the beast and live.",
+    tactics: (
+      <span>
+        The Terror That Walks prefer to fight close enough to heroes to use bite
+        and uses beam of utter destruction against any clustered or ranged foes.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Terror That Walks"
+        hp="54"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Colossal Monstrosity"
+        tier="3"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        speeds="land 2, swim 2"
+        resistances="arcane 3, physical 3, toxic 3"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take damage equal
+                to their proficiency bonus (this damage can't be reduced in
+                anyway) to end one condition affecting them.
+              </span>
+            ),
+          },
+          {
+            name: "Aquatic",
+            description: "The terror that walks can breath underwater",
+          },
+          {
+            name: "Regeneration",
+            description: (
+              <span>
+                The terror that walks has <ToolTip preset="regen" /> 3.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Bite",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "12 physical damage",
+            success: (
+              <span>
+                If huge or smaller, the target gets swallowed by the kaiju.
+                While swallowed, the target is{" "}
+                <Link className="internal-link" to="/conditions#blinded">
+                  blinded
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>
+                , and takes 3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage. If a swallowed creature deals 12 or more damage on
+                a single turn, the kaiju throws up the target.
+              </span>
+            ),
+          },
+          {
+            basic: true,
+            name: "Beam of Utter Destruction",
+            keywords: "magical, range, recharge",
+            target: <span>3 connected zones within 5 zones</span>,
+            defense: "EVN",
+            damage: "9 arcane damage",
+            success: (
+              <span>
+                3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                arcane damage
+              </span>
+            ),
+          },
+        ]}
+        bossActions={[
+          {
+            name: "World Ending Roar",
+            target: "All enemies",
+            keywords: "range",
+            round: "1",
+            defense: "RES",
+            critical: (
+              <span>
+                Same as a success, and the target becomes{" "}
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (turn ends)",
+          },
+          {
+            name: "Trample",
+            round: "3",
+            target: "All other creatues within 1 zone of the terror that walks",
+            defense: "EVN",
+            damage: "9 physical",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+          },
+          {
+            name: "Destructive Blood",
+            round: "5",
+            duration: "Scene ends",
+            effect: (
+              <span>
+                The terror that walks' blood begins creating magically
+                radiation. All zones within 1 zone of the terror that walks
+                become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 arcane damage)
+              </span>
+            ),
+            keywords: "aura, magical",
           },
         ]}
       />
