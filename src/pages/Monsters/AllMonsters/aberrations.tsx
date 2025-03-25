@@ -139,7 +139,6 @@ const AberrationMonsters = [
         tier="1"
         threat="Standard"
         role="Brusier"
-        speeds="swim 1"
         resistances="psychic 1"
         traits={[
           {
@@ -779,7 +778,7 @@ const AberrationMonsters = [
         role="Artillery"
         vision="night"
         resistances="psychic 2"
-        speeds="land 0, swim 1"
+        speeds="land 0, fly 1"
         traits={[
           {
             name: "Boss Monster",
