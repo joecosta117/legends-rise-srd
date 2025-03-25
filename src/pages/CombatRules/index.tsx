@@ -499,7 +499,7 @@ function CombatRules() {
         <ul>
           <li>
             <span>
-              <b>Mystical:</b> arcane, holy, mental, necrotic, and unholy
+              <b>Mystical:</b> arcane, holy, necrotic, psychic, and unholy
             </span>
           </li>
           <li>
@@ -533,15 +533,15 @@ function CombatRules() {
                 <b>Lightning:</b> Electrical damage that shocks.
               </p>
               <p>
-                <b>Mental:</b> Psychic damage that harms the mind.
-              </p>
-              <p>
                 <b>Necrotic:</b> Magical death energy that decays and damages
                 your essence.
               </p>
               <p>
                 <b>Physical:</b> Damage from weapons, a fist, rocks, wind,
                 thunderous boom, or other natural hazards.
+              </p>
+              <p>
+                <b>Psychic:</b> Mental damage that harms the mind.
               </p>
               <p>
                 <b>Toxic:</b> Harmful chemicals or gas that can be caustic or

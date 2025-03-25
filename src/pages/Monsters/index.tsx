@@ -10,6 +10,9 @@ import GiantMonsters from "./AllMonsters/giants";
 import Dropdown from "../../components/Dropdown";
 import ConstructMonsters from "./AllMonsters/constructs";
 import MonstrosityMonsters from "./AllMonsters/monstrosities";
+import OozeMonsters from "./AllMonsters/oozes";
+import PlantMonsters from "./AllMonsters/plants";
+import AberrationMonsters from "./AllMonsters/aberrations";
 import { useState, useEffect, JSX } from "react";
 
 interface MonsterListProps {
@@ -26,6 +29,7 @@ interface MonsterListProps {
 
 function Monsters() {
   const MonsterList = [
+    ...AberrationMonsters,
     ...ConstructMonsters,
     ...DragonMonsters,
     ...DemonMonsters,
@@ -33,6 +37,8 @@ function Monsters() {
     ...GiantMonsters,
     ...HumanoidMonsters,
     ...MonstrosityMonsters,
+    ...OozeMonsters,
+    ...PlantMonsters,
     ...UndeadMonsters,
   ].sort((a, b) => a.name.localeCompare(b.name));
   const [sortNameOrder, setSortNameOrder] = useState<"asc" | "desc">("asc");
