@@ -14,6 +14,8 @@ import OozeMonsters from "./AllMonsters/oozes";
 import PlantMonsters from "./AllMonsters/plants";
 import AberrationMonsters from "./AllMonsters/aberrations";
 import AngelMonsters from "./AllMonsters/angels";
+import FaerieMonsters from "./AllMonsters/faeries";
+import BeastMonsters from "./AllMonsters/beasts";
 import { useState, useEffect, JSX } from "react";
 
 interface MonsterListProps {
@@ -32,10 +34,12 @@ function Monsters() {
   const MonsterList = [
     ...AberrationMonsters,
     ...AngelMonsters,
+    ...BeastMonsters,
     ...ConstructMonsters,
     ...DragonMonsters,
     ...DemonMonsters,
     ...ElementalMonsters,
+    ...FaerieMonsters,
     ...GiantMonsters,
     ...HumanoidMonsters,
     ...MonstrosityMonsters,
