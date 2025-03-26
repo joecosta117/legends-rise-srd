@@ -2056,7 +2056,7 @@ const DragonMonsters = [
             basic: false,
             name: "Venemous Breath",
             keywords: "recharge",
-            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "MGT",
             damage: "3 toxic damage",
             success: (
@@ -2163,7 +2163,7 @@ const DragonMonsters = [
             keywords: "recharge",
             target: (
               <span>
-                1d4+1 creatures within the dragon's zone and an adjacent zone
+                1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "MGT",
@@ -2354,7 +2354,7 @@ const DragonMonsters = [
             keywords: "recharge",
             target: (
               <span>
-                2d4+2 creatures within the dragon's zone and an adjacent zone
+                2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "MGT",
@@ -2551,7 +2551,7 @@ const DragonMonsters = [
             basic: false,
             name: "Hellfire Breath",
             keywords: "recharge",
-            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "EVN",
             damage: "1 fire damage and 1 unholy damage",
             success: (
@@ -2647,7 +2647,7 @@ const DragonMonsters = [
             keywords: "recharge",
             target: (
               <span>
-                1d4+1 creatures within the dragon's zone and an adjacent zone
+                1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "EVN",
@@ -2791,7 +2791,7 @@ const DragonMonsters = [
             keywords: "recharge",
             target: (
               <span>
-                2d4+2 creatures within the dragon's zone and an adjacent zone
+                2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "EVN",
@@ -2920,7 +2920,7 @@ const DragonMonsters = [
             basic: false,
             name: "Void Breath",
             keywords: "recharge",
-            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "RES",
             damage: "3 psychic damage",
             success: (
@@ -3028,7 +3028,7 @@ const DragonMonsters = [
             keywords: "range, recharge",
             target: (
               <span>
-                1d4+1 creatures within the dragon's zone and an adjacent zone
+                1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "RES",
@@ -3209,7 +3209,7 @@ const DragonMonsters = [
             keywords: "range, recharge",
             target: (
               <span>
-                2d4+2 creatures within the dragon's zone and an adjacent zone
+                2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "RES",
@@ -3379,7 +3379,7 @@ const DragonMonsters = [
             basic: false,
             name: "Shadow Breath",
             keywords: "recharge",
-            target: <span>1d4+1 creatures within the dragon's zone</span>,
+            target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "MGT",
             damage: "3 necrotic damage",
           },
@@ -3496,7 +3496,7 @@ const DragonMonsters = [
             keywords: "range, recharge",
             target: (
               <span>
-                1d4+1 creatures within the dragon's zone and an adjacent zone
+                1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "MGT",
@@ -3688,7 +3688,7 @@ const DragonMonsters = [
             keywords: "range, recharge",
             target: (
               <span>
-                2d4+2 creatures within the dragon's zone and an adjacent zone
+                2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
             defense: "MGT",

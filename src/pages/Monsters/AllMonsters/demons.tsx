@@ -179,7 +179,7 @@ const DemonMonsters = [
             basic: false,
             name: "Fire Breath",
             keywords: "recharge",
-            target: <span>1d4+1 creatures within the hellhound's zone</span>,
+            target: <span>1d4+1 enemies within the hellhound's zone</span>,
             defense: "EVN",
             damage: "3 fire damage",
           },
@@ -638,7 +638,7 @@ const DemonMonsters = [
             basic: false,
             name: "Profane Webs",
             keywords: "magical, recharge",
-            target: <span>1d4+1 creatures within the demon's zone</span>,
+            target: <span>1d4+1 enemies within the demon's zone</span>,
             defense: "MGT",
             critical:
               "Same as a success, and the target takes +1 misfortune to overcome rolls against this effect",
@@ -834,7 +834,7 @@ const DemonMonsters = [
             basic: false,
             name: "Thrash",
             keywords: "melee, weapon",
-            target: <span>1d4+1 creatures within the demon's zone</span>,
+            target: <span>1d4+1 enemies within the demon's zone</span>,
             effect:
               "The wrath demon uses claw against each target, but the attack roll's degree of success is one lower",
           },
