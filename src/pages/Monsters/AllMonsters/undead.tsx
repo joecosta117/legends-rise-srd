@@ -1141,7 +1141,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Vampire Spawn"
-        hp="12"
+        hp="15"
         evn="17"
         mgt="15"
         res="13"
@@ -1255,7 +1255,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Vampire Cabalist"
-        hp="20"
+        hp="26"
         evn="15"
         mgt="13"
         res="17"
@@ -1380,7 +1380,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Elder Vampire"
-        hp="40"
+        hp="52"
         evn="17"
         mgt="15"
         res="13"
@@ -1524,7 +1524,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Royal Mummy"
-        hp="40"
+        hp="52"
         evn="15"
         mgt="13"
         res="17"
@@ -1642,7 +1642,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Mummy Guardian"
-        hp="12"
+        hp="15"
         evn="15"
         mgt="17"
         res="13"
@@ -1715,7 +1715,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Gravewyrm"
-        hp="30"
+        hp="48"
         evn="15"
         mgt="19"
         res="17"
@@ -1915,7 +1915,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Gravewyrm Remnant"
-        hp="36"
+        hp="54"
         evn="17"
         mgt="19"
         res="15"
@@ -2017,7 +2017,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Umbral Titan"
-        hp="72"
+        hp="108"
         evn="17"
         mgt="19"
         res="15"
@@ -2127,7 +2127,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Death Knight"
-        hp="36"
+        hp="54"
         evn="17"
         mgt="19"
         res="15"
@@ -2217,7 +2217,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Lich"
-        hp="24"
+        hp="42"
         evn="17"
         mgt="15"
         res="19"
