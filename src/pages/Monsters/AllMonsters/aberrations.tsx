@@ -1,5 +1,6 @@
 import Monster from "../../../components/Monster";
 import { Link } from "react-router-dom";
+import Tooltip from "../../../components/ToolTip";
 // import ToolTip from "../../../components/ToolTip";
 // import Modifier from "../../../components/Modifier";
 
@@ -947,7 +948,7 @@ const AberrationMonsters = [
   },
   {
     name: "Void Herald",
-    tier: "2",
+    tier: "3",
     type: "Aberration",
     role: "Support",
     threat: "Major",
@@ -1112,6 +1113,158 @@ const AberrationMonsters = [
                   hindered
                 </Link>{" "}
                 (turn ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Nascent Elder God",
+    tier: "3",
+    type: "Aberration",
+    role: "Disabler",
+    threat: "Major",
+    description:
+      "When an elder god emerges into reality, it starts off in a cacoon of void energy until the prophesized birth when they emerge from their cacoon to devour the world they're in to get enough strength to become a true elder god.",
+    tactics: (
+      <span>
+        Nascent elder gods prefer to fight from afar using void pulse or unravel
+        reality if available, and telekinetic throw as a maneuver. Once they
+        emerge from their cacoon, the god focuses instead on using bite.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Nascent Elder God"
+        hp="96"
+        evn="15"
+        mgt="17"
+        res="19"
+        pb="6"
+        type="Colossal Aberration"
+        tier="3"
+        threat="Major"
+        role="Disabler"
+        vision="blind 3 zones"
+        resistances="psychic 6"
+        speeds="speed 0, fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monsters get two turns per round.</span>,
+          },
+          {
+            name: "Dreams of the Elder God",
+            description: (
+              <span>
+                The nascent elder god's zone is a{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zone
+                </Link>{" "}
+                (3 psychic damage) , and when a creature takes this damage, the
+                nascent elder god makes an attack roll against their Resolve. On
+                a success, they are{" "}
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (turn starts).
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Void Pulse (cacoon only)",
+            keywords: "magical, range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "RES",
+            damage: "6 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            basic: true,
+            name: "Bite (birth only)",
+            keywords: "melee, weapon",
+            target: <span>1 engaged creature</span>,
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                Target swallowed by the nascent elder god. While swallowed, the
+                target is{" "}
+                <Link className="internal-link" to="/conditions#blinded">
+                  blinded
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>
+                , and takes 3{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                toxic damage. If a swallowed creature deals 12 or more damage on
+                a single turn, the nascent elder god vomits out the creature.
+              </span>
+            ),
+          },
+          {
+            basic: true,
+            name: "Unravel Reality",
+            keywords: "magical, range, recharge",
+            target: <span>All enemies within 1 zone</span>,
+            defense: "RES",
+            damage: "9 psychic damage",
+            critical:
+              "Samee as a success, but the target is erased for the scene (overcome ends)",
+            success: (
+              <span>
+                Target is briefly erased from this reality with all memories of
+                them forgotten, but they return at the end of their next turn.
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Telekinetic Throw",
+            keywords: "magical, range",
+            target: "1 creature within 3 zones",
+            defense: "MGT",
+            critical:
+              "Same as a success, but the target is shoved up to 2 zones",
+            success: "Target shoved up to 1 zone and falls prone",
+          },
+        ]}
+        reactions={[
+          {
+            name: "Forced Birth",
+            keywords: "magical",
+            trigger: (
+              <span>
+                The nascent elder god becomes <Tooltip preset="shaken" />
+              </span>
+            ),
+            effect: (
+              <span>
+                The nascent elder god breaks out of its cacoon and emerges
+                earlier. The baby elder god is still weak, but very angry and
+                hungry. It loses any abilities marked 'cocoon only', gains any
+                abilities 'birth only', <Tooltip preset="heals" /> 24, and their
+                land speed becomes 1.
               </span>
             ),
           },

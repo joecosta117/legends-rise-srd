@@ -1,5 +1,4 @@
 import "./index.scss";
-// import { useState, useEffect } from "react";
 
 interface PaginationProps {
   count: number;
