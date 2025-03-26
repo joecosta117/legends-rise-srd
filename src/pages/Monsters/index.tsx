@@ -1,5 +1,4 @@
 import "./index.scss";
-// import { Link } from "react-router-dom";
 import UndeadMonsters from "./AllMonsters/undead";
 import Accordion from "../../components/Accordion";
 import HumanoidMonsters from "./AllMonsters/humanoids";
@@ -17,6 +16,7 @@ import AngelMonsters from "./AllMonsters/angels";
 import FaerieMonsters from "./AllMonsters/faeries";
 import BeastMonsters from "./AllMonsters/beasts";
 import { useState, useEffect, JSX } from "react";
+import Pagination from "../../components/Pagination";
 
 interface MonsterListProps {
   name: string;
@@ -156,7 +156,6 @@ function Monsters() {
   // FILTER functions
   function filterMonsters() {
     const newMonsterList = MonsterList.filter((monster) => {
-      console.log("monster", monster, typeFilter);
       const matchesRoleFilter =
         !roleFilter || roleFilter === "-" || monster.role === roleFilter;
       const matchesTierFilter =
@@ -190,9 +189,6 @@ function Monsters() {
     setTypeFilter("-");
     setCurrentPage(1); // Reset to the first page after filtering
   }
-
-  // Pagination Controls
-  const totalPages = Math.ceil(currentMonsters.length / monstersPerPage);
 
   return (
     <div className="monsters">
@@ -330,25 +326,12 @@ function Monsters() {
           )}
         </div>
 
-        <div className="pagination">
-          <button
-            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-            disabled={currentPage === 1}
-          >
-            Previous
-          </button>
-          <div className="pagination__pages">
-            {currentPage} of {totalPages}
-          </div>
-          <button
-            onClick={() =>
-              setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-            }
-            disabled={currentPage === totalPages}
-          >
-            Next
-          </button>
-        </div>
+        <Pagination
+          content={currentMonsters}
+          count={20}
+          curPage={currentPage}
+          setPage={setCurrentPage}
+        />
       </div>
     </div>
   );

@@ -10,7 +10,6 @@
   &__description {
     font-style: italic;
   }
-  // &__tactics {}
 
   .filters {
     margin-top: 16px;
@@ -114,36 +113,36 @@
   }
 }
 
-.pagination {
-  display: flex;
-  justify-content: center;
-  padding-top: 16px;
+// .pagination {
+//   display: flex;
+//   justify-content: center;
+//   padding-top: 16px;
 
-  button {
-    padding: 5px 5px;
-    width: 100%;
-    border: 2px solid $dimgrey;
-    background: $bkgdblack;
-    border-radius: 2px;
-    color: $white;
-    margin: 0;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
-    max-width: 80px;
+//   button {
+//     padding: 5px 5px;
+//     width: 100%;
+//     border: 2px solid $dimgrey;
+//     background: $bkgdblack;
+//     border-radius: 2px;
+//     color: $white;
+//     margin: 0;
+//     font-weight: 700;
+//     cursor: pointer;
+//     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+//     max-width: 80px;
 
-    &:hover,
-    &:focus,
-    &:active {
-      background: $redwood;
-    }
-    &:disabled {
-      background: $lightblack;
-    }
-  }
+//     &:hover,
+//     &:focus,
+//     &:active {
+//       background: $redwood;
+//     }
+//     &:disabled {
+//       background: $lightblack;
+//     }
+//   }
 
-  &__pages {
-    padding: 0 10px;
-    font-weight: 700;
-  }
-}
+//   &__pages {
+//     padding: 0 10px;
+//     font-weight: 700;
+//   }
+// }

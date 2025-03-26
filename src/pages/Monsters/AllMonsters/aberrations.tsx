@@ -945,6 +945,180 @@ const AberrationMonsters = [
       />
     ),
   },
+  {
+    name: "Void Herald",
+    tier: "2",
+    type: "Aberration",
+    role: "Support",
+    threat: "Major",
+    description:
+      "Void heralds are the prophets of the elder terrors from the void realm. When they arrive in a world, their presence signals a void invasion will soon occur. Void heralds are eyeless humanoid creatures that fly through telekinesis.",
+    tactics: (
+      <span>
+        Void heralds prefer to fight afar from heroes to use rupture mind and
+        summon voidlings.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Void Herald"
+        hp="96"
+        evn="17"
+        mgt="15"
+        res="19"
+        pb="6"
+        type="Medium Aberration"
+        tier="3"
+        threat="Major"
+        role="Support"
+        vision="blind 3 zones"
+        resistances="psychic 6"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monsters get two turns per round.</span>,
+          },
+          {
+            name: "Gift of the Void",
+            description:
+              "Allies of the void herald gain +1 fortune to attack rolls",
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Void Staff",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "9 physical damage",
+          },
+          {
+            basic: false,
+            name: "Rupture Mind",
+            keywords: "magical, range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "RES",
+            damage: "8 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#confused">
+                  confused
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+        maneuvers={[
+          {
+            name: "Summon Voidling",
+            keywords: "magical, range",
+            effect: "Void herald summons 3 voidlings within 2 zones",
+          },
+        ]}
+        reactions={[
+          {
+            name: "Psychic Death Throes",
+            keywords: "magical, range",
+            trigger:
+              "The void herald sees an ally be reduced to 0 hit points within 1 zone",
+            target: "All creatures engaged to the triggering ally",
+            damage: "3 psychic damage",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Voidling",
+    tier: "3",
+    type: "Aberration",
+    role: "",
+    threat: "Minion",
+    description:
+      "Voidlings are large bipedal horrors with tentacles for a mouth and large clawed hands. They aren't very intelligent but hunger for life, and follow the commands of their masters.",
+    tactics: (
+      <span>
+        Voidlings prefer to fight near heroes to use tentacl rend, and uses{" "}
+        <Link className="internal-link" to="/combat-abilities#grab">
+          grab
+        </Link>{" "}
+        or{" "}
+        <Link className="internal-link" to="/combat-abilities#trip">
+          trip
+        </Link>{" "}
+        as a maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Voidling"
+        hp="6"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Large Aberration"
+        tier="3"
+        threat="Minion"
+        role=""
+        vision="blind 1 zone"
+        resistances="psychic 6"
+        actions={[
+          {
+            basic: true,
+            name: "Tentacle Rend",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "EVN",
+            damage: "3 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Void Intrusion",
+            keywords: "magical, range",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "RES",
+            damage: "3 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (turn ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
 ];
 
 export default AberrationMonsters;
