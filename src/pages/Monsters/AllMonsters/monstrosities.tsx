@@ -1849,6 +1849,110 @@ const MonstrosityMonsters = [
       />
     ),
   },
+  {
+    name: "Astral Worm",
+    tier: "3",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Major",
+    description:
+      "Astral worms are giant flying worms that swim through the astral sea and feast upon unaware travellers to the strange place. Anyone swallowed by the giant worm is trapped inside its dimensional stomach. Those that have survived an astral worm attack speak of great treasures trapped within the astral worm's dimensional stomach.",
+    tactics: (
+      <span>
+        Astral Worms prefer to fight near heroes using bite, thrash, or mental
+        overload if available.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Astral Worm"
+        hp="108"
+        evn="17"
+        mgt="19"
+        res="15"
+        pb="6"
+        type="Colossal Monstrosity"
+        tier="3"
+        threat="Major"
+        role="Bruiser"
+        vision="night"
+        resistances="arcane 3"
+        speeds="fly 1"
+        traits={[
+          {
+            name: "Major Monster",
+            description: <span>Major monsters get two turns per round.</span>,
+          },
+          {
+            name: "Antimagic Zone",
+            description: (
+              <span>
+                When a creature within 1 zone of the astral worm uses a magical
+                ability, they must succeed on an overcome roll or the ability
+                has no effect.
+              </span>
+            ),
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Bite",
+            keywords: "melee, weapon",
+            target: <span>1 engaged creature</span>,
+            defense: "EVN",
+            damage: "12 physical damage",
+            success: (
+              <span>
+                Target swallowed by the astral worm. While swallowed, the target
+                is in a small dimensional realm with the other contents of the
+                worm's stomach. The only way to escape is if the astral worm is
+                killed, or by succeeding on a d4{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/skills#progress-countdowns"
+                >
+                  progress countdown
+                </Link>{" "}
+                'break out' of skill tier 3.
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Thrash",
+            keywords: "melee, weapon",
+            target: <span>1d4+1 engaged creature</span>,
+            defense: "EVN",
+            damage: "9 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
+          },
+          {
+            basic: false,
+            name: "Mental Overload",
+            keywords: "magical, range, recharge",
+            target: <span>All enemies within 1 zone</span>,
+            defense: "RES",
+            damage: "9 psychic damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#slowed">
+                  slowed
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+          },
+        ]}
+      />
+    ),
+  },
 ];
 
 export default MonstrosityMonsters;
