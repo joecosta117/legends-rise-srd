@@ -40,12 +40,11 @@ function EncounterDesign() {
           </li>
         </ul>
 
-        <h2 className="header" id="encounter-points">
-          Encounter Difficulty
-        </h2>
+        <h2 id="encounter-points">Encounter Difficulty</h2>
         <p>
           Each encounter is worth a number of <b>encounter points (EP)</b>,
           which determines the difficulty. Typically 1 EP is equal to one hero.
+          The higher number of EPs, the more difficult an encounter.
         </p>
         <h3 className="header">Encounter Difficulties</h3>
         <p>
@@ -90,6 +89,7 @@ function EncounterDesign() {
           only higher tier heroes have enough tools to survive such a harrowing
           challenge.
         </p>
+
         <h3 className="header">Adventuring Day</h3>
         <p>
           Since all heroic resources (encounter abilities and mana) recover on a
@@ -120,20 +120,17 @@ function EncounterDesign() {
           </li>
         </ul>
 
-        <h2 className="header" id="combat-encounter">
-          Combat Encounters
-        </h2>
+        <h2 id="combat-encounter">Combat Encounters</h2>
         <p>
           When heroes need to fight monsters with weapons and magic, it's time
           for a combat encounter. This is the most common type of encounter in
           Legends Rise.
         </p>
-        <h3 className="header">EPs for Combat Encounters</h3>
+        <h3 className="header">Threat Levels</h3>
         <p>
-          A standard monster or hazard is worth 1 EP, so a medium encounter is a
-          number of monsters equal to the heroes. However, monsters and hazards
-          have different <b>threat levels</b>, which can affect the number of
-          EPs.
+          Depending on the <b>threat levels</b>, a monster or hazard is worth a
+          certain number of EPs. A standard monster or hazard is worth 1 EP, so
+          a medium encounter for four heroes is four standard monsters.
         </p>
         <h4 className="header">Minion Threats</h4>
         <p>
@@ -164,6 +161,10 @@ function EncounterDesign() {
                 <p>
                   Minions follow different rules from regular monsters. Minions
                   of the same type are part of a <b>minion group</b>.
+                </p>
+                <h4 className="header">One Turn</h4>
+                <p>
+                  All minions of a minion group act on the same turn in combat.
                 </p>
                 <h4 className="header">Easy to Kill</h4>
                 <p>
@@ -234,9 +235,186 @@ function EncounterDesign() {
         <h4 className="header">Boss Threats</h4>
         <b className="encounter-content__subtitle">EP = Number of Heroes</b>
         <p>
-          Boss threats are the strongest monster heroes can face. Bosses get as
-          many turns per round as the number of heroes. So if a boss dragon
-          faces off against four heroes, the dragon gets 4 turns a round!
+          Boss threats are the strongest monster heroes can face. Only monsters
+          can be bosses. Boss monsters get as many turns per round as the number
+          of heroes. So if a boss dragon faces off against four heroes, the
+          dragon gets 4 turns a round!
+        </p>
+
+        <h3 className="header">Different Tier Threats</h3>
+        <p>
+          The above EPs per threat assumes the heroes are facing monsters and
+          hazards of their tier. In general, you should only use monsters and
+          hazards of the same tier as the heroes. Otherwise, the encounter
+          builder rules won't work. This is because heroes have a huge advantage
+          against lower tier threats, but are hugely disadvantaged against
+          higher tier threats. For more information on heroes facing different
+          tier threats,{" "}
+          <Link className="internal-link" to="/rules/rolling#different-tiers">
+            see here
+          </Link>
+          .
+        </p>
+
+        <h3 className="header">Monster Roles</h3>
+        <p>
+          Each monster has a threat level, but also a <b>role</b>, which is
+          similar to hero classes. Roles are broard enemy archetypes that help
+          the GM use the monsters more strategically. There are six monster
+          roles:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Artillery: </b> These monsters are ranged combatants that deal
+              reliable damage from afar but are weak in melee range. Archers and
+              battle mages are good examples of artillery.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Bruiser: </b> These monsters are tough creatures that deal high
+              melee damage. Giants and giant worms are good examples of
+              bruisers.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Disabler: </b> These monsters focus on debilitating the heroes
+              with negative effects. They focus less on damage, and more on
+              making the heroes less effective. Venemous spiders and medusas are
+              good example of disablers.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Skirmisher: </b> These monsters are mobile foes that prioritize
+              weak or unsuspecting targets. Skirmishers deal high damage and
+              usually have mobility abilities. Assassins and shadows are good
+              examples of skirmishers.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Support: </b> These monsters have abilities to aid their
+              allies. Supports usually have an aura and abilities to buff their
+              allies. Evil priests or warlord commanders are good examples of
+              supports.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Tank: </b> These monsters are hard to hit creatures often with
+              ways to disrupt the heroes and protect other enemies. Heavily
+              armored knights or defensive golems are examples of tanks.
+            </span>
+          </li>
+        </ul>
+        <h4 className="header">Using Roles to Build Encounters</h4>
+        <p>
+          It is best to mix and match monsters with different roles when
+          building encounters. This creates more tactically interesting combats.
+          For example, you could have four bruisers face four heroes for a tough
+          fight, but the strategy to defeat each monster is the same. A more
+          exciting encounter might be a bruiser to deal high damage, a tank to
+          work alongside the bruiser to draw the heroes' attention, a disabler
+          to debilitate the heroes, and an artillery to deal high damage from
+          afar. Now the heroes have to deal with the frontline bruiser and tank,
+          while also struggling against the more ranged disabler and artillery.
+        </p>
+        <h4 className="header">Minion Roles</h4>
+        <p>
+          Minion monsters are the only monsters without a role. Minions are very
+          simple to keep their turns quick as they are many of them at
+          once.{" "}
+        </p>
+
+        <h2 id="skill-encounter">Skill Encounters</h2>
+        <p>
+          Not all encounters are fights. Skill encounters are challenges that
+          require a group effort but aren't resolved by combat. Skill encounters
+          utilize{" "}
+          <Link className="internal-link" to="/rules/skills">
+            skill rolls
+          </Link>{" "}
+          along with other out of combat abilities such as theme talents. A
+          skill encounter could be flying an airship through a magical storm or
+          a chase scene through a bustling city.
+        </p>
+        <h3 className="header">Progress Countdowns</h3>
+        <p>
+          Skill encounters utilize{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#progress-countdowns"
+          >
+            positive progress countdowns
+          </Link>{" "}
+          to mark the progress of the skill encounter. The encounter's
+          difficulty is determined by the countdown die:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Easy Encounter:</b> Countdown die size is equal to the number
+              of heroes.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Medium Encounter:</b> Countdown die size is equal to number of
+              heroes multiplied by 1.5. So for four heroes, the countdown die is
+              a d6.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Hard Encounter:</b> Countdown die size is equal to double the
+              number of heroes.
+            </span>
+          </li>
+        </ul>
+        <p>
+          Unlike combat encounters, there are no insane difficulty skill
+          encounters.
+        </p>
+        <h4 className="header">Consequences</h4>
+        <p>
+          During skill encounters, the consequences on a failure or partial
+          success skill roll should be significant. Taking damage is the
+          standard consequence during a skill encounter with two types:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>
+                The hero that got the consequence takes damage equal to double
+                their proficiency bonus
+              </b>
+              . For example, a hero tries to close a magic portal to hell, but
+              hellfire lashes out of the portal at the hero as they fail.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>All heroes take damage equal to their proficiency bonus</b>.
+              For example, a hero tries to steer a ship through a storm, but a
+              giant wave smashes into the ship, which hurts everyone.
+            </span>
+          </li>
+        </ul>
+        <p>
+          From a meta perspective, the consequence of skill encounters is
+          usually damage or something as signifcant due to skill encounters
+          boosting the heroes'{" "}
+          <Link className="internal-link" to="/rules/combat#momentum">
+            momentum die
+          </Link>
+          . If the consequences aren't impactful, then heroes can easily do many
+          skill encounters without much risk and max out the momentum die.
+          However, if some heroes take enough damage during a skill encounter,
+          they will have to spend recoveries, which limits their how much more
+          they can press on for the day.
         </p>
       </div>
     </div>
