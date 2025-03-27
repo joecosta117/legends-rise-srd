@@ -1,0 +1,13 @@
+@import "../../styles/index.scss";
+
+.encounter {
+  @include page-layout();
+}
+
+.encounter-content {
+  @include class-page-content();
+
+  &__subtitle {
+    text-align: left;
+  }
+}
