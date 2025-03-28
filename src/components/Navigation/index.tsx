@@ -429,6 +429,13 @@ const Navigation = () => {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/building-threats"
+                onClick={toggleMobileNav}
+              >
+                Building Monsters & Hazards
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/monsters"
                 onClick={toggleMobileNav}
               >

@@ -350,8 +350,8 @@ function EncounterDesign() {
           >
             positive progress countdowns
           </Link>{" "}
-          to mark the progress of the skill encounter. The encounter's
-          difficulty is determined by the countdown die:
+          to mark the progress of the skill encounter. Instead of EP, the
+          encounter's difficulty is determined by the countdown die:
         </p>
         <ul>
           <li>
@@ -416,6 +416,10 @@ function EncounterDesign() {
           they will have to spend recoveries, which limits their how much more
           they can press on for the day.
         </p>
+
+        {/* TODO: Add lancer like sitreps here
+        <h2 id="encounter-situations">Encounter Situations</h2>
+        <p>PUt lancer type of sit reps</p> */}
       </div>
     </div>
   );
