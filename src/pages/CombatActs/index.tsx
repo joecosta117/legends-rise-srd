@@ -314,7 +314,7 @@ function CombatActs() {
             effect={
               <span>
                 You become{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
+                <Link className="internal-link" to="/rules/combat#hidden">
                   hidden
                 </Link>
               </span>

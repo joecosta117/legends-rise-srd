@@ -523,7 +523,7 @@ const GiantMonsters = [
             effect: (
               <span>
                 Oni becomes{" "}
-                <Link className="internal-link" to="/conditions#invisible">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>{" "}
                 (turn ends), but this invisibility ends early if the oni uses a
@@ -773,7 +773,7 @@ const GiantMonsters = [
               <span>
                 If larger or smaller, the target gets swallowed by the troll.
                 While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}

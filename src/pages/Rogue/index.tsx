@@ -463,7 +463,7 @@ function Rogue() {
             </p>
             <p>
               When you use shadow leap, you become{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               (turn starts) or until you use a hostile ability.

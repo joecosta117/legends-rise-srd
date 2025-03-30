@@ -8,23 +8,6 @@ function Conditions() {
 
   const conditionContent = [
     {
-      title: "Blinded",
-      id: "blinded",
-      content: (
-        <p>
-          Everyone has{" "}
-          <Link className="internal-link" to="/rules/combat#stealth">
-            concealment
-          </Link>{" "}
-          to you and gains <Modifier type="f" count="1" /> on{" "}
-          <Link className="internal-link" to="/rules/combat#attack-roll">
-            attack rolls
-          </Link>{" "}
-          against you.
-        </p>
-      ),
-    },
-    {
       title: "Confused",
       id: "confused",
       content: (
@@ -50,23 +33,6 @@ function Conditions() {
           <Link className="internal-link" to="/rules/combat#attack-roll">
             attack rolls
           </Link>
-        </p>
-      ),
-    },
-    {
-      title: "Invisible",
-      id: "invisible",
-      content: (
-        <p>
-          You have{" "}
-          <Link className="internal-link" to="/rules/combat#stealth">
-            concealment
-          </Link>{" "}
-          to everyone and gain <Modifier type="f" count="1" /> on{" "}
-          <Link className="internal-link" to="/rules/combat#attack-roll">
-            attack rolls
-          </Link>{" "}
-          against targets that you have concealment to
         </p>
       ),
     },

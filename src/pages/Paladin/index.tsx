@@ -407,7 +407,7 @@ function Paladin() {
             <p>
               Your smite can blind a foe. On a critical success of divine smite,
               the target is{" "}
-              <Link className="internal-link" to="/conditions#blinded">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
               (scene ends).

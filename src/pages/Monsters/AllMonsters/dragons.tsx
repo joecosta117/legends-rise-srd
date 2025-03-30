@@ -3406,7 +3406,7 @@ const DragonMonsters = [
             effect: (
               <span>
                 The dragon becomes{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
+                <Link className="internal-link" to="/rules/combat#hidden">
                   hidden
                 </Link>
               </span>
@@ -3533,7 +3533,7 @@ const DragonMonsters = [
             effect: (
               <span>
                 The dragon becomes{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
+                <Link className="internal-link" to="/rules/combat#hidden">
                   hidden
                 </Link>
               </span>
@@ -3594,7 +3594,7 @@ const DragonMonsters = [
             effect: (
               <span>
                 The dragon becomes{" "}
-                <Link className="internal-link" to="/conditions#invisible">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>
               </span>
@@ -3725,7 +3725,7 @@ const DragonMonsters = [
             effect: (
               <span>
                 The dragon becomes{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
+                <Link className="internal-link" to="/rules/combat#hidden">
                   hidden
                 </Link>
               </span>
@@ -3787,7 +3787,7 @@ const DragonMonsters = [
             effect: (
               <span>
                 The dragon becomes{" "}
-                <Link className="internal-link" to="/conditions#invisible">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>
               </span>

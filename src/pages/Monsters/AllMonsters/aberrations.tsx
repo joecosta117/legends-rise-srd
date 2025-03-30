@@ -551,7 +551,7 @@ const AberrationMonsters = [
               <span>
                 If large or smaller, the target gets swallowed by the brain
                 abomination. While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}
@@ -920,7 +920,7 @@ const AberrationMonsters = [
             effect: (
               <span>
                 The void seer becomes{" "}
-                <Link className="internal-link" to="/conditions#invisible">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>{" "}
                 (turn starts) and then{" "}
@@ -1202,7 +1202,7 @@ const AberrationMonsters = [
               <span>
                 Target swallowed by the nascent elder god. While swallowed, the
                 target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}

@@ -867,7 +867,7 @@ const FaerieMonsters = [
             effect: (
               <span>
                 The hag becomes{" "}
-                <Link className="internal-link" to="/conditions#invisible">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>
                 , which ends early if they use a hostile ability

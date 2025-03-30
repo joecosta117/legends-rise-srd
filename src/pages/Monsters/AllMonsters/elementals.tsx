@@ -2001,7 +2001,7 @@ const ElementalMonsters = [
             success: (
               <span>
                 Target swallowed by the earth. While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}

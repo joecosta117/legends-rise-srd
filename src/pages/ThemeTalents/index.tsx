@@ -364,7 +364,7 @@ function ThemeTalents() {
       content: (
         <span>
           You can start any non-combat scene{" "}
-          <Link className="internal-link" to="/rules/combat#stealth">
+          <Link className="internal-link" to="/rules/combat#hidden">
             hidden
           </Link>{" "}
           as long as it's narratively possible
@@ -436,7 +436,7 @@ function ThemeTalents() {
         <span>
           "Your trickery has tapped into deep magic that enshrouds you from the
           sight of others. You are always{" "}
-          <Link className="internal-link" to="/conditions#invisible">
+          <Link className="internal-link" to="/rules/combat#stealth">
             invisible
           </Link>{" "}
           unless you choose to be visible. At the start of a combat encounter,

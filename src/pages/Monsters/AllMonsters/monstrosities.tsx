@@ -1176,7 +1176,7 @@ const MonstrosityMonsters = [
               <span>
                 If huge or smaller, the target gets swallowed by the cave worm.
                 While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}
@@ -1586,7 +1586,7 @@ const MonstrosityMonsters = [
               <span>
                 If huge or smaller, the target gets swallowed by the greed
                 demon. While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}
@@ -1754,7 +1754,7 @@ const MonstrosityMonsters = [
               <span>
                 If huge or smaller, the target gets swallowed by the kaiju.
                 While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}

@@ -170,7 +170,7 @@ export const ritualSpells = [
           success={
             <span>
               Target becomes{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               for 1 hour
@@ -336,7 +336,7 @@ export const ritualSpells = [
           effect={
             <span>
               You create an{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <<Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               eye next to you that you can see through. You can move the eye
@@ -423,7 +423,7 @@ export const ritualSpells = [
           effect={
             <span>
               You create an{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               sensor floating above the target that lets you see and hear

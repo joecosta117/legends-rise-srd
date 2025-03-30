@@ -3158,7 +3158,7 @@ export const illusionSpells = [
           effect={
             <span>
               Target becomes{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>
             </span>
@@ -3444,7 +3444,7 @@ export const lightSpells = [
           defense="MGT"
           critical={
             <span>
-              <Link className="internal-link" to="/conditions#blinded">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
               (turn ends)
@@ -3500,7 +3500,7 @@ export const lightSpells = [
           effect={
             <span>
               Any{" "}
-              <Link className="internal-link" to="/rules/combat#stealth">
+              <Link className="internal-link" to="/rules/combat#hidden">
                 hidden
               </Link>{" "}
               creatures are visibile while within the targeted zones
@@ -3589,7 +3589,7 @@ export const lightSpells = [
           damage="2 fire damage per spell tier"
           success={
             <span>
-              <Link className="internal-link" to="/conditions#blinded">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
               (turn ends)
@@ -3647,7 +3647,7 @@ export const lightSpells = [
                     creature that starts their turn within a zone touching the
                     wall or enters a zone touching the wall. On a success, the
                     target is{" "}
-                    <Link className="internal-link" to="/conditions#blinded">
+                    <Link className="internal-link" to="/rules/combat#stealth">
                       blinded
                     </Link>{" "}
                     (turn ends).
@@ -3685,7 +3685,7 @@ export const lightSpells = [
             }
             success={
               <span>
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>{" "}
                 (scene ends)
@@ -4058,7 +4058,7 @@ export const natureSpells = [
                 effect: (
                   <span>
                     Faerie warrior becomes{" "}
-                    <Link className="internal-link" to="/conditions#invisible">
+                    <Link className="internal-link" to="/rules/combat#stealth">
                       invisible
                     </Link>{" "}
                     (turn starts), but this effect ends early if they use a
@@ -4117,7 +4117,7 @@ export const natureSpells = [
                   <span>
                     Target is swallowed if they are huge or smaller. While
                     swallowed, a target is{" "}
-                    <Link className="internal-link" to="/conditions#blinded">
+                    <Link className="internal-link" to="/rules/combat#stealth">
                       blinded
                     </Link>
                     ,{" "}
@@ -4486,20 +4486,13 @@ export const shadowSpells = [
           }
           success={
             <span>
-              <Link className="internal-link" to="/conditions#blinded">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
               (turn ends)
             </span>
           }
-          critical={
-            <span>
-              <Link className="internal-link" to="/conditions#blinded">
-                blinded
-              </Link>{" "}
-              (scene ends)
-            </span>
-          }
+          critical={<span>blinded (scene ends)</span>}
         />
       ),
     },

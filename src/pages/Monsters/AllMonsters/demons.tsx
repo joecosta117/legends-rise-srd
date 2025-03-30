@@ -399,7 +399,7 @@ const DemonMonsters = [
             effect: (
               <span>
                 Nightmare demon becomes{" "}
-                <Link className="internal-link" to="/conditions#invisible">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>
                 , then{" "}
@@ -718,7 +718,7 @@ const DemonMonsters = [
             description: (
               <span>
                 A greed demon can see anyone{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
+                <Link className="internal-link" to="/rules/combat#hidden">
                   hidden
                 </Link>{" "}
                 or invisible within 1 zone if they have a relic or treasure or
@@ -747,7 +747,7 @@ const DemonMonsters = [
               <span>
                 If larger or smaller, the target gets swallowed by the greed
                 demon. While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}
@@ -947,7 +947,7 @@ const DemonMonsters = [
             critical: <span>blinded (overcome ends)</span>,
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>{" "}
                 (turn ends)

@@ -823,7 +823,7 @@ function FightingStyles() {
                 trigger={
                   <span>
                     You become visible after being{" "}
-                    <Link className="internal-link" to="/rules/combat#stealth">
+                    <Link className="internal-link" to="/rules/combat#hidden">
                       hidden
                     </Link>
                   </span>
@@ -883,7 +883,7 @@ function FightingStyles() {
                 requirement={
                   <span>
                     You are{" "}
-                    <Link className="internal-link" to="/rules/combat#stealth">
+                    <Link className="internal-link" to="/rules/combat#hidden">
                       hidden
                     </Link>
                   </span>

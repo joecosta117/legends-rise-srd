@@ -483,7 +483,7 @@ function Occultist() {
               effect={
                 <span>
                   Target of the triggering attack roll becomes{" "}
-                  <Link className="internal-link" to="/conditions#blinded">
+                  <Link className="internal-link" to="/rules/combat#stealth">
                     blinded
                   </Link>{" "}
                   (turn ends)

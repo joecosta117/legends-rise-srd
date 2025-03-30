@@ -306,7 +306,7 @@ function HeroicArchetypes() {
               <li>
                 <span>
                   When you start an encounter, you are{" "}
-                  <Link className="internal-link" to="/rules/combat#stealth">
+                  <Link className="internal-link" to="/rules/combat#hidden">
                     hidden
                   </Link>{" "}
                   if narratively appropriate
@@ -342,7 +342,7 @@ function HeroicArchetypes() {
             <p>
               You have mastered fighting when unseen. The bonus to your attack
               rolls from being{" "}
-              <Link className="internal-link" to="/rules/combat#stealth">
+              <Link className="internal-link" to="/rules/combat#hidden">
                 hidden
               </Link>{" "}
               increases to <Modifier type="f" count="2" />.
@@ -1480,7 +1480,7 @@ function HeroicArchetypes() {
               Your illusions constantly hide you and your allies. When you cast
               a battle spell of tier 1 or higher, choose a willing creature
               within 1 zone. The target becomes{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               (turn ends).
@@ -1605,7 +1605,7 @@ function HeroicArchetypes() {
               effectTiers
               success={
                 <span>
-                  <Link className="internal-link" to="/conditions#blinded">
+                  <Link className="internal-link" to="/rules/combat#stealth">
                     blinded
                   </Link>{" "}
                   (scene ends)

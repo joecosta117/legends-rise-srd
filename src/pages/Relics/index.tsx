@@ -1479,7 +1479,7 @@ function Relics() {
               effect={
                 <span>
                   Any{" "}
-                  <Link className="internal-link" to="/conditions#invisible">
+                  <Link className="internal-link" to="/rules/combat#stealth">
                     invisible
                   </Link>{" "}
                   creature or objects that starts their turn in the affected
@@ -1517,7 +1517,7 @@ function Relics() {
             </p>
             <p>
               While wearing these glasses, you can see anyone{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>
               .
@@ -1549,7 +1549,7 @@ function Relics() {
             </p>
             <p>
               While wearing this ring, you can use an action to become
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>
               . The invisibility ends if you use a hostile ability or end the

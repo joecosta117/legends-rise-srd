@@ -655,7 +655,7 @@ function Ranger() {
             </p>
             <p>
               When you use mark prey, you become{" "}
-              <Link className="internal-link" to="/conditions#invisible">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               (turn ends).

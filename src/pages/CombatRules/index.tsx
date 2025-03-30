@@ -854,9 +854,21 @@ function CombatRules() {
           Concealment
         </h3>
         <p>
-          A creature obscured by darkness, thick fog, or invisiblity has{" "}
-          <b>concealment</b>. Creatures take <Modifier type="mf" count="1" /> on
-          rolls that require sight against a concealed target.
+          A creature obscured by darkness or thick fog has <b>concealment</b>.
+          Creatures take <Modifier type="mf" count="1" /> on rolls that require
+          sight against a concealed target, while the concealed creature gains{" "}
+          <Modifier type="f" count="1" /> on rolls against creatures they're
+          concealed from.
+        </p>
+        <h4 className="header">Blinded</h4>
+        <p>
+          Creatures blinded by magic or unable to see treat other creatures as
+          having concealment.
+        </p>
+        <h4 className="header">Invisibility</h4>
+        <p>
+          Invisible creatures always have concealment to creatures that can't
+          see through invisibility.
         </p>
         <h3 className="header" id="cover">
           Cover
@@ -866,7 +878,9 @@ function CombatRules() {
           Creatures take <Modifier type="mf" count="1" /> on rolls that require
           sight against a covered target.
         </p>
-        <h3 className="header">Stealth</h3>
+        <h3 className="header" id="hidden">
+          Stealth
+        </h3>
         <p>
           Sometimes in or out of combat, creatures might attempt to sneak to go
           unnoticed. You can become <b>hidden</b> if you use the{" "}

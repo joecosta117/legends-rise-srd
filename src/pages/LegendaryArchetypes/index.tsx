@@ -169,7 +169,7 @@ function LegendaryArchetypes() {
               </Link>{" "}
               against each foe’s Resolve within 1 zone, dealing holy damage
               equal to your proficiency bonus. On a success, a target is also{" "}
-              <Link className="internal-link" to="/conditions#blinded">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
               (scene ends). At the end of the scene, you appear in a column of
@@ -836,7 +836,7 @@ function LegendaryArchetypes() {
                     teleport
                   </Link>{" "}
                   up to 1 zone and become{" "}
-                  <Link className="internal-link" to="/conditions#invisible">
+                  <Link className="internal-link" to="/rules/combat#stealth">
                     invisible
                   </Link>{" "}
                   (turn starts)
@@ -930,7 +930,7 @@ function LegendaryArchetypes() {
                     difficult zone
                   </Link>
                   . You and allies within the targeted zone are{" "}
-                  <Link className="internal-link" to="/conditions#invisible">
+                  <Link className="internal-link" to="/rules/combat#stealth">
                     invisible
                   </Link>
                 </span>
@@ -1344,7 +1344,7 @@ function LegendaryArchetypes() {
                 <span>
                   <i>All Seeing:</i> You have <ToolTip preset="blind" /> and can
                   see anything{" "}
-                  <Link className="internal-link" to="/conditions#invisible">
+                  <Link className="internal-link" to="/rules/combat#stealth">
                     invisible
                   </Link>
                   .

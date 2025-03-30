@@ -147,7 +147,7 @@ const BeastMonsters = [
               <span>
                 If larger or smaller, the target gets swallowed by the
                 tyrannosaurus. While swallowed, the target is{" "}
-                <Link className="internal-link" to="/conditions#blinded">
+                <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>
                 ,{" "}
