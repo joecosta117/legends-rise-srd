@@ -336,7 +336,7 @@ export const ritualSpells = [
           effect={
             <span>
               You create an{" "}
-              <<Link className="internal-link" to="/rules/combat#stealth">
+              <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
               eye next to you that you can see through. You can move the eye
