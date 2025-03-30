@@ -222,15 +222,22 @@ function BuildingMonsters() {
               <td>Boss</td>
               <td>x Number of heroes</td>
               <td>-</td>
-              <td>One turn per hero, and boss actions</td>
+              <td>One turn per hero, boss resilience, and boss actions</td>
             </tr>
           </tbody>
         </table>
+        <h4 className="header">Minions</h4>
         <p>
           Minions generally don't have recharge abilities or multi-target
           abilities so they are simple to use, and they deal the same damage for
-          melee and range abilities. Bosses on top of getting one turn per hero,
-          also get boss actions, which we'll cover later.
+          melee and range abilities.
+        </p>
+        <h4 className="header">Boss Resilience</h4>
+        <p>
+          Unlike normal monsters, bosses can shake off conditions and effects
+          that would normally last longer. At the end of a boss monster's turn,
+          they can take damage equal to their proficiency bonus to end one
+          effect on them, such a spell effect, condition, or ongoing damage.
         </p>
         <h4 className="header">Boss Actions</h4>
         <p>

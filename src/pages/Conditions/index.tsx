@@ -29,10 +29,8 @@ function Conditions() {
       id: "hindered",
       content: (
         <p>
-          You take <Modifier type="mf" count="1" /> on{" "}
-          <Link className="internal-link" to="/rules/combat#attack-roll">
-            attack rolls
-          </Link>
+          You take <Modifier type="mf" count="1" /> to attack rolls and skill
+          rolls.
         </p>
       ),
     },
@@ -44,7 +42,7 @@ function Conditions() {
           <ul style={{ marginTop: "0" }}>
             <li>
               <span>
-                You take <Modifier type="mf" count="1" /> on{" "}
+                You take <Modifier type="mf" count="1" /> to{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>
@@ -58,14 +56,6 @@ function Conditions() {
             <li>
               <span>Your speed is halved</span>
             </li>
-            <li>
-              <span>
-                An ally within reach can use a maneuver to help you{" "}
-                <Link className="internal-link" to="/combat-abilities#stand">
-                  stand
-                </Link>
-              </span>
-            </li>
           </ul>
         </div>
       ),
@@ -78,7 +68,7 @@ function Conditions() {
           <ul style={{ marginTop: "0" }}>
             <li>
               <span>
-                You take <Modifier type="mf" count="1" /> on{" "}
+                You take <Modifier type="mf" count="1" /> to{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>
