@@ -945,8 +945,8 @@ function LegendaryArchetypes() {
                 attack roll
               </Link>
               against their Resolve. On a success, the target is{" "}
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               (turn ends). You can only make this attack roll against the same
               target once per turn.

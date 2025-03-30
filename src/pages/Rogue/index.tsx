@@ -331,8 +331,8 @@ function Rogue() {
                 hindered
               </Link>{" "}
               creature is also{" "}
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               to you.
             </p>
@@ -532,11 +532,8 @@ function Rogue() {
               <b>Requirement:</b> swashbuckler subclass
             </p>
             <p>
-              When you spend a panache token on your turn, you become{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>{" "}
-              until the end of your turn.
+              When you spend a panache token on your turn, you gain an extra
+              maneuver. You can only gain one extra maneuver per turn this way.
             </p>
 
             <h3 className="header">Shadow Afterimage</h3>

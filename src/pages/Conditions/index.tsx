@@ -75,23 +75,6 @@ function Conditions() {
       ),
     },
     {
-      title: "Exposed",
-      id: "exposed",
-      content: (
-        <p>
-          <Link className="internal-link" to="/rules/combat#attack-roll">
-            Attack rolls
-          </Link>{" "}
-          gain <Modifier type="f" count="1" /> against you
-        </p>
-      ),
-    },
-    {
-      title: "Hastened",
-      id: "hastened",
-      content: <p>You gain an extra maneuver on your turn</p>,
-    },
-    {
       title: "Hindered",
       id: "hindered",
       content: (
@@ -205,26 +188,7 @@ function Conditions() {
     {
       title: "Slowed",
       id: "slowed",
-      content: (
-        <div>
-          <ul style={{ marginTop: "0" }}>
-            <li>
-              <span>
-                On your turn you can only use either a maneuver or an action
-              </span>
-            </li>
-            <li>
-              <span>
-                If you’re{" "}
-                <Link className="internal-link" to="/conditions#hastened">
-                  hastened
-                </Link>
-                , you still gain the extra maneuver
-              </span>
-            </li>
-          </ul>
-        </div>
-      ),
+      content: "On your turn you lose either a maneuver or action",
     },
     {
       title: "Taunted",
@@ -254,6 +218,18 @@ function Conditions() {
             </li>
           </ul>
         </div>
+      ),
+    },
+    {
+      title: "Vulernable",
+      id: "vulernable",
+      content: (
+        <p>
+          <Link className="internal-link" to="/rules/combat#attack-roll">
+            Attack rolls
+          </Link>{" "}
+          gain <Modifier type="f" count="1" /> against you
+        </p>
       ),
     },
   ];

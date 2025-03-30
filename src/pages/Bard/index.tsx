@@ -531,11 +531,8 @@ function Bard() {
 
             <h3 className="header">Constant Performer</h3>
             <p>
-              You are permanently{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>
-              , but you can only use the extra maneuver on a bardic performance.
+              On your turn, you can use a bardic performance as a free action,
+              but only once per turn.
             </p>
 
             <h3 className="header">Greater Performance</h3>

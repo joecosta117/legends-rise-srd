@@ -228,7 +228,7 @@ function Swordmage() {
               name="Enspell Weapon"
               actType="Maneuver"
               descriptor="You channel a spell into your blade to unleash as you swing."
-              requirement="You’re wielding your arcane weapon."
+              requirement="You’re wielding your arcane weapon and your weapon isn't already enspelled."
               duration="End of your next turn"
               frequency="At-will"
               effect={
@@ -581,11 +581,8 @@ function Swordmage() {
 
             <h3 className="header">Supreme Swordmage</h3>
             <p>
-              You are permanently{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>
-              , but you can only use the extra maneuver to enspell weapon.
+              On your turn, you can enspell weapon as a free action, but only
+              once per turn.
             </p>
           </div>
         )}

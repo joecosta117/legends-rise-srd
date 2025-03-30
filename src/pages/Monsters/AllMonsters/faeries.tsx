@@ -73,8 +73,8 @@ const FaerieMonsters = [
             damage: "3 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -181,8 +181,8 @@ const FaerieMonsters = [
             damage: "6 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -378,8 +378,8 @@ const FaerieMonsters = [
             damage: "9 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -679,13 +679,7 @@ const FaerieMonsters = [
             keywords: "magical, range",
             target: "Satyr's allies within 1 zone",
             effect: (
-              <span>
-                Targets become{" "}
-                <Link className="internal-link" to="/rules/combat#hastened">
-                  hastened
-                </Link>{" "}
-                (turn ends)
-              </span>
+              <span>Targets gain an extra maneuver on their next turn</span>
             ),
           },
         ]}

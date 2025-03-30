@@ -362,8 +362,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 When in normal light, the shadow is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>
@@ -535,8 +535,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 When in normal light, the banshee is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>
@@ -734,8 +734,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 When in normal light, the poltergeist is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>
@@ -891,8 +891,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 When in normal light, the ghost is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>

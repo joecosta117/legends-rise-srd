@@ -32,14 +32,14 @@ function BuildingMonsters() {
               </span>
             </a>
           </li>
-          {/* <li>
+          <li>
             <a href="#hazards">
               <span>
                 <b>Building Hazards</b>
               </span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#converting">
               <span>
                 <b>Converting Monsters</b>

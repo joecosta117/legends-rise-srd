@@ -1228,11 +1228,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/conditions#taunted">
                 taunted
               </Link>{" "}
-              by you, you are{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>
-              , but can only use the extra maneuver to{" "}
+              by you, you gain an extra maneuver each turn to{" "}
               <Link className="internal-link" to="/combat-abilities#disengage">
                 disengage
               </Link>{" "}
@@ -1583,8 +1579,8 @@ function HeroicArchetypes() {
                     attack roll
                   </Link>{" "}
                   against an{" "}
-                  <Link className="internal-link" to="/conditions#exposed">
-                    exposed
+                  <Link className="internal-link" to="/conditions#vulnerable">
+                    vulnerable
                   </Link>{" "}
                   creature, the bonus increases to{" "}
                   <Modifier type="f" count="2" />
@@ -2395,12 +2391,8 @@ function HeroicArchetypes() {
             />
             <h4 className="header">First to Strike (7th-Level Feature)</h4>
             <p>
-              At the start of your first turn of each combat encounter, you
-              become{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>{" "}
-              until the end of your turn. If you{" "}
+              On your first turn of each combat encounter, you gain an extra
+              maneuver. If you{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}

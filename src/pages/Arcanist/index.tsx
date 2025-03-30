@@ -279,7 +279,7 @@ function Arcanist() {
             <AbilityCard
               name="Unleash Arcane"
               actType="Maneuver"
-              descriptor="You enter an unstable state of heightened magic that leaves your physical body vulnerable."
+              descriptor="You enter an unstable state of heightened magic that leaves your physical body exposed"
               frequency="At-will"
               keywords="Magical"
               duration="Scene ends"
@@ -315,9 +315,9 @@ function Arcanist() {
                         You are{" "}
                         <Link
                           className="internal-link"
-                          to="/conditions#exposed"
+                          to="/conditions#vulnerable"
                         >
-                          exposed
+                          vulnerable
                         </Link>
                       </span>
                     </li>
@@ -479,15 +479,11 @@ function Arcanist() {
               <b>Requirement:</b> wizard subclass
             </p>
             <p>
-              You are permanently{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>
-              , but you can only use this extra maneuver to{" "}
+              On your turn, you can{" "}
               <Link className="internal-link" to="/combat-abilities#study">
                 study
-              </Link>
-              .
+              </Link>{" "}
+              as a free action, but only once per turn. .
             </p>
 
             <h3 className="header">Arcane Ascension</h3>

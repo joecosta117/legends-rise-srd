@@ -1829,8 +1829,8 @@ const HumanoidMonsters = [
             description: (
               <span>
                 The bonus on attack rolls against{" "}
-                <Link className="internal-link" to="/rules/combat#exposed">
-                  exposed
+                <Link className="internal-link" to="/rules/combat#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 creatures increases to <Modifier type="f" count="2" />
               </span>

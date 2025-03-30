@@ -438,11 +438,8 @@ const ConstructMonsters = [
             name: "Electric Haste",
             description: (
               <span>
-                When the flesh golem takes lightning damage, it becomes{" "}
-                <Link className="internal-link" to="/conditions#hastened">
-                  hastened
-                </Link>{" "}
-                (turn ends).
+                When the flesh golem takes lightning damage, it gains an extra
+                maneuver on its next turn.
               </span>
             ),
           },

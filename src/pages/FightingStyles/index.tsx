@@ -481,8 +481,8 @@ function FightingStyles() {
                       Charge
                     </Link>{" "}
                     and on a success or higher, the target is{" "}
-                    <Link className="internal-link" to="/conditions#exposed">
-                      exposed
+                    <Link className="internal-link" to="/conditions#vulnerable">
+                      vulnerable
                     </Link>{" "}
                     (turn ends)
                   </span>
@@ -620,8 +620,8 @@ function FightingStyles() {
                       Strike
                     </Link>{" "}
                     and on a success or higher, the target is{" "}
-                    <Link className="internal-link" to="/conditions#exposed">
-                      exposed
+                    <Link className="internal-link" to="/conditions#vulnerable">
+                      vulnerable
                     </Link>{" "}
                     (turn ends)
                   </span>

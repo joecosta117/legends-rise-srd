@@ -739,15 +739,7 @@ function Ancestries() {
                 actType="Free"
                 descriptor="You push your constructed body to the limits."
                 frequency="Encounter"
-                duration="End of your turn"
-                effect={
-                  <span>
-                    You become{" "}
-                    <Link className="internal-link" to="/conditions#hastened">
-                      hastened
-                    </Link>
-                  </span>
-                }
+                effect={<span>You gain an extra maneuver this turn</span>}
               />
             </div>
           )}
@@ -1006,16 +998,16 @@ function Ancestries() {
                 defense="RES"
                 critical={
                   <span>
-                    <Link className="internal-link" to="/conditions#exposed">
-                      exposed
+                    <Link className="internal-link" to="/conditions#vulnerable">
+                      vulnerable
                     </Link>{" "}
                     (scene ends)
                   </span>
                 }
                 success={
                   <span>
-                    <Link className="internal-link" to="/conditions#exposed">
-                      exposed
+                    <Link className="internal-link" to="/conditions#vulnerable">
+                      vulnerable
                     </Link>{" "}
                     (turn ends)
                   </span>

@@ -238,8 +238,8 @@ function Weapons() {
               <td>Blunderbuss, Musket, Pistol</td>
               <td>
                 target is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 (turn ends)
               </td>

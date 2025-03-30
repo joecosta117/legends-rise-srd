@@ -221,13 +221,7 @@ const GiantMonsters = [
             target: "All allies within 1 zone",
             keywords: "range",
             effect: (
-              <span>
-                Target becomes{" "}
-                <Link className="internal-link" to="/conditions#hastened">
-                  hastened
-                </Link>{" "}
-                (turn ends)
-              </span>
+              <span>Target gain an extra maneuver on their next turn</span>
             ),
           },
         ]}
@@ -569,7 +563,7 @@ const GiantMonsters = [
             name: "Demonic Control",
             round: "3",
             keywords: "magical, range",
-            target: <span>1 creature within 3 zones</span>,
+            target: <span>1 creature within 2 zones</span>,
             defense: "RES",
             critical: (
               <span>Oni controls the target's turns (overcome ends)</span>
@@ -909,11 +903,8 @@ const GiantMonsters = [
             ),
             effect: (
               <span>
-                All allies within the warchief's zone becomes{" "}
-                <Link className="internal-link" to="/conditions#hastened">
-                  hastened
-                </Link>{" "}
-                (turn ends)
+                All allies within the warchief's zone gain an extra maneuver on
+                their next turn
               </span>
             ),
           },

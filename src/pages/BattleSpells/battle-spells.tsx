@@ -1557,8 +1557,8 @@ export const enchantmentSpells = [
           damage="2 psychic damage per your tier"
           critical={
             <span>
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               (turn ends)
             </span>
@@ -2449,8 +2449,8 @@ export const holySpells = [
           damage="4 holy damage per spell tier"
           success={
             <span>
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               (turn ends)
             </span>
@@ -3022,16 +3022,16 @@ export const illusionSpells = [
           defense="RES"
           critical={
             <span>
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               (scene ends)
             </span>
           }
           success={
             <span>
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               (turn ends)
             </span>
@@ -4399,8 +4399,8 @@ export const shadowSpells = [
           damage="2 necrotic damage per your tier"
           critical={
             <span>
-              <Link className="internal-link" to="/conditions#exposed">
-                exposed
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>{" "}
               (turn ends)
             </span>
@@ -5008,14 +5008,7 @@ export const timeSpells = [
           target="1 creature per spell tier in your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect={
-            <span>
-              Target becomes{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>
-            </span>
-          }
+          effect={<span>Target gains an extra maneuver each turn.</span>}
         />
       ),
     },
@@ -5102,11 +5095,7 @@ export const timeSpells = [
                 <li>
                   <span>
                     <i>Speed Up:</i> Any creature that starts their turn in the
-                    targeted zones becomes{" "}
-                    <Link className="internal-link" to="/conditions#hastened">
-                      hastened
-                    </Link>{" "}
-                    (turn starts)
+                    targeted zones gain an extra maneuver that turn.
                   </span>
                 </li>
 

@@ -253,11 +253,8 @@ function Consumables() {
               content={
                 <span>
                   This vial of yellow liquid quickens your stride. When you
-                  drink this potion, you become{" "}
-                  <Link className="internal-link" to="/conditions#hastened">
-                    hastened
-                  </Link>{" "}
-                  (scene ends).
+                  drink this potion, you gain an extra maneuver each turn (scene
+                  ends).
                 </span>
               }
             />

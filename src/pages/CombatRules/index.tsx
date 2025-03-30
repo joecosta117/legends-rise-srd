@@ -198,8 +198,8 @@ function CombatRules() {
           you’re <b>engaged</b> to them. If you’re using miniatures or tokens on
           a battle map, engaged can be represented by two miniatures touching.
           While a creature is engaged by two or more enemies, it is{" "}
-          <Link className="internal-link" to="/conditions#exposed">
-            exposed
+          <Link className="internal-link" to="/conditions#vulnerable">
+            vulnerable
           </Link>
           .
         </p>

@@ -350,7 +350,7 @@ function Equipment() {
                 <tr>
                   <td>Firearms</td>
                   <td>Blunderbuss, Musket, Pistol</td>
-                  <td>target is exposed (turn ends)</td>
+                  <td>target is vulnerable (turn ends)</td>
                 </tr>
                 <tr>
                   <td>Flails</td>

@@ -440,9 +440,9 @@ function Druid() {
                         against{" "}
                         <Link
                           className="internal-link"
-                          to="/conditions#exposed"
+                          to="/conditions#vulnerable"
                         >
-                          exposed
+                          vulnerable
                         </Link>{" "}
                         creatures within the targeted zone.
                       </span>

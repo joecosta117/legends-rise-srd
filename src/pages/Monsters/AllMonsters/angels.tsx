@@ -47,8 +47,8 @@ const AngelMonsters = [
             damage: "2 holy damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -514,8 +514,8 @@ const AngelMonsters = [
             success: (
               <span>
                 {" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
                 (turn ends)
               </span>

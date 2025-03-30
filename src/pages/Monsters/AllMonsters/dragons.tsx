@@ -3350,8 +3350,8 @@ const DragonMonsters = [
             description: (
               <span>
                 When in normal light, the dragon is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>
@@ -3465,8 +3465,8 @@ const DragonMonsters = [
             description: (
               <span>
                 When in normal light, the dragon is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>
@@ -3653,8 +3653,8 @@ const DragonMonsters = [
             description: (
               <span>
                 When in normal light, the dragon is{" "}
-                <Link className="internal-link" to="/conditions#exposed">
-                  exposed
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>
                 .
               </span>

@@ -1082,12 +1082,8 @@ function Summoner() {
 
             <h3 className="header">Master Summoner</h3>
             <p>
-              You are permanently{" "}
-              <Link className="internal-link" to="/conditions#hastened">
-                hastened
-              </Link>
-              , but you can only use the extra maneuver to command creatures
-              from your summon abilities.
+              On your turn, you can command creatures from your summon abilities
+              as a free action, but only once per turn.
             </p>
 
             <h3 className="header">Rapid Reconstruction</h3>
