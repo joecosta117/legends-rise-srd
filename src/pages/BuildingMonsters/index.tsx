@@ -32,13 +32,13 @@ function BuildingMonsters() {
               </span>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#hazards">
               <span>
                 <b>Building Hazards</b>
               </span>
             </a>
-          </li>
+          </li> */}
           {/* <li>
             <a href="#converting">
               <span>
@@ -510,7 +510,8 @@ function BuildingMonsters() {
         </ul>
 
         {/* <h2>Building Hazards</h2>
-        <h2>Converting Monsters</h2> */}
+        <p></p> */}
+        {/* <h2>Converting Monsters</h2> */}
       </div>
     </div>
   );
