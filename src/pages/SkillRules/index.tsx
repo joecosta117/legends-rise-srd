@@ -487,12 +487,12 @@ function SkillRules() {
         <ul>
           <li>
             <span>
-              <b>Critical Success:</b> The countdown die deincrements by 3.
+              <b>Critical Success:</b> The countdown die deincrements by 2.
             </span>
           </li>
           <li>
             <span>
-              <b>Success:</b> The countdown die deincrements by 2.
+              <b>Success:</b> The countdown die deincrements by 1.
             </span>
           </li>
           <li>
@@ -559,12 +559,12 @@ function SkillRules() {
           <li>
             <span>
               <b>Critical Success:</b> The positive countdown die deincrements
-              by 3.
+              by 2.
             </span>
           </li>
           <li>
             <span>
-              <b>Success:</b> The positive countdown die deincrements by 2.
+              <b>Success:</b> The positive countdown die deincrements by 1.
             </span>
           </li>
           <li>
