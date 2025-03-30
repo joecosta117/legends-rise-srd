@@ -32,13 +32,13 @@ function BuildingMonsters() {
               </span>
             </a>
           </li>
-          {/* <li>
+          <li>
             <a href="#hazards">
               <span>
                 <b>Building Hazards</b>
               </span>
             </a>
-          </li> */}
+          </li>
           {/* <li>
             <a href="#converting">
               <span>
@@ -47,7 +47,7 @@ function BuildingMonsters() {
             </a>
           </li> */}
         </ul>
-        <h2>Building Monsters</h2>
+        <h2 id="monsters">Building Monsters</h2>
         <p>
           Althought Legends Rise has nearly 250{" "}
           <Link className="internal-link" to="/monsters">
@@ -142,7 +142,7 @@ function BuildingMonsters() {
           makes Resolve their lowest defense and Evasion as their average
           defense.
         </p>
-        <h4 className="header">Average Damage</h4>
+        <h4 className="header">Damage</h4>
         <p>Monsters tend to have three types of attacks that deal damage:</p>
         <ul>
           <li>
@@ -516,8 +516,134 @@ function BuildingMonsters() {
           </li>
         </ul>
 
-        {/* <h2>Building Hazards</h2>
-        <p></p> */}
+        <h2 id="hazards">Building Hazards</h2>
+        <p>
+          If you can't find a hazard from the{" "}
+          <Link className="internal-link" to="/hazards">
+            official hazards
+          </Link>
+          , then feel free to follow the same process as creating monsters:
+          reflavoring or custom hazards. Fortunately, building custom hazards is
+          simpler and quickler than building a monster.
+        </p>
+        <h3 className="header">Determine the Hazard Tier</h3>
+        <p>
+          The first step is determining what tier is your new hazard. Usually
+          the tier matches the same tier as your heroes. A hazard's tier
+          determines their TN, proficiency bonus, and damage.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>TN</th>
+              <th>PB</th>
+              <th>Consequence</th>
+              <th>Damage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>12</td>
+              <td>+2</td>
+              <td>4</td>
+              <td>melee 5, range 4, multi 2</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>15</td>
+              <td>8</td>
+              <td>+4</td>
+              <td>melee 10, range 8, multi 4</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>18</td>
+              <td>12</td>
+              <td>+6</td>
+              <td>melee 15, range 12, multi 6</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4 className="header" style={{ marginTop: "20px" }}>
+          Consequences
+        </h4>
+        <p>
+          Whenever a hero gets a failure or partial success on a skill roll,
+          they take damage of the listed amount. Usually just the hero that did
+          poorly on the skill roll takes this damage, but you can rule all
+          heroes half the damage instead.
+        </p>
+        <h4 className="header">Damage</h4>
+        <p>Hazards have three types of attacks that deal damage:</p>
+        <ul>
+          <li>
+            <span>
+              <b>Melee: </b> Melee attacks deal the most damage.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Range: </b> Range attacks deal slightly less damage.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Multi: </b> Multi attacks target multiple heroes, such as a
+              fiery explosion.
+            </span>
+          </li>
+        </ul>
+        <h3 className="header">Determine the Threat Level</h3>
+        <p>
+          Unlike monsters, hazards only have two threat levels: standard or
+          major. All standard hazards have a countdown die of d6, while major
+          hazards have a countdown die of d12. Like major monsters, major
+          hazards get two turns per round.
+        </p>
+        <h3 className="header">Hazard Ability</h3>
+        <p>
+          Hazards generally have one action ability they can use on their turns
+          and don't have maneuvers or reactions. The hazard's action ability
+          usually come in the following variety:
+        </p>
+        <ul>
+          <li>
+            <span>
+              Deal damage to a single creature either engaged to the hazard
+              (melee) or a creature within 3 zones (range)
+            </span>
+          </li>
+          <li>
+            <span>
+              Deal damage to 1d4+1 creatures within the hazard's zone or 1d4
+              creatures in 1 zone within 3 zones (multi).
+            </span>
+          </li>
+          <li>
+            <span>
+              Apply a negative condition or effect to a creature within 3 zones
+              or 1d4+1 creatures within the hazard's zone.
+            </span>
+          </li>
+          <li>
+            <span>
+              Summon a number of minion monsters equal to the hazard's tier.
+            </span>
+          </li>
+        </ul>
+        <h3 className="header">Major Features</h3>
+        <p>
+          Each hazard has a number of <b>major features</b> equal to the
+          hazard's tier. Major hazards get an additional major feature. These
+          features almost always expand the hazard's single ability, such as
+          adding an effect on a successful attack roll, increasing a condition's
+          duration, or making an ability that affects an area create a dangerous
+          zone. For example, a hazard that deals psychic damage might now also
+          taunt the target on a success or higher (turn ends).
+        </p>
+
         {/* <h2>Converting Monsters</h2> */}
       </div>
     </div>
