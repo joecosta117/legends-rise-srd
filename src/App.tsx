@@ -46,6 +46,7 @@ import ContactPage from "./pages/ContactPage";
 import Monsters from "./pages/Monsters";
 import EncounterDesign from "./pages/EncounterDesign";
 import BuildingMonsters from "./pages/BuildingMonsters";
+import Hazards from "./pages/Hazards";
 
 function App() {
   return (
@@ -107,6 +108,7 @@ function App() {
             <Route path="/monsters" element={<Monsters />} />
             <Route path="/encounters" element={<EncounterDesign />} />
             <Route path="/building-threats" element={<BuildingMonsters />} />
+            <Route path="/hazards" element={<Hazards />} />
           </Routes>
         </div>
       </ScrollToTop>

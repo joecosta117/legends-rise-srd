@@ -46,15 +46,19 @@ function Pagination({ count, content, curPage, setPage }: PaginationProps) {
     return pagination;
   }
 
+  const noPagination = content.length < 20;
+
   return (
     <div className="pagination">
-      <button
-        onClick={() => setPage((prev: any) => Math.max(prev - 1, 1))}
-        disabled={curPage === 1}
-        className="pagination__controls"
-      >
-        Previous
-      </button>
+      {!noPagination && (
+        <button
+          onClick={() => setPage((prev: any) => Math.max(prev - 1, 1))}
+          disabled={curPage === 1}
+          className="pagination__controls"
+        >
+          Previous
+        </button>
+      )}
       <div className="pagination__pages">
         {getPaginationNumbers().map((page: number | string, index: string) =>
           page === "..." ? (
@@ -74,13 +78,15 @@ function Pagination({ count, content, curPage, setPage }: PaginationProps) {
           ),
         )}
       </div>
-      <button
-        onClick={() => setPage((prev: any) => Math.min(prev + 1, totalPages))}
-        disabled={curPage === totalPages}
-        className="pagination__controls"
-      >
-        Next
-      </button>
+      {!noPagination && (
+        <button
+          onClick={() => setPage((prev: any) => Math.min(prev + 1, totalPages))}
+          disabled={curPage === totalPages}
+          className="pagination__controls"
+        >
+          Next
+        </button>
+      )}
     </div>
   );
 }

@@ -1,0 +1,117 @@
+@import "../../styles/index.scss";
+
+.monster {
+  max-width: 600px;
+
+  &[data-accordion="true"] {
+    padding: 8px;
+  }
+
+  h3, h4 {
+    margin-bottom: 0 !important;
+  }
+  h3 {
+    margin-top: 0;
+    background: $white;
+    color: $black;
+    padding: 5px 10px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .monster-content {
+    border: 2px solid $white;
+    padding: 8px;
+  }
+
+  h4 {
+    margin-top: 5px;
+    // border-top: 1px solid $gold;
+  }
+  p, span {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .evn {
+    color: $evasiongold;
+  }
+  .mgt {
+    color: $physicalred;
+  }
+  .res {
+    color: $mysticalblue;
+  }
+
+  .traits-section, .abilities {
+    ul {
+      margin: 0;
+    }
+    li {
+      list-style-type: none;
+    }
+
+    .monster-degrees-of-success {
+      li {
+        list-style-type: disc;
+        margin-bottom: 0;
+
+        .degree-effect {
+          margin-left: -10px;
+        }
+      }
+    }
+
+    .ability {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    p, h4 {
+      @include mq(s) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @include mq(m) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      @include mq(xl) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    h4 {
+      background: $bkgdgolddark;
+      padding-left: 5px;
+      
+      &[data-type="action"] {
+        background: $actionred;
+      }
+      &[data-type="maneuver"] {
+        background: $maneuvergreen;
+      }
+      &[data-type="reaction"] {
+        background: $reactionorange;
+      }
+    }
+    .attack-icon {
+      padding-bottom: 0;
+      background-color: $white;
+      border-radius: 50%;
+      width: 15px;
+      vertical-align: middle;
+    }
+  }
+
+  .traits-section {
+    &__container {
+      display: grid;
+      gap: 5px;
+    }
+  }
+}

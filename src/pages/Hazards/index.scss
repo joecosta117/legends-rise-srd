@@ -1,10 +1,10 @@
 @import "../../styles/index.scss";
 
-.monsters {
+.hazards {
   @include page-layout();
 }
 
-.monsters-content {
+.hazards-content {
   @include class-page-content();
 
   &__description {
@@ -17,12 +17,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 
-    @include mq(s) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
     &__section { 
       width: 100%;
+      display: grid;
+      justify-items: center;
 
       &__title {
         text-align: center;

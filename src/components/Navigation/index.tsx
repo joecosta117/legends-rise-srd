@@ -436,6 +436,13 @@ const Navigation = () => {
               </Link>
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/hazards"
+                onClick={toggleMobileNav}
+              >
+                Hazards
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/monsters"
                 onClick={toggleMobileNav}
               >

@@ -15,6 +15,7 @@ interface AccordionProps {
   open?: boolean;
   id?: string;
   monster?: boolean;
+  hazard?: boolean;
   tier?: string;
   threat?: string;
   role?: string;
@@ -35,6 +36,7 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
       tier,
       threat,
       role,
+      hazard,
     },
     ref,
   ) => {
@@ -135,11 +137,9 @@ const Accordion = forwardRef<HTMLDivElement, AccordionProps>(
         >
           <h4>{transformTitle(title)}</h4>
           <h4>
-            {monster
-              ? `${getTier()} ${threat} ${role} ${isOpen ? "-" : "+"}`
-              : isOpen
-                ? "-"
-                : "+"}
+            {monster && `${getTier()} ${threat} ${role} ${isOpen ? "-" : "+"}`}
+            {hazard && `${getTier()} ${threat} ${isOpen ? "-" : "+"}`}
+            {!monster && !hazard && (isOpen ? "-" : "+")}
           </h4>
         </div>
         <div
