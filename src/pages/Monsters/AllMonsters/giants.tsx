@@ -571,8 +571,8 @@ const GiantMonsters = [
             success: <span>Oni controls the target's next turn</span>,
             partial: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
                 </Link>{" "}
                 (turn ends)
               </span>

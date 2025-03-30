@@ -533,13 +533,13 @@ const DemonMonsters = [
             target: "1 creatue within 2 zones",
             keywords: "magical, range",
             defense: "RES",
-            critical: "charmed (overcome ends)",
+            critical:
+              "Same as a success, but the effect lasts for the scecne (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
-                </Link>{" "}
-                (turn ends)
+                Target can't use hostile abilities against the lust demon (turn
+                ends), but this effect ends early if the lust demon uses a
+                hostile ability against the target.
               </span>
             ),
           },

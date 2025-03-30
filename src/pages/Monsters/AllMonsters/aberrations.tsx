@@ -277,8 +277,8 @@ const AberrationMonsters = [
             critical: "target controlled by the deep lurker (overcome ends)",
             partial: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -815,15 +815,15 @@ const AberrationMonsters = [
                 </span>
                 <ul>
                   <li>
-                    <i>1. Charm Ray:</i> Void seer makes an attack roll against
-                    the Resolve of 1 creature within 3 zones. The target is{" "}
-                    <Link className="internal-link" to="/conditions#slowed">
-                      charmed
+                    <i>1. Control Ray:</i> Void seer makes an attack roll
+                    against the Resolve of 1 creature within 3 zones. The target
+                    is{" "}
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
                     </Link>{" "}
-                    (turn ends) on a partial success, charmed (overcome ends) on
-                    a success, and on a critical success, the target's turn is
-                    controlled by the void seer (turn ends) in addition to the
-                    charm effect.
+                    (turn ends) on a partial success, controlled by the void
+                    seer (turn ends) on a success, and controlled for the scene
+                    (overcome ends) on a critical success.
                   </li>
                   <li>
                     <i>2. Disintegrate Ray:</i> Void seer makes an attack roll

@@ -346,17 +346,23 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "RES",
-            partial: "charmed (turn ends)",
-            success: (
+            partial: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
                 </Link>{" "}
-                (overcome ends) while the harpy uses a maneuver to focus on this
-                ability
+                (turn ends)
               </span>
             ),
-            critical: "Same as a success, but the harpy doesn't have to focus",
+            success: (
+              <span>
+                Target can't use hostile abilities against the harpy (turn
+                ends), but this effect ends early if the harpy uses a hostile
+                ability against the target.
+              </span>
+            ),
+            critical:
+              "Same as a success, but the effect lasts for the scene (overcome ends)",
           },
         ]}
       />

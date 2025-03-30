@@ -12,7 +12,7 @@ function Conditions() {
       id: "blinded",
       content: (
         <p>
-          Everyone have{" "}
+          Everyone has{" "}
           <Link className="internal-link" to="/rules/combat#stealth">
             concealment
           </Link>{" "}
@@ -25,53 +25,20 @@ function Conditions() {
       ),
     },
     {
-      title: "Charmed",
-      id: "charmed",
-      content: (
-        <div>
-          <ul style={{ marginTop: "0" }}>
-            <li>
-              <span>You treat the charmer and their allies as your allies</span>
-            </li>
-            <li>
-              <span>
-                If the charmer or their allies use a harmful ability against
-                you, this condition ends
-              </span>
-            </li>
-          </ul>
-        </div>
-      ),
-    },
-    {
       title: "Confused",
       id: "confused",
       content: (
-        <div>
-          <ul style={{ marginTop: "0" }}>
-            <li>
-              <span>You don’t treat anyone as an ally</span>
-            </li>
-            <li>
-              <span>
-                On your turn, you must use a maneuver to{" "}
-                <Link className="internal-link" to="/combat-abilities#move">
-                  move
-                </Link>{" "}
-                to the closest creature and then use an action to{" "}
-                <Link className="internal-link" to="/combat-abilities#strike">
-                  strike
-                </Link>{" "}
-                or cast a tier 0 battle spell against the creature. If there are
-                no nearby creatures, then you just{" "}
-                <Link className="internal-link" to="/combat-abilities#defend">
-                  defend
-                </Link>
-                .
-              </span>
-            </li>
-          </ul>
-        </div>
+        <p>
+          On your turn, you must use your action to{" "}
+          <Link className="internal-link" to="/combat-abilities#charge">
+            charge
+          </Link>
+          ,{" "}
+          <Link className="internal-link" to="/combat-abilities#strike">
+            strike
+          </Link>
+          , or use a tier 0 battle spell against the nearest creature.
+        </p>
       ),
     },
     {
@@ -188,7 +155,9 @@ function Conditions() {
     {
       title: "Slowed",
       id: "slowed",
-      content: <p>On your turn, you lose either a maneuver or action.</p>,
+      content: (
+        <p>On your turn, you lose either a maneuver or action (your choice).</p>
+      ),
     },
     {
       title: "Taunted",
@@ -212,9 +181,7 @@ function Conditions() {
               </span>
             </li>
             <li>
-              <span>
-                This condition ends if your taunter dies or surrenders
-              </span>
+              <span>This condition ends early if your taunter is defeated</span>
             </li>
           </ul>
         </div>
@@ -228,7 +195,7 @@ function Conditions() {
           <Link className="internal-link" to="/rules/combat#attack-roll">
             Attack rolls
           </Link>{" "}
-          gain <Modifier type="f" count="1" /> against you
+          gain <Modifier type="f" count="1" /> against you.
         </p>
       ),
     },

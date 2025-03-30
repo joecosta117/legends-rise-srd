@@ -404,11 +404,8 @@ const PlantMonsters = [
               <span>
                 Whenever an enemy enters or starts their turn in the dryad
                 queen's zone, the dryad queen makes an attack roll against their
-                Resolve. On a success or higher, the creature is{" "}
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
-                </Link>{" "}
-                (turn starts).
+                Resolve. On a success or higher, the creature can't use hostile
+                abilities against the dryad queen (turn starts).
               </span>
             ),
           },

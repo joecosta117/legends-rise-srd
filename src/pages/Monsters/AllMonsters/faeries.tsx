@@ -86,13 +86,13 @@ const FaerieMonsters = [
             name: "Faerie Charm",
             defense: "RES",
             target: "1 creature within 2 zones",
-            critical: "charmed by the dragon (overcome ends)",
+            critical:
+              "Same as a success, but the effect lasts for the scene (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
-                </Link>{" "}
-                by the dragon (turn ends)
+                Target can't use hostile abilities against the glamour dragon
+                (turn ends), but this effect ends early if the glamour dragon
+                uses a hostile ability against the target.
               </span>
             ),
           },
@@ -194,13 +194,13 @@ const FaerieMonsters = [
             name: "Faerie Charm",
             defense: "RES",
             target: "1 creature within 2 zones",
-            critical: "charmed by the dragon (overcome ends)",
+            critical:
+              "Same as a success, but the effect lasts for the scene (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
-                </Link>{" "}
-                by the dragon (turn ends)
+                Target can't use hostile abilities against the glamour dragon
+                (turn ends), but this effect ends early if the glamour dragon
+                uses a hostile ability against the target.
               </span>
             ),
           },
@@ -391,13 +391,13 @@ const FaerieMonsters = [
             name: "Faerie Charm",
             defense: "RES",
             target: "1 creature within 2 zones",
-            critical: "charmed by the dragon (overcome ends)",
+            critical:
+              "Same as a success, but the effect lasts for the scene (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
-                </Link>{" "}
-                by the dragon (turn ends)
+                Target can't use hostile abilities against the glamour dragon
+                (turn ends), but this effect ends early if the glamour dragon
+                uses a hostile ability against the target.
               </span>
             ),
           },
@@ -603,11 +603,9 @@ const FaerieMonsters = [
                 that adds one of the following effecs on a successful strike:
                 <ul>
                   <li>
-                    <i>Charm:</i> target is{" "}
-                    <Link className="internal-link" to="/rules/combat#charmed">
-                      charmed
-                    </Link>{" "}
-                    (overcome ends)
+                    <i>Charm:</i> target can't use hostile abilities against the
+                    pixie (overcome ends), or until the pixie uses a hostile
+                    ability against the target
                   </li>
                   <li>
                     <i>Drowsy:</i> target is{" "}

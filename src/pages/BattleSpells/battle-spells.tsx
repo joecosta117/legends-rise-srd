@@ -1604,19 +1604,12 @@ export const enchantmentSpells = [
           keywords="Escalation, Magical, Range"
           defense="RES"
           critical={
-            <span>
-              <Link className="internal-link" to="/conditions#charmed">
-                charmed
-              </Link>{" "}
-              (scene ends)
-            </span>
+            <span>Same as a success, but effect lasts for the scene.</span>
           }
           success={
             <span>
-              <Link className="internal-link" to="/conditions#charmed">
-                charmed
-              </Link>{" "}
-              (turn ends)
+              Target can't use hostile abilities against you (turn ends) or
+              until you or your allies use a hostile ability against them
             </span>
           }
           partial={
@@ -1792,27 +1785,27 @@ export const enchantmentSpells = [
             critical={
               <span>
                 Same as a success, but also{" "}
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
                 </Link>
               </span>
             }
             success={
               <span>
-                Same as a partial, but{" "}
-                <Link className="internal-link" to="/conditions#charmed">
-                  charmed
+                Target must spend a maneuver each turn (scene ends) to lie{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
                 </Link>{" "}
-                (scene ends)
+                and bow to you
               </span>
             }
             partial={
               <span>
-                Charmed (turn ends), and{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                Target must spend a maneuver on their next turn to lie{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
                 </Link>{" "}
-                while charmed as they bask in your glory
+                and bow to you
               </span>
             }
           />
@@ -4046,18 +4039,14 @@ export const natureSpells = [
                 defense: "RES",
                 critical: (
                   <span>
-                    <Link className="internal-link" to="/conditions#charmed">
-                      charmed
-                    </Link>{" "}
-                    (scene ends)
+                    Same as a success, but the effect lasts for the scene
                   </span>
                 ),
                 success: (
                   <span>
-                    <Link className="internal-link" to="/conditions#charmed">
-                      charmed
-                    </Link>{" "}
-                    (turn ends)
+                    Target can't use hostile abilities against you or your
+                    allies (turn ends), but this effect ends early if you or
+                    your allies uses a hostile ability against the target.
                   </span>
                 ),
               },
