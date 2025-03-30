@@ -221,8 +221,8 @@ function Conditions() {
       ),
     },
     {
-      title: "Vulernable",
-      id: "vulernable",
+      title: "Vulnerable",
+      id: "vulnerable",
       content: (
         <p>
           <Link className="internal-link" to="/rules/combat#attack-roll">
