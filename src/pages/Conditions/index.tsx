@@ -188,7 +188,7 @@ function Conditions() {
     {
       title: "Slowed",
       id: "slowed",
-      content: "On your turn you lose either a maneuver or action",
+      content: <p>On your turn, you lose either a maneuver or action.</p>,
     },
     {
       title: "Taunted",
