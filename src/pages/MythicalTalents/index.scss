@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.mythical {
+  @include page-layout();
+}
+
+.mythical-content {
+  @include class-page-content();
+}

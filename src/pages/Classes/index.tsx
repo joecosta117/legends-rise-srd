@@ -315,12 +315,28 @@ function Classes() {
               <td>3</td>
               <td>+6</td>
             </tr>
+            <tr>
+              <td>11+</td>
+              <td>mythical talent</td>
+              <td>3</td>
+              <td>+6</td>
+            </tr>
           </tbody>
         </table>
 
-        <h3 className="header" style={{ marginTop: "25px" }}>
-          Class Basics
-        </h3>
+        <h4 className="header" style={{ marginTop: "15px" }}>
+          Mytical Talents
+        </h4>
+        <p>
+          Starting at levels 11 and at each higher level, you gain a{" "}
+          <Link className="internal-link" to="/mythical-talents">
+            mythical talent
+          </Link>
+          . Level 11 and higher heroes are the powerful heroes in the
+          multiverse.
+        </p>
+
+        <h3 className="header">Class Basics</h3>
         <p>
           Once you pick a class at 1st level, your class determines the
           following:

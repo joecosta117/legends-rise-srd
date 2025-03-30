@@ -47,6 +47,7 @@ import Monsters from "./pages/Monsters";
 import EncounterDesign from "./pages/EncounterDesign";
 import BuildingMonsters from "./pages/BuildingMonsters";
 import Hazards from "./pages/Hazards";
+import MythicalTalents from "./pages/MythicalTalents";
 
 function App() {
   return (
@@ -109,6 +110,7 @@ function App() {
             <Route path="/encounters" element={<EncounterDesign />} />
             <Route path="/building-threats" element={<BuildingMonsters />} />
             <Route path="/hazards" element={<Hazards />} />
+            <Route path="/mythical-talents" element={<MythicalTalents />} />
           </Routes>
         </div>
       </ScrollToTop>

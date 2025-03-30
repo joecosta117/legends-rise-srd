@@ -232,6 +232,13 @@ const Navigation = () => {
               >
                 Theme Talents
               </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/mythical-talents"
+                onClick={toggleMobileNav}
+              >
+                Mythical Talents
+              </Link>
             </div>
           </div>
 
