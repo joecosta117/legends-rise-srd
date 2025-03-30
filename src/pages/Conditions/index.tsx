@@ -163,9 +163,8 @@ function Conditions() {
         <h1>Conditions</h1>
         <p>
           Conditions are typically harmful effects that magic or special
-          abilities can inflict on creatures, but can sometimes be positive
-          effects as well. The duration of a condition is determined by the
-          effect that imposed the condition.
+          abilities can inflict on creatures. The duration of a condition is
+          determined by the effect that imposed the condition.
         </p>
         {conditionContent.map(({ title, content, id }) => (
           <div id={id}>
