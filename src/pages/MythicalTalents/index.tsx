@@ -32,7 +32,8 @@ function MythicalTalents() {
         <h3 className="header">Mythical Magic</h3>
         <p>
           You learn a tier 1 battle spell from any magic tradition. You can use
-          this spell at spell tier 1 without spending mana.
+          this spell at spell tier 1 without spending mana. You can take this
+          mythical talent multiple times.
         </p>
 
         <h3 className="header">Mythical Proficiency</h3>

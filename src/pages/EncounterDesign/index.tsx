@@ -233,7 +233,7 @@ function EncounterDesign() {
           weaker than bosses. Major threats always get two turns per round.
         </p>
         <h4 className="header">Boss Threats</h4>
-        <b className="encounter-content__subtitle">EP = Number of Heroes</b>
+        <b className="encounter-content__subtitle">EP = Number of Heroes + 1</b>
         <p>
           Boss threats are the strongest monster heroes can face. Only monsters
           can be bosses. Boss monsters get as many turns per round as the number
