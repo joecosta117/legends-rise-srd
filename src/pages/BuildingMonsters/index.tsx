@@ -33,9 +33,23 @@ function BuildingMonsters() {
             </a>
           </li>
           <li>
+            <a href="#upgrade">
+              <span>
+                <b>Adjusting Monsters by Threat or Tier</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#hazards">
               <span>
                 <b>Building Hazards</b>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="#upgrading-hazards">
+              <span>
+                <b>Adjusting Hazards by Threat or Tier</b>
               </span>
             </a>
           </li>
@@ -516,6 +530,94 @@ function BuildingMonsters() {
           </li>
         </ul>
 
+        <h2 id="upgrade">Adjusting Monsters</h2>
+        <p>
+          Just like creating your own monsters, you can also adjust existing
+          ones to be weaker or stronger. For example, maybe you want your tier 2
+          heroes to face an adult volcanic dragon, but for it not to be a boss,
+          so you adjust the dragon to a major threat. Or you want a tier 2 brain
+          reaper to be a boss for your tier 1 heroes.
+        </p>
+        <h3 className="header">Adjusting Monster's Threat Level</h3>
+        <p>
+          The easiest adjustments are just to adjust a monster's threat level
+          within the same tier. It's best to downgrade a monster to a lower
+          threat level or upgrade by a threat level.
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Minion Monsters:</b> Minions are usually very basic and best
+              left as minions.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Minor Monsters:</b> You can upgrade a minor monster to a
+              standard monster by doubling their hit points and adding their
+              tier to all of their damaging abilities. You can downgrade a minor
+              monster to a minion by making their hit points match their
+              proficiency bonus and their damaging abilities equal to their
+              tier.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Standard Monsters:</b> You can upgrade a standard monster to a
+              major monster by doubling their hit points and giving them a
+              second turn per round. You can downgrade a standard monster to a
+              minor monster by halving their hit points and decrease their
+              damaging abilities by their tier.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Major Monsters:</b> You can upgrade a major monster to a boss
+              monster by halving their hit points, then multipling them by the
+              number of heroes. Make sure to give the new boss monster boss
+              actions (see the previous section on creating your own boss
+              actions) and let them get one turn per hero each round. You can
+              downgrade a major monster to a standard monster by halving their
+              hit points and giving them only one turn per round.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Boss Monsters:</b> You can downgrade a boss monster to a major
+              monster by doubling their hit points, removing their boss actions,
+              and they only get turns per round.
+            </span>
+          </li>
+        </ul>
+        <h3 className="header">Adjusting Monster's Tier</h3>
+        <p>
+          You can adjust a monster's tier. It's best to only adjust a monster's
+          tier by one level. For example, you can upgrade a tier 1 monster to a
+          tier 2 monster, but not a tier 1 monster to a tier 3 monster as tier 3
+          monsters are significantly more complex than tier 1 monsters. When
+          adjusting a monster's tier, consult the below:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Downgrade a Tier:</b> Decrease their defenses by 2, decrease
+              their proficiency bonus by 2, and divide their damage by their
+              original tier then multiply the damage by the lower tier. For hit
+              points, follow the hit points by the new tier then adjust by the
+              threat level and role.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Upgrade a Tier:</b> Increase their defenses by 2, increase
+              their proficiency bonus by 2, and divide their damage by their
+              original tier then multiply the damage by the higher tier. For hit
+              points, follow the hit points by the new tier then adjust by the
+              threat level and role.
+            </span>
+          </li>
+        </ul>
+
         <h2 id="hazards">Building Hazards</h2>
         <p>
           If you can't find a hazard from the{" "}
@@ -643,6 +745,58 @@ function BuildingMonsters() {
           zone. For example, a hazard that deals psychic damage might now also
           taunt the target on a success or higher (turn ends).
         </p>
+
+        <h2 id="upgrade-hazards">Adjusting Hazards</h2>
+        <p>
+          Just like creating your own hazards, you can also adjust existing ones
+          to be weaker or stronger.
+        </p>
+        <h3 className="header">Adjusting Hazard's Threat Level</h3>
+        <p>
+          The easiest adjustments are just to adjust a hazard's threat level
+          within the same tier. It's best to downgrade a hazard to a lower
+          threat level or upgrade by a threat level.
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Standard Hazards:</b> You can upgrade a standard hazard to a
+              major hazard by increasing their countdown die size to d12 and
+              giving them a second turn per round.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Major Hazards:</b> You can downgrade a major hazard to a
+              standard hazard by halving their countdown die size to d6 and
+              giving them only one turn per round.
+            </span>
+          </li>
+        </ul>
+        <h3 className="header">Adjusting Hazard's Tier</h3>
+        <p>
+          You can adjust a hazard's tier. It's best to only adjust a hazard's
+          tier by one level. For example, you can upgrade a tier 1 hazard to a
+          tier 2 hazard, but not a tier 1 hazard to a tier 3 hazard as tier 3
+          hazards are significantly more complex than tier 1 hazards. When
+          adjusting a hazard's tier, consult the below:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Downgrade a Tier:</b> Decrease the hazard's TN by 2, decrease
+              it's proficiency bonus by 2, and divide it's damage by it's
+              original tier then multiply the damage by the lower tier.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Upgrade a Tier:</b> Increase the hazard's TN by 2, increase
+              it's proficiency bonus by 2, and divide it's damage by it's
+              original tier then multiply the damage by the higher tier.
+            </span>
+          </li>
+        </ul>
 
         {/* <h2>Converting Monsters</h2> */}
       </div>
