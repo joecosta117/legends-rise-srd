@@ -802,7 +802,7 @@ function LegendaryArchetypes() {
               You learn another knack, and the bonus from knacks to{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill rolls
-              </Link>
+              </Link>{" "}
               increases to <Modifier type="f" count="3" />
             </p>
 
