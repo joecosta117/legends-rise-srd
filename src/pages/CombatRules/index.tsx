@@ -891,21 +891,8 @@ function CombatRules() {
           targeted by hostile abilities, except ones that affect a zone. You
           also have <Modifier type="f" count="1" /> on rolls against creatures
           that you are hidden from. You become visible if you use a hostile
-          ability, your concealment ends, your cover disappears, you stride with
-          sneaking (see below), or you are spotted.
-        </p>
-        <h4 className="header">Sneaking</h4>
-        <p>
-          While hidden, you can{" "}
-          <Link className="internal-link" to="/combat-abilities#disengage">
-            disengage
-          </Link>{" "}
-          or{" "}
-          <Link className="internal-link" to="/combat-abilities#move">
-            move
-          </Link>{" "}
-          without avoiding detection if reduce your speed by half. You must also
-          end your movement behind cover or still concealed.
+          ability, your concealment ends, your cover disappears, or you are
+          spotted.
         </p>
         <h4 className="header">Spotting Hidden Creatures</h4>
         <p>
