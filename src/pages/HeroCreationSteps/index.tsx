@@ -257,7 +257,7 @@ function HeroCreationSteps() {
           <b>
             <a
               target="blank"
-              href="https://docs.google.com/document/d/1-rIBiG8WjHG-kw4yfBgI__ks7ZFQjKbCklnnrQ1l31w/edit?usp=sharing"
+              href="https://docs.google.com/spreadsheets/d/10AUYI0NB5eaLV8NIlhpq8890wbQaZaupdt8BCWV14Uc/edit?usp=sharing"
             >
               empty hero sheet
             </a>
@@ -265,6 +265,17 @@ function HeroCreationSteps() {
           . I suggest making a copy of the sheet in your google drive, and then
           editing from there. You will build a hero using the following steps.
         </p>
+        <button
+          className="link-button"
+          onClick={() =>
+            window.open(
+              "https://docs.google.com/spreadsheets/d/10AUYI0NB5eaLV8NIlhpq8890wbQaZaupdt8BCWV14Uc/edit?usp=sharing",
+              "_blank",
+            )
+          }
+        >
+          CHARACTER SHEET
+        </button>
 
         <h2>Step 1: Choose an Ancestry</h2>
         <p>
