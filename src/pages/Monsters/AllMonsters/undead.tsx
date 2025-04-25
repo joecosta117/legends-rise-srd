@@ -592,7 +592,7 @@ const UndeadMonsters = [
             keywords: "magical, range",
             target: "1 creature within 2 zones",
             effect:
-              "Target becomes hindered (turn ends), or slowed (turn ends) if they are already hindered.",
+              "Target becomes hindered (turn ends), or dazed (turn ends) if they are already hindered.",
           },
         ]}
       />
@@ -2171,8 +2171,8 @@ const UndeadMonsters = [
             damage: "9 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions/slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions/dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -2187,7 +2187,7 @@ const UndeadMonsters = [
             damage: "9 necrotic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions/slowed">
+                <Link className="internal-link" to="/conditions/dazed">
                   hindered
                 </Link>{" "}
                 (overcome ends)
@@ -2266,8 +2266,8 @@ const UndeadMonsters = [
             damage: "9 necrotic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>

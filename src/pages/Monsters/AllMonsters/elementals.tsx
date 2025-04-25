@@ -346,8 +346,8 @@ const ElementalMonsters = [
             damage: "3 cold damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -655,8 +655,8 @@ const ElementalMonsters = [
                   prone
                 </Link>
                 , or if they're already prone, then they become{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -822,8 +822,8 @@ const ElementalMonsters = [
             damage: "6 cold damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1395,8 +1395,8 @@ const ElementalMonsters = [
             success: (
               <span>
                 2{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1412,8 +1412,8 @@ const ElementalMonsters = [
             success: (
               <span>
                 2{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1804,8 +1804,8 @@ const ElementalMonsters = [
             damage: "6 lightning damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -1857,8 +1857,8 @@ const ElementalMonsters = [
             damage: "9 lightning damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -2338,8 +2338,8 @@ const ElementalMonsters = [
             damage: "12 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>

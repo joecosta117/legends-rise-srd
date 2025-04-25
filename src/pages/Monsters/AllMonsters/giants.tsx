@@ -272,9 +272,9 @@ const GiantMonsters = [
             name: "Troll Regeneration",
             description: (
               <span>
-                Troll has <ToolTip preset="regeneration" /> 2. When the troll
-                takes fire or toxic damage, then their regeneration doesn't work
-                on their next turn.
+                Troll has <ToolTip preset="regen" /> 2. When the troll takes
+                fire or toxic damage, then their regeneration doesn't work on
+                their next turn.
               </span>
             ),
           },
@@ -508,8 +508,8 @@ const GiantMonsters = [
             damage: "3 cold damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -630,8 +630,8 @@ const GiantMonsters = [
             name: "Troll Regeneration",
             description: (
               <span>
-                Troll minion has <ToolTip preset="regeneration" /> 4. When the
-                troll minion takes fire or toxic damage, then their regeneration
+                Troll minion has <ToolTip preset="regen" /> 4. When the troll
+                minion takes fire or toxic damage, then their regeneration
                 doesn't work on their next turn.
               </span>
             ),
@@ -716,8 +716,8 @@ const GiantMonsters = [
             name: "Troll Regeneration",
             description: (
               <span>
-                Dire trolls has <ToolTip preset="regeneration" /> 4. When the
-                dire trolls takes fire or toxic damage, then their regeneration
+                Dire trolls has <ToolTip preset="regen" /> 4. When the dire
+                trolls takes fire or toxic damage, then their regeneration
                 doesn't work on their next turn.
               </span>
             ),
@@ -840,9 +840,9 @@ const GiantMonsters = [
             name: "Troll Regeneration",
             description: (
               <span>
-                Troll warchief has <ToolTip preset="regeneration" /> 4. When the
-                troll warchief takes fire or toxic damage, then their
-                regeneration doesn't work on their next turn.
+                Troll warchief has <ToolTip preset="regen" /> 4. When the troll
+                warchief takes fire or toxic damage, then their regeneration
+                doesn't work on their next turn.
               </span>
             ),
           },
@@ -1239,8 +1239,8 @@ const GiantMonsters = [
             damage: "6 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1255,8 +1255,8 @@ const GiantMonsters = [
             damage: "4 cold damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1271,8 +1271,8 @@ const GiantMonsters = [
             damage: "6 cold damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>

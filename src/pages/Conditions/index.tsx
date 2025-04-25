@@ -25,6 +25,13 @@ function Conditions() {
       ),
     },
     {
+      title: "Dazed",
+      id: "dazed",
+      content: (
+        <p>On your turn, you lose either a maneuver or action (your choice).</p>
+      ),
+    },
+    {
       title: "Hindered",
       id: "hindered",
       content: (
@@ -106,13 +113,6 @@ function Conditions() {
             </li>
           </ul>
         </div>
-      ),
-    },
-    {
-      title: "Slowed",
-      id: "slowed",
-      content: (
-        <p>On your turn, you lose either a maneuver or action (your choice).</p>
       ),
     },
     {

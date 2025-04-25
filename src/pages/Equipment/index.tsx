@@ -117,7 +117,7 @@ function Equipment() {
             <h3>Armor Training</h3>
             <p>
               Your class determines what armor you're trained in. If you aren’t
-              trained in armor while wearing armor, then you are slowed and
+              trained in armor while wearing armor, then you are dazed and
               dazed.
             </p>
             <h3>Armor Types</h3>
@@ -329,7 +329,7 @@ function Equipment() {
                 <tr>
                   <td>Bows</td>
                   <td>Crossbow, longbow, shortbow</td>
-                  <td>target is slowed (turn ends)</td>
+                  <td>target is dazed (turn ends)</td>
                 </tr>
                 <tr>
                   <td>Blades</td>

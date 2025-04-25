@@ -582,8 +582,8 @@ function Occultist() {
                     strike
                   </Link>{" "}
                   against your hex target, the target becomes{" "}
-                  <Link className="internal-link" to="/conditions#slowed">
-                    slowed
+                  <Link className="internal-link" to="/conditions#dazed">
+                    dazed
                   </Link>{" "}
                   (turn ends).
                 </span>

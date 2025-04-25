@@ -128,13 +128,11 @@ const HazardList = [
             target: <span>1d4+1 enemies within the hazard's zone</span>,
             defense: "MGT",
             damage: "4 arcane damage",
-            critical: (
-              <span>Same as a success, but slowed (overcome ends)</span>
-            ),
+            critical: <span>Same as a success, but dazed (overcome ends)</span>,
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn starts)
               </span>
@@ -368,8 +366,8 @@ const HazardList = [
             damage: "4 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>

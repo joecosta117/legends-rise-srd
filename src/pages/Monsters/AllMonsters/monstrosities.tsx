@@ -69,14 +69,14 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 1 zone</span>,
             defense: "MGT",
-            critical: <span>slowed (overcome ends)</span>,
+            critical: <span>dazed (overcome ends)</span>,
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
-                (turn ends) or slowed (overcome ends) if they're already slowed
-                by this ability or paralyzing glance
+                (turn ends) or dazed (overcome ends) if they're already dazed by
+                this ability or paralyzing glance
               </span>
             ),
             effect: (
@@ -98,8 +98,8 @@ const MonstrosityMonsters = [
             success: (
               <span>
                 {" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -209,14 +209,14 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 1 zone</span>,
             defense: "MGT",
-            critical: <span>slowed (overcome ends)</span>,
+            critical: <span>dazed (overcome ends)</span>,
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
-                (turn ends) or slowed (overcome ends) if they're already slowed
-                by this ability
+                (turn ends) or dazed (overcome ends) if they're already dazed by
+                this ability
               </span>
             ),
             effect: (
@@ -767,9 +767,9 @@ const MonstrosityMonsters = [
             name: "Hydra Regeneration",
             description: (
               <span>
-                Hydra has <ToolTip preset="regeneration" /> 2. When the hydra
-                takes fire or toxic damage, then their regeneration doesn't work
-                on their next turn. When the hydra takes 5 or more damage in a
+                Hydra has <ToolTip preset="regen" /> 2. When the hydra takes
+                fire or toxic damage, then their regeneration doesn't work on
+                their next turn. When the hydra takes 5 or more damage in a
                 single turn, one of its heads dies. When the hydra regenerates,
                 it regrows up to two heads if any heads are dead.
               </span>
@@ -1322,8 +1322,8 @@ const MonstrosityMonsters = [
             damage: "6 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1362,8 +1362,8 @@ const MonstrosityMonsters = [
             damage: "9 arcane",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -1668,8 +1668,8 @@ const MonstrosityMonsters = [
             damage: "9 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -1948,8 +1948,8 @@ const MonstrosityMonsters = [
             damage: "9 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>

@@ -94,8 +94,8 @@ const AberrationMonsters = [
             damage: "4 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -401,8 +401,8 @@ const AberrationMonsters = [
             damage: "6 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -727,8 +727,8 @@ const AberrationMonsters = [
             damage: "6 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -840,8 +840,8 @@ const AberrationMonsters = [
                     <i>4. Freezing Ray:</i> Void seer makes an attack roll
                     against the Evasion of 1 creature within 3 zones, dealing 6
                     cold damage and the target is{" "}
-                    <Link className="internal-link" to="/conditions#slowed">
-                      slowed
+                    <Link className="internal-link" to="/conditions#dazed">
+                      dazed
                     </Link>{" "}
                     (turn ends) on a success or higher.
                   </li>
@@ -1184,8 +1184,8 @@ const AberrationMonsters = [
             damage: "6 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>

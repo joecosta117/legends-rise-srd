@@ -19,8 +19,8 @@ function Armor() {
           Your class determines what armor you're trained in. If you aren’t
           trained in armor while wearing armor, then your speed is halved and
           you're{" "}
-          <Link className="internal-link" to="/conditions#slowed">
-            slowed
+          <Link className="internal-link" to="/conditions#dazed">
+            dazed
           </Link>
           .
         </p>

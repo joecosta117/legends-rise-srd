@@ -274,8 +274,8 @@ const FaerieMonsters = [
             partial: (
               <span>
                 {" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>
               </span>
             ),
@@ -472,8 +472,8 @@ const FaerieMonsters = [
             partial: (
               <span>
                 {" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>
               </span>
             ),
@@ -609,8 +609,8 @@ const FaerieMonsters = [
                   </li>
                   <li>
                     <i>Drowsy:</i> target is{" "}
-                    <Link className="internal-link" to="/rules/combat#slowed">
-                      slowed
+                    <Link className="internal-link" to="/rules/combat#dazed">
+                      dazed
                     </Link>{" "}
                     (overcome ends)
                   </li>
@@ -1100,8 +1100,8 @@ const FaerieMonsters = [
             damage: "6 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>
@@ -1124,8 +1124,8 @@ const FaerieMonsters = [
             damage: "6 cold damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>

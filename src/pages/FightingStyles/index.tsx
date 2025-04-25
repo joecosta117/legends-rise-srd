@@ -671,7 +671,7 @@ function FightingStyles() {
             </div>
           </div>
         )}
-        {selectedStyle === "Great Weapons" && (
+        {selectedStyle === "Great Weapon" && (
           <div>
             <h2>Great Weapon Techniques</h2>
             <p>You wield heavier weapons to great devastation.</p>

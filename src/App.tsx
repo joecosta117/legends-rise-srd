@@ -48,6 +48,7 @@ import EncounterDesign from "./pages/EncounterDesign";
 import BuildingMonsters from "./pages/BuildingMonsters";
 import Hazards from "./pages/Hazards";
 import MythicalTalents from "./pages/MythicalTalents";
+import Vessel from "./pages/Vessel";
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
             <Route path="/classes/summoner" element={<Summoner />} />
             <Route path="/classes/swordmage" element={<Swordmage />} />
             <Route path="/classes/warrior" element={<Warrior />} />
+            <Route path="/classes/vessel" element={<Vessel />} />
             <Route path="/classes/dual-class" element={<DualClass />} />
             <Route path="/theme-talents" element={<ThemeTalents />} />
             <Route path="/fighting-styles" element={<FightingStyles />} />

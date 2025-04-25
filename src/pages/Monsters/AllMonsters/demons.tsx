@@ -199,7 +199,7 @@ const DemonMonsters = [
       <span>
         Sloth demons slowly charge the heroes to use sloth slam and get heroes
         close enough for stench of laziness. If there is a nearby hindered or
-        slowed creature, the sloth demon always uses feed on laziness as their
+        dazed creature, the sloth demon always uses feed on laziness as their
         maneuver.
       </span>
     ),
@@ -227,8 +227,8 @@ const DemonMonsters = [
                 When an enemy becomes engaged to the sloth demon or starts their
                 turn engaged to the sloth demon, the demon makes an attack roll
                 against the creatue's Might. On a success, they are{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn starts).
               </span>
@@ -264,7 +264,7 @@ const DemonMonsters = [
         maneuvers={[
           {
             name: "Feed on Laziness",
-            target: "1 hindered or slowed creatue within 1 zone",
+            target: "1 hindered or dazed creatue within 1 zone",
             effect: (
               <span>
                 Sloth demon gains 2{" "}
@@ -611,8 +611,8 @@ const DemonMonsters = [
             damage: "6 physical damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -1647,8 +1647,8 @@ const DemonMonsters = [
                 (3 toxic damage) for enemies. When a creature takes this damage,
                 the plague demon makes an attack roll against the creature's
                 Might. On a success, the creature is{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>
                 .
               </span>

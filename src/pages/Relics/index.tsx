@@ -1157,8 +1157,8 @@ function Relics() {
                 overcome rolls
               </Link>{" "}
               against ending the
-              <Link className="internal-link" to="/conditions#slowed">
-                slowed
+              <Link className="internal-link" to="/conditions#dazed">
+                dazed
               </Link>{" "}
               or{" "}
               <Link className="internal-link" to="/conditions#seized">

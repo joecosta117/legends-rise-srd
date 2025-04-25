@@ -275,8 +275,8 @@ function Weapons() {
               <td>Claw, Foot, Fist</td>
               <td>
                 target is{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </td>

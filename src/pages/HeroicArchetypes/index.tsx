@@ -537,8 +537,8 @@ function HeroicArchetypes() {
               }
               success={
                 <span>
-                  <Link className="internal-link" to="/conditions#slowed">
-                    slowed
+                  <Link className="internal-link" to="/conditions#dazed">
+                    dazed
                   </Link>{" "}
                   (scene ends) and{" "}
                   <Link className="internal-link" to="/conditions#prone">

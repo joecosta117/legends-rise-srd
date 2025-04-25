@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.vessel {
+  @include page-layout();
+}
+
+.vessel-content {
+  @include class-page-content();
+}

@@ -855,11 +855,11 @@ const ConstructMonsters = [
             target: <span>1d4+1 enemies within the golem's zone</span>,
             defense: "MGT",
             damage: "9 toxic damage",
-            critical: <span>slowed (overcome ends)</span>,
+            critical: <span>dazed (overcome ends)</span>,
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (turn ends)
               </span>

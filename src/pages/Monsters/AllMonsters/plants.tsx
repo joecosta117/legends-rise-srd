@@ -891,11 +891,11 @@ const PlantMonsters = [
                 When a non-plant enemy enters or starts their turn in the green
                 man's zone, the green man makes an attack roll against their
                 Resolve. On a success, the target becomes{" "}
-                <Link className="internal-link" to="/conditions#slowed">
-                  slowed
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
-                (turn ends), or slowed (overcome ends) on a critical success. If
-                the target is already slowed by this trait, then on a success or
+                (turn ends), or dazed (overcome ends) on a critical success. If
+                the target is already dazed by this trait, then on a success or
                 higher, the target becomes an inanimate plant.
               </span>
             ),
