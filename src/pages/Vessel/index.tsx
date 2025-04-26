@@ -199,8 +199,8 @@ function Vessel() {
                         >
                           temporary hit points
                         </Link>{" "}
-                        equal to double your proficiency bonus that can stack
-                        with other temporary hit points
+                        equal to double your proficiency bonus that stack with
+                        other temporary hit points
                       </span>
                     </li>
                   </ul>
