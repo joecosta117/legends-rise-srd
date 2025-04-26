@@ -351,6 +351,33 @@ function Vessel() {
               </li>
             </ul>
 
+            <h2>Divine</h2>
+            <p>
+              Either from a heavenly blessing, demonic possession, or divine
+              heritage, you can transform into an angelic or demonic monster.
+            </p>
+            <h3 className="header">Divine Type (1st-Level Feature)</h3>
+            <p>
+              Choose angel or demon. You gain the following benefit depending on
+              your choice:
+            </p>
+            <ul>
+              <li>
+                <span>
+                  <b>Angel:</b> While in your monstrous form, you gain a fury
+                  point whenever an ally within your zone takes damage.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Demon:</b> While in your monstrous form, you gain a fury
+                  point whenever an enemy within your zone is reduced to 0 hit
+                  points or takes damage from a critically successful attack
+                  roll.
+                </span>
+              </li>
+            </ul>
+
             <h2>Undeath</h2>
             <p>
               Either from a necrotic curse, vampiric blood, or pact with a lich,
@@ -445,6 +472,21 @@ function Vessel() {
             </p>
 
             <h2>Tier 2 Class Talents</h2>
+            <h3 className="header">Divine Fury</h3>
+            <p style={{ marginBottom: 0 }}>
+              <b>Requirement:</b> divine subclass
+            </p>
+            <p>
+              You radiate divine energy as you grow stronger. While you have
+              greater fury, your zone becomes a{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                dangerous zone
+              </Link>{" "}
+              (damage equal to your tier) only for your enemies, and the damage
+              doubles when you reach apex fury. The damage type is either holy
+              (angel) or unholy (demon).
+            </p>
+
             <h3 className="header">Dual Calamity</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> calamity subclass
@@ -496,6 +538,29 @@ function Vessel() {
             </p>
 
             <h2>Tier 3 Class Talents</h2>
+            <h3 className="header">Divine Transformation</h3>
+            <p style={{ marginBottom: 0 }}>
+              <b>Requirement:</b> divine subclass
+            </p>
+            <p>
+              Your angelic or demonic form grows stronger, and you gain the
+              following benefit while in your monstrous form:
+            </p>
+            <ul>
+              <li>
+                <span>
+                  <b>Angel:</b> Allies that start their turn within your zone
+                  gain the benefits of your monstrous regeneration feature.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Demon:</b> When you take damage, hellfire explodes from
+                  your body at all enemies within your zone, dealing unholy
+                  damage equal to your tier.
+                </span>
+              </li>
+            </ul>
 
             <h3 className="header">Greater Calamity</h3>
             <p style={{ marginBottom: 0 }}>
