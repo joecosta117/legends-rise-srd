@@ -69,11 +69,11 @@ function Vessel() {
             <h1>Vessel</h1>
             <p>
               Unlike mundane warriors, vessels possess supernatural power that
-              can transform them into monsters that grow stronger as the fight
-              continues. The source of a vessel's power can be a magical curse,
-              entity trapped in their body, or supernatural lineage. Play a
-              vessel if you want to be a monstrous fighter that is unstoppable
-              on the battlefield while also carrying a dark secret.
+              can transform them into unstoppable monsters. The source of a
+              vessel's power can be a magical curse, entity trapped in their
+              body, or supernatural lineage. Play a vessel if you want to be a
+              monstrous fighter that is a menance on the battlefield, while also
+              carrying a dark secret.
             </p>
 
             <h2>Core Features</h2>
