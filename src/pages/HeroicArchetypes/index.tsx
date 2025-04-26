@@ -43,19 +43,19 @@ function HeroicArchetypes() {
   }
   const dropdownItems = [
     { label: "Ambusher", onClick: handleArchetype },
-    { label: "Arcanist Archetype", onClick: handleArchetype },
+    { label: "Arcanist Multiclass", onClick: handleArchetype },
     { label: "Archer", onClick: handleArchetype },
-    { label: "Bard Archetype", onClick: handleArchetype },
+    { label: "Bard Multiclass", onClick: handleArchetype },
     { label: "Brawler", onClick: handleArchetype },
     { label: "Chronomancer", onClick: handleArchetype },
-    { label: "Cleric Archetype", onClick: handleArchetype },
+    { label: "Cleric Multiclass", onClick: handleArchetype },
     { label: "Combat Medic", onClick: handleArchetype },
-    { label: "Commander Archetype", onClick: handleArchetype },
+    { label: "Commander Multiclass", onClick: handleArchetype },
     { label: "Cryomancer", onClick: handleArchetype },
     { label: "Demonologist", onClick: handleArchetype },
     { label: "Draconic Scion", onClick: handleArchetype },
     { label: "Dreadnought", onClick: handleArchetype },
-    { label: "Druid Archetype", onClick: handleArchetype },
+    { label: "Druid Multiclass", onClick: handleArchetype },
     { label: "Dual Wielder", onClick: handleArchetype },
     { label: "Duelist", onClick: handleArchetype },
     { label: "Enchanter", onClick: handleArchetype },
@@ -66,27 +66,28 @@ function HeroicArchetypes() {
     { label: "Jumper", onClick: handleArchetype },
     { label: "Knave", onClick: handleArchetype },
     { label: "Lifeweaver", onClick: handleArchetype },
-    { label: "Magesmith Archetype", onClick: handleArchetype },
+    { label: "Magesmith Multiclass", onClick: handleArchetype },
     { label: "Mage Knight", onClick: handleArchetype },
     { label: "Necromancer", onClick: handleArchetype },
-    { label: "Occultist Archetype", onClick: handleArchetype },
-    { label: "Paladin Archetype", onClick: handleArchetype },
+    { label: "Occultist Multiclass", onClick: handleArchetype },
+    { label: "Paladin Multiclass", onClick: handleArchetype },
     { label: "Poisoner", onClick: handleArchetype },
     { label: "Protector", onClick: handleArchetype },
     { label: "Psychic", onClick: handleArchetype },
     { label: "Pyromancer", onClick: handleArchetype },
-    { label: "Ranger Archetype", onClick: handleArchetype },
-    { label: "Rogue Archetype", onClick: handleArchetype },
+    { label: "Ranger Multiclass", onClick: handleArchetype },
+    { label: "Rogue Multiclass", onClick: handleArchetype },
     { label: "Seraph", onClick: handleArchetype },
     { label: "Shadowmancer", onClick: handleArchetype },
     { label: "Skirmisher", onClick: handleArchetype },
     { label: "Solarian", onClick: handleArchetype },
     { label: "Stormancer", onClick: handleArchetype },
-    { label: "Summoner Archetype", onClick: handleArchetype },
-    { label: "Swordmage Archetype", onClick: handleArchetype },
+    { label: "Summoner Multiclass", onClick: handleArchetype },
+    { label: "Swordmage Multiclass", onClick: handleArchetype },
     { label: "Thrower", onClick: handleArchetype },
+    { label: "Vessel Multiclass", onClick: handleArchetype },
     { label: "Warder", onClick: handleArchetype },
-    { label: "Warrior Archetype", onClick: handleArchetype },
+    { label: "Warrior Multiclass", onClick: handleArchetype },
     { label: "Wrecker", onClick: handleArchetype },
   ];
   const combatItems = [
@@ -128,19 +129,20 @@ function HeroicArchetypes() {
     { label: "Warder", onClick: handleArchetype },
   ];
   const multiclassItems = [
-    { label: "Arcanist Archetype", onClick: handleArchetype },
-    { label: "Bard Archetype", onClick: handleArchetype },
-    { label: "Cleric Archetype", onClick: handleArchetype },
-    { label: "Commander Archetype", onClick: handleArchetype },
-    { label: "Druid Archetype", onClick: handleArchetype },
-    { label: "Magesmith Archetype", onClick: handleArchetype },
-    { label: "Occultist Archetype", onClick: handleArchetype },
-    { label: "Paladin Archetype", onClick: handleArchetype },
-    { label: "Ranger Archetype", onClick: handleArchetype },
-    { label: "Rogue Archetype", onClick: handleArchetype },
-    { label: "Summoner Archetype", onClick: handleArchetype },
-    { label: "Swordmage Archetype", onClick: handleArchetype },
-    { label: "Warrior Archetype", onClick: handleArchetype },
+    { label: "Arcanist Multiclass", onClick: handleArchetype },
+    { label: "Bard Multiclass", onClick: handleArchetype },
+    { label: "Cleric Multiclass", onClick: handleArchetype },
+    { label: "Commander Multiclass", onClick: handleArchetype },
+    { label: "Druid Multiclass", onClick: handleArchetype },
+    { label: "Magesmith Multiclass", onClick: handleArchetype },
+    { label: "Occultist Multiclass", onClick: handleArchetype },
+    { label: "Paladin Multiclass", onClick: handleArchetype },
+    { label: "Ranger Multiclass", onClick: handleArchetype },
+    { label: "Rogue Multiclass", onClick: handleArchetype },
+    { label: "Summoner Multiclass", onClick: handleArchetype },
+    { label: "Swordmage Multiclass", onClick: handleArchetype },
+    { label: "Vessel Multiclass", onClick: handleArchetype },
+    { label: "Warrior Multiclass", onClick: handleArchetype },
   ];
 
   return (
@@ -349,9 +351,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Arcanist Archetype" && (
+        {selectedArchetype === "Arcanist Multiclass" && (
           <div>
-            <h2>Arcanist Archetype</h2>
+            <h2>Arcanist Multiclass</h2>
             <p>You have begun to learn arcane magic.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>
@@ -452,9 +454,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Bard Archetype" && (
+        {selectedArchetype === "Bard Multiclass" && (
           <div>
-            <h2>Bard Archetype</h2>
+            <h2>Bard Multiclass</h2>
             <p>
               You have begun to learn how to weave together performance with
               magic.
@@ -627,9 +629,9 @@ function HeroicArchetypes() {
             />
           </div>
         )}
-        {selectedArchetype === "Cleric Archetype" && (
+        {selectedArchetype === "Cleric Multiclass" && (
           <div>
-            <h2>Cleric Archetype</h2>
+            <h2>Cleric Multiclass</h2>
             <p>You have begun to receive divine magic.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>You gain the following features from the cleric at 5th level:</p>
@@ -752,9 +754,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Commander Archetype" && (
+        {selectedArchetype === "Commander Multiclass" && (
           <div>
-            <h2>Commander Archetype</h2>
+            <h2>Commander Multiclass</h2>
             <p>You have learned the art of leadership.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>
@@ -1049,9 +1051,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Druid Archetype" && (
+        {selectedArchetype === "Druid Multiclass" && (
           <div>
-            <h2>Druid Archetype</h2>
+            <h2>Druid Multiclass</h2>
             <p>You have begun to learn primordial magic.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>You gain the following features from the druid at 5th level:</p>
@@ -1681,9 +1683,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Magesmith Archetype" && (
+        {selectedArchetype === "Magesmith Multiclass" && (
           <div>
-            <h2>Magesmith Archetype</h2>
+            <h2>Magesmith Multiclass</h2>
             <p>You tinker with magic to engineer magical items.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>
@@ -1814,9 +1816,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Occultist Archetype" && (
+        {selectedArchetype === "Occultist Multiclass" && (
           <div>
-            <h2>Occultist Archetype</h2>
+            <h2>Occultist Multiclass</h2>
             <p>You have begun to tap into dangerous magic.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>
@@ -1845,9 +1847,9 @@ function HeroicArchetypes() {
             <p>You gain the occultist’s disrupting curse feature.</p>
           </div>
         )}
-        {selectedArchetype === "Paladin Archetype" && (
+        {selectedArchetype === "Paladin Multiclass" && (
           <div>
-            <h2>Paladin Archetype</h2>
+            <h2>Paladin Multiclass</h2>
             <p>You have become empowered by the gods for a divine cause.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>
@@ -2149,9 +2151,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Ranger Archetype" && (
+        {selectedArchetype === "Ranger Multiclass" && (
           <div>
-            <h2>Ranger Archetype</h2>
+            <h2>Ranger Multiclass</h2>
             <p>You have learned to hunt monsters and embrace nature.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>You gain the following features from the ranger at 5th level:</p>
@@ -2176,9 +2178,9 @@ function HeroicArchetypes() {
             <p>You gain the ranger’s favored environment feature.</p>
           </div>
         )}
-        {selectedArchetype === "Rogue Archetype" && (
+        {selectedArchetype === "Rogue Multiclass" && (
           <div>
-            <h2>Rogue Archetype</h2>
+            <h2>Rogue Multiclass</h2>
             <p>You have to use cunning on the battlefield.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>You gain the following features from the rogue at 5th level:</p>
@@ -2507,9 +2509,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Summoner Archetype" && (
+        {selectedArchetype === "Summoner Multiclass" && (
           <div>
-            <h2>Summoner Archetype</h2>
+            <h2>Summoner Multiclass</h2>
             <p>
               You have learned to conjure entities from other realms to aid you.
             </p>
@@ -2549,9 +2551,9 @@ function HeroicArchetypes() {
             <p>You gain the summoner’s summons enhancement feature.</p>
           </div>
         )}
-        {selectedArchetype === "Swordmage Archetype" && (
+        {selectedArchetype === "Swordmage Multiclass" && (
           <div>
-            <h2>Swordmage Archetype</h2>
+            <h2>Swordmage Multiclass</h2>
             <p>You have learned to infuse magic into your weapon.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>
@@ -2640,6 +2642,36 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
+        {selectedArchetype === "Vessel Multiclass" && (
+          <div>
+            <h2>Vessel Multiclass</h2>
+            <p>
+              You have acquired a terrifying supernatural power that can
+              transform you into a monster.
+            </p>
+            <h3 className="header">5th-Level Features</h3>
+            <p>You gain the following features from the vessel at 5th level:</p>
+            <ul>
+              <li>
+                <span>Your hit points increase by +12</span>
+              </li>
+              <li>
+                <span>Training in all armor and weapons.</span>
+              </li>
+              <li>
+                <span>You gain the reckless attack feature.</span>
+              </li>
+              <li>
+                <span>You gain the monstrous form feature.</span>
+              </li>
+              <li>
+                <span>You gain the fury feature.</span>
+              </li>
+            </ul>
+            <h3 className="header">7th-Level Features</h3>
+            <p>You gain the vessel's monstrous regeneration feature.</p>
+          </div>
+        )}
         {selectedArchetype === "Warder" && (
           <div>
             <h2>Warder</h2>
@@ -2693,9 +2725,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Warrior Archetype" && (
+        {selectedArchetype === "Warrior Multiclass" && (
           <div>
-            <h2>Warrior Archetype</h2>
+            <h2>Warrior Multiclass</h2>
             <p>You have mastered wielding weapons to deadly effect.</p>
             <h3 className="header">5th-Level Features</h3>
             <p>

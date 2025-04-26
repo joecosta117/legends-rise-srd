@@ -69,11 +69,11 @@ function Vessel() {
             <h1>Vessel</h1>
             <p>
               Unlike mundane warriors, vessels possess supernatural power that
-              can transform them into furious monsters. The source of a vessel's
-              power can be a magical curse, entity trapped in their body, or
-              supernatural lineage. Play a vessel if you want to be a monstrous
-              fighter that is unstoppable on the battlefield while also carrying
-              a dark secret.
+              can transform them into monsters that grow stronger as the fight
+              continues. The source of a vessel's power can be a magical curse,
+              entity trapped in their body, or supernatural lineage. Play a
+              vessel if you want to be a monstrous fighter that is unstoppable
+              on the battlefield while also carrying a dark secret.
             </p>
 
             <h2>Core Features</h2>
@@ -149,7 +149,7 @@ function Vessel() {
             <AbilityCard
               name="Reckless Attack"
               actType="Action"
-              descriptor="You sacrifice your defenses for a powerful blow"
+              descriptor="You sacrifice your defenses for a powerful blow."
               frequency="At-will"
               effect={
                 <span>
@@ -177,7 +177,7 @@ function Vessel() {
               keywords="Magical"
               duration="Scene ends"
               effect={
-                <div>
+                <span>
                   <span>
                     While in this form, you gain the following benefits:
                   </span>
@@ -204,16 +204,16 @@ function Vessel() {
                       </span>
                     </li>
                   </ul>
-                </div>
+                </span>
               }
             />
 
             <h3 className="header">Fury</h3>
             <p>
-              When you take damage or deal damage, you gain 1 fury point that
-              lasts until the scene ends. You can only gain fury in this way
-              once per turn. When your fury points reaches certain levels, you
-              grow stronger:
+              Your power grows as combat continues. When you take damage or deal
+              damage, you gain 1 fury point that lasts until the scene ends. You
+              can only gain fury in this way once per turn. When your fury
+              points reaches certain levels, you grow stronger:
             </p>
             <ul>
               <li>
@@ -265,7 +265,7 @@ function Vessel() {
             <h2>Beast</h2>
             <p>
               Either from a lycan curse, possession by a primal spirit, or
-              demonic curse, you can transform into a terrifying animal hybrid
+              faerie curse, you can transform into a terrifying animal hybrid
               monster.
             </p>
             <h3 className="header">
@@ -273,13 +273,32 @@ function Vessel() {
             </h3>
             <p>
               While in your monstrous form, your natural melee weapon damage
-              increases to 4 and your speeds increase by 1.
+              increases to 4 and you gain one of the following depending on your
+              type of beast:
             </p>
+            <ul>
+              <li>
+                <span>
+                  <b>Air:</b> You gain a fly speed of 1.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Aquatic:</b> You can breath underwater and gain a swim
+                  speed of 1.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Land:</b> Your land speed increases by 1.
+                </span>
+              </li>
+            </ul>
 
             <h2>Calamity</h2>
             <p>
-              Either from a draconic power, affinity to the elemental realms, or
-              giant heritage, you can trasnform into a destructive monster.
+              Either from a draconic gift, affinity to the elemental realms, or
+              giant heritage, you can transform into a destructive monster.
             </p>
             <h3 className="header">Chosen Calamity (1st-Level Feature)</h3>
             <p>
@@ -298,8 +317,7 @@ function Vessel() {
                   </Link>{" "}
                   gained increases to triple your proficiency bonus. On later
                   turns while in your monstrous form, you can use a maneuver to
-                  gain temporary hit points equal to your proficiency
-                  bonus.{" "}
+                  gain temporary hit points equal to your tier.{" "}
                 </span>
               </li>
               <li>
@@ -412,9 +430,12 @@ function Vessel() {
 
             <h3 className="header">Origin Theme</h3>
             <p>
-              You gain the theme associated with your subclass and a theme
-              talent from that theme: nature (beast), nature (calamity), and
-              arcane (undeath).
+              You gain the{" "}
+              <Link className="internal-link" to="/theme-talents">
+                theme
+              </Link>{" "}
+              associated with your subclass and a theme talent from that theme:
+              nature (beast), nature (calamity), and arcane (undeath).
             </p>
 
             <h3 className="header">Rapid Transformation</h3>
@@ -442,8 +463,8 @@ function Vessel() {
 
             <h3 className="header">Monstrous Titan</h3>
             <p>
-              When you use monstrous form, you become large sized, or huge sized
-              at tier 3. While large, you can{" "}
+              When you use monstrous form, you can become large, or huge
+              starting at 8th level. While large, you can{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -475,20 +496,45 @@ function Vessel() {
             </p>
 
             <h2>Tier 3 Class Talents</h2>
-            <h3 className="header">Momentous Fury</h3>
-            <p>
-              When you enter an encounter, your starting fury points equal your
-              momentum.
-            </p>
 
-            <h3 className="header">Undying Monster</h3>
-            <p>
-              While in your monstrous form, you can be{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                defeated
-              </Link>{" "}
-              until the scene ends.
+            <h3 className="header">Greater Calamity</h3>
+            <p style={{ marginBottom: 0 }}>
+              <b>Requirement:</b> calamity subclass
             </p>
+            <p>Depending on your chosen calamity, you gain the following:</p>
+            <ul>
+              <li>
+                <span>
+                  <b>Blizzard:</b> When you gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  from this feature, all allies within your zone also gain
+                  temporary hit points equal to your tier.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Inferno:</b> When enemies take damage from this feature,
+                  they also take ongoing fire damage equal to your tier.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Plague:</b> The penalty from this feature's hindered
+                  condition increases to <Modifier type="mf" count="2" />.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>Storm:</b> Pulled or pushed enemies from this feature are
+                  also knocked prone.
+                </span>
+              </li>
+            </ul>
 
             <h3 className="header">Greater Drain</h3>
             <p style={{ marginBottom: 0 }}>
@@ -521,7 +567,7 @@ function Vessel() {
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
-                  as they cower in fear
+                  (turn ends) as they cower in fear
                 </span>
               </li>
               <li>
@@ -544,24 +590,19 @@ function Vessel() {
               </li>
             </ul>
 
-            <h3 className="header">Swift Interrupt</h3>
+            <h3 className="header">Momentous Fury</h3>
             <p>
-              You gain a second reaction that you can only use to interrupt
-              attack.
+              When you enter an encounter, your starting fury points equal your
+              momentum.
             </p>
 
-            <h3 className="header">Weapon Flexibility</h3>
-            <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> weapon master subclass
-            </p>
+            <h3 className="header">Undying Monster</h3>
             <p>
-              Choose a critical effect from a weapon group. When you apply a
-              critical effect on a{" "}
-              <Link className="internal-link" to="/combat-abilities#strike">
-                strike
-              </Link>
-              , you can choose the weapon’s normal weapon group critical effect
-              or the chosen critical effect.
+              While in your monstrous form, you can't be{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                defeated
+              </Link>{" "}
+              until the scene ends.
             </p>
           </div>
         )}
