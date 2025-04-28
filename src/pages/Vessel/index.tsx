@@ -212,8 +212,8 @@ function Vessel() {
             <p>
               Your power grows as combat continues. When you take damage or deal
               damage, you gain 1 fury point that lasts until the scene ends. You
-              can only gain fury in this way once per turn. When your fury
-              points reaches certain levels, you grow stronger:
+              can only gain up to 1 fury point per turn. When your fury points
+              reaches certain levels, you grow stronger:
             </p>
             <ul>
               <li>
