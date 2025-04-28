@@ -218,13 +218,13 @@ function Vessel() {
             <ul>
               <li>
                 <span>
-                  <b>Greater Fury (5 fury points):</b> You gain{" "}
+                  <b>Greater Fury (4 fury points):</b> You gain{" "}
                   <Modifier type="f" count="1" /> to attack rolls
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Apex Fury (10 fury points):</b> You gain{" "}
+                  <b>Apex Fury (8 fury points):</b> You gain{" "}
                   <Modifier type="f" count="2" /> to attack rolls
                 </span>
               </li>
@@ -412,7 +412,7 @@ function Vessel() {
             <h2>Tier 1 Class Talents</h2>
             <h3 className="header">Accelerated Fury</h3>
             <p>
-              You reach greater fury at 4 fury points, and apex fury at 8 fury
+              You reach greater fury at 3 fury points, and apex fury at 6 fury
               points.
             </p>
 
@@ -617,7 +617,7 @@ function Vessel() {
               equal to your proficiency bonus.
             </p>
 
-            <h3 className="header">Frightening Transformation</h3>
+            <h3 className="header">Frightening Howl</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> beast subclass
             </p>
