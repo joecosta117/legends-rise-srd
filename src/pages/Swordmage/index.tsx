@@ -130,7 +130,10 @@ function Swordmage() {
               <li>
                 <span>
                   <i>Suggestion:</i> You learn the{" "}
-                  <Link className="internal-link" to="/fighting-style#skirmish">
+                  <Link
+                    className="internal-link"
+                    to="/fighting-styles#skirmish"
+                  >
                     skirmish
                   </Link>{" "}
                   fighting style and hit and run technique.

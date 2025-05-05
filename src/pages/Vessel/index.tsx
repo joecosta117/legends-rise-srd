@@ -135,7 +135,7 @@ function Vessel() {
                   <i>Suggestion:</i> You learn the{" "}
                   <Link
                     className="internal-link"
-                    to="/fighting-style#great-weapon"
+                    to="/fighting-styles#great-weapon"
                   >
                     great weapon
                   </Link>{" "}

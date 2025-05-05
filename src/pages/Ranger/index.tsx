@@ -132,7 +132,7 @@ function Ranger() {
               <li>
                 <span>
                   <i>Suggestion:</i> You learn the{" "}
-                  <Link className="internal-link" to="/fighting-style#archery">
+                  <Link className="internal-link" to="/fighting-styles#archery">
                     archery
                   </Link>{" "}
                   fighting style and pinning shot technique.

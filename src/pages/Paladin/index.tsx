@@ -134,7 +134,7 @@ function Paladin() {
                   <i>Suggestion:</i> You learn the{" "}
                   <Link
                     className="internal-link"
-                    to="/fighting-style#protective"
+                    to="/fighting-styles#protective"
                   >
                     protective
                   </Link>{" "}

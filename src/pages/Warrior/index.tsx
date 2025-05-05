@@ -130,7 +130,7 @@ function Warrior() {
               <li>
                 <span>
                   <i>Suggestion:</i> You learn the{" "}
-                  <Link className="internal-link" to="/fighting-style#bastion">
+                  <Link className="internal-link" to="/fighting-styles#bastion">
                     bastion
                   </Link>{" "}
                   fighting style and guard attack technique.

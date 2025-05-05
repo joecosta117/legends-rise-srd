@@ -132,7 +132,7 @@ function Rogue() {
               <li>
                 <span>
                   <i>Suggestion:</i> You learn the{" "}
-                  <Link className="internal-link" to="/fighting-style#lurking">
+                  <Link className="internal-link" to="/fighting-styles#lurking">
                     lurking
                   </Link>{" "}
                   fighting style and unseen attack technique.
