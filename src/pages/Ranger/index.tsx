@@ -123,7 +123,7 @@ function Ranger() {
             <h3 className="header">Fightng Style</h3>
             <p>
               You have mastered a certain way of fighting. Learn a{" "}
-              <Link className="internal-link" to="/fighting-style">
+              <Link className="internal-link" to="/fighting-styles">
                 fighting style
               </Link>{" "}
               .

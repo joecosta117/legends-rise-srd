@@ -734,7 +734,7 @@ function ThemeTalents() {
             downtime
           </Link>
           , when you choose to train as your downtime activity, you can learn a{" "}
-          <Link className="internal-link" to="/fighting-style">
+          <Link className="internal-link" to="/fighting-styles">
             fighting style
           </Link>{" "}
           .

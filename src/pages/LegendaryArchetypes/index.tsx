@@ -248,7 +248,7 @@ function LegendaryArchetypes() {
             <h4 className="header">Training in Violence (8th-Level Feature)</h4>
             <p>
               You learn a{" "}
-              <Link className="internal-link" to="/fighting-style">
+              <Link className="internal-link" to="/fighting-styles">
                 fighting style
               </Link>{" "}
               or technique. When you pick a class talent, you can instead learn
@@ -1072,7 +1072,7 @@ function LegendaryArchetypes() {
             <h5>Martial Hero</h5>
             <p>
               Your hit points increase by +12, and you learn a{" "}
-              <Link className="internal-link" to="/fighting-style">
+              <Link className="internal-link" to="/fighting-styles">
                 fighting style
               </Link>{" "}
               or technique. When you pick a class talent, you can instead learn

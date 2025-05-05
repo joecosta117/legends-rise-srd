@@ -383,7 +383,7 @@ function Commander() {
             <h3 className="header">Expanded Training</h3>
             <p>
               You learn a technique or{" "}
-              <Link className="internal-link" to="/fighting-style">
+              <Link className="internal-link" to="/fighting-styles">
                 fighting style
               </Link>{" "}
               . You can take this class talent multiple times.
