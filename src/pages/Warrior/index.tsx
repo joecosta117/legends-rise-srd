@@ -253,10 +253,7 @@ function Warrior() {
             </p>
 
             <h2>Juggernaut</h2>
-            <p>
-              You rely on your fury and focus in battle to push yourself beyond
-              mortal limits.
-            </p>
+            <p>You are a nearly invincible force on the battlefield.</p>
             <h3 className="header">Unstoppable (1st-Level Feature)</h3>
             <p>
               You gain <Modifier type="f" count="1" /> to{" "}
