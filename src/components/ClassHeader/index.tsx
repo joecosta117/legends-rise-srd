@@ -51,6 +51,10 @@ const ClassHeader = () => {
       </div>
       <div className="divider">|</div>
       <div className="class-tabs__tab" data-selected="false">
+        <Link to="/classes/monsterheart">Monsterheart</Link>
+      </div>
+      <div className="divider">|</div>
+      <div className="class-tabs__tab" data-selected="false">
         <Link to="/classes/occultist">Occultist</Link>
       </div>
       <div className="divider">|</div>
@@ -72,10 +76,6 @@ const ClassHeader = () => {
       <div className="divider">|</div>
       <div className="class-tabs__tab" data-selected="false">
         <Link to="/classes/swordmage">Swordmage</Link>
-      </div>
-      <div className="divider">|</div>
-      <div className="class-tabs__tab" data-selected="false">
-        <Link to="/classes/vessel">Vessel</Link>
       </div>
       <div className="divider">|</div>
       <div className="class-tabs__tab" data-selected="false">

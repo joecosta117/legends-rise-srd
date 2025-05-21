@@ -68,6 +68,7 @@ function HeroicArchetypes() {
     { label: "Lifeweaver", onClick: handleArchetype },
     { label: "Magesmith Multiclass", onClick: handleArchetype },
     { label: "Mage Knight", onClick: handleArchetype },
+    { label: "Monsterheart Multiclass", onClick: handleArchetype },
     { label: "Necromancer", onClick: handleArchetype },
     { label: "Occultist Multiclass", onClick: handleArchetype },
     { label: "Paladin Multiclass", onClick: handleArchetype },
@@ -85,7 +86,7 @@ function HeroicArchetypes() {
     { label: "Summoner Multiclass", onClick: handleArchetype },
     { label: "Swordmage Multiclass", onClick: handleArchetype },
     { label: "Thrower", onClick: handleArchetype },
-    { label: "Vessel Multiclass", onClick: handleArchetype },
+
     { label: "Warder", onClick: handleArchetype },
     { label: "Warrior Multiclass", onClick: handleArchetype },
     { label: "Wrecker", onClick: handleArchetype },
@@ -135,13 +136,14 @@ function HeroicArchetypes() {
     { label: "Commander Multiclass", onClick: handleArchetype },
     { label: "Druid Multiclass", onClick: handleArchetype },
     { label: "Magesmith Multiclass", onClick: handleArchetype },
+    { label: "Monsterheart Multiclass", onClick: handleArchetype },
     { label: "Occultist Multiclass", onClick: handleArchetype },
     { label: "Paladin Multiclass", onClick: handleArchetype },
     { label: "Ranger Multiclass", onClick: handleArchetype },
     { label: "Rogue Multiclass", onClick: handleArchetype },
     { label: "Summoner Multiclass", onClick: handleArchetype },
     { label: "Swordmage Multiclass", onClick: handleArchetype },
-    { label: "Vessel Multiclass", onClick: handleArchetype },
+
     { label: "Warrior Multiclass", onClick: handleArchetype },
   ];
 
@@ -2642,15 +2644,18 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Vessel Multiclass" && (
+        {selectedArchetype === "Monsterheart Multiclass" && (
           <div>
-            <h2>Vessel Multiclass</h2>
+            <h2>Monsterheart Multiclass</h2>
             <p>
               You have acquired a terrifying supernatural power that can
               transform you into a monster.
             </p>
             <h3 className="header">5th-Level Features</h3>
-            <p>You gain the following features from the vessel at 5th level:</p>
+            <p>
+              You gain the following features from the monsterheart at 5th
+              level:
+            </p>
             <ul>
               <li>
                 <span>Your hit points increase by +12</span>
@@ -2669,7 +2674,7 @@ function HeroicArchetypes() {
               </li>
             </ul>
             <h3 className="header">7th-Level Features</h3>
-            <p>You gain the vessel's monstrous regeneration feature.</p>
+            <p>You gain the monsterheart's monstrous regeneration feature.</p>
           </div>
         )}
         {selectedArchetype === "Warder" && (

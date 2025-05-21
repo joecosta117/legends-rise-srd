@@ -237,6 +237,39 @@ function DualClass() {
       ),
     },
     {
+      title: "Monsterheart Dual Class Features",
+      content: (
+        <div>
+          <p>
+            If you choose monsterheart as one of your two classes, then you gain
+            the following features
+          </p>
+          <ul>
+            <li>
+              <span>You gain training in all armor and weapons.</span>
+            </li>
+            <li>
+              <span>
+                Your starting hit points equals 12 and your recoveries equal 6.
+              </span>
+            </li>
+            <li>
+              <span>Your theme is martial.</span>
+            </li>
+            <li>
+              <span>+2 to Evasion or Might</span>
+            </li>
+            <li>
+              <span>You gain the vessel’s reckless attack feature.</span>
+            </li>
+            <li>
+              <span>You gain the vessel’s monstrous form feature.</span>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
       title: "Occultist Dual Class Features",
       content: (
         <div>
@@ -458,39 +491,7 @@ function DualClass() {
         </div>
       ),
     },
-    {
-      title: "Vessel Dual Class Features",
-      content: (
-        <div>
-          <p>
-            If you choose vessel as one of your two classes, then you gain the
-            following features
-          </p>
-          <ul>
-            <li>
-              <span>You gain training in all armor and weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 12 and your recoveries equal 6.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is martial.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion or Might</span>
-            </li>
-            <li>
-              <span>You gain the vessel’s reckless attack feature.</span>
-            </li>
-            <li>
-              <span>You gain the vessel’s monstrous form feature.</span>
-            </li>
-          </ul>
-        </div>
-      ),
-    },
+
     {
       title: "Warrior Dual Class Features",
       content: (

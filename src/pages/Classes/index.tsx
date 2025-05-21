@@ -99,6 +99,17 @@ function Classes() {
               <li>
                 <span>
                   <b>
+                    <Link className="internal-link" to="/classes/monsterheart">
+                      Monsterheart
+                    </Link>
+                    :
+                  </b>{" "}
+                  You become a supernatural monster in combat.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>
                     <Link className="internal-link" to="/classes/occultist">
                       Occultist
                     </Link>
@@ -163,17 +174,7 @@ function Classes() {
                   You blend magic with fighting.
                 </span>
               </li>
-              <li>
-                <span>
-                  <b>
-                    <Link className="internal-link" to="/classes/vessel">
-                      Vessel
-                    </Link>
-                    :
-                  </b>{" "}
-                  You become a supernatural monster in combat.
-                </span>
-              </li>
+
               <li>
                 <span>
                   <b>
