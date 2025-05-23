@@ -445,7 +445,7 @@ function Bard() {
               You learn a battle spell from any{" "}
               <Link className="internal-link" to="/battle-spells">
                 magic tradition
-              </Link>{" "}
+              </Link>
               , even if you don’t know the tradition. You can take this class
               talent multiple times.
             </p>
@@ -478,7 +478,7 @@ function Bard() {
               When you{" "}
               <Link className="internal-link" to="/rules/skills#tempt-fate">
                 tempt fate
-              </Link>{" "}
+              </Link>
               , choose an ally within 1 zone to gain{" "}
               <Link
                 className="internal-link"
@@ -615,7 +615,14 @@ function Bard() {
                 frequency="At-will"
                 keywords="Magical"
                 target="All enemies within your zone"
-                effect="Hindered (turn ends)"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
+                    </Link>{" "}
+                    (turn ends)
+                  </span>
+                }
               />
 
               <AbilityCard
@@ -655,7 +662,18 @@ function Bard() {
                 keywords="Magical"
                 duration="Start of your next turn"
                 target="You and all allies within your zone"
-                effect="Targets gain 1 temporary hit point per your tier"
+                effect={
+                  <span>
+                    Targets gain{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    equal to your tier
+                  </span>
+                }
               />
 
               <AbilityCard

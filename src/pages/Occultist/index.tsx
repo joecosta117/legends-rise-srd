@@ -193,7 +193,7 @@ function Occultist() {
                   , or{" "}
                   <Link className="internal-link" to="/battle-spells#unholy">
                     unholy
-                  </Link>{" "}
+                  </Link>
                   . You learn a battle spell from each chosen tradition.
                 </span>
                 <ul className="secondary-list">
@@ -315,7 +315,7 @@ function Occultist() {
               actType="Action"
               descriptor="You use dark magic to grow and strengthen your familiar to fight alongside you."
               frequency="At-will"
-              keywords="Magical"
+              keywords="Magical, Summon"
               duration="Focus for the scene"
               effect="You spend mana equal to your tier to transform your familiar, which then uses the empowered familiar stat block. When you use this ability and later when you focus on it, your familiar can immediately use a maneuver or action. Your familiar uses your reaction. When your familiar is reduced to 0 hit points, it reduces back to its smaller size and quickly retreats back to your side to hide for the rest of the combat."
             />

@@ -251,9 +251,9 @@ function Vessel() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Monstrous Regeneration</h3>
             <p>
-              Your monstrous powers keep you from dying. When you are in your
-              monstrous form, you have <ToolTip preset="regen" /> equal to your
-              tier.
+              Your monstrous powers keep you from dying. When you have greater
+              fury, you have <ToolTip preset="regen" /> equal to your tier, or
+              equal to your proficiency bonus if you have apex fury.
             </p>
           </div>
         )}
@@ -412,7 +412,7 @@ function Vessel() {
             <h2>Tier 1 Class Talents</h2>
             <h3 className="header">Accelerated Fury</h3>
             <p>
-              You reach greater fury at 3 fury points, and apex fury at 6 fury
+              You reach greater fury at 3 fury points, and apex fury at 7 fury
               points.
             </p>
 

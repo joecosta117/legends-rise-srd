@@ -338,7 +338,7 @@ function Summoner() {
                   , or{" "}
                   <Link className="internal-link" to="/battle-spells#water">
                     water
-                  </Link>{" "}
+                  </Link>
                   .
                 </span>
               </li>
@@ -394,7 +394,7 @@ function Summoner() {
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
-                      </Link>
+                      </Link>{" "}
                       to cold damage equal to your proficiency bonus, and their
                       assault damage deals fire damage. On a critical successful
                       assault from the major summons, the target takes{" "}
@@ -427,7 +427,7 @@ function Summoner() {
                   </li>
                   <li>
                     <span>
-                      <i>Water:</i> Swim speed of 1, can breathe underwater, and
+                      <i>Water:</i> Swim speed of 1, can breathe underwater, and{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
@@ -483,7 +483,7 @@ function Summoner() {
                     to="/battle-spells#protection"
                   >
                     protection
-                  </Link>{" "}
+                  </Link>
                   .
                 </span>
               </li>
@@ -513,7 +513,7 @@ function Summoner() {
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
-                      </Link>
+                      </Link>{" "}
                       to unholy damage equal to your proficiency bonus
                     </span>
                   </li>
@@ -587,7 +587,7 @@ function Summoner() {
                     to="/battle-spells#protection"
                   >
                     protection
-                  </Link>{" "}
+                  </Link>
                   .
                 </span>
               </li>
@@ -656,7 +656,7 @@ function Summoner() {
                   , or{" "}
                   <Link className="internal-link" to="/battle-spells#unholy">
                     unholy
-                  </Link>{" "}
+                  </Link>
                   .
                 </span>
               </li>
@@ -685,8 +685,8 @@ function Summoner() {
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
-                      </Link>
-                      to holu damage equal to your proficiency bonus,
+                      </Link>{" "}
+                      to holy damage equal to your proficiency bonus,
                     </span>
                   </li>
                   <li>
@@ -747,7 +747,7 @@ function Summoner() {
                   , or{" "}
                   <Link className="internal-link" to="/battle-spells#shadow">
                     shadow
-                  </Link>{" "}
+                  </Link>
                   .
                 </span>
               </li>
@@ -914,8 +914,8 @@ function Summoner() {
             <p>
               Your minor and major summons gain an action called far assault
               (keywords: magical, ranged) that targets a creature within 3 zones
-              and deals damage equal to your proficiency bonus of the same
-              damage type of their assault ability.{" "}
+              and deals the same damage and type of damage as their assault
+              ability.
             </p>
 
             <h3 className="header">Special Adaptations</h3>
@@ -978,7 +978,7 @@ function Summoner() {
               <b>Requirement:</b> shadows subclass
             </p>
             <p>
-              When a creature dies within your major summons’ zone, your summons
+              When a creature dies within your major summons’ zone, your summons{" "}
               <ToolTip preset="heals" /> equal to your tier. It can only heal in
               this way once per turn.
             </p>

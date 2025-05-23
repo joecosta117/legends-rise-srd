@@ -369,7 +369,7 @@ export const arcaneSpells = [
       ),
     },
     {
-      title: "Summpon Dragon Spirit (Action)",
+      title: "Summon Dragon Spirit (Action)",
       actType: "Action",
       spell: (
         <div>

@@ -483,7 +483,7 @@ function Arcanist() {
               <Link className="internal-link" to="/combat-abilities#study">
                 study
               </Link>{" "}
-              as a free action, but only once per turn. .
+              as a free action, but only once per turn.
             </p>
 
             <h3 className="header">Arcane Ascension</h3>
