@@ -763,7 +763,7 @@ function Druid() {
             </p>
             <p>
               While you are in primal transformation, you can cast spells, and
-              as a maneuver, you can spend mana equal to your tier to gain
+              as a maneuver, you can spend mana equal to your tier to gain{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#temporary-hit-points"

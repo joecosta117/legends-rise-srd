@@ -178,7 +178,7 @@ function Magesmith() {
                   , or{" "}
                   <Link className="internal-link" to="/battle-spells#war">
                     war
-                  </Link>{" "}
+                  </Link>
                   . You learn a battle spell from your chosen tradition.
                 </span>
                 <ul className="secondary-list">

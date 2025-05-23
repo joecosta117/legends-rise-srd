@@ -408,7 +408,7 @@ function Commander() {
               <Link className="internal-link" to="/combat-abilities#disengage">
                 disengage
               </Link>
-              ,
+              ,{" "}
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>
@@ -426,7 +426,7 @@ function Commander() {
             </p>
             <p>
               At the start of a combat encounter, choose a number of enemies
-              that you can see equal to your tier. Targeted enemies become
+              that you can see equal to your tier. Targeted enemies become{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
