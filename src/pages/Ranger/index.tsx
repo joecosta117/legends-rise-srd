@@ -125,7 +125,7 @@ function Ranger() {
               You have mastered a certain way of fighting. Learn a{" "}
               <Link className="internal-link" to="/fighting-styles">
                 fighting style
-              </Link>{" "}
+              </Link>
               .
             </p>
             <ul>
@@ -465,8 +465,11 @@ function Ranger() {
             <h2>Tier 1 Class Talents</h2>
             <h3 className="header">Expanded Training</h3>
             <p>
-              You learn a technique or fighting style. You can take this class
-              talent multiple times.
+              You learn a technique or{" "}
+              <Link className="internal-link" to="">
+                fighting style
+              </Link>
+              . You can take this class talent multiple times.
             </p>
 
             <h3 className="header">Hunter’s Aim</h3>

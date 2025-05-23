@@ -125,7 +125,7 @@ function Rogue() {
               You have mastered a certain way of fighting. Learn a{" "}
               <Link className="internal-link" to="/fighting-styles">
                 fighting style
-              </Link>{" "}
+              </Link>
               .
             </p>
             <ul>
@@ -342,7 +342,7 @@ function Rogue() {
               You learn a technique or{" "}
               <Link className="internal-link" to="/fighting-styles">
                 fighting style
-              </Link>{" "}
+              </Link>
               . You can take this class talent multiple times.
             </p>
 
