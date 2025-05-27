@@ -36,7 +36,7 @@ const AngelMonsters = [
         role="Artillery"
         speeds="fly 1"
         resistances="holy 2"
-        weaknesses="unholy 2"
+        weaknesses="unholy 1"
         actions={[
           {
             basic: true,
@@ -89,7 +89,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Support"
         resistances="holy 2"
-        weaknesses="unholy 2"
+        weaknesses="unholy 1"
         actions={[
           {
             basic: true,

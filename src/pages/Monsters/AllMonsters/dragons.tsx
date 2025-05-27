@@ -102,7 +102,7 @@ const DragonMonsters = [
         role="Artillery"
         vision="night"
         resistances="fire 2"
-        weaknesses="cold 2"
+        weaknesses="cold 1"
         speeds="fly 1"
         traits={[
           {
@@ -176,7 +176,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="cold 2"
-        weaknesses="fire 2"
+        weaknesses="fire 1"
         speeds="fly 1"
         traits={[
           {
@@ -340,7 +340,7 @@ const DragonMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 2, physical 1"
-        weaknesses="cold 2"
+        weaknesses="cold 1"
         traits={[
           {
             name: "Major Monster",
@@ -430,7 +430,7 @@ const DragonMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 4, physical 2"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         traits={[
           {
             name: "Boss Monster",
@@ -603,7 +603,7 @@ const DragonMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 6, physical 3"
-        weaknesses="cold 6"
+        weaknesses="cold 3"
         traits={[
           {
             name: "Boss Monster",
@@ -785,7 +785,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="cold 2"
-        weaknesses="fire 2"
+        weaknesses="fire 1"
         traits={[
           {
             name: "Major Monster",
@@ -867,7 +867,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="cold 4"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         traits={[
           {
             name: "Boss Monster",
@@ -1021,7 +1021,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="cold 6"
-        weaknesses="fire 6"
+        weaknesses="fire 3"
         traits={[
           {
             name: "Boss Monster",
@@ -2510,7 +2510,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 1, unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         speeds="fly 1"
         traits={[
           {
@@ -2596,7 +2596,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 2, unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         speeds="fly 1"
         traits={[
           {
@@ -2740,7 +2740,7 @@ const DragonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 3, unholy 6"
-        weaknesses="holy 6"
+        weaknesses="holy 3"
         speeds="fly 2"
         traits={[
           {

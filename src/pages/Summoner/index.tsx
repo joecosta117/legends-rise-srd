@@ -395,9 +395,9 @@ function Summoner() {
                       >
                         weakness
                       </Link>{" "}
-                      to cold damage equal to your proficiency bonus, and their
-                      assault damage deals fire damage. On a critical successful
-                      assault from the major summons, the target takes{" "}
+                      to cold damage equal to your tier, and their assault
+                      damage deals fire damage. On a critical successful assault
+                      from the major summons, the target takes{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#ongoing-damage"
@@ -441,7 +441,7 @@ function Summoner() {
                       >
                         weakness
                       </Link>{" "}
-                      to cold damage equal to your proficiency bonus.
+                      to cold damage equal to your tier.
                     </span>
                   </li>
                 </ul>
@@ -514,7 +514,7 @@ function Summoner() {
                       >
                         weakness
                       </Link>{" "}
-                      to unholy damage equal to your proficiency bonus
+                      to unholy damage equal to your tier
                     </span>
                   </li>
                   <li>
@@ -686,7 +686,7 @@ function Summoner() {
                       >
                         weakness
                       </Link>{" "}
-                      to holy damage equal to your proficiency bonus,
+                      to holy damage equal to your tier,
                     </span>
                   </li>
                   <li>

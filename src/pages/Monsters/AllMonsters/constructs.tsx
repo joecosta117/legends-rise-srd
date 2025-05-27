@@ -410,7 +410,7 @@ const ConstructMonsters = [
         threat="Boss"
         role="Bruiser"
         resistances="arcane 1, lightning 2"
-        weaknesses="fire 2"
+        weaknesses="fire 1"
         traits={[
           {
             name: "Boss Monster",
@@ -805,7 +805,7 @@ const ConstructMonsters = [
         threat="Major"
         role="Tank"
         resistances="arcane 3, fire 6, physical 6"
-        weaknesses="lightning 6"
+        weaknesses="lightning 3"
         traits={[
           {
             name: "Major Monster",

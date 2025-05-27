@@ -262,7 +262,7 @@ const GiantMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        weaknesses="fire 2, toxic 2"
+        weaknesses="fire 1, toxic 1"
         traits={[
           {
             name: "Major Monster",
@@ -443,7 +443,7 @@ const GiantMonsters = [
         role="Disabler"
         vision="night"
         resistances="unholy 1"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         traits={[
           {
             name: "Boss Monster",
@@ -624,7 +624,7 @@ const GiantMonsters = [
         threat="Minion"
         role=""
         vision="night"
-        weaknesses="fire 4, toxic 4"
+        weaknesses="fire 2, toxic 2"
         traits={[
           {
             name: "Troll Regeneration",
@@ -706,7 +706,7 @@ const GiantMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        weaknesses="fire 4, toxic 4"
+        weaknesses="fire 2, toxic 2"
         traits={[
           {
             name: "Major Monster",
@@ -830,7 +830,7 @@ const GiantMonsters = [
         threat="Major"
         role="Support"
         vision="night"
-        weaknesses="fire 4, toxic 4"
+        weaknesses="fire 2, toxic 2"
         traits={[
           {
             name: "Major Monster",
@@ -946,7 +946,7 @@ const GiantMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="fire 4"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         actions={[
           {
             basic: true,
@@ -1031,7 +1031,7 @@ const GiantMonsters = [
         threat="Standard"
         role="Artillery"
         resistances="fire 4"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         actions={[
           {
             basic: true,
@@ -1128,7 +1128,7 @@ const GiantMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="cold 4"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         actions={[
           {
             basic: true,
@@ -1220,7 +1220,7 @@ const GiantMonsters = [
         threat="Standard"
         role="Disabler"
         resistances="cold 4"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         actions={[
           {
             basic: true,

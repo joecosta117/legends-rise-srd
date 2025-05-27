@@ -1063,7 +1063,7 @@ const FaerieMonsters = [
         role="Artillery"
         vision="night"
         resistances="cold 4"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         traits={[
           {
             name: "Major Monster",

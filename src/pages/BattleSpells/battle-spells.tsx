@@ -731,7 +731,7 @@ export const deathSpells = [
             res="8 + double ST"
             pb="double ST"
             resistances="necrotic ST, physical ST (ghost only)"
-            weaknesses="holy double ST"
+            weaknesses="holy ST"
             summons
             accordion
             traits={[
@@ -911,7 +911,7 @@ export const deathSpells = [
             pb="double ST"
             speeds="other speeds depending on the original target"
             resistances="necrotic ST"
-            weaknesses="holy double ST"
+            weaknesses="holy ST"
             summons
             accordion
             actions={[
@@ -2009,7 +2009,7 @@ export const fireSpells = [
             res="8 + PB"
             pb="double ST"
             resistances="fire double ST"
-            weaknesses="cold double ST"
+            weaknesses="cold ST"
             summons
             accordion
             actions={[
@@ -2508,7 +2508,7 @@ export const holySpells = [
             pb="double ST"
             speeds="fly 1"
             resistances="holy ST"
-            weaknesses="unholy double ST"
+            weaknesses="unholy ST"
             summons
             accordion
             traits={[
@@ -2839,7 +2839,7 @@ export const iceSpells = [
             res="8 + PB"
             pb="double ST"
             resistances="cold double ST"
-            weaknesses="fire double ST"
+            weaknesses="fire ST"
             summons
             accordion
             actions={[
@@ -4422,7 +4422,7 @@ export const shadowSpells = [
             res="8 + PB"
             pb="double ST"
             resistances="necrotic ST"
-            weaknesses="holy double ST"
+            weaknesses="holy ST"
             vision="night"
             summons
             accordion
@@ -5577,7 +5577,7 @@ export const unholySpells = [
             pb="double ST"
             vision="night"
             resistances="unholy ST"
-            weaknesses="holy double ST"
+            weaknesses="holy ST"
             summons
             accordion
             actions={[
@@ -6123,7 +6123,7 @@ export const waterSpells = [
             res="8 + PB"
             pb="double ST"
             resistances="fire ST"
-            weaknesses="cold double ST"
+            weaknesses="cold ST"
             speeds="swim 1"
             summons
             accordion

@@ -34,7 +34,7 @@ const DemonMonsters = [
         role="Skirmisher"
         vision="night"
         resistances="unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         actions={[
           {
             basic: true,
@@ -99,7 +99,7 @@ const DemonMonsters = [
         threat="Minion"
         vision="night"
         resistances="unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         actions={[
           {
             basic: true,
@@ -157,7 +157,7 @@ const DemonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 1, unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         actions={[
           {
             basic: true,
@@ -217,7 +217,7 @@ const DemonMonsters = [
         role="Disabler"
         vision="night"
         resistances="unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         speeds="land 0"
         traits={[
           {
@@ -315,7 +315,7 @@ const DemonMonsters = [
         role="Skirmisher"
         vision="night"
         resistances="psychic 1, unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         traits={[
           {
             name: "Boss Monster",
@@ -465,7 +465,7 @@ const DemonMonsters = [
         role="Disabler"
         vision="night"
         resistances="unholy 2"
-        weaknesses="holy 2"
+        weaknesses="holy 1"
         speeds="fly 1"
         traits={[
           {
@@ -576,7 +576,7 @@ const DemonMonsters = [
         role="Disabler"
         vision="night"
         resistances="unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         speeds="climb 1"
         traits={[
           {
@@ -711,7 +711,7 @@ const DemonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         traits={[
           {
             name: "Treasure Sense",
@@ -798,7 +798,7 @@ const DemonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         traits={[
           {
             name: "Major Monster",
@@ -891,7 +891,7 @@ const DemonMonsters = [
         role="Tank"
         vision="night"
         resistances="physical 2, unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         traits={[
           {
             name: "Prideful Aura",
@@ -992,7 +992,7 @@ const DemonMonsters = [
         role="Skirmisher"
         vision="night"
         resistances="unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         traits={[
           {
             name: "Shapechanger",
@@ -1091,7 +1091,7 @@ const DemonMonsters = [
         threat="Minion"
         vision="night"
         resistances="fire 2, unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         traits={[
           {
             name: "Infernal Death",
@@ -1158,7 +1158,7 @@ const DemonMonsters = [
         role="Support"
         vision="night"
         resistances="unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         speeds="fly 1"
         traits={[
           {
@@ -1243,7 +1243,7 @@ const DemonMonsters = [
         threat="Minion"
         vision="night"
         resistances="unholy 4"
-        weaknesses="holy 4"
+        weaknesses="holy 2"
         traits={[
           {
             name: "Infernal Death",
@@ -1310,7 +1310,7 @@ const DemonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 6, unholy 6"
-        weaknesses="cold 6, holy 6"
+        weaknesses="cold 3, holy 3"
         speeds="fly 1"
         traits={[
           {
@@ -1431,7 +1431,7 @@ const DemonMonsters = [
         role="Tank"
         vision="night"
         resistances="physical 3, unholy 6"
-        weaknesses="holy 6"
+        weaknesses="holy 3"
         actions={[
           {
             basic: true,
@@ -1529,7 +1529,7 @@ const DemonMonsters = [
         role="Skirmisher"
         vision="night"
         resistances="necrotic 3, unholy 6"
-        weaknesses="holy 6"
+        weaknesses="holy 3"
         speeds="fly 2"
         traits={[
           {
@@ -1633,7 +1633,7 @@ const DemonMonsters = [
         role="Disabler"
         vision="night"
         resistances="toxic 3, unholy 6"
-        weaknesses="holy 6"
+        weaknesses="holy 3"
         speeds="fly 1"
         traits={[
           {
@@ -1752,7 +1752,7 @@ const DemonMonsters = [
         role="Artillery"
         vision="night"
         resistances="fire 6, unholy 6"
-        weaknesses="holy 6"
+        weaknesses="holy 3"
         speeds="fly 1"
         traits={[
           {
@@ -1933,7 +1933,7 @@ const DemonMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 6, unholy 6"
-        weaknesses="cold 6, holy 6"
+        weaknesses="cold 3, holy 3"
         speeds="fly 1"
         traits={[
           {

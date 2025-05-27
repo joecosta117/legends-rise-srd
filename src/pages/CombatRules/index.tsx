@@ -585,14 +585,14 @@ function CombatRules() {
         <p>
           When a creature has <b>weakness</b> to a damage type, then any damage
           taken from the specified type is increased by a specified number. For
-          example, if a demon has holy weakness 2, and they take 3 holy damage,
-          their weakness increases the damage to 5.
+          example, if a demon has holy weakness 1, and they take 3 holy damage,
+          their weakness increases the damage to 4.
         </p>
         <p>
           Resistances and weaknesses are calculated after damage is reduced by
           other means such as from magic.
         </p>
-        <h3 className="header" id="ongoing-damage">
+        <h3 className="header" id="direct-damage">
           Direct Damage
         </h3>
         <p>

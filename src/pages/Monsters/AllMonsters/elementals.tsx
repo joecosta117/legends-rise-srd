@@ -35,7 +35,7 @@ const ElementalMonsters = [
           {
             name: "Elemental Type",
             description:
-              "Each elemental sprite comes from one of the five elemental realms: air (lightning, fire), earth (physical), fire (fire, cold), ice (cold, fire), or water (fire, cold). The elemental minion has resistance 2 to their realm's first listed damage type (1 for physical damage) and weakness 2 to the second damage type listed. Water elemental sprites also gain a swim speed 1 and can breath underwater",
+              "Each elemental sprite comes from one of the five elemental realms: air (lightning, fire), earth (physical), fire (fire, cold), ice (cold, fire), or water (fire, cold). The elemental minion has resistance 2 to their realm's first listed damage type (1 for physical damage) and weakness 1 to the second damage type listed. Water elemental sprites also gain a swim speed 1 and can breath underwater",
           },
         ]}
         actions={[
@@ -100,7 +100,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Artillery"
         resistances="lightning 1"
-        weaknesses="fire 2"
+        weaknesses="fire 1"
         actions={[
           {
             basic: true,
@@ -237,7 +237,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Skirmisher"
         resistances="fire 2"
-        weaknesses="cold 2"
+        weaknesses="cold 1"
         actions={[
           {
             basic: true,
@@ -313,7 +313,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Disabler"
         resistances="cold 2"
-        weaknesses="fire 2"
+        weaknesses="fire 1"
         traits={[
           {
             name: "Freezing Aura",
@@ -401,7 +401,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="fire 1"
-        weaknesses="cold 2"
+        weaknesses="cold 1"
         traits={[
           {
             name: "Aquatic",
@@ -468,7 +468,7 @@ const ElementalMonsters = [
           {
             name: "Elemental Type",
             description:
-              "Each elemental minion comes from one of the five elemental realms: air (lightning, fire), earth (physical), fire (fire, cold), ice (cold, fire), or water (fire, cold). The elemental minion has resistance 4 to their realm's first listed damage type (2 for physical damage) and weakness 4 to the second damage type listed. Air elemental minons have a fly speed 1, water elemental minions have a swim speed 1 and can breath underwater, and earth elemental minions have a burrow speed 1.",
+              "Each elemental minion comes from one of the five elemental realms: air (lightning, fire), earth (physical), fire (fire, cold), ice (cold, fire), or water (fire, cold). The elemental minion has resistance 4 to their realm's first listed damage type (2 for physical damage) and weakness 2 to the second damage type listed. Air elemental minons have a fly speed 1, water elemental minions have a swim speed 1 and can breath underwater, and earth elemental minions have a burrow speed 1.",
           },
         ]}
         actions={[
@@ -533,7 +533,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Artillery"
         resistances="lightning 4"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         actions={[
           {
             basic: true,
@@ -709,7 +709,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Skirmisher"
         resistances="fire 4"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         traits={[
           {
             name: "Explosive Flames",
@@ -789,7 +789,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Disabler"
         resistances="cold 4"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         traits={[
           {
             name: "Freezing Aura",
@@ -895,7 +895,7 @@ const ElementalMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="fire 2"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         traits={[
           {
             name: "Aquatic",
@@ -971,7 +971,7 @@ const ElementalMonsters = [
           {
             name: "Elemental Type",
             description:
-              "Each elemental minion comes from one of the five elemental realms: air (lightning, fire), earth (physical), fire (fire, cold), ice (cold, fire), or water (fire, cold). The elemental minion has resistance 6 to their realm's first listed damage type (3 for physical damage) and weakness 6 to the second damage type listed. Air elemental minons have a fly speed 1, water elemental minions have a swim speed 1 and can breath underwater, and earth elemental minions have a burrow speed 1.",
+              "Each elemental minion comes from one of the five elemental realms: air (lightning, fire), earth (physical), fire (fire, cold), ice (cold, fire), or water (fire, cold). The elemental minion has resistance 6 to their realm's first listed damage type (3 for physical damage) and weakness 3 to the second damage type listed. Air elemental minons have a fly speed 1, water elemental minions have a swim speed 1 and can breath underwater, and earth elemental minions have a burrow speed 1.",
           },
           {
             name: "Elemental Aura",
@@ -1049,7 +1049,7 @@ const ElementalMonsters = [
         threat="Major"
         role="Skirmisher"
         resistances="lightning 2"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         traits={[
           {
             name: "Major Monster",
@@ -1265,7 +1265,7 @@ const ElementalMonsters = [
         threat="Major"
         role="Artillery"
         resistances="fire 4"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         traits={[
           {
             name: "Major Monster",
@@ -1369,7 +1369,7 @@ const ElementalMonsters = [
         threat="Major"
         role="Tank"
         resistances="cold 4, physical 2"
-        weaknesses="fire 4"
+        weaknesses="fire 2"
         traits={[
           {
             name: "Major Monster",
@@ -1470,7 +1470,7 @@ const ElementalMonsters = [
         threat="Major"
         role="Support"
         resistances="fire 2"
-        weaknesses="cold 4"
+        weaknesses="cold 2"
         traits={[
           {
             name: "Major Monster",
@@ -1565,7 +1565,7 @@ const ElementalMonsters = [
         threat="Boss"
         role="Artillery"
         resistances="fire 6"
-        weaknesses="cold 6"
+        weaknesses="cold 3"
         traits={[
           {
             name: "Boss Monster",
@@ -1742,7 +1742,7 @@ const ElementalMonsters = [
         threat="Boss"
         role="Disabler"
         resistances="lighting 6"
-        weaknesses="fire 6"
+        weaknesses="fire 3"
         traits={[
           {
             name: "Boss Monster",
@@ -2121,7 +2121,7 @@ const ElementalMonsters = [
         threat="Boss"
         role="Bruiser"
         resistances="fire 3"
-        weaknesses="cold 6"
+        weaknesses="cold 3"
         traits={[
           {
             name: "Boss Monster",
@@ -2292,7 +2292,7 @@ const ElementalMonsters = [
         threat="Boss"
         role="Bruiser"
         resistances="cold 6"
-        weaknesses="fire 6"
+        weaknesses="fire 3"
         traits={[
           {
             name: "Boss Monster",

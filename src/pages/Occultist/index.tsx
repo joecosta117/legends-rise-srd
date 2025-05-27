@@ -328,7 +328,7 @@ function Occultist() {
               res="8 + PB"
               pb="PB"
               resistances="unholy tier (fiend only), necrotic tier (undead only), psychic tier (aberration only)"
-              weaknesses="holy PB (fiend and undead only)"
+              weaknesses="holy tier (fiend and undead only)"
               traits={[
                 {
                   name: "Hex Challenger",
