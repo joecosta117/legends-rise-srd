@@ -147,7 +147,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Skirmisher"
         resistances="holy 2"
-        weaknesses="unholy 2"
+        weaknesses="unholy 1"
         speeds="fly 2"
         actions={[
           {
@@ -198,7 +198,7 @@ const AngelMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 1, physical 1, holy 2"
-        weaknesses="unholy 2"
+        weaknesses="unholy 1"
         speeds="fly 1"
         traits={[
           {
@@ -293,7 +293,7 @@ const AngelMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 2, physical 2, holy 4"
-        weaknesses="unholy 4"
+        weaknesses="unholy 1"
         speeds="fly 1"
         traits={[
           {
@@ -463,7 +463,7 @@ const AngelMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 3, physical 3, holy 6"
-        weaknesses="unholy 6"
+        weaknesses="unholy 3"
         speeds="fly 2"
         traits={[
           {
@@ -635,7 +635,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Tank"
         resistances="holy 4, physical 2"
-        weaknesses="unholy 4"
+        weaknesses="unholy 1"
         speeds="fly 1"
         actions={[
           {
@@ -711,7 +711,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="holy 4"
-        weaknesses="unholy 4"
+        weaknesses="unholy 1"
         speeds="fly 1"
         actions={[
           {
@@ -803,7 +803,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Disabler"
         resistances="holy 4"
-        weaknesses="unholy 4"
+        weaknesses="unholy 1"
         speeds="fly 1"
         actions={[
           {
@@ -903,7 +903,7 @@ const AngelMonsters = [
         threat="Minion"
         role=""
         resistances="holy 6, physical 3"
-        weaknesses="unholy 6"
+        weaknesses="unholy 3"
         speeds="fly 1"
         actions={[
           {
@@ -979,7 +979,7 @@ const AngelMonsters = [
         role="Bruiser"
         vision="night"
         resistances="fire 3, holy 6, physical 3"
-        weaknesses="unholy 6"
+        weaknesses="unholy 3"
         speeds="fly 1"
         traits={[
           {
