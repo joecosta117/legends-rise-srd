@@ -293,7 +293,7 @@ const AngelMonsters = [
         role="Tank"
         vision="night"
         resistances="fire 2, physical 2, holy 4"
-        weaknesses="unholy 1"
+        weaknesses="unholy 2"
         speeds="fly 1"
         traits={[
           {
@@ -635,7 +635,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Tank"
         resistances="holy 4, physical 2"
-        weaknesses="unholy 1"
+        weaknesses="unholy 2"
         speeds="fly 1"
         actions={[
           {
@@ -711,7 +711,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="holy 4"
-        weaknesses="unholy 1"
+        weaknesses="unholy 2"
         speeds="fly 1"
         actions={[
           {
@@ -803,7 +803,7 @@ const AngelMonsters = [
         threat="Standard"
         role="Disabler"
         resistances="holy 4"
-        weaknesses="unholy 1"
+        weaknesses="unholy 2"
         speeds="fly 1"
         actions={[
           {
