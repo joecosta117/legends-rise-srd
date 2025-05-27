@@ -592,6 +592,14 @@ function CombatRules() {
           Resistances and weaknesses are calculated after damage is reduced by
           other means such as from magic.
         </p>
+        <h3 className="header" id="ongoing-damage">
+          Direct Damage
+        </h3>
+        <p>
+          Certain abilities deal <b>direct damage</b>, which ignores
+          resistances, immunities, temporary hit points, and any other means of
+          reducing damage.{" "}
+        </p>
         <h3 className="header" id="shaken">
           Shaken
         </h3>
