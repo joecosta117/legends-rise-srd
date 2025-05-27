@@ -136,9 +136,9 @@ const FaerieMonsters = [
               <span>
                 Boss monster's hit points equal the listed total multiplied by
                 the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take damage equal
-                to their proficiency bonus (this damage can't be reduced in
-                anyway) to end one condition affecting them.
+                At the end of a boss monster's turn, they can take direct damage
+                equal to their proficiency bonus to end one condition affecting
+                them.
               </span>
             ),
           },
@@ -320,9 +320,9 @@ const FaerieMonsters = [
               <span>
                 Boss monster's hit points equal the listed total multiplied by
                 the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take damage equal
-                to their proficiency bonus (this damage can't be reduced in
-                anyway) to end one condition affecting them.
+                At the end of a boss monster's turn, they can take direct damage
+                equal to their proficiency bonus to end one condition affecting
+                them.
               </span>
             ),
           },
@@ -789,9 +789,9 @@ const FaerieMonsters = [
               <span>
                 Boss monster's hit points equal the listed total multiplied by
                 the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take damage equal
-                to their proficiency bonus (this damage can't be reduced in
-                anyway) to end one condition affecting them.
+                At the end of a boss monster's turn, they can take direct damage
+                equal to their proficiency bonus to end one condition affecting
+                them.
               </span>
             ),
           },

@@ -544,9 +544,9 @@ function Occultist() {
               <b>Requirement:</b> warlock subclass
             </p>
             <p>
-              When you cast a spell, you can take damage equal to your{" "}
+              When you cast a spell, you can take direct damage equal to your{" "}
               <ToolTip preset="shakenVal" /> to increase the spell’s tier by
-              one. This damage taken can’t be reduced in any way.
+              one.
             </p>
 
             <h2>Tier 3 Class Talents</h2>
