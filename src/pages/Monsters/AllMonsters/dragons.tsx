@@ -3398,8 +3398,8 @@ const DragonMonsters = [
             trigger: (
               <span>
                 The dragon ends its turn with{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
-                  concealment or cover
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>
               </span>
             ),
@@ -3525,8 +3525,8 @@ const DragonMonsters = [
             trigger: (
               <span>
                 The dragon ends its turn with{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
-                  concealment or cover
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>
               </span>
             ),
@@ -3717,8 +3717,8 @@ const DragonMonsters = [
             trigger: (
               <span>
                 The dragon ends its turn with{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
-                  concealment or cover
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>
               </span>
             ),

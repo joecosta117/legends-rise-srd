@@ -133,9 +133,9 @@ function Adventuring() {
           <li>
             <span>
               <b>Darkness:</b> There is no light. Creatures without night vision
-              are blinded, and treat other creatures as having{" "}
-              <Link className="internal-link" to="/rules/combat#stealth">
-                concealment
+              are blinded, and treat other creatures as being{" "}
+              <Link className="internal-link" to="/rules/combat#hidden">
+                hidden
               </Link>
             </span>
           </li>
@@ -168,11 +168,7 @@ function Adventuring() {
           <li>
             <span>
               <b>Blind Vision:</b> You can sense your environment perfectly
-              without sight and ignore penalties from{" "}
-              <Link className="internal-link" to="/rules/combat#stealth">
-                concealment
-              </Link>
-              .
+              without sight.
             </span>
           </li>
         </ul>

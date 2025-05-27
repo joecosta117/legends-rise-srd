@@ -628,7 +628,7 @@ function Ranger() {
               You are supernaturally aware of the target of your mark prey. You
               always know their location, even if they’re{" "}
               <Link className="internal-link" to="/rules/combat#stealth">
-                hidden, have concealment, or undiscovered.
+                hidden or have cover.
               </Link>
             </p>
 

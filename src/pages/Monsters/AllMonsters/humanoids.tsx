@@ -2865,8 +2865,8 @@ const HumanoidMonsters = [
                   move
                 </Link>{" "}
                 without triggering reactions, and if they have{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
-                  cover or concealment
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>
                 , then they can{" "}
                 <Link className="internal-link" to="/combat-abilities#hide">

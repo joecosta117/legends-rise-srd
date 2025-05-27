@@ -85,7 +85,7 @@ function CombatRules() {
           <li>
             <a href="#stealth">
               <span>
-                <b>Concealment, Cover, and Stealth</b>
+                <b>Cover and Stealth</b>
               </span>
             </a>
           </li>
@@ -843,65 +843,54 @@ function CombatRules() {
           </li>
         </ul>
 
-        <h2 id="stealth">Concealment, Cover, and Stealth</h2>
+        <h2 id="stealth">Cover and Stealth</h2>
         <p>
           Depending on the battlefield, creatures might try hiding or using the
           terrain to gain cover.
-        </p>
-        <h3 className="header" id="concealment">
-          Concealment
-        </h3>
-        <p>
-          A creature obscured by darkness or thick fog has <b>concealment</b>.
-          Creatures take <Modifier type="mf" count="1" /> on rolls that require
-          sight against a concealed target, while the concealed creature gains{" "}
-          <Modifier type="f" count="1" /> on rolls against creatures they're
-          concealed from.
-        </p>
-        <h4 className="header">Blinded</h4>
-        <p>
-          Creatures blinded by magic or unable to see treat other creatures as
-          having concealment.
-        </p>
-        <h4 className="header">Invisibility</h4>
-        <p>
-          Invisible creatures always have concealment to creatures that can't
-          see through invisibility.
         </p>
         <h3 className="header" id="cover">
           Cover
         </h3>
         <p>
-          A creature blocked by an obstacle or other people has <b>cover</b>.
-          Creatures take <Modifier type="mf" count="1" /> on rolls that require
-          sight against a covered target.
+          A creature blocked by an obstacle or obscured by environmental effects
+          like thick fog has <b>cover</b>. Creatures take{" "}
+          <Modifier type="mf" count="1" /> on rolls that require sight against a
+          covered target.
         </p>
         <h3 className="header" id="hidden">
-          Stealth
+          Stealth and Hiding
         </h3>
         <p>
-          Sometimes in or out of combat, creatures might attempt to sneak to go
-          unnoticed. You can become <b>hidden</b> if you use the{" "}
+          Creatures might attempt to sneak to go unnoticed. You can become{" "}
+          <b>hidden</b> if you use the{" "}
           <Link className="internal-link" to="/combat-abilities#hide">
             hide
           </Link>{" "}
-          maneuver while having cover or concealment. While hidden, you can't be
-          targeted by hostile abilities, except ones that affect a zone. You
-          also have <Modifier type="f" count="1" /> on rolls against creatures
-          that you are hidden from. You become visible if you use a hostile
-          ability, your concealment ends, your cover disappears, or you are
-          spotted.
+          maneuver while having cover.
+        </p>
+        <p>
+          While hidden, you gain a <Modifier type="f" count="1" /> on rolls
+          against creatures that you are hidden from, but that you can also see.
+          You become visible if you use a hostile ability, your cover
+          disappears, or you are spotted.
         </p>
         <h4 className="header">Spotting Hidden Creatures</h4>
         <p>
           A creature can attempt to discover nearby hidden creatures by using a
-          maneuver to make a{" "}
+          maneuver to succeed on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
           with the skill tier being the tier of the hidden creature. Once a
           hidden creature is spotted, they are no longer hidden as the spotter
           usually informs their allies of the sneaking enemy.
+        </p>
+        <h4 className="header">Blinded</h4>
+        <p>Creatures unable to see treat other creatures as hidden.</p>
+        <h4 className="header">Invisibility</h4>
+        <p>
+          Invisible creatures always are hidden to creatures that can't see
+          through invisibility.
         </p>
 
         <h2 id="mount">Mounted Combat</h2>

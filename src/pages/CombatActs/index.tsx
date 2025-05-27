@@ -306,8 +306,8 @@ function CombatActs() {
             requirement={
               <span>
                 You have{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
-                  cover or concealment
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>
               </span>
             }

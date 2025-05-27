@@ -422,8 +422,8 @@ function HeroicArchetypes() {
                     strike
                   </Link>{" "}
                   with a ranged weapon, you ignore penalties from{" "}
-                  <Link className="internal-link" to="/rules/combat#stealth">
-                    cover or concealment
+                  <Link className="internal-link" to="/rules/combat#cover">
+                    cover
                   </Link>
                 </span>
               </li>
@@ -2294,8 +2294,8 @@ function HeroicArchetypes() {
             <p>
               You are sheltered by shadows. You gain <ToolTip preset="night" />{" "}
               and can also see through magical darkness. While in{" "}
-              <Link className="internal-link" to="/rules/combat#stealth">
-                concealment
+              <Link className="internal-link" to="/rules/combat#cover">
+                cover
               </Link>{" "}
               or in darkness, you gain <Modifier type="f" count="1" /> to{" "}
               <Link className="internal-link" to="/rules/combat#overcome">

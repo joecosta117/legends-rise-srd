@@ -787,11 +787,8 @@ function Summoner() {
                   <li>
                     <span>
                       While having{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#stealth"
-                      >
-                        concealment
+                      <Link className="internal-link" to="/rules/combat#cover">
+                        cover
                       </Link>
                       , the penalty to target the summons increases to{" "}
                       <Modifier type="mf" count="2" />

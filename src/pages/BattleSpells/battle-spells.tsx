@@ -4558,8 +4558,8 @@ export const shadowSpells = [
               <span>
                 Targeted zones become dangerous zones (1 necrotic damage per
                 spell tier) that only hurts enemies. You have{" "}
-                <Link className="internal-link" to="/rules/combat#stealth">
-                  concealment
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>{" "}
                 in the targeted zones as you are nearly indistinguishable from
                 your shadows.
@@ -4582,7 +4582,7 @@ export const shadowSpells = [
             duration="Scene ends"
             keywords="Magical"
             target="1 creature (+1 creatures per higher spell tier) within your zone"
-            effect="Target gains concealment. When a creature damages the target with a melee ability, they take 2 necrotic damage per spell tier."
+            effect="Target gains cover. When a creature damages the target with a melee ability, they take 2 necrotic damage per spell tier."
           />
         </div>
       ),
