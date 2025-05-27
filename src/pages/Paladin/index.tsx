@@ -79,7 +79,7 @@ function Paladin() {
             <ul style={{ marginTop: "10px" }}>
               <li>
                 <span>
-                  <b>Theme:</b> Martial
+                  <b>Theme:</b> Divine
                 </span>
               </li>
               <li>

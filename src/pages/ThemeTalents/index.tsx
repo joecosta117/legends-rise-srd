@@ -510,8 +510,7 @@ function ThemeTalents() {
           >
             downtime
           </Link>
-          , you can choose to help one ally wihtout spending using a downtime
-          activity.
+          , you can help one ally without using a downtime activity.
         </span>
       ),
     },

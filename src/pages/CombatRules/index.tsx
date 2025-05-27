@@ -465,22 +465,11 @@ function CombatRules() {
           then you don’t add your proficiency bonus to the attack roll. The
           exception is natural melee weapons, which everyone is trained in.{" "}
         </p>
-        <h3 className="header">Non Lethal Attacks</h3>
-        <p>
-          You can make an attack roll at a foe with intent to knock them out
-          instead of killing them. You take <Modifier type="mf" count="1" /> to
-          your attack roll. If you deal enough damage to reduce your target to 0
-          hit points, they are knocked out of the fight instead of killed.
-        </p>
         <h3 className="header">Targeting Multiple Creatures</h3>
         <p>
-          If an ability targets multiple creatures, then you make an attack roll
-          against each target. If you have a penalty to an ability, then you
-          apply that penalty to each attack roll when targeting multiple
-          creatures. For example, an arcanist uses countermagic against an enemy
-          cultist’s corrupting wave ability. The cultist takes{" "}
-          <Modifier type="mf" count="1" /> to each attack roll they make for
-          corrupting wave.
+          If an ability targets multiple creatures, then you make a single
+          attack roll and compare your result against the defense of each
+          target.
         </p>
 
         <h2 id="hp-damage">Hit Points and Damage</h2>
@@ -742,9 +731,10 @@ function CombatRules() {
         </ul>
         <h3 className="header">NPC Death</h3>
         <p>
-          When an enemy drops to 0 hit points, typically the enemy dies
-          immediately. However, for special villains or important NPCs, the GM
-          can decide for them to follow the same rules as heroes.
+          When an enemy drops to 0 hit points, typically the enemy dies or is
+          knocked unconscious depending on the heroes' choice. However, for
+          special villains or important NPCs, the GM can decide for them to
+          follow the same rules as heroes.
         </p>
 
         <h2 id="overcome">Overcome Rolls</h2>

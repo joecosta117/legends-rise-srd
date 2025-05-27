@@ -1090,7 +1090,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Net",
-            keywords: "eapon",
+            keywords: "weapon",
             target: <span>1 creature within the bounty hunter's zone</span>,
             defense: "EVN",
             success: (
