@@ -88,6 +88,17 @@ function Classes() {
               <li>
                 <span>
                   <b>
+                    <Link className="internal-link" to="/classes/furyspawn">
+                      Furyspawn
+                    </Link>
+                    :
+                  </b>{" "}
+                  Unleash the monster within yourself.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>
                     <Link className="internal-link" to="/classes/magesmith">
                       Magesmith
                     </Link>
@@ -96,17 +107,7 @@ function Classes() {
                   You tinker with magical items.
                 </span>
               </li>
-              <li>
-                <span>
-                  <b>
-                    <Link className="internal-link" to="/classes/monsterheart">
-                      Monsterheart
-                    </Link>
-                    :
-                  </b>{" "}
-                  You become a supernatural monster in combat.
-                </span>
-              </li>
+
               <li>
                 <span>
                   <b>

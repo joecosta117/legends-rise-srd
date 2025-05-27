@@ -59,6 +59,7 @@ function HeroicArchetypes() {
     { label: "Dual Wielder", onClick: handleArchetype },
     { label: "Duelist", onClick: handleArchetype },
     { label: "Enchanter", onClick: handleArchetype },
+    { label: "Furyspawn Multiclass", onClick: handleArchetype },
     { label: "Geomancer", onClick: handleArchetype },
     { label: "Graviturgist", onClick: handleArchetype },
     { label: "Hydromancer", onClick: handleArchetype },
@@ -68,7 +69,7 @@ function HeroicArchetypes() {
     { label: "Lifeweaver", onClick: handleArchetype },
     { label: "Magesmith Multiclass", onClick: handleArchetype },
     { label: "Mage Knight", onClick: handleArchetype },
-    { label: "Monsterheart Multiclass", onClick: handleArchetype },
+
     { label: "Necromancer", onClick: handleArchetype },
     { label: "Occultist Multiclass", onClick: handleArchetype },
     { label: "Paladin Multiclass", onClick: handleArchetype },
@@ -135,8 +136,8 @@ function HeroicArchetypes() {
     { label: "Cleric Multiclass", onClick: handleArchetype },
     { label: "Commander Multiclass", onClick: handleArchetype },
     { label: "Druid Multiclass", onClick: handleArchetype },
+    { label: "Furyspawn Multiclass", onClick: handleArchetype },
     { label: "Magesmith Multiclass", onClick: handleArchetype },
-    { label: "Monsterheart Multiclass", onClick: handleArchetype },
     { label: "Occultist Multiclass", onClick: handleArchetype },
     { label: "Paladin Multiclass", onClick: handleArchetype },
     { label: "Ranger Multiclass", onClick: handleArchetype },
@@ -2644,17 +2645,16 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Monsterheart Multiclass" && (
+        {selectedArchetype === "Furyspawn Multiclass" && (
           <div>
-            <h2>Monsterheart Multiclass</h2>
+            <h2>Furyspawn Multiclass</h2>
             <p>
-              You have acquired a terrifying supernatural power that can
-              transform you into a monster.
+              You have acquired a rageful supernatural power that can transform
+              you into a monstrous fighter.
             </p>
             <h3 className="header">5th-Level Features</h3>
             <p>
-              You gain the following features from the monsterheart at 5th
-              level:
+              You gain the following features from the furyspawn at 5th level:
             </p>
             <ul>
               <li>
@@ -2674,7 +2674,7 @@ function HeroicArchetypes() {
               </li>
             </ul>
             <h3 className="header">7th-Level Features</h3>
-            <p>You gain the monsterheart's monstrous regeneration feature.</p>
+            <p>You gain the furyspawn's monstrous regeneration feature.</p>
           </div>
         )}
         {selectedArchetype === "Warder" && (

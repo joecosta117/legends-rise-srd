@@ -45,7 +45,7 @@ function Vessel() {
             className="tab-items__tab"
             data-selected={isDetails}
           >
-            Monsterheart Details
+            Furyspawn Details
           </div>
           <div className="tab-items__divider">|</div>
           <div
@@ -53,7 +53,7 @@ function Vessel() {
             className="tab-items__tab"
             data-selected={isSubclasses}
           >
-            Monsterheart Subclasses
+            Furyspawn Subclasses
           </div>
           <div className="tab-items__divider">|</div>
           <div
@@ -61,19 +61,19 @@ function Vessel() {
             className="tab-items__tab"
             data-selected={isTalents}
           >
-            Monsterheart Talents
+            Furyspawn Talents
           </div>
         </div>
         {isDetails && (
           <div>
-            <h1>Monsterheart</h1>
+            <h1>Furyspawn</h1>
             <p>
-              Unlike mundane warriors, monsterhearts possess supernatural power
-              that can transform them into unstoppable monsters. The source of a
-              monsterheart's power can be a magical curse, entity trapped in
-              their body, or supernatural lineage. Play a monsterheart if you
-              want to be a supernatural fighter that is a menance on the
-              battlefield, while also carrying a dark secret.
+              Furyspawn are supernatural warriors driven by wrath and
+              transformation. Whether cursed, chosen, or born of unnatural
+              blood, they unleash monstrous power in battle and grow stronger
+              the longer they fight. Play a furyspawn if you want to become a
+              relentless engine of destruction, fueled by rage and forged by
+              something not entirely human.
             </p>
 
             <h2>Core Features</h2>
@@ -199,7 +199,7 @@ function Vessel() {
                         >
                           temporary hit points
                         </Link>{" "}
-                        equal to double your proficiency bonus that stacks with
+                        equal to double your proficiency bonus that stack with
                         other temporary hit points
                       </span>
                     </li>
@@ -260,8 +260,8 @@ function Vessel() {
 
         {isSubclasses && (
           <div>
-            <h1>Monsterheart Subclasses</h1>
-            <p>These are the subclass choices for the monsterheart.</p>
+            <h1>Furyspawn Subclasses</h1>
+            <p>These are the subclass choices for the furyspawn.</p>
             <h2>Beast</h2>
             <p>
               Either from a lycan curse, possession by a primal spirit, or
@@ -403,7 +403,7 @@ function Vessel() {
 
         {isTalents && (
           <div>
-            <h1>Monsterheart Class Talents</h1>
+            <h1>Furyspawn Class Talents</h1>
             <p>
               At 2nd, 4th, 6th, and 9th level, choose a class talent from the
               below list. You can only pick a class talent of your tier or

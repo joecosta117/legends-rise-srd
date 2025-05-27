@@ -76,7 +76,7 @@ function App() {
             <Route path="/classes/summoner" element={<Summoner />} />
             <Route path="/classes/swordmage" element={<Swordmage />} />
             <Route path="/classes/warrior" element={<Warrior />} />
-            <Route path="/classes/monsterheart" element={<Vessel />} />
+            <Route path="/classes/furyspawn" element={<Vessel />} />
             <Route path="/classes/dual-class" element={<DualClass />} />
             <Route path="/theme-talents" element={<ThemeTalents />} />
             <Route path="/fighting-styles" element={<FightingStyles />} />

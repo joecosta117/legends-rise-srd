@@ -237,11 +237,11 @@ function DualClass() {
       ),
     },
     {
-      title: "Monsterheart Dual Class Features",
+      title: "Furyspawn Dual Class Features",
       content: (
         <div>
           <p>
-            If you choose monsterheart as one of your two classes, then you gain
+            If you choose furyspawn as one of your two classes, then you gain
             the following features
           </p>
           <ul>
@@ -260,10 +260,10 @@ function DualClass() {
               <span>+2 to Evasion or Might</span>
             </li>
             <li>
-              <span>You gain the vessel’s reckless attack feature.</span>
+              <span>You gain the furyspawn’s reckless attack feature.</span>
             </li>
             <li>
-              <span>You gain the vessel’s monstrous form feature.</span>
+              <span>You gain the furyspawn’s monstrous form feature.</span>
             </li>
           </ul>
         </div>
