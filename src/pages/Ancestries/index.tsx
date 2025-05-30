@@ -696,14 +696,8 @@ function Ancestries() {
                     </Link>
                   </span>
                 }
-                effect={
-                  <div>
-                    <p>
-                      Reroll the triggering attack roll, and take the higher
-                      result
-                    </p>
-                  </div>
-                }
+                effect="Reroll the triggering attack roll, and take the higher
+                      result"
               />
             </div>
           )}

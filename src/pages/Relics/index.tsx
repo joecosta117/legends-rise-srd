@@ -121,7 +121,7 @@ function Relics() {
               descriptor="Your shield absorbs a mighty blow that breaks it into pieces."
               keywords="Magic"
               trigger="You take damage"
-              effect="Reduce the triggering damage to 0, but then your shield shatters to pieces. At the end of the scene, the shield magically reforms itself."
+              effect="Reduce the triggering damage to 0, but the shield shatters to pieces. At the end of the scene, the shield magically reforms itself."
               frequency="At-will"
             />
           </div>
@@ -167,7 +167,7 @@ function Relics() {
               keywords="Magic"
               duration="Focus for the scene"
               frequency="Encounter"
-              effect="The shield leaves your grasp and can move up to 1 zone away to guard one creature. The chosen creature gains +1 to their Evasion while the shield is hovering around them. Each time you focus on this ability, you can keep the shield on the same creature or move it up to 1 zone to guard another creature."
+              effect="The shield moves up to 1 zone to guard a creature, and the creature gains +1 to their Evasion. Each time you focus on this ability, you can keep the shield on the same creature or move it up to 1 zone to guard another creature."
             />
           </div>
         ),
@@ -229,27 +229,11 @@ function Relics() {
               frequency="Encounter"
               effect={
                 <span>
-                  <span>You gain the following:</span>
-                  <ul>
-                    <li>
-                      <span>
-                        If you’re <ToolTip preset="shaken" />, then you
-                        immediately <ToolTip preset="heal" /> 1 per your tier
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        You gain <ToolTip preset="regen" /> equal to your tier
-                        while shaken
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        If you take acid or fire damage, then this regeneration
-                        is temporarily disabled on your next turn
-                      </span>
-                    </li>
-                  </ul>
+                  If you’re <ToolTip preset="shaken" />, then you immediately{" "}
+                  <ToolTip preset="heal" /> 1 per your tier. While shaken, you
+                  gain <ToolTip preset="regen" /> equal to your tier. If you
+                  take acid or fire damage, then this regeneration is
+                  temporarily disabled on your next turn.
                 </span>
               }
             />
@@ -455,7 +439,7 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, the target becomes
+              using this weapon, the target becomes{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
@@ -711,7 +695,7 @@ function Relics() {
               keywords="Escalation, Magic"
               target="1d4+1 enemies within your zone"
               defense="Special"
-              damage="3 damage per your tier. The damage type matches the weapon’s chosen damage type. The targeted defense is Evasion or Resolve (pschic only)."
+              damage="3 damage per your tier. The damage type matches the weapon’s chosen damage type. The targeted defense is Evasion or Resolve (psychic only)."
               frequency="Encounter"
             />
           </div>
@@ -735,7 +719,7 @@ function Relics() {
               keywords="Magic"
               trigger={
                 <span>
-                  You get a critical success on a{" "}
+                  You critically succeed on a{" "}
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
                   </Link>{" "}
@@ -1156,7 +1140,7 @@ function Relics() {
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>{" "}
-              against ending the
+              against ending the{" "}
               <Link className="internal-link" to="/conditions#dazed">
                 dazed
               </Link>{" "}

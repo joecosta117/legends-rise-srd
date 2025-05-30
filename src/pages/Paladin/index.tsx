@@ -388,16 +388,16 @@ function Paladin() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     Strike
                   </Link>
-                  , and the target is marked (turn ends). While marked, if the
-                  target makes an{" "}
+                  , and the target is marked (turn ends). If the marked target
+                  makes an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
                   >
                     attack roll
                   </Link>{" "}
-                  against a creature other than you, the target takes holy or
-                  unholy (your choice) damage equal to your proficiency bonus.
+                  against a creature other than you, they take holy or unholy
+                  (your choice) damage equal to your proficiency bonus.
                 </span>
               }
             />

@@ -219,10 +219,13 @@ function Magesmith() {
               , you can infuse a single item in your possession with an upgrade.
               The maximum number of upgrades you can have equals 1 plus your
               tier. An item can have a number of upgrades up to your tier, but
-              can’t have the same upgrade multiple times. You start off knowing
-              4 upgrades and learn an additional upgrade at 5th level and 8th
-              level. Upgrades are listed at the end of this class. If you die,
-              then any upgrades you created fade after several days.
+              can’t have the same upgrade multiple times.
+            </p>
+            <p>
+              You start off knowing 4 upgrades and learn an additional upgrade
+              at 5th level and 8th level. Upgrades are listed at the end of this
+              class. If you die, then any upgrades you created fade after
+              several days.
             </p>
 
             <h3 className="header">Subclass</h3>
@@ -273,18 +276,16 @@ function Magesmith() {
               frequency="At-will"
               duration="Scene ends"
               keywords="Magical, Summon"
-              // @ts-ignore
               effect={
                 <span>
                   <span>
-                    You create a turret within 1 zone of you. The turret’s
-                    defenses equal 8 plus your proficiency bonus, and hit points
-                    equal double your proficiency bonus. When you command your
-                    turret, it can only{" "}
+                    You create a turret within 1 zone of you with defenses = 8
+                    plus your proficiency bonus and hit points = double your
+                    proficiency bonus. When you command your turret, it can only{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
                       move
                     </Link>{" "}
-                    or use one of the following actions:
+                    or use one of the below actions:
                   </span>
                   <ul>
                     <li>
@@ -295,7 +296,7 @@ function Magesmith() {
                           to="/rules/combat#zone-types"
                         >
                           dangerous zone
-                        </Link>
+                        </Link>{" "}
                         (1 arcane damage per your tier) only for enemies until
                         the start of your next turn.
                       </span>
@@ -424,7 +425,7 @@ function Magesmith() {
                           to="/rules/combat#temporary-hit-points"
                         >
                           temporary hit points
-                        </Link>
+                        </Link>{" "}
                         equal to your proficiency bonus.
                       </span>
                     </li>
@@ -599,7 +600,7 @@ function Magesmith() {
               keywords="Magical"
               duration="Until after your next rest"
               trigger="You cast a battle spell"
-              effect="The spell’s effect doesn’t immediately happen. Instead, the spell is stored within an item in your hand. As a maneuver, anyone holding the enchanted item can activate the spell’s effect."
+              effect="The spell’s effect doesn’t happen, but is instead stored in an item you hold. As a maneuver, anyone holding the item can activate the spell."
             />
 
             <h2>Tier 3 Class Talents</h2>

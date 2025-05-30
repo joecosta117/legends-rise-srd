@@ -833,7 +833,7 @@ const UndeadMonsters = [
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
             defense: "RES",
-            damage: "3 mental damage",
+            damage: "3 psychic damage",
             round: "5",
             success: (
               <span>

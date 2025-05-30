@@ -170,27 +170,18 @@ function Ranger() {
               frequency="At-will"
               target="1 creature within 2 zones or whose tracks you discover"
               duration={
-                <span>
-                  Until a{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    long rest
-                  </Link>{" "}
-                  or you use this ability on another creature
-                </span>
+                <span>Until you use this ability on another creature</span>
               }
               effect={
                 <span>
-                  The target becomes your prey. When you{" "}
+                  Target becomes your prey. When you{" "}
                   <Link className="internal-link" to="/combat-abilities#strike">
-                    trike
+                    strike
                   </Link>{" "}
                   your prey, you deal additional damage equal to your tier. You
                   also gain <Modifier type="f" count="1" /> on{" "}
                   <Link className="internal-link" to="/rules/skills">
-                    skill roll
+                    skill rolls
                   </Link>{" "}
                   to learn about, find, or track your prey.
                 </span>
@@ -352,7 +343,7 @@ function Ranger() {
               the target of your mark prey.
             </p>
 
-            <h2>Beast Companion</h2>
+            <h2>Beastheart</h2>
             <p>
               You call upon a primordial beast spirit to assist you in your
               hunt.

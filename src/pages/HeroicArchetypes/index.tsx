@@ -100,7 +100,6 @@ function HeroicArchetypes() {
     { label: "Dreadnought", onClick: handleArchetype },
     { label: "Dual Wielder", onClick: handleArchetype },
     { label: "Duelist", onClick: handleArchetype },
-    { label: "Enchanter", onClick: handleArchetype },
     { label: "Knave", onClick: handleArchetype },
     { label: "Protector", onClick: handleArchetype },
     { label: "Skirmisher", onClick: handleArchetype },
@@ -338,7 +337,7 @@ function HeroicArchetypes() {
                     to="/rules/combat#ongoing-damage"
                   >
                     ongoing
-                  </Link>
+                  </Link>{" "}
                   physical damage per your tier.
                 </span>
               }
@@ -1637,9 +1636,9 @@ function HeroicArchetypes() {
             </p>
           </div>
         )}
-        {selectedArchetype === "Life Weaver" && (
+        {selectedArchetype === "Lifeweaver" && (
           <div>
-            <h2>Life Weaver</h2>
+            <h2>Lifeweaver</h2>
             <p>You conjure healing magic to soothe the wounds of others.</p>
             <h3 className="header">Archetype Features</h3>
             <p>
@@ -2813,19 +2812,15 @@ function HeroicArchetypes() {
                   <Link className="internal-link" to="/conditions#prone">
                     prone
                   </Link>{" "}
-                  on a success or higher. You can{" "}
-                  <Link className="internal-link" to="/combat-abilities#move">
-                    move
-                  </Link>{" "}
-                  before your strike. Additionally, make an{" "}
+                  on a success or higher. Additionally, make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
                   >
                     attack roll
                   </Link>{" "}
-                  against the Might of 1d4+1 additional enemies within your
-                  zone. On a success or higher, a secondary target falls prone.
+                  against the Might of all other enemies within your zone. On a
+                  success or higher, a secondary target falls prone.
                 </span>
               }
             />

@@ -129,6 +129,43 @@ function ReadingAbilities() {
           </li>
           <li>
             <span>
+              <b>Shapeshift:</b> The ability transforms a creature and their
+              gear into another form.
+            </span>
+            <ul style={{ marginTop: "5px", marginLeft: "10px" }}>
+              <li>
+                <span>
+                  The creature can’t use any abilities their new form can't do,
+                  such as not being able to spellcast as a rat.
+                </span>
+              </li>
+              <li>
+                <span>
+                  The creature gains any traits their new form would have such
+                  as ability to swim and breath underwater if they transform
+                  into a shark. Any new speeds equal the creature's land speed.
+                </span>
+              </li>
+              <li>
+                <span>
+                  The creature's statistics such as defenses stay the same
+                  unless otherwise noted.
+                </span>
+              </li>
+              <li>
+                <span>
+                  Once the creature starts{" "}
+                  <Link className="internal-link" to="/rules/combat#dying">
+                    dying
+                  </Link>
+                  , they revert back to their original form and the ability
+                  ends.
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span>
               <b>Summon:</b> The ability conjures a creature loyal to you.
             </span>
             <ul style={{ marginTop: "5px", marginLeft: "10px" }}>
@@ -166,6 +203,12 @@ function ReadingAbilities() {
                 <span>
                   All summoned creatures like any creatures are assumed to have
                   a land speed of 1, unless otherwise specified.
+                </span>
+              </li>
+              <li>
+                <span>
+                  The ability ends if the summoned creature is reduced to 0 hit
+                  points.
                 </span>
               </li>
             </ul>

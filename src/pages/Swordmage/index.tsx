@@ -236,28 +236,29 @@ function Swordmage() {
               frequency="At-will"
               effect={
                 <span>
-                  You cast a battle spell that takes either a maneuver or
-                  action, has a target, but the spell’s effect doesn’t happen
-                  until your next{" "}
-                  <Link className="internal-link" to="/combat-abilities#strike">
-                    strike
-                  </Link>
-                  . If you don’t strike before the duration of this ability,
-                  then the spell’s magic fizzles out. If the chosen spell
-                  requires an{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/combat#attack-roll"
-                  >
-                    attack roll
-                  </Link>
-                  , then use the attack roll of your strike. If the spell
-                  targets a creature, the target is the target of your strike,
-                  or one of the targeted creatures if the spell targets multiple
-                  creatures. If the spell targets a zone, the zone of your
-                  target is the targeted zone, or one of the targeted zones if
-                  the spell targets multiple zones. If the spell targets a zone
-                  border, then choose a zone border of your target’s zone.
+                  <span>
+                    You cast a battle spell that takes a maneuver or action, has
+                    a target, but the effect triggers only against the target of
+                    your next{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>
+                    . If you don’t strike before this ability's duration, then
+                    the spell fades. Use your strike's{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#attack-roll"
+                    >
+                      attack roll
+                    </Link>{" "}
+                    for spells requiring one. If the spell targets multiple
+                    creatures, zones, or zone borders, then your strike's target
+                    must be one of the targeted creatures, in a targeted zone,
+                    or next to a targeted zone border.
+                  </span>
                 </span>
               }
             />

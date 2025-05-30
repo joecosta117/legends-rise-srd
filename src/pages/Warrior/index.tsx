@@ -274,7 +274,7 @@ function Warrior() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
-              , and your{" "}
+              , and you roll a 20 or your{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}

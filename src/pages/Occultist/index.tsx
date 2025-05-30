@@ -317,7 +317,7 @@ function Occultist() {
               frequency="At-will"
               keywords="Magical, Summon"
               duration="Focus for the scene"
-              effect="You spend mana equal to your tier to transform your familiar, which then uses the empowered familiar stat block. When you use this ability and later when you focus on it, your familiar can immediately use a maneuver or action. Your familiar uses your reaction. When your familiar is reduced to 0 hit points, it reduces back to its smaller size and quickly retreats back to your side to hide for the rest of the combat."
+              effect="You spend mana equal to your tier to transform your familiar, which then uses the empowered familiar stat block. When your empowered familiar is reduced to 0 hit points, it reduces back to its normal form."
             />
             <Monster
               name="Empowered Familiar"
@@ -513,9 +513,8 @@ function Occultist() {
               descriptor="You transfer the incoming pain of an ally onto your familiar."
               frequency="Encounter"
               keywords="Spellshape"
-              trigger="You see a creature take damage within your familiar’s zone"
-              requirement="Your familiar is under the effects of empowered familiar"
-              effect="Triggering damage is instead taken by your familiar. If the damage reduces your familiar to 0 hit points, then any remaining damage is dealt to the original target."
+              trigger="You see a creature take damage within your empowered familiar’s zone"
+              effect="Your familiar instead takes the triggering damage. If the damage reduces your familiar to 0 hit points, remaining damage is dealt to the original target."
             />
 
             <h3 className="header">Dimensional Hex</h3>

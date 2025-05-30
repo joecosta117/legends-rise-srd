@@ -113,28 +113,11 @@ export const airSpells = [
           duration="Scene ends"
           effect={
             <span>
-              <span>The wall has the following properties:</span>
-              <ul>
-                <li>
-                  <span>
-                    Range abilities using{" "}
-                    <Link
-                      className="internal-link"
-                      to="/rules/combat#attack-roll"
-                    >
-                      attack rolls
-                    </Link>{" "}
-                    if the target is beyond the wall.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    When a creature attempts to pass through the wall, you can
-                    stop their movement on a successful attack roll against
-                    their Might.
-                  </span>
-                </li>
-              </ul>
+              <span>
+                Range abilities fail to pass through the wall, and when a
+                creature passes through the wall, you can stop them on a
+                successful attack roll against their Might.
+              </span>
             </span>
           }
         />
@@ -154,21 +137,16 @@ export const airSpells = [
           keywords="Escalation, Magical, Range"
           defense="EVN"
           damage="3 lightning damage per spell tier"
-          effect={
+          partial={
             <span>
               <span>
-                Lightning leaps to another target within 1 zone of the first
-                target, then jumps to another creature within 1 zone of the
-                second target, and so on. You can stop the chain at any point
-                and you can't target the same creature twice. The chain ends if
-                you get a failure on an{" "}
-                <Link className="internal-link" to="/rules/combat#attack-roll">
-                  attack roll
-                </Link>
-                .
+                Repeat this spell's attack roll against another enemy within 1
+                zone of the previous target. You can't target the same creature
+                twice.
               </span>
             </span>
           }
+          failure="The spell ends"
         />
       ),
     },
@@ -183,7 +161,7 @@ export const airSpells = [
             frequency="Spell 2 (Air)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon an air elemental within 1 zone. When the elemental is reduced to 0 hit points, the spell ends."
+            effect="You summon an air elemental within 1 zone."
           />
           <Monster
             name="Air Elemental"
@@ -264,7 +242,7 @@ export const airSpells = [
                   seized
                 </Link>{" "}
                 (turn starts). Zones adjacent to the targeted zone become
-                dangerous zones (1 lightning damage per spell tier). Once a
+                dangerous zones (1 lightning damage per spell tier). Once per
                 turn, as a maneuver you can move the cyclone up to 1 zone away.
               </span>
             </span>
@@ -353,15 +331,14 @@ export const arcaneSpells = [
           effect={
             <span>
               <span>
-                If this spell’s tier is equal to or higher than the magical
-                effect’s tier (spell tier if the effect originates from a
-                spell), then the targeted effect ends. Otherwise, you must
-                succeed on an{" "}
+                If this spell’s tier is equal to or higher than the targeted
+                effect’s tier, the effect ends. Otherwise, you must succeed on
+                an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against the Resolve of the targeted effect’s origin (spellcaster
-                for a spell) or a TN of 10 + double the effect’s tier.
+                against the Resolve of the effect’s origin or a TN of 10 +
+                double the effect’s tier.
               </span>
             </span>
           }
@@ -379,7 +356,7 @@ export const arcaneSpells = [
             frequency="Spell 1 (Arcane)"
             keywords="Magical, Range, Summon"
             duration="Focus until scene ends"
-            effect="You summon a dragon spirit within 1 zone. Choose one of the following elements to represent your dragon spirit: cold, fire, lightning, or toxic. When the dragon spirit is reduced to 0 Hit Points, the spell ends."
+            effect="You summon a dragon spirit within 1 zone. Choose one of the following elements to represent your dragon spirit: cold, fire, lightning, or toxic."
           />
           <Monster
             name="Dragon Spirit"
@@ -437,7 +414,7 @@ export const arcaneSpells = [
             frequency="Spell 2 (Arcane)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon a magical hand within 1 zone. When the hand is reduced to 0 hit points, the spell ends."
+            effect="You summon a magical hand within 1 zone."
           />
           <Monster
             name="Arcane Hand"
@@ -499,25 +476,19 @@ export const arcaneSpells = [
           descriptor="You transform into a dragon."
           frequency="Spell 2 (Arcane)"
           duration="Scene ends"
-          keywords="Magical"
+          keywords="Magical, Shapeshift"
           effect={
             <span>
               <span>
-                You transform into a large dragon (huge dragon at spell tier 3)
-                and choose cold, fire, lightning, or toxic as your dragon’s
-                damage type. While transformed:
+                You transform into a large dragon (huge at spell tier 3) and
+                choose cold, fire, lightning, or toxic as your dragon’s damage
+                type. While transformed, you gain:
               </span>
-              s
+
               <ul>
                 <li>
                   <span>
-                    You can’t cast a spell or use any abilities you can’t do as
-                    a dragon.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    You gain 4{" "}
+                    4{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#temporary-hit-points"
@@ -529,32 +500,31 @@ export const arcaneSpells = [
                 </li>
                 <li>
                   <span>
-                    Your Evasion equals 10 + double the spell tier, and Might
-                    equals 12 + double the spell tier
+                    Evasion = 10 + double the spell tier; Might = 12 + double
+                    the spell tier
                   </span>
                 </li>
                 <li>
                   <span>Your natural melee weapons deal 3 physical damage</span>
                 </li>
                 <li>
-                  <span>You gain fly speed of 1</span>
+                  <span>Fly speed of 1</span>
                 </li>
                 <li>
                   <span>
-                    You gain{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#resistances-and-weaknesses"
                     >
-                      resistance
+                      Resistance
                     </Link>{" "}
-                    to your chosen damage type equal to double the spell tier,
-                    and physical damage equal to the spell tier
+                    to the chosen damage type = double the spell tier, and
+                    physical damage = spell tier
                   </span>
                 </li>
                 <li>
                   <span>
-                    Once per spell, you unleash energy as an action. Make an{" "}
+                    Once per spell, you can unleash energy as an action. Make an{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -564,15 +534,6 @@ export const arcaneSpells = [
                     against the Evasion of each creature in 1 zone within 3
                     zones, dealing 3 damage per spell tier of the chosen damage
                     type
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Once you start{" "}
-                    <Link className="internal-link" to="/rules/combat#dying">
-                      dying
-                    </Link>{" "}
-                    you revert back to your form and the magic ends
                   </span>
                 </li>
               </ul>
@@ -594,7 +555,7 @@ export const arcaneSpells = [
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
           defense="EVN"
-          damage="5 arcane damage per spell tier. If this damage kills the target, then their essence is removed from reality and they can’t be resurrected outside of mythical magic from deities or other powerful sources."
+          damage="5 arcane damage per spell tier. If this damage kills the target, their essence is removed from reality and they can’t be resurrected outside of mythical tier magic."
         />
       ),
     },
@@ -720,7 +681,7 @@ export const deathSpells = [
             frequency="Spell 1 (Death)"
             keywords="Magical, Range, Summon"
             duration="Focus until scene ends"
-            effect="You summon an undead (ghost, ghoul, or zombie) within 1 zone. When the spirit is reduced to 0 Hit Points, the spell ends."
+            effect="You summon an undead (ghost, ghoul, or zombie) within 1 zone."
           />
           <Monster
             name="Undead"
@@ -752,7 +713,7 @@ export const deathSpells = [
                     >
                       attack roll
                     </Link>{" "}
-                    ignore this feature.
+                    ignore this trait.
                   </span>
                 ),
               },
@@ -1080,8 +1041,7 @@ export const earthSpells = [
                 >
                   temporary hit points
                 </Link>{" "}
-                per spell tier (scene ends), and the spell ends when the
-                temporary hit points become 0. While the target has these
+                per spell tier (scene ends). While the target has these
                 temporary hit points, they gain <Modifier count="1" type="f" />{" "}
                 to melee abilities.
               </span>
@@ -1105,18 +1065,9 @@ export const earthSpells = [
             keywords="Magical, Range"
             effect={
               <span>
-                <span>The wall has the following properties</span>
-                <ul>
-                  <span>
-                    <li>Nothing can pass through the wall.</li>
-                  </span>
-                  <span>
-                    <li>
-                      Each part of the wall (one zone border) has defenses equal
-                      to 10 + double spell tier and 6 hit points per spell tier.
-                    </li>
-                  </span>
-                </ul>
+                Nothing can pass through the wall. Each targeted zone border has
+                defenses equal to 10 + double spell tier and 6 hit points per
+                spell tier.
               </span>
             }
             duration="Scene ends"
@@ -1135,7 +1086,7 @@ export const earthSpells = [
             frequency="Spell 2 (Earth)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon an earth elemental within 1 zone. When the elemental is reduced to 0 hit points, the spell ends."
+            effect="You summon an earth elemental within 1 zone."
           />
           <Monster
             name="Earth Elemental"
@@ -1282,7 +1233,7 @@ export const eldritchSpells = [
           defense="RES"
           critical={
             <span>
-              Same as a success, and 1{" "}
+              1{" "}
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
               </Link>{" "}
@@ -1405,7 +1356,7 @@ export const eldritchSpells = [
             frequency="Spell 2 (Eldritch)"
             duration="Focus until scene end"
             keywords="Magical, Summon, Range"
-            effect="You summon an aberration within 1 zone. When the aberration is reduced to 0 hit points, the spell ends."
+            effect="You summon an aberration within 1 zone."
           />
           <Monster
             name="Aberration"
@@ -1414,7 +1365,7 @@ export const eldritchSpells = [
             evn="10 + PB"
             mgt="10 + PB"
             res="10 + PB"
-            resistances="mental ST"
+            resistances="psychic ST"
             pb="double ST"
             summons
             accordion
@@ -1466,11 +1417,11 @@ export const eldritchSpells = [
             accordion
             descriptor="You manipulate objects or creatures with your mind."
             frequency="Spell 2 (Eldritch)"
-            target="1 huge or smaller creatures within 2 zones"
+            target="1 huge or smaller creature within 2 zones"
             duration="Focus until scene ends"
             keywords="Escalation, Magical, Range"
             defense="MGT"
-            critical="Same as success, but you can move the target up to 1 zone away"
+            critical="Same as a success, but you can move the target up to 1 zone away"
             success={
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -1487,8 +1438,7 @@ export const eldritchSpells = [
                   <Link className="internal-link" to="/conditions#seized">
                     seized
                   </Link>{" "}
-                  target up to 1 zone or let go of a seized target to repeat
-                  this spell’s{" "}
+                  target up to 1 zone or let them go to repeat this spell’s{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -1496,15 +1446,7 @@ export const eldritchSpells = [
                     attack roll
                   </Link>{" "}
                   against another target. You can only have one seized target at
-                  a time. Your{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/combat#attack-roll"
-                  >
-                    attack roll
-                  </Link>{" "}
-                  automatically critically succeeds against an unworn object if
-                  it's huge or smaller.
+                  a time.
                 </span>
               </span>
             }
@@ -1526,7 +1468,7 @@ export const eldritchSpells = [
             target="All enemies within 1 zone"
             keywords="Escalation, Magical, Range"
             defense="RES"
-            damage="3 psychic damage per spell tier. If any damage from this spell kills the target, then their head explodes (assuming they have one)."
+            damage="3 psychic damage per spell tier. If any damage from this spell kills the target, then their head explodes."
             success={
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1604,7 +1546,7 @@ export const enchantmentSpells = [
           keywords="Escalation, Magical, Range"
           defense="RES"
           critical={
-            <span>Same as a success, but effect lasts for the scene.</span>
+            <span>Same as a success, but the effect lasts for the scene.</span>
           }
           success={
             <span>
@@ -1761,7 +1703,7 @@ export const enchantmentSpells = [
             target="1 creature (+1 creatures for each higher spell tier) within 3 zones"
             defense="RES"
             keywords="Escalation, Magical, Range"
-            critical="Same as a success, but the target doesn't get overcome rolls at the end of their turn to end this effect for the scene."
+            critical="You control the target's turns (scene ends)."
             success="You control the target's turns (overcome ends)."
             partial={<span>You control the target's next turn</span>}
           />
@@ -1777,7 +1719,7 @@ export const enchantmentSpells = [
         <div>
           <AbilityCard
             accordion
-            descriptor="You take on the visage of a deific entity that compels your foes to worship you."
+            descriptor="You take on the visage of a deific entity that overwhelms your foes."
             frequency="Spell 3 (Enchantment)"
             target="All enemies within 1 zone"
             keywords="Escalation, Magical, Range"
@@ -1787,25 +1729,17 @@ export const enchantmentSpells = [
                 Same as a success, but also{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
-                </Link>
-              </span>
-            }
-            success={
-              <span>
-                Target must spend a maneuver each turn (scene ends) to lie{" "}
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
                 </Link>{" "}
-                and bow to you
+                while dazed
               </span>
             }
+            success={<span>dazed (scene ends)</span>}
             partial={
               <span>
-                Target must spend a maneuver on their next turn to lie{" "}
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
-                and bow to you
+                (turn ends)
               </span>
             }
           />
@@ -1959,27 +1893,10 @@ export const fireSpells = [
             keywords="Magical, Range"
             effect={
               <span>
-                <span>The wall has the following properties</span>
-                <ul>
-                  <span>
-                    <li>
-                      Ranged abilities can’t target anyone on the other side of
-                      the wall
-                    </li>
-                  </span>
-                  <span>
-                    <li>
-                      When a creature passes through the wall, they take 2 fire
-                      damage per spell tier.
-                    </li>
-                  </span>
-                  <span>
-                    <li>
-                      The zones on either side of the targeted zone borders
-                      become dangerous zones (1 fire damage per spell tier).
-                    </li>
-                  </span>
-                </ul>
+                Range abilities can’t pass through the wall, and when a creature
+                passes through the wall, they take 2 fire damage per spell tier.
+                Zones adjacent to the wall become dangerous zones (1 fire damage
+                per spell tier).
               </span>
             }
             duration="Scene ends"
@@ -1998,7 +1915,7 @@ export const fireSpells = [
             frequency="Spell 2 (Fire)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon a fire elemental within 1 zone. When the elemental is reduced to 0 hit points, the spell ends."
+            effect="You summon a fire elemental within 1 zone."
           />
           <Monster
             name="Fire Elemental"
@@ -2143,10 +2060,10 @@ export const gravitySpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against any creature’s Might that first enters or starts their
-                turn in a zone touching a targeted zone border. On a success,
-                the target is pulled next to the zone border. You can only make
-                this attack roll against a creature once per turn.
+                against any creature’s Might that enters or starts their turn in
+                a zone adjacent to the targeted zone borders. On a success, the
+                target is pulled to the zone border. You can only make this
+                attack roll against a creature once per turn.
               </span>
             </span>
           }
@@ -2164,11 +2081,11 @@ export const gravitySpells = [
           target="1 creature per spell tier within 2 zones"
           defense="MGT"
           keywords="Escalation, Magical, Range"
-          success="Same as a partial, but the effect lasts for the scene."
-          partial="Gravity on the target flips (turn ends) and they fly up a number zones equal to the spell tier. If they are already in the air, then they instead fall a number of zones equal to the spell tier."
+          success="The gravity effect lasts for the scene."
+          partial="Gravity on the target flips (turn ends) as they fly up or fall down a number of zones equal to the spell tier."
           critical={
             <span>
-              Same as a success, but the target is also{" "}
+              Target is{" "}
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
@@ -2215,20 +2132,19 @@ export const gravitySpells = [
           effect={
             <span>
               <span>
-                Choose to lighten or increase weight of gravity in the targeted
-                area:
+                Choose to decrease or increase gravity in the targeted zones:
               </span>
               <ul>
                 <li>
                   <span>
-                    <i>Lighten:</i> Creatures that start their turn within the
+                    <i>Decrease:</i> Creatures that start their turn within the
                     zone have their speeds increased by +1 until the end of
                     their turn.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <i>Heavier:</i> Targeted zones become difficult zones.
+                    <i>Increase:</i> Targeted zones become difficult zones.
                   </span>
                 </li>
               </ul>
@@ -2252,8 +2168,8 @@ export const gravitySpells = [
           keywords="Magical, Range"
           effect={
             <span>
-              The targeted zone’s gravity flips and all creatures and unattended
-              objects fly up a number of zones equal to the spell tier, and take{" "}
+              The targeted zones' gravity flips as everything flies up a number
+              of zones equal to the spell tier, and take{" "}
               <Link className="internal-link" to="/rules/adventuring#crashing">
                 crash
               </Link>{" "}
@@ -2313,19 +2229,20 @@ export const gravitySpells = [
                   <Link className="internal-link" to="/rules/combat#zone-types">
                     difficult zone and dangerous zone
                   </Link>{" "}
-                  (1 physical damage per spell tier) filled with darkness and
-                  blocks out any sound. When a creature takes this damage, make
-                  an{" "}
+                  (1 physical damage per spell tier) filled with darkness that
+                  blocks out sound. When a creature takes this damage, make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
                   >
                     attack roll
                   </Link>{" "}
-                  against their Might, and on a success, they are pulled to the
-                  center of the targeted zone. If a creature is killed while
-                  within the targeted zone, then their body is disintegrated and
-                  consumed by the blackhole.
+                  against their Might, and on a success, they become{" "}
+                  <Link className="internal-link" to="/conditions#seized">
+                    seized
+                  </Link>{" "}
+                  (turn starts). If a creature is killed while within the
+                  targeted zone, then their body is disintegrated.
                 </span>
               </span>
             }
@@ -2496,7 +2413,7 @@ export const holySpells = [
             frequency="Spell 2 (Holy)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon an angelic warrior within 1 zone. When the angel is reduced to 0 hit points, the spell ends."
+            effect="You summon an angelic warrior within 1 zone."
           />
           <Monster
             name="Angelic Warrior"
@@ -2606,7 +2523,7 @@ export const holySpells = [
             defense="RES"
             damage="2 holy damage per spell tier"
             critical="Same as a success, but the target is banished (overcome ends)"
-            success="If the target isn’t from this realm, then they’re returned to their home realm (turn ends)"
+            success="If the target isn’t from this realm, then they’re banished to their home realm (turn ends)"
             effect={
               <span>
                 You and each ally within 1 zone gain 2{" "}
@@ -2731,33 +2648,23 @@ export const iceSpells = [
           duration="Scene ends"
           effect={
             <span>
-              <span>The wall has the following properties:</span>
-              <ul>
-                <li>
-                  <span>Nothing can pass through the wall.</span>
-                </li>
-                <li>
-                  <span>
-                    Each part of the wall (one zone border) has defenses of 8 +
-                    double the spell tier and 4 hit points per spell tier. It
-                    has{" "}
-                    <Link
-                      className="internal-link"
-                      to="/rules/combat#resistances-and-weaknesses"
-                    >
-                      resistance
-                    </Link>{" "}
-                    to cold damage equal to double the spell tier, but{" "}
-                    <Link
-                      className="internal-link"
-                      to="/rules/combat#resistances-and-weaknesses"
-                    >
-                      weakness
-                    </Link>
-                    to fire damage equal to the spell tier.
-                  </span>
-                </li>
-              </ul>
+              Nothing can pass through the wall. Each zone border of the wall
+              has defenses equal to 8 + double the spell tier and 4 hit points
+              per spell tier. The wall has{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                resistance
+              </Link>{" "}
+              to cold damage equal to double the spell tier, but{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#resistances-and-weaknesses"
+              >
+                weakness
+              </Link>{" "}
+              to fire damage equal to the spell tier.
             </span>
           }
         />
@@ -2803,9 +2710,12 @@ export const iceSpells = [
           effect={
             <span>
               <span>
-                Targeted zones become difficult zones and dangerous zones (1
-                cold damage per spell tier). When a creature takes this damage,
-                make an{" "}
+                Targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  difficult zones and dangerous zones
+                </Link>{" "}
+                (1 cold damage per spell tier). When a creature takes this
+                damage, make an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
@@ -2828,7 +2738,7 @@ export const iceSpells = [
             frequency="Spell 2 (Ice)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon an ice elemental within 1 zone. When the elemental is reduced to 0 hit points, the spell ends."
+            effect="You summon an ice elemental within 1 zone."
           />
           <Monster
             name="Ice Elemental"
@@ -2916,8 +2826,7 @@ export const iceSpells = [
                 Targeted zone becomes a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone
-                </Link>{" "}
-                until cleared
+                </Link>
               </span>
             }
           />
@@ -2940,8 +2849,8 @@ export const illusionSpells = [
           keywords="Magical, Range"
           effect={
             <span>
-              You impose +1 misfortune on the triggering roll. The target is
-              then immune to this spell until after a{" "}
+              You impose <Modifier type="mf" count="1" /> on the triggering
+              roll. The target is then immune to this spell until after a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
                 short rest
               </Link>
@@ -2989,14 +2898,14 @@ export const illusionSpells = [
           duration="Scene ends"
           effect={
             <span>
-              You create 3 duplicates around the target that follow and mirror
-              them. A creature must succeed on an{" "}
+              You create 3 duplicates that mirror the target. To use a harmful
+              ability against the target, a creature must succeed on an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
-              </Link>{" "}
-              to use a harmful ability against the target. On a failed overcome
-              roll, a duplicate is destroyed and the ability has no effect.
-              Abilities that affect multiple targets ignore this spell.
+              </Link>
+              . On a failed overcome roll, a duplicate is destroyed, and the
+              ability has no effect. Abilities that affect multiple targets
+              ignore this spell.
             </span>
           }
         />
@@ -3044,38 +2953,24 @@ export const illusionSpells = [
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
             effect={
-              <span>
-                You create an illusion of a creature within 1 zone. When the
-                illusion is reduced to 0 Hit Points, the spell ends. After a
-                creature interacts with your illusion, such as attacking it,
-                they can succeed on an{" "}
-                <Link className="internal-link" to="/rules/combat#overcome">
-                  overcome roll
-                </Link>{" "}
-                to see through the illusion, and the illusion takes{" "}
-                <Modifier type="mf" count="1" /> on{" "}
-                <Link className="internal-link" to="/rules/combat#attack-roll">
-                  attack rolls
-                </Link>{" "}
-                against the creature.
-              </span>
+              <span>You create an illusion of a creature within 1 zone.</span>
             }
           />
           <Monster
             name="Illusionary Creature"
-            type="Medium export Construct"
+            type="Medium Construct"
             hp="5 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
             pb="double ST"
-            resistances="mental ST"
+            resistances="psychic ST"
             summons
             accordion
             actions={[
               {
                 basic: true,
-                name: "Rend",
+                name: "Illusionary Rend",
                 keywords: "melee, weapon",
                 target: (
                   <span>
@@ -3124,15 +3019,13 @@ export const illusionSpells = [
           duration="Scene ends"
           effect={
             <span>
-              Designate any number of creatures that can see through the
-              illusionary wall. For non-designated creatures, they believe the
-              wall is solid unless they try to{" "}
+              Choose creatures that can see through the wall. Others believe the
+              wall is solid unless move through it, are told it's fake, or use
+              the{" "}
               <Link className="internal-link" to="/combat-abilities#interact">
                 interact
               </Link>{" "}
-              with the wall such as moving through it, using the Interact
-              maneuver, or being told that the wall is fake. The creature can
-              then succeed on an{" "}
+              maneuver. The creature can then succeed on an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
@@ -3179,7 +3072,7 @@ export const illusionSpells = [
             keywords="Escalation, Magical, Range"
             damage="4 psychic damage per spell tier"
             defense="RES"
-            success="Seized (scene ends), and if the target attempts to escape, then they take 2 psychic damage per spell tier"
+            success="Seized (scene ends), and if the target escapes, they take 2 psychic damage per spell tier"
             partial={
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -3284,7 +3177,7 @@ export const lifeSpells = [
           target="1 creature per spell tier within your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Each time the target takes damage, they take half the damage and you take the same amount before resistances are applied."
+          effect="Each time a target takes damage, they take half the damage and you take the same amount before resistances are applied."
         />
       ),
     },
@@ -3355,7 +3248,7 @@ export const lifeSpells = [
             <span>
               You see a creature within 1 zone become{" "}
               <Link className="internal-link" to="/rules/combat#dying">
-                vanquished or dying
+                dying or vanquished
               </Link>
             </span>
           }
@@ -3363,7 +3256,7 @@ export const lifeSpells = [
           effect={
             <span>
               Triggering creature can spend a recovery, but they instead{" "}
-              <ToolTip preset="heal" /> 6 per spell tier, or only heal 1 if they
+              <ToolTip preset="heal" /> 6 per spell tier, or heal 1 if they
               don't spend a recovery
             </span>
           }
@@ -3383,21 +3276,11 @@ export const lifeSpells = [
             keywords="Magical"
             effect={
               <span>
-                <span>Target gains the following:</span>
-                <ul>
-                  <li>
-                    <span>
-                      If <ToolTip preset="shaken" />, then they{" "}
-                      <ToolTip preset="heal" /> 1 per spell tier
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      <ToolTip preset="regen" /> equal to the spell tier while
-                      shaken
-                    </span>
-                  </li>
-                </ul>
+                <span>
+                  If <ToolTip preset="shaken" />, they <ToolTip preset="heal" />{" "}
+                  1 per spell tier. While shaken, they gain{" "}
+                  <ToolTip preset="regen" /> equal to the spell tier.
+                </span>
               </span>
             }
           />
@@ -3420,7 +3303,7 @@ export const lifeSpells = [
             effect={
               <span>
                 Target can spend a recovery, but <ToolTip preset="heal" /> 12
-                per spell tier, and ends all negative conditions affecting them
+                per spell tier, and end all negative conditions affecting them
               </span>
             }
           />
@@ -3503,7 +3386,7 @@ export const lightSpells = [
               <Link className="internal-link" to="/rules/combat#hidden">
                 hidden
               </Link>{" "}
-              creatures are visibile while within the targeted zones
+              creatures become visibile while within the targeted zones
             </span>
           }
         />
@@ -3616,7 +3499,7 @@ export const lightSpells = [
         <div>
           <AbilityCard
             accordion
-            descriptor="You conjure a wall of pure radiance."
+            descriptor="You conjure a wall of blinding radiance."
             frequency="Spell 2 (Light)"
             target="1 zone border per spell tier (borders must connect) within 2 zones"
             keywords="Magical, Range"
@@ -3630,27 +3513,25 @@ export const lightSpells = [
                   </li>
                   <li>
                     <span>
-                      As a maneuver, you can fire a light beam at a creature
-                      within 2 zones of the wall. Make an{" "}
+                      As a maneuver, make an{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#attack-roll"
                       >
                         attack roll
                       </Link>{" "}
-                      against the target’s Evasion, dealing 2 fire damage per
-                      spell tier.
+                      against a creature's Evasion within 2 zones of the wall,
+                      dealing 2 fire damage per spell tier from a beam of light.
                     </span>
                   </li>
                   <li>
-                    <span></span>Make an attack roll against the Might of any
-                    creature that starts their turn within a zone touching the
-                    wall or enters a zone touching the wall. On a success, the
-                    target is{" "}
+                    Make an attack roll against the Might of any creature that
+                    enters or starts their turn within a zone touching the wall.
+                    On a success, the target is{" "}
                     <Link className="internal-link" to="/rules/combat#stealth">
                       blinded
                     </Link>{" "}
-                    (turn ends).
+                    (turn starts).
                   </li>
                 </ul>
               </span>
@@ -3770,15 +3651,13 @@ export const natureSpells = [
           effect={
             <span>
               <span>
-                Targeted zones become difficult zones. When a creature starts
-                their turn in a targeted zone or moves through a targeted zone,
-                make an{" "}
+                Targeted zones become difficult zones. When a creature enters or
+                starts their turn in a targeted zone, make an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
                 against their Might, and on a success, the creature becomes
-                seized (scene ends). You can only make this attack roll against
-                a creature once per turn.
+                seized (scene ends).
               </span>
             </span>
           }
@@ -3795,7 +3674,7 @@ export const natureSpells = [
           frequency="Spell 1 (Nature)"
           duration="Scene ends"
           keywords="Magical, Range"
-          effect="You create a tree within 1 zone that has 6 hit points per spell tier and defenses of 8 + double the spell tier. If a friendly creature is damaged within the same zone as the tree, the tree instead takes the damage. If the damage reduces the tree to 0 hit points then the tree withers away and any additional damage is dealt to the original target."
+          effect="You create a tree within 1 zone that has 6 hit points per spell tier and defenses of 8 + double the spell tier. If a friendly creature takes damages within the tree's zone, the tree instead takes the damage. If the damage reduces the tree to 0 hit points, the tree withers away and any remaining damage is dealt to the original target."
         />
       ),
     },
@@ -3810,7 +3689,7 @@ export const natureSpells = [
             frequency="Spell 1 (Nature)"
             keywords="Magical, Range, Summon"
             duration="Focus until scene ends"
-            effect="You summon a primal spirit (air, water, land, or plant) within 1 zone. When the spirit is reduced to 0 Hit Points, the spell ends."
+            effect="You summon a primal spirit (air, water, land, or plant) within 1 zone."
           />
           <Monster
             name="Nature Spirit"
@@ -3924,34 +3803,24 @@ export const natureSpells = [
           accordion
           descriptor="You transform a creature into an animal."
           frequency="Spell 2 (Nature)"
-          keywords="Magical, Range"
+          keywords="Magical, Range, Shapeshift"
           duration="Scene ends"
           target="1 creature within 2 zones"
           effect={
             <span>
               <span>
-                You transform the target’s body and equipment into a small,
-                medium, or large creature of your choice. If the target is
-                unwilling, then the spell only works on a successful{" "}
+                You transform the target into a large or smaller creature of
+                your choice. If the target is unwilling, then the spell only
+                transforms them for the scene (overcome ends) on a successful{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against the target’s Resolve, and they can make an{" "}
-                <Link className="internal-link" to="/rules/combat#overcome">
-                  overcome roll
-                </Link>
-                at the end of their turns to end the effect. While transformed:
+                against the target’s Resolve. While transformed, they gain:
               </span>
               <ul>
                 <li>
                   <span>
-                    Target can’t cast a spell or use any abilities you can’t do
-                    as an animal
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Target gains 4{" "}
+                    4{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#temporary-hit-points"
@@ -3963,31 +3832,14 @@ export const natureSpells = [
                 </li>
                 <li>
                   <span>
-                    Target’s Evasion and Might equals 10 + double the spell
-                    tier, and Resolve equals 8 + double the spell tier
+                    Evasion = 10 + double the spell tier; Might = 12 + double
+                    the spell tier
                   </span>
                 </li>
                 <li>
                   <span>
-                    Target’s natural melee weapons deal physical damage
-                    depending on the animal’s size: 2 for small, 3 for medium, 4
-                    for large
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Target gains traits the animal would have such as breathing
-                    underwater if they become a shark. Any new speeds equal the
-                    same speed as their land speed.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Once the target is{" "}
-                    <Link className="internal-link" to="/rules/combat#dying">
-                      defeated
-                    </Link>
-                    , they revert back to their form and the magic ends
+                    Natural melee weapons deal physical damage depending on the
+                    animal’s size: 2 for small, 3 for medium, or 4 for large
                   </span>
                 </li>
               </ul>
@@ -4007,7 +3859,7 @@ export const natureSpells = [
             frequency="Spell 2 (Nature)"
             keywords="Magical, Range, Summon"
             duration="Focus until scene ends"
-            effect="You summon a faerie warrior within 1 zone. When the faerie is reduced to 0 Hit Points, the spell ends."
+            effect="You summon a faerie warrior within 1 zone."
           />
           <Monster
             name="Faerie Warrior"
@@ -4037,16 +3889,12 @@ export const natureSpells = [
                 target: "1 creature per spell tier within 3 zones",
                 frequency: "Once per spell",
                 defense: "RES",
-                critical: (
-                  <span>
-                    Same as a success, but the effect lasts for the scene
-                  </span>
-                ),
+                critical: <span>The success effect lasts for the scene</span>,
                 success: (
                   <span>
                     Target can't use hostile abilities against you or your
                     allies (turn ends), but this effect ends early if you or
-                    your allies uses a hostile ability against the target.
+                    your allies harm the target.
                   </span>
                 ),
               },
@@ -4084,7 +3932,7 @@ export const natureSpells = [
             frequency="Spell 3 (Nature)"
             keywords="Magical, Range, Summon"
             duration="Focus until scene ends"
-            effect="You summon a kaiju within 3 zones. When the kaiju is reduced to 0 Hit Points, the spell ends."
+            effect="You summon a kaiju within 3 zones."
           />
           <Monster
             name="Kaiju"
@@ -4157,7 +4005,7 @@ export const protectionSpells = [
           target="1 creature within 1 zone"
           keywords="Magical, Range"
           duration="Start of your next turn"
-          effect="When the target takes damage, the shield reduces the damage by your tier, and then the spell ends."
+          effect="Target gains resistance to all damage equal to your tier, but the spell ends after the target takes damage."
         />
       ),
     },
@@ -4266,7 +4114,7 @@ export const protectionSpells = [
           effect={
             <span>
               When a creature uses a harmful ability against the target, except
-              for abilities that affect a zone or multiple creatures, they must
+              for abilities that affect a zone or multiple targets, they must
               succeed on an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
@@ -4370,7 +4218,7 @@ export const shadowSpells = [
           target="1 zone within 2 zones"
           keywords="Magical, Range"
           duration="End of your next turn"
-          damage="You reduce the lighting of an area to darkness."
+          effect="You reduce the lighting of an area to darkness."
         />
       ),
     },
@@ -4411,7 +4259,7 @@ export const shadowSpells = [
             duration="Focus until scene ends"
             target="1 creature within 1 zone"
             keywords="Magical, Range, Summon"
-            effect="Target’s shadow becomes under your control. When the shadow is reduced to 0 hit points, the spell ends and the shadow returns to its original owner."
+            effect="Target’s shadow becomes under your control."
           />
           <Monster
             name="Living Shadow"
@@ -4524,18 +4372,8 @@ export const shadowSpells = [
           duration="Scene ends"
           effect={
             <span>
-              <span>The wall has the following properties:</span>
-              <ul>
-                <li>
-                  <span>Wall is made of magical darkness</span>
-                </li>
-                <li>
-                  <span>
-                    When a creature passes through the wall, they take 2
-                    necrotic damage per spell tier
-                  </span>
-                </li>
-              </ul>
+              The wall is made of magical darkness, and when a creature passes
+              through the wall, they take 2 necrotic damage per spell tier.
             </span>
           }
         />
@@ -4556,13 +4394,16 @@ export const shadowSpells = [
             keywords="Magical, Range"
             effect={
               <span>
-                Targeted zones become dangerous zones (1 necrotic damage per
-                spell tier) that only hurts enemies. You have{" "}
+                Targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (1 necrotic damage per spell tier) that only hurts enemies. Your
+                duplicates give you{" "}
                 <Link className="internal-link" to="/rules/combat#cover">
                   cover
                 </Link>{" "}
-                in the targeted zones as you are nearly indistinguishable from
-                your shadows.
+                in the targeted zones.
               </span>
             }
             duration="Scene ends"
@@ -4582,7 +4423,16 @@ export const shadowSpells = [
             duration="Scene ends"
             keywords="Magical"
             target="1 creature (+1 creatures per higher spell tier) within your zone"
-            effect="Target gains cover. When a creature damages the target with a melee ability, they take 2 necrotic damage per spell tier."
+            effect={
+              <span>
+                Target gains{" "}
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
+                </Link>
+                . When a creature damages the target with a melee ability, they
+                take 2 necrotic damage per spell tier.
+              </span>
+            }
           />
         </div>
       ),
@@ -4602,9 +4452,12 @@ export const shadowSpells = [
             keywords="Magical, Range"
             effect={
               <span>
-                Targeted zones become dangerous zones (1 necrotic damage per
-                spell tier) filled with magical darkness. When a creature takes
-                this damage, make an{" "}
+                Targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (1 necrotic damage per spell tier) filled with magical darkness.
+                When a creature takes this damage, make an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>{" "}
@@ -4744,16 +4597,15 @@ export const teleportationSpells = [
           duration="Scene ends"
           effect={
             <span>
-              Designate willing creatures within your zone equal to the spell
-              tier. During the duration, you can use a maneuver to{" "}
+              Choose willing creatures within your zone equal to the spell tier.
+              During the duration, you can end the spell by using a maneuver to{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#special-movement"
               >
                 teleport
               </Link>{" "}
-              designated creatures to the targeted zone, even without line of
-              sight. Then the spell ends.
+              chosen creatures to the targeted zone, even without line of sight.
             </span>
           }
         />
@@ -4798,22 +4650,14 @@ export const teleportationSpells = [
         <div>
           <AbilityCard
             accordion
-            descriptor="You create a temporary teleportation portal that others can travel through."
+            descriptor="You create temporary teleportation portals that others can travel through."
             frequency="Spell 2 (Teleportation)"
             target="Your zone and another zone within a number of zones equal to the spell tier"
             keywords="Magical, Range"
             effect={
               <span>
-                Designate any number of creatures and create a linked portal in
-                the two targeted zones. Any designated creature next to a portal
-                can spend a maneuver to{" "}
-                <Link
-                  className="internal-link"
-                  to="/rules/combat#special-movement"
-                >
-                  teleport
-                </Link>{" "}
-                to the other portal even without line of sight, or{" "}
+                Create a portal in each of the targeted zones. Creatures of your
+                choice can{" "}
                 <Link
                   className="internal-link"
                   to="/combat-abilities#disengage"
@@ -4824,7 +4668,7 @@ export const teleportationSpells = [
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}
-                up to the portal as part of the same maneuver.
+                to enter a portal to teleport to the other side.
               </span>
             }
             duration="Scene ends"
@@ -5022,7 +4866,13 @@ export const timeSpells = [
             </span>
           }
           critical={
-            <span>Same as a success, and speed halved while dazed</span>
+            <span>
+              Same as a success, and{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              while dazed
+            </span>
           }
         />
       ),
@@ -5033,25 +4883,16 @@ export const timeSpells = [
       spell: (
         <AbilityCard
           accordion
-          descriptor="You manifest a slightly different version of yourself from another timeline to aid you."
+          descriptor="You manifest another version of yourself from another timeline to aid you."
           frequency="Spell 1 (Time)"
-          duration="Focus for the scene"
+          duration="Scene ends"
           keywords="Magical, Range"
           effect={
             <span>
-              You create a slightly translucent duplicate of yourself within 1
-              zone. The duplicate’s defenses equal 10 + double the spell tier
-              and hit points equal 4 per spell tier. When you focus on this
-              spell, your duplicate can{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>{" "}
-              or{" "}
-              <Link className="internal-link" to="/combat-abilities#move">
-                move
-              </Link>
-              . You can see and hear through your duplicate and take any acts
-              from the duplicate’s position.
+              You create a translucent duplicate of yourself within 1 zone. The
+              duplicate’s defenses equal 10 + double the spell tier and hit
+              points equal 4 per spell tier. You can see and hear through your
+              duplicate and use your abilities from your duplicate’s position.
             </span>
           }
         />
@@ -5072,19 +4913,19 @@ export const timeSpells = [
           keywords="Escalation, Magical, Range"
           effect={
             <span>
-              <span>Choose to speed up to slow down the targeted zones:</span>
+              <span>Choose how to affect time in the targeted zones:</span>
               <ul>
                 <li>
                   <span>
-                    <i>Speed Up:</i> Any creature that starts their turn in the
+                    <i>Hasten:</i> Creatures that start their turn in the
                     targeted zones gain an extra maneuver that turn.
                   </span>
                 </li>
 
                 <li>
                   <span>
-                    <i>Slow Down:</i> Whenever a creature starts their turn in
-                    the targeted zones or enters the targeted zones, make an{" "}
+                    <i>Slow:</i> When a creature enters or starts their turn in
+                    the targeted zones, make an{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -5095,8 +4936,7 @@ export const timeSpells = [
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
                     </Link>{" "}
-                    (turn starts). You can only make this attack roll against
-                    the same creature once per turn.
+                    (turn starts).
                   </span>
                 </li>
               </ul>
@@ -5117,15 +4957,18 @@ export const timeSpells = [
             target="1 creature (+1 creatures per higher tier) within 2 zones"
             keywords="Escalation, Magical, Range"
             defense="MGT"
-            critical="Same as success, but time pauses for the scene (scene ends)"
-            success="Time pauses for the target and they can’t act or be interacted with (turn ends). Any current effects already on the target like ongoing damage is paused until time resumes for the target."
+            critical="The success's effect lasts for the scene"
+            success="Time pauses around the target (turn ends), but ends early if they take damage. Any current effects already on the target are paused until the spell ends."
             partial={
               <span>
-                Speed halved (turn ends) and{" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (turn ends) and{" "}
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                while dazed
               </span>
             }
           />
@@ -5144,7 +4987,7 @@ export const timeSpells = [
             descriptor="You briefly stop time for everyone except yourself."
             frequency="Spell 3 (Time)"
             keywords="Magical"
-            effect="Time stops and you have 2 turns after your current turn before time returns to normal. Any current conditions on you continue and you can use abilities that only affect yourself as normal. If you use any ability that affects others, then the ability doesn’t start until time returns to normal. For example, if you cast fireball at enemies during the time freeze, the spell doesn’t damage your foes until time resumes normally."
+            effect="Time stops for everyone except you for two more turns. Current conditions on you persist, and you can use abilities that only affect yourself. Abilities affecting others take effect only after time resumes, such as a fireball exploding only after this spell ends."
           />
         </div>
       ),
@@ -5207,12 +5050,16 @@ export const toxicSpells = [
             duration="Scene ends"
             effect={
               <span>
-                Targeted zones become dangerous zones (1 toxic damage per spell
-                tier). When a creature takes this damage, make an{" "}
+                Targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (1 toxic damage per spell tier). When a creature takes this
+                damage, make an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against their Might, and on a success, the creature becomes
+                against their Might, and on a success, the creature becomes{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
@@ -5345,8 +5192,12 @@ export const toxicSpells = [
             duration="Scene ends"
             effect={
               <span>
-                The targeted zones become dangerous zones (1 toxic damage per
-                spell tier). When a creature takes this damage, make an{" "}
+                Targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (1 toxic damage per spell tier). When a creature takes this
+                damage, make an{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
@@ -5378,9 +5229,9 @@ export const toxicSpells = [
             damage="4 toxic damage per spell tier"
             effect={
               <span>
-                If any damage from this spell kills the target, then you can
-                choose to infect another creature within the same zone as the
-                previous target. Repeat this spell’s{" "}
+                If this spell kills the target, then you can infect another
+                creature within the same zone as the previous target. Repeat
+                this spell’s{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
@@ -5477,8 +5328,8 @@ export const unholySpells = [
                 while marked
               </span>
             }
-            success="Same as a partial, but marked (scene ends)"
-            partial="Marked (turn ends). While marked, the target takes additional 1 unholy damage per spell tier whenever they take damage"
+            success="Marked (scene ends)"
+            partial="Marked (turn ends). While marked, the target takes an additional 1 unholy damage per spell tier whenever they take damage"
           />
         </div>
       ),
@@ -5565,7 +5416,7 @@ export const unholySpells = [
             frequency="Spell 2 (Unholy)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon a demon within 1 zone. When the demon is reduced to 0 hit points, the spell ends."
+            effect="You summon a demon within 1 zone."
           />
           <Monster
             name="Demon"
@@ -5634,43 +5485,24 @@ export const unholySpells = [
             duration="Scene ends"
             effect={
               <span>
-                <span>The wall has the following properties:</span>
-                <ul>
-                  <li>
-                    <span>
-                      Creatures, objects, and physical effects can’t pass
-                      through the wall.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Each part of the wall (one zone border) has defenses equal
-                      to 10 + double spell tier and 5 hit points per spell tier.
-                    </span>
-                  </li>
-                  <li>
-                    <span>
-                      Make an{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#attack-roll"
-                      >
-                        attack roll
-                      </Link>{" "}
-                      against the Resolve of any creature that starts their turn
-                      within a zone touching the wall or enters a zone touching
-                      the wall. On a success, the target must use a maneuver to
-                      <Link
-                        className="internal-link"
-                        to="/combat-abilities#move"
-                      >
-                        move
-                      </Link>{" "}
-                      up to the wall, and then take 2 unholy damage per spell
-                      tier.
-                    </span>
-                  </li>
-                </ul>
+                <span>
+                  None can can pass through the wall. Each zone border of the
+                  wall has defenses equal to 10 + double spell tier and 5 hit
+                  points per spell tier. When a creature enters or starts their
+                  turn in a zone touching the wall, make an{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#attack-roll"
+                  >
+                    attack roll
+                  </Link>{" "}
+                  against their Resolve. On a success, the target must use a
+                  maneuver to{" "}
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>{" "}
+                  up to the wall, and then take 2 unholy damage per spell tier.
+                </span>
               </span>
             }
           />
@@ -5854,9 +5686,12 @@ export const warSpells = [
             keywords="Magical, Range"
             effect={
               <span>
-                Targeted zones become dangerous zones (1 physical damage per
-                spell tier), and when creatures take this damage, they also take
-                1{" "}
+                Targeted zones become{" "}
+                <Link className="internal-link" to="/rules/combat#zone-types">
+                  dangerous zones
+                </Link>{" "}
+                (1 physical damage per spell tier), and when creatures take this
+                damage, they also take 1{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -6033,8 +5868,11 @@ export const waterSpells = [
           duration="Scene ends"
           effect={
             <span>
-              Targeted zones become difficult zones. When a creature starts
-              their turn in the zone or moves through the zone, make an{" "}
+              Targeted zones become{" "}
+              <Link className="internal-link" to="/rules/combat#zone-types">
+                difficult zones
+              </Link>
+              . When a creature enters or starts their turn in the zone, make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -6042,8 +5880,7 @@ export const waterSpells = [
               <Link className="internal-link" to="/conditions#prone">
                 prone
               </Link>
-              You can only make this attack roll against a creature once per
-              turn.
+              .
             </span>
           }
         />
@@ -6062,38 +5899,15 @@ export const waterSpells = [
           duration="Scene ends"
           effect={
             <span>
-              <span>The wall has the following properties:</span>
-              <ul>
-                <li>
-                  <span>
-                    Range abilities using{" "}
-                    <Link
-                      className="internal-link"
-                      to="/rules/combat#attack-roll"
-                    >
-                      attack rolls
-                    </Link>{" "}
-                    take <Modifier type="mf" count="1" /> if the target is
-                    beyond the wall. Any abilities that pass through the wall
-                    that deal fire damage only deals half damage.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    Any cold damage abilities that pass through the wall instead
-                    freeze one zone border of the wall. The frozen section has
-                    defenses of 8 + double spell tier and 4 hit points per spell
-                    tier.
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    When a creature attempts to pass through the wall, you can
-                    stop their movement on a successful attack roll against
-                    their Might.
-                  </span>
-                </li>
-              </ul>
+              <span>
+                Range abilities fail to pass through the wall. When a creature
+                attempts to pass through the wall, make an attack roll against
+                their Might. On a success, they fall{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>{" "}
+                after passing through the wall.
+              </span>
             </span>
           }
         />
@@ -6112,7 +5926,7 @@ export const waterSpells = [
             frequency="Spell 2 (Water)"
             duration="Focus until scene ends"
             keywords="Magical, Summon, Range"
-            effect="You summon a water elemental within 1 zone. When the elemental is reduced to 0 hit points, the spell ends."
+            effect="You summon a water elemental within 1 zone. "
           />
           <Monster
             name="Water Elemental"
@@ -6184,7 +5998,7 @@ export const waterSpells = [
             defense="MGT"
             critical={
               <span>
-                Same as a success, and 1{" "}
+                1{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -6244,7 +6058,18 @@ export const waterSpells = [
                 if colossal
               </span>
             }
-            effect="Anyone within the affected zone is submerged in water, and must hold their breath. At the start of your subsequent turns, the wave moves forward in a straight line, targeting all creatures in an adjacent zone, and bringing any seized creatures with the wave. The wave stops and collapses at the end of the scene."
+            effect={
+              <span>
+                Anyone within the affected zone must hold their breath or begin{" "}
+                <Link className="internal-link" to="/rules/combat#underwater">
+                  drowning
+                </Link>
+                . On your subsequent turns, the wave moves forward, targeting
+                all creatures in an adjacent zone, and bringing any seized
+                creatures with the wave. The wave collapses at the end of the
+                scene.
+              </span>
+            }
           />
         </div>
       ),

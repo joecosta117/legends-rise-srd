@@ -178,26 +178,21 @@ function Vessel() {
               duration="Scene ends"
               effect={
                 <span>
-                  <span>
-                    While in this form, you gain the following benefits:
-                  </span>
+                  <span>While in this form, you gain:</span>
                   <ul>
                     <li>
-                      <span>
-                        Your natural melee weapon damage increases to 3
-                      </span>
+                      <span>Natural melee weapon damage increases to 3</span>
                     </li>
                     <li>
-                      <span>While not wearing armor, you gain +2 to Might</span>
+                      <span>+2 to Might While not wearing armor</span>
                     </li>
                     <li>
                       <span>
-                        You gain{" "}
                         <Link
                           className="internal-link"
                           to="/rules/combat#temporary-hit-points"
                         >
-                          temporary hit points
+                          Temporary hit points
                         </Link>{" "}
                         equal to double your proficiency bonus that stack with
                         other temporary hit points

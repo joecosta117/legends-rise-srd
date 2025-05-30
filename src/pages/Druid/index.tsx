@@ -379,58 +379,37 @@ function Druid() {
               effect={
                 <span>
                   <span>
-                    You spend mana equal to your tier to summon a spirit animal
-                    (owl, bear, or wolf) in the target zone:
+                    Spend mana equal to your tier to summon a spirit that gives
+                    you and allies in the targeted zone one of the following:
                   </span>
                   <ul>
                     <li>
                       <span>
-                        <i>Bear:</i> When you first use this ability and when
-                        you focus on it, all creatures of your choice within the
-                        targeted zone gain{" "}
+                        <i>Bear:</i>{" "}
                         <Link
                           className="internal-link"
                           to="/rules/combat#temporary-hit-points"
                         >
-                          temporary hit points
+                          Temporary hit points
                         </Link>{" "}
-                        equal to your tier (scene ends).
+                        equal to your tier (scene ends), and again when you
+                        focus on this ability
                       </span>
                     </li>
                     <li>
                       <span>
-                        <i>Owl:</i> All creatures of your choice within the zone
-                        gain{" "}
-                        <b>
-                          +1{" "}
-                          <img
-                            className="icon"
-                            src={fortune}
-                            alt="fortune icon"
-                          />
-                        </b>{" "}
-                        to{" "}
+                        <i>Owl:</i> <Modifier type="f" count="1" /> to{" "}
                         <Link
                           className="internal-link"
                           to="/rules/combat#overcome"
                         >
                           overcome rolls
                         </Link>
-                        .
                       </span>
                     </li>
                     <li>
                       <span>
-                        <i>Wolf:</i> You and allies gain{" "}
-                        <b>
-                          +1{" "}
-                          <img
-                            className="icon"
-                            src={fortune}
-                            alt="fortune icon"
-                          />
-                        </b>{" "}
-                        on{" "}
+                        <i>Wolf:</i> <Modifier type="f" count="1" /> to{" "}
                         <Link
                           className="internal-link"
                           to="/rules/combat#attack-roll"
@@ -444,7 +423,7 @@ function Druid() {
                         >
                           vulnerable
                         </Link>{" "}
-                        creatures within the targeted zone.
+                        creatures
                       </span>
                     </li>
                   </ul>
@@ -464,63 +443,33 @@ function Druid() {
               actType="Maneuver"
               descriptor="You transform into a powerful animal."
               frequency="At-will"
-              keywords="Magical"
+              keywords="Magical, Shapeshift"
               duration="Scene ends"
               // @ts-ignore
               effect={
                 <span>
                   <span>
-                    You expend mana equal to your tier to transform your body
-                    and equipment into a medium sized animal of your choice.
-                    While in this form:
+                    Spend mana equal to your tier to transform your body into a
+                    medium sized animal of your choice. While in this form, you
+                    gain:
                   </span>
                   <ul>
                     <li>
                       <span>
-                        You can’t cast spells or use any abilities you can’t do
-                        as an animal, but you can focus on abilities.
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        You gain{" "}
                         <Link
                           className="internal-link"
                           to="/rules/combat#temporary-hit-points"
                         >
-                          temporary hit points
+                          Temporary hit points
                         </Link>{" "}
-                        equal to half your <ToolTip preset="shakenVal" /> while
-                        in this form.
+                        equal to half your <ToolTip preset="shakenVal" />
                       </span>
                     </li>
                     <li>
-                      <span>Your Evasion and Might gain +2.</span>
+                      <span>Evasion and Might increase by +2</span>
                     </li>
                     <li>
-                      <span>
-                        Your natural melee weapons deal 3 physical damage.
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        You have traits your animal would have such as a fly
-                        speed if you shift into a large bird. Any new speeds
-                        equal the same speed as your land speed.
-                      </span>
-                    </li>
-                    <li>
-                      <span>
-                        Once you are{" "}
-                        <Link
-                          className="internal-link"
-                          to="/rules/combat#dying"
-                        >
-                          defeated
-                        </Link>
-                        , or you end the magic as a free action on your turn,
-                        you revert back to your normal form and the magic ends.
-                      </span>
+                      <span>Natural melee weapons deal 3 physical damage.</span>
                     </li>
                   </ul>
                 </span>
@@ -675,40 +624,56 @@ function Druid() {
               descriptor="You call upon your animal spirit to help an ally."
               frequency="At-will"
               keywords="Magical"
-              trigger="You see a creature take damage within your call spirit animal zone"
+              trigger="You see a creature take damage within your call spirit animal's zone"
               // @ts-ignore
               effect={
                 <span>
-                  <span>Effect depends on your call spirit animal:</span>
+                  <span>
+                    Triggering creature gains the following depending on your
+                    spirit animal:
+                  </span>
                   <ul>
                     <li>
                       <span>
-                        <i>Bear:</i> Creature gains{" "}
+                        <i>Bear:</i>{" "}
                         <Link
                           className="internal-link"
                           to="/rules/combat#resistances-and-weaknesses"
                         >
-                          resistance
+                          Resistance
                         </Link>{" "}
-                        equal to your tier only against the triggering damage.
+                        only against the triggering damage equal to your tier
                       </span>
                     </li>
                     <li>
                       <span>
-                        <i>Owl:</i> The damaged creature can{" "}
+                        <i>Owl:</i>{" "}
                         <Link
                           className="internal-link"
                           to="/combat-abilities#disengage"
                         >
-                          disengage
+                          Disengage
                         </Link>{" "}
-                        as a free action.
+                        as a free action
                       </span>
                     </li>
                     <li>
                       <span>
-                        <i>Wolf</i> The attacker takes physical damage equal to
-                        your proficiency bonus.
+                        <i>Wolf:</i>{" "}
+                        <Link
+                          className="internal-link"
+                          to="/combat-abilities#strike"
+                        >
+                          Strike
+                        </Link>{" "}
+                        or{" "}
+                        <Link
+                          className="internal-link"
+                          to="/combat-abilities#spellcast"
+                        >
+                          spellcast
+                        </Link>{" "}
+                        a tier 0 battle spell as a reaction
                       </span>
                     </li>
                   </ul>

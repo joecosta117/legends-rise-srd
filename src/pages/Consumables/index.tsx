@@ -270,7 +270,7 @@ function Consumables() {
                 <div>
                   <p>
                     Each of these potions is attuned to a certain element:
-                    arcane, cold, fire, holy, lightning, mental, necrotic,
+                    arcane, cold, fire, holy, lightning, psychic, necrotic,
                     toxic, or unholy. When this potion is drunk, you gain{" "}
                     <Link
                       className="internal-link"
