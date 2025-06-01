@@ -1089,7 +1089,7 @@ function Summoner() {
             </p>
             <p>
               All of your summons gain a fly speed equal to their land speed,
-              and the Evasion of your summons increases by +1.
+              and the Guard of your summons increases by +1.
             </p>
 
             <h3 className="header">Master Summoner</h3>

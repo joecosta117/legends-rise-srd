@@ -514,7 +514,7 @@ function Commander() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against the Resolve of each enemy within 1 zone. On a success, a
+              against the Spirit of each enemy within 1 zone. On a success, a
               target is{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered

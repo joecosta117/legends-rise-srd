@@ -908,8 +908,8 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  Scales begin covering your body. When unarmored, your Evasion
-                  increases by +1.
+                  Scales begin covering your body. When wearing mystic robes or
+                  unarmored, your Guard increases by +1.
                 </span>
               </li>
               <li>
@@ -937,7 +937,7 @@ function HeroicArchetypes() {
               frequency="Encounter"
               keywords="Escalation, Magical, Range"
               target="1d4+1 enemies within your zone and an adjacent zone"
-              defense="EVN"
+              defense="Guard"
               damage="3 damage per tier of the damage type chosen by draconic power"
               critical={
                 <span>
@@ -1121,7 +1121,7 @@ function HeroicArchetypes() {
               <li>
                 <span>
                   When wielding a weapon in each hand, you gain a +1 bonus to
-                  Evasion
+                  Guard
                 </span>
               </li>
             </ul>
@@ -1198,7 +1198,7 @@ function HeroicArchetypes() {
               <li>
                 <span>
                   When wielding a standard melee weapon and have a free hand,
-                  you gain a +1 bonus to Evasion
+                  you gain a +1 bonus to Guard
                 </span>
               </li>
             </ul>
@@ -1987,7 +1987,7 @@ function HeroicArchetypes() {
               frequency="Encounter"
               keywords="Range"
               target="Each enemy of your choice within 1 zone"
-              defense="RES"
+              defense="Guard"
               success={
                 <span>
                   <Link className="internal-link" to="/conditions#taunted">
@@ -2819,7 +2819,7 @@ function HeroicArchetypes() {
                   >
                     attack roll
                   </Link>{" "}
-                  against the Might of all other enemies within your zone. On a
+                  against the Guard of all other enemies within your zone. On a
                   success or higher, a secondary target falls prone.
                 </span>
               }

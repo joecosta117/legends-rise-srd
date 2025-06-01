@@ -619,7 +619,7 @@ function Vessel() {
             </p>
             <p>
               When you use monstrous form, make an attack roll against the
-              Resolve of each enemy within 1 zone.
+              Spirit of each enemy within 1 zone.
             </p>
             <ul>
               <li>
