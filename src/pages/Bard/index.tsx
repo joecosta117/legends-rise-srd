@@ -108,7 +108,7 @@ function Bard() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +4 to Resolve
+                  <b>Defense Bonus:</b> +1 to Spirit
                 </span>
               </li>
               <li>
@@ -123,18 +123,19 @@ function Bard() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> None
+                  <b>Training:</b> Mystic robes
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Starting Equipment:</b> You gain an implement.
+                  <b>Starting Equipment:</b> You gain mystic robes and an
+                  implement.
                 </span>
                 <ul className="secondary-list">
                   <li>
                     <span>
-                      <i>Suggestion:</i> You gain a magical instrument as your
-                      implement.
+                      <i>Suggestion:</i> You gain mystic robes and a magical
+                      instrument as your implement.
                     </span>
                   </li>
                 </ul>

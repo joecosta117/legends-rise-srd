@@ -106,7 +106,7 @@ function Druid() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +4 to Resolve
+                  <b>Defense Bonus:</b> +1 to Spirit
                 </span>
               </li>
               <li>
@@ -121,17 +121,19 @@ function Druid() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> None
+                  <b>Training:</b> Mystic robes
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Starting Equipment:</b> You gain an implement.
+                  <b>Starting Equipment:</b> You gain mystic robes and an
+                  implement.
                 </span>
                 <ul className="secondary-list">
                   <li>
                     <span>
-                      <i>Suggestion:</i> You gain a staff as your implement.
+                      <i>Suggestion:</i> You gain mystic robes and a staff as
+                      your implement.
                     </span>
                   </li>
                 </ul>
@@ -465,7 +467,7 @@ function Druid() {
                       </span>
                     </li>
                     <li>
-                      <span>Evasion and Might increase by +2</span>
+                      <span>Guard increase by +2</span>
                     </li>
                     <li>
                       <span>Natural melee weapons deal 3 physical damage.</span>

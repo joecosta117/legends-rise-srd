@@ -84,7 +84,7 @@ function Paladin() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion, Might, and Resolve
+                  <b>Defense Bonus:</b> +1 to Guard and Spirit
                 </span>
               </li>
               <li>
@@ -99,7 +99,8 @@ function Paladin() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> All armor and weapons
+                  <b>Training:</b> Light armor, heavy armor, shields, and all
+                  weapons
                 </span>
               </li>
               <li>
@@ -227,7 +228,7 @@ function Paladin() {
             <ul>
               <li>
                 <span>
-                  <b>Aegis:</b> Increase all your defenses by +1.
+                  <b>Aegis:</b> Increase your Guard and Spirit by +1.
                 </span>
               </li>
               <li>

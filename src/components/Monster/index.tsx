@@ -12,7 +12,7 @@ interface MonsterProps {
   summons?: boolean;
   hp: string;
   evn: string;
-  mgt: string;
+  mgt?: string;
   res: string;
   pb: string;
   vision?: string;
@@ -141,17 +141,17 @@ const Monster: React.FC<MonsterProps> = ({
               <b>HP</b> {hp}
             </p>
             <p>
-              <b className="evn">EVN</b> {evn} <b>|</b>{" "}
-              <b className="mgt">MGT</b> {mgt} <b>|</b>{" "}
-              <b className="res">RES</b> {res} <b>|</b> <b>PB</b> +{pb}
+              <b className="mgt">Guard</b> {evn} <b>|</b>{" "}
+              {/* <b className="mgt">MGT</b> {mgt} <b>|</b>{" "} */}
+              <b className="res">Spirit</b> {res} <b>|</b> <b>PB</b> +{pb}
             </p>
           </div>
         ) : (
           <div className="basics">
             <p>
-              <b>HP</b> {hp} ({shaken}) <b>|</b> <b className="evn">EVN</b>{" "}
-              {evn} <b>|</b> <b className="mgt">MGT</b> {mgt} <b>|</b>{" "}
-              <b className="res">RES</b> {res} <b>|</b> <b>PB</b> +{pb}
+              <b>HP</b> {hp} ({shaken}) <b>|</b> <b className="mgt">Guard</b>{" "}
+              {evn} <b>|</b> <b className="res">Spirit</b> {res} <b>|</b>{" "}
+              <b>PB</b> +{pb}
             </p>
           </div>
         )}

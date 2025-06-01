@@ -105,7 +105,7 @@ function Magesmith() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion and Resolve
+                  <b>Defense Bonus:</b> +1 to Spirit
                 </span>
               </li>
               <li>
@@ -120,7 +120,8 @@ function Magesmith() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> Light armor and all weapons
+                  <b>Training:</b> Mystic robes, light armor, shields, and all
+                  weapons
                 </span>
               </li>
               <li>
@@ -491,7 +492,7 @@ function Magesmith() {
               frequency="At-will"
               keywords="Spellshape"
               trigger="You cast a spell"
-              effect="Choose a creature within 1 zone. The target’s Evasion increases by +1 until the start of your next turn."
+              effect="Choose a creature within 1 zone. The target’s Guard increases by +1 until the start of your next turn."
             />
 
             <h3 className="header">Infuse Weapon</h3>
@@ -670,8 +671,8 @@ function Magesmith() {
               <b>Requirement:</b> tier 2
             </p>
             <p>
-              While the upgraded item is equipped, the wielder’s Evasion
-              increases by +1.
+              While the upgraded item is equipped, the wielder’s Guard increases
+              by +1.
             </p>
 
             <h2>Aether Upgrade</h2>
@@ -679,7 +680,7 @@ function Magesmith() {
               <b>Requirement:</b> tier 2
             </p>
             <p>
-              While the upgraded item is equipped, the wielder’s Resolve
+              While the upgraded item is equipped, the wielder’s Spirit
               increases by +1.
             </p>
 
@@ -781,8 +782,8 @@ function Magesmith() {
               <b>Requirement:</b> tier 2
             </p>
             <p>
-              While the upgraded item is equipped, the wielder’s Might increases
-              by +1.
+              While the upgraded item is equipped, the wielder’s maximum hit
+              points increase by your proficiency bonus.
             </p>
 
             <h2>Gravity Upgrade</h2>

@@ -9,12 +9,12 @@ function Armor() {
         <EquipmentHeader />
         <h1>Armor</h1>
         <p>
-          Armor helps defend you from incoming physical harm. All armor unless
-          magical or made out of special material is item tier 1 and costs 1
-          gold. All armor takes 1 minute to take on or off, except for shields.
-          You can remove or wield a shield with the Interact maneuver.
+          Armor helps defend you from incoming harm. All armor unless magical or
+          made out of special material is item tier 1 and costs 1 gold. All
+          armor takes 1 minute to take on or off, except for shields. You can
+          remove or equip a shield with the interact maneuver.
         </p>
-        <h2>Armor Training</h2>
+        <h2 className="header">Armor Training</h2>
         <p>
           Your class determines what armor you're trained in. If you aren’t
           trained in armor while wearing armor, then your speed is halved and
@@ -22,13 +22,23 @@ function Armor() {
           <Link className="internal-link" to="/conditions#dazed">
             dazed
           </Link>
-          .
+          , except for mystic robes.
         </p>
-        <h2>Armor Types</h2>
+        <h2 className="header">Armor Types</h2>
         <p>
-          There are three types of armor. Each armor grants certain benefits
+          There are four types of armor. Each armor grants certain benefits
           while worn.
         </p>
+        <h3 className="header">Mystic Robes</h3>
+        <p>
+          <i>
+            Mystic robes don't protect from physical threats, but instead ward
+            from mystical threats. Typically these are robes or garments covered
+            with arcane sigils, blessed by the gods, or made out of eldritch
+            material.
+          </i>
+        </p>
+        <p>Mystic robes grants +2 to Spirit.</p>
         <h3 className="header">Light Armor</h3>
         <p>
           <i>
@@ -37,7 +47,7 @@ function Armor() {
             vital areas.
           </i>
         </p>
-        <p>Light armor grants +2 to Evasion.</p>
+        <p>Light armor grants +1 to Guard.</p>
         <h3 className="header">Heavy Armor</h3>
         <p>
           <i>
@@ -46,16 +56,7 @@ function Armor() {
             chainmail, or other dense material.
           </i>
         </p>
-        <p>
-          Heavy armor grants +2 to Might and{" "}
-          <Link
-            className="internal-link"
-            to="/rules/combat#resistances-and-weaknesses"
-          >
-            resistance
-          </Link>{" "}
-          to physical damage equal to your tier.
-        </p>
+        <p>Heavy armor grants +2 to Guard.</p>
         <h3 className="header">Shields</h3>
         <p>
           <i>
@@ -64,8 +65,8 @@ function Armor() {
           </i>
         </p>
         <p>
-          Shields grant +1 to Evasion and can be used as a melee weapon, dealing
-          2 physical damage.
+          Shields grant +1 to Guard and can be used as a melee weapon, dealing 2
+          physical damage.
         </p>
       </div>
     </div>

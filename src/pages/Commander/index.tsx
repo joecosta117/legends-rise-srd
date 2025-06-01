@@ -86,7 +86,7 @@ function Commander() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Might and Resolve
+                  <b>Defense Bonus:</b> +1 to Guard
                 </span>
               </li>
               <li>
@@ -101,7 +101,8 @@ function Commander() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> All armor and weapons
+                  <b>Training:</b> Light armor, heavy armor, shields, and all
+                  weapons
                 </span>
               </li>
               <li>

@@ -271,7 +271,7 @@ function Ancestries() {
                     </li>
                     <li>
                       <span>
-                        <b>Scales:</b> Your Evasion increases by +1 while
+                        <b>Scales:</b> Your Guard increases by +1 while
                         unarmored.
                       </span>
                     </li>
@@ -719,7 +719,7 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Armored Core (S):</b> Your Evasion increases by +1.
+                    <b>Armored Core (S):</b> Your Guard increases by +1.
                   </span>
                 </li>
                 <li>
