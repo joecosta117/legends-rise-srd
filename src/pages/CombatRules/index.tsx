@@ -434,12 +434,11 @@ function CombatRules() {
           </li>
           <li>
             <span>
-              <b>Failure:</b>
-            </span>{" "}
-            Same as a partial success.
+              <b>Failure:</b> No damage as you miss or your attack has no effect
+            </span>
           </li>
         </ul>
-        <h4 className="header">No Whiffs</h4>
+        {/* <h4 className="header">No Whiffs</h4>
         <p>
           Unlike{" "}
           <Link className="internal-link" to="/rules/skills">
@@ -457,7 +456,7 @@ function CombatRules() {
           unless otherwise specified. For example, if an arcanist gets a failure
           on their terrify spell, then the target is still hindered (turn ends),
           which is the partial success effect.
-        </p>
+        </p> */}
         <h3 className="header">Weapon Attacks</h3>
         <p>
           Normally, you add your proficiency bonus to attack rolls, including

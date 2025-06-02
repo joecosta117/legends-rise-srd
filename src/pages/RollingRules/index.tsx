@@ -334,7 +334,7 @@ function RollingRules() {
           situation a skill tier of 3, which is higher than the hero’s tier by
           two. That drops the hero’s success to a failure!
         </p>
-        <h3 className="header">Attack Rolls</h3>
+        {/* <h3 className="header">Attack Rolls</h3>
         <p>
           If a difference in tiers downgrades an{" "}
           <Link className="internal-link" to="/rules/combat#attack-roll">
@@ -346,7 +346,7 @@ function RollingRules() {
           rogue is one tier higher, the carrion demon downgrades their attack
           roll result to a failure. Normally, a failed attack roll still deals
           half damage, but in this case, the carrion demon deals no damage!
-        </p>
+        </p> */}
 
         <h3 className="header">Overcome Rolls</h3>
         <p>
