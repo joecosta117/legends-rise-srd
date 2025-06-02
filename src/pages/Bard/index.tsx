@@ -684,7 +684,7 @@ function Bard() {
                 frequency="At-will"
                 keywords="Magical"
                 target="1d4+1 enemies within your zone"
-                defense="MGT"
+                defense="Guard"
                 damage="1 physical damage per your tier"
               />
             </div>

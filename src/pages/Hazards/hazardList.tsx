@@ -22,7 +22,7 @@ const HazardList = [
             name: "Siphon Life",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "2 necrotic damage",
             success: (
               <span>
@@ -56,7 +56,7 @@ const HazardList = [
             name: "Fork Lightning",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 lightning damage",
             success: (
               <span>
@@ -88,7 +88,7 @@ const HazardList = [
             name: "Dimensional Jolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "12 arcane damage",
             critical: (
               <span>
@@ -126,7 +126,7 @@ const HazardList = [
             name: "Slow Down Time",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "4 arcane damage",
             critical: <span>Same as a success, but dazed (overcome ends)</span>,
             success: (
@@ -161,7 +161,7 @@ const HazardList = [
             name: "Ringing of Doom",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: "Same as a success, and the target falls prone from fear",
             success: (
               <span>
@@ -195,7 +195,7 @@ const HazardList = [
             name: "Grasp of the Dead",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "2 necrotic damage",
             success: (
               <span>
@@ -270,7 +270,7 @@ const HazardList = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 necrotic damage",
           },
         ]}
@@ -295,7 +295,7 @@ const HazardList = [
             basic: true,
             name: "Grasping Vines",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -328,7 +328,7 @@ const HazardList = [
             basic: true,
             name: "Toxic Spores",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "2 toxic damage",
             success: (
               <span>
@@ -362,7 +362,7 @@ const HazardList = [
             name: "Paralyzing Wail",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "4 psychic damage",
             success: (
               <span>
@@ -396,7 +396,7 @@ const HazardList = [
             name: "Profane Smite",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "8 unholy damage",
             success: (
               <span>
@@ -430,7 +430,7 @@ const HazardList = [
             name: "Maddening Whispers",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "8 psychic damage",
             success: (
               <span>
@@ -464,7 +464,7 @@ const HazardList = [
             name: "Unending Pain",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 unholy damage",
             success: (
               <span>
@@ -502,7 +502,7 @@ const HazardList = [
             name: "Dual Fire",
             keywords: "magical, range",
             target: <span>2 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "8 arcane damage",
           },
         ]}
@@ -527,7 +527,7 @@ const HazardList = [
             basic: true,
             name: "Burning Flames",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 fire damage",
             success: (
               <span>
@@ -565,7 +565,7 @@ const HazardList = [
             name: "End Life",
             keywords: "magical, range",
             target: <span>1d4+1 enemies within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "6 necrotic damage",
             success: (
               <span>

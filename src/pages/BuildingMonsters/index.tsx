@@ -124,21 +124,21 @@ function BuildingMonsters() {
             <tr>
               <td>1</td>
               <td>10</td>
-              <td>11, 13, 15</td>
+              <td>13, 11</td>
               <td>+2</td>
               <td>melee 3/6, range 2/5, multi 1/3</td>
             </tr>
             <tr>
               <td>2</td>
               <td>26</td>
-              <td>13, 15, 17</td>
+              <td>15, 13</td>
               <td>+4</td>
               <td>melee 6/12, range 4/10, multi 2/6</td>
             </tr>
             <tr>
               <td>3</td>
               <td>48</td>
-              <td>15, 17, 19</td>
+              <td>17, 15</td>
               <td>+6</td>
               <td>melee 9/18, range 6/15, multi 3/9</td>
             </tr>
@@ -148,13 +148,12 @@ function BuildingMonsters() {
           Defenses
         </h4>
         <p>
-          Most monsters typically have a weak defense, average defense, and
-          strong defense depending on their thematics. In general, most monsters
-          have Evasion as their average defense, especially melee focused
-          monsters. For example, a lumbering zombie giant's strongest defense is
-          Might, and although they're slow, the mindless nature of the zombie
-          makes Resolve their lowest defense and Evasion as their average
-          defense.
+          Most monsters typically have a weak defense and strong defense
+          depending on their thematics. In general, most monsters have higher
+          Guard with a weaker Spirit, especially melee focused monsters. For
+          example, a lumbering zombie giant's strongest defense is Guard, but
+          the mindless nature of the zombie makes Spirit their lowest defense.
+          Meanwhile, a villanous mage would have a strong Spirit but low Guard.
         </p>
         <h4 className="header">Damage</h4>
         <p>Monsters tend to have three types of attacks that deal damage:</p>
@@ -342,7 +341,7 @@ function BuildingMonsters() {
               <td>Tank</td>
               <td>Add PB</td>
               <td>-</td>
-              <td>Physical resistance (tier)</td>
+              <td>+2 to Guard</td>
             </tr>
           </tbody>
         </table>

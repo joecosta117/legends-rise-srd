@@ -36,7 +36,7 @@ const HumanoidMonsters = [
             name: "Unholy Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 unholy damage",
           },
         ]}
@@ -95,7 +95,7 @@ const HumanoidMonsters = [
             name: "Hymn of Discord",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 psychic damage",
           },
         ]}
@@ -154,7 +154,7 @@ const HumanoidMonsters = [
             name: "Profance Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 unholy damage",
             success: (
               <span>
@@ -245,7 +245,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -301,7 +301,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -360,7 +360,7 @@ const HumanoidMonsters = [
             name: "Arcane Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 arcane damage",
           },
           {
@@ -368,7 +368,7 @@ const HumanoidMonsters = [
             name: "Arcane Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "4 arcane damage",
           },
         ]}
@@ -442,7 +442,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -450,7 +450,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -501,7 +501,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -509,7 +509,7 @@ const HumanoidMonsters = [
             name: "Longbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -571,7 +571,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -579,7 +579,7 @@ const HumanoidMonsters = [
             name: "Longbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -628,7 +628,7 @@ const HumanoidMonsters = [
             name: "Grasping Vine",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -718,7 +718,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -726,7 +726,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "range, weapon",
             target: "1 creature within 3 zones",
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -774,7 +774,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -782,7 +782,7 @@ const HumanoidMonsters = [
             name: "Arcane Jolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 arcane damage",
           },
         ]}
@@ -853,7 +853,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -869,7 +869,7 @@ const HumanoidMonsters = [
             name: "Guiding Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -937,7 +937,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
           {
@@ -945,7 +945,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
         ]}
@@ -992,7 +992,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -1000,7 +1000,7 @@ const HumanoidMonsters = [
             name: "Longbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -1069,7 +1069,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -1077,7 +1077,7 @@ const HumanoidMonsters = [
             name: "Entrapping Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -1092,7 +1092,7 @@ const HumanoidMonsters = [
             name: "Net",
             keywords: "weapon",
             target: <span>1 creature within the bounty hunter's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -1150,7 +1150,7 @@ const HumanoidMonsters = [
             name: "Elemental Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 damage of the chosen element damage type",
           },
           {
@@ -1158,7 +1158,7 @@ const HumanoidMonsters = [
             name: "Elemental Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 damage of the chosen element damage type",
             effect: (
               <span>
@@ -1215,7 +1215,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -1223,7 +1223,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -1280,7 +1280,7 @@ const HumanoidMonsters = [
             name: "Confusing Thought",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 psychic damage",
             success: (
               <span>
@@ -1343,7 +1343,7 @@ const HumanoidMonsters = [
             name: "Weakening Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 necrotic damage",
             success: (
               <span>
@@ -1403,7 +1403,7 @@ const HumanoidMonsters = [
             name: "Maddening Thought",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 psychic damage",
             success: (
               <span>
@@ -1421,7 +1421,7 @@ const HumanoidMonsters = [
             name: "Summon Tentacle",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
-            defense: "MGT",
+            defense: "Guard",
             critical: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -1477,7 +1477,7 @@ const HumanoidMonsters = [
             name: "Bow",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -1485,7 +1485,7 @@ const HumanoidMonsters = [
             name: "Burst of Arrows",
             keywords: "range, weapon",
             target: <span>1d4 creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -1527,7 +1527,7 @@ const HumanoidMonsters = [
             name: "Arcane Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 arcane damage",
           },
           {
@@ -1535,7 +1535,7 @@ const HumanoidMonsters = [
             name: "Arcane Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "8 arcane damage",
           },
           {
@@ -1583,7 +1583,7 @@ const HumanoidMonsters = [
             name: "Unholy Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "4 unholy damage",
           },
           {
@@ -1591,7 +1591,7 @@ const HumanoidMonsters = [
             name: "Profane Flames",
             keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "6 unholy damage",
             effect: (
               <span>
@@ -1677,7 +1677,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -1685,7 +1685,7 @@ const HumanoidMonsters = [
             name: "Longbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -1745,7 +1745,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1761,7 +1761,7 @@ const HumanoidMonsters = [
             name: "Guiding Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1851,7 +1851,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
           {
@@ -1859,7 +1859,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -1925,7 +1925,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -1933,7 +1933,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
         ]}
@@ -1994,7 +1994,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -2002,7 +2002,7 @@ const HumanoidMonsters = [
             name: "Longbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -2064,7 +2064,7 @@ const HumanoidMonsters = [
             name: "Weakening Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "4 necrotic damage",
             success: (
               <span>
@@ -2080,7 +2080,7 @@ const HumanoidMonsters = [
             name: "Withering Blast",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 necrotic damage",
             success: (
               <span>
@@ -2149,7 +2149,7 @@ const HumanoidMonsters = [
             name: "Grasping Vine",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -2254,7 +2254,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
         ]}
@@ -2353,7 +2353,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
         ]}
@@ -2426,7 +2426,7 @@ const HumanoidMonsters = [
             name: "Bow",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -2434,7 +2434,7 @@ const HumanoidMonsters = [
             name: "Burst of Arrows",
             keywords: "range, weapon",
             target: <span>1d4 creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -2482,7 +2482,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -2490,7 +2490,7 @@ const HumanoidMonsters = [
             name: "Arcane Jolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 arcane damage",
           },
           {
@@ -2498,7 +2498,7 @@ const HumanoidMonsters = [
             name: "Weapon Storm",
             keywords: "magical, recharge",
             target: "All enemies within the master spellsword's zone",
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -2575,7 +2575,7 @@ const HumanoidMonsters = [
             name: "Arcane Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 arcane damage",
           },
           {
@@ -2583,7 +2583,7 @@ const HumanoidMonsters = [
             name: "Arcane Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "12 arcane damage",
           },
           {
@@ -2639,7 +2639,7 @@ const HumanoidMonsters = [
             name: "Unholy Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 unholy damage",
             success: <span>weakness 3 to all damage (turn ends)</span>,
           },
@@ -2648,7 +2648,7 @@ const HumanoidMonsters = [
             name: "Profane Flames",
             keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "9 unholy damage",
             effect: (
               <span>
@@ -2735,7 +2735,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
           },
           {
@@ -2743,7 +2743,7 @@ const HumanoidMonsters = [
             name: "Longbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -2833,7 +2833,7 @@ const HumanoidMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
           },
           {
@@ -2841,7 +2841,7 @@ const HumanoidMonsters = [
             name: "Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
           },
         ]}
@@ -2913,7 +2913,7 @@ const HumanoidMonsters = [
             name: "Weakening Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 necrotic damage",
             success: (
               <span>
@@ -2929,7 +2929,7 @@ const HumanoidMonsters = [
             name: "Withering Blast",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             success: (
               <span>

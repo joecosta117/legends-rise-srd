@@ -373,7 +373,7 @@ function HeroCreationSteps() {
           </li>
           <li className="defense">
             <b data-type="RES">Spirit (SPT):</b> Represents your hero’s
-            protection from threats against your mind and soul, such as
+            protection from threats against your essence, mind, or soul, such as
             overcoming mind control, withstanding raw arcane energy, or
             resisting unholy corruption.
           </li>

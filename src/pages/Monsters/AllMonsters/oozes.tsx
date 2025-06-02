@@ -69,7 +69,7 @@ const OozeMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 toxic damage",
           },
         ]}
@@ -132,7 +132,7 @@ const OozeMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 toxic damage",
             success: (
               <span>
@@ -156,7 +156,7 @@ const OozeMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 toxic damage",
             success: (
               <span>
@@ -173,7 +173,7 @@ const OozeMonsters = [
                   ongoing
                 </Link>{" "}
                 toxic damage. An engulfed creatue can use their action to make
-                an attack roll against the ooze cube's Might, and on a success
+                an attack roll against the ooze cube's Guard, and on a success
                 or higher, they escape. Otherwise, another creatue can try to
                 pull the engulfed creature out using the same attack roll, but
                 they also take 3 toxic damage as part of the process.
@@ -250,7 +250,7 @@ const OozeMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 necroitc damage",
             success: (
               <span>
@@ -281,7 +281,7 @@ const OozeMonsters = [
             round: "1",
             keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
-            defense: "MGT",
+            defense: "Spirit",
             damage: "3 necrotic damage",
             success: (
               <span>
@@ -339,7 +339,7 @@ const OozeMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "1 necroitc damage",
           },
         ]}

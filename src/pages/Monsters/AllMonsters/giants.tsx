@@ -52,7 +52,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -67,7 +67,7 @@ const GiantMonsters = [
             name: "Javelin",
             keywords: "range, weapon",
             target: <span>1 creature within 2 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -117,7 +117,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -125,7 +125,7 @@ const GiantMonsters = [
             name: "Thrown Spear",
             keywords: "melee, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -186,7 +186,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -203,7 +203,7 @@ const GiantMonsters = [
             name: "Spear",
             keywords: "melee, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -307,7 +307,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -375,7 +375,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -383,7 +383,7 @@ const GiantMonsters = [
             name: "Throw Spear",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
           {
@@ -399,7 +399,7 @@ const GiantMonsters = [
                 creatures
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -472,7 +472,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -488,7 +488,7 @@ const GiantMonsters = [
             name: "Dark Curse",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 unholy damage",
             success: (
               <span>
@@ -504,7 +504,7 @@ const GiantMonsters = [
             name: "Demonic Chill",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the oni's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "3 cold damage",
             success: (
               <span>
@@ -538,7 +538,7 @@ const GiantMonsters = [
             round: "1",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -564,7 +564,7 @@ const GiantMonsters = [
             round: "3",
             keywords: "magical, range",
             target: <span>1 creature within 2 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>Oni controls the target's turns (overcome ends)</span>
             ),
@@ -665,7 +665,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -751,7 +751,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -767,7 +767,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -875,7 +875,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -883,7 +883,7 @@ const GiantMonsters = [
             name: "Throwing Axe",
             keywords: "range, weapon",
             target: <span>1 creature within 2 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -891,7 +891,7 @@ const GiantMonsters = [
           {
             name: "Intimidating Roar",
             target: "All enemies within the troll warchief's zone",
-            defense: "RES",
+            defense: "Spirit",
             critical: "hindered (overcome ends)",
             success: (
               <span>
@@ -961,7 +961,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -969,7 +969,7 @@ const GiantMonsters = [
             name: "Throw Flame",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 fire damage",
           },
           {
@@ -985,7 +985,7 @@ const GiantMonsters = [
                 creatures
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
         ]}
@@ -1046,7 +1046,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1054,7 +1054,7 @@ const GiantMonsters = [
             name: "Throw Flame",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
             success: (
               <span>
@@ -1074,7 +1074,7 @@ const GiantMonsters = [
             name: "Volcanic Burst",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1143,7 +1143,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -1151,7 +1151,7 @@ const GiantMonsters = [
             name: "Ice Spike",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 cold damage",
           },
           {
@@ -1167,7 +1167,7 @@ const GiantMonsters = [
                 creatures
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -1175,7 +1175,7 @@ const GiantMonsters = [
             name: "Ice Breath",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the giant's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -1235,7 +1235,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1251,7 +1251,7 @@ const GiantMonsters = [
             name: "Ice Spike",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 cold damage",
             success: (
               <span>
@@ -1267,7 +1267,7 @@ const GiantMonsters = [
             name: "Winter's Chill",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -1300,7 +1300,7 @@ const GiantMonsters = [
                 within 1 zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             critical: "seized (overcome ends)",
             success: (
               <span>
@@ -1363,7 +1363,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1380,7 +1380,7 @@ const GiantMonsters = [
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -1396,7 +1396,7 @@ const GiantMonsters = [
                 creatures
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -1453,7 +1453,7 @@ const GiantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1461,7 +1461,7 @@ const GiantMonsters = [
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}

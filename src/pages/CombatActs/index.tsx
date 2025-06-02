@@ -122,7 +122,7 @@ function CombatActs() {
                 weapon’s range
               </span>
             }
-            defense="EVN"
+            defense="Guard"
             damage="weapon damage per your tier"
           />
         </div>
@@ -197,7 +197,7 @@ function CombatActs() {
               </span>
             }
             keywords="Melee"
-            defense="MGT"
+            defense="Guard"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
             success="Choose an item for the target to drop or you take the chosen item (your choice)."
           />
@@ -249,7 +249,7 @@ function CombatActs() {
             }
             requirement="You have a free hand"
             keywords="Melee"
-            defense="MGT"
+            defense="Guard"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
             success={
               <span>
@@ -398,7 +398,7 @@ function CombatActs() {
               </span>
             }
             keywords="Melee"
-            defense="MGT"
+            defense="Guard"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
             success="Push target within their zone"
             critical="Push target up to 1 zone away"
@@ -514,7 +514,7 @@ function CombatActs() {
               </span>
             }
             keywords="Melee"
-            defense="MGT"
+            defense="Guard"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
             success={
               <span>

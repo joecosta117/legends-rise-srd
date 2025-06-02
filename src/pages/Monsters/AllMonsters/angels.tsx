@@ -43,7 +43,7 @@ const AngelMonsters = [
             name: "Revealing Beam",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 holy damage",
             success: (
               <span>
@@ -96,7 +96,7 @@ const AngelMonsters = [
             name: "Horn",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -155,7 +155,7 @@ const AngelMonsters = [
             name: "Hoof",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -236,7 +236,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -244,7 +244,7 @@ const AngelMonsters = [
             name: "Holyfire Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "1 fire damage and 1 holy damage",
             effect: (
               <span>
@@ -339,7 +339,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -351,7 +351,7 @@ const AngelMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 fire damage and 2 holy damage",
             effect: (
               <span>
@@ -376,7 +376,7 @@ const AngelMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -403,7 +403,7 @@ const AngelMonsters = [
             keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
             damage: "3 fire and 3 holy damage",
-            defense: "EVN",
+            defense: "Spirit",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -509,7 +509,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -530,7 +530,7 @@ const AngelMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 fire damage and 3 holy damage",
             effect: (
               <span>
@@ -555,7 +555,7 @@ const AngelMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -582,7 +582,7 @@ const AngelMonsters = [
             round: "3",
             keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
-            defense: "EVN",
+            defense: "Spirit",
             damage: "5 fire and 5 holy damage",
             success: (
               <span>
@@ -651,7 +651,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -667,7 +667,7 @@ const AngelMonsters = [
             name: "Sacred Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "4 holy damage",
           },
         ]}
@@ -727,7 +727,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -747,7 +747,7 @@ const AngelMonsters = [
             name: "Sacred Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "4 holy damage",
           },
         ]}
@@ -819,7 +819,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -835,7 +835,7 @@ const AngelMonsters = [
             name: "Holy Chains",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "4 holy damage",
             success: (
               <span>
@@ -919,7 +919,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -935,7 +935,7 @@ const AngelMonsters = [
             name: "Sacred Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 holy damage",
           },
         ]}
@@ -1020,7 +1020,7 @@ const AngelMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage and 3 holy damage",
           },
           {
@@ -1028,7 +1028,7 @@ const AngelMonsters = [
             name: "Celestial Pull",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 holy damage",
             success: (
               <span>
@@ -1086,7 +1086,7 @@ const AngelMonsters = [
             name: "Cleansing Flames",
             round: "3",
             keywords: "magical",
-            defense: "EVN",
+            defense: "Spirit",
             target: "All enemies in the archangel's zone",
             damage: "5 fire and 5 holy damage",
             effect: (
@@ -1097,11 +1097,11 @@ const AngelMonsters = [
             ),
           },
           {
-            name: "Heavenly Comets",
+            name: "Seals of Condemnation",
             round: "5",
             keywords: "magical, range",
             target: "3 zones within 5 zones",
-            defense: "EVN",
+            defense: "Spirit",
             damage: "5 fire and 5 holy damage",
           },
         ]}
