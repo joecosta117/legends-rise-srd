@@ -167,7 +167,7 @@ function Relics() {
               keywords="Magic"
               duration="Focus for the scene"
               frequency="Encounter"
-              effect="The shield moves up to 1 zone to guard a creature, and the creature gains +1 to their Evasion. Each time you focus on this ability, you can keep the shield on the same creature or move it up to 1 zone to guard another creature."
+              effect="The shield moves up to 1 zone to guard a creature, and the creature gains +1 to their Guard. Each time you focus on this ability, you can keep the shield on the same creature or move it up to 1 zone to guard another creature."
             />
           </div>
         ),
@@ -695,7 +695,7 @@ function Relics() {
               keywords="Escalation, Magic"
               target="1d4+1 enemies within your zone"
               defense="Special"
-              damage="3 damage per your tier. The damage type matches the weapon’s chosen damage type. The targeted defense is Evasion or Resolve (psychic only)."
+              damage="3 damage per your tier. The damage type matches the weapon’s chosen damage type. The targeted defense is Guard (natural damage types) or Spirit (mystical damage types)."
               frequency="Encounter"
             />
           </div>
@@ -926,7 +926,10 @@ function Relics() {
                 <span>Your mana increses by +1</span>
               </li>
               <li>
-                <span>Your Evasion increases by +1 while unarmored</span>
+                <span>
+                  Your Guard increases by +1 while wearing mystic robes or
+                  unarmored
+                </span>
               </li>
               <li>
                 <span>
@@ -938,7 +941,7 @@ function Relics() {
                   >
                     attack roll
                   </Link>{" "}
-                  against the Evasion of each creature within 1 zone, including
+                  against the Spirit of each creature within 1 zone, including
                   yourself, dealing 12 arcane damage. Any creature reduced to 0
                   hit points from this damage is killed.
                 </span>
@@ -1236,7 +1239,7 @@ function Relics() {
             <p className="item__description">
               <i>These bracers ward your body from physical harm.</i>
             </p>
-            <p>While wearing these bracers, you gain +1 to your Evasion.</p>
+            <p>While wearing these bracers, you gain +1 to your Guard.</p>
           </div>
         ),
       },
@@ -1275,7 +1278,7 @@ function Relics() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against the target’s Might. On a success, the target is{" "}
+              against the target’s Guard. On a success, the target is{" "}
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
@@ -1393,18 +1396,7 @@ function Relics() {
             <p className="item__description">
               <i>This headband protects the user’s mind.</i>
             </p>
-            <p>While wearing this headband, your Resolve by +1.</p>
-          </div>
-        ),
-      },
-      {
-        title: "Helm of Endurance",
-        content: (
-          <div className="item">
-            <p className="item__description">
-              <i>This helm strengths your body against harm.</i>
-            </p>
-            <p>While wearing this helm, your Might by +1.</p>
+            <p>While wearing this headband, your Spirit by +1.</p>
           </div>
         ),
       },

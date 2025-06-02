@@ -53,7 +53,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
         ]}
@@ -102,7 +102,7 @@ const PlantMonsters = [
               <span>
                 When a creature becomes engaged to the rot spawn or starts their
                 turn engaged to the rot spawn, the rot spawn makes an attack
-                roll against their Might. On a success or higher, the creature
+                roll against their Guard. On a success or higher, the creature
                 is{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
@@ -126,7 +126,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -186,7 +186,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -194,7 +194,7 @@ const PlantMonsters = [
             name: "Bleeding Needle",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -254,7 +254,7 @@ const PlantMonsters = [
             name: "Grasping Vine",
             keywords: "range, weapon",
             target: <span>1 creature within 1 zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -270,7 +270,7 @@ const PlantMonsters = [
           {
             name: "Rot Curse",
             keywords: "magical",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature seized by the rot tree",
             critical: (
               <span>
@@ -331,7 +331,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -404,7 +404,7 @@ const PlantMonsters = [
               <span>
                 Whenever an enemy enters or starts their turn in the dryad
                 queen's zone, the dryad queen makes an attack roll against their
-                Resolve. On a success or higher, the creature can't use hostile
+                Spirit. On a success or higher, the creature can't use hostile
                 abilities against the dryad queen (turn starts).
               </span>
             ),
@@ -424,7 +424,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -440,7 +440,7 @@ const PlantMonsters = [
             name: "Leaf",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -478,7 +478,7 @@ const PlantMonsters = [
                 </Link>
                 , and when a creature enters or starts their turn in the zone,
                 the dryad queen makes an attack roll against the creature's
-                Might. On a success or higher, the target is{" "}
+                Guard. On a success or higher, the target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
@@ -497,7 +497,7 @@ const PlantMonsters = [
             keywords: "magical, range",
             round: "5",
             target: "1 creature within 2 zones",
-            defense: "RES",
+            defense: "Spirit",
             critical:
               "Target becomes controlled by the dryad queen (overcome ends)",
             success: "Target becomes controlled by the dryad queen (turn ends)",
@@ -554,7 +554,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -570,7 +570,7 @@ const PlantMonsters = [
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -585,7 +585,7 @@ const PlantMonsters = [
         maneuvers={[
           {
             name: "Uproot",
-            defense: "MGT",
+            defense: "Guard",
             target: "1d4+1 enemies in the woodlord's zone",
             critical: <span>Same as a success, and 2 physical damage</span>,
             success: (
@@ -639,7 +639,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -654,7 +654,7 @@ const PlantMonsters = [
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -717,7 +717,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -733,7 +733,7 @@ const PlantMonsters = [
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -748,7 +748,7 @@ const PlantMonsters = [
         maneuvers={[
           {
             name: "Uproot",
-            defense: "MGT",
+            defense: "Guard",
             target: "1d4+1 enemies in the rot woodlord's zone",
             critical: <span>Same as a success, and 2 physical damage</span>,
             success: (
@@ -777,7 +777,7 @@ const PlantMonsters = [
               <span>
                 When a creature enters or starts their turn in the rot
                 woodlord's zone, the rot woodlord makes an attack roll against
-                their Might. On a success or higher, the creature is{" "}
+                their Spirit. On a success or higher, the creature is{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
@@ -837,7 +837,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -890,7 +890,7 @@ const PlantMonsters = [
               <span>
                 When a non-plant enemy enters or starts their turn in the green
                 man's zone, the green man makes an attack roll against their
-                Resolve. On a success, the target becomes{" "}
+                Spirit. On a success, the target becomes{" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
@@ -915,7 +915,7 @@ const PlantMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -931,7 +931,7 @@ const PlantMonsters = [
             name: "Thorn",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -939,7 +939,7 @@ const PlantMonsters = [
             name: "Vine Lash",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical",
             success: "Target is pulled to become engaged to the green man",
           },

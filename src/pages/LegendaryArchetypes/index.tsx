@@ -167,8 +167,8 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against each foe’s Resolve within 1 zone, dealing holy damage
-              equal to your proficiency bonus. On a success, a target is also{" "}
+              against each foe’s Spirit within 1 zone, dealing holy damage equal
+              to your proficiency bonus. On a success, a target is also{" "}
               <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
@@ -456,7 +456,7 @@ function LegendaryArchetypes() {
                   >
                     attack roll
                   </Link>{" "}
-                  against their Resolve, and on a success, the target is also
+                  against their Spirit, and on a success, the target is also
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
@@ -488,7 +488,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against each foe’s Resolve within 1 zone, dealing unholy damage
+              against each foe’s Spirit within 1 zone, dealing unholy damage
               equal to your proficiency bonus. On a success, a target is also
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
@@ -599,7 +599,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against each enemy’s Evasion within 1 zone, dealing 2 damage per
+              against each enemy’s Guard within 1 zone, dealing 2 damage per
               tier and 1{" "}
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
@@ -734,7 +734,7 @@ function LegendaryArchetypes() {
               frequency="Encounter"
               keywords="Escalation, Magical, Range"
               target="All enemies within 1 zone"
-              defense="EVN"
+              defense="Guard"
               damage="3 damage per your tier. The damage type and success effect matches your elemental realm: cold (ice), fire (fire), lightning (air), or physical (earth, water)"
               success={
                 <span>
@@ -944,7 +944,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>
-              against their Resolve. On a success, the target is{" "}
+              against their Spirit. On a success, the target is{" "}
               <Link className="internal-link" to="/conditions#vulnerable">
                 vulnerable
               </Link>{" "}
@@ -1269,7 +1269,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against their Resolve. On a success, the target is{" "}
+              against their Spirit. On a success, the target is{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
@@ -1389,7 +1389,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against each foe’s Resolve within 1 zone, dealing psychic damage
+              against each foe’s Spirit within 1 zone, dealing psychic damage
               equal to your proficiency bonus. On a success, a target is also
               <Link className="internal-link" to="/conditions#confused">
                 confused

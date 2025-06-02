@@ -271,7 +271,7 @@ function Ancestries() {
                     </li>
                     <li>
                       <span>
-                        <b>Scales:</b> Your Evasion increases by +1 while
+                        <b>Scales:</b> Your Guard increases by +1 while
                         unarmored.
                       </span>
                     </li>
@@ -422,7 +422,7 @@ function Ancestries() {
                     creature
                   </span>
                 }
-                defense="EVN"
+                defense="Guard"
                 damage="5 physical damage per your tier"
                 effect={
                   <span>
@@ -489,7 +489,7 @@ function Ancestries() {
                 frequency="Encounter"
                 keywords="Escalation"
                 target="1d4+1 enemies in your zone"
-                defense="EVN"
+                defense="Guard"
                 damage="3 damage per your tier of the damage type chosen for draconic heritage"
               />
             </div>
@@ -719,7 +719,7 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Armored Core (S):</b> Your Evasion increases by +1.
+                    <b>Armored Core (S):</b> Your Guard increases by +1.
                   </span>
                 </li>
                 <li>
@@ -763,12 +763,12 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Might of Giants (P):</b> You gain the following ability:
+                    <b>Power of Giants (P):</b> You gain the following ability:
                   </span>
                 </li>
               </ul>
               <AbilityCard
-                name="Might of Giants"
+                name="Power of Giants"
                 actType="Maneuver"
                 descriptor="You call upon the power of giants to grow in stature."
                 frequency="Encounter"
@@ -989,7 +989,7 @@ function Ancestries() {
                 descriptor="With a loud yip from such a small frame, you momentarily catch your foes’ bewildered attention."
                 frequency="Encounter"
                 target="1d4+1 enemies within your zone"
-                defense="RES"
+                defense="Spirit"
                 critical={
                   <span>
                     <Link className="internal-link" to="/conditions#vulnerable">

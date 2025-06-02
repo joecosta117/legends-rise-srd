@@ -96,7 +96,7 @@ function HomePage() {
             />
             <Accordion
               title="No Wasted Turns"
-              content="What's worse, waiting for your turn only to whiff your attack or hitting your attack only to roll poorly on damage? Both suck! In Legends Rise, you always deal some damage even on a miss, and there are no damage rolls. How well your attack roll goes then determines how hard you hit."
+              content="What's worse, waiting for your turn only to whiff your attack or hitting your attack only to roll poorly on damage? Both suck! In Legends Rise, you deal some damage on a glancing blow, and there are no damage rolls. How well your attack roll goes then determines how hard you hit with only truly bad rolls missing entirely."
             />
             <Accordion
               title="Easy to Run"

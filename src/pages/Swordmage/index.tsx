@@ -82,7 +82,7 @@ function Swordmage() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion and Resolve
+                  <b>Defense Bonus:</b> +1 to Guard and Spirit
                 </span>
               </li>
               <li>
@@ -97,7 +97,7 @@ function Swordmage() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> Light armor and all weapons
+                  <b>Training:</b> Mystic robes, light armor, and all weapons
                 </span>
               </li>
               <li>

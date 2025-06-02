@@ -50,7 +50,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -68,7 +68,7 @@ const MonstrosityMonsters = [
             name: "Paralyzing Gaze",
             keywords: "magical, range",
             target: <span>1 creature within 1 zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             critical: <span>dazed (overcome ends)</span>,
             success: (
               <span>
@@ -94,7 +94,7 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             trigger:
               "A creature starts their turn within 1 zone of the basilisk that the basilisk can see",
-            defense: "MGT",
+            defense: "Guard",
             success: (
               <span>
                 {" "}
@@ -174,7 +174,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -190,7 +190,7 @@ const MonstrosityMonsters = [
             name: "Poison Bow",
             keywords: "range, weapon",
             target: <span>1 creatue within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -208,7 +208,7 @@ const MonstrosityMonsters = [
             name: "Petrifying Glance",
             keywords: "magical, range",
             target: <span>1 creature within 1 zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             critical: <span>dazed (overcome ends)</span>,
             success: (
               <span>
@@ -234,7 +234,7 @@ const MonstrosityMonsters = [
             target: "All creatures in 1 zone within 3 zones",
             keywords: "range",
             round: "1",
-            defense: "MGT",
+            defense: "Guard",
             damage: "3 toxic damage",
             success: (
               <span>
@@ -289,7 +289,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
         ]}
@@ -337,7 +337,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -345,7 +345,7 @@ const MonstrosityMonsters = [
             name: "Harpy's Song",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             partial: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -428,7 +428,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -436,7 +436,7 @@ const MonstrosityMonsters = [
             name: "Dragon Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies in the chimera's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 fire damage",
           },
         ]}
@@ -483,7 +483,7 @@ const MonstrosityMonsters = [
             name: "Lion Roar",
             keywords: "magical, range",
             round: "3",
-            defense: "RES",
+            defense: "Spirit",
             target: "All enemies within the chimera's zone",
             success: (
               <span>
@@ -547,7 +547,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -555,7 +555,7 @@ const MonstrosityMonsters = [
             name: "Web",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -620,7 +620,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -628,7 +628,7 @@ const MonstrosityMonsters = [
             name: "Griffon Shriek",
             keywords: "range, recharge",
             target: <span>All enemies within the griffon's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: "hindered (overcome ends)",
             success: (
               <span>
@@ -691,7 +691,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -800,7 +800,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -816,7 +816,7 @@ const MonstrosityMonsters = [
                 creature for each head
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -826,7 +826,7 @@ const MonstrosityMonsters = [
             target: "All enemies",
             keywords: "range",
             round: "1",
-            defense: "RES",
+            defense: "Spirit",
             critical: "hindered (overcome ends)",
             success: (
               <span>
@@ -896,7 +896,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -912,7 +912,7 @@ const MonstrosityMonsters = [
             name: "Confusing Whisper",
             keywords: "magical, range",
             target: <span>1 creature within 2 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 psychic damage",
             success: (
               <span>
@@ -975,7 +975,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: <span>Gains weakness 1 to all damage (turn ends)</span>,
           },
@@ -1044,7 +1044,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1060,7 +1060,7 @@ const MonstrosityMonsters = [
             name: "Bow",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
           {
@@ -1076,7 +1076,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1170,7 +1170,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -1200,7 +1200,7 @@ const MonstrosityMonsters = [
             name: "Regurgitate",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             effect:
               "The cave worm spits out a creature or rock from its stomach. If the spit out entity is a creature, it takes crash damage.",
@@ -1212,7 +1212,7 @@ const MonstrosityMonsters = [
             target: "All creatures in 1 zone",
             keywords: "range",
             round: "1",
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical",
             success: (
               <span>
@@ -1233,7 +1233,7 @@ const MonstrosityMonsters = [
             round: "3",
             target: "Each other creature within 1 zone of the worm",
             keywords: "range",
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical",
           },
           {
@@ -1318,7 +1318,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1335,7 +1335,7 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             target: <span>1 magical effect within 1 zone</span>,
             effect:
-              "If the magical effect's tier (spell tier if the effect originates from a spell) is 2 or less, then the targeted effect ends. Otherwise, the sphinx must succeed on an attack roll against the Resolve of the targeted effect’s origin (spellcaster for a spell) or a TN of 10 + double the effect’s tier. ",
+              "If the magical effect's tier (spell tier if the effect originates from a spell) is 2 or less, then the targeted effect ends. Otherwise, the sphinx must succeed on an attack roll against the Spirit of the targeted effect’s origin (spellcaster for a spell) or a TN of 10 + double the effect’s tier. ",
           },
         ]}
         maneuvers={[
@@ -1358,7 +1358,7 @@ const MonstrosityMonsters = [
             target: "All creatures in 1 zone",
             keywords: "magical, range",
             round: "1",
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 arcane",
             success: (
               <span>
@@ -1449,7 +1449,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1457,7 +1457,7 @@ const MonstrosityMonsters = [
             name: "Call Lightning",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 lightning damage",
             success: (
               <span>
@@ -1481,7 +1481,7 @@ const MonstrosityMonsters = [
                   difficult zone and dangerous zone
                 </Link>{" "}
                 (2 physical damage). As a maneuver, the storm eagle can make an
-                attack roll against 1 creature's Evasion within 1 zone of the
+                attack roll against 1 creature's Guard within 1 zone of the
                 cyclone, dealing 3 lightning damage.
               </span>
             ),
@@ -1564,7 +1564,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1580,7 +1580,7 @@ const MonstrosityMonsters = [
             name: "Bite",
             keywords: "melee, weapon",
             target: <span>1 creature seized by the kraken</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1621,7 +1621,7 @@ const MonstrosityMonsters = [
             target: "All creatures in 1 zone",
             keywords: "magical, range",
             round: "1",
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 lightning",
             effect: (
               <span>
@@ -1651,7 +1651,7 @@ const MonstrosityMonsters = [
                   dangerous zone
                 </Link>{" "}
                 (3 toxic damage). When a creature takes this damage, the kraken
-                makes an attack roll against the creatue's Might, and the
+                makes an attack roll against the creatue's Guard, and the
                 creatue is{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
@@ -1748,7 +1748,7 @@ const MonstrosityMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -1778,7 +1778,7 @@ const MonstrosityMonsters = [
             name: "Beam of Utter Destruction",
             keywords: "magical, range, recharge",
             target: <span>3 connected zones within 5 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 arcane damage",
             success: (
               <span>
@@ -1800,7 +1800,7 @@ const MonstrosityMonsters = [
             target: "All enemies",
             keywords: "range",
             round: "1",
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target becomes{" "}
@@ -1824,7 +1824,7 @@ const MonstrosityMonsters = [
             name: "Trample",
             round: "3",
             target: "All other creatues within 1 zone of the terror that walks",
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical",
             success: (
               <span>
@@ -1906,7 +1906,7 @@ const MonstrosityMonsters = [
             name: "Bite",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -1929,7 +1929,7 @@ const MonstrosityMonsters = [
             name: "Thrash",
             keywords: "melee, weapon",
             target: <span>1d4+1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1944,7 +1944,7 @@ const MonstrosityMonsters = [
             name: "Mental Overload",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 psychic damage",
             success: (
               <span>

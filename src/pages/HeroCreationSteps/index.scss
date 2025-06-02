@@ -15,10 +15,9 @@
   .defense {
     list-style-type: none;
     text-align: left;
-    margin-bottom: 1em;
 
     b[data-type="EVN"] {
-      color: $evasiongold;
+      color: $physicalred;
     }
     b[data-type="MGT"] {
       color: $physicalred;

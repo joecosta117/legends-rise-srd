@@ -106,7 +106,7 @@ function Occultist() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +4 to Resolve
+                  <b>Defense Bonus:</b> +1 to Spirit
                 </span>
               </li>
               <li>
@@ -121,17 +121,19 @@ function Occultist() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> None
+                  <b>Training:</b> Mystic robes
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Starting Equipment:</b> You gain an implement.
+                  <b>Starting Equipment:</b> You gain mystic robes and an
+                  implement.
                 </span>
                 <ul className="secondary-list">
                   <li>
                     <span>
-                      <i>Suggestion:</i> You gain a wand as your implement.
+                      <i>Suggestion:</i> You gain mystic robes and a wand as
+                      your implement.
                     </span>
                   </li>
                 </ul>
@@ -324,7 +326,7 @@ function Occultist() {
               type="Medium Aberration, Fiend, or Undead (same as your familiar)"
               hp="triple your proficiency bonus (PB)"
               evn="10 + PB"
-              mgt="12 + PB"
+              // mgt="12 + PB"
               res="8 + PB"
               pb="PB"
               resistances="unholy tier (fiend only), necrotic tier (undead only), psychic tier (aberration only)"
@@ -361,7 +363,7 @@ function Occultist() {
                       creature
                     </span>
                   ),
-                  defense: "EVN",
+                  defense: "Guard",
                   damage: "PB physical damage",
                 },
               ]}

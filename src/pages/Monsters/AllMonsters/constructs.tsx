@@ -46,7 +46,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
           {
@@ -54,7 +54,7 @@ const ConstructMonsters = [
             name: "Fire",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
         ]}
@@ -99,8 +99,8 @@ const ConstructMonsters = [
               <span>
                 When a creatue deals damage to the construct with a critical
                 success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is
-                halved and their Evasion decreases by 2.
+                their armor breaks. The construct's physical resistance is gone
+                and their Guard decreases by 2.
               </span>
             ),
           },
@@ -119,7 +119,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -170,7 +170,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -226,8 +226,8 @@ const ConstructMonsters = [
               <span>
                 When a creatue deals damage to the construct with a critical
                 success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is
-                halved and their Evasion decreases by 2.
+                their armor breaks. The construct's physical resistance is gone
+                and their Guard decreases by 2.
               </span>
             ),
           },
@@ -246,7 +246,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -297,7 +297,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -360,7 +360,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             effect: (
               <span>
@@ -458,7 +458,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -529,7 +529,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -599,7 +599,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -614,7 +614,7 @@ const ConstructMonsters = [
             name: "Binding Stone",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             critical: (
               <span>
                 Same as a success, and 2{" "}
@@ -682,7 +682,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
           {
@@ -690,7 +690,7 @@ const ConstructMonsters = [
             name: "Ranged Weapon",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -738,7 +738,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
         ]}
@@ -817,8 +817,8 @@ const ConstructMonsters = [
               <span>
                 When a creatue deals damage to the construct with a critical
                 success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is
-                halved and their Evasion decreases by 2.
+                their armor breaks. The construct's physical resistance is gone
+                and their Guard decreases by 2.
               </span>
             ),
           },
@@ -837,7 +837,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -853,7 +853,7 @@ const ConstructMonsters = [
             name: "Poison Breath",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 toxic damage",
             critical: <span>dazed (overcome ends)</span>,
             success: (
@@ -872,7 +872,7 @@ const ConstructMonsters = [
             keywords: "magical",
             trigger: "Iron golem reduced to 0 hit points",
             target: "Each creature within the iron golem's zone",
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 toxic damage",
             success: (
               <span>
@@ -931,7 +931,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -990,8 +990,8 @@ const ConstructMonsters = [
               <span>
                 When a creatue deals damage to the construct with a critical
                 success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is
-                halved and their Evasion decreases by 2.
+                their armor breaks. The construct's physical resistance is gone
+                and their Guard decreases by 2.
               </span>
             ),
           },
@@ -1010,7 +1010,7 @@ const ConstructMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -1025,7 +1025,7 @@ const ConstructMonsters = [
             name: "Energy Beam",
             keywords: "magical, range",
             target: <span>1 creature within 5 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 arcane damage",
           },
           {
@@ -1038,7 +1038,7 @@ const ConstructMonsters = [
                 adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 arcane damage",
             effect:
               "Any creature reduced to 0 hit points from this damage is immediately defeated.",
@@ -1049,7 +1049,7 @@ const ConstructMonsters = [
             name: "Stomp Ground",
             target:
               "All huge or smaller creatures within the clockwork colossus's zone",
-            defense: "MGT",
+            defense: "Guard",
             critical: "Same as success, and takes 3 physical damage",
             success: (
               <span>
@@ -1065,7 +1065,7 @@ const ConstructMonsters = [
             name: "Dimensional Capture",
             round: "1",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 arcane damage",
             success: (
               <span>
@@ -1090,7 +1090,7 @@ const ConstructMonsters = [
             name: "Energy Pulse",
             round: "5",
             target: <span>All other creatures</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 arcane damage",
             success: (
               <span>

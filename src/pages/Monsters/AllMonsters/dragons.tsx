@@ -54,7 +54,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -64,7 +64,7 @@ const DragonMonsters = [
             target: (
               <span>1d4+1 enemies within the dragon hatchling's zone</span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 damage of the elemental affinity damage type",
           },
         ]}
@@ -108,7 +108,7 @@ const DragonMonsters = [
           {
             name: "Fiery Death",
             description:
-              "When the flame drake is reduced to 0 hit points, it explodes. Make an attack roll against each creature's Evasion within the drake's zone, dealing 3 fire damage.",
+              "When the flame drake is reduced to 0 hit points, it explodes. Make an attack roll against each creature's Guard within the drake's zone, dealing 3 fire damage.",
           },
         ]}
         actions={[
@@ -125,7 +125,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -133,7 +133,7 @@ const DragonMonsters = [
             name: "Fire Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 fire damage",
           },
         ]}
@@ -182,7 +182,7 @@ const DragonMonsters = [
           {
             name: "Chilly Death",
             description:
-              "When the frost drake is reduced to 0 hit points, it explodes. Make an attack roll against each creature's Evasion within the drake's zone, dealing 3 cold damage.",
+              "When the frost drake is reduced to 0 hit points, it explodes. Make an attack roll against each creature's Guard within the drake's zone, dealing 3 cold damage.",
           },
         ]}
         actions={[
@@ -199,7 +199,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -207,7 +207,7 @@ const DragonMonsters = [
             name: "Cold Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 cold damage",
           },
         ]}
@@ -255,7 +255,7 @@ const DragonMonsters = [
           {
             name: "Poison Death",
             description:
-              "When the poison drake is reduced to 0 hit points, it explodes. Make an attack roll against each creature's Might within the drake's zone, dealing 3 toxic damage.",
+              "When the poison drake is reduced to 0 hit points, it explodes. Make an attack roll against each creature's Guard within the drake's zone, dealing 3 toxic damage.",
           },
         ]}
         actions={[
@@ -272,7 +272,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -288,7 +288,7 @@ const DragonMonsters = [
             name: "Venom Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 toxic damage",
             success: (
               <span>
@@ -361,7 +361,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -369,7 +369,7 @@ const DragonMonsters = [
             name: "Volcanic Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 fire damage",
           },
         ]}
@@ -459,7 +459,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -471,7 +471,7 @@ const DragonMonsters = [
                 1d4+1 enemies within the dragon's zone and one adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
             success: (
               <span>
@@ -508,7 +508,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -536,7 +536,7 @@ const DragonMonsters = [
             target: (
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -632,7 +632,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
           },
           {
@@ -644,7 +644,7 @@ const DragonMonsters = [
                 2d4+2 enemies within the dragon's zone and one adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 fire damage",
             success: (
               <span>
@@ -690,7 +690,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -719,7 +719,7 @@ const DragonMonsters = [
             target: (
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -806,7 +806,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -814,7 +814,7 @@ const DragonMonsters = [
             name: "Glacial Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "3 cold damage",
           },
         ]}
@@ -896,7 +896,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -908,7 +908,7 @@ const DragonMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -934,7 +934,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -962,7 +962,7 @@ const DragonMonsters = [
             target: (
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -1050,7 +1050,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
           },
           {
@@ -1062,7 +1062,7 @@ const DragonMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 cold damage",
             success: (
               <span>
@@ -1097,7 +1097,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -1126,7 +1126,7 @@ const DragonMonsters = [
             target: (
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 cold damage",
             success: (
               <span>
@@ -1199,7 +1199,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -1207,7 +1207,7 @@ const DragonMonsters = [
             name: "Lightning Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 lightning damage",
             success:
               "light arcs to another creature within the same zone, dealing 1 lightning damage",
@@ -1217,7 +1217,7 @@ const DragonMonsters = [
             name: "Lightning Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 lightning damage",
           },
         ]}
@@ -1285,7 +1285,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1293,7 +1293,7 @@ const DragonMonsters = [
             name: "Lightning Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 lightning damage",
             success:
               "light arcs to another creature within the same zone, dealing 2 lightning damage",
@@ -1303,7 +1303,7 @@ const DragonMonsters = [
             name: "Wing Gust",
             keywords: "range",
             target: <span>1d4 creatures within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1318,7 +1318,7 @@ const DragonMonsters = [
             name: "Lightning Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 lightning damage",
           },
         ]}
@@ -1328,7 +1328,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -1350,7 +1350,7 @@ const DragonMonsters = [
             partial: "hindered (turn ends)",
           },
           {
-            name: "Tornadoe",
+            name: "Tornado",
             round: "3",
             keywords: "range",
             target: <span>1 zone within 3 zones</span>,
@@ -1361,7 +1361,7 @@ const DragonMonsters = [
                   difficult zone and dangerous zone
                 </Link>{" "}
                 (2 physical damage). When a creature takes this damage, the
-                dragon makes an attack roll against the creature's Might. On a
+                dragon makes an attack roll against the creature's Guard. On a
                 success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
@@ -1376,7 +1376,7 @@ const DragonMonsters = [
             round: "5",
             keywords: "range",
             target: "All creatures in 2 zones within 3 zones",
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 lightning damage",
           },
         ]}
@@ -1444,7 +1444,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
           },
           {
@@ -1452,7 +1452,7 @@ const DragonMonsters = [
             name: "Lightning Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 lightning damage",
             success:
               "light arcs to another creature within the same zone, dealing 3 lightning damage",
@@ -1462,7 +1462,7 @@ const DragonMonsters = [
             name: "Wing Gust",
             keywords: "range",
             target: <span>1d4 creatures within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1479,7 +1479,7 @@ const DragonMonsters = [
             target: (
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 lightning damage",
             success: (
               <span>
@@ -1497,7 +1497,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -1520,7 +1520,7 @@ const DragonMonsters = [
             partial: "hindered (turn ends)",
           },
           {
-            name: "Tornadoe",
+            name: "Tornado",
             round: "3",
             keywords: "range",
             target: <span>1 zone within 3 zones</span>,
@@ -1531,7 +1531,7 @@ const DragonMonsters = [
                   difficult zone and dangerous zone
                 </Link>{" "}
                 (3 physical damage). When a creature takes this damage, the
-                dragon makes an attack roll against the creature's Might. On a
+                dragon makes an attack roll against the creature's Guard. On a
                 success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
@@ -1546,7 +1546,7 @@ const DragonMonsters = [
             round: "5",
             keywords: "range",
             target: "All creatures in 3 zones within 3 zones",
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 lightning damage",
           },
         ]}
@@ -1607,7 +1607,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -1615,7 +1615,7 @@ const DragonMonsters = [
             name: "Corrosive Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 toxic damage",
           },
         ]}
@@ -1699,7 +1699,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -1707,7 +1707,7 @@ const DragonMonsters = [
             name: "Corrosive Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 toxic damage",
             success: (
               <span>
@@ -1743,7 +1743,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -1778,7 +1778,7 @@ const DragonMonsters = [
                 that doesn't affect the dragon. Putrid fumes fill the targeted
                 zones, and when a creature enters or starts their turn in the
                 targeted zones, the dragon makes an attack roll against their
-                Might. On a success, the target is hindered (turn starts).
+                Guard. On a success, the target is hindered (turn starts).
               </span>
             ),
           },
@@ -1787,7 +1787,7 @@ const DragonMonsters = [
             round: "5",
             keywords: "range",
             target: "All creatures in 2 zones within 3 zones",
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 toxic damage",
             success: (
               <span>
@@ -1869,7 +1869,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -1891,7 +1891,7 @@ const DragonMonsters = [
             target: (
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 toxic damage",
             success: (
               <span>
@@ -1927,7 +1927,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -1963,7 +1963,7 @@ const DragonMonsters = [
                 that doesn't affect the dragon. Putrid fumes fill the targeted
                 zones, and when a creature enters or starts their turn in the
                 targeted zones, the dragon makes an attack roll against their
-                Might. On a success, the target is hindered (turn starts).
+                Guard. On a success, the target is hindered (turn starts).
               </span>
             ),
           },
@@ -1972,7 +1972,7 @@ const DragonMonsters = [
             round: "5",
             keywords: "range",
             target: "All creatures in 3 zones within 3 zones",
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 toxic damage",
             success: (
               <span>
@@ -2041,7 +2041,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -2057,7 +2057,7 @@ const DragonMonsters = [
             name: "Venemous Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "3 toxic damage",
             success: (
               <span>
@@ -2146,7 +2146,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -2166,7 +2166,7 @@ const DragonMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 toxic damage",
             success: (
               <span>
@@ -2190,7 +2190,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 until the start of the dragon's next turn that doesn't affect
                 the dragon. When an enemy starts or enters the targeted zones,
-                the dragon can make an attack roll against the enemy's Might. On
+                the dragon can make an attack roll against the enemy's Guard. On
                 a success, the target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
@@ -2206,7 +2206,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -2232,7 +2232,7 @@ const DragonMonsters = [
             round: "3",
             keywords: "magical, range",
             target: <span>2 creatures within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             partial: "seized (turn ends)",
             success: (
               <span>
@@ -2265,7 +2265,7 @@ const DragonMonsters = [
                   dangerous zone
                 </Link>{" "}
                 (2 toxic damage). When a creature takes this damage, the dragon
-                can make an attack roll against the enemy's Might. On a success,
+                can make an attack roll against the enemy's Guard. On a success,
                 the target falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
@@ -2337,7 +2337,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -2357,7 +2357,7 @@ const DragonMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 toxic damage",
             success: (
               <span>
@@ -2381,7 +2381,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 until the start of the dragon's next turn that doesn't affect
                 the dragon. When an enemy starts or enters the targeted zones,
-                the dragon can make an attack roll against the enemy's Might. On
+                the dragon can make an attack roll against the enemy's Guard. On
                 a success, the target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
@@ -2397,7 +2397,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -2424,7 +2424,7 @@ const DragonMonsters = [
             round: "3",
             keywords: "magical, range",
             target: <span>3 creatures within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             partial: "seized (turn ends)",
             success: (
               <span>
@@ -2457,7 +2457,7 @@ const DragonMonsters = [
                   dangerous zone
                 </Link>{" "}
                 (3 toxic damage). When a creature takes this damage, the dragon
-                can make an attack roll against the enemy's Might. On a success,
+                can make an attack roll against the enemy's Guard. On a success,
                 the target falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
@@ -2544,7 +2544,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -2552,7 +2552,7 @@ const DragonMonsters = [
             name: "Hellfire Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "1 fire damage and 1 unholy damage",
             success: (
               <span>
@@ -2638,7 +2638,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -2650,7 +2650,7 @@ const DragonMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "2 fire damage and 2 unholy damage",
             success: (
               <span>
@@ -2674,7 +2674,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -2782,7 +2782,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
           },
           {
@@ -2794,7 +2794,7 @@ const DragonMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 fire damage and 3 unholy damage",
             success: (
               <span>
@@ -2818,7 +2818,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -2905,7 +2905,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -2921,7 +2921,7 @@ const DragonMonsters = [
             name: "Void Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "3 psychic damage",
             success: (
               <span>
@@ -2936,7 +2936,7 @@ const DragonMonsters = [
         maneuvers={[
           {
             name: "Gaze of Madness",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature within 2 zones",
             critical: "confused (overcome ends)",
             success: (
@@ -3011,7 +3011,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -3031,7 +3031,7 @@ const DragonMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -3046,7 +3046,7 @@ const DragonMonsters = [
         maneuvers={[
           {
             name: "Gaze of Madness",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature within 2 zones",
             critical: "confused (overcome ends)",
             success: (
@@ -3065,7 +3065,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -3100,7 +3100,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 (2 cold damage). When an enemy enters or starts their turn in a
                 zone adjacent to the targeted zone, the dragon makes an attack
-                roll against the enemy's Might. On a success, the enemy is
+                roll against the enemy's Guard. On a success, the enemy is
                 pulled into the targeted zone.
               </span>
             ),
@@ -3110,7 +3110,7 @@ const DragonMonsters = [
             round: "5",
             keywords: "magical, range",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 arcane damage",
             success: (
               <span>
@@ -3192,7 +3192,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -3212,7 +3212,7 @@ const DragonMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 psychic damage",
             success: (
               <span>
@@ -3227,7 +3227,7 @@ const DragonMonsters = [
         maneuvers={[
           {
             name: "Gaze of Madness",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature within 2 zones",
             critical: "confused (overcome ends)",
             success: (
@@ -3246,7 +3246,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -3282,7 +3282,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 (3 cold damage). When an enemy enters or starts their turn in a
                 zone adjacent to the targeted zone, the dragon makes an attack
-                roll against the enemy's Might. On a success, the enemy is
+                roll against the enemy's Guard. On a success, the enemy is
                 pulled into the targeted zone.
               </span>
             ),
@@ -3292,7 +3292,7 @@ const DragonMonsters = [
             round: "5",
             keywords: "magical, range",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 arcane damage",
             success: (
               <span>
@@ -3372,7 +3372,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -3380,7 +3380,7 @@ const DragonMonsters = [
             name: "Shadow Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "3 necrotic damage",
           },
         ]}
@@ -3487,7 +3487,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -3499,7 +3499,7 @@ const DragonMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Spirit",
             damage: "6 necrotic damage",
             success: (
               <span>
@@ -3546,7 +3546,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -3580,7 +3580,7 @@ const DragonMonsters = [
                   dangerous zones
                 </Link>{" "}
                 (2 necrotic damage). When a creature takes this damage, the
-                dragon can make an attack roll against the creature's Might. On
+                dragon can make an attack roll against the creature's Spirit. On
                 a success, the creature is seized (turn starts) from shadowy
                 claws.
               </span>
@@ -3679,7 +3679,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
           },
           {
@@ -3691,7 +3691,7 @@ const DragonMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             success: (
               <span>
@@ -3738,7 +3738,7 @@ const DragonMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -3773,7 +3773,7 @@ const DragonMonsters = [
                   dangerous zones
                 </Link>{" "}
                 (3 necrotic damage). When a creature takes this damage, the
-                dragon can make an attack roll against the creature's Might. On
+                dragon can make an attack roll against the creature's Spirit. On
                 a success, the creature is seized (turn starts) from shadowy
                 claws.
               </span>
@@ -3846,7 +3846,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -3869,7 +3869,7 @@ const DragonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 toxic damage",
             success: (
               <span>

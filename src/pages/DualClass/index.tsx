@@ -14,20 +14,6 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You don’t have training in armor or weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 8 and your recoveries equal 4.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is arcane.</span>
-            </li>
-            <li>
-              <span>+2 to Resolve</span>
-            </li>
-            <li>
               <span>
                 You gain the arcanist’s arcane magic feature, but your mana
                 starts at 1, increasing to 3 at 5th level, and 5 at 8th level.
@@ -51,20 +37,6 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You don’t have training in armor or weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 8 and your recoveries equal 4.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is cunning.</span>
-            </li>
-            <li>
-              <span>+2 to Resolve</span>
-            </li>
-            <li>
               <span>
                 You gain the bard’s bardic magic feature, but your mana starts
                 at 1, increasing to 3 at 5th level, and 5 at 8th level. You only
@@ -87,20 +59,6 @@ function DualClass() {
             following features
           </p>
           <ul>
-            <li>
-              <span>You don’t have training in armor or weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 8 and your recoveries equal 4.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is divine.</span>
-            </li>
-            <li>
-              <span>+2 to Resolve</span>
-            </li>
             <li>
               <span>Choose a divine origin.</span>
             </li>
@@ -129,20 +87,6 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You gain training in all weapons and armor.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 10 and your recoveries equal 5.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is martial.</span>
-            </li>
-            <li>
-              <span>+2 to Might or Resolve</span>
-            </li>
-            <li>
               <span>You gain the commander’s commanding attack feature.</span>
             </li>
             <li>
@@ -164,20 +108,6 @@ function DualClass() {
             following features
           </p>
           <ul>
-            <li>
-              <span>You don’t have training in armor or weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 8 and your recoveries equal 4.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is nature.</span>
-            </li>
-            <li>
-              <span>+2 to Resolve</span>
-            </li>
             <li>
               <span>
                 You gain the druid’s druid magic feature, but your mana starts
@@ -202,23 +132,9 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You gain training in all weapons and light armor.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 10 and your recoveries equal 5.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is arcane.</span>
-              <li>
-                <span>+2 to Evasion or Resolve</span>
-              </li>
-            </li>
-            <li>
               <span>
                 You gain the magesmith’s magesmith magic feature, but you don’t
-                learn a tier 1 battle spell and you don't gain mana. At higher
+                learn a tier 0 battle spell and you don't gain mana. At higher
                 levels, you don’t learn magic traditions or battle spells from
                 this feature.
               </span>
@@ -246,20 +162,6 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You gain training in all armor and weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 12 and your recoveries equal 6.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is martial.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion or Might</span>
-            </li>
-            <li>
               <span>You gain the furyspawn’s reckless attack feature.</span>
             </li>
             <li>
@@ -278,20 +180,6 @@ function DualClass() {
             the following features
           </p>
           <ul>
-            <li>
-              <span>You don’t have training in armor or weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 8 and your recoveries equal 4.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is arcane.</span>
-            </li>
-            <li>
-              <span>+2 to Resolve</span>
-            </li>
             <li>
               <span>
                 You gain the occultist’s occultist magic feature, but your mana
@@ -316,20 +204,6 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You gain training in all weapons and armor.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 12 and your recoveries equal 6.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is divine.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion, Might, or Resolve</span>
-            </li>
-            <li>
               <span>You gain the paladin’s protective smite feature.</span>
             </li>
             <li>
@@ -348,20 +222,6 @@ function DualClass() {
             following features
           </p>
           <ul>
-            <li>
-              <span>You gain training in light armor and all weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 10 and your recoveries equal 5.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is nature.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion or Might</span>
-            </li>
             <li>
               <span>You gain the ranger’s survivalist feature.</span>
             </li>
@@ -385,23 +245,6 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>
-                You gain training in light armor, standard melee weapons, and
-                all ranged weapons.
-              </span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 10 and your recoveries equal 5.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is cunning.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion or Resolve</span>
-            </li>
-            <li>
               <span>You gain the rogue’s expertise feature.</span>
             </li>
             <li>
@@ -424,21 +267,10 @@ function DualClass() {
           </p>
           <ul>
             <li>
-              <span>You don’t have training in armor or weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 8 and your recoveries equal 4.
-              </span>
-            </li>
-            <li>
               <span>
                 Choose a summoner subclass, but your choice only determines your
                 theme and any modifications to your summons.
               </span>
-            </li>
-            <li>
-              <span>+2 to Resolve</span>
             </li>
             <li>
               <span>You gain the summoner’s conjure minion feature.</span>
@@ -459,20 +291,6 @@ function DualClass() {
             the following features
           </p>
           <ul>
-            <li>
-              <span>You gain training in all weapons and armor.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 10 and your recoveries equal 5.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is arcane.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion or Resolve</span>
-            </li>
             <li>
               <span>
                 You gain the swordmage’s swordmage magic feature, but you don’t
@@ -501,20 +319,6 @@ function DualClass() {
             following features
           </p>
           <ul>
-            <li>
-              <span>You gain training in all armor and weapons.</span>
-            </li>
-            <li>
-              <span>
-                Your starting hit points equals 12 and your recoveries equal 6.
-              </span>
-            </li>
-            <li>
-              <span>Your theme is martial.</span>
-            </li>
-            <li>
-              <span>+2 to Evasion or Might</span>
-            </li>
             <li>
               <span>You gain the warrior’s fighting style feature.</span>
             </li>
@@ -551,9 +355,8 @@ function DualClass() {
           </li>
           <li>
             <span>
-              <b>Defenses:</b> Determined by your class. Regardless of your
-              classes, your total bonus to Evasion or Might can't be higher than
-              +2.
+              <b>Defenses:</b> Choose the defense bonsuses from only one of your
+              classes.
             </span>
           </li>
           <li>

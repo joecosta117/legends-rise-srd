@@ -84,7 +84,7 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion and Might
+                  <b>Defense Bonus:</b> +1 to Guard
                 </span>
               </li>
               <li>
@@ -373,7 +373,7 @@ function Ranger() {
               type="Medium Animal"
               hp="triple your proficiency bonus (PB) or double your PB (Air only)"
               evn="10 + PB"
-              mgt="12 + PB"
+              // mgt="12 + PB"
               res="8 + PB"
               pb="PB"
               speeds="fly 1 (Air only), swim 1 (Water only)"
@@ -401,7 +401,7 @@ function Ranger() {
                       creature
                     </span>
                   ),
-                  defense: "EVN",
+                  defense: "Guard",
                   damage: "PB physical damage",
                   success: (
                     <span>

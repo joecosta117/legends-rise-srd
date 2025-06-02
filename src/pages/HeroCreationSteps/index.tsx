@@ -357,9 +357,9 @@ function HeroCreationSteps() {
 
         <h2>Step 5: Finalize Defenses</h2>
         <p>
-          Heroes in Legends Rise have three <b>defenses</b>. These determine how
-          hard it is for enemies to hurt your hero. Each defense has a number
-          associated with it that serves as the TN that{" "}
+          Characters in Legends Rise have two defenses against attacks:{" "}
+          <b>Guard</b> and <b>Spirit</b>. Each defense has a number associated
+          with it that serves as the TN that{" "}
           <Link className="internal-link" to="/rules/combat#attack-roll">
             attack rolls
           </Link>{" "}
@@ -367,36 +367,31 @@ function HeroCreationSteps() {
         </p>
         <ul>
           <li className="defense">
-            <b data-type="EVN">Evasion (EVN):</b> Represents your hero’s
-            protection from physical threats that test their agility, such as
-            blocking weapon attacks or dodging a dragon’s fire breath.
+            <b data-type="EVN">Guard (GRD):</b> Represents your hero’s
+            protection from physical threats, such as blocking weapon attacks,
+            dodging a dragon’s fire breath, or withstanding poison.
           </li>
           <li className="defense">
-            <b data-type="MGT">Might (MGT):</b> Represents your hero’s
-            protection from physical threats that test their strength or
-            hardiness, such as resisting being pushed or withstanding poison.
-          </li>
-          <li className="defense">
-            <b data-type="RES">Resolve (RES):</b> Represents your hero’s
-            protection from esoteric threats that test their mind and spirit,
-            such as overcoming mind control or resisting unholy corruption.
+            <b data-type="RES">Spirit (SPT):</b> Represents your hero’s
+            protection from threats against your essence, mind, or soul, such as
+            overcoming mind control, withstanding raw arcane energy, or
+            resisting unholy corruption.
           </li>
         </ul>
         <h3 className="header">Calculating Defenses</h3>
         <p>
-          Your defenses start at <b>8 + your proficiency bonus</b> (10 at 1st
-          level). Your defenses are also improved in the following order:
+          Guard and Spirit both start at <b>8 + your proficiency bonus</b> (10
+          at 1st level). They are also improved in the following order:
         </p>
         <ol>
-          <li>Your class gives you bonuses to one or two defenses.</li>
+          <li>Your class gives you bonuses to one or both defenses.</li>
           <li>Your defenses can also be improved by wearing certain armor.</li>
         </ol>
         <p>
-          For example, Darian’s proficiency bonus is +2 at 1st level, so all
-          three defenses start at 10. Their class gives them +2 to Evasion and
-          Resolve, which brings their Evasion and Resolve to 12. Darian then
-          decides to wear light armor, which increases their Evasion by +2 to
-          14.
+          For example, Darian’s proficiency bonus is +2 at 1st level, so both
+          Guard and Spirit start at 10. Their class gives them +1 to Guard,
+          which brings their Guard to 11. Darian then decides to wear light
+          armor, which increases their Guard by +1 to 12.
         </p>
 
         <h2>Optional Step 6: Starting at Higher Level</h2>

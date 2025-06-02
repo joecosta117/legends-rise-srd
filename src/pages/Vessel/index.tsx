@@ -85,7 +85,7 @@ function Vessel() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion and Might
+                  <b>Defense Bonus:</b> +1 to Guard
                 </span>
               </li>
               <li>
@@ -100,7 +100,8 @@ function Vessel() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> All armor and weapons
+                  <b>Training:</b> Light armor, heavy armor, shields, and
+                  weapons
                 </span>
               </li>
               <li>
@@ -184,7 +185,7 @@ function Vessel() {
                       <span>Natural melee weapon damage increases to 3</span>
                     </li>
                     <li>
-                      <span>+2 to Might While not wearing armor</span>
+                      <span>+2 to Guard while not wearing armor</span>
                     </li>
                     <li>
                       <span>
@@ -618,7 +619,7 @@ function Vessel() {
             </p>
             <p>
               When you use monstrous form, make an attack roll against the
-              Resolve of each enemy within 1 zone.
+              Spirit of each enemy within 1 zone.
             </p>
             <ul>
               <li>

@@ -66,7 +66,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -90,7 +90,7 @@ const AberrationMonsters = [
                 creature that is seized by the deep one
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -161,7 +161,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -233,7 +233,7 @@ const AberrationMonsters = [
             name: "Tentacle",
             keywords: "melee, weapon",
             target: <span>1 creature within the deep lurker's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -256,7 +256,7 @@ const AberrationMonsters = [
             name: "Psychic Probe",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 psychic damage",
             success: (
               <span>
@@ -272,7 +272,7 @@ const AberrationMonsters = [
             name: "Eldritch Domination",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             success: "target controlled by the deep lurker (turn ends)",
             critical: "target controlled by the deep lurker (overcome ends)",
             partial: (
@@ -291,7 +291,7 @@ const AberrationMonsters = [
             keywords: "magical, range",
             round: "1",
             target: "All creatures in 1 zone within 3 zones",
-            defense: "RES",
+            defense: "Spirit",
             damage: "3 psychic damage",
             success: (
               <span>
@@ -367,7 +367,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -383,7 +383,7 @@ const AberrationMonsters = [
             name: "Devour Brain",
             keywords: "melee",
             target: <span>1 creature seized by the brain reaper</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "10 physical damage",
             success: (
               <span>
@@ -397,7 +397,7 @@ const AberrationMonsters = [
             name: "Psychic Blast",
             keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -458,7 +458,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -474,7 +474,7 @@ const AberrationMonsters = [
             name: "Body Snatcher",
             keywords: "melee",
             target: <span>1 creature seized by the brain spawn</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "8 physical damage",
             success: (
               <span>
@@ -545,7 +545,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -575,7 +575,7 @@ const AberrationMonsters = [
             name: "Mental Agony",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -591,7 +591,7 @@ const AberrationMonsters = [
             name: "Psychic Spike",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "4 psychic damage",
           },
         ]}
@@ -648,7 +648,7 @@ const AberrationMonsters = [
             name: "Tentacle",
             keywords: "melee, weapon",
             target: <span>1 creature within the elder reaper's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -664,7 +664,7 @@ const AberrationMonsters = [
             name: "Psychic Disrupt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "4 psychic damage",
             success: (
               <span>
@@ -680,7 +680,7 @@ const AberrationMonsters = [
             name: "Psychic Blast",
             keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -712,7 +712,7 @@ const AberrationMonsters = [
             name: "Reaper Domination",
             keywords: "magical",
             target: <span>1 creature seized by the elder reaper</span>,
-            defense: "RES",
+            defense: "Spirit",
             success: "target controlled by the elder reaper (turn ends)",
             critical: "target controlled by the elder reaper (overcome ends)",
           },
@@ -723,7 +723,7 @@ const AberrationMonsters = [
             keywords: "magical, range",
             round: "1",
             target: "All creatures in 1 zone within 3 zones",
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -800,7 +800,7 @@ const AberrationMonsters = [
             name: "Bite",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -816,7 +816,7 @@ const AberrationMonsters = [
                 <ul>
                   <li>
                     <i>1. Control Ray:</i> Void seer makes an attack roll
-                    against the Resolve of 1 creature within 3 zones. The target
+                    against the Spirit of 1 creature within 3 zones. The target
                     is{" "}
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
@@ -826,19 +826,19 @@ const AberrationMonsters = [
                     (overcome ends) on a critical success.
                   </li>
                   <li>
-                    <i>2. Disintegrate Ray:</i> Void seer makes an attack roll
-                    against the Evasion of 1 creature within 3 zones, dealing 8
+                    <i>2. Disintegrate:</i> Void seer makes an attack roll
+                    against the Spirit of 1 creature within 3 zones, dealing 8
                     arcane damage. If this damage reduces the the target to 0
                     hit points, then they beceome defeated.
                   </li>
                   <li>
                     <i>3. Explosion:</i> Void seer makes an attack roll against
-                    the Evasion of all creatures in 1 zone within 3 zones,
-                    dealing 4 fire damage.
+                    the Guard of all creatures in 1 zone within 3 zones, dealing
+                    4 fire damage.
                   </li>
                   <li>
                     <i>4. Freezing Ray:</i> Void seer makes an attack roll
-                    against the Evasion of 1 creature within 3 zones, dealing 6
+                    against the Guard of 1 creature within 3 zones, dealing 6
                     cold damage and the target is{" "}
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
@@ -847,7 +847,7 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>5. Poison Ray:</i> Void seer makes an attack roll against
-                    the Might of 1 creature within 3 zones, dealing 6 toxic
+                    the Guard of 1 creature within 3 zones, dealing 6 toxic
                     damage and the target falls{" "}
                     <Link className="internal-link" to="/conditions#prone">
                       prone
@@ -856,7 +856,7 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>6. Psychic Confusion:</i> Void seer makes an attack roll
-                    against the Resolve of 1 creature within 3 zones, dealing 6
+                    against the Spirit of 1 creature within 3 zones, dealing 6
                     psychic damage and the target is{" "}
                     <Link className="internal-link" to="/conditions#confused">
                       confused
@@ -865,14 +865,14 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>7. Telekinetic Beam:</i> Void seer makes an attack roll
-                    against the Might of 1 creature within 3 zones, dealing 6
+                    against the Guard of 1 creature within 3 zones, dealing 6
                     physical damage and the target is moved within 1 zone on a
                     success or higher.
                   </li>
 
                   <li>
                     <i>8. Wither:</i> Void seer makes an attack roll against the
-                    Might of 1 creature within 3 zones, dealing 6 necrotic
+                    Spirit of 1 creature within 3 zones, dealing 6 necrotic
                     damage and the target takes 2{" "}
                     <Link
                       className="internal-link"
@@ -898,7 +898,7 @@ const AberrationMonsters = [
                 If the magical effect’s tier (spell tier if the effect
                 originates from a spell) is 2 or less, then the targeted effect
                 ends. Otherwise, the void seer must succeed on an attack roll
-                against the Resolve of the targeted effect’s origin (spellcaster
+                against the Spirit of the targeted effect’s origin (spellcaster
                 for a spell) or a TN of 10 + double the effect’s tier.
               </span>
             ),
@@ -1000,7 +1000,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
           },
           {
@@ -1008,7 +1008,7 @@ const AberrationMonsters = [
             name: "Rupture Mind",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "8 psychic damage",
             success: (
               <span>
@@ -1089,7 +1089,7 @@ const AberrationMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -1105,7 +1105,7 @@ const AberrationMonsters = [
             name: "Void Intrusion",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "3 psychic damage",
             success: (
               <span>
@@ -1164,7 +1164,7 @@ const AberrationMonsters = [
                   dangerous zone
                 </Link>{" "}
                 (3 psychic damage) , and when a creature takes this damage, the
-                nascent elder god makes an attack roll against their Resolve. On
+                nascent elder god makes an attack roll against their Spirit. On
                 a success, they are{" "}
                 <Link className="internal-link" to="/conditions#confused">
                   confused
@@ -1180,7 +1180,7 @@ const AberrationMonsters = [
             name: "Void Pulse (cacoon only)",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -1196,7 +1196,7 @@ const AberrationMonsters = [
             name: "Bite (birth only)",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1226,7 +1226,7 @@ const AberrationMonsters = [
             name: "Unravel Reality",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 psychic damage",
             critical:
               "Samee as a success, but the target is erased for the scene (overcome ends)",
@@ -1243,7 +1243,7 @@ const AberrationMonsters = [
             name: "Telekinetic Throw",
             keywords: "magical, range",
             target: "1 creature within 3 zones",
-            defense: "MGT",
+            defense: "Guard",
             critical:
               "Same as a success, but the target is shoved up to 2 zones",
             success: "Target shoved up to 1 zone and falls prone",
