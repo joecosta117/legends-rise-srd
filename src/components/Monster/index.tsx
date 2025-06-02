@@ -64,6 +64,7 @@ const Monster: React.FC<MonsterProps> = ({
   summons,
   hp,
   evn,
+  //@ts-ignore
   mgt,
   res,
   pb,
