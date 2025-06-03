@@ -1827,7 +1827,7 @@ export const fireSpells = [
       ),
     },
     {
-      title: "Lavafield (Action)",
+      title: "Lava Field (Action)",
       actType: "Action",
       spell: (
         <AbilityCard
