@@ -317,7 +317,7 @@ function FightingStyles() {
                     made against your Guard
                   </span>
                 }
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only you takes +1 misfortune"
               />
             </div>
           </div>
@@ -552,7 +552,7 @@ function FightingStyles() {
                     made against your Guard
                   </span>
                 }
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only you takes +1 misfortune"
               />
             </div>
           </div>
@@ -1292,7 +1292,7 @@ function FightingStyles() {
                     against a creature's Guard
                   </span>
                 }
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only the attacked creature takes +1 misfortune"
               />
               <AbilityCard
                 name="Far Throw"
@@ -1477,7 +1477,7 @@ function FightingStyles() {
                 }
                 frequency="At-will"
                 descriptor="As your foe attacks you, you bring up your dual weapons to deflect."
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only you takes +1 misfortune"
               />
             </div>
           </div>

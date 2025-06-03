@@ -28,10 +28,10 @@ function HeroCreationSteps() {
       </p>
       <p>
         <b>Class:</b> Choose a background tied to your class in some way. An
-        arcanist with the background “smith” isn’t informative if the hero knows
-        about magic. A better background would be “magical smith” or “smith that
-        awoke with magical powers” so your hero can leverage their class’s
-        magical talents during{" "}
+        arcanist with the background <i>smith</i> isn’t informative if the hero
+        knows about magic. A better background would be <i>magical smith</i> or{" "}
+        <i>smith that awoke with magical powers</i> so your hero can leverage
+        their class’s magical talents during{" "}
         <Link className="internal-link" to="/rules/skills">
           skill rolls
         </Link>
@@ -43,7 +43,7 @@ function HeroCreationSteps() {
         Take a look at some of these examples of backgrounds and how they can be
         applicable out of combat.
       </p>
-      <h4 className="header">“Templar of the Sun God”</h4>
+      <h4 className="header">Templar of the Sun God</h4>
       <p>This hero could use their background in the following situations:</p>
       <ul>
         <li>
@@ -60,7 +60,7 @@ function HeroCreationSteps() {
           </span>
         </li>
       </ul>
-      <h4 className="header">“Magician of the Thousand Eye Cult”</h4>
+      <h4 className="header">Magician of the Thousand Eye Cult</h4>
       <p>This hero could use their background in the following situations:</p>
       <ul>
         <li>
@@ -82,34 +82,54 @@ function HeroCreationSteps() {
       </p>
       <ul>
         <li>
-          <span>“Acrobat of the Grand Circus”</span>
+          <span>
+            <i>Acrobat of the Grand Circus</i>
+          </span>
         </li>
         <li>
-          <span>“Academy Archaeologist”</span>
+          <span>
+            <i>Academy Archaeologist</i>
+          </span>
         </li>
         <li>
-          <span>“Agent of the Guild”</span>
+          <span>
+            <i>Agent of the Guild</i>
+          </span>
         </li>
         <li>
-          <span>“Archmage’s Apprentice”</span>
+          <span>
+            <i>Archmage’s Apprentice</i>
+          </span>
         </li>
         <li>
-          <span>“Assassin of the Bloody Knives Gang”</span>
+          <span>
+            <i>Assassin of the Bloody Knives Gang</i>
+          </span>
         </li>
         <li>
-          <span>“Blessed of the Seven”</span>
+          <span>
+            <i>Blessed of the Seven</i>
+          </span>
         </li>
         <li>
-          <span>“Con Artist Wanted by the City”</span>
+          <span>
+            <i>Con Artist Wanted by the City</i>
+          </span>
         </li>
         <li>
-          <span>“Exiled Princess on the Run”</span>
+          <span>
+            <i>Exiled Princess on the Run</i>
+          </span>
         </li>
         <li>
-          <span>“Pirate of the West Seas”</span>
+          <span>
+            <i>Pirate of the West Seas</i>
+          </span>
         </li>
         <li>
-          <span>“Survivor of a Dragon Attack by the Red Death”</span>
+          <span>
+            <i>Survivor of the Red Death</i>
+          </span>
         </li>
       </ul>
 
@@ -121,45 +141,61 @@ function HeroCreationSteps() {
       <h4 className="header">Evocative, Not Simple</h4>
       <p>
         A background shouldn’t be a single word, but instead should be a short
-        phrase or title. Instead of picking the background “fighter” for your
-        warrior, figure out what type of fighting your hero did in the past. Did
-        your hero learn combat as a gladiator, mercenary, bounty-hunter,
-        soldier, or knight? Now you know the type of fighting, where did your
-        hero learn to use weapons or who taught them or did they earn any
-        prestige for their combat prowess? Now your warrior’s background could
-        be “mercenary of the dreaded Sun Company”!
+        phrase or title. Instead of picking the background <i>fighter</i> for
+        your warrior, figure out what type of fighting your hero did in the
+        past. Did your hero learn combat as a gladiator, mercenary,
+        bounty-hunter, soldier, or knight? Now you know the type of fighting,
+        where did your hero learn to use weapons or who taught them or did they
+        earn any prestige for their combat prowess? Now your warrior’s
+        background could be <i>mercenary of the dreaded Sun Company</i>!
       </p>
       <p>
         A good rule of thumb is that a background should follow the same
-        structure: <b>“[Noun] of the [Setting Information]”</b> or{" "}
-        <b>“[Noun] from the [Location]”</b> or <b>“[Adjective] [Noun]”</b>. Feel
+        structure: <i>[Noun] of the [Setting Information]</i> or{" "}
+        <i>[Noun] from the [Location]</i> or <i>[Adjective] [Noun]</i>. Feel
         free to deviate from this structure, but take a look at the below
         examples of simple versions vs more evocative backgrounds.
       </p>
       <ul>
         <li>
-          <span>“Wizard” vs “Runaway Apprentice of the Archmage”</span>
+          <span>
+            <i>Wizard</i> vs <i>Runaway Apprentice of the Archmage</i>
+          </span>
         </li>
         <li>
-          <span>“Soldier” vs “Veteran of the Great War”</span>
+          <span>
+            <i>Soldier</i> vs <i>Veteran of the Great War</i>
+          </span>
         </li>
         <li>
-          <span>“Priest” vs “Exorcist of the Holy Order”</span>
+          <span>
+            <i>Priest</i> vs <i>Exorcist of the Holy Order</i>
+          </span>
         </li>
         <li>
-          <span>“Noble” vs “Exiled Princess from the Dragon Kingdom”</span>
+          <span>
+            <i>Noble</i> vs <i>Exiled Princess from the Dragon Kingdom</i>
+          </span>
         </li>
         <li>
-          <span>“Farmer” vs “Great Plains Farmer”</span>
+          <span>
+            <i>Farmer</i> vs <i>Great Plains Farmer</i>
+          </span>
         </li>
         <li>
-          <span>“Rogue” vs “Smuggler of the Shadow Network”</span>
+          <span>
+            <i>Rogue</i> vs <i>Smuggler of the Shadow Network</i>
+          </span>
         </li>
         <li>
-          <span>“Orphan” vs “Street Urchin from the Capital”</span>
+          <span>
+            <i>Orphan</i> vs <i>Street Urchin from the Capital</i>
+          </span>
         </li>
         <li>
-          <span>“Ranger” vs “Dragon Hunter”</span>
+          <span>
+            <i>Ranger</i> vs <i>Dragon Hunter</i>
+          </span>
         </li>
       </ul>
       <p>
@@ -174,77 +210,36 @@ function HeroCreationSteps() {
     <div>
       <p>
         All heroes learn two knacks at 1st level, of which players define
-        themselves. Knacks represent talents your hero excels at, and are
-        typically short one to two word concepts similar to skills in other
-        games. As your hero progresses, they will automatically learn more
-        knacks.
+        themselves. A knack is a word or phrase that represent specific talents,
+        skills, or characterists your hero possesses. As your hero progresses,
+        they will automatically gain more knacks.
       </p>
       <p>
         Here are some examples of knacks you could pick, but feel free to make
         up your own:
       </p>
-      <ul>
-        <li>
-          <span>Ancient History</span>
-        </li>
-        <li>
-          <span>Animal Friend</span>
-        </li>
-        <li>
-          <span>Athletics</span>
-        </li>
-        <li>
-          <span>Dragon Lore</span>
-        </li>
-        <li>
-          <span>Faith</span>
-        </li>
-        <li>
-          <span>Fire Magic</span>
-        </li>
-        <li>
-          <span>Herbalism</span>
-        </li>
-        <li>
-          <span>Intimidation</span>
-        </li>
-        <li>
-          <span>Legal Studies</span>
-        </li>
-        <li>
-          <span>Lying</span>
-        </li>
-        <li>
-          <span>Military Tactics</span>
-        </li>
-        <li>
-          <span>Nature</span>
-        </li>
-        <li>
-          <span>Perception</span>
-        </li>
-        <li>
-          <span>Persuasion</span>
-        </li>
-        <li>
-          <span>Politics</span>
-        </li>
-        <li>
-          <span>Research</span>
-        </li>
-        <li>
-          <span>Riding</span>
-        </li>
-        <li>
-          <span>Stealth</span>
-        </li>
-        <li>
-          <span>Tinkering</span>
-        </li>
-        <li>
-          <span>Wilderness Survival</span>
-        </li>
-      </ul>
+      <p>
+        <b>Characteristics:</b>{" "}
+        <i>
+          athletic, bookworm, charming, helpful, intimidating, leader, lone
+          wolf, silver tongue, survivor, young and naive
+        </i>
+      </p>
+      <p>
+        <b>Skills:</b>{" "}
+        <i>
+          animal friend, ancient history, dragon lore, military tactics, lock
+          perception, picking, sneaking, tinkering, tracking
+        </i>
+      </p>
+      <p>
+        <b>Phrases:</b>{" "}
+        <i>
+          always a step ahead, burn it all down, for the greater good, keep them
+          guessing, I still remember, it's all a part of the plan, love is my
+          shield, nature provides, pain makes you stronger
+        </i>
+      </p>
     </div>
   );
 
@@ -321,9 +316,9 @@ function HeroCreationSteps() {
           </Link>{" "}
           to add your proficiency bonus to the result. You can only invoke your
           background if the background is relevant towards the challenge. For
-          example, a hero with the background “dragon hunter” could invoke this
-          background to add their proficiency bonus on their skill roll to track
-          a monster in the forest.
+          example, a hero with the background <i>dragon hunter</i> could invoke
+          this background to add their proficiency bonus on their skill roll to
+          track a monster in the forest.
         </p>
         <Accordion title="Choosing Your Background" content={backgroundInfo} />
         <h3 className="header">Invoking Knacks</h3>

@@ -378,6 +378,13 @@ const Navigation = () => {
             >
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/abilities-and-keywords"
+                onClick={toggleMobileNav}
+              >
+                Abilities & Keywords
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/combat-abilities"
                 onClick={toggleMobileNav}
               >
@@ -390,13 +397,7 @@ const Navigation = () => {
               >
                 Conditions
               </Link>
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/abilities-and-keywords"
-                onClick={toggleMobileNav}
-              >
-                Abilities & Keywords
-              </Link>
+
               <Link
                 className="navigation__links-container__dropdown__item"
                 to="/rules"
@@ -454,6 +455,13 @@ const Navigation = () => {
                 onClick={toggleMobileNav}
               >
                 Monsters
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
+                to="/optional-rules"
+                onClick={toggleMobileNav}
+              >
+                Optional Rules
               </Link>
             </div>
           </div>

@@ -395,7 +395,7 @@ function Rogue() {
                 </span>
               }
               frequency="At-will"
-              effect="Triggering attack roll takes +1 misfortune"
+              effect="Triggering attack roll against only you takes +1 misfortune"
             />
 
             {/* <h3 className="header">Slip the Knife</h3>

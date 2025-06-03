@@ -4021,7 +4021,7 @@ export const protectionSpells = [
               </span>
             </span>
           }
-          effect="Triggering attack roll takes +1 misfortune"
+          effect="Triggering attack roll against only you takes +1 misfortune"
           keywords="Magical"
         />
       ),
