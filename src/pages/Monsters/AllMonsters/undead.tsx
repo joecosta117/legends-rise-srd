@@ -58,7 +58,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
           {
@@ -66,7 +66,7 @@ const UndeadMonsters = [
             name: "Old Bow",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
         ]}
@@ -142,7 +142,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -227,7 +227,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -280,7 +280,7 @@ const UndeadMonsters = [
               <span>
                 When the wraith minion is reduced to 0 hit points, necrotic
                 energy lashes out at its slayer. Make an attack roll agains the
-                creature's Might that killed the wraith minion, dealing 3
+                creature's Spirit that killed the wraith minion, dealing 3
                 necrotic damage.
               </span>
             ),
@@ -300,7 +300,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 necrotic damage",
             success: (
               <span>
@@ -392,7 +392,7 @@ const UndeadMonsters = [
                 </Link>
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "4 necrotic damage",
           },
         ]}
@@ -449,7 +449,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                against each creature's Might within the doomskull's zone,
+                against each creature's Spirit within the doomskull's zone,
                 dealing 3 necrotic damage.
               </span>
             ),
@@ -461,7 +461,7 @@ const UndeadMonsters = [
             name: "Doom Ray",
             keywords: "magical, range",
             target: "1 creature within 3 zones</span",
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 necrotic damage",
           },
           {
@@ -477,7 +477,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -485,7 +485,7 @@ const UndeadMonsters = [
             name: "Necrotic Blast",
             keywords: "magical, range, recharge",
             target: "All creatures in 1 zone within 3 zones",
-            defense: "MGT",
+            defense: "Spirit",
             damage: "4 necrotic damage",
           },
         ]}
@@ -565,7 +565,7 @@ const UndeadMonsters = [
                 (turn ends)
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 necrotic damage",
           },
           {
@@ -573,7 +573,7 @@ const UndeadMonsters = [
             name: "Banshee's Wail",
             keywords: "magical, range, recharge",
             target: "All living enemies within the banshee's zone",
-            defense: "MGT",
+            defense: "Spirit",
             damage: "3 necrotic damage",
             success: (
               <span>
@@ -649,7 +649,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -768,7 +768,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 necrotic damage",
             success: (
               <span>
@@ -784,7 +784,7 @@ const UndeadMonsters = [
             name: "Possession",
             keywords: "magical, melee, recharge",
             target: "1 creature within 3 zones",
-            defense: "RES",
+            defense: "Spirit",
             partial:
               "Poltergeist enters the target’s body and the target is possessed (turn ends). While possessed, the poltergeist decides the target’s turn and the poltergeist is untargetable from any effect and doesn’t take any turns except for boss actions. If the target takes any damage, then they can make an overcome roll, and on a success, the poltergeist is expelled.",
             success:
@@ -816,7 +816,7 @@ const UndeadMonsters = [
             name: "Telekinetic Storm",
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             round: "3",
             success: (
@@ -832,7 +832,7 @@ const UndeadMonsters = [
             name: "Terrifying Scream",
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
-            defense: "RES",
+            defense: "Spirit",
             damage: "3 psychic damage",
             round: "5",
             success: (
@@ -921,7 +921,7 @@ const UndeadMonsters = [
                 (turn ends)
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 necrotic damage",
           },
           {
@@ -937,7 +937,7 @@ const UndeadMonsters = [
                 (overcome ends)
               </span>
             ),
-            defense: "RES",
+            defense: "Spirit",
             partial: "hindered (turn ends)",
             critical:
               "Same as a success, and target must use a maneuver on their next turn to move away from the ghost",
@@ -1015,7 +1015,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -1085,7 +1085,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1108,7 +1108,7 @@ const UndeadMonsters = [
                 creatures
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -1187,7 +1187,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1215,7 +1215,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1306,7 +1306,7 @@ const UndeadMonsters = [
             name: "Taint Blood",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "4 necrotic damage",
             success: (
               <span>
@@ -1330,7 +1330,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1350,7 +1350,7 @@ const UndeadMonsters = [
             name: "Vampiric Domination",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical:
               "Same as a success, and the target takes +1 misfortune to overcome rolls to end this effect",
             success: (
@@ -1443,7 +1443,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             effect: (
               <span>
@@ -1468,7 +1468,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -1565,7 +1565,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1573,7 +1573,7 @@ const UndeadMonsters = [
             name: "Defend your Ruler!",
             keywords: "magical, recharge",
             target: <span>All enemies within the royal mummy's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             effect: (
               <span>
@@ -1668,7 +1668,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1772,7 +1772,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1788,7 +1788,7 @@ const UndeadMonsters = [
             name: "Draining Breath",
             keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             success: (
               <span>
@@ -1806,7 +1806,7 @@ const UndeadMonsters = [
             name: "Dominating Gaze",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
-            defense: "RES",
+            defense: "Spirit",
             critical: "Dragon controls the target's turns (overcome ends)",
             success: <span>Dragon controls the target's next turn</span>,
           },
@@ -1840,7 +1840,7 @@ const UndeadMonsters = [
             name: "Roar of Doom",
             keywords: "magical, range",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             round: "1",
             success: (
               <span>
@@ -1875,7 +1875,7 @@ const UndeadMonsters = [
             name: "Your Souls Belong to Me",
             keywords: "magical",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             round: "5",
             success: (
@@ -1942,7 +1942,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -1961,7 +1961,7 @@ const UndeadMonsters = [
             name: "Draining Breath",
             keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             success: (
               <span>
@@ -2063,7 +2063,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "12 necrotic damage",
             success: (
               <span>
@@ -2083,7 +2083,7 @@ const UndeadMonsters = [
             name: "Finger of Death",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "12 necrotic damage",
             effect: (
               <span>
@@ -2167,7 +2167,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -2183,7 +2183,7 @@ const UndeadMonsters = [
             name: "Necrotic Wave",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             success: (
               <span>
@@ -2262,7 +2262,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             success: (
               <span>
@@ -2278,7 +2278,7 @@ const UndeadMonsters = [
             name: "Dark Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 necrotic damage",
           },
           {
@@ -2286,7 +2286,7 @@ const UndeadMonsters = [
             name: "Withering Burst",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "6 necrotic damage",
             effect: (
               <span>
@@ -2303,7 +2303,7 @@ const UndeadMonsters = [
             name: "Die Mortal",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Spirit",
             damage: "15 necrotic damage",
             success: (
               <span>
@@ -2347,7 +2347,7 @@ const UndeadMonsters = [
             name: "Drain Life",
             keywords: "magical, range",
             target: "All enemies",
-            defense: "MGT",
+            defense: "Spirit",
             damage: "9 necrotic damage",
             effect: "Lich regains hit points equal to half the damage dealt",
           },
@@ -2423,7 +2423,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "12 necrotic damage",
             success: (
               <span>
@@ -2447,7 +2447,7 @@ const UndeadMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Spirit",
             damage: "12 psychic damage",
           },
         ]}

@@ -106,7 +106,7 @@ function Arcanist() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +4 to Resolve
+                  <b>Defense Bonus:</b> +1 to Spirit
                 </span>
               </li>
               <li>
@@ -121,17 +121,19 @@ function Arcanist() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> None
+                  <b>Training:</b> Mystic robes
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Starting Equipment:</b> You gain an implement.
+                  <b>Starting Equipment:</b> You gain mystic robes and an
+                  implement.
                 </span>
                 <ul className="secondary-list">
                   <li>
                     <span>
-                      <i>Suggestion:</i> You gain a wand as your implement.
+                      <i>Suggestion:</i> You gain mystic robes and a wand as
+                      your implement.
                     </span>
                   </li>
                 </ul>
@@ -333,7 +335,8 @@ function Arcanist() {
             </p>
             <h3 className="header">War Magic (1st-Level Feature)</h3>
             <p>
-              You gain training in light armor. Also, when you deal damage on an{" "}
+              While wearing mystic robes, you gain +1 to Guard. Also, when you
+              deal damage on an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}

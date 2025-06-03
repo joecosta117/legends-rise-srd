@@ -54,7 +54,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -70,7 +70,7 @@ const BeastMonsters = [
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
             success: (
               <span>
@@ -141,7 +141,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -179,7 +179,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -204,7 +204,7 @@ const BeastMonsters = [
             round: "1",
             keywords: "range",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             critical: "hindered (overcome ends)",
             success: (
               <span>
@@ -298,7 +298,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -376,7 +376,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -439,7 +439,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -463,7 +463,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -521,7 +521,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -536,7 +536,7 @@ const BeastMonsters = [
             basic: false,
             name: "Web Area",
             target: <span>1d4+1 enemies within the giant spider's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             critical: "seized (overcome ends)",
             success: (
               <span>
@@ -594,7 +594,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -652,7 +652,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -716,7 +716,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -767,7 +767,7 @@ const BeastMonsters = [
             name: "Tentacle",
             keywords: "weapon",
             target: <span>1 creature within the octopus' zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -831,7 +831,7 @@ const BeastMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
         ]}
@@ -881,7 +881,7 @@ const BeastMonsters = [
             name: "Pincer",
             keywords: "weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>

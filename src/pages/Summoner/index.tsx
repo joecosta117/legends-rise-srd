@@ -124,7 +124,7 @@ function Summoner() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +4 to Resolve
+                  <b>Defense Bonus:</b> +1 to Spirit
                 </span>
               </li>
               <li>
@@ -139,17 +139,19 @@ function Summoner() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> None
+                  <b>Training:</b> Mystic robes
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Starting Equipment:</b> You gain an implement.
+                  <b>Starting Equipment:</b> You gain mystic robes and an
+                  implement.
                 </span>
                 <ul className="secondary-list">
                   <li>
                     <span>
-                      <i>Suggestion:</i> You gain a wand as your implement.
+                      <i>Suggestion:</i> You gain mystic robes and a wand as
+                      your implement.
                     </span>
                   </li>
                 </ul>
@@ -223,7 +225,7 @@ function Summoner() {
                       creature
                     </span>
                   ),
-                  defense: "EVN",
+                  defense: "Guard",
                   damage: "1 physical damage per tier",
                 },
               ]}
@@ -272,7 +274,7 @@ function Summoner() {
                       creature
                     </span>
                   ),
-                  defense: "EVN",
+                  defense: "Guard",
                   damage: "PB physical damage",
                 },
               ]}
@@ -416,9 +418,16 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to cold damage equal to your proficiency bonus, and their
-                      assault damage deals cold damage. On a critical successful
-                      assault from the major summons, the target is{" "}
+                      to cold damage equal to your proficiency bonus,{" "}
+                      <Link
+                        className="internal-link"
+                        to="/rules/combat#resistances-and-weaknesses"
+                      >
+                        weakness
+                      </Link>{" "}
+                      to fire damage equal to your tier, and their assault
+                      damage deals cold damage. On a critical successful assault
+                      from the major summons, the target is{" "}
                       <Link className="internal-link" to="/conditions#seized">
                         seized
                       </Link>{" "}
@@ -457,7 +466,7 @@ function Summoner() {
               target="1d4+1 enemies within the zone of your major summons"
               frequency="At-will"
               keywords="Magical"
-              defense="EVN"
+              defense="Guard"
               damage="1 physical (air, earth, or water) / fire (fire) / cold (ice) damage per your tier"
             />
 
@@ -499,6 +508,9 @@ function Summoner() {
                 </span>
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
                   <li>
+                    <span>Guard and Spirit increase by +1</span>
+                  </li>
+                  <li>
                     <span>
                       <Link
                         className="internal-link"
@@ -506,8 +518,7 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to holy damage and physical damage equal to your tier,
-                      but,{" "}
+                      to holy damage equal to your tier, but,{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
@@ -601,7 +612,11 @@ function Summoner() {
                   <b>Summons:</b> Your minor and major summons gains the
                   following modifications:
                 </span>
+
                 <ul style={{ marginLeft: "10px", marginTop: "0" }}>
+                  <li>
+                    <span>Guard increases by +2</span>
+                  </li>
                   <li>
                     <span>
                       <Link
@@ -610,7 +625,7 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to arcane and physical damage equal to your tier
+                      to arcane equal to your tier
                     </span>
                   </li>
                   <li>
@@ -874,7 +889,7 @@ function Summoner() {
               frequency="At-will"
               keywords="Magical"
               target="1d4+1 enemies in the same zone as your minor or major summons"
-              defense="EVN"
+              defense="Spirit"
               damage="1 arcane damage per your tier (minor summons) or double the same damage (major summons)"
               effect="The attacking summons immediately dies as it explodes"
             />
@@ -1074,7 +1089,7 @@ function Summoner() {
             </p>
             <p>
               All of your summons gain a fly speed equal to their land speed,
-              and the Evasion of your summons increases by +1.
+              and the Guard of your summons increases by +1.
             </p>
 
             <h3 className="header">Master Summoner</h3>

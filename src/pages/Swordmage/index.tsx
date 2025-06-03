@@ -82,7 +82,7 @@ function Swordmage() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion and Resolve
+                  <b>Defense Bonus:</b> +1 to Guard and Spirit
                 </span>
               </li>
               <li>
@@ -97,7 +97,7 @@ function Swordmage() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> Light armor and all weapons
+                  <b>Training:</b> Mystic robes, light armor, and all weapons
                 </span>
               </li>
               <li>
@@ -343,7 +343,7 @@ function Swordmage() {
               }
               keywords="Magical, Range"
               frequency="At-will"
-              effect="Triggering attack roll takes +1 misfortune"
+              effect="Triggering attack roll against only the ally takes +1 misfortune"
             />
 
             <h2>Mage Hunter</h2>
@@ -535,7 +535,7 @@ function Swordmage() {
               keywords="Magical, Range"
               effect={
                 <span>
-                  Triggering attack roll against you takes{" "}
+                  Triggering ability's attack roll takes{" "}
                   <Modifier type="mf" count="1" />, and your next{" "}
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike

@@ -59,8 +59,8 @@ function Mounts() {
         <h2>Mount Barding</h2>
         <p>
           Armor can help save a mount’s life. Worn barding increases the mount’s
-          Evasion by +1. Barding costs more depending on the size of the mount:
-          1 for medium or smaller, 2 for large, 4 for huge, and 8 for colossal.
+          Guard by +1. Barding costs more depending on the size of the mount: 1
+          for medium or smaller, 2 for large, 4 for huge, and 8 for colossal.
         </p>
         <h2>Mount Rules</h2>
         <p>
@@ -93,7 +93,7 @@ function Mounts() {
                   creature
                 </span>
               ),
-              defense: "EVN",
+              defense: "Guard",
               damage: "2 physical damage per T",
             },
           ]}
@@ -151,9 +151,10 @@ function Mounts() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against Evasion that deals double tier damage of a damage type
-              appropriate to the mount. A drake might spit fire while a
-              celestial hound might shoot holy energy.{" "}
+              against Guard (natural damage types) or Spirit (mystical damage
+              types) that deals double tier damage of a damage type appropriate
+              to the mount. A drake might spit fire while a celestial hound
+              might shoot holy energy.{" "}
             </span>
           </li>
           <li>
@@ -205,7 +206,7 @@ function Mounts() {
                   creature
                 </span>
               ),
-              defense: "EVN",
+              defense: "Guard",
               damage: "2 physical damage",
               success: (
                 <span>
@@ -242,7 +243,7 @@ function Mounts() {
                   creature
                 </span>
               ),
-              defense: "EVN",
+              defense: "Guard",
               damage: "4 physical damage",
               success: "seized (scene ends)",
             },
@@ -274,7 +275,7 @@ function Mounts() {
                   creature
                 </span>
               ),
-              defense: "EVN",
+              defense: "Guard",
               damage: "6 physical damage",
             },
             {
@@ -282,7 +283,7 @@ function Mounts() {
               name: "Fire Spit",
               keywords: "ranged",
               target: "1 creature within 3 zones",
-              defense: "EVN",
+              defense: "Guard",
               damage: "6 fire damage",
             },
           ]}

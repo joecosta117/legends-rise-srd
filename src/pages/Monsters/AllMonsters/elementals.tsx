@@ -52,7 +52,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage:
               "3 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
@@ -61,7 +61,7 @@ const ElementalMonsters = [
             name: "Spew Elements",
             target: "1d4+1 enemies within the sprite's zone",
             keywords: "recharge",
-            defense: "EVN",
+            defense: "Guard",
             damage:
               "2 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
@@ -115,7 +115,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -123,7 +123,7 @@ const ElementalMonsters = [
             name: "Electrical Zap",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 lightning damage",
             success:
               "Lightning leaps out at another enemy within the target's zone dealing 2 lightning damage",
@@ -181,7 +181,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -196,7 +196,7 @@ const ElementalMonsters = [
             name: "Hurl Stone",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -252,7 +252,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 fire damage",
             success: (
               <span>
@@ -272,7 +272,7 @@ const ElementalMonsters = [
             name: "Hurl Flame",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 fire damage",
           },
         ]}
@@ -342,7 +342,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 cold damage",
             success: (
               <span>
@@ -358,7 +358,7 @@ const ElementalMonsters = [
             name: "Hurl Ice",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 cold damage",
             success: "speed halved (turn ends)",
           },
@@ -422,7 +422,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: <span>Shoved within their zone</span>,
           },
@@ -431,7 +431,7 @@ const ElementalMonsters = [
             name: "Hurl Water",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -485,7 +485,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage:
               "2 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
@@ -494,7 +494,7 @@ const ElementalMonsters = [
             name: "Hurl Element",
             target: "1d4+1 enemies within the sprite's zone",
             keywords: "recharge",
-            defense: "EVN",
+            defense: "Guard",
             damage:
               "2 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
@@ -548,7 +548,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -556,7 +556,7 @@ const ElementalMonsters = [
             name: "Electrocuting Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 lightning damage",
             success:
               "Lightning leaps out at another enemy within the target's zone dealing 4 lightning damage",
@@ -566,7 +566,7 @@ const ElementalMonsters = [
             name: "Storm's Vengeance",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 lightning damage",
             success: (
               <span>
@@ -624,7 +624,7 @@ const ElementalMonsters = [
               <span>
                 When an enemy enters the elemental's zone or starts their turn
                 there, the elemental makes an attack roll against the creature's
-                Might. On a success, the creature falls{" "}
+                Guard. On a success, the creature falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>
@@ -647,7 +647,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -667,7 +667,7 @@ const ElementalMonsters = [
             name: "Hurl Stone",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -735,7 +735,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 fire damage",
             success: (
               <span>
@@ -755,7 +755,7 @@ const ElementalMonsters = [
             name: "Hurl Flame",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
           },
         ]}
@@ -818,7 +818,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -834,7 +834,7 @@ const ElementalMonsters = [
             name: "Hurl Ice",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 cold damage",
             success: "speed halved (turn ends)",
           },
@@ -916,7 +916,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: <span>Shoved within their zone</span>,
           },
@@ -925,7 +925,7 @@ const ElementalMonsters = [
             name: "Hurl Water",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -933,7 +933,7 @@ const ElementalMonsters = [
             name: "Crashing Undercurrent",
             keywords: "magical, recharge",
             target: <span>All enemies within 1 zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "4 physical damage",
             success: "Pulled to the elemental's zone",
           },
@@ -1003,7 +1003,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage:
               "3 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
@@ -1012,7 +1012,7 @@ const ElementalMonsters = [
             name: "Hurl Element",
             target: "1d4+1 enemies within the sprite's zone",
             keywords: "recharge",
-            defense: "EVN",
+            defense: "Guard",
             damage:
               "3 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
@@ -1070,7 +1070,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 lightning damage",
             success: (
               <span>
@@ -1090,7 +1090,7 @@ const ElementalMonsters = [
             name: "Zapping Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 lightning damage",
           },
           {
@@ -1098,7 +1098,7 @@ const ElementalMonsters = [
             name: "Lightning Flurry",
             keywords: "magical, recharge",
             target: <span>All enemies in the genie's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 lightning damage",
             success: (
               <span>
@@ -1180,7 +1180,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1195,7 +1195,7 @@ const ElementalMonsters = [
             name: "Hurl Stone",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1220,7 +1220,7 @@ const ElementalMonsters = [
             name: "Shake Ground",
             keywords: "magical, range",
             target: "All enemies in 1 zone within 3 zones",
-            defense: "MGT",
+            defense: "Guard",
             critical: "Same as a success, and take 2 physical damage",
             success: (
               <span>
@@ -1286,7 +1286,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
           },
           {
@@ -1294,7 +1294,7 @@ const ElementalMonsters = [
             name: "Flaming Orb",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
             success: (
               <span>
@@ -1314,7 +1314,7 @@ const ElementalMonsters = [
             name: "Incinerating Blast",
             keywords: "magical, range,",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
             success: (
               <span>
@@ -1390,7 +1390,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -1407,7 +1407,7 @@ const ElementalMonsters = [
             name: "Freezing Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 cold damage",
             success: (
               <span>
@@ -1491,7 +1491,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1499,7 +1499,7 @@ const ElementalMonsters = [
             name: "Aqua Orb",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -1513,7 +1513,7 @@ const ElementalMonsters = [
             name: "Great Wave",
             keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 physical damage",
           },
         ]}
@@ -1604,7 +1604,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 fire damage",
           },
           {
@@ -1612,7 +1612,7 @@ const ElementalMonsters = [
             name: "Scorching Orb",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 fire damage",
             success: (
               <span>
@@ -1632,7 +1632,7 @@ const ElementalMonsters = [
             name: "Inferno Burst",
             keywords: "magical, range,recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 fire damage",
             success: (
               <span>
@@ -1783,7 +1783,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1800,7 +1800,7 @@ const ElementalMonsters = [
             name: "Paralyzing Lightning",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 lightning damage",
             success: (
               <span>
@@ -1816,7 +1816,7 @@ const ElementalMonsters = [
             name: "Tempest's Pull",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             critical: (
               <span>
                 Same as a success, and{" "}
@@ -1853,7 +1853,7 @@ const ElementalMonsters = [
             round: "1",
             keywords: "magical, range",
             target: <span>All creatues in 3 connected zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 lightning damage",
             success: (
               <span>
@@ -1921,7 +1921,7 @@ const ElementalMonsters = [
       <Monster
         name="Earth Primordial"
         hp="54"
-        evn="17"
+        evn="19"
         mgt="19"
         res="15"
         speeds="burrow 1"
@@ -1951,7 +1951,7 @@ const ElementalMonsters = [
                 When a creatue deals damage to the earth primordial with a
                 critical success or the earth primodrial becomes{" "}
                 <ToolTip preset="shaken" />, their shell cracks. The
-                primordial's physical resistance is halved and their Evasion
+                primordial's physical resistance is halved and their Guard
                 decreases by 2.
               </span>
             ),
@@ -1971,7 +1971,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1988,7 +1988,7 @@ const ElementalMonsters = [
             name: "Throw Boulder",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -1996,7 +1996,7 @@ const ElementalMonsters = [
             name: "Swallowed by the Earth",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -2045,7 +2045,7 @@ const ElementalMonsters = [
             round: "1",
             keywords: "magical, range",
             target: <span>All huge or smaller creatures</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -2150,7 +2150,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -2177,7 +2177,7 @@ const ElementalMonsters = [
             name: "Send Wave",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -2200,7 +2200,7 @@ const ElementalMonsters = [
                   difficult zone and dangerous zone
                 </Link>{" "}
                 (3 physical damage). When a creature takes this damage, make an
-                attack roll against their Might, and on a success, they are{" "}
+                attack roll against their Guard, and on a success, they are{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
@@ -2219,7 +2219,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>
-                , and makes attack rolls against the Might of each creature in
+                , and makes attack rolls against the Guard of each creature in
                 the zones it passes through. On a success, the creature is
                 dragged along with the primordial and knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
@@ -2247,7 +2247,7 @@ const ElementalMonsters = [
                 2d4+2 enemies within the primordial's zone and adjacent zone
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 fire damage",
           },
           {
@@ -2255,7 +2255,7 @@ const ElementalMonsters = [
             round: "5",
             keywords: "magical, range",
             target: <span>All enemies</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 physical damage",
             success: "Target pulled into the primordial's zone",
           },
@@ -2334,7 +2334,7 @@ const ElementalMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -2350,7 +2350,7 @@ const ElementalMonsters = [
             name: "Freeze",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 cold damage",
           },
           {
@@ -2366,7 +2366,7 @@ const ElementalMonsters = [
                   difficult zone and dangerous zone
                 </Link>{" "}
                 (3 cold damage). When a creature takes this damage, make an
-                attack roll against their Might, and on a success, they are{" "}
+                attack roll against their Guard, and on a success, they are{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
@@ -2380,7 +2380,7 @@ const ElementalMonsters = [
             name: "Encase in Ice",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -2424,7 +2424,7 @@ const ElementalMonsters = [
             round: "5",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their

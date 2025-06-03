@@ -53,7 +53,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -69,7 +69,7 @@ const FaerieMonsters = [
             name: "Dazzling Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "3 psychic damage",
             success: (
               <span>
@@ -84,7 +84,7 @@ const FaerieMonsters = [
         maneuvers={[
           {
             name: "Faerie Charm",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature within 2 zones",
             critical:
               "Same as a success, but the effect lasts for the scene (overcome ends)",
@@ -157,7 +157,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -177,7 +177,7 @@ const FaerieMonsters = [
                 1d4+1 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 psychic damage",
             success: (
               <span>
@@ -192,7 +192,7 @@ const FaerieMonsters = [
         maneuvers={[
           {
             name: "Faerie Charm",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature within 2 zones",
             critical:
               "Same as a success, but the effect lasts for the scene (overcome ends)",
@@ -211,7 +211,7 @@ const FaerieMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -260,7 +260,7 @@ const FaerieMonsters = [
             round: "5",
             keywords: "magical, range",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             critical:
               "Same as a success, but the target is captivated for the scene (overcome ends)",
             success: (
@@ -354,7 +354,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -374,7 +374,7 @@ const FaerieMonsters = [
                 2d4+2 enemies within the dragon's zone and an adjacent zone
               </span>
             ),
-            defense: "RES",
+            defense: "Spirit",
             damage: "9 psychic damage",
             success: (
               <span>
@@ -389,7 +389,7 @@ const FaerieMonsters = [
         maneuvers={[
           {
             name: "Faerie Charm",
-            defense: "RES",
+            defense: "Spirit",
             target: "1 creature within 2 zones",
             critical:
               "Same as a success, but the effect lasts for the scene (overcome ends)",
@@ -408,7 +408,7 @@ const FaerieMonsters = [
             round: "1",
             keywords: "range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: (
               <span>
                 Same as a success, and the target must spend a maneuver on their
@@ -458,7 +458,7 @@ const FaerieMonsters = [
             round: "5",
             keywords: "magical, range",
             target: "All enemies",
-            defense: "RES",
+            defense: "Spirit",
             critical:
               "Same as a success, but the target is captivated for the scene (overcome ends)",
             success: (
@@ -520,7 +520,7 @@ const FaerieMonsters = [
             name: "Tiny Rapier",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -539,7 +539,7 @@ const FaerieMonsters = [
             name: "Tiny Bow",
             keywords: "range, weapon",
             target: <span>1 creature within 2 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -580,7 +580,7 @@ const FaerieMonsters = [
             name: "Shortsword",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -588,7 +588,7 @@ const FaerieMonsters = [
             name: "Shortbow",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -659,7 +659,7 @@ const FaerieMonsters = [
             name: "Shortsword",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -667,7 +667,7 @@ const FaerieMonsters = [
             name: "Shortbow",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
         ]}
@@ -731,14 +731,14 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
         maneuvers={[
           {
             name: "Blood Soak",
-            defense: "RES",
+            defense: "Spirit",
             duration: "Turn ends",
             effect:
               "The redcap dips their halberd in freshly spilled blood from a foe, and they gain +1 fortune to attack rolls",
@@ -815,7 +815,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -831,7 +831,7 @@ const FaerieMonsters = [
             name: "Mocking Cackle",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "2 psychic damage",
             success: (
               <span>
@@ -847,7 +847,7 @@ const FaerieMonsters = [
             name: "Confusing Curse",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "5 psychic damage",
             success: (
               <span>
@@ -881,7 +881,7 @@ const FaerieMonsters = [
             round: "1",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -918,7 +918,7 @@ const FaerieMonsters = [
             round: "5",
             keywords: "magical",
             target: "All enemies within the hag's zone",
-            defense: "MGT",
+            defense: "Guard",
             damage: "3 toxic damage",
 
             success: (
@@ -991,7 +991,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -1013,7 +1013,7 @@ const FaerieMonsters = [
             target: <span>1 engaged creature</span>,
             requirement:
               "Target must be seized, unconscious, or taking ongoing physical damage",
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -1096,7 +1096,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -1120,7 +1120,7 @@ const FaerieMonsters = [
                 creature
               </span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "6 cold damage",
             success: (
               <span>
@@ -1136,7 +1136,7 @@ const FaerieMonsters = [
             name: "Freezing Blast",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "8 cold damage",
             success: (
               <span>

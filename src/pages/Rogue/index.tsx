@@ -83,7 +83,7 @@ function Rogue() {
               </li>
               <li>
                 <span>
-                  <b>Defense Bonus:</b> +2 to Evasion and Resolve
+                  <b>Defense Bonus:</b> +1 to Guard
                 </span>
               </li>
               <li>
@@ -215,11 +215,11 @@ function Rogue() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Agile</h3>
             <p>
-              You ignore any effects from a failed{" "}
+              You ignore any effects from a partial success{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against your Evasion.
+              against your Guard.
             </p>
           </div>
         )}
@@ -365,10 +365,16 @@ function Rogue() {
                   >
                     attack roll
                   </Link>{" "}
-                  against the target's Resolve
+                  against the target's Spirit
                 </span>
               }
             />
+
+            <h3 className="header">Finish the Wounded</h3>
+            <p>
+              You gain <Modifier type="f" count="1" /> to strike{" "}
+              <ToolTip preset="shaken" /> targets.
+            </p>
 
             <h3 className="header">Lightning Reflexes</h3>
             <p>You gain the following ability:</p>
@@ -385,14 +391,14 @@ function Rogue() {
                   >
                     attack roll
                   </Link>{" "}
-                  against your Evasion
+                  against your Guard
                 </span>
               }
               frequency="At-will"
-              effect="Triggering attack roll takes +1 misfortune"
+              effect="Triggering attack roll against only you takes +1 misfortune"
             />
 
-            <h3 className="header">Slip the Knife</h3>
+            {/* <h3 className="header">Slip the Knife</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
               name="Slip the Knife"
@@ -414,7 +420,7 @@ function Rogue() {
                   against the target's Might
                 </span>
               }
-            />
+            /> */}
 
             <h2>Tier 2 Class Talents</h2>
             <h3 className="header">Greater Opportunist</h3>
@@ -471,11 +477,11 @@ function Rogue() {
 
             <h3 className="header">Slippery Mind</h3>
             <p>
-              You ignore any effects from a failed{" "}
+              You ignore any effects from a partial success{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against your Resolve.
+              against your Spirit.
             </p>
 
             <h3 className="header">Start with Style</h3>

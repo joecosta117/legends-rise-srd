@@ -314,10 +314,10 @@ function FightingStyles() {
                     >
                       attack rolls
                     </Link>{" "}
-                    made against your Might
+                    made against your Guard
                   </span>
                 }
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only you takes +1 misfortune"
               />
             </div>
           </div>
@@ -549,10 +549,10 @@ function FightingStyles() {
                     >
                       attack rolls
                     </Link>{" "}
-                    made against your Evasion
+                    made against your Guard
                   </span>
                 }
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only you takes +1 misfortune"
               />
             </div>
           </div>
@@ -699,7 +699,7 @@ function FightingStyles() {
                 descriptor="You bring your giant weapon crashing into the ground, causing the earth to shake around you."
                 requirement="You’re wielding a heavy melee weapon"
                 target="1d4+1 enemies within your zone"
-                defense="MGT"
+                defense="Guard"
                 critical="Same as success, and 1 physical damage per your tier"
                 success={
                   <span>
@@ -1289,10 +1289,10 @@ function FightingStyles() {
                     >
                       attack rolls
                     </Link>{" "}
-                    against a creature's Evasion
+                    against a creature's Guard
                   </span>
                 }
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only the attacked creature takes +1 misfortune"
               />
               <AbilityCard
                 name="Far Throw"
@@ -1472,12 +1472,12 @@ function FightingStyles() {
                     >
                       attack rolls
                     </Link>{" "}
-                    made against your Evasion
+                    made against your Guard
                   </span>
                 }
                 frequency="At-will"
                 descriptor="As your foe attacks you, you bring up your dual weapons to deflect."
-                effect="Triggering attack roll takes +1 misfortune"
+                effect="Triggering attack roll against only you takes +1 misfortune"
               />
             </div>
           </div>

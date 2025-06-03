@@ -49,7 +49,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -114,7 +114,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "1 physical damage",
           },
         ]}
@@ -172,7 +172,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
           {
@@ -180,7 +180,7 @@ const DemonMonsters = [
             name: "Fire Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the hellhound's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 fire damage",
           },
         ]}
@@ -226,7 +226,7 @@ const DemonMonsters = [
               <span>
                 When an enemy becomes engaged to the sloth demon or starts their
                 turn engaged to the sloth demon, the demon makes an attack roll
-                against the creatue's Might. On a success, they are{" "}
+                against the creatue's Spirit. On a success, they are{" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
@@ -249,7 +249,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -344,7 +344,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
           },
         ]}
@@ -382,7 +382,7 @@ const DemonMonsters = [
                   dangerous zone
                 </Link>{" "}
                 (1 psychic damage), and when a creature takes this damage, the
-                demon makes an attack roll against the creature's Resolve. On a
+                demon makes an attack roll against the creature's Spirit. On a
                 success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
@@ -496,7 +496,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
           },
           {
@@ -532,7 +532,7 @@ const DemonMonsters = [
             name: "Demonic Charm",
             target: "1 creatue within 2 zones",
             keywords: "magical, range",
-            defense: "RES",
+            defense: "Spirit",
             critical:
               "Same as a success, but the effect lasts for the scecne (overcome ends)",
             success: (
@@ -607,7 +607,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
             success: (
               <span>
@@ -623,7 +623,7 @@ const DemonMonsters = [
             name: "Web",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "4 physical damage",
             success: (
               <span>
@@ -639,7 +639,7 @@ const DemonMonsters = [
             name: "Profane Webs",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the demon's zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             critical:
               "Same as a success, and the target takes +1 misfortune to overcome rolls against this effect",
             success: (
@@ -664,7 +664,7 @@ const DemonMonsters = [
             name: "Treacherous Whispers",
             target: "1 creatue within 2 zones",
             keywords: "magical, range",
-            defense: "RES",
+            defense: "Spirit",
             critical: "Demon controls the target's turns (overcome ends)",
             success: <span>Demon controls the target's next turn</span>,
           },
@@ -741,7 +741,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -819,7 +819,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
             success: (
               <span>
@@ -935,7 +935,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 physical damage",
           },
           {
@@ -943,7 +943,7 @@ const DemonMonsters = [
             name: "Blinding Majesty",
             keywords: "magical, recharge",
             target: <span>All enemies within the demon's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: <span>blinded (overcome ends)</span>,
             success: (
               <span>
@@ -1018,7 +1018,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "8 physical damage",
           },
           {
@@ -1026,7 +1026,7 @@ const DemonMonsters = [
             name: "Siphon Identity",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "8 psychic damage",
             critical: (
               <span>Same as a success, but confused (overcome ends)</span>
@@ -1113,7 +1113,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "2 physical damage",
           },
           {
@@ -1121,7 +1121,7 @@ const DemonMonsters = [
             name: "Throw Hellfire",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "1 fire damage and 1 unholy damage",
           },
         ]}
@@ -1172,7 +1172,7 @@ const DemonMonsters = [
             name: "Mark of the Pit",
             keywords: "magical, ranged",
             target: <span>1 creature within 3 zones</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 unholy damage",
             success: (
               <span>
@@ -1188,7 +1188,7 @@ const DemonMonsters = [
             name: "Demon Lord's Blessing",
             keywords: "magical, recharge",
             target: <span>All enemies within the infernal herald's zone</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "6 unholy damage",
             effect: (
               <span>
@@ -1265,7 +1265,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physical damage",
             success: (
               <span>
@@ -1322,7 +1322,7 @@ const DemonMonsters = [
             description: (
               <span>
                 When the conquest demon is reduced to 0 hit points, it explodes
-                in hellfire. Make an attack roll against each creature's Evasion
+                in hellfire. Make an attack roll against each creature's Spirit
                 within 1 zone of the conquest demon, dealing 6 fire damage and 6
                 unholy damage. Any creature reduced to 0 hit points from this
                 damage is incinerated to ash.
@@ -1356,7 +1356,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 fire damage",
           },
           {
@@ -1364,7 +1364,7 @@ const DemonMonsters = [
             name: "Hellfire Arrival",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 fire damage and 6 unholy damage",
             effect: (
               <span>
@@ -1385,7 +1385,7 @@ const DemonMonsters = [
             name: "Flame Whip",
             keywords: "range, weapon",
             target: "1 creature within 1 zone",
-            defense: "EVN",
+            defense: "Guard",
             damage: "6 fire damage",
             success: (
               <span>
@@ -1438,7 +1438,7 @@ const DemonMonsters = [
             name: "Giant Glaive",
             keywords: "weapon",
             target: <span>1 creature within the war demon's zone</span>,
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
           },
           {
@@ -1446,7 +1446,7 @@ const DemonMonsters = [
             name: "All Foes To Me!",
             keywords: "magical, recharge",
             target: <span>All enemies within 1 zone</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical",
             success: (
               <span>
@@ -1467,7 +1467,7 @@ const DemonMonsters = [
             name: "Flying Weapon",
             keywords: "range, weapon",
             target: "1 creature within 3 zones",
-            defense: "EVN",
+            defense: "Guard",
             damage: "3 physcial damage",
             success: (
               <span>
@@ -1559,7 +1559,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -1586,7 +1586,7 @@ const DemonMonsters = [
               </span>
             ),
             target: "Triggering creature",
-            defense: "RES",
+            defense: "Spirit",
             critical:
               "Same as a success, and the target is reduced to 0 hit points",
             success: (
@@ -1646,7 +1646,7 @@ const DemonMonsters = [
                 </Link>{" "}
                 (3 toxic damage) for enemies. When a creature takes this damage,
                 the plague demon makes an attack roll against the creature's
-                Might. On a success, the creature is{" "}
+                Guard. On a success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>
@@ -1669,7 +1669,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>
@@ -1685,7 +1685,7 @@ const DemonMonsters = [
             name: "Madness Plague",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 toxic damage",
             success: (
               <span>
@@ -1782,7 +1782,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
           },
           {
@@ -1790,7 +1790,7 @@ const DemonMonsters = [
             name: "Nullifying Curse",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "9 unholy damage",
             success: "Target can't use or benefit from relics (turn ends)",
           },
@@ -1799,7 +1799,7 @@ const DemonMonsters = [
             name: "Hellfire Rays",
             keywords: "magical, range",
             target: <span>1d4 creatures within 3 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "3 fire damage and 3 unholy damage",
             success: (
               <span>
@@ -1819,7 +1819,7 @@ const DemonMonsters = [
             name: "Rain Hellfire",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 3 zones within 5 zones</span>,
-            defense: "EVN",
+            defense: "Spirit",
             damage: "6 fire damage and 6 unholy damage",
             success: (
               <span>
@@ -1867,7 +1867,7 @@ const DemonMonsters = [
             round: "3",
             keywords: "magical, range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             damage: "12 unholy damage",
             success:
               "Target chooses one of the following: they expend 3 mana if they have 3 mana to spend, or an encounter ability that hasn't been used yet can't be used for this scene.",
@@ -1877,7 +1877,7 @@ const DemonMonsters = [
             round: "5",
             keywords: "magical, range",
             target: <span>All enemies</span>,
-            defense: "RES",
+            defense: "Spirit",
             critical: "Same as a success, but the healing increases to 6",
             success: (
               <span>
@@ -1983,7 +1983,7 @@ const DemonMonsters = [
                 creature
               </span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "12 physical damage",
             success: (
               <span>
@@ -2000,7 +2000,7 @@ const DemonMonsters = [
             target: (
               <span>All enemies within the demon lord of wrath's zone</span>
             ),
-            defense: "EVN",
+            defense: "Guard",
             damage: "9 physical damage",
             effect: (
               <span>
@@ -2042,7 +2042,7 @@ const DemonMonsters = [
             target: (
               <span>All enemies within the demon lord of wrath's zone</span>
             ),
-            defense: "MGT",
+            defense: "Guard",
             damage: "9 physical damage",
             success: (
               <span>

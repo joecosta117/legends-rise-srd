@@ -265,16 +265,16 @@ function RollingRules() {
         <p>
           Natalia the rogue slashes at a fiend. She makes her attack roll by
           rolling a d20 and after adding +2 for her proficiency bonus, her total
-          is 17. The fiend’s Evasion is 12, so Natalie’s total is high enough
-          for a critical success!
+          is 17. The fiend’s Guard is 12, so Natalie’s total is high enough for
+          a critical success!
         </p>
         <p>
           However, her ally, Elrin the arcanist isn’t as lucky. Elrin makes an
           attack roll to shoot a bolt of magic at the same fiend, but gets a 8
-          for his total. His total is less than the fiend’s 12 Evasion, but only
-          4 below the TN so Elrin gets a partial success. If his total instead
-          was a 7, then his result would be 5 below than the TN and would
-          instead be a failure.
+          for his total. His total is less than the fiend’s 12 Guard, but only 4
+          below the TN so Elrin gets a partial success. If his total instead was
+          a 7, then his result would be 5 below than the TN and would instead be
+          a failure.
         </p>
 
         <h2 id="hero-point">Hero Points</h2>
@@ -334,7 +334,7 @@ function RollingRules() {
           situation a skill tier of 3, which is higher than the hero’s tier by
           two. That drops the hero’s success to a failure!
         </p>
-        <h3 className="header">Attack Rolls</h3>
+        {/* <h3 className="header">Attack Rolls</h3>
         <p>
           If a difference in tiers downgrades an{" "}
           <Link className="internal-link" to="/rules/combat#attack-roll">
@@ -346,7 +346,7 @@ function RollingRules() {
           rogue is one tier higher, the carrion demon downgrades their attack
           roll result to a failure. Normally, a failed attack roll still deals
           half damage, but in this case, the carrion demon deals no damage!
-        </p>
+        </p> */}
 
         <h3 className="header">Overcome Rolls</h3>
         <p>
