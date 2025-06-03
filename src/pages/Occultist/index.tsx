@@ -484,7 +484,7 @@ function Occultist() {
               }
               effect={
                 <span>
-                  Target of the triggering attack roll becomes{" "}
+                  Choose one target of the triggering attack roll to become{" "}
                   <Link className="internal-link" to="/rules/combat#stealth">
                     blinded
                   </Link>{" "}

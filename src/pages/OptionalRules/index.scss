@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.optional-rules {
+  @include page-layout();
+}
+
+.optional-rules-content {
+  @include class-page-content();
+}

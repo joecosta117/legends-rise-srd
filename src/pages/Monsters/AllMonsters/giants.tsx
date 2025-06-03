@@ -1492,9 +1492,10 @@ const GiantMonsters = [
             keywords: "magical, range",
             effect: (
               <span>
-                Triggering attack roll takes <Modifier type="mf" count="1" />{" "}
-                and then the stone shield shatters. If attacker is engaged to
-                the attacked creature, then they take 4 physical damage.
+                Triggering attack roll against only the attacked creature takes{" "}
+                <Modifier type="mf" count="1" /> and then the stone shield
+                shatters. If attacker is engaged to the attacked creature, then
+                they take 4 physical damage.
               </span>
             ),
           },

@@ -468,7 +468,8 @@ function CombatRules() {
         <p>
           If an ability targets multiple creatures, then you make a single
           attack roll and compare your result against the defense of each
-          target.
+          target. If the attack has a bonus or penalty to the attack roll, then
+          apply the modifier to all targets, unless specified otherwise.
         </p>
 
         <h2 id="hp-damage">Hit Points and Damage</h2>
