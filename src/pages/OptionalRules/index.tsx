@@ -218,9 +218,9 @@ function OptionalRules() {
           </Link>{" "}
           or is brought back to life, they gain a scar. Scars are permament
           representations of the hero's trauma, and they can be physical or
-          mental. When a hero starts dying with 3 scars, their journey ends, and
-          their fate determined by their player. The hero can still be played as
-          an NPC, but the player must create a new hero to play.
+          mental. When a hero starts is defeated with 3 scars, their journey
+          ends, and their fate determined by their player. The hero can still be
+          played as an NPC, but the player must create a new hero to play.
         </p>
         <p>
           In certain campaign settings, scars can represent dark corruption that
