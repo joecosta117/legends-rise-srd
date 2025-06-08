@@ -29,7 +29,7 @@ const PlantMonsters = [
       <Monster
         name="Rot Sapling"
         hp="2"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         pb="2"
@@ -231,9 +231,9 @@ const PlantMonsters = [
       <Monster
         name="Rot Tree"
         hp="20"
-        evn="11"
+        evn="13"
         mgt="15"
-        res="13"
+        res="11"
         pb="2"
         type="Huge Plant"
         tier="1"
@@ -308,9 +308,9 @@ const PlantMonsters = [
       <Monster
         name="Dryad"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         pb="2"
         type="Medium Faerie Plant"
         tier="1"
@@ -378,7 +378,7 @@ const PlantMonsters = [
         hp="10"
         evn="13"
         mgt="11"
-        res="15"
+        res="11"
         pb="2"
         type="Medium Faerie Plant"
         tier="1"
@@ -524,7 +524,7 @@ const PlantMonsters = [
       <Monster
         name="Woodlord"
         hp="60"
-        evn="15"
+        evn="17"
         mgt="17"
         res="13"
         pb="4"
@@ -532,7 +532,6 @@ const PlantMonsters = [
         tier="2"
         threat="Major"
         role="Tank"
-        resistances="physical 2"
         weaknesses="fire 2"
         traits={[
           {
@@ -623,7 +622,6 @@ const PlantMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
-        resistances="physical 2"
         weaknesses="fire 2"
         actions={[
           {
@@ -656,6 +654,13 @@ const PlantMonsters = [
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
             damage: "4 physical damage",
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </span>
+            ),
           },
         ]}
       />

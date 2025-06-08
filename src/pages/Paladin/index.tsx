@@ -275,7 +275,7 @@ function Paladin() {
               descriptor="You ward an ally with your divine powers."
               frequency="At-will"
               keywords="Magical"
-              trigger="You see an ally take damage within your zone"
+              trigger="You see an ally within your zone take damage"
               effect={
                 <span>
                   Ally gains{" "}
@@ -321,19 +321,34 @@ function Paladin() {
 
             <h2>Censor</h2>
             <p>You have sworn to carry out judgement against the unworthy.</p>
-            <h3 className="header">Divine Judgement (1st-Level Feature)</h3>
+            <h3 className="header">Gaze of Judgement (1st-Level Feature)</h3>
+            <p>You gain the following ability:</p>
+            <AbilityCard
+              name="Gaze of Judgment"
+              actType="Reaction"
+              descriptor="Your eyes radiate divine condemnation."
+              frequency="At-will"
+              keywords="Magical"
+              trigger="A creature within your zone makes a roll"
+              effect={
+                <span>
+                  Triggering roll takes <Modifier type="mf" count="1" />{" "}
+                </span>
+              }
+            />
+            {/* <h3 className="header">Divine Judgement (1st-Level Feature)</h3>
             <p>
               Through your weapon, you mark foes for debilitating condemnation.
               When you get a success or higher on a{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
-              </Link>{" "}
-              against creature, the target is{" "}
+              </Link>
+              , the target is{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
               (turn ends).
-            </p>
+            </p> */}
           </div>
         )}
 
@@ -414,26 +429,16 @@ function Paladin() {
 
             <h2>Tier 2 Class Talents</h2>
             <h3 className="header">Blinding Smite</h3>
-            <p>
-              Your smite can blind a foe. On a critical success of divine smite,
-              the target is{" "}
-              <Link className="internal-link" to="/rules/combat#stealth">
-                blinded
-              </Link>{" "}
-              (scene ends).
-            </p>
-
-            <h3 className="header">Chains of Judgement</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> censor subclass
             </p>
             <p>
-              Your smite can place chains of judgment on a foe. On a success of
-              divine smite, the target is{" "}
-              <Link className="internal-link" to="/conditions#seized">
-                seized
+              Your smite punishes a foe's vision. On a success of divine smite,
+              the target is{" "}
+              <Link className="internal-link" to="/rules/combat#stealth">
+                blinded
               </Link>{" "}
-              (turn ends), or seized (scene ends) on a critical success.
+              (turn ends), or blinded (scene ends) on a critical success.
             </p>
 
             <h3 className="header">Divine Matyr</h3>
@@ -449,6 +454,19 @@ function Paladin() {
             <p>
               When you use restorative touch, you can immediately end one
               condition on the target.
+            </p>
+
+            <h3 className="header">Triumphant Blessing</h3>
+            <p>
+              When you or an ally within your zone gets a success on an overcome
+              roll, they gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your tier (scene ends).
             </p>
 
             <h3 className="header">Vengeful Reprisal</h3>
@@ -467,8 +485,15 @@ function Paladin() {
                   You see the target of your oath of vengeance{" "}
                   <Link className="internal-link" to="/combat-abilities#move">
                     move
-                  </Link>{" "}
-                  or make an{" "}
+                  </Link>
+                  ,{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#special-movement"
+                  >
+                    teleport
+                  </Link>
+                  , or make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -483,8 +508,8 @@ function Paladin() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     Strike
                   </Link>{" "}
-                  the target of your oath of vengeance. If the target is within
-                  1 zone of you, you can{" "}
+                  your oath of vengeance target. If the creature is within 1
+                  zone, you can{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#special-movement"
@@ -495,7 +520,7 @@ function Paladin() {
                   <Link className="internal-link" to="/rules/combat#engaged">
                     engaged
                   </Link>{" "}
-                  with them before you strike.
+                  to them before you strike.
                 </span>
               }
             />
@@ -506,31 +531,11 @@ function Paladin() {
               <b>Requirement:</b> avenger subclass
             </p>
             <p>
-              While you aren’t{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                defeated
-              </Link>
-              , your zone is a{" "}
+              Your zone is a{" "}
               <Link className="internal-link" to="/rules/combat#zone-types">
                 dangerous zone
               </Link>{" "}
               (1 holy damage per your tier) only for enemies.
-            </p>
-
-            <h3 className="header">Censor's Aura</h3>
-            <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> censor subclass
-            </p>
-            <p>
-              While you aren’t{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                defeated
-              </Link>
-              , your zone is a{" "}
-              <Link className="internal-link" to="/rules/combat#zone-types">
-                difficult zone
-              </Link>{" "}
-              only for enemies.
             </p>
 
             <h3 className="header">Banishing Smite</h3>
@@ -541,20 +546,12 @@ function Paladin() {
               critical success.
             </p>
 
-            <h3 className="header">Guardian's Aura</h3>
+            <h3 className="header">Omnipresent Shield</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> guardian subclass
             </p>
             <p>
-              While you aren’t{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                defeated
-              </Link>
-              , all enemies within your zone are{" "}
-              <Link className="internal-link" to="/conditions#taunted">
-                taunted
-              </Link>{" "}
-              by you.
+              You get a second reaction that you can only use for divine shield.
             </p>
 
             <h3 className="header">Rejuvenating Touch</h3>
@@ -562,6 +559,15 @@ function Paladin() {
               When you use restorative touch, the target gains temporary hit
               points equal to your tier at the start of each of their turns
               (scene ends).
+            </p>
+
+            <h3 className="header">Relentless Judgement</h3>
+            <p style={{ marginBottom: 0 }}>
+              <b>Requirement:</b> censor subclass
+            </p>
+            <p>
+              You get a second reaction that you can only use for gaze of
+              judgement.
             </p>
           </div>
         )}

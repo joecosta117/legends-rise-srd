@@ -328,7 +328,7 @@ function Swordmage() {
             <AbilityCard
               name="Aegis Shield"
               actType="Reaction"
-              descriptor="You impose a magical shield to deflect incoming harm against your friend."
+              descriptor="You impose a magical shield to deflect incoming harm against a friend."
               trigger={
                 <span>
                   You see a creature make an{" "}
@@ -338,7 +338,7 @@ function Swordmage() {
                   >
                     attack roll
                   </Link>{" "}
-                  against an ally within 1 zone
+                  against your ally within 1 zone
                 </span>
               }
               keywords="Magical, Range"

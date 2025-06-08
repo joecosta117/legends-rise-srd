@@ -433,9 +433,9 @@ const GiantMonsters = [
       <Monster
         name="Oni"
         hp="10"
-        evn="13"
+        evn="12"
         mgt="13"
-        res="13"
+        res="12"
         pb="2"
         type="Large Giant"
         tier="1"
@@ -1340,7 +1340,7 @@ const GiantMonsters = [
       <Monster
         name="Moutain Giant"
         hp="30"
-        evn="15"
+        evn="17"
         mgt="17"
         res="13"
         pb="4"
@@ -1348,7 +1348,6 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Tank"
-        resistances="physical 2"
         actions={[
           {
             basic: true,

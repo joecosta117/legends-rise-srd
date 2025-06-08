@@ -127,9 +127,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Medusa"
         hp="10"
-        evn="13"
+        evn="11"
         mgt="11"
-        res="15"
+        res="13"
         pb="2"
         type="Medium Monstrosity"
         tier="1"
@@ -314,9 +314,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Harpy"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         pb="2"
         type="Medium Monstrosity"
         tier="1"
@@ -525,7 +525,7 @@ const MonstrosityMonsters = [
         hp="12"
         evn="13"
         mgt="15"
-        res="13"
+        res="11"
         pb="2"
         type="Large Monstrosity"
         tier="1"
@@ -596,9 +596,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Griffon"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="13"
-        res="13"
+        res="11"
         pb="2"
         type="Large Monstrosity"
         tier="1"
@@ -671,7 +671,7 @@ const MonstrosityMonsters = [
         hp="12"
         evn="13"
         mgt="15"
-        res="13"
+        res="11"
         pb="2"
         type="Large Monstrosity"
         tier="1"
@@ -775,16 +775,6 @@ const MonstrosityMonsters = [
               </span>
             ),
           },
-          {
-            name: "Hydra Heads",
-            description: (
-              <span>
-                When the hydra takes 5 or more damage in a single turn, one of
-                its five heads dies. When the hydra regenerates, it regrows up
-                to two heads if any heads are dead.
-              </span>
-            ),
-          },
         ]}
         actions={[
           {
@@ -872,9 +862,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Serpentfolk Whisper"
         hp="10"
-        evn="13"
+        evn="11"
         mgt="11"
-        res="15"
+        res="13"
         resistances="toxic 1"
         pb="2"
         type="Medium Monstrosity"
@@ -945,9 +935,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Serpentfolk Priest"
         hp="10"
-        evn="13"
+        evn="11"
         mgt="11"
-        res="15"
+        res="13"
         pb="2"
         type="Medium Monstrosity"
         tier="1"
@@ -1016,7 +1006,7 @@ const MonstrosityMonsters = [
         hp="20"
         evn="13"
         mgt="11"
-        res="15"
+        res="11"
         pb="2"
         type="Large Monstrosity"
         tier="1"
@@ -1271,9 +1261,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Sphinx"
         hp="26"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="17"
+        res="14"
         pb="4"
         type="Large Monstrosity"
         tier="2"
@@ -1408,7 +1398,7 @@ const MonstrosityMonsters = [
       <Monster
         name="Storm Eagle"
         hp="44"
-        evn="17"
+        evn="15"
         mgt="15"
         res="13"
         pb="4"
@@ -1509,9 +1499,9 @@ const MonstrosityMonsters = [
       <Monster
         name="Kraken"
         hp="48"
-        evn="15"
+        evn="16"
         mgt="17"
-        res="19"
+        res="16"
         pb="6"
         type="Colossal Monstrosity"
         tier="3"
