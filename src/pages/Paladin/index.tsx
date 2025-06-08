@@ -121,7 +121,7 @@ function Paladin() {
 
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3 className="header">Fightng Style</h3>
+            <h3 className="header">Fighting Style</h3>
             <p>
               You have mastered a certain way of fighting. Learn a{" "}
               <Link className="internal-link" to="/fighting-styles">
@@ -223,7 +223,16 @@ function Paladin() {
 
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3 className="header">Zealous Blessing</h3>
+            <h3 className="header">Blessed Aura</h3>
+            <p>
+              You radiate divine power that shields all. You and allies within
+              your zone gain <Modifier type="f" count="1" /> to{" "}
+              <Link className="internal-link" to="/rules/combat#overcome">
+                overcome rolls
+              </Link>
+              .
+            </p>
+            {/* <h3 className="header">Zealous Blessing</h3>
             <p>Choose one of the following blessings:</p>
             <ul>
               <li>
@@ -248,7 +257,7 @@ function Paladin() {
                 short rest
               </Link>
               , you can change your blessing.
-            </p>
+            </p> */}
           </div>
         )}
 
@@ -276,7 +285,7 @@ function Paladin() {
                   >
                     resistance
                   </Link>{" "}
-                  only to the triggering damage equal to your tier
+                  only to the triggering damage equal to your proficiency bonus
                 </span>
               }
             />

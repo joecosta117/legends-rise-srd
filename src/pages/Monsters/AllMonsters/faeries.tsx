@@ -504,9 +504,9 @@ const FaerieMonsters = [
       <Monster
         name="Sprite"
         hp="4"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         pb="2"
         vision="night"
         type="Tiny Faerie"
@@ -564,9 +564,9 @@ const FaerieMonsters = [
       <Monster
         name="Pixie"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         pb="2"
         vision="night"
         type="Small Faerie"
@@ -644,9 +644,9 @@ const FaerieMonsters = [
       <Monster
         name="Satyr"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         pb="2"
         vision="night"
         type="Medium Faerie"
@@ -702,7 +702,7 @@ const FaerieMonsters = [
       <Monster
         name="Redcap"
         hp="24"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         pb="2"
@@ -738,7 +738,6 @@ const FaerieMonsters = [
         maneuvers={[
           {
             name: "Blood Soak",
-            defense: "Spirit",
             duration: "Turn ends",
             effect:
               "The redcap dips their halberd in freshly spilled blood from a foe, and they gain +1 fortune to attack rolls",
@@ -773,9 +772,9 @@ const FaerieMonsters = [
       <Monster
         name="Forest Hag"
         hp="10"
-        evn="13"
+        evn="11"
         mgt="11"
-        res="15"
+        res="13"
         pb="2"
         type="Medium Faerie"
         tier="1"
@@ -1053,9 +1052,9 @@ const FaerieMonsters = [
       <Monster
         name="Winter Hag"
         hp="44"
-        evn="15"
+        evn="13"
         mgt="13"
-        res="17"
+        res="15"
         pb="4"
         type="Medium Faerie"
         tier="2"

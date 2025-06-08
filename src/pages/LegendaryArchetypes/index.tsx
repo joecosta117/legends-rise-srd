@@ -147,12 +147,13 @@ function LegendaryArchetypes() {
                 </span>
               }
             />
-            <h4 className="header">Holy Radiance (10th-Level Feature)</h4>
+            <h4 className="header">Aura of Revelation (10th-Level Feature)</h4>
             <p>
-              You radiate sacred power that protects all. You and allies within
-              your zone gain <Modifier type="f" count="2" /> to{" "}
-              <Link className="internal-link" to="/rules/combat#overcome">
-                overcome rolls
+              Your presence banishes the darkness and surrounds your foes in
+              revealing light. Your zone always has normal lighting and while in
+              your zone, enemies are{" "}
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
               </Link>
               .
             </p>

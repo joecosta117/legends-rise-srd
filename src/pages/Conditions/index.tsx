@@ -53,11 +53,8 @@ function Conditions() {
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>
-              </span>
-            </li>
-            <li>
-              <span>
-                Attack rolls gain <Modifier type="f" count="1" /> against you
+                , and attack rolls against you gain{" "}
+                <Modifier type="f" count="1" />
               </span>
             </li>
             <li>
@@ -79,13 +76,11 @@ function Conditions() {
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>
+                , and attack rolls against you gain{" "}
+                <Modifier type="f" count="1" />
               </span>
             </li>
-            <li>
-              <span>
-                Attack rolls gain <Modifier type="f" count="1" /> against you
-              </span>
-            </li>
+
             <li>
               <span>
                 You can't{" "}
@@ -109,6 +104,12 @@ function Conditions() {
                   move
                 </Link>
                 , but they can only move at half their speed
+              </span>
+            </li>
+            <li>
+              <span>
+                You can use a maneuver to attempt to escape by making an
+                overcome roll, and ending this condition on a success.
               </span>
             </li>
           </ul>
@@ -151,7 +152,7 @@ function Conditions() {
           <Link className="internal-link" to="/rules/combat#attack-roll">
             Attack rolls
           </Link>{" "}
-          gain <Modifier type="f" count="1" /> against you.
+          against you gain <Modifier type="f" count="1" />
         </p>
       ),
     },

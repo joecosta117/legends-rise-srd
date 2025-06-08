@@ -22,7 +22,7 @@ const ElementalMonsters = [
       <Monster
         name="Elemental Sprite"
         hp="5"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         speeds="fly 1"
@@ -90,7 +90,7 @@ const ElementalMonsters = [
       <Monster
         name="Air Elemental"
         hp="8"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         speeds="fly 1"
@@ -228,7 +228,7 @@ const ElementalMonsters = [
       <Monster
         name="Fire Elemental"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         pb="2"
@@ -523,7 +523,7 @@ const ElementalMonsters = [
       <Monster
         name="Storm Elemental"
         hp="22"
-        evn="17"
+        evn="15"
         mgt="15"
         res="13"
         speeds="fly 1"
@@ -607,7 +607,7 @@ const ElementalMonsters = [
       <Monster
         name="Earthquake Elemental"
         hp="30"
-        evn="15"
+        evn="17"
         mgt="17"
         res="13"
         pb="4"
@@ -700,7 +700,7 @@ const ElementalMonsters = [
       <Monster
         name="Inferno Elemental"
         hp="26"
-        evn="17"
+        evn="15"
         mgt="15"
         res="13"
         pb="2"
@@ -1039,7 +1039,7 @@ const ElementalMonsters = [
       <Monster
         name="Air Genie"
         hp="26"
-        evn="17"
+        evn="15"
         mgt="15"
         res="13"
         speeds="fly 1"
@@ -1150,9 +1150,9 @@ const ElementalMonsters = [
       <Monster
         name="Earth Genie"
         hp="26"
-        evn="13"
+        evn="14"
         mgt="17"
-        res="15"
+        res="14"
         speeds="burrow 1"
         pb="4"
         type="Large Elemental"
@@ -1255,9 +1255,9 @@ const ElementalMonsters = [
       <Monster
         name="Fire Genie"
         hp="22"
-        evn="15"
+        evn="13"
         mgt="13"
-        res="17"
+        res="15"
         speeds="fly 1"
         pb="4"
         type="Large Elemental"
@@ -1360,15 +1360,15 @@ const ElementalMonsters = [
       <Monster
         name="Ice Genie"
         hp="30"
-        evn="15"
+        evn="16"
         mgt="17"
-        res="13"
+        res="14"
         pb="4"
         type="Large Elemental"
         tier="2"
         threat="Major"
         role="Tank"
-        resistances="cold 4, physical 2"
+        resistances="cold 4"
         weaknesses="fire 2"
         traits={[
           {
@@ -1461,9 +1461,9 @@ const ElementalMonsters = [
       <Monster
         name="Water Genie"
         hp="26"
-        evn="15"
+        evn="13"
         mgt="13"
-        res="17"
+        res="15"
         pb="4"
         type="Large Elemental"
         tier="2"
@@ -1555,7 +1555,7 @@ const ElementalMonsters = [
       <Monster
         name="Fire Primordial"
         hp="42"
-        evn="19"
+        evn="17"
         mgt="17"
         res="15"
         speeds="fly 2"
@@ -1732,7 +1732,7 @@ const ElementalMonsters = [
       <Monster
         name="Air Primordial"
         hp="48"
-        evn="19"
+        evn="1y"
         mgt="17"
         res="15"
         speeds="fly 2"

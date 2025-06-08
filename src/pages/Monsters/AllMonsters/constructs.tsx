@@ -82,7 +82,7 @@ const ConstructMonsters = [
       <Monster
         name="Animated Armor"
         hp="6"
-        evn="13"
+        evn="15"
         mgt="15"
         res="11"
         speeds="fly 1"
@@ -91,7 +91,7 @@ const ConstructMonsters = [
         tier="1"
         threat="Minor"
         role="Tank"
-        resistances="physical 2"
+        resistances="physical 1"
         traits={[
           {
             name: "Broken Armor",
@@ -148,7 +148,7 @@ const ConstructMonsters = [
       <Monster
         name="Iron Hound"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         pb="2"
@@ -210,7 +210,7 @@ const ConstructMonsters = [
       <Monster
         name="Clockwork Defender"
         hp="12"
-        evn="13"
+        evn="15"
         mgt="15"
         res="11"
         pb="2"
@@ -218,7 +218,7 @@ const ConstructMonsters = [
         tier="1"
         threat="Standard"
         role="Tank"
-        resistances="physical 2"
+        resistances="physical 1"
         traits={[
           {
             name: "Broken Armor",
@@ -337,7 +337,7 @@ const ConstructMonsters = [
       <Monster
         name="Clockwork Drone"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         pb="2"
@@ -715,7 +715,7 @@ const ConstructMonsters = [
       <Monster
         name="Arcane Guardian"
         hp="30"
-        evn="15"
+        evn="17"
         mgt="17"
         res="13"
         pb="4"
@@ -723,7 +723,7 @@ const ConstructMonsters = [
         tier="2"
         threat="Standard"
         role="Tank"
-        resistances="arcane 2, physical 2"
+        resistances="arcane 2"
         actions={[
           {
             basic: true,
@@ -804,7 +804,7 @@ const ConstructMonsters = [
         tier="3"
         threat="Major"
         role="Tank"
-        resistances="arcane 3, fire 6, physical 6"
+        resistances="arcane 3, fire 6, physical 3"
         weaknesses="lightning 3"
         traits={[
           {
@@ -817,8 +817,7 @@ const ConstructMonsters = [
               <span>
                 When a creatue deals damage to the construct with a critical
                 success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is gone
-                and their Guard decreases by 2.
+                their armor breaks. The construct's physical resistance is gone.
               </span>
             ),
           },
@@ -971,7 +970,7 @@ const ConstructMonsters = [
         tier="3"
         threat="Boss"
         role="Bruiser"
-        resistances="arcane 3, physical 6"
+        resistances="arcane 3, physical 3"
         traits={[
           {
             name: "Boss Monster",
@@ -990,8 +989,7 @@ const ConstructMonsters = [
               <span>
                 When a creatue deals damage to the construct with a critical
                 success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is gone
-                and their Guard decreases by 2.
+                their armor breaks. The construct's physical resistance is gone.
               </span>
             ),
           },

@@ -859,7 +859,7 @@ const BeastMonsters = [
       <Monster
         name="Giant Crab"
         hp="12"
-        evn="13"
+        evn="15"
         mgt="15"
         res="11"
         pb="2"
@@ -867,7 +867,6 @@ const BeastMonsters = [
         tier="1"
         threat="Standard"
         role="Tank"
-        resistances="physical 1"
         speeds="swim 1"
         traits={[
           {

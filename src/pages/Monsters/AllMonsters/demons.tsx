@@ -23,9 +23,9 @@ const DemonMonsters = [
       <Monster
         name="Imp"
         hp="5"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         speeds="fly 1"
         pb="2"
         type="Tiny Fiend"
@@ -305,9 +305,9 @@ const DemonMonsters = [
       <Monster
         name="Nightmare Demon"
         hp="10"
-        evn="15"
+        evn="13"
         mgt="11"
-        res="13"
+        res="11"
         pb="2"
         type="Medium Fiend"
         tier="1"
@@ -455,9 +455,9 @@ const DemonMonsters = [
       <Monster
         name="Lust Demon"
         hp="20"
-        evn="13"
+        evn="11"
         mgt="11"
-        res="15"
+        res="13"
         pb="2"
         type="Medium Fiend"
         tier="1"
@@ -566,9 +566,9 @@ const DemonMonsters = [
       <Monster
         name="Treachery Demon"
         hp="52"
-        evn="13"
+        evn="14"
         mgt="17"
-        res="15"
+        res="14"
         pb="4"
         type="Large Fiend"
         tier="2"
@@ -881,7 +881,7 @@ const DemonMonsters = [
       <Monster
         name="Pride Demon"
         hp="30"
-        evn="15"
+        evn="17"
         mgt="17"
         res="13"
         pb="4"
@@ -890,7 +890,7 @@ const DemonMonsters = [
         threat="Standard"
         role="Tank"
         vision="night"
-        resistances="physical 2, unholy 4"
+        resistances="unholy 4"
         weaknesses="holy 2"
         traits={[
           {
@@ -1242,8 +1242,8 @@ const DemonMonsters = [
         tier="3"
         threat="Minion"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy 6"
+        weaknesses="holy 3"
         traits={[
           {
             name: "Infernal Death",
@@ -1421,7 +1421,7 @@ const DemonMonsters = [
       <Monster
         name="War Demon"
         hp="54"
-        evn="17"
+        evn="19"
         mgt="19"
         res="15"
         pb="6"
@@ -1430,7 +1430,7 @@ const DemonMonsters = [
         threat="Standard"
         role="Tank"
         vision="night"
-        resistances="physical 3, unholy 6"
+        resistances="unholy 6"
         weaknesses="holy 3"
         actions={[
           {
@@ -1519,9 +1519,9 @@ const DemonMonsters = [
       <Monster
         name="Death Demon"
         hp="48"
-        evn="19"
+        evn="17"
         mgt="15"
-        res="17"
+        res="15"
         pb="6"
         type="Large Fiend"
         tier="3"
@@ -1742,9 +1742,9 @@ const DemonMonsters = [
       <Monster
         name="Demon Lord of Greed"
         hp="42"
-        evn="17"
+        evn="15"
         mgt="15"
-        res="19"
+        res="17"
         pb="6"
         type="Large Fiend"
         tier="3"
@@ -1923,9 +1923,9 @@ const DemonMonsters = [
       <Monster
         name="Demon Lord of Wrath"
         hp="54"
-        evn="15"
+        evn="17"
         mgt="19"
-        res="17"
+        res="15"
         pb="6"
         type="Huge Fiend"
         tier="3"

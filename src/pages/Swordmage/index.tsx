@@ -118,7 +118,7 @@ function Swordmage() {
 
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3 className="header">Fightng Style</h3>
+            <h3 className="header">Fighting Style</h3>
             <p>
               You have mastered a certain way of fighting. Learn a{" "}
               <Link className="internal-link" to="/fighting-styles">

@@ -94,8 +94,7 @@ function OptionalRules() {
         <h2 id="damage-rolls">Rolling for Damage</h2>
         <p>
           In Legends Rise, there are no damage rolls. However, some players love
-          to roll dice, and this optional rule is for them. Follow the below
-          table to convert flat damage to rolled damage. Keep in mind this
+          to roll dice, and this optional rule is for them. Keep in mind this
           optional rule introduces more inconsistency to combat as well as
           slowing the game down. Proceed with caution!
         </p>

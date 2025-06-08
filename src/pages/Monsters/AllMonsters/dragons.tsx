@@ -329,7 +329,7 @@ const DragonMonsters = [
       <Monster
         name="Young Volcanic Dragon"
         hp="24"
-        evn="11"
+        evn="15"
         mgt="15"
         res="13"
         speeds="fly 1"
@@ -339,7 +339,7 @@ const DragonMonsters = [
         threat="Major"
         role="Tank"
         vision="night"
-        resistances="fire 2, physical 1"
+        resistances="fire 2"
         weaknesses="cold 1"
         traits={[
           {
@@ -419,7 +419,7 @@ const DragonMonsters = [
       <Monster
         name="Adult Volcanic Dragon"
         hp="30"
-        evn="13"
+        evn="17"
         mgt="17"
         res="15"
         pb="4"
@@ -429,7 +429,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Tank"
         vision="night"
-        resistances="fire 4, physical 2"
+        resistances="fire 4"
         weaknesses="cold 2"
         traits={[
           {
@@ -592,7 +592,7 @@ const DragonMonsters = [
       <Monster
         name="Ancient Volcanic Dragon"
         hp="54"
-        evn="15"
+        evn="19"
         mgt="19"
         res="17"
         pb="6"
@@ -602,7 +602,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Tank"
         vision="night"
-        resistances="fire 6, physical 3"
+        resistances="fire 6"
         weaknesses="cold 3"
         traits={[
           {
@@ -2500,9 +2500,9 @@ const DragonMonsters = [
       <Monster
         name="Young Infernal Dragon"
         hp="24"
-        evn="13"
+        evn="12"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon Fiend"
         tier="1"
@@ -2586,9 +2586,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Infernal Dragon"
         hp="30"
-        evn="15"
+        evn="14"
         mgt="17"
-        res="13"
+        res="14"
         pb="4"
         type="Huge Dragon Fiend"
         tier="2"
@@ -2730,9 +2730,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Infernal Dragon"
         hp="54"
-        evn="17"
+        evn="16"
         mgt="19"
-        res="15"
+        res="16"
         pb="6"
         type="Colossal Dragon Fiend"
         tier="3"
@@ -2874,9 +2874,9 @@ const DragonMonsters = [
       <Monster
         name="Young Void Dragon"
         hp="20"
-        evn="11"
+        evn="12"
         mgt="15"
-        res="13"
+        res="12"
         pb="2"
         type="Large Dragon Aberration"
         tier="1"
@@ -2972,9 +2972,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Void Dragon"
         hp="26"
-        evn="13"
+        evn="14"
         mgt="17"
-        res="15"
+        res="14"
         pb="4"
         type="Huge Dragon Aberration"
         tier="2"
@@ -3148,9 +3148,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Void Dragon"
         hp="48"
-        evn="15"
+        evn="16"
         mgt="19"
-        res="17"
+        res="16"
         pb="6"
         type="Colossal Dragon Aberration"
         tier="3"
@@ -3329,7 +3329,7 @@ const DragonMonsters = [
       <Monster
         name="Young Umbral Dragon"
         hp="20"
-        evn="15"
+        evn="13"
         mgt="13"
         res="11"
         pb="2"
@@ -3436,7 +3436,7 @@ const DragonMonsters = [
       <Monster
         name="Adult Umbral Dragon"
         hp="26"
-        evn="17"
+        evn="15"
         mgt="15"
         res="13"
         pb="4"
@@ -3624,7 +3624,7 @@ const DragonMonsters = [
       <Monster
         name="Ancient Umbral Dragon"
         hp="48"
-        evn="19"
+        evn="17"
         mgt="17"
         res="15"
         pb="6"
@@ -3884,10 +3884,10 @@ const DragonMonsters = [
         reactions={[
           {
             name: "Grab and Fly",
-            trigger: <span>The dragon gets a creature seized by it</span>,
+            trigger: <span>The wyvern seizes a creature</span>,
             effect: (
               <span>
-                The dragon can{" "}
+                The wyvern can{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>

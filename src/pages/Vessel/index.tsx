@@ -90,12 +90,12 @@ function Vessel() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 14
+                  <b>Starting Hit Points:</b> 12
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 7
+                  <b>Recoveries:</b> 6
                 </span>
               </li>
               <li>
@@ -122,7 +122,7 @@ function Vessel() {
 
             <h2>1st Level Features</h2>
             <p>You gain the following features at 1st level.</p>
-            <h3 className="header">Fightng Style</h3>
+            <h3 className="header">Fighting Style</h3>
             <p>
               You have mastered a certain way of fighting. Learn a{" "}
               <Link className="internal-link" to="/fighting-styles">
@@ -444,7 +444,15 @@ function Vessel() {
               <Link className="internal-link" to="/battle-spells#air">
                 air
               </Link>{" "}
-              (calamity - storm), and{" "}
+              (calamity - storm),{" "}
+              <Link className="internal-link" to="/battle-spells#holy">
+                holy
+              </Link>{" "}
+              (divine - angel),{" "}
+              <Link className="internal-link" to="/battle-spells#unholy">
+                unholy
+              </Link>{" "}
+              (divine - demon) and{" "}
               <Link className="internal-link" to="/battle-spells#death">
                 death
               </Link>{" "}
@@ -458,7 +466,8 @@ function Vessel() {
                 theme
               </Link>{" "}
               associated with your subclass and a theme talent from that theme:
-              nature (beast), nature (calamity), and arcane (undeath).
+              nature (beast), nature (calamity), divine (divine), and arcane
+              (undeath).
             </p>
 
             <h3 className="header">Rapid Transformation</h3>
