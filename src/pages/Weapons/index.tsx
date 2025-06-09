@@ -17,7 +17,7 @@ function Weapons() {
         <h2>Weapon Training</h2>
         <p>
           Your class determines what weapons you're trained in. If you aren’t
-          trained in a weapon, then you don’t add your proficiency bonus to
+          trained in a weapon, then you don’t add your proficiency bonus to{" "}
           <Link className="internal-link" to="/combat-abilities#strike">
             strike
           </Link>{" "}
@@ -44,7 +44,7 @@ function Weapons() {
         <ul>
           <li>
             <span>
-              <b>Melee:</b> Weapons useful at close range, and can only target
+              <b>Melee:</b> Weapons useful at close range, and can only target{" "}
               <Link className="internal-link" to="/rules/combat#engaged">
                 engaged
               </Link>{" "}
@@ -82,7 +82,7 @@ function Weapons() {
                 engaged
               </Link>{" "}
               creatures. Ranged weapons list a range. For these weapons, you can
-              make a
+              make a{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
