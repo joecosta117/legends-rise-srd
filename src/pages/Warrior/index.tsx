@@ -269,7 +269,7 @@ function Warrior() {
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>
-              , and your Guard and Spirit all increase by +1.
+              , and your Guard and Spirit both increase by +1.
             </p>
 
             <h2>Weapon Master</h2>
