@@ -652,7 +652,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "6 holy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#taunted">
@@ -728,7 +728,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "8 holy damage",
             success: (
               <span>
                 2{" "}
@@ -820,7 +820,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "6 holy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -920,7 +920,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "3 holy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#taunted">

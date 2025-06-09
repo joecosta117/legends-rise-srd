@@ -50,7 +50,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "3 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -575,7 +575,7 @@ const DemonMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
-        resistances="unholy"
+        resistances="toxic, unholy"
         weaknesses="holy"
         speeds="climb 1"
         traits={[
@@ -608,7 +608,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "6 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1102,7 +1102,7 @@ const DemonMonsters = [
         actions={[
           {
             basic: true,
-            name: "Weapon",
+            name: "Spear",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -1560,7 +1560,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "12 necrotic damage",
             success: (
               <span>
                 3{" "}
@@ -1670,7 +1670,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "9 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
