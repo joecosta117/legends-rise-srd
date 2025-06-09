@@ -207,7 +207,7 @@ function DualClass() {
               <span>You gain the paladin’s protective smite feature.</span>
             </li>
             <li>
-              <span>You gain the paladin’s holy smite feature.</span>
+              <span>You gain the paladin’s divine smite feature.</span>
             </li>
           </ul>
         </div>

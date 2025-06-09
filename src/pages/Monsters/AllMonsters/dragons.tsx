@@ -32,7 +32,7 @@ const DragonMonsters = [
         threat="Minor"
         role="Bruiser"
         vision="night"
-        resistances="1 of the elemental affinity damage type"
+        resistances="elemental affinity damage type"
         traits={[
           {
             name: "Elemental Affinity",
@@ -101,8 +101,8 @@ const DragonMonsters = [
         threat="Standard"
         role="Artillery"
         vision="night"
-        resistances="fire 2"
-        weaknesses="cold 1"
+        resistances="fire"
+        weaknesses="cold"
         speeds="fly 1"
         traits={[
           {
@@ -175,8 +175,8 @@ const DragonMonsters = [
         threat="Standard"
         role="Bruiser"
         vision="night"
-        resistances="cold 2"
-        weaknesses="fire 1"
+        resistances="cold"
+        weaknesses="fire"
         speeds="fly 1"
         traits={[
           {
@@ -249,7 +249,7 @@ const DragonMonsters = [
         threat="Standard"
         role="Disabler"
         vision="night"
-        resistances="toxic 2"
+        resistances="toxic"
         speeds="fly 1"
         traits={[
           {
@@ -339,8 +339,8 @@ const DragonMonsters = [
         threat="Major"
         role="Tank"
         vision="night"
-        resistances="fire 2"
-        weaknesses="cold 1"
+        resistances="fire"
+        weaknesses="cold"
         traits={[
           {
             name: "Major Monster",
@@ -429,8 +429,8 @@ const DragonMonsters = [
         threat="Boss"
         role="Tank"
         vision="night"
-        resistances="fire 4"
-        weaknesses="cold 2"
+        resistances="fire"
+        weaknesses="cold"
         traits={[
           {
             name: "Boss Monster",
@@ -602,8 +602,8 @@ const DragonMonsters = [
         threat="Boss"
         role="Tank"
         vision="night"
-        resistances="fire 6"
-        weaknesses="cold 3"
+        resistances="fire"
+        weaknesses="cold"
         traits={[
           {
             name: "Boss Monster",
@@ -784,8 +784,8 @@ const DragonMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        resistances="cold 2"
-        weaknesses="fire 1"
+        resistances="cold"
+        weaknesses="fire"
         traits={[
           {
             name: "Major Monster",
@@ -866,8 +866,8 @@ const DragonMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
-        resistances="cold 4"
-        weaknesses="fire 2"
+        resistances="cold"
+        weaknesses="fire"
         traits={[
           {
             name: "Boss Monster",
@@ -1020,8 +1020,8 @@ const DragonMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
-        resistances="cold 6"
-        weaknesses="fire 3"
+        resistances="cold"
+        weaknesses="fire"
         traits={[
           {
             name: "Boss Monster",
@@ -1177,7 +1177,7 @@ const DragonMonsters = [
         threat="Major"
         role="Artillery"
         vision="night"
-        resistances="lightning 2"
+        resistances="lightning"
         speeds="fly 1"
         traits={[
           {
@@ -1255,7 +1255,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Artillery"
         vision="night"
-        resistances="lightning 4"
+        resistances="lightning"
         speeds="fly 1"
         traits={[
           {
@@ -1414,7 +1414,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Artillery"
         vision="night"
-        resistances="lightning 6"
+        resistances="lightning"
         speeds="fly 2"
         traits={[
           {
@@ -1581,7 +1581,7 @@ const DragonMonsters = [
         threat="Major"
         role="Skirmisher"
         vision="night"
-        resistances="toxic 2"
+        resistances="toxic"
         speeds="fly 1, swim 1"
         traits={[
           {
@@ -1665,7 +1665,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Skirmisher"
         vision="night"
-        resistances="toxic 4"
+        resistances="toxic"
         speeds="fly 1, swim 1"
         traits={[
           {
@@ -1835,7 +1835,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Skirmisher"
         vision="night"
-        resistances="toxic 6"
+        resistances="toxic"
         speeds="fly 2, swim 2"
         traits={[
           {
@@ -2019,7 +2019,7 @@ const DragonMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
-        resistances="toxic 2"
+        resistances="toxic"
         speeds="fly 1"
         traits={[
           {
@@ -2116,7 +2116,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="toxic 4"
+        resistances="toxic"
         speeds="fly 1"
         traits={[
           {
@@ -2307,7 +2307,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="toxic 6"
+        resistances="toxic"
         speeds="fly 2"
         traits={[
           {
@@ -2509,8 +2509,8 @@ const DragonMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        resistances="fire 1, unholy 2"
-        weaknesses="holy 1"
+        resistances="fire, unholy"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -2553,7 +2553,7 @@ const DragonMonsters = [
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
-            damage: "1 fire damage and 1 unholy damage",
+            damage: "2 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2595,8 +2595,8 @@ const DragonMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
-        resistances="fire 2, unholy 4"
-        weaknesses="holy 2"
+        resistances="fire, unholy"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -2651,7 +2651,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "2 fire damage and 2 unholy damage",
+            damage: "4 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2739,8 +2739,8 @@ const DragonMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
-        resistances="fire 3, unholy 6"
-        weaknesses="holy 3"
+        resistances="fire, unholy"
+        weaknesses="holy"
         speeds="fly 2"
         traits={[
           {
@@ -2795,7 +2795,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "3 fire damage and 3 unholy damage",
+            damage: "6 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2883,7 +2883,7 @@ const DragonMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
-        resistances="cold 1, psychic 2"
+        resistances="cold, psychic"
         speeds="fly 1"
         traits={[
           {
@@ -2981,7 +2981,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="cold 2, psychic 4"
+        resistances="cold, psychic"
         speeds="fly 1"
         traits={[
           {
@@ -3157,7 +3157,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="cold 3, psychic 6"
+        resistances="cold, psychic"
         speeds="fly 2"
         traits={[
           {
@@ -3338,7 +3338,7 @@ const DragonMonsters = [
         threat="Major"
         role="Skirmisher"
         vision="night"
-        resistances="necrotic 2"
+        resistances="necrotic"
         speeds="fly 1"
         traits={[
           {
@@ -3445,7 +3445,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Skirmisher"
         vision="night"
-        resistances="necrotic 4"
+        resistances="necrotic"
         speeds="fly 1"
         traits={[
           {
@@ -3633,7 +3633,7 @@ const DragonMonsters = [
         threat="Boss"
         role="Skirmisher"
         vision="night"
-        resistances="necrotic 6"
+        resistances="necrotic"
         speeds="fly 2"
         traits={[
           {

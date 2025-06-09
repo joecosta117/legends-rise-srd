@@ -262,7 +262,7 @@ const GiantMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        weaknesses="fire 1, toxic 1"
+        weaknesses="fire, toxic"
         traits={[
           {
             name: "Major Monster",
@@ -442,8 +442,8 @@ const GiantMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="unholy 1"
-        weaknesses="holy 1"
+        resistances="unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Boss Monster",
@@ -584,7 +584,7 @@ const GiantMonsters = [
             keywords: "magical",
             duration: "Scene ends",
             effect:
-              "Oni's cursed falchion lights with hellfire, and it deals 1 unholy and 1 fire additional damage.",
+              "Oni's cursed falchion lights with hellfire, and it now deals 5 unholy damage.",
           },
         ]}
       />
@@ -624,7 +624,7 @@ const GiantMonsters = [
         threat="Minion"
         role=""
         vision="night"
-        weaknesses="fire 2, toxic 2"
+        weaknesses="fire, toxic"
         traits={[
           {
             name: "Troll Regeneration",
@@ -706,7 +706,7 @@ const GiantMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        weaknesses="fire 2, toxic 2"
+        weaknesses="fire, toxic"
         traits={[
           {
             name: "Major Monster",
@@ -830,7 +830,7 @@ const GiantMonsters = [
         threat="Major"
         role="Support"
         vision="night"
-        weaknesses="fire 2, toxic 2"
+        weaknesses="fire, toxic"
         traits={[
           {
             name: "Major Monster",
@@ -945,8 +945,8 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
-        resistances="fire 4"
-        weaknesses="cold 2"
+        resistances="fire"
+        weaknesses="cold"
         actions={[
           {
             basic: true,
@@ -995,8 +995,7 @@ const GiantMonsters = [
             duration: "Until the fire giant's current turn ends",
             effect: (
               <span>
-                The fire giant's greatsword and cleave deals an additional 2
-                fire damage
+                The fire giant's greatsword and cleave now deal 10 fire damage
               </span>
             ),
           },
@@ -1030,8 +1029,8 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Artillery"
-        resistances="fire 4"
-        weaknesses="cold 2"
+        resistances="fire"
+        weaknesses="cold"
         actions={[
           {
             basic: true,
@@ -1127,8 +1126,8 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
-        resistances="cold 4"
-        weaknesses="fire 2"
+        resistances="cold"
+        weaknesses="fire"
         actions={[
           {
             basic: true,
@@ -1219,8 +1218,8 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Disabler"
-        resistances="cold 4"
-        weaknesses="fire 2"
+        resistances="cold"
+        weaknesses="fire"
         actions={[
           {
             basic: true,

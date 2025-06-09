@@ -135,7 +135,7 @@ const MonstrosityMonsters = [
         tier="1"
         threat="Boss"
         role="Disabler"
-        resistances="toxic 1"
+        resistances="toxic"
         traits={[
           {
             name: "Boss Monster",
@@ -865,7 +865,7 @@ const MonstrosityMonsters = [
         evn="11"
         mgt="11"
         res="13"
-        resistances="toxic 1"
+        resistances="toxic"
         pb="2"
         type="Medium Monstrosity"
         tier="1"
@@ -944,7 +944,7 @@ const MonstrosityMonsters = [
         threat="Major"
         role="Support"
         vision="night"
-        resistances="toxic 1"
+        resistances="toxic"
         traits={[
           {
             name: "Major Monster",
@@ -967,7 +967,7 @@ const MonstrosityMonsters = [
             ),
             defense: "Guard",
             damage: "3 physical damage",
-            success: <span>Gains weakness 1 to all damage (turn ends)</span>,
+            success: <span>Gains weakness to all damage (turn ends)</span>,
           },
         ]}
         maneuvers={[
@@ -1013,7 +1013,7 @@ const MonstrosityMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        resistances="toxic 1"
+        resistances="toxic"
         traits={[
           {
             name: "Major Monster",
@@ -1406,7 +1406,7 @@ const MonstrosityMonsters = [
         tier="2"
         threat="Major"
         role="Artillery"
-        resistances="lighting 2"
+        resistances="lighting"
         traits={[
           {
             name: "Major Monster",
@@ -1509,7 +1509,7 @@ const MonstrosityMonsters = [
         role="Disabler"
         vision="night"
         speeds="swim 2"
-        resistances="cold 3, psychic 3, toxic 3"
+        resistances="cold, psychic, toxic"
         traits={[
           {
             name: "Boss Monster",
@@ -1697,7 +1697,7 @@ const MonstrosityMonsters = [
         role="Bruiser"
         vision="night"
         speeds="land 2, swim 2"
-        resistances="arcane 3, physical 3, toxic 3"
+        resistances="arcane, physical, toxic"
         traits={[
           {
             name: "Boss Monster",
@@ -1872,7 +1872,7 @@ const MonstrosityMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        resistances="arcane 3"
+        resistances="arcane"
         speeds="fly 1"
         traits={[
           {

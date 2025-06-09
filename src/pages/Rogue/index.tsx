@@ -175,8 +175,8 @@ function Rogue() {
                 strike
               </Link>{" "}
               with at least one <Modifier type="f" />, you deal additional
-              physical damage equal to your tier. You don’t gain this additional
-              damage when using a heavy melee weapon or wearing heavy armor.
+              damage equal to your tier. You don’t gain this additional damage
+              when using a heavy melee weapon or wearing heavy armor.
             </p>
 
             <h3 className="header">Opportunist</h3>

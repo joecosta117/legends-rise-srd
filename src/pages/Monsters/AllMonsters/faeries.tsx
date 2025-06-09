@@ -31,7 +31,7 @@ const FaerieMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
-        resistances="psychic 2"
+        resistances="psychic"
         speeds="fly 1, swim 1"
         traits={[
           {
@@ -127,7 +127,7 @@ const FaerieMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="psychic 4"
+        resistances="psychic"
         speeds="fly 1, swim 1"
         traits={[
           {
@@ -311,7 +311,7 @@ const FaerieMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="psychic 6"
+        resistances="psychic"
         speeds="fly 2, swim 2"
         traits={[
           {
@@ -615,7 +615,7 @@ const FaerieMonsters = [
                     (overcome ends)
                   </li>
                   <li>
-                    <i>Subdual:</i> target takes 3 additional psychic damage
+                    <i>Subdual:</i> target takes 3 additional damage
                   </li>
                 </ul>
               </span>
@@ -1061,8 +1061,8 @@ const FaerieMonsters = [
         threat="Major"
         role="Artillery"
         vision="night"
-        resistances="cold 4"
-        weaknesses="fire 2"
+        resistances="cold"
+        weaknesses="fire"
         traits={[
           {
             name: "Major Monster",

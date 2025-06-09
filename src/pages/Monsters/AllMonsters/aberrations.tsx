@@ -41,7 +41,7 @@ const AberrationMonsters = [
         threat="Major"
         role="Bruiser"
         speeds="swim 1"
-        resistances="psychic 1"
+        resistances="psychic"
         traits={[
           {
             name: "Major Monster",
@@ -140,7 +140,7 @@ const AberrationMonsters = [
         tier="1"
         threat="Standard"
         role="Brusier"
-        resistances="psychic 1"
+        resistances="psychic"
         traits={[
           {
             name: "Aquatic",
@@ -211,7 +211,7 @@ const AberrationMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="psychic 1"
+        resistances="psychic"
         speeds="swim 1"
         traits={[
           {
@@ -352,7 +352,7 @@ const AberrationMonsters = [
         threat="Standard"
         role="Disabler"
         vision="night"
-        resistances="psychic 2"
+        resistances="psychic"
         actions={[
           {
             basic: true,
@@ -443,7 +443,7 @@ const AberrationMonsters = [
         threat="Minor"
         role="Bruiser"
         vision="night"
-        resistances="psychic 2"
+        resistances="psychic"
         actions={[
           {
             basic: true,
@@ -524,7 +524,7 @@ const AberrationMonsters = [
         threat="Major"
         role="Bruiser"
         vision="blind 3 zones"
-        resistances="psychic 2"
+        resistances="psychic"
         traits={[
           {
             name: "Major Monster",
@@ -626,7 +626,7 @@ const AberrationMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
-        resistances="psychic 2"
+        resistances="psychic"
         speeds="land 0, swim 1"
         traits={[
           {
@@ -778,7 +778,7 @@ const AberrationMonsters = [
         threat="Boss"
         role="Artillery"
         vision="night"
-        resistances="psychic 2"
+        resistances="psychic"
         speeds="land 0, fly 1"
         traits={[
           {
@@ -973,7 +973,7 @@ const AberrationMonsters = [
         threat="Major"
         role="Support"
         vision="blind 3 zones"
-        resistances="psychic 6"
+        resistances="psychic"
         speeds="fly 1"
         traits={[
           {
@@ -1074,7 +1074,7 @@ const AberrationMonsters = [
         threat="Minion"
         role=""
         vision="blind 1 zone"
-        resistances="psychic 6"
+        resistances="psychic"
         actions={[
           {
             basic: true,
@@ -1148,7 +1148,7 @@ const AberrationMonsters = [
         threat="Major"
         role="Disabler"
         vision="blind 3 zones"
-        resistances="psychic 6"
+        resistances="psychic"
         speeds="speed 0, fly 1"
         traits={[
           {

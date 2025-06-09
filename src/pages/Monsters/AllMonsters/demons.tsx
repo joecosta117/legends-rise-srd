@@ -33,8 +33,8 @@ const DemonMonsters = [
         threat="Minor"
         role="Skirmisher"
         vision="night"
-        resistances="unholy 2"
-        weaknesses="holy 1"
+        resistances="unholy"
+        weaknesses="holy"
         actions={[
           {
             basic: true,
@@ -98,8 +98,8 @@ const DemonMonsters = [
         tier="1"
         threat="Minion"
         vision="night"
-        resistances="unholy 2"
-        weaknesses="holy 1"
+        resistances="unholy"
+        weaknesses="holy"
         actions={[
           {
             basic: true,
@@ -156,8 +156,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Bruiser"
         vision="night"
-        resistances="fire 1, unholy 2"
-        weaknesses="holy 1"
+        resistances="fire, unholy"
+        weaknesses="holy"
         actions={[
           {
             basic: true,
@@ -216,8 +216,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Disabler"
         vision="night"
-        resistances="unholy 2"
-        weaknesses="holy 1"
+        resistances="unholy"
+        weaknesses="holy"
         speeds="land 0"
         traits={[
           {
@@ -314,8 +314,8 @@ const DemonMonsters = [
         threat="Boss"
         role="Skirmisher"
         vision="night"
-        resistances="psychic 1, unholy 2"
-        weaknesses="holy 1"
+        resistances="psychic, unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Boss Monster",
@@ -464,8 +464,8 @@ const DemonMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
-        resistances="unholy 2"
-        weaknesses="holy 1"
+        resistances="unholy"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -575,8 +575,8 @@ const DemonMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy"
+        weaknesses="holy"
         speeds="climb 1"
         traits={[
           {
@@ -710,8 +710,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Bruiser"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Treasure Sense",
@@ -797,8 +797,8 @@ const DemonMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Major Monster",
@@ -890,8 +890,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Tank"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Prideful Aura",
@@ -991,8 +991,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Skirmisher"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Shapechanger",
@@ -1090,8 +1090,8 @@ const DemonMonsters = [
         tier="2"
         threat="Minion"
         vision="night"
-        resistances="fire 2, unholy 4"
-        weaknesses="holy 2"
+        resistances="fire, unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Infernal Death",
@@ -1157,8 +1157,8 @@ const DemonMonsters = [
         threat="Major"
         role="Support"
         vision="night"
-        resistances="unholy 4"
-        weaknesses="holy 2"
+        resistances="unholy"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -1242,8 +1242,8 @@ const DemonMonsters = [
         tier="3"
         threat="Minion"
         vision="night"
-        resistances="unholy 6"
-        weaknesses="holy 3"
+        resistances="unholy"
+        weaknesses="holy"
         traits={[
           {
             name: "Infernal Death",
@@ -1309,8 +1309,8 @@ const DemonMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
-        resistances="fire 6, unholy 6"
-        weaknesses="cold 3, holy 3"
+        resistances="fire, unholy"
+        weaknesses="cold, holy"
         speeds="fly 1"
         traits={[
           {
@@ -1365,7 +1365,7 @@ const DemonMonsters = [
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
-            damage: "6 fire damage and 6 unholy damage",
+            damage: "12 unholy damage",
             effect: (
               <span>
                 Conquest demon can{" "}
@@ -1430,8 +1430,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Tank"
         vision="night"
-        resistances="unholy 6"
-        weaknesses="holy 3"
+        resistances="unholy"
+        weaknesses="holy"
         actions={[
           {
             basic: true,
@@ -1528,8 +1528,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Skirmisher"
         vision="night"
-        resistances="necrotic 3, unholy 6"
-        weaknesses="holy 3"
+        resistances="necrotic, unholy"
+        weaknesses="holy"
         speeds="fly 2"
         traits={[
           {
@@ -1632,8 +1632,8 @@ const DemonMonsters = [
         threat="Standard"
         role="Disabler"
         vision="night"
-        resistances="toxic 3, unholy 6"
-        weaknesses="holy 3"
+        resistances="toxic, unholy"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -1751,8 +1751,8 @@ const DemonMonsters = [
         threat="Boss"
         role="Artillery"
         vision="night"
-        resistances="fire 6, unholy 6"
-        weaknesses="holy 3"
+        resistances="fire, unholy"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -1800,7 +1800,7 @@ const DemonMonsters = [
             keywords: "magical, range",
             target: <span>1d4 creatures within 3 zones</span>,
             defense: "Spirit",
-            damage: "3 fire damage and 3 unholy damage",
+            damage: "6 unholy damage",
             success: (
               <span>
                 3{" "}
@@ -1810,7 +1810,7 @@ const DemonMonsters = [
                 >
                   ongoing
                 </Link>{" "}
-                fire damage
+                unholy damage
               </span>
             ),
           },
@@ -1820,7 +1820,7 @@ const DemonMonsters = [
             keywords: "magical, range, recharge",
             target: <span>All creatures in 3 zones within 5 zones</span>,
             defense: "Spirit",
-            damage: "6 fire damage and 6 unholy damage",
+            damage: "12 unholy damage",
             success: (
               <span>
                 3{" "}
@@ -1830,7 +1830,7 @@ const DemonMonsters = [
                 >
                   ongoing
                 </Link>{" "}
-                fire damage
+                unholy damage
               </span>
             ),
           },
@@ -1932,8 +1932,8 @@ const DemonMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
-        resistances="fire 6, unholy 6"
-        weaknesses="cold 3, holy 3"
+        resistances="fire, unholy"
+        weaknesses="cold, holy"
         speeds="fly 1"
         traits={[
           {
@@ -2033,7 +2033,7 @@ const DemonMonsters = [
             keywords: "magical",
             duration: "Scene ends",
             effect:
-              "All negative effects end on the demon lord of wrath and their damage deals direct damage. Their sword ignites on fire, making broken blade and unleash wrath deal 3 additional fire damage.",
+              "All negative effects end on the demon lord of wrath and their damage deals direct damage. Their sword ignites in hellfire, making broken blade deal 15 unholy damage and unleash wrath deal 12 unholy damage.",
           },
           {
             name: "Burning Seismic Slam",

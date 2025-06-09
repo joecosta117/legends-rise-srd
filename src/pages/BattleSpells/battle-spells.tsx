@@ -172,7 +172,7 @@ export const airSpells = [
             res="8 + PB"
             pb="double ST"
             speeds="fly 1"
-            resistances="lightning ST"
+            resistances="lightning"
             summons
             accordion
             actions={[
@@ -367,7 +367,7 @@ export const arcaneSpells = [
             res="8 + PB"
             pb="double ST"
             speeds="fly 1"
-            resistances="chosen element double ST"
+            resistances="chosen element"
             summons
             accordion
             actions={[
@@ -425,7 +425,7 @@ export const arcaneSpells = [
             res="8 + PB"
             pb="double ST"
             speeds="fly 1"
-            resistances="arcane ST"
+            resistances="arcane"
             summons
             accordion
             actions={[
@@ -515,8 +515,7 @@ export const arcaneSpells = [
                     >
                       Resistance
                     </Link>{" "}
-                    to the chosen damage type = double the spell tier, and
-                    physical damage = spell tier
+                    to the chosen damage type
                   </span>
                 </li>
                 <li>
@@ -687,8 +686,8 @@ export const deathSpells = [
             mgt="12 + double ST"
             res="8 + double ST"
             pb="double ST"
-            resistances="necrotic ST, physical ST (ghost only)"
-            weaknesses="holy ST"
+            resistances="necrotic, physical (ghost only)"
+            weaknesses="holy"
             summons
             accordion
             traits={[
@@ -867,8 +866,8 @@ export const deathSpells = [
             res="8 + PB"
             pb="double ST"
             speeds="other speeds depending on the original target"
-            resistances="necrotic ST"
-            weaknesses="holy ST"
+            resistances="necrotic"
+            weaknesses="holy"
             summons
             accordion
             actions={[
@@ -1361,7 +1360,7 @@ export const eldritchSpells = [
             evn="10 + PB"
             mgt="10 + PB"
             res="8 + PB"
-            resistances="psychic ST"
+            resistances="psychic"
             pb="double ST"
             summons
             accordion
@@ -1921,8 +1920,8 @@ export const fireSpells = [
             mgt="12 + PB"
             res="8 + PB"
             pb="double ST"
-            resistances="fire double ST"
-            weaknesses="cold ST"
+            resistances="fire"
+            weaknesses="cold"
             summons
             accordion
             actions={[
@@ -2320,7 +2319,12 @@ export const holySpells = [
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
-              , they deal an additional 1 holy damage per spell tier
+              , they deal holy damage instead of the weapon's normal damage
+              type, and on a critical success, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              holy damage per spell tier.
             </span>
           }
         />
@@ -2420,8 +2424,8 @@ export const holySpells = [
             res="9 + PB"
             pb="double ST"
             speeds="fly 1"
-            resistances="holy ST"
-            weaknesses="unholy ST"
+            resistances="holy"
+            weaknesses="unholy"
             summons
             accordion
             traits={[
@@ -2653,14 +2657,14 @@ export const iceSpells = [
               >
                 resistance
               </Link>{" "}
-              to cold damage equal to double the spell tier, but{" "}
+              to cold damage, but{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#resistances-and-weaknesses"
               >
                 weakness
               </Link>{" "}
-              to fire damage equal to the spell tier.
+              to fire damage.
             </span>
           }
         />
@@ -2744,8 +2748,8 @@ export const iceSpells = [
             mgt="12 + PB"
             res="8 + PB"
             pb="double ST"
-            resistances="cold double ST"
-            weaknesses="fire ST"
+            resistances="cold"
+            weaknesses="fire"
             summons
             accordion
             actions={[
@@ -2960,7 +2964,7 @@ export const illusionSpells = [
             mgt="12 + PB"
             res="8 + PB"
             pb="double ST"
-            resistances="psychic ST"
+            resistances="psychic"
             summons
             accordion
             actions={[
@@ -3998,7 +4002,7 @@ export const protectionSpells = [
           target="1 creature within 1 zone"
           keywords="Magical, Range"
           duration="Start of your next turn"
-          effect="Target gains resistance to all damage equal to your tier, but the spell ends after the target takes damage."
+          effect="Target gains resistance to all damage, but the spell ends after the target takes damage."
         />
       ),
     },
@@ -4086,7 +4090,7 @@ export const protectionSpells = [
                 >
                   resistance
                 </Link>{" "}
-                to it equal to the spell tier
+                to it
               </span>
             }
           />
@@ -4157,7 +4161,7 @@ export const protectionSpells = [
                 >
                   resistance
                 </Link>{" "}
-                to all damage from magical abilities equal to the spell tier
+                to all damage from magical abilities
               </span>
             }
           />
@@ -4187,9 +4191,8 @@ export const protectionSpells = [
                 >
                   resistance
                 </Link>{" "}
-                to all damage equal to double the spell tier. Whenever a
-                creature deals damage to the target, they take arcane damage
-                equal to double the spell tier.
+                to all damage. Whenever a creature deals damage to the target,
+                they take arcane damage equal to double the spell tier.
               </span>
             }
           />
@@ -4262,8 +4265,8 @@ export const shadowSpells = [
             mgt="10 + PB"
             res="8 + PB"
             pb="double ST"
-            resistances="necrotic ST"
-            weaknesses="holy ST"
+            resistances="necrotic"
+            weaknesses="holy"
             vision="night"
             summons
             accordion
@@ -5322,7 +5325,7 @@ export const unholySpells = [
               </span>
             }
             success="Marked (scene ends)"
-            partial="Marked (turn ends). While marked, the target takes an additional 1 unholy damage per spell tier whenever they take damage"
+            partial="Marked (turn ends). While the marked target takes damage, they take additional damage equal to the spell tier"
           />
         </div>
       ),
@@ -5367,7 +5370,12 @@ export const unholySpells = [
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
-              , they deal an additional 1 unholy damage per spell tier
+              , they deal unholy damage instead of the weapon's normal damage
+              type, and on a critical success, the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              unholy damage per spell tier.
             </span>
           }
         />
@@ -5420,8 +5428,8 @@ export const unholySpells = [
             res="8 + PB"
             pb="double ST"
             vision="night"
-            resistances="unholy ST"
-            weaknesses="holy ST"
+            resistances="unholy"
+            weaknesses="holy"
             summons
             accordion
             actions={[
@@ -5565,7 +5573,7 @@ export const warSpells = [
               <Link className="internal-link" to="/combat-abilities#strike">
                 Strike
               </Link>{" "}
-              and you deal 1 additional arcane damage per your tier
+              and you deal additional damage equal to your tier
             </span>
           }
           keywords="Magical"
@@ -5590,8 +5598,8 @@ export const warSpells = [
                 <Link className="internal-link" to="/combat-abilities#strike">
                   Strike
                 </Link>
-                , and your weapon deals an additional 2 damage per spell tier of
-                the chosen damage type
+                , dealing the chosen damage type instead of your weapon's normal
+                damage type, and you deal an additional 2 damage per spell tier
               </span>
             }
           />
@@ -5720,9 +5728,9 @@ export const warSpells = [
                 >
                   resistance
                 </Link>{" "}
-                to the chosen damage type equal to double the spell tier, and
-                when a creature damages the target with a melee ability, they
-                take 2 damage per spell tier of the chosen damage type.
+                to the chosen damage type, and when a creature damages the
+                target with a melee ability, they take 2 damage per spell tier
+                of the chosen damage type.
               </span>
             }
           />
@@ -5929,8 +5937,8 @@ export const waterSpells = [
             mgt="12 + PB"
             res="8 + PB"
             pb="double ST"
-            resistances="fire ST"
-            weaknesses="cold ST"
+            resistances="fire"
+            weaknesses="cold"
             speeds="swim 1"
             summons
             accordion

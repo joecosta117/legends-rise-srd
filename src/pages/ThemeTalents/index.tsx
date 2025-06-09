@@ -679,7 +679,7 @@ function ThemeTalents() {
           >
             resistance
           </Link>{" "}
-          equal to your tier to damage equal taken as a consequence from{" "}
+          to damage taken as a consequence from{" "}
           <Link className="internal-link" to="/rules/skills#tempt-fate">
             tempt fate
           </Link>{" "}
@@ -875,7 +875,7 @@ function ThemeTalents() {
           >
             resistance
           </Link>{" "}
-          equal to your tier to damage taken from environmental hazards and gain{" "}
+          to damage taken from environmental hazards and gain{" "}
           <Modifier type="f" count="1" /> on{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls

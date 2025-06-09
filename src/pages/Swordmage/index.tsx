@@ -237,6 +237,48 @@ function Swordmage() {
               effect={
                 <span>
                   <span>
+                    <span>
+                      You cast a battle spell that takes a maneuver or action,
+                      has a target, but the effect only triggers on the target
+                      of your next{" "}
+                      <Link
+                        className="internal-link"
+                        to="/combat-abilities#strike"
+                      >
+                        strike
+                      </Link>{" "}
+                      before this ability ends.
+                    </span>
+                    <ul>
+                      <li>
+                        <span>
+                          If the spell deals damage, change your strike's damage
+                          type to match the spell's damage type.
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          Use your strike's{" "}
+                          <Link
+                            className="internal-link"
+                            to="/rules/combat#attack-roll"
+                          >
+                            attack roll
+                          </Link>{" "}
+                          for spells requiring one.
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          If the spell targets multiple creatures, zones, or
+                          zone borders, then your strike's target must be one of
+                          the targets, in a targeted zone, or next to a targeted
+                          zone border.
+                        </span>
+                      </li>
+                    </ul>
+                  </span>
+                  {/* <span>
                     You cast a battle spell that takes a maneuver or action, has
                     a target, but the effect triggers only against the target of
                     your next{" "}
@@ -247,7 +289,8 @@ function Swordmage() {
                       strike
                     </Link>
                     . If you don’t strike before this ability's duration, then
-                    the spell fades. Use your strike's{" "}
+                    the spell fades. If the spell deals damage, change your
+                    strike's damage type to match. Use your strike's{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#attack-roll"
@@ -258,14 +301,14 @@ function Swordmage() {
                     creatures, zones, or zone borders, then your strike's target
                     must be one of the targeted creatures, in a targeted zone,
                     or next to a targeted zone border.
-                  </span>
+                  </span> */}
                 </span>
               }
             />
 
             <h3 className="header">Subclass</h3>
             <p>
-              Choose the elemental knight subclass, or another subclass of your
+              Choose the chaos knight subclass, or another subclass of your
               choice. At 1st level, you gain features from your chosen subclass.
             </p>
 
@@ -302,20 +345,16 @@ function Swordmage() {
           <div>
             <h1>Swordmage Subclasses</h1>
             <p>These are the subclass choices for the swordmage.</p>
-            <h2>Elemental Knight</h2>
+            <h2>Chaos Knight</h2>
+            <p>You manipulate chaotic magic from your weapon to wreak havoc.</p>
+            <h3 className="header">Destructive Enspell (1st-Level Feature)</h3>
             <p>
-              You manipulate destructive elemental magic from your weapon to
-              wreak havoc.
-            </p>
-            <h3 className="header">Elemental Enspell (1st-Level Feature)</h3>
-            <p>
-              You siphon energy from a chosen elemental realm to empower your
-              weapon. Choose one damage type from cold, fire, lightning, or
-              physical. When you use enspell weapon, your next{" "}
+              You channel destructive magic through your weapon. When you use
+              enspell weapon, your next{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              deals 1 additional damage per your tier of the chosen damage type.
+              deals additional damage equal to your tier.
             </p>
 
             <h2>Aegis</h2>
@@ -483,21 +522,21 @@ function Swordmage() {
               willing.
             </p>
 
-            <h3 className="header">Greater Elemental Enspell</h3>
+            <h3 className="header">Greater Destructive Enspell</h3>
             <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> elemental knight subclass
+              <b>Requirement:</b> chaos knight subclass
             </p>
             <p>
               When you get critical success on a{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              empowered by elemental enspell, the target takes 1{" "}
+              empowered by enspell weapon, the target takes{" "}
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
               </Link>{" "}
-              damage per your tier of the damage type chosen for elemental
-              enspell.
+              damage equal to your tier of the same damage type your strike
+              deals.
             </p>
 
             <h3 className="header">Greater Interrupt</h3>
@@ -529,7 +568,7 @@ function Swordmage() {
                   >
                     attack roll
                   </Link>{" "}
-                  against you from a magical ability
+                  against you with a magical ability
                 </span>
               }
               keywords="Magical, Range"
@@ -540,25 +579,25 @@ function Swordmage() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
                   </Link>{" "}
-                  deals 1 additional arcane damage per your tier (turn ends)
+                  deals additional damage equal to your tier (turn ends)
                 </span>
               }
             />
 
             <h2>Tier 3 Class Talents</h2>
-            <h3 className="header">Elemental Retaliation</h3>
+            <h3 className="header">Arcane Retaliation</h3>
             <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> elemental knight subclass
+              <b>Requirement:</b> chaos knight subclass
             </p>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Elemental Retaliation"
+              name="Arcane Retaliation"
               actType="Reaction"
-              descriptor="You unleash elemental fury at an attacker."
+              descriptor="You unleash arcane fury at an attacker."
               frequency="At-will"
-              trigger="You take damage from a creature within your zone"
+              trigger="You take damage from a creature within 1 zone"
               keywords="Magical, Range"
-              effect="Triggering creature takes 1 damage per your tier of the damage type you chose for elemental enspell."
+              effect="Triggering creature takes arcane damage equal to your proficiency bonus, and you can teleport to become engaged to them"
             />
 
             <h3 className="header">Frequent Interrupt</h3>

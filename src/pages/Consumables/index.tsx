@@ -106,7 +106,7 @@ function Consumables() {
             <Accordion
               stacked
               title="Ointment of Energy"
-              content="This vial of magical oil’s color depends on the type of energy. Each ointment is tied to a specific damage type. As a maneuver, you can coat a weapon with the ointment, which lasts for the scene. While coated, a weapon deals 1 additional damage. The additional damage’s type depends on each ointment. A weapon can only have one of these ointments on it at a time."
+              content="This vial of magical oil’s color depends on the type of energy. Each ointment is tied to a specific damage type. As a maneuver, you can coat a weapon with the ointment, which lasts for the scene. While coated, the weapon deals the oinment's damage type instead of your weapon's normal damage type. A weapon can only have one of these ointments on it at a time."
             />
             <Accordion
               stacked
@@ -208,7 +208,7 @@ function Consumables() {
             <Accordion
               stacked
               title="Greater Ointment of Energy"
-              content="This vial of magical oil’s color depends on the type of energy. Each ointment is tied to a specific damage type. As a maneuver, you can coat a weapon with the ointment, which lasts for the scene. While coated, a weapon deals 2 additional damage. The additional damage’s type depends on each ointment. A weapon can only have one of these ointments on it at a time."
+              content="This vial of magical oil’s color depends on the type of energy. Each ointment is tied to a specific damage type. As a maneuver, you can coat a weapon with the ointment, which lasts for the scene. While coated, the weapon deals the oinment's damage type instead of your weapon's normal damage type, and deals 2 additional damage. A weapon can only have one of these ointments on it at a time."
             />
             <Accordion
               stacked
@@ -278,8 +278,7 @@ function Consumables() {
                     >
                       resistance
                     </Link>{" "}
-                    to the potion’s attuned element equal to your tier (scene
-                    ends).
+                    to the potion’s attuned element (scene ends).
                   </p>
                 </div>
               }
@@ -337,7 +336,7 @@ function Consumables() {
             <Accordion
               stacked
               title="Superior Ointment of Energy"
-              content="This vial of magical oil’s color depends on the type of energy. Each ointment is tied to a specific damage type. As a maneuver, you can coat a weapon with the ointment, which lasts for the scene. While coated, a weapon deals 3 additional damage. The additional damage’s type depends on each ointment. A weapon can only have one of these ointments on it at a time."
+              content="This vial of magical oil’s color depends on the type of energy. Each ointment is tied to a specific damage type. As a maneuver, you can coat a weapon with the ointment, which lasts for the scene. While coated, the weapon deals the oinment's damage type instead of your weapon's normal damage type, and deals 3 additional damage. A weapon can only have one of these ointments on it at a time."
             />
             <Accordion
               stacked

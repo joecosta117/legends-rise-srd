@@ -111,8 +111,7 @@ function Mounts() {
               >
                 Resistance
               </Link>{" "}
-              to a damage type equal to the mount's tier, with physical counting
-              as two mount traits.
+              to a damage type, with physical counting as two mount traits.
             </span>
           </li>
           <li>
@@ -259,7 +258,7 @@ function Mounts() {
           mgt="18"
           res="14"
           pb="6"
-          resistances="fire 3"
+          resistances="fire"
           speeds="fly 1"
           actions={[
             {

@@ -817,9 +817,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to cold damage. You gain resistance to cold damage equal to your
-              tier. If you already have this resistance, use your proficiency
-              bonus instead.
+              to cold damage. You also gain resistance to cold damage.
             </p>
 
             <h4 className="header">Winter’s Grasp (7th-Level Feature)</h4>
@@ -868,9 +866,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to unholy damage. You gain resistance to unholy damage equal to
-              your tier. If you already have this resistance, use your
-              proficiency bonus instead.
+              to unholy damage. You also gain resistance to unholy damage.
             </p>
 
             <h4 className="header">
@@ -922,8 +918,7 @@ function HeroicArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to the chosen damage equal to your tier. If you already have
-                  this resistance, use your proficiency bonus instead.
+                  to the chosen damage.
                 </span>
               </li>
             </ul>
@@ -1042,14 +1037,7 @@ function HeroicArchetypes() {
             <h4 className="header">Fortified Titan (7th-Level Feature)</h4>
             <p>
               Your armor fortifies your body and mind. While wearing heavy
-              armor, you have{" "}
-              <Link
-                className="internal-link"
-                to="/rules/combat#resistances-and-weaknesses"
-              >
-                resistance
-              </Link>{" "}
-              to all damage equal to your tier.
+              armor, you reduce all damage you take by your tier.
             </p>
           </div>
         )}
@@ -1278,9 +1266,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to psychic damage. You gain resistance to psychic damage equal to
-              your tier. If you already have this resistance, use your
-              proficiency bonus instead.
+              to psychic damage. You also gain resistance to psychic damage.
             </p>
 
             <h4 className="header">Master Manipulator (7th-Level Feature)</h4>
@@ -1430,8 +1416,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to fire damage equal to your tier. If you already have this
-              resistance, use your proficiency bonus instead.
+              to fire damage.
             </p>
 
             <h4 className="header">Wave Magic (7th-Level Feature)</h4>
@@ -1755,9 +1740,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              deals 1 additional damage per the spell tier. The damage type
-              matches the damage type of the triggering spell, or arcane if the
-              spell didn’t deal damage.{" "}
+              deals 1 additional damage per the spell tier.
             </p>
           </div>
         )}
@@ -1796,9 +1779,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to necrotic damage. You gain resistance to necrotic damage equal
-              to your tier. If you already have this resistance, use your
-              proficiency bonus instead.
+              to necrotic damage. You also gain resistance to necrotic damage.
             </p>
 
             <h4 className="header">Drain Life (7th-Level Feature)</h4>
@@ -1913,9 +1894,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to toxic damage. You gain resistance to toxic damage equal to your
-              tier. If you already have this resistance, use your proficiency
-              bonus instead.
+              to toxic damage. You also gain resistance to toxic damage.
             </p>
 
             <h4 className="header">Venomous Magic (7th-Level Feature)</h4>
@@ -2069,8 +2048,7 @@ function HeroicArchetypes() {
                   >
                     Resistance
                   </Link>{" "}
-                  to psychic damage equal to your tier. If you already have this
-                  resistance, use your proficiency bonus instead.
+                  to psychic damage.
                 </span>
               </li>
             </ul>
@@ -2134,9 +2112,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to fire damage. You gain resistance to fire damage equal to your
-              tier. If you already have this resistance, use your proficiency
-              bonus instead.
+              to fire damage. You also gain resistance to fire damage.
             </p>
 
             <h4 className="header">Hungry Flames (7th-Level Feature)</h4>
@@ -2259,8 +2235,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to holy damage equal to your tier. If you already have this
-              resistance, use your proficiency bonus instead.
+              to holy damage.
             </p>
           </div>
         )}
@@ -2440,8 +2415,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to fire damage equal to your tier. If you already have this
-              resistance, use your proficiency bonus instead.
+              to fire damage.
             </p>
 
             <h4 className="header">Blinding Magic (7th-Level Feature)</h4>
@@ -2494,9 +2468,7 @@ function HeroicArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to lightning damage. You gain resistance to lightning damage equal
-              to your tier. If you already have this resistance, use your
-              proficiency bonus instead.
+              to lightning damage. You also gain resistance to lightning damage.
             </p>
 
             <h4 className="header">Bouncing Lightning (7th-Level Feature)</h4>

@@ -35,8 +35,8 @@ const AngelMonsters = [
         threat="Minor"
         role="Artillery"
         speeds="fly 1"
-        resistances="holy 2"
-        weaknesses="unholy 1"
+        resistances="holy"
+        weaknesses="unholy"
         actions={[
           {
             basic: true,
@@ -88,8 +88,8 @@ const AngelMonsters = [
         tier="1"
         threat="Standard"
         role="Support"
-        resistances="holy 2"
-        weaknesses="unholy 1"
+        resistances="holy"
+        weaknesses="unholy"
         actions={[
           {
             basic: true,
@@ -146,8 +146,8 @@ const AngelMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
-        resistances="holy 2"
-        weaknesses="unholy 1"
+        resistances="holy"
+        weaknesses="unholy"
         speeds="fly 2"
         actions={[
           {
@@ -197,8 +197,8 @@ const AngelMonsters = [
         threat="Major"
         role="Tank"
         vision="night"
-        resistances="fire 1, holy 2"
-        weaknesses="unholy 1"
+        resistances="fire, holy"
+        weaknesses="unholy"
         speeds="fly 1"
         traits={[
           {
@@ -245,7 +245,7 @@ const AngelMonsters = [
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
-            damage: "1 fire damage and 1 holy damage",
+            damage: "2 holy damage",
             effect: (
               <span>
                 The dragon and 1d4+1 allies within the dragon's zone{" "}
@@ -292,8 +292,8 @@ const AngelMonsters = [
         threat="Boss"
         role="Tank"
         vision="night"
-        resistances="fire 2, holy 4"
-        weaknesses="unholy 2"
+        resistances="fire, holy"
+        weaknesses="unholy"
         speeds="fly 1"
         traits={[
           {
@@ -352,7 +352,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "2 fire damage and 2 holy damage",
+            damage: "4 holy damage",
             effect: (
               <span>
                 The dragon and 1d4+1 allies within the targeted zones{" "}
@@ -462,8 +462,8 @@ const AngelMonsters = [
         threat="Boss"
         role="Tank"
         vision="night"
-        resistances="fire 3, holy 6"
-        weaknesses="unholy 3"
+        resistances="fire, holy"
+        weaknesses="unholy"
         speeds="fly 2"
         traits={[
           {
@@ -531,7 +531,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "3 fire damage and 3 holy damage",
+            damage: "6 holy damage",
             effect: (
               <span>
                 The dragon and 2d4+2 allies within the targeted zones{" "}
@@ -634,8 +634,8 @@ const AngelMonsters = [
         tier="2"
         threat="Standard"
         role="Tank"
-        resistances="holy 4"
-        weaknesses="unholy 2"
+        resistances="holy"
+        weaknesses="unholy"
         speeds="fly 1"
         actions={[
           {
@@ -677,7 +677,7 @@ const AngelMonsters = [
             target: "1 ally within 1 zone",
             duration:
               "Scene ends or until the angel guardian uses this ability on another creature",
-            effect: <span>Target gains resistance 2 to all damage</span>,
+            effect: <span>Target gains resistance to all damage</span>,
           },
         ]}
       />
@@ -710,8 +710,8 @@ const AngelMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
-        resistances="holy 4"
-        weaknesses="unholy 2"
+        resistances="holy"
+        weaknesses="unholy"
         speeds="fly 1"
         actions={[
           {
@@ -802,8 +802,8 @@ const AngelMonsters = [
         tier="2"
         threat="Standard"
         role="Disabler"
-        resistances="holy 4"
-        weaknesses="unholy 2"
+        resistances="holy"
+        weaknesses="unholy"
         speeds="fly 1"
         actions={[
           {
@@ -893,7 +893,7 @@ const AngelMonsters = [
       <Monster
         name="Angel High Guard"
         hp="6"
-        evn="16"
+        evn="18"
         mgt="19"
         res="16"
         pb="6"
@@ -902,8 +902,8 @@ const AngelMonsters = [
         tier="3"
         threat="Minion"
         role=""
-        resistances="holy 6, physical 3"
-        weaknesses="unholy 3"
+        resistances="holy"
+        weaknesses="unholy"
         speeds="fly 1"
         actions={[
           {
@@ -978,8 +978,8 @@ const AngelMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
-        resistances="fire 3, holy 6"
-        weaknesses="unholy 3"
+        resistances="fire, holy"
+        weaknesses="unholy"
         speeds="fly 1"
         traits={[
           {
@@ -1021,7 +1021,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage and 3 holy damage",
+            damage: "12 holy damage",
           },
           {
             basic: false,
@@ -1049,9 +1049,9 @@ const AngelMonsters = [
             keywords: "magical, recharge",
             effect: (
               <span>
-                Archangel uses holy blade, but deals 6 additional holy damage,
-                and on a success, the target is banished to their home realm
-                (turn ends), or banished (overcome ends) on a critical success.
+                Archangel uses holy blade, but deals 6 additional damage, and on
+                a success, the target is banished to their home realm (turn
+                ends), or banished (overcome ends) on a critical success.
               </span>
             ),
           },
@@ -1102,7 +1102,7 @@ const AngelMonsters = [
             keywords: "magical, range",
             target: "3 zones within 5 zones",
             defense: "Spirit",
-            damage: "5 fire and 5 holy damage",
+            damage: "10 holy damage",
           },
         ]}
       />

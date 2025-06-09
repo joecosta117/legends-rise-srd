@@ -157,8 +157,16 @@ function Paladin() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     Strike
                   </Link>
-                  , and choose a creature within your zone to gain temporary hit
-                  points equal to your tier (scene ends)
+                  , dealing holy or unholy damage (your choice) instead of your
+                  weapon's normal damage type. On a success, choose a creature
+                  within your zone to gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#temporary-hit-points"
+                  >
+                    temporary hit points
+                  </Link>{" "}
+                  equal to your tier (scene ends).
                 </span>
               }
             />
@@ -176,7 +184,8 @@ function Paladin() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     Strike
                   </Link>
-                  , and you deal additional holy or unholy (your choice) damage
+                  , dealing holy or unholy damage (your choice) instead of your
+                  weapon's normal damage type, and you deal additional damage
                   equal to your proficiency bonus
                 </span>
               }
@@ -278,14 +287,7 @@ function Paladin() {
               trigger="You see an ally within your zone take damage"
               effect={
                 <span>
-                  Ally gains{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/combat#resistances-and-weaknesses"
-                  >
-                    resistance
-                  </Link>{" "}
-                  only to the triggering damage equal to your proficiency bonus
+                  You reduce the triggering damage by your proficiency bonus
                 </span>
               }
             />
@@ -413,8 +415,9 @@ function Paladin() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     Strike
                   </Link>
-                  , and the target is marked (turn ends). If the marked target
-                  makes an{" "}
+                  , dealing holy or unholy damage (your choice) instead of your
+                  weapon's normal damage type, and the target is marked (turn
+                  ends). If the marked target makes an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -540,7 +543,7 @@ function Paladin() {
 
             <h3 className="header">Banishing Smite</h3>
             <p>
-              When you use holy smite on a target not from this realm, you can
+              When you use divine smite on a target not from this realm, you can
               choose to banish your foe. On a success, the target returns to
               their home realm (turn ends), or for the scene (scene ends) on a
               critical success.

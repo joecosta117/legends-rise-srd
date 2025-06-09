@@ -1135,7 +1135,7 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Artillery"
-        resistances="chosen element 1"
+        resistances="chosen element"
         traits={[
           {
             name: "Chosen Element",
@@ -2638,7 +2638,7 @@ const HumanoidMonsters = [
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "6 unholy damage",
-            success: <span>weakness 3 to all damage (turn ends)</span>,
+            success: <span>weakness to all damage (turn ends)</span>,
           },
           {
             basic: false,

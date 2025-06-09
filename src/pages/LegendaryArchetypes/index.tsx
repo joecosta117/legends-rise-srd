@@ -117,8 +117,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to holy damage equal to your tier. If you already have this
-                  resistance, use your proficiency bonus instead.
+                  to holy damage.
                 </span>
               </li>
             </ul>
@@ -428,8 +427,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to unholy damage equal to your tier. If you already have this
-                  resistance, use your proficiency bonus instead.
+                  to unholy damage.
                 </span>
               </li>
             </ul>
@@ -546,9 +544,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to cold, fire, lightning, or toxic damage equal to your tier.
-                  If you already have this resistance, use your proficiency
-                  bonus instead.
+                  to cold, fire, lightning, or toxic damage.
                 </span>
               </li>
             </ul>
@@ -661,9 +657,7 @@ function LegendaryArchetypes() {
                       >
                         resistance
                       </Link>{" "}
-                      to lightning damage equal to your tier. If you already
-                      have this resistance, then use your proficiency bonus
-                      instead.
+                      to lightning damage.
                     </span>
                   </li>
                   <li>
@@ -675,8 +669,7 @@ function LegendaryArchetypes() {
                       >
                         resistance
                       </Link>{" "}
-                      to physical damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus instead.
+                      to physical damage.
                     </span>
                   </li>
                   <li>
@@ -688,8 +681,7 @@ function LegendaryArchetypes() {
                       >
                         resistance
                       </Link>{" "}
-                      to fire damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus instead.
+                      to fire damage.
                     </span>
                   </li>
                   <li>
@@ -702,8 +694,7 @@ function LegendaryArchetypes() {
                       >
                         resistance
                       </Link>{" "}
-                      to cold damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus instead.
+                      to cold damage.
                     </span>
                   </li>
                   <li>
@@ -717,8 +708,7 @@ function LegendaryArchetypes() {
                       >
                         resistance
                       </Link>{" "}
-                      to fire damage equal to your tier. If you already have
-                      this resistance, then use your proficiency bonus instead.
+                      to fire damage.
                     </span>
                   </li>
                 </ul>
@@ -909,8 +899,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to psychic damage equal to your tier. If you already have this
-                  resistance, use your proficiency bonus instead.
+                  to psychic damage.
                 </span>
               </li>
             </ul>
@@ -1256,8 +1245,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to necrotic damage equal to your tier. If you alreaday have
-                  this resistance, then use your proficiency bonus instead.
+                  to necrotic damage.
                 </span>
               </li>
             </ul>
@@ -1333,8 +1321,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to psychic damage equal to your tier. If you already have this
-                  resistance, use your proficiency bonus instead.
+                  to psychic damage.
                 </span>
               </li>
             </ul>
@@ -1443,9 +1430,7 @@ function LegendaryArchetypes() {
               >
                 resistance
               </Link>{" "}
-              to cold, fire, lightning, and toxic damage equal to your tier. If
-              you already have this resistance, then use your proficiency bonus
-              instead.
+              to cold, fire, lightning, and toxic damage.
             </p>
 
             <h4 className="header">Primal Spirits Aura (10th-Level Feature)</h4>
@@ -1515,9 +1500,7 @@ function LegendaryArchetypes() {
                   >
                     resistance
                   </Link>{" "}
-                  to holy, necrotic, and unholy damage equal to your tier. If
-                  you alreaday have this resistance, then use your proficiency
-                  bonus instead.
+                  to holy, necrotic, and unholy damage.
                 </span>
               </li>
             </ul>

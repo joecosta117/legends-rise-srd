@@ -423,8 +423,7 @@ function Cleric() {
               Choose a damage type associated with your deity, such as lightning
               for a storm god. When you deal holy or unholy damage from a
               magical ability, you can change the damage to the chosen damage
-              type and the ability gains the damage type’s keyword. You also
-              gain{" "}
+              type. You also gain{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#resistances-and-weaknesses"
@@ -551,8 +550,7 @@ function Cleric() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack rolls
               </Link>{" "}
-              deals additional holy or unholy (your choice) damage equal to your
-              tier.
+              deals additional damage equal to your tier.
             </p>
 
             <h3 className="header">Greater Inspiration</h3>

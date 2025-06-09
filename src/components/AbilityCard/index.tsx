@@ -145,16 +145,7 @@ const AbilityCard: React.FC<AbilityCardProps> = ({
         )}
         {defense && (
           <p className="ability__line">
-            <b>
-              Attack vs{" "}
-              <span data-type={defense}>
-                {defense.length === 3 ? (
-                  <span>{defense}</span>
-                ) : (
-                  transformEffect(defense)
-                )}
-              </span>
-            </b>
+            <b>Attack vs {defense}</b>
             {damage ? (
               <span>
                 <b>:</b>{" "}
