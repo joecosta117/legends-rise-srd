@@ -601,8 +601,8 @@ function CombatRules() {
         <p>
           If a creature has both resistance and weakness to a damage type, the
           two cancel each other out, and the creature takes normal damage.
-          Resistances and weaknesses are calculated after damage is reduced by
-          other means such as from magic.
+          Resistances and weaknesses are calculated before damage is reduced by
+          other means.
         </p>
 
         <h3 className="header" id="direct-damage">
