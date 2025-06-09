@@ -364,8 +364,7 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to lightning damage equal to your tier and a fly speed of
-                      1.
+                      to lightning damage and a fly speed of 1.
                     </span>
                   </li>
                   <li>
@@ -377,8 +376,8 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to physical damage equal to your tier, and your major
-                      summons’ hit points increase by your proficiency bonus.
+                      to physical damage, and your major summons’ hit points
+                      increase by your proficiency bonus.
                     </span>
                   </li>
                   <li>
@@ -390,16 +389,16 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to fire damage equal to your proficiency bonus,{" "}
+                      to fire damage,{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
                       </Link>{" "}
-                      to cold damage equal to your tier, and their assault
-                      damage deals fire damage. On a critical successful assault
-                      from the major summons, the target takes{" "}
+                      to cold damage, and their assault damage deals fire
+                      damage. On a critical successful assault from the major
+                      summons, the target takes{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#ongoing-damage"
@@ -418,16 +417,16 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to cold damage equal to your proficiency bonus,{" "}
+                      to cold damage,{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
                       </Link>{" "}
-                      to fire damage equal to your tier, and their assault
-                      damage deals cold damage. On a critical successful assault
-                      from the major summons, the target is{" "}
+                      to fire damage, and their assault damage deals cold
+                      damage. On a critical successful assault from the major
+                      summons, the target is{" "}
                       <Link className="internal-link" to="/conditions#seized">
                         seized
                       </Link>{" "}
@@ -443,14 +442,14 @@ function Summoner() {
                       >
                         resistance
                       </Link>{" "}
-                      to fire damage equal to your tier but{" "}
+                      to fire damage but{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
                       </Link>{" "}
-                      to cold damage equal to your tier.
+                      to cold damage.
                     </span>
                   </li>
                 </ul>
@@ -518,14 +517,14 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to holy damage equal to your tier, but,{" "}
+                      to holy damage, but,{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
                       </Link>{" "}
-                      to unholy damage equal to your tier
+                      to unholy damage
                     </span>
                   </li>
                   <li>
@@ -625,7 +624,7 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to arcane equal to your tier
+                      to arcane
                     </span>
                   </li>
                   <li>
@@ -694,14 +693,14 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to unholy damage equal to your tier, but{" "}
+                      to unholy damage, but{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#resistances-and-weaknesses"
                       >
                         weakness
                       </Link>{" "}
-                      to holy damage equal to your tier,
+                      to holy damage,
                     </span>
                   </li>
                   <li>
@@ -785,7 +784,7 @@ function Summoner() {
                       >
                         Resistance
                       </Link>{" "}
-                      to necrotic damage equal to your tier
+                      to necrotic damage
                     </span>
                   </li>
                   <li>

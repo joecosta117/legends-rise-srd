@@ -52,9 +52,7 @@ function MythicalTalents() {
         <h3 className="header">Mythical Resistance</h3>
         <p>
           You gain resistance to two damage types of your choice (except for
-          physical) equal to your tier. If you already have one of these
-          resistances, use your proficiency bonus instead for that resistance.
-          You can take this mythical talent multiple times.
+          physical). You can take this mythical talent multiple times.
         </p>
 
         <h3 className="header">Mythical Sight</h3>

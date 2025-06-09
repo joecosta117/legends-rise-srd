@@ -309,7 +309,7 @@ function Arcanist() {
                         >
                           Resistance
                         </Link>{" "}
-                        to arcane damage equal to your tier
+                        to arcane damage
                       </span>
                     </li>
                     <li>

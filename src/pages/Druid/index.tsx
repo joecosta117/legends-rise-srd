@@ -259,14 +259,14 @@ function Druid() {
               <Link className="internal-link" to="/rules/combat#zone-types">
                 difficult zones
               </Link>{" "}
-              and have{" "}
+              and gain{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#resistances-and-weaknesses"
               >
                 resistance
               </Link>{" "}
-              equal to your tier to damage from{" "}
+              from{" "}
               <Link className="internal-link" to="/rules/combat#zone-types">
                 dangerous zones
               </Link>
@@ -311,7 +311,7 @@ function Druid() {
                     >
                       resistance
                     </Link>{" "}
-                    to lightning damage equal to your tier
+                    to lightning damage
                   </td>
                   <td>lightning</td>
                 </tr>
@@ -324,7 +324,7 @@ function Druid() {
                     >
                       resistance
                     </Link>{" "}
-                    to physical damage equal to your tier
+                    to physical damage
                   </td>
                   <td>physical</td>
                 </tr>
@@ -337,7 +337,7 @@ function Druid() {
                     >
                       resistance
                     </Link>{" "}
-                    to fire damage equal to your tier
+                    to fire damage
                   </td>
                   <td>fire</td>
                 </tr>
@@ -350,7 +350,7 @@ function Druid() {
                     >
                       resistance
                     </Link>{" "}
-                    to cold damage equal to your tier
+                    to cold damage
                   </td>
                   <td>cold</td>
                 </tr>
@@ -609,7 +609,7 @@ function Druid() {
                   >
                     resistance
                   </Link>{" "}
-                  only to the triggering damage equal to your proficiency bonus
+                  only to the triggering damage
                 </span>
               }
             />
@@ -636,14 +636,7 @@ function Druid() {
                   <ul>
                     <li>
                       <span>
-                        <i>Bear:</i>{" "}
-                        <Link
-                          className="internal-link"
-                          to="/rules/combat#resistances-and-weaknesses"
-                        >
-                          Resistance
-                        </Link>{" "}
-                        only against the triggering damage equal to your tier
+                        <i>Bear:</i> Reduce the triggering damage by your tier
                       </span>
                     </li>
                     <li>

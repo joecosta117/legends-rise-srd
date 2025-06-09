@@ -81,7 +81,7 @@ function Relics() {
               >
                 resistance
               </Link>{" "}
-              to the armor’s attuned damage type equal to your tier.
+              to the armor’s attuned damage type.
             </p>
           </div>
         ),
@@ -267,7 +267,7 @@ function Relics() {
             <p className="item__description">
               <i>
                 This armor or clothing is warded to reduce incoming physical
-                harm..
+                harm.
               </i>
             </p>
             <p>
@@ -277,9 +277,8 @@ function Relics() {
                 to="/rules/combat#resistances-and-weaknesses"
               >
                 resistance
-              </Link>{" "}
-              equal to your tier. If you already have this resistance, then
-              increase it by +1.
+              </Link>
+              .
             </p>
           </div>
         ),
@@ -372,8 +371,8 @@ function Relics() {
               Each bane weapon is enchanted against a creature type from
               aberration, angel, beast, construct, dragon, elemental, fairie,
               fiend, giant, monstrosity, ooze, plant, or undead. This weapon
-              deals additional damage equal to your proficiency bonus against
-              the item’s chosen creature type.
+              deals additional damage equal to your tier against the item’s
+              chosen creature type.
             </p>
           </div>
         ),
@@ -386,9 +385,17 @@ function Relics() {
               <i>This weapon has been enchanted with destructive energy.</i>
             </p>
             <p>
-              Each energy weapon is attuned to a damage type upon creation. This
-              weapon deals additional damage equal to your tier of the weapon’s
-              attuned damage type.
+              Each energy weapon is attuned to a damage type upon creation. All
+              damage deal by this weapon is the attuned damage type. On a
+              critical successful{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , the target takes 1{" "}
+              <Link className="internal-link" to="/rules/combat#ongoing-damage">
+                ongoing
+              </Link>{" "}
+              damage per your tier of the attuned damage type.
             </p>
           </div>
         ),
@@ -473,7 +480,8 @@ function Relics() {
               </i>
             </p>
             <p>
-              On a critical successful{" "}
+              This weapon deals necrotic damage instead of the weapon's normal
+              damage type. On a critical successful{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -523,9 +531,10 @@ function Relics() {
               <i>This weapon has been enchanted with destructive energy.</i>
             </p>
             <p>
-              Each energy weapon is attuned to a damage type upon creation. This
-              weapon deals additional damage equal to your tier of the weapon’s
-              attuned damage type. On a critical successful{" "}
+              Each energy weapon is attuned to a damage type upon creation. All
+              damage deal by this weapon is the attuned damage type, and it
+              deals additional damage equal to your tier. On a critical
+              successful{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
@@ -533,7 +542,7 @@ function Relics() {
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
               </Link>{" "}
-              damage per your tier of the chosen damage type.
+              damage per your tier of the attuned damage type.
             </p>
           </div>
         ),
@@ -549,8 +558,9 @@ function Relics() {
               </i>
             </p>
             <p>
-              This weapon deals additional necrotic damage equal to your tier.
-              On a critical successful{" "}
+              This weapon deals necrotic damage instead of the weapon's normal
+              damage type, and deals additional damage equal to your tier. On a
+              critical successful{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -675,9 +685,10 @@ function Relics() {
               <i>This weapon has been enchanted with destructive energy.</i>
             </p>
             <p>
-              Each energy weapon is attuned to a damage type upon creation. This
-              weapon deals additional damage equal to your tier of the weapon’s
-              attuned damage type. On a critical successful{" "}
+              Each energy weapon is attuned to a damage type upon creation. All
+              damage deal by this weapon is the attuned damage type, and it
+              deals additional damage equal to your tier. On a critical
+              successful{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>
@@ -685,7 +696,7 @@ function Relics() {
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
               </Link>{" "}
-              damage per your tier of the chosen damage type.
+              damage per your tier of the attuned damage type.
             </p>
             <p>You also gain the following ability:</p>
             <AbilityCard
@@ -792,14 +803,14 @@ function Relics() {
               keywords="Magic, Range"
               trigger={
                 <span>
-                  You deal damage to a creature but their{" "}
+                  You deal damage to a creature but they have{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#resistances-and-weaknesses"
                   >
                     resistances
                   </Link>{" "}
-                  reduces the damage
+                  to your damage
                 </span>
               }
               effect="Ignore the triggering creature's resistances to your damage."

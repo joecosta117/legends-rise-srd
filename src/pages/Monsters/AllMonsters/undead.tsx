@@ -42,8 +42,8 @@ const UndeadMonsters = [
         threat=""
         vision="night"
         role="Minion"
-        resistances="necrotic 1"
-        weaknesses="holy 1"
+        resistances="necrotic"
+        weaknesses="holy"
         actions={[
           {
             basic: true,
@@ -107,8 +107,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Minor"
         role="Bruiser"
-        resistances="necrotic 1"
-        weaknesses="holy 1"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Unnatural Endurance",
@@ -191,8 +191,8 @@ const UndeadMonsters = [
         tier="2"
         threat="Minion"
         role=""
-        resistances="necrotic 2"
-        weaknesses="holy 2"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Unnatural Endurance",
@@ -270,8 +270,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Minion"
         role=""
-        resistances="necrotic 3"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {
@@ -353,8 +353,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
-        resistances="necrotic 1, physical 1"
-        weaknesses="holy 1"
+        resistances="necrotic, physical"
+        weaknesses="holy"
         vision="night"
         traits={[
           {
@@ -431,8 +431,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Major"
         role="Artillery"
-        resistances="necrotic 1"
-        weaknesses="holy 1"
+        resistances="necrotic"
+        weaknesses="holy"
         vision="night"
         speeds="fly 1"
         traits={[
@@ -514,8 +514,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Major"
         role="Disabler"
-        resistances="necrotic 1, physical 1"
-        weaknesses="holy 1"
+        resistances="necrotic, physical"
+        weaknesses="holy"
         vision="night"
         speeds={
           <span>
@@ -633,8 +633,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Standard"
         role="Tank"
-        resistances="necrotic 1"
-        weaknesses="holy 1"
+        resistances="necrotic"
+        weaknesses="holy"
         actions={[
           {
             basic: true,
@@ -705,8 +705,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Boss"
         role="Disabler"
-        resistances="necrotic 1, physical 1"
-        weaknesses="holy 1"
+        resistances="necrotic, physical"
+        weaknesses="holy"
         vision="night"
         speeds={
           <span>
@@ -874,8 +874,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
-        resistances="necrotic 1, physical 1"
-        weaknesses="holy 1"
+        resistances="necrotic, physical"
+        weaknesses="holy"
         vision="night"
         speeds={
           <span>
@@ -981,8 +981,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
-        resistances="necrotic 1"
-        weaknesses="holy 1"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Death Stench",
@@ -1063,8 +1063,8 @@ const UndeadMonsters = [
         tier="1"
         threat="Major"
         role="Bruiser"
-        resistances="necrotic 1"
-        weaknesses="holy 1"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Major Monster",
@@ -1151,8 +1151,8 @@ const UndeadMonsters = [
         tier="2"
         threat="Minor"
         role="Tank"
-        resistances="necrotic 2"
-        weaknesses="holy 2"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Sunlight Weakness",
@@ -1265,8 +1265,8 @@ const UndeadMonsters = [
         tier="2"
         threat="Standard"
         role="Disabler"
-        resistances="necrotic 2"
-        weaknesses="holy 2"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Misty Escape",
@@ -1390,8 +1390,8 @@ const UndeadMonsters = [
         tier="2"
         threat="Major"
         role="Skirmisher"
-        resistances="necrotic 2"
-        weaknesses="holy 2"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Major Monster",
@@ -1534,8 +1534,8 @@ const UndeadMonsters = [
         tier="2"
         threat="Major"
         role="Support"
-        resistances="necrotic 2"
-        weaknesses="holy 2, fire 2"
+        resistances="necrotic"
+        weaknesses="holy, fire"
         traits={[
           {
             name: "Major Monster",
@@ -1652,8 +1652,8 @@ const UndeadMonsters = [
         tier="2"
         threat="Minor"
         role="Tank"
-        resistances="necrotic 2"
-        weaknesses="holy 2, fire 2"
+        resistances="necrotic"
+        weaknesses="holy, fire"
         actions={[
           {
             basic: true,
@@ -1725,8 +1725,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Boss"
         role="Disabler"
-        resistances="necrotic 6"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         speeds="fly 2"
         traits={[
           {
@@ -1925,8 +1925,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Standard"
         role="Bruiser"
-        resistances="necrotic 3"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         speeds="fly 2"
         actions={[
           {
@@ -2027,8 +2027,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Major"
         role="Bruiser"
-        resistances="necrotic 6"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Annihilation Aura",
@@ -2137,8 +2137,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Standard"
         role="Tank"
-        resistances="necrotic 3"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Warrior's Aura",
@@ -2227,8 +2227,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Boss"
         role="Artillery"
-        resistances="necrotic 3"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         traits={[
           {
             name: "Boss Monster",
@@ -2400,8 +2400,8 @@ const UndeadMonsters = [
         tier="3"
         threat="Standard"
         role="Skirmisher"
-        resistances="necrotic 6"
-        weaknesses="holy 3"
+        resistances="necrotic"
+        weaknesses="holy"
         speeds="fly 1"
         traits={[
           {

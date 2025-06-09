@@ -37,8 +37,8 @@ const PlantMonsters = [
         tier="1"
         threat="Minion"
         role=""
-        resistances="necrotic 1"
-        weaknesses="fire 1"
+        resistances="necrotic"
+        weaknesses="fire"
         actions={[
           {
             basic: true,
@@ -93,8 +93,8 @@ const PlantMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
-        resistances="necrotic 1"
-        weaknesses="fire 1"
+        resistances="necrotic"
+        weaknesses="fire"
         traits={[
           {
             name: "Rotting Aura",
@@ -170,8 +170,8 @@ const PlantMonsters = [
         tier="1"
         threat="Standard"
         role="Artillery"
-        resistances="necrotic 1"
-        weaknesses="fire 1"
+        resistances="necrotic"
+        weaknesses="fire"
         actions={[
           {
             basic: true,
@@ -239,8 +239,8 @@ const PlantMonsters = [
         tier="1"
         threat="Major"
         role="Disabler"
-        resistances="necrotic 1"
-        weaknesses="fire 1"
+        resistances="necrotic"
+        weaknesses="fire"
         speeds="land 0"
         traits={[
           {
@@ -316,7 +316,7 @@ const PlantMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
-        weaknesses="fire 1"
+        weaknesses="fire"
         actions={[
           {
             basic: true,
@@ -384,7 +384,7 @@ const PlantMonsters = [
         tier="1"
         threat="Boss"
         role="Disabler"
-        weaknesses="fire 1"
+        weaknesses="fire"
         traits={[
           {
             name: "Boss Monster",
@@ -532,7 +532,7 @@ const PlantMonsters = [
         tier="2"
         threat="Major"
         role="Tank"
-        weaknesses="fire 2"
+        weaknesses="fire"
         traits={[
           {
             name: "Major Monster",
@@ -622,7 +622,7 @@ const PlantMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
-        weaknesses="fire 2"
+        weaknesses="fire"
         actions={[
           {
             basic: true,
@@ -692,8 +692,8 @@ const PlantMonsters = [
         tier="2"
         threat="Boss"
         role="Disabler"
-        resistances="necrotic 2"
-        weaknesses="fire 2"
+        resistances="necrotic"
+        weaknesses="fire"
         traits={[
           {
             name: "Boss Monster",
@@ -826,8 +826,8 @@ const PlantMonsters = [
         tier="2"
         threat="Minion"
         role=""
-        resistances="necrotic 2"
-        weaknesses="fire 2"
+        resistances="necrotic"
+        weaknesses="fire"
         actions={[
           {
             basic: true,
@@ -883,7 +883,7 @@ const PlantMonsters = [
         tier="3"
         threat="Major"
         role="Bruiser"
-        weaknesses="fire 3"
+        weaknesses="fire"
         traits={[
           {
             name: "Major Monster",

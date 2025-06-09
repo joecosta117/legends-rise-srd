@@ -112,16 +112,7 @@ function CombatActs() {
             descriptor="You attack with a weapon."
             frequency="At-will"
             keywords="Weapon, Melee or Range"
-            target={
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature for a melee weapon, or 1 creature within a ranged
-                weapon’s range
-              </span>
-            }
+            target={<span>1 creature within your weapon's range</span>}
             defense="Guard"
             damage="weapon damage per your tier"
           />

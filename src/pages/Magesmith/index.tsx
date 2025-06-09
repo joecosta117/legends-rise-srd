@@ -415,7 +415,7 @@ function Magesmith() {
                     <li>
                       <span>
                         <i>Destruction:</i> Whenever the target takes damage,
-                        they take 1 additional arcane damage per your tier.
+                        they take additional damage equal to your tier.
                       </span>
                     </li>
                     <li>
@@ -514,8 +514,8 @@ function Magesmith() {
                   >
                     attack roll
                   </Link>
-                  , they deal 1 additional arcane damage per the triggering
-                  spell tier (turn ends).
+                  , they deal additional damage equal to the triggering spell
+                  tier (turn ends).
                 </span>
               }
             />
@@ -746,13 +746,7 @@ function Magesmith() {
               <b>Requirement:</b> only on weapons
             </p>
             <p>
-              Choose one damage type. A creature deals 1 additional damage per
-              your tier on a{" "}
-              <Link className="internal-link" to="/combat-abilities#strike">
-                strike
-              </Link>{" "}
-              with the upgraded weapon. The additional damage type matches the
-              chosen damage type.
+              The weapon's damage type changes to a damage type of your choice.
             </p>
 
             <h2>Explosive Upgrade</h2>
@@ -850,7 +844,7 @@ function Magesmith() {
               >
                 resistance
               </Link>{" "}
-              to the chosen damage type equal to your tier.
+              to the chosen damage type.
             </p>
 
             <h2>Shield Upgrade</h2>

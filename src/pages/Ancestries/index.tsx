@@ -333,7 +333,7 @@ function Ancestries() {
                     >
                       resistance
                     </Link>{" "}
-                    to unholy damage equal to your tier.
+                    to unholy damage.
                   </span>
                 </li>
                 <li>
@@ -366,7 +366,7 @@ function Ancestries() {
                     >
                       attack roll
                     </Link>
-                    , you deal additional unholy damage equal to your tier.
+                    , you deal additional damage equal to your tier.
                   </span>
                 }
               />
@@ -398,7 +398,7 @@ function Ancestries() {
                     >
                       resistance
                     </Link>{" "}
-                    to necrotic damage equal to your tier.
+                    to necrotic damage.
                   </span>
                 </li>
                 <li>
@@ -471,8 +471,7 @@ function Ancestries() {
                     >
                       resistance
                     </Link>{" "}
-                    to the damage type chosen for draconic heritage equal to
-                    your tier.
+                    to the damage type chosen for draconic heritage.
                   </span>
                 </li>
                 <li>
@@ -572,11 +571,10 @@ function Ancestries() {
                     >
                       resistance
                     </Link>{" "}
-                    to a damage type depending on your elemental soul equal to
-                    your tier: lightning (air), fire (fire), or cold (ice). For
-                    water, you can breath underwater and gain a swim speed of 1.
-                    For earth, your starting hit points increase by your
-                    proficiency bonus.
+                    to a damage type depending on your elemental soul: lightning
+                    (air), fire (fire), or cold (ice). For water, you can breath
+                    underwater and gain a swim speed of 1. For earth, your
+                    starting hit points increase by your proficiency bonus.
                   </span>
                 </li>
                 <li>
@@ -1126,7 +1124,7 @@ function Ancestries() {
                     >
                       resistance
                     </Link>{" "}
-                    to holy damage equal to your tier.
+                    to holy damage.
                   </span>
                 </li>
                 <li>
@@ -1152,7 +1150,7 @@ function Ancestries() {
                     >
                       attack roll
                     </Link>
-                    , you deal additional holy damage equal to your tier.
+                    , you deal additional damage equal to your tier.
                   </span>
                 }
               />
@@ -1336,7 +1334,7 @@ function Ancestries() {
                     >
                       resistance
                     </Link>{" "}
-                    to necrotic damage equal to your tier.
+                    to necrotic damage.
                   </span>
                 </li>
                 <li>
@@ -1362,10 +1360,9 @@ function Ancestries() {
                     >
                       attack roll
                     </Link>{" "}
-                    against the target, you deal additional necrotic damage
-                    equal to your tier. When the target dies, you gain temporary
-                    hit points equal to double your proficiency bonus until your
-                    next rest.
+                    against the target, you deal additional damage equal to your
+                    tier. When the target dies, you gain temporary hit points
+                    equal to double your proficiency bonus until your next rest.
                   </span>
                 }
               />

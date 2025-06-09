@@ -254,8 +254,8 @@ const HazardList = [
             </Link>
           </span>
         }
-        resistances="necrotic 4, physical 2"
-        weaknesses="holy 2"
+        resistances="necrotic, physical"
+        weaknesses="holy"
         actions={[
           {
             basic: true,

@@ -91,7 +91,7 @@ const ConstructMonsters = [
         tier="1"
         threat="Minor"
         role="Tank"
-        resistances="physical 1"
+        resistances="physical"
         traits={[
           {
             name: "Broken Armor",
@@ -218,7 +218,7 @@ const ConstructMonsters = [
         tier="1"
         threat="Standard"
         role="Tank"
-        resistances="physical 1"
+        resistances="physical"
         traits={[
           {
             name: "Broken Armor",
@@ -409,8 +409,8 @@ const ConstructMonsters = [
         tier="1"
         threat="Boss"
         role="Bruiser"
-        resistances="arcane 1, lightning 2"
-        weaknesses="fire 1"
+        resistances="arcane, lightning"
+        weaknesses="fire"
         traits={[
           {
             name: "Boss Monster",
@@ -578,7 +578,7 @@ const ConstructMonsters = [
         tier="2"
         threat="Major"
         role="Bruiser"
-        resistances="arcane 2, physical 2"
+        resistances="arcane, physical"
         traits={[
           {
             name: "Major Monster",
@@ -667,7 +667,7 @@ const ConstructMonsters = [
         tier="2"
         threat="Minion"
         role=""
-        resistances="physical 2"
+        resistances="physical"
         actions={[
           {
             basic: true,
@@ -723,7 +723,7 @@ const ConstructMonsters = [
         tier="2"
         threat="Standard"
         role="Tank"
-        resistances="arcane 2"
+        resistances="arcane"
         actions={[
           {
             basic: true,
@@ -804,8 +804,8 @@ const ConstructMonsters = [
         tier="3"
         threat="Major"
         role="Tank"
-        resistances="arcane 3, fire 6, physical 3"
-        weaknesses="lightning 3"
+        resistances="arcane, fire, physical"
+        weaknesses="lightning"
         traits={[
           {
             name: "Major Monster",
@@ -915,7 +915,7 @@ const ConstructMonsters = [
         tier="3"
         threat="Minion"
         role=""
-        resistances="physical 3"
+        resistances="physical"
         actions={[
           {
             basic: true,
@@ -970,7 +970,7 @@ const ConstructMonsters = [
         tier="3"
         threat="Boss"
         role="Bruiser"
-        resistances="arcane 3, physical 3"
+        resistances="arcane, physical"
         traits={[
           {
             name: "Boss Monster",

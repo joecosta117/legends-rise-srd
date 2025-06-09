@@ -33,7 +33,7 @@ const OozeMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
-        resistances="toxic 2"
+        resistances="toxic"
         traits={[
           {
             name: "Ooze Resilience",
@@ -106,7 +106,7 @@ const OozeMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
-        resistances="toxic 2"
+        resistances="toxic"
         traits={[
           {
             name: "Ooze Resilience",
@@ -214,7 +214,7 @@ const OozeMonsters = [
         tier="1"
         threat="Boss"
         role="Disabler"
-        resistances="necrotic 2"
+        resistances="necrotic"
         traits={[
           {
             name: "Ooze Resilience",
@@ -324,7 +324,7 @@ const OozeMonsters = [
         tier="1"
         threat="Minion"
         role=""
-        resistances="necrotic 2"
+        resistances="necrotic"
         actions={[
           {
             basic: true,

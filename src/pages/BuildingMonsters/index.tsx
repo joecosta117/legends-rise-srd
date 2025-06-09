@@ -467,13 +467,11 @@ function BuildingMonsters() {
           <li>
             <span>
               <b>Damage resistances and weaknesses</b>. Damage weaknesses and
-              resistances generally should always equal the monster's tier.
-              However, for damage resistances, if it's a major resistance then
-              it the amount should equal the monster's proficiency bonus. For
-              example, a being made of flame likely has a major resistance to
-              fire damage, and weakness to cold damage. The only exception is
-              resistance or weakness to physical damage. These are major
-              features and should only ever equal the monster's tier.
+              resistances should thematically make sense for the monster such as
+              a being of flame being resistant to fire but weak to cold.
+              Resistance to physical damage is treated as a major feature, while
+              weakness to physical damage should come with a major feature to
+              compensate.
             </span>
           </li>
           <li>
@@ -515,9 +513,9 @@ function BuildingMonsters() {
           </li>
           <li>
             <span>
-              Resistance to physical damage equal to their tier. Unlike other
-              damage resistances, physical damage is the most common, so it's
-              rated as a major feature.
+              Resistance to physical damage. Unlike other damage resistances,
+              physical damage is the most common, so it's rated as a major
+              feature.
             </span>
           </li>
           <li>

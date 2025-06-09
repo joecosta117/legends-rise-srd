@@ -577,21 +577,34 @@ function CombatRules() {
           Resistances and Weaknesses
         </h3>
         <p>
-          When a creature has <b>resistance</b> to a damage type, then any
-          damage taken from the specified type is reduced by a specified number.
-          For example, if a dragon has fire resistance 2, and they take 3 fire
-          damage, their resistance reduces the damage to 1.
+          When a creature has <b>resistance</b> to a damage type, the severity
+          of incoming damage is reduced.
         </p>
+        <ul>
+          <li>
+            If the damage is caused by an attack roll, the result is treated as
+            one degree of success lower.
+          </li>
+          <li>If the damage does not involve an attack roll, it is halved.</li>
+        </ul>
         <p>
-          When a creature has <b>weakness</b> to a damage type, then any damage
-          taken from the specified type is increased by a specified number. For
-          example, if a demon has holy weakness 1, and they take 3 holy damage,
-          their weakness increases the damage to 4.
+          When a creature has <b>weakness</b> to a damage type, the severity of
+          incoming damage is increased.
         </p>
+        <ul>
+          <li>
+            If the damage is caused by an attack roll, the result is treated as
+            one degree of success higher.
+          </li>
+          <li>If the damage does not involve an attack roll, it is doubled.</li>
+        </ul>
         <p>
+          If a creature has both resistance and weakness to a damage type, the
+          two cancel each other out, and the creature takes normal damage.
           Resistances and weaknesses are calculated after damage is reduced by
           other means such as from magic.
         </p>
+
         <h3 className="header" id="direct-damage">
           Direct Damage
         </h3>
@@ -942,7 +955,7 @@ function CombatRules() {
           >
             resistance
           </Link>{" "}
-          to fire damage equal to their tier.
+          to fire damage.
         </p>
 
         <h3 className="header">Drowning</h3>
