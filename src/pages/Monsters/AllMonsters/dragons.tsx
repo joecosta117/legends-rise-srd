@@ -2553,7 +2553,7 @@ const DragonMonsters = [
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
-            damage: "1 fire damage and 1 unholy damage",
+            damage: "2 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2651,7 +2651,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "2 fire damage and 2 unholy damage",
+            damage: "4 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2795,7 +2795,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "3 fire damage and 3 unholy damage",
+            damage: "6 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">

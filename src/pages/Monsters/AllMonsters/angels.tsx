@@ -245,7 +245,7 @@ const AngelMonsters = [
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
-            damage: "1 fire damage and 1 holy damage",
+            damage: "2 holy damage",
             effect: (
               <span>
                 The dragon and 1d4+1 allies within the dragon's zone{" "}
@@ -352,7 +352,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "2 fire damage and 2 holy damage",
+            damage: "4 holy damage",
             effect: (
               <span>
                 The dragon and 1d4+1 allies within the targeted zones{" "}
@@ -531,7 +531,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "3 fire damage and 3 holy damage",
+            damage: "6 holy damage",
             effect: (
               <span>
                 The dragon and 2d4+2 allies within the targeted zones{" "}

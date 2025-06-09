@@ -1365,7 +1365,7 @@ const DemonMonsters = [
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
-            damage: "6 fire damage and 6 unholy damage",
+            damage: "12 unholy damage",
             effect: (
               <span>
                 Conquest demon can{" "}
@@ -1800,7 +1800,7 @@ const DemonMonsters = [
             keywords: "magical, range",
             target: <span>1d4 creatures within 3 zones</span>,
             defense: "Spirit",
-            damage: "3 fire damage and 3 unholy damage",
+            damage: "6 unholy damage",
             success: (
               <span>
                 3{" "}
@@ -1810,7 +1810,7 @@ const DemonMonsters = [
                 >
                   ongoing
                 </Link>{" "}
-                fire damage
+                unholy damage
               </span>
             ),
           },
@@ -1820,7 +1820,7 @@ const DemonMonsters = [
             keywords: "magical, range, recharge",
             target: <span>All creatures in 3 zones within 5 zones</span>,
             defense: "Spirit",
-            damage: "6 fire damage and 6 unholy damage",
+            damage: "12 unholy damage",
             success: (
               <span>
                 3{" "}
@@ -1830,7 +1830,7 @@ const DemonMonsters = [
                 >
                   ongoing
                 </Link>{" "}
-                fire damage
+                unholy damage
               </span>
             ),
           },
