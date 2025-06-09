@@ -203,8 +203,8 @@ function Warrior() {
 
             <h3 className="header">Subclass</h3>
             <p>
-              Choose the weapon master subclass, or another subclass of your
-              choice. At 1st level, you gain features from your chosen subclass.
+              Choose the slayer subclass, or another subclass of your choice. At
+              1st level, you gain features from your chosen subclass.
             </p>
 
             <h2>2nd Level Features</h2>
@@ -240,29 +240,6 @@ function Warrior() {
           <div>
             <h1>Warrior Subclasses</h1>
             <p>These are the subclass choices for the warrior.</p>
-            <h2>Weapon Master</h2>
-            <p>You use well practiced maneuvers to throw off your foes.</p>
-            <h3 className="header">
-              Extraordinary Technique (1st-Level Feature)
-            </h3>
-            <p>
-              When you get a success on a{" "}
-              <Link className="internal-link" to="/combat-abilities#strike">
-                strike
-              </Link>
-              , you can apply the critical effect of your weapon’s weapon group.
-            </p>
-
-            <h2>Juggernaut</h2>
-            <p>You are a nearly invincible force on the battlefield.</p>
-            <h3 className="header">Unstoppable (1st-Level Feature)</h3>
-            <p>
-              You gain <Modifier type="f" count="1" /> to{" "}
-              <Link className="internal-link" to="/rules/combat#overcome">
-                overcome rolls
-              </Link>
-              , and your Guard and Spirit all increase by +1.
-            </p>
 
             <h2>Slayer</h2>
             <p>
@@ -279,8 +256,33 @@ function Warrior() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              total is 10 or more over the target’s defense, then the bonus
-              damage from a critical success is doubled.
+              total is 10 or more over the target’s defense, then double your
+              weapon damage instead of adding your proficiency bonus for a
+              critical success.
+            </p>
+
+            <h2>Juggernaut</h2>
+            <p>You are a nearly invincible force on the battlefield.</p>
+            <h3 className="header">Unstoppable (1st-Level Feature)</h3>
+            <p>
+              You gain <Modifier type="f" count="1" /> to{" "}
+              <Link className="internal-link" to="/rules/combat#overcome">
+                overcome rolls
+              </Link>
+              , and your Guard and Spirit all increase by +1.
+            </p>
+
+            <h2>Weapon Master</h2>
+            <p>You use well practiced maneuvers to throw off your foes.</p>
+            <h3 className="header">
+              Extraordinary Technique (1st-Level Feature)
+            </h3>
+            <p>
+              When you get a success on a{" "}
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>
+              , you can apply the critical effect of your weapon’s weapon group.
             </p>
           </div>
         )}
