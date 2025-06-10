@@ -575,7 +575,7 @@ export const ritualSpells = [
           requirement="Precious materials worth 15 gold"
           critical="Same as a success, but there are no complications"
           success="You make a wish that is granted with complications, such as angering a god or taking riches from a criminal organization now mad at you. You also take a growing +1 misfortune to this spell"
-          partial="Same as a success, but the wish isn’t granted nor are there complications"
+          partial="Nothing happens, but you take a growing +1 misfortune to this spell"
           failure="Same as a partial, but an ironic complication occurs such as being trapped in a vault of treasure or achieving divinity in a reality with no one else"
         />
       ),
