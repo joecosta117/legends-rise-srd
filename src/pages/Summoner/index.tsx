@@ -181,7 +181,7 @@ function Summoner() {
               </li>
               <li>
                 <span>
-                  <b>Spells at Higher Levels:</b> At levels 2, 4, 6, and 9, you
+                  <b>Spells at Higher Levels:</b> At levels 3, 6, and 9, you
                   learn a battle spell or a magic tradition associated with your
                   subclass.
                 </span>

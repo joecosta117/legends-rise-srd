@@ -18,6 +18,8 @@ function DualClass() {
                 You gain the arcanist’s arcane magic feature, but your mana
                 starts at 1, increasing to 3 at 5th level, and 5 at 8th level.
                 For magic traditions, you only learn the arcane magic tradition.
+                At levels 3, 6, and 9, you learn a learn a battle spell or a
+                magic tradition, except for eldritch, holy, nature, or unholy.
               </span>
             </li>
             <li>
@@ -40,7 +42,9 @@ function DualClass() {
               <span>
                 You gain the bard’s bardic magic feature, but your mana starts
                 at 1, increasing to 3 at 5th level, and 5 at 8th level. You only
-                learn one magic tradition.
+                learn one magic tradition. At levels 3, 6, and 9, you learn a
+                learn a battle spell or a magic tradition from the bard
+                tradition list.
               </span>
             </li>
             <li>
@@ -67,7 +71,8 @@ function DualClass() {
                 You gain the cleric’s cleric magic feature, but your mana starts
                 at 1, increasing to 3 at 5th level, and 5 at 8th level. For
                 magic traditions, you only learn the holy or unholy magic
-                tradition.
+                tradition. At levels 3, 6, and 9, you learn a learn a battle
+                spell or a magic tradition associated with your deity.
               </span>
             </li>
             <li>
@@ -112,7 +117,9 @@ function DualClass() {
               <span>
                 You gain the druid’s druid magic feature, but your mana starts
                 at 1, increasing to 3 at 5th level, and 5 at 8th level. For
-                magic traditions, you only learn the nature magic tradition.
+                magic traditions, you only learn the nature magic tradition. At
+                levels 3, 6, and 9, you learn a learn a battle spell or a magic
+                tradition from the druid tradition list.
               </span>
             </li>
             <li>
@@ -134,7 +141,7 @@ function DualClass() {
             <li>
               <span>
                 You gain the magesmith’s magesmith magic feature, but you don’t
-                learn a tier 0 battle spell and you don't gain mana. At higher
+                learn a tier 1 battle spell and you don't gain mana. At higher
                 levels, you don’t learn magic traditions or battle spells from
                 this feature.
               </span>
@@ -184,7 +191,9 @@ function DualClass() {
               <span>
                 You gain the occultist’s occultist magic feature, but your mana
                 starts at 1, increasing to 3 at 5th level, and 5 at 8th level.
-                You only learn one magic tradition.
+                You only learn one magic tradition. At levels 3, 6, and 9, you
+                learn a learn a battle spell or a magic tradition from the
+                occultist tradition list.
               </span>
             </li>
             <li>
@@ -385,10 +394,12 @@ function DualClass() {
           </li>
           <li>
             <span>
-              <b>Spellcasting:</b> If both of your classes give you mana, your
-              mana starts at 2, increasing to 5 at 5th level, and 8 at 8th
-              level. At levels 2, 4, 6, and 8, you learn a magic tradition
-              (limited by your classes) or a battle spell.
+              <b>Spellcasting:</b> If both of your classes' dual class feautures
+              give you mana, then your spellcasting at higher levels is
+              different. Your mana increases from 2 to 5 at 5th level, and to 8
+              at 8th level. You learn a magic tradition (limited by your
+              classes) or a battle spell at levels 2, 4, 6, and 8, instead of at
+              3, 6, and 9.
             </span>
           </li>
           <li>

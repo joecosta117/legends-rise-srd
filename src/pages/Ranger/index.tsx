@@ -269,8 +269,7 @@ function Ranger() {
                   >
                     resistance
                   </Link>{" "}
-                  to cold damage. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  to cold damage.
                 </span>
               </li>
               <li>
@@ -287,8 +286,7 @@ function Ranger() {
                   >
                     resistance
                   </Link>{" "}
-                  to fire damage. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  to fire damage.
                 </span>
               </li>
               <li>
@@ -318,8 +316,7 @@ function Ranger() {
                   >
                     resistance
                   </Link>{" "}
-                  to toxic damage. If you already have this resistance, use your
-                  proficiency bonus instead.
+                  to toxic damage.
                 </span>
               </li>
             </ul>
