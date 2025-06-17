@@ -14,59 +14,77 @@ function Armor() {
           armor takes 1 minute to take on or off, except for shields. You can
           remove or equip a shield with the interact maneuver.
         </p>
-        <h2 className="header">Armor Training</h2>
-        <p>
-          Your class determines what armor you're trained in. If you aren’t
-          trained in armor while wearing armor, then your speed is halved and
-          you're{" "}
-          <Link className="internal-link" to="/conditions#dazed">
-            dazed
-          </Link>
-          , except for mystic robes.
-        </p>
+
         <h2 className="header">Armor Types</h2>
         <p>
           There are four types of armor. Each armor grants certain benefits
           while worn.
         </p>
-        <h3 className="header">Mystic Robes</h3>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Armor Type</th>
+              <th>Defense Bonus</th>
+              <th>Other</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mystic Robes</td>
+              <td>Spirit +2</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Light Armor</td>
+              <td>Guard +1</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Heavy Armor</td>
+              <td>Guard +2</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Shield</td>
+              <td>Guard +1</td>
+              <td>Can be used as a melee weapon, dealing 2 physical damage</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 className="header">Armor Training</h3>
         <p>
-          <i>
-            Mystic robes don't protect from physical threats, but instead ward
-            from mystical threats. Typically these are robes or garments covered
-            with arcane sigils, blessed by the gods, or made out of eldritch
-            material.
-          </i>
+          Your class determines what armor you're trained in. If you aren’t
+          trained in the armor that you're wearing, then you don't gain the
+          armor's defense bonus.
         </p>
-        <p>Mystic robes grants +2 to Spirit.</p>
-        <h3 className="header">Light Armor</h3>
+
+        <h4 className="header">Mystic Robes</h4>
         <p>
-          <i>
-            The least restrictive of armor, light armor is typically made of
-            leather or strategic placings of plate or chainmail to only protect
-            vital areas.
-          </i>
+          Mystic robes don't protect from physical threats, but instead ward
+          from mystical threats. Typically these are robes or garments covered
+          with arcane sigils, blessed by the gods, or made out of eldritch
+          material.
         </p>
-        <p>Light armor grants +1 to Guard.</p>
-        <h3 className="header">Heavy Armor</h3>
+
+        <h4 className="header">Light Armor</h4>
         <p>
-          <i>
-            Heavy armor is sturdier than light armor, offering the best
-            protection. Heavy armor is typically created from plates of metal,
-            chainmail, or other dense material.
-          </i>
+          The least restrictive of armor, light armor is typically made of
+          leather or strategic placings of plate or chainmail to only protect
+          vital areas.
         </p>
-        <p>Heavy armor grants +2 to Guard.</p>
-        <h3 className="header">Shields</h3>
+
+        <h4 className="header">Heavy Armor</h4>
         <p>
-          <i>
-            Shields are typically affixed to your arm to help protect you
-            against incoming harm.
-          </i>
+          Heavy armor is sturdier than light armor, offering the best
+          protection. Heavy armor is typically created from plates of metal,
+          chainmail, or other dense material.
         </p>
+
+        <h4 className="header">Shields</h4>
         <p>
-          Shields grant +1 to Guard and can be used as a melee weapon, dealing 2
-          physical damage.
+          Shields are typically affixed to your arm to help protect you against
+          incoming harm.
         </p>
       </div>
     </div>
