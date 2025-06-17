@@ -1,6 +1,5 @@
 import "./index.scss";
 import EquipmentHeader from "../../components/EquipmentHeader";
-import { Link } from "react-router-dom";
 
 function Armor() {
   return (
