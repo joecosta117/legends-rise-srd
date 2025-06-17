@@ -783,15 +783,15 @@ const BeastMonsters = [
     ),
   },
   {
-    name: "Veliciraptor",
+    name: "Velociraptor",
     tier: "1",
     type: "Beast",
     role: "Skirmisher",
     threat: "Minor",
-    description: "Veliciraptors are smaller dinosaurs that hunt in packs.",
+    description: "Velociraptors are smaller dinosaurs that hunt in packs.",
     tactics: (
       <span>
-        Veliciraptors will rush the heroes to use bite and{" "}
+        Velociraptors will rush the heroes to use bite and{" "}
         <Link className="internal-link" to="/combat-abilities#trip">
           trip
         </Link>{" "}
@@ -800,7 +800,7 @@ const BeastMonsters = [
     ),
     statBlock: (
       <Monster
-        name="Veliciraptor"
+        name="Velociraptor"
         hp="5"
         evn="13"
         mgt="15"
@@ -814,7 +814,7 @@ const BeastMonsters = [
           {
             name: "Pack Tactics",
             description:
-              "The veliciraptor gains +1 fortune on attack rolls against creatures engaged to an ally",
+              "The velociraptor gains +1 fortune on attack rolls against creatures engaged to an ally",
           },
         ]}
         actions={[
