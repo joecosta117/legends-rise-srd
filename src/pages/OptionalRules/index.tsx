@@ -24,6 +24,13 @@ function OptionalRules() {
             </a>
           </li>
           <li>
+            <a href="#level-0">
+              <span>
+                <b>Level 0 Heroes</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#damage-rolls">
               <span>
                 <b>Roll for Damage</b>
@@ -89,6 +96,62 @@ function OptionalRules() {
           </Link>
           , one of the consequences could be the GM incrementing the doom die by
           1.
+        </p>
+
+        <h2 id="level-0">Level 0 Heroes</h2>
+        <p>
+          For grounded origin stories or coming-of-age campaigns, level 0 play
+          lets heroes begin their journey before choosing a class. They rely
+          only on their ancestry, their instincts, and the will to survive.
+        </p>
+        <p>
+          Level 0 heroes still follow the typical hero creation steps, but don't
+          pick a class. Instead heroes pick an ancestry, background, and choose
+          two knacks as normal. Their tier is still 1, and their proficiency
+          bonus is 2 as normal. A level 0 hero's hit points start at 6 and begin
+          with 4 recoveries. They don't have training in armor or weapons.
+        </p>
+        <h3 className="header">Starting Equipment</h3>
+        <p>
+          Depending on the GM's story, level 0 heroes can start with little to
+          no starting equipment. Remember that level 0 heroes aren't trained in
+          armor or weapons, so they can't benefit from armor, and when they{" "}
+          <Link className="internal-link" to="/combat-abilities#strike">
+            strike
+          </Link>{" "}
+          with a weapon other than a natural melee weapon, they don't add their
+          proficiency bonus to the attack roll.
+        </p>
+        <h3 className="header">Humans</h3>
+        <p>
+          Since level 0 heroes don't have a class, heroes that choose the human
+          ancestry can't benefit from their <i>ambitious</i> primary trait.
+          Instead, replace the human ancestry's <i>ambitious</i> primary trait
+          with the following: "When you{" "}
+          <Link className="internal-link" to="/combat-abilities#strike">
+            strike
+          </Link>{" "}
+          with a weapon you aren't trained in, you can add half your proficiency
+          bonus to the attack roll".
+        </p>
+        <p>
+          When level 0 human heroes level up, they lose this trait and regain
+          the <i>ambitious</i> primary trait.
+        </p>
+        <h3 className="header">Balancing Combat Encounters</h3>
+        <p>
+          Level 0 heroes are significantly weaker than level 1 heroes with less
+          hit points, low defenses, low accuracy, and no class abilities. Level
+          0 heroes count as 1/2 a normal tier 1 hero for the purposes of
+          calculating the EPs for a combat encounter. For example, if there are
+          four level 0 heroes, treat them as 2 heroes.
+        </p>
+        <h3 className="header">Leveling Up</h3>
+        <p>
+          When the heroes level up to 1st level, they choose a class, which
+          increases their starting hit points and recoveries to match their
+          class's normal amount. They also gain their class's starting
+          equipment.
         </p>
 
         <h2 id="damage-rolls">Rolling for Damage</h2>
