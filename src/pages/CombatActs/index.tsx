@@ -277,7 +277,7 @@ function CombatActs() {
                 <Link className="internal-link" to="/rules/combat#overcome">
                   overcome roll
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             }
           />
@@ -332,7 +332,7 @@ function CombatActs() {
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             }
           />
@@ -478,7 +478,7 @@ function CombatActs() {
                 <Link className="internal-link" to="/conditions#taunted">
                   taunted
                 </Link>{" "}
-                by you (turn ends)
+                by you (next turn ends)
               </span>
             }
           />

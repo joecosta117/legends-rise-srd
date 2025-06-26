@@ -349,7 +349,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -360,7 +360,7 @@ const ElementalMonsters = [
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
             damage: "2 cold damage",
-            success: "speed halved (turn ends)",
+            success: "speed halved (next turn ends)",
           },
         ]}
       />
@@ -573,7 +573,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -658,7 +658,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -825,7 +825,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -836,7 +836,7 @@ const ElementalMonsters = [
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
             damage: "4 cold damage",
-            success: "speed halved (turn ends)",
+            success: "speed halved (next turn ends)",
           },
         ]}
         maneuvers={[
@@ -1398,7 +1398,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1415,7 +1415,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2204,7 +2204,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts). As a maneuver, the primordial can move the
+                (until next turn). As a maneuver, the primordial can move the
                 cyclone one zone and carries anyone seized along with it.
               </span>
             ),
@@ -2370,7 +2370,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts).
+                (until next turn).
               </span>
             ),
           },
@@ -2386,7 +2386,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             critical: "seized (overcome ends)",
@@ -2443,7 +2443,7 @@ const ElementalMonsters = [
                 (overcome ends) and the primordial <ToolTip preset="heals" /> 6
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
         ]}
       />

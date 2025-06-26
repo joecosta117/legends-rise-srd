@@ -329,7 +329,7 @@ function Equipment() {
                 <tr>
                   <td>Bows</td>
                   <td>Crossbow, longbow, shortbow</td>
-                  <td>target is dazed (turn ends)</td>
+                  <td>target is dazed (next turn ends)</td>
                 </tr>
                 <tr>
                   <td>Blades</td>
@@ -344,13 +344,13 @@ function Equipment() {
                     <Link className="internal-link" to="/conditions#confused">
                       confused
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </td>
                 </tr>
                 <tr>
                   <td>Firearms</td>
                   <td>Blunderbuss, Musket, Pistol</td>
-                  <td>target is vulnerable (turn ends)</td>
+                  <td>target is vulnerable (next turn ends)</td>
                 </tr>
                 <tr>
                   <td>Flails</td>
@@ -365,12 +365,12 @@ function Equipment() {
                 <tr>
                   <td>Polearms</td>
                   <td>Javelin, Spear, Staff</td>
-                  <td>target is hindered (turn ends)</td>
+                  <td>target is hindered (next turn ends)</td>
                 </tr>
                 <tr>
                   <td>Unarmed</td>
                   <td>Claw, Foot, Fist</td>
-                  <td>target is dazed (turn ends)</td>
+                  <td>target is dazed (next turn ends)</td>
                 </tr>
               </tbody>
             </table>

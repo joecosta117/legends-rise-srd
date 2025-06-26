@@ -298,7 +298,7 @@ function Ancestries() {
                         >
                           hindered
                         </Link>{" "}
-                        (turn ends).
+                        (next turn ends).
                       </span>
                     </li>
                   </ul>
@@ -1001,7 +1001,7 @@ function Ancestries() {
                     <Link className="internal-link" to="/conditions#vulnerable">
                       vulnerable
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />

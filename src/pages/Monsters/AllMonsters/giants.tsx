@@ -479,7 +479,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -495,7 +495,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -511,7 +511,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -526,8 +526,8 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>{" "}
-                (turn ends), but this invisibility ends early if the oni uses a
-                hostile ability
+                (next turn ends), but this invisibility ends early if the oni
+                uses a hostile ability
               </span>
             ),
           },
@@ -557,7 +557,7 @@ const GiantMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Demonic Control",
@@ -574,7 +574,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -898,7 +898,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             effect: (
@@ -1181,7 +1181,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1241,7 +1241,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1257,7 +1257,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1273,7 +1273,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             effect: (
@@ -1306,7 +1306,7 @@ const GiantMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },

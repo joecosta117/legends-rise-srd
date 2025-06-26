@@ -454,7 +454,7 @@ function CombatRules() {
           after waiting for your turn. For abilities with attack rolls, you can
           assume any effect on a partial success also happens on a failure,
           unless otherwise specified. For example, if an arcanist gets a failure
-          on their terrify spell, then the target is still hindered (turn ends),
+          on their terrify spell, then the target is still hindered (next turn ends),
           which is the partial success effect.
         </p> */}
         <h3 className="header">Weapon Attacks</h3>

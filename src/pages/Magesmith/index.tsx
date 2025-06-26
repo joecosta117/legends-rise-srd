@@ -515,7 +515,7 @@ function Magesmith() {
                     attack roll
                   </Link>
                   , they deal additional damage equal to the triggering spell
-                  tier (turn ends).
+                  tier (next turn ends).
                 </span>
               }
             />

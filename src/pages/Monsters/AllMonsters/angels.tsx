@@ -50,7 +50,7 @@ const AngelMonsters = [
                 <Link className="internal-link" to="/conditions#vulnerable">
                   vulnerable
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -395,7 +395,7 @@ const AngelMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Condemning Flames",
@@ -517,7 +517,7 @@ const AngelMonsters = [
                 <Link className="internal-link" to="/conditions#vulnerable">
                   vulnerable
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -575,7 +575,7 @@ const AngelMonsters = [
                 resistance to fire and holy damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Condemning Flames",

@@ -635,7 +635,7 @@ const ConstructMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "seized (turn ends)",
+            partial: "seized (next turn ends)",
           },
         ]}
       />
@@ -753,7 +753,7 @@ const ConstructMonsters = [
                 <Link className="internal-link" to="/conditions#taunted">
                   taunted
                 </Link>{" "}
-                by the arcane guardian (turn ends)
+                by the arcane guardian (next turn ends)
               </span>
             ),
           },
@@ -860,7 +860,7 @@ const ConstructMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },

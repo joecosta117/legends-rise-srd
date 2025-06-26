@@ -450,7 +450,7 @@ function Relics() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p>
           </div>
         ),

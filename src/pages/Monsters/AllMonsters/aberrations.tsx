@@ -97,7 +97,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -168,7 +168,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -263,7 +263,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -273,14 +273,14 @@ const AberrationMonsters = [
             keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
             defense: "Spirit",
-            success: "target controlled by the deep lurker (turn ends)",
+            success: "target controlled by the deep lurker (next turn ends)",
             critical: "target controlled by the deep lurker (overcome ends)",
             partial: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -298,7 +298,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -671,7 +671,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -713,7 +713,7 @@ const AberrationMonsters = [
             keywords: "magical",
             target: <span>1 creature seized by the elder reaper</span>,
             defense: "Spirit",
-            success: "target controlled by the elder reaper (turn ends)",
+            success: "target controlled by the elder reaper (next turn ends)",
             critical: "target controlled by the elder reaper (overcome ends)",
           },
         ]}
@@ -821,9 +821,9 @@ const AberrationMonsters = [
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (turn ends) on a partial success, controlled by the void
-                    seer (turn ends) on a success, and controlled for the scene
-                    (overcome ends) on a critical success.
+                    (next turn ends) on a partial success, controlled by the
+                    void seer (next turn ends) on a success, and controlled for
+                    the scene (overcome ends) on a critical success.
                   </li>
                   <li>
                     <i>2. Disintegrate:</i> Void seer makes an attack roll
@@ -843,7 +843,7 @@ const AberrationMonsters = [
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
                     </Link>{" "}
-                    (turn ends) on a success or higher.
+                    (next turn ends) on a success or higher.
                   </li>
                   <li>
                     <i>5. Poison Ray:</i> Void seer makes an attack roll against
@@ -861,7 +861,7 @@ const AberrationMonsters = [
                     <Link className="internal-link" to="/conditions#confused">
                       confused
                     </Link>{" "}
-                    (turn ends) on a success or higher.
+                    (next turn ends) on a success or higher.
                   </li>
                   <li>
                     <i>7. Telekinetic Beam:</i> Void seer makes an attack roll
@@ -923,7 +923,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>{" "}
-                (turn starts) and then{" "}
+                (until next turn) and then{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#special-movement"
@@ -1112,7 +1112,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1169,7 +1169,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn starts).
+                (until next turn).
               </span>
             ),
           },

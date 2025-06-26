@@ -107,7 +107,7 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn starts)
+                (until next turn)
               </span>
             ),
           },
@@ -278,7 +278,9 @@ const PlantMonsters = [
               </span>
             ),
             success: (
-              <span>Target becomes controlled by the rot tree (turn ends)</span>
+              <span>
+                Target becomes controlled by the rot tree (next turn ends)
+              </span>
             ),
           },
           {
@@ -405,7 +407,7 @@ const PlantMonsters = [
                 Whenever an enemy enters or starts their turn in the dryad
                 queen's zone, the dryad queen makes an attack roll against their
                 Spirit. On a success or higher, the creature can't use hostile
-                abilities against the dryad queen (turn starts).
+                abilities against the dryad queen (until next turn).
               </span>
             ),
           },
@@ -482,7 +484,7 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts).
+                (until next turn).
               </span>
             ),
           },
@@ -500,7 +502,8 @@ const PlantMonsters = [
             defense: "Spirit",
             critical:
               "Target becomes controlled by the dryad queen (overcome ends)",
-            success: "Target becomes controlled by the dryad queen (turn ends)",
+            success:
+              "Target becomes controlled by the dryad queen (next turn ends)",
           },
         ]}
       />
@@ -786,8 +789,8 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn starts). If they're already hindered, then they instead
-                take 2 necrotic damage.
+                (until next turn). If they're already hindered, then they
+                instead take 2 necrotic damage.
               </span>
             ),
           },
@@ -807,7 +810,7 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts) on a success or higher.
+                (until next turn) on a success or higher.
               </span>
             ),
           },
@@ -899,9 +902,9 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends), or dazed (overcome ends) on a critical success. If
-                the target is already dazed by this trait, then on a success or
-                higher, the target becomes an inanimate plant.
+                (next turn ends), or dazed (overcome ends) on a critical
+                success. If the target is already dazed by this trait, then on a
+                success or higher, the target becomes an inanimate plant.
               </span>
             ),
           },

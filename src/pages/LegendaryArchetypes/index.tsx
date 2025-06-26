@@ -459,7 +459,7 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
-                  (turn starts).
+                  (until next turn).
                 </span>
               }
             />
@@ -732,7 +732,7 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/conditions#seized">
                     seized
                   </Link>{" "}
-                  (turn ends; ice), 1{" "}
+                  (next turn ends; ice), 1{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#ongoing-damage"
@@ -743,7 +743,7 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
-                  (turn ends; air),{" "}
+                  (next turn ends; air),{" "}
                   <Link className="internal-link" to="/conditions#prone">
                     prone
                   </Link>{" "}
@@ -830,7 +830,7 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/rules/combat#stealth">
                     invisible
                   </Link>{" "}
-                  (turn starts)
+                  (until next turn)
                 </span>
               }
             />
@@ -938,8 +938,8 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/conditions#vulnerable">
                 vulnerable
               </Link>{" "}
-              (turn ends). You can only make this attack roll against the same
-              target once per turn.
+              (next turn ends). You can only make this attack roll against the
+              same target once per turn.
             </p>
             <h4 className="header">Ruler of the Green (10th-Level Feature)</h4>
             <p>
@@ -1262,8 +1262,8 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn starts). You can only make this attack roll against the same
-              target once per turn.
+              (until next turn). You can only make this attack roll against the
+              same target once per turn.
             </p>
 
             <h4 className="header">True Lichdom (10th-Level Feature)</h4>

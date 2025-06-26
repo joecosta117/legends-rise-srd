@@ -255,7 +255,7 @@ function Rogue() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
                   </Link>{" "}
-                  (turn ends)
+                  (next turn ends)
                 </span>
               }
             />
@@ -275,8 +275,8 @@ function Rogue() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              against them (turn ends). At the start of combat, you can study as
-              a free action.
+              against them (next turn ends). At the start of combat, you can
+              study as a free action.
             </p>
 
             <h2>Swashbuckler</h2>
@@ -472,7 +472,7 @@ function Rogue() {
               <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
-              (turn starts) or until you use a hostile ability.
+              (until next turn) or until you use a hostile ability.
             </p>
 
             <h3 className="header">Slippery Mind</h3>

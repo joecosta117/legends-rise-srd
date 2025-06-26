@@ -29,7 +29,7 @@ const HazardList = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -134,7 +134,7 @@ const HazardList = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn starts)
+                (until next turn)
               </span>
             ),
           },
@@ -202,7 +202,7 @@ const HazardList = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -302,7 +302,7 @@ const HazardList = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -335,7 +335,7 @@ const HazardList = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },

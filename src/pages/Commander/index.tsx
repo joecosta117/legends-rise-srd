@@ -519,7 +519,8 @@ function Commander() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends), or for the scene (scene ends) on a critical success.
+              (next turn ends), or for the scene (scene ends) on a critical
+              success.
             </p>
 
             <h3 className="header">Twin Command</h3>

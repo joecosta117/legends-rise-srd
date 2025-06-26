@@ -573,7 +573,7 @@ function Ranger() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against the creature (turn ends).{" "}
+              against the creature (next turn ends).{" "}
             </p>
 
             <h3 className="header">Warden’s Grasp</h3>
@@ -649,7 +649,7 @@ function Ranger() {
               <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p>
 
             <h3 className="header">Warden's Vigor</h3>

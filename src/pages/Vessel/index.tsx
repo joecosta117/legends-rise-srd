@@ -332,8 +332,8 @@ function Vessel() {
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
-                  (turn ends). On later turns while in your monstrous form, you
-                  can use a maneuver to repeat this effect.
+                  (next turn ends). On later turns while in your monstrous form,
+                  you can use a maneuver to repeat this effect.
                 </span>
               </li>
               <li>
@@ -637,7 +637,7 @@ function Vessel() {
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
-                  (turn ends) as they cower in fear
+                  (next turn ends) as they cower in fear
                 </span>
               </li>
               <li>
@@ -655,7 +655,7 @@ function Vessel() {
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
-                  (turn ends)
+                  (next turn ends)
                 </span>
               </li>
             </ul>

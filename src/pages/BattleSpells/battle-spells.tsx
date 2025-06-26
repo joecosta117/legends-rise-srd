@@ -94,7 +94,7 @@ export const airSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -241,7 +241,7 @@ export const airSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts). Zones adjacent to the targeted zone become
+                (until next turn). Zones adjacent to the targeted zone become
                 dangerous zones (1 lightning damage per spell tier). Once per
                 turn, as a maneuver you can move the cyclone up to 1 zone away.
               </span>
@@ -635,7 +635,7 @@ export const deathSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -728,7 +728,7 @@ export const deathSpells = [
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (turn ends).
+                    (next turn ends).
                   </span>
                 ),
               },
@@ -971,7 +971,7 @@ export const earthSpells = [
               (scene ends)
             </span>
           }
-          partial="Seized (turn ends)"
+          partial="Seized (next turn ends)"
         />
       ),
     },
@@ -1207,7 +1207,7 @@ export const eldritchSpells = [
               <Link className="internal-link" to="/conditions#confused">
                 confused
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -1248,7 +1248,7 @@ export const eldritchSpells = [
               <Link className="internal-link" to="/conditions#confused">
                 confused
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -1302,7 +1302,7 @@ export const eldritchSpells = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             }
           />
@@ -1331,7 +1331,7 @@ export const eldritchSpells = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends).
+                (next turn ends).
               </span>
             }
           />
@@ -1425,7 +1425,7 @@ export const eldritchSpells = [
                 (scene ends) and you can move the target within their zone
               </span>
             }
-            partial="Seized (turn ends)"
+            partial="Seized (next turn ends)"
             effect={
               <span>
                 <span>
@@ -1497,7 +1497,7 @@ export const enchantmentSpells = [
               <Link className="internal-link" to="/conditions#vulnerable">
                 vulnerable
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -1520,7 +1520,7 @@ export const enchantmentSpells = [
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack roll
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             </span>
           }
@@ -1545,7 +1545,7 @@ export const enchantmentSpells = [
           }
           success={
             <span>
-              Target can't use hostile abilities against you (turn ends) or
+              Target can't use hostile abilities against you (next turn ends) or
               until you or your allies use a hostile ability against them
             </span>
           }
@@ -1554,7 +1554,7 @@ export const enchantmentSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -1578,7 +1578,7 @@ export const enchantmentSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -1621,7 +1621,7 @@ export const enchantmentSpells = [
               <Link className="internal-link" to="/conditions#dazed">
                 dazed
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -1655,7 +1655,7 @@ export const enchantmentSpells = [
               (scene ends)
             </span>
           }
-          partial="hindered (turn ends)"
+          partial="hindered (next turn ends)"
         />
       ),
     },
@@ -1734,7 +1734,7 @@ export const enchantmentSpells = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             }
           />
@@ -2008,7 +2008,7 @@ export const gravitySpells = [
           defense="Guard"
           keywords="Magical"
           critical="Same as success, and 1 physical damage per your spell tier"
-          success={<span>Target's speed is halved (turn ends)</span>}
+          success={<span>Target's speed is halved (next turn ends)</span>}
         />
       ),
     },
@@ -2029,7 +2029,7 @@ export const gravitySpells = [
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -2077,7 +2077,7 @@ export const gravitySpells = [
           defense="Guard"
           keywords="Escalation, Magical, Range"
           success="The gravity effect lasts for the scene."
-          partial="Gravity on the target flips (turn ends) as they fly up or fall down a number of zones equal to the spell tier."
+          partial="Gravity on the target flips (next turn ends) as they fly up or fall down a number of zones equal to the spell tier."
           critical={
             <span>
               Target is{" "}
@@ -2236,7 +2236,7 @@ export const gravitySpells = [
                   <Link className="internal-link" to="/conditions#seized">
                     seized
                   </Link>{" "}
-                  (turn starts). If a creature is killed while within the
+                  (until next turn). If a creature is killed while within the
                   targeted zone, then their body is disintegrated.
                 </span>
               </span>
@@ -2362,7 +2362,7 @@ export const holySpells = [
               <Link className="internal-link" to="/conditions#vulnerable">
                 vulnerable
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -2503,7 +2503,7 @@ export const holySpells = [
             </span>
           }
           success="Returned to their home realm (overcome ends)"
-          partial="Returned to their home realm (turn ends)"
+          partial="Returned to their home realm (next turn ends)"
         />
       ),
     },
@@ -2523,7 +2523,7 @@ export const holySpells = [
             defense="Spirit"
             damage="2 holy damage per spell tier"
             critical="Same as a success, but the target is banished (overcome ends)"
-            success="If the target isn’t from this realm, then they’re banished to their home realm (turn ends)"
+            success="If the target isn’t from this realm, then they’re banished to their home realm (next turn ends)"
             effect={
               <span>
                 You and each ally within 1 zone gain 2{" "}
@@ -2578,7 +2578,7 @@ export const iceSpells = [
           defense="Guard"
           keywords="Magical, Range"
           damage="2 cold damage per your tier"
-          critical={<span>Target's speed is halved (turn ends)</span>}
+          critical={<span>Target's speed is halved (next turn ends)</span>}
         />
       ),
     },
@@ -2628,10 +2628,10 @@ export const iceSpells = [
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
-          partial={<span>Target's speed is halved (turn ends)</span>}
+          partial={<span>Target's speed is halved (next turn ends)</span>}
         />
       ),
     },
@@ -2720,7 +2720,7 @@ export const iceSpells = [
                   attack roll
                 </Link>{" "}
                 against their Guard. On a success, the creature's speed is
-                halved (turn starts).
+                halved (until next turn).
               </span>
             </span>
           }
@@ -2773,7 +2773,7 @@ export const iceSpells = [
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 ),
               },
@@ -2811,7 +2811,7 @@ export const iceSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends), and 1{" "}
+                (next turn ends), and 1{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2877,7 +2877,7 @@ export const illusionSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -2935,7 +2935,7 @@ export const illusionSpells = [
               <Link className="internal-link" to="/conditions#vulnerable">
                 vulnerable
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -2997,7 +2997,7 @@ export const illusionSpells = [
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 ),
               },
@@ -3078,7 +3078,7 @@ export const illusionSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             }
           />
@@ -3330,7 +3330,7 @@ export const lightSpells = [
               <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           success={
@@ -3338,7 +3338,7 @@ export const lightSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -3361,7 +3361,7 @@ export const lightSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -3409,7 +3409,7 @@ export const lightSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -3475,7 +3475,7 @@ export const lightSpells = [
               <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           effect={
@@ -3531,7 +3531,7 @@ export const lightSpells = [
                     <Link className="internal-link" to="/rules/combat#stealth">
                       blinded
                     </Link>{" "}
-                    (turn starts).
+                    (until next turn).
                   </li>
                 </ul>
               </span>
@@ -3629,7 +3629,7 @@ export const natureSpells = [
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -3877,7 +3877,7 @@ export const natureSpells = [
                 target: "1 creature within 3 zones",
                 defense: "Guard",
                 damage: "double ST physical damage",
-                success: <span>Target's speed is halved (turn ends)</span>,
+                success: <span>Target's speed is halved (next turn ends)</span>,
               },
               {
                 basic: false,
@@ -3890,8 +3890,8 @@ export const natureSpells = [
                 success: (
                   <span>
                     Target can't use hostile abilities against you or your
-                    allies (turn ends), but this effect ends early if you or
-                    your allies harm the target.
+                    allies (next turn ends), but this effect ends early if you
+                    or your allies harm the target.
                   </span>
                 ),
               },
@@ -3906,7 +3906,7 @@ export const natureSpells = [
                     <Link className="internal-link" to="/rules/combat#stealth">
                       invisible
                     </Link>{" "}
-                    (turn starts), but this effect ends early if they use a
+                    (until next turn), but this effect ends early if they use a
                     hostile ability
                   </span>
                 ),
@@ -4235,7 +4235,7 @@ export const shadowSpells = [
               <Link className="internal-link" to="/conditions#vulnerable">
                 vulnerable
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -4325,7 +4325,7 @@ export const shadowSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           success={
@@ -4333,7 +4333,7 @@ export const shadowSpells = [
               <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           critical={<span>blinded (scene ends)</span>}
@@ -4461,7 +4461,7 @@ export const shadowSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts) by shadowy tendrils.
+                (until next turn) by shadowy tendrils.
               </span>
             }
           />
@@ -4742,7 +4742,7 @@ export const timeSpells = [
           descriptor="You temporarily manipulate time around someone."
           frequency="Spell 0 (Time)"
           target="1 creature within 1 zone"
-          duration="Turn ends"
+          duration="Next turn ends"
           keywords="Magical, Range"
           effect={
             <span>
@@ -4787,7 +4787,7 @@ export const timeSpells = [
               <Link className="internal-link" to="/conditions#dazed">
                 dazed
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           keywords="Magical, Range"
@@ -4850,7 +4850,7 @@ export const timeSpells = [
               <Link className="internal-link" to="/conditions#dazed">
                 dazed
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           success={
@@ -4932,7 +4932,7 @@ export const timeSpells = [
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
                     </Link>{" "}
-                    (turn starts).
+                    (until next turn).
                   </span>
                 </li>
               </ul>
@@ -4954,13 +4954,13 @@ export const timeSpells = [
             keywords="Escalation, Magical, Range"
             defense="Spirit"
             critical="The success's effect lasts for the scene"
-            success="Time pauses around the target (turn ends), but ends early if they take damage. Any current effects already on the target are paused until the spell ends."
+            success="Time pauses around the target (next turn ends), but ends early if they take damage. Any current effects already on the target are paused until the spell ends."
             partial={
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends) and{" "}
+                (next turn ends) and{" "}
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
@@ -5023,7 +5023,7 @@ export const toxicSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           keywords="Magical, Range"
@@ -5059,7 +5059,7 @@ export const toxicSpells = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn starts).
+                (until next turn).
               </span>
             }
           />
@@ -5115,7 +5115,7 @@ export const toxicSpells = [
               <Link className="internal-link" to="/conditions#dazed">
                 dazed
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -5138,7 +5138,7 @@ export const toxicSpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -5201,8 +5201,8 @@ export const toxicSpells = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends). On your turn, you can spend a maneuver to move each
-                cloud up to 1 zone.
+                (next turn ends). On your turn, you can spend a maneuver to move
+                each cloud up to 1 zone.
               </span>
             }
           />
@@ -5272,7 +5272,7 @@ export const unholySpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -5293,7 +5293,7 @@ export const unholySpells = [
               <Link className="internal-link" to="/conditions#seized">
                 seized
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
           critical="Same as a success, and 1 unholy damage per your tier"
@@ -5325,7 +5325,7 @@ export const unholySpells = [
               </span>
             }
             success="Marked (scene ends)"
-            partial="Marked (turn ends). While the marked target takes damage, they take additional damage equal to the spell tier"
+            partial="Marked (next turn ends). While the marked target takes damage, they take additional damage equal to the spell tier"
           />
         </div>
       ),
@@ -5347,7 +5347,7 @@ export const unholySpells = [
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -5398,7 +5398,7 @@ export const unholySpells = [
               <Link className="internal-link" to="/conditions#dazed">
                 dazed
               </Link>{" "}
-              (turn ends)
+              (next turn ends)
             </span>
           }
         />
@@ -5453,7 +5453,7 @@ export const unholySpells = [
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 ),
               },
@@ -5531,7 +5531,7 @@ export const unholySpells = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends), and{" "}
+                (next turn ends), and{" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
@@ -5554,7 +5554,7 @@ export const warSpells = [
           accordion
           descriptor="You conjure spectral spikes on your armor."
           frequency="Spell 0 (War)"
-          duration="Turn ends"
+          duration="Next turn ends"
           effect="When you take damage from a melee ability, the attacker takes 1 physical damage per your tier."
           keywords="Magical"
         />
@@ -6020,8 +6020,8 @@ export const waterSpells = [
             }
             partial={
               <span>
-                Seized (turn ends), and the target must hold their breath or
-                begin{" "}
+                Seized (next turn ends), and the target must hold their breath
+                or begin{" "}
                 <Link className="internal-link" to="/rules/combat#underwater">
                   drowning
                 </Link>{" "}

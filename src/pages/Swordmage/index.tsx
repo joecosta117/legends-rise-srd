@@ -579,7 +579,7 @@ function Swordmage() {
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
                   </Link>{" "}
-                  deals additional damage equal to your tier (turn ends)
+                  deals additional damage equal to your tier (next turn ends)
                 </span>
               }
             />

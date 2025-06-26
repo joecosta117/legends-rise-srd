@@ -163,7 +163,7 @@ function FightingStyles() {
                       Strike
                     </Link>{" "}
                     with a ranged weapon, on a success or higher, the target's
-                    speed is halved (turn ends)
+                    speed is halved (next turn ends)
                   </span>
                 }
               />
@@ -345,7 +345,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#confused">
                       confused
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />
@@ -367,7 +367,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#seized">
                       seized
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />
@@ -484,7 +484,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#vulnerable">
                       vulnerable
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />
@@ -579,7 +579,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />
@@ -623,7 +623,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#vulnerable">
                       vulnerable
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />
@@ -855,7 +855,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/rules/combat#stealth">
                       cover
                     </Link>{" "}
-                    (turn starts)
+                    (until next turn)
                   </span>
                 }
               />
@@ -1028,7 +1028,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#taunted">
                       taunted
                     </Link>{" "}
-                    by you (turn ends)
+                    by you (next turn ends)
                   </span>
                 }
               />

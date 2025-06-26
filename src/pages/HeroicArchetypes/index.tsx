@@ -827,7 +827,8 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              that deals cold damage, the target's speed is halved (turn ends).
+              that deals cold damage, the target's speed is halved (next turn
+              ends).
             </p>
           </div>
         )}
@@ -1280,7 +1281,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p>
           </div>
         )}
@@ -1472,7 +1473,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p>
           </div>
         )}
@@ -1736,7 +1737,7 @@ function HeroicArchetypes() {
             <h4 className="header">Charge Weapon (7th-Level Feature)</h4>
             <p>
               After you cast a battle spell of tier 1 or higher, you empower
-              your weapon with magic (turn ends). While charged, your next
+              your weapon with magic (next turn ends). While charged, your next
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -1908,7 +1909,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p>
           </div>
         )}
@@ -1985,7 +1986,7 @@ function HeroicArchetypes() {
                   towards you
                 </span>
               }
-              partial="Taunted by you (turn ends)"
+              partial="Taunted by you (next turn ends)"
             />
             <h4 className="header">Protector’s Aura (7th-Level Feature)</h4>
             <p>
@@ -2429,7 +2430,7 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p>
           </div>
         )}

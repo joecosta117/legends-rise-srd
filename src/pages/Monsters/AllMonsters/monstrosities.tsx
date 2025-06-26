@@ -57,7 +57,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -75,8 +75,8 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends) or dazed (overcome ends) if they're already dazed by
-                this ability or paralyzing glance
+                (next turn ends) or dazed (overcome ends) if they're already
+                dazed by this ability or paralyzing glance
               </span>
             ),
             effect: (
@@ -101,7 +101,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -181,7 +181,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -197,7 +197,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -215,8 +215,8 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends) or dazed (overcome ends) if they're already dazed by
-                this ability
+                (next turn ends) or dazed (overcome ends) if they're already
+                dazed by this ability
               </span>
             ),
             effect: (
@@ -241,7 +241,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -351,7 +351,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             success: (
@@ -490,7 +490,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             critical: <span>hindered (overcome ends)</span>,
@@ -562,7 +562,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -635,7 +635,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -823,7 +823,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -893,7 +893,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -909,7 +909,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -967,7 +967,7 @@ const MonstrosityMonsters = [
             ),
             defense: "Guard",
             damage: "3 physical damage",
-            success: <span>Gains weakness to all damage (turn ends)</span>,
+            success: <span>Gains weakness to all damage (next turn ends)</span>,
           },
         ]}
         maneuvers={[
@@ -1041,7 +1041,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1315,7 +1315,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1454,7 +1454,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1646,7 +1646,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn starts) on a success or higher.
+                (until next turn) on a success or higher.
               </span>
             ),
           },
@@ -1797,7 +1797,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             success: (
@@ -1808,7 +1808,7 @@ const MonstrosityMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Trample",

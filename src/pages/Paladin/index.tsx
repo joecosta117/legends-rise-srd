@@ -349,7 +349,7 @@ function Paladin() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (turn ends).
+              (next turn ends).
             </p> */}
           </div>
         )}
@@ -441,7 +441,7 @@ function Paladin() {
               <Link className="internal-link" to="/rules/combat#stealth">
                 blinded
               </Link>{" "}
-              (turn ends), or blinded (scene ends) on a critical success.
+              (next turn ends), or blinded (scene ends) on a critical success.
             </p>
 
             <h3 className="header">Divine Matyr</h3>
@@ -546,8 +546,8 @@ function Paladin() {
             <p>
               When you use divine smite on a target not from this realm, you can
               choose to banish your foe. On a success, the target returns to
-              their home realm (turn ends), or for the scene (scene ends) on a
-              critical success.
+              their home realm (next turn ends), or for the scene (scene ends)
+              on a critical success.
             </p>
 
             <h3 className="header">Omnipresent Shield</h3>

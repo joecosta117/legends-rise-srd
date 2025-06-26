@@ -279,7 +279,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -295,7 +295,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -527,7 +527,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Volcanic Quake",
@@ -710,7 +710,7 @@ const DragonMonsters = [
                 resistance to fire damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Volcanic Quake",
@@ -953,7 +953,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Chilling Winds",
@@ -969,7 +969,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1117,7 +1117,7 @@ const DragonMonsters = [
                 resistance to cold damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Chilling Winds",
@@ -1133,7 +1133,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1347,7 +1347,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Tornado",
@@ -1366,8 +1366,8 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts). As a maneuver, the dragon can move the tornado
-                one zone.
+                (until next turn). As a maneuver, the dragon can move the
+                tornado one zone.
               </span>
             ),
           },
@@ -1517,7 +1517,7 @@ const DragonMonsters = [
                 resistance to lightning damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Tornado",
@@ -1536,8 +1536,8 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn starts). As a maneuver, the dragon can move the tornado
-                one zone.
+                (until next turn). As a maneuver, the dragon can move the
+                tornado one zone.
               </span>
             ),
           },
@@ -1762,7 +1762,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Creeping Marsh",
@@ -1778,7 +1778,7 @@ const DragonMonsters = [
                 that doesn't affect the dragon. Putrid fumes fill the targeted
                 zones, and when a creature enters or starts their turn in the
                 targeted zones, the dragon makes an attack roll against their
-                Guard. On a success, the target is hindered (turn starts).
+                Guard. On a success, the target is hindered (until next turn).
               </span>
             ),
           },
@@ -1947,7 +1947,7 @@ const DragonMonsters = [
                 resistance to toxic damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Creeping Marsh",
@@ -1963,7 +1963,7 @@ const DragonMonsters = [
                 that doesn't affect the dragon. Putrid fumes fill the targeted
                 zones, and when a creature enters or starts their turn in the
                 targeted zones, the dragon makes an attack roll against their
-                Guard. On a success, the target is hindered (turn starts).
+                Guard. On a success, the target is hindered (until next turn).
               </span>
             ),
           },
@@ -2048,7 +2048,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2064,7 +2064,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2153,7 +2153,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2173,7 +2173,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2195,7 +2195,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn start).
+                (until next turn).
               </span>
             ),
           },
@@ -2225,7 +2225,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Animated Vines",
@@ -2233,7 +2233,7 @@ const DragonMonsters = [
             keywords: "magical, range",
             target: <span>2 creatures within 3 zones</span>,
             defense: "Guard",
-            partial: "seized (turn ends)",
+            partial: "seized (next turn ends)",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2386,7 +2386,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn start).
+                (until next turn).
               </span>
             ),
           },
@@ -2417,7 +2417,7 @@ const DragonMonsters = [
                 resistance to toxic damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Animated Vines",
@@ -2425,7 +2425,7 @@ const DragonMonsters = [
             keywords: "magical, range",
             target: <span>3 creatures within 3 zones</span>,
             defense: "Guard",
-            partial: "seized (turn ends)",
+            partial: "seized (next turn ends)",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2559,7 +2559,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2657,7 +2657,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2693,7 +2693,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Summon Demons",
@@ -2838,7 +2838,7 @@ const DragonMonsters = [
                 resistance to fire damage or unholy damage
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Summon Demons",
@@ -2912,7 +2912,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2928,7 +2928,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2944,7 +2944,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -3018,7 +3018,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -3054,7 +3054,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -3084,7 +3084,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Void Rift",
@@ -3199,7 +3199,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -3235,7 +3235,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -3266,7 +3266,7 @@ const DragonMonsters = [
                 resistance to cold and psychic damage.
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Void Rift",
@@ -3565,7 +3565,7 @@ const DragonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Grasping Shadows",
@@ -3581,7 +3581,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 (2 necrotic damage). When a creature takes this damage, the
                 dragon can make an attack roll against the creature's Spirit. On
-                a success, the creature is seized (turn starts) from shadowy
+                a success, the creature is seized (until next turn) from shadowy
                 claws.
               </span>
             ),
@@ -3758,7 +3758,7 @@ const DragonMonsters = [
                 resistance to necrotic damage.
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Grasping Shadows",
@@ -3774,7 +3774,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 (3 necrotic damage). When a creature takes this damage, the
                 dragon can make an attack roll against the creature's Spirit. On
-                a success, the creature is seized (turn starts) from shadowy
+                a success, the creature is seized (until next turn) from shadowy
                 claws.
               </span>
             ),
@@ -3876,7 +3876,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },

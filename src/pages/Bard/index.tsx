@@ -621,7 +621,7 @@ function Bard() {
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (turn ends)
+                    (next turn ends)
                   </span>
                 }
               />
@@ -633,7 +633,9 @@ function Bard() {
                 frequency="At-will"
                 keywords="Magical"
                 target="All enemies within your zone"
-                effect={<span>Targets' speeds are halved (turn ends)</span>}
+                effect={
+                  <span>Targets' speeds are halved (next turn ends)</span>
+                }
               />
 
               <AbilityCard

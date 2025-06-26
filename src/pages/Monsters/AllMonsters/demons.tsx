@@ -56,7 +56,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -230,7 +230,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn starts).
+                (until next turn).
               </span>
             ),
           },
@@ -256,7 +256,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -387,7 +387,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn starts)
+                (until next turn)
               </span>
             ),
           },
@@ -521,7 +521,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends) and takes 2 unholy damage, while the lust demon{" "}
+                (next turn ends) and takes 2 unholy damage, while the lust demon{" "}
                 <ToolTip preset="heals" /> 2.
               </span>
             ),
@@ -656,7 +656,7 @@ const DemonMonsters = [
                 </Link>
               </span>
             ),
-            partial: "Seized (turn ends)",
+            partial: "Seized (next turn ends)",
           },
         ]}
         maneuvers={[
@@ -950,10 +950,10 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/rules/combat#stealth">
                   blinded
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
         ]}
       />
@@ -1039,7 +1039,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1050,7 +1050,7 @@ const DemonMonsters = [
             keywords: "magical, range",
             trigger: "The envy demon sees a creature within 1 zone make a roll",
             effect:
-              "Creature rerolls and takes the lowest result. The envy demon can instead use the highest result for a roll (turn ends). The creature is then immune to this ability for the scene.",
+              "Creature rerolls and takes the lowest result. The envy demon can instead use the highest result for a roll (next turn ends). The creature is then immune to this ability for the scene.",
           },
         ]}
       />
@@ -1597,7 +1597,7 @@ const DemonMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
         ]}
       />
@@ -1792,7 +1792,7 @@ const DemonMonsters = [
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "9 unholy damage",
-            success: "Target can't use or benefit from relics (turn ends)",
+            success: "Target can't use or benefit from relics (next turn ends)",
           },
           {
             basic: false,
@@ -1885,7 +1885,7 @@ const DemonMonsters = [
                 demon lord of greed <ToolTip preset="heals" /> 3
               </span>
             ),
-            partial: "Target can't use or benefit from relics (turn ends)",
+            partial: "Target can't use or benefit from relics (next turn ends)",
           },
         ]}
       />

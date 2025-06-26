@@ -417,7 +417,7 @@ function Occultist() {
               frequency="At-will"
               keywords="Spellshape"
               trigger="You cast a battle spell"
-              effect="Choose one target within your zone. The target takes +1 misfortune to their next roll (turn ends)."
+              effect="Choose one target within your zone. The target takes +1 misfortune to their next roll (next turn ends)."
             />
 
             <h3 className="header">Dark Favor</h3>
@@ -488,7 +488,7 @@ function Occultist() {
                   <Link className="internal-link" to="/rules/combat#stealth">
                     blinded
                   </Link>{" "}
-                  (turn ends)
+                  (next turn ends)
                 </span>
               }
             />
@@ -586,7 +586,7 @@ function Occultist() {
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
-                  (turn ends).
+                  (next turn ends).
                 </span>
               </li>
               <li>

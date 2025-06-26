@@ -307,7 +307,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -562,7 +562,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             defense: "Spirit",
@@ -580,7 +580,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -592,7 +592,7 @@ const UndeadMonsters = [
             keywords: "magical, range",
             target: "1 creature within 2 zones",
             effect:
-              "Target becomes hindered (turn ends), or dazed (turn ends) if they are already hindered.",
+              "Target becomes hindered (next turn ends), or dazed (next turn ends) if they are already hindered.",
           },
         ]}
       />
@@ -775,7 +775,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -786,7 +786,7 @@ const UndeadMonsters = [
             target: "1 creature within 3 zones",
             defense: "Spirit",
             partial:
-              "Poltergeist enters the target’s body and the target is possessed (turn ends). While possessed, the poltergeist decides the target’s turn and the poltergeist is untargetable from any effect and doesn’t take any turns except for boss actions. If the target takes any damage, then they can make an overcome roll, and on a success, the poltergeist is expelled.",
+              "Poltergeist enters the target’s body and the target is possessed (next turn ends). While possessed, the poltergeist decides the target’s turn and the poltergeist is untargetable from any effect and doesn’t take any turns except for boss actions. If the target takes any damage, then they can make an overcome roll, and on a success, the poltergeist is expelled.",
             success:
               "Same as a partial success, but the possession lasts for the scene (overcome ends).",
             critical:
@@ -840,7 +840,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditons#prone">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -918,7 +918,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             defense: "Spirit",
@@ -938,7 +938,7 @@ const UndeadMonsters = [
               </span>
             ),
             defense: "Spirit",
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
             critical:
               "Same as a success, and target must use a maneuver on their next turn to move away from the ghost",
           },
@@ -996,7 +996,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn starts).
+                (until next turn).
               </span>
             ),
           },
@@ -1601,7 +1601,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends) and while hindered, they take{" "}
+                (next turn ends) and while hindered, they take{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1675,7 +1675,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#taunted">
                   taunted
                 </Link>{" "}
-                by mummy guardian (turn ends)
+                by mummy guardian (next turn ends)
               </span>
             ),
           },
@@ -1851,7 +1851,7 @@ const UndeadMonsters = [
                 while hindered
               </span>
             ),
-            partial: "Same as a success, but only hindered (turn ends)",
+            partial: "Same as a success, but only hindered (next turn ends)",
             critical: (
               <span>
                 Same as a success, and they must use a maneuver to{" "}
@@ -2074,7 +2074,7 @@ const UndeadMonsters = [
                 >
                   temporary hit points
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2174,7 +2174,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions/dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2430,7 +2430,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions/confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },

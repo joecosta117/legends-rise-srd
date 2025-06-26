@@ -215,7 +215,7 @@ function Weapons() {
             <tr>
               <td>Bows</td>
               <td>Crossbow, longbow, shortbow</td>
-              <td>target's speed is halved (turn ends)</td>
+              <td>target's speed is halved (next turn ends)</td>
             </tr>
             <tr>
               <td>Blades</td>
@@ -230,7 +230,7 @@ function Weapons() {
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </td>
             </tr>
             <tr>
@@ -241,7 +241,7 @@ function Weapons() {
                 <Link className="internal-link" to="/conditions#vulnerable">
                   vulnerable
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </td>
             </tr>
             <tr>
@@ -267,7 +267,7 @@ function Weapons() {
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </td>
             </tr>
             <tr>
@@ -278,7 +278,7 @@ function Weapons() {
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </td>
             </tr>
           </tbody>

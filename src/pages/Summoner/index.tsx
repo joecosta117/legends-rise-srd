@@ -430,7 +430,7 @@ function Summoner() {
                       <Link className="internal-link" to="/conditions#seized">
                         seized
                       </Link>{" "}
-                      (turn ends).
+                      (next turn ends).
                     </span>
                   </li>
                   <li>
@@ -564,7 +564,7 @@ function Summoner() {
                   <Link className="internal-link" to="/conditions#taunted">
                     taunted
                   </Link>{" "}
-                  by your major summons (turn ends)
+                  by your major summons (next turn ends)
                 </span>
               }
             />
@@ -735,7 +735,7 @@ function Summoner() {
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
-                  (turn ends)
+                  (next turn ends)
                 </span>
               }
             />

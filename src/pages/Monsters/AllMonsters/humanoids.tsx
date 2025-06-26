@@ -634,7 +634,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1285,7 +1285,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1348,7 +1348,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1408,7 +1408,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1433,7 +1433,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2069,7 +2069,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2085,7 +2085,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
             effect: (
@@ -2154,7 +2154,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -2266,7 +2266,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#taunted">
                   taunted
                 </Link>{" "}
-                by the knight (turn ends)
+                by the knight (next turn ends)
               </span>
             ),
           },
@@ -2638,7 +2638,7 @@ const HumanoidMonsters = [
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "6 unholy damage",
-            success: <span>weakness to all damage (turn ends)</span>,
+            success: <span>weakness to all damage (next turn ends)</span>,
           },
           {
             basic: false,
@@ -2917,7 +2917,7 @@ const HumanoidMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },

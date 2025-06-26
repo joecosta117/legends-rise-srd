@@ -506,8 +506,8 @@ function BuildingMonsters() {
               Expanding an existing ability, such as adding an effect on a
               successful attack roll, increasing a condition's duration, or
               making an ability that affects an area create a dangerous zone.
-              For example, a tank monster could taunt a hero (turn ends) on a
-              successful attack roll, or the tundra dragon's ice breath makes
+              For example, a tank monster could taunt a hero (next turn ends) on
+              a successful attack roll, or the tundra dragon's ice breath makes
               the affected zone a difficult zone for the scene.
             </span>
           </li>
@@ -740,7 +740,7 @@ function BuildingMonsters() {
           adding an effect on a successful attack roll, increasing a condition's
           duration, or making an ability that affects an area create a dangerous
           zone. For example, a hazard that deals psychic damage might now also
-          taunt the target on a success or higher (turn ends).
+          taunt the target on a success or higher (next turn ends).
         </p>
 
         <h2 id="upgrade-hazards">Adjusting Hazards</h2>

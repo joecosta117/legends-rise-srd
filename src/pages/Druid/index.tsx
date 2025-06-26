@@ -548,7 +548,7 @@ function Druid() {
                   <Link className="internal-link" to="/conditions#seized">
                     seized
                   </Link>{" "}
-                  (turn ends)
+                  (next turn ends)
                 </span>
               }
             />

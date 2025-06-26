@@ -60,7 +60,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends) by vines that sprout from the ground
+                (next turn ends) by vines that sprout from the ground
               </span>
             ),
           },
@@ -76,7 +76,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#vulnerable">
                   vulnerable
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -91,8 +91,8 @@ const FaerieMonsters = [
             success: (
               <span>
                 Target can't use hostile abilities against the glamour dragon
-                (turn ends), but this effect ends early if the glamour dragon
-                uses a hostile ability against the target.
+                (next turn ends), but this effect ends early if the glamour
+                dragon uses a hostile ability against the target.
               </span>
             ),
           },
@@ -164,7 +164,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends) by vines that sprout from the ground
+                (next turn ends) by vines that sprout from the ground
               </span>
             ),
           },
@@ -199,8 +199,8 @@ const FaerieMonsters = [
             success: (
               <span>
                 Target can't use hostile abilities against the glamour dragon
-                (turn ends), but this effect ends early if the glamour dragon
-                uses a hostile ability against the target.
+                (next turn ends), but this effect ends early if the glamour
+                dragon uses a hostile ability against the target.
               </span>
             ),
           },
@@ -230,7 +230,7 @@ const FaerieMonsters = [
                 (overcome ends)
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Mirror Images",
@@ -267,8 +267,8 @@ const FaerieMonsters = [
               <span>
                 An illusion of a beautiful faerie appears before the target. The
                 target spends their turn captivated by the faerie and conversing
-                with them (turn ends). If the target takes damage, then they can
-                make an overcome roll to end this effect.
+                with them (next turn ends). If the target takes damage, then
+                they can make an overcome roll to end this effect.
               </span>
             ),
             partial: (
@@ -361,7 +361,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends) by vines that sprout from the ground
+                (next turn ends) by vines that sprout from the ground
               </span>
             ),
           },
@@ -396,8 +396,8 @@ const FaerieMonsters = [
             success: (
               <span>
                 Target can't use hostile abilities against the glamour dragon
-                (turn ends), but this effect ends early if the glamour dragon
-                uses a hostile ability against the target.
+                (next turn ends), but this effect ends early if the glamour
+                dragon uses a hostile ability against the target.
               </span>
             ),
           },
@@ -428,7 +428,7 @@ const FaerieMonsters = [
                 resistance to psychic damage.
               </span>
             ),
-            partial: "hindered (turn ends)",
+            partial: "hindered (next turn ends)",
           },
           {
             name: "Mirror Images",
@@ -465,8 +465,8 @@ const FaerieMonsters = [
               <span>
                 An illusion of a beautiful faerie appears before the target. The
                 target spends their turn captivated by the faerie and conversing
-                with them (turn ends). If the target takes damage, then they can
-                make an overcome roll to end this effect.
+                with them (next turn ends). If the target takes damage, then
+                they can make an overcome roll to end this effect.
               </span>
             ),
             partial: (
@@ -821,7 +821,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -837,7 +837,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -853,7 +853,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -887,7 +887,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -926,7 +926,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1102,7 +1102,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1126,7 +1126,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (turn ends)
+                (next turn ends)
               </span>
             ),
           },
@@ -1152,7 +1152,7 @@ const FaerieMonsters = [
             name: "Numbing Frostfield",
             keywords: "magical, range",
             target: "1 zone within 2 zones",
-            duration: "turn starts",
+            duration: "until hag's next turn",
             effect: (
               <span>
                 The targeted zone becomes a{" "}
