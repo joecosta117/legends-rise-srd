@@ -1794,7 +1794,7 @@ export const fireSpells = [
           accordion
           descriptor="You fire a fiery arrow that ignites a foe."
           frequency="Spell 1 (Fire)"
-          target="1 creature per spell tier within 3 zones"
+          target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
           defense="Guard"
           damage="4 fire damage per spell tier"
