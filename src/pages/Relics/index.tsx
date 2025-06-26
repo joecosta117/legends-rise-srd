@@ -726,6 +726,7 @@ function Relics() {
             <AbilityCard
               name="Decapitate"
               actType="Reaction"
+              frequency="At-will"
               descriptor="As you land a sure strike, your magically sharp blade slices off your foe’s head."
               keywords="Magic"
               trigger={
