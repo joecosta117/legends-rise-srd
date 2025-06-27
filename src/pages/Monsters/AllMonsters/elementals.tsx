@@ -2204,7 +2204,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn). As a maneuver, the primordial can move the
+                (next turn ends). As a maneuver, the primordial can move the
                 cyclone one zone and carries anyone seized along with it.
               </span>
             ),
@@ -2370,7 +2370,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },

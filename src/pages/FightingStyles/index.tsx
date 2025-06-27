@@ -855,7 +855,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/rules/combat#stealth">
                       cover
                     </Link>{" "}
-                    (until next turn)
+                    (next turn ends)
                   </span>
                 }
               />

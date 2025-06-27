@@ -107,7 +107,7 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (until next turn)
+                (next turn ends)
               </span>
             ),
           },
@@ -407,7 +407,7 @@ const PlantMonsters = [
                 Whenever an enemy enters or starts their turn in the dryad
                 queen's zone, the dryad queen makes an attack roll against their
                 Spirit. On a success or higher, the creature can't use hostile
-                abilities against the dryad queen (until next turn).
+                abilities against the dryad queen (next turn ends).
               </span>
             ),
           },
@@ -484,7 +484,7 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },
@@ -789,8 +789,8 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (until next turn). If they're already hindered, then they
-                instead take 2 necrotic damage.
+                (next turn ends). If they're already hindered, then they instead
+                take 2 necrotic damage.
               </span>
             ),
           },
@@ -810,7 +810,7 @@ const PlantMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn) on a success or higher.
+                (next turn ends) on a success or higher.
               </span>
             ),
           },

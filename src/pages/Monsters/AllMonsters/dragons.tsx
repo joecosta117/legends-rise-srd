@@ -1366,8 +1366,8 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn). As a maneuver, the dragon can move the
-                tornado one zone.
+                (next turn ends). As a maneuver, the dragon can move the tornado
+                one zone.
               </span>
             ),
           },
@@ -1536,8 +1536,8 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn). As a maneuver, the dragon can move the
-                tornado one zone.
+                (next turn ends). As a maneuver, the dragon can move the tornado
+                one zone.
               </span>
             ),
           },
@@ -1778,7 +1778,7 @@ const DragonMonsters = [
                 that doesn't affect the dragon. Putrid fumes fill the targeted
                 zones, and when a creature enters or starts their turn in the
                 targeted zones, the dragon makes an attack roll against their
-                Guard. On a success, the target is hindered (until next turn).
+                Guard. On a success, the target is hindered (next turn ends).
               </span>
             ),
           },
@@ -1963,7 +1963,7 @@ const DragonMonsters = [
                 that doesn't affect the dragon. Putrid fumes fill the targeted
                 zones, and when a creature enters or starts their turn in the
                 targeted zones, the dragon makes an attack roll against their
-                Guard. On a success, the target is hindered (until next turn).
+                Guard. On a success, the target is hindered (next turn ends).
               </span>
             ),
           },
@@ -2195,7 +2195,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },
@@ -2386,7 +2386,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },
@@ -3581,7 +3581,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 (2 necrotic damage). When a creature takes this damage, the
                 dragon can make an attack roll against the creature's Spirit. On
-                a success, the creature is seized (until next turn) from shadowy
+                a success, the creature is seized (next turn ends) from shadowy
                 claws.
               </span>
             ),
@@ -3774,7 +3774,7 @@ const DragonMonsters = [
                 </Link>{" "}
                 (3 necrotic damage). When a creature takes this damage, the
                 dragon can make an attack roll against the creature's Spirit. On
-                a success, the creature is seized (until next turn) from shadowy
+                a success, the creature is seized (next turn ends) from shadowy
                 claws.
               </span>
             ),

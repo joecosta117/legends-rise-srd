@@ -923,7 +923,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/rules/combat#stealth">
                   invisible
                 </Link>{" "}
-                (until next turn) and then{" "}
+                (next turn ends) and then{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#special-movement"
@@ -1169,7 +1169,7 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },

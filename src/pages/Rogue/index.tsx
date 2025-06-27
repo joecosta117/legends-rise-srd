@@ -472,7 +472,7 @@ function Rogue() {
               <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
-              (until next turn) or until you use a hostile ability.
+              (next turn ends) or until you use a hostile ability.
             </p>
 
             <h3 className="header">Slippery Mind</h3>

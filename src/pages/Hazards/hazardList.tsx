@@ -134,7 +134,7 @@ const HazardList = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (until next turn)
+                (next turn ends)
               </span>
             ),
           },

@@ -459,7 +459,7 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
-                  (until next turn).
+                  (next turn ends).
                 </span>
               }
             />
@@ -830,7 +830,7 @@ function LegendaryArchetypes() {
                   <Link className="internal-link" to="/rules/combat#stealth">
                     invisible
                   </Link>{" "}
-                  (until next turn)
+                  (next turn ends)
                 </span>
               }
             />
@@ -1262,7 +1262,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (until next turn). You can only make this attack roll against the
+              (next turn ends). You can only make this attack roll against the
               same target once per turn.
             </p>
 

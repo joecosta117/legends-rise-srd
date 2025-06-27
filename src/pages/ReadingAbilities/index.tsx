@@ -236,12 +236,6 @@ function ReadingAbilities() {
           </li>
           <li>
             <span>
-              <b>Until Next Turn:</b> The ability’s effect ends at the start of
-              the target’s next turn.
-            </span>
-          </li>
-          <li>
-            <span>
               <b>Next Turn Ends:</b> The ability’s effect lasts until the end of
               the target’s next turn
             </span>

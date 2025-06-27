@@ -230,7 +230,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },
@@ -387,7 +387,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (until next turn)
+                (next turn ends)
               </span>
             ),
           },

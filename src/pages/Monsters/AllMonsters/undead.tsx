@@ -996,7 +996,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             ),
           },

@@ -241,7 +241,7 @@ export const airSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn). Zones adjacent to the targeted zone become
+                (next turn ends). Zones adjacent to the targeted zone become
                 dangerous zones (1 lightning damage per spell tier). Once per
                 turn, as a maneuver you can move the cyclone up to 1 zone away.
               </span>
@@ -2236,7 +2236,7 @@ export const gravitySpells = [
                   <Link className="internal-link" to="/conditions#seized">
                     seized
                   </Link>{" "}
-                  (until next turn). If a creature is killed while within the
+                  (next turn ends). If a creature is killed while within the
                   targeted zone, then their body is disintegrated.
                 </span>
               </span>
@@ -2720,7 +2720,7 @@ export const iceSpells = [
                   attack roll
                 </Link>{" "}
                 against their Guard. On a success, the creature's speed is
-                halved (until next turn).
+                halved (next turn ends).
               </span>
             </span>
           }
@@ -3531,7 +3531,7 @@ export const lightSpells = [
                     <Link className="internal-link" to="/rules/combat#stealth">
                       blinded
                     </Link>{" "}
-                    (until next turn).
+                    (next turn ends).
                   </li>
                 </ul>
               </span>
@@ -3906,7 +3906,7 @@ export const natureSpells = [
                     <Link className="internal-link" to="/rules/combat#stealth">
                       invisible
                     </Link>{" "}
-                    (until next turn), but this effect ends early if they use a
+                    (next turn ends), but this effect ends early if they use a
                     hostile ability
                   </span>
                 ),
@@ -4461,7 +4461,7 @@ export const shadowSpells = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (until next turn) by shadowy tendrils.
+                (next turn ends) by shadowy tendrils.
               </span>
             }
           />
@@ -4932,7 +4932,7 @@ export const timeSpells = [
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
                     </Link>{" "}
-                    (until next turn).
+                    (next turn ends).
                   </span>
                 </li>
               </ul>
@@ -5059,7 +5059,7 @@ export const toxicSpells = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (until next turn).
+                (next turn ends).
               </span>
             }
           />

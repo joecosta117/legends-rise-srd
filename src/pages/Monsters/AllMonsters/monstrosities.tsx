@@ -1646,7 +1646,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (until next turn) on a success or higher.
+                (next turn ends) on a success or higher.
               </span>
             ),
           },
