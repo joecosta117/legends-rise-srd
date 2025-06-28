@@ -257,6 +257,37 @@ function Classes() {
           }
         />
 
+        <Accordion
+          title="Leveling Up"
+          content={
+            <div>
+              <p>
+                In Legends Rise, character advancement is driven by story, not
+                experience points. The GM determines when the party levels up,
+                typically after achieving a significant narrative milestone.
+                These moments often mark the conclusion of a major story beat or
+                the party’s meaningful progress in a campaign arc. A common rule
+                of thumb is to level up every 3 to 4 sessions, but this can vary
+                depending on the pacing and stakes of your campaign.
+              </p>
+              <p>
+                Narrative leveling keeps the focus on heroic moments and
+                narrative accomplishments. For example, completing a dangerous
+                journey through an undead-infested swamp to recover a lost
+                relic, uncovering the traitor behind a noble house’s fall, or
+                defeating the warlord terrorizing a region might all warrant a
+                level up. Similarly, forging a political alliance, gaining the
+                favor of a powerful patron, or surviving a harrowing trial in
+                the green realm could mark a significant victory that leads to a
+                stronger, wiser group of heroes. GMs are encouraged to use
+                narrative leveling to reinforce the tone and themes of their
+                campaign, rewarding character-driven growth and world-shaping
+                choices as much as combat prowess.
+              </p>
+            </div>
+          }
+        />
+
         <h4 id="progression-table">Level Progression Table</h4>
         <table>
           <thead>
