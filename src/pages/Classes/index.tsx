@@ -338,7 +338,7 @@ function Classes() {
         </table>
 
         <h4 className="header" style={{ marginTop: "15px" }}>
-          Mytical Talents
+          Mythical Talents
         </h4>
         <p>
           Starting at levels 11 and at each higher level, you gain a{" "}
