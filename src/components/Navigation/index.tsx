@@ -430,6 +430,13 @@ const Navigation = () => {
             >
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/gm-advice"
+                onClick={toggleMobileNav}
+              >
+                GM Advice
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/encounters"
                 onClick={toggleMobileNav}
               >

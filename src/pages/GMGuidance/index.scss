@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.gm-guidance {
+  @include page-layout();
+}
+
+.gm-guidance-content {
+  @include class-page-content();
+}

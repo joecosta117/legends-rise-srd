@@ -50,6 +50,7 @@ import Hazards from "./pages/Hazards";
 import MythicalTalents from "./pages/MythicalTalents";
 import Vessel from "./pages/Vessel";
 import OptionalRules from "./pages/OptionalRules";
+import GMGuidance from "./pages/GMGuidance";
 
 function App() {
   return (
@@ -115,6 +116,7 @@ function App() {
             <Route path="/hazards" element={<Hazards />} />
             <Route path="/mythical-talents" element={<MythicalTalents />} />
             <Route path="/optional-rules" element={<OptionalRules />} />
+            <Route path="/gm-advice" element={<GMGuidance />} />
           </Routes>
         </div>
       </ScrollToTop>
