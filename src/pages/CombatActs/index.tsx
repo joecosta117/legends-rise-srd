@@ -63,22 +63,22 @@ function CombatActs() {
         </div>
       ),
     },
-    {
-      title: "Prepare (Action)",
-      id: "prepare",
-      actType: "Action",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You prepare to react to an incoming danger."
-            frequency="At-will"
-            duration="Start of your next turn"
-            effect="Choose an ability that takes a maneuver or action. Assign a trigger. When the trigger occurs, you can use a reaction to do your prepared ability."
-          />
-        </div>
-      ),
-    },
+    // {
+    //   title: "Prepare (Action)",
+    //   id: "prepare",
+    //   actType: "Action",
+    //   content: (
+    //     <div>
+    //       <AbilityCard
+    //         accordion
+    //         descriptor="You prepare to react to an incoming danger."
+    //         frequency="At-will"
+    //         duration="Start of your next turn"
+    //         effect="Choose an ability that takes a maneuver or action. Assign a trigger. When the trigger occurs, you can use a reaction to do your prepared ability."
+    //       />
+    //     </div>
+    //   ),
+    // },
     {
       title: "Rally (Action)",
       id: "rally",
@@ -406,15 +406,16 @@ function CombatActs() {
           <AbilityCard
             accordion
             descriptor="You pull yourself up from the ground."
-            frequency="At-will"
-            effect={
+            requirement={
               <span>
-                You are no long{" "}
+                You are{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>
               </span>
             }
+            frequency="At-will"
+            effect={<span>You are no longer prone</span>}
           />
         </div>
       ),
@@ -435,25 +436,10 @@ function CombatActs() {
               <span>
                 <span>
                   You learn general information about the target as well as one
-                  significant fact of your choice about the target such as:
+                  significant fact of your choice about the target such as
+                  current hit points, defenses, resistances or weaknesses,
+                  traits, or abilities.
                 </span>
-                <ul>
-                  <li>
-                    <span>Current hit points</span>
-                  </li>
-                  <li>
-                    <span>Defense scores</span>
-                  </li>
-                  <li>
-                    <span>Resistances and weaknesses</span>
-                  </li>
-                  <li>
-                    <span>Traits</span>
-                  </li>
-                  <li>
-                    <span>Abilities</span>
-                  </li>
-                </ul>
               </span>
             }
           />
