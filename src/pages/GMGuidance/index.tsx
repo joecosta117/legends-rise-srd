@@ -261,7 +261,7 @@ function OptionalRules() {
                 <li>
                   <span>
                     An eclipse lingers far longer than it should, and night
-                    terrors begin stalking the kingdom.
+                    terrors begin stalking the capital.
                   </span>
                 </li>
                 <li>
