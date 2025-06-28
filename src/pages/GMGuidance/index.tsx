@@ -29,20 +29,19 @@ function OptionalRules() {
             </a>
           </li>
           <li>
+            <a href="#handing-out-treasure">
+              <span>
+                <b>Handing Out Treasure</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#leveling-up">
               <span>
                 <b>When to Level Up</b>
               </span>
             </a>
           </li>
-
-          {/* <li>
-            <a href="#handing-out-treasure">
-              <span>
-                <b>Handing Out Treasure</b>
-              </span>
-            </a>
-          </li> */}
         </ul>
 
         <h2 id="gm-guidance">GM Guidance</h2>
@@ -339,6 +338,54 @@ function OptionalRules() {
             </div>
           }
         />
+
+        <h2 id="handing-out-treasure">Handing Out Treasure</h2>
+        <p>
+          As heroes progress through the game, they will find treasure. The
+          Treasure By Hero Table lists how many relics, consumables, and gold a
+          hero should acquire over the course of adventuring in one tier. For
+          example, by the time a hero reaches 5th level (tier 2), they should
+          have all the treasure listed in the hero's tier 1 row. The total value
+          column shows how much gold worth of treasure a hero has by combining
+          the cost of the relics, consumables, and extra gold they acquire. The
+          amount of treasure is a guideline, and you can adjust it based on your
+          campaign's needs.
+        </p>
+        <h3 className="header">Treasure By Hero Table</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Hero's Tier</th>
+              <th>Relics Acquired</th>
+              <th>Consumables Acquired</th>
+              <th>Extra Gold</th>
+              <th>Total Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Tier 1: 1</td>
+              <td>Tier 1: 4</td>
+              <td>3 gold</td>
+              <td>12 gold</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Tier 2: 1</td>
+              <td>Tier 2: 3</td>
+              <td>9 gold</td>
+              <td>33 gold</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Tier 3: 1</td>
+              <td>Tier 3: 3</td>
+              <td>18 gold</td>
+              <td>66 gold</td>
+            </tr>
+          </tbody>
+        </table>
 
         <h2 id="leveling-up">When to Level Up</h2>
         <p>
