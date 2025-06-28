@@ -91,12 +91,12 @@ function HomePage() {
               content="Doing the same thing every turn gets boring fast. When martial heroes in Legends Rise attack, they choose from different weapon techniques. Do you ground slam, juggernaut's charge, or cleave?"
             />
             <Accordion
-              title="Creative Hero Expression"
-              content="Heroes in Legends Rise don't have ability scores or a defined list of skills. Instead, your hero is good at whatever makes sense for your hero. Anyone trained in a weapon can swing it well enough to hurt a foe. Out of combat, players leverage their hero's background to gain bonuses on skill rolls. You also create player defined skills for your hero called knacks. All of this leads to a creative freedom in how you express your hero."
-            />
-            <Accordion
               title="No Wasted Turns"
               content="What's worse, waiting for your turn only to whiff your attack or hitting your attack only to roll poorly on damage? Both suck! In Legends Rise, you deal some damage on a glancing blow, and there are no damage rolls. How well your attack roll goes then determines how hard you hit with only truly bad rolls missing entirely."
+            />
+            <Accordion
+              title="Exciting Narrative Rules"
+              content="Legends Rise encourages heroic fantasy even outside of combat. Heroes leverage their backgrounds and knacks to conquer skill challenges, while also having powerful narrative powers from their theme talents. GMs can utilize countdowns for complex skill encounters. Every roll in Legends Rise has 4 results: failure, partial success, success, and critical success; which leads to interesting and dynamic results during skill challenges."
             />
             <Accordion
               title="Easy to Run"
