@@ -1967,7 +1967,7 @@ function HeroicArchetypes() {
               frequency="Encounter"
               keywords="Range"
               target="Each enemy of your choice within 1 zone"
-              defense="Guard"
+              defense="Spirit"
               success={
                 <span>
                   <Link className="internal-link" to="/conditions#taunted">

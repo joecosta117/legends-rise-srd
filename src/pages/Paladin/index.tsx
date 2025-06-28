@@ -538,7 +538,7 @@ function Paladin() {
               <Link className="internal-link" to="/rules/combat#zone-types">
                 dangerous zone
               </Link>{" "}
-              (holy or unholy damage [your choice] equal to your tier) only for
+              (holy or unholy damage [your choice] equal to your tier) for
               enemies.
             </p>
 

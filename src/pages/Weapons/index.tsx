@@ -220,7 +220,7 @@ function Weapons() {
             <tr>
               <td>Blades</td>
               <td>Daggers, Greatsword, Scimitar</td>
-              <td>+1 physical damage per your tier</td>
+              <td>+1 damage per your tier</td>
             </tr>
             <tr>
               <td>Clubs</td>

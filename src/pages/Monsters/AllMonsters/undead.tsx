@@ -748,8 +748,8 @@ const UndeadMonsters = [
                 The poltergeist's zone is a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone
-                </Link>
-                .
+                </Link>{" "}
+                for enemies. .
               </span>
             ),
           },
@@ -2038,8 +2038,8 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 necrotic damage) to enemies and filled with darkness.
-                Creatures within the umbral titan's zone take{" "}
+                (3 necrotic damage) to enemies and filled with darkness. Enemies
+                within the umbral titan's zone take{" "}
                 <Modifier type="mf" count="1" /> to overcome rolls from{" "}
                 <Link className="internal-link" to="/rules/combat#dying">
                   dying

@@ -2525,7 +2525,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (1 unholy damage).
+                (1 unholy damage) to enemies.
               </span>
             ),
           },
@@ -2619,7 +2619,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (2 unholy damage).
+                (2 unholy damage) to enemies.
               </span>
             ),
           },
@@ -2763,7 +2763,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 unholy damage).
+                (3 unholy damage) to enemies.
               </span>
             ),
           },

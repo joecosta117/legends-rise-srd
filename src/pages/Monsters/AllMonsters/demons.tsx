@@ -1337,7 +1337,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 fire) only for enemies.
+                (3 fire) to enemies.
               </span>
             ),
           },
@@ -1644,7 +1644,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 toxic damage) for enemies. When a creature takes this damage,
+                (3 toxic damage) to enemies. When a creature takes this damage,
                 the plague demon makes an attack roll against the creature's
                 Guard. On a success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#dazed">

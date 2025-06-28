@@ -276,7 +276,8 @@ const FaerieMonsters = [
                 {" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
-                </Link>
+                </Link>{" "}
+                (next turn ends)
               </span>
             ),
           },
@@ -474,7 +475,8 @@ const FaerieMonsters = [
                 {" "}
                 <Link className="internal-link" to="/conditions#dazed">
                   dazed
-                </Link>
+                </Link>{" "}
+                (next turn ends)
               </span>
             ),
           },
@@ -1076,7 +1078,7 @@ const FaerieMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (2 cold damage) only to enemies
+                (2 cold damage) to enemies
               </span>
             ),
           },

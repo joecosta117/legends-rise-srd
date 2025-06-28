@@ -705,14 +705,14 @@ function CombatRules() {
         </p>
         <h3 className="header">Wounds</h3>
         <p>
-          At the end of your turn while dying, make an overcomer roll to see if
-          you inch closer to death or cling to life. On a failure, you take a{" "}
-          <b>wound</b>. If you take damage while dying, you also take a wound,
-          or two wounds if the damage came from a critical success. If damage
-          from a critical success makes you dying, then you also take a wound.
+          At the end of your turn while dying, make an overcome roll to see if
+          you inch closer to death. On a failure, you take a <b>wound</b>. If
+          you take damage while dying, you also take a wound, or two wounds if
+          the damage came from a critical success. If damage from a critical
+          success makes you dying, then you also take a wound.
         </p>
         <p>
-          Wounds represent how close your hero is to death after sustaining
+          Wounds represent how close your hero is to defeat after sustaining
           massive injuries. Wounds always reset to 0 after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             long rest

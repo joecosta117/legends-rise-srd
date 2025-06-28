@@ -1163,9 +1163,9 @@ const AberrationMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 psychic damage) , and when a creature takes this damage, the
-                nascent elder god makes an attack roll against their Spirit. On
-                a success, they are{" "}
+                (3 psychic damage) to enemies, and when a creature takes this
+                damage, the nascent elder god makes an attack roll against their
+                Spirit. On a success, they are{" "}
                 <Link className="internal-link" to="/conditions#confused">
                   confused
                 </Link>{" "}

@@ -42,6 +42,13 @@ function SkillRules() {
             </a>
           </li>
           <li>
+            <a href="#tempt-fate">
+              <span>
+                <b>Tempt Fate</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#group-rolls">
               <span>
                 <b>Group Rolls</b>
@@ -149,81 +156,8 @@ function SkillRules() {
           invoke one knack per skill roll. The GM is the final arbiter if your
           background and knack fits the challenge or not.
         </p>
-        <h3 className="header" id="tempt-fate">
-          Step 4: Tempt Fate
-        </h3>
-        <p>
-          However, heroes can decide to <b>tempt fate</b> to gain{" "}
-          <Modifier type="f" count="1" /> to a skill roll. The GM or any player
-          can offer you this benefit if you agree to tempt fate, which includes
-          an extra complication. The complication happens regardless of the
-          skill roll’s outcome.{" "}
-        </p>
-        <p>Common complications include:</p>
-        <ul>
-          <li>
-            <span>
-              Collateral damage, as in you or someone else takes unintended
-              damage, usually equal to the creature’s proficiency bonus.
-            </span>
-          </li>
-          <li>
-            <span>
-              Sacrifice a number of gold equal to your proficiency bonus, or an
-              item
-            </span>
-          </li>
-          <li>
-            <span>Betray an ally or anger someone</span>
-          </li>
-          <li>
-            <span>Start a negative countdown, or increase an existing one</span>
-          </li>
-        </ul>
-        <p>
-          Tempt fate is always a choice that you can willingly reject or suggest
-          an alteration that would make you consider taking it. The GM has the
-          final say on the complication to tempt fate.
-        </p>
-        <h4 className="header">Tempt Fate Examples</h4>
-        <p>Here are more detailed examples:</p>
-        <ul>
-          <li>
-            <span>
-              <i>
-                A trap will spring when you break the relic’s protective
-                enchantment, and you will take physical damage equal to your
-                shaken value.
-              </i>
-            </span>
-          </li>
-          <li>
-            <span>
-              <i>
-                You will lose some treasure that you collected if you can sneak
-                past the dragon.
-              </i>
-            </span>
-          </li>
-          <li>
-            <span>
-              <i>
-                Your reputation with your church will be ruined if you use your
-                divine power in this way.
-              </i>
-            </span>
-          </li>
-          <li>
-            <span>
-              <i>
-                You can try again to open the door, but the negative countdown
-                for the guards being alerted is going to increase by two ticks.
-              </i>
-            </span>
-          </li>
-        </ul>
 
-        <h3 className="header">Step 5: Roll and Interpret the Result</h3>
+        <h3 className="header">Step 4: Roll and Interpret the Result</h3>
         <p>
           The hero rolls their dice which has four possible results: failure,
           partial success, success, or critical success. Let’s break down what
@@ -382,6 +316,80 @@ function SkillRules() {
           </li>
         </ul>
         <p>Only one person can assist another at a time.</p>
+
+        <h2 className="header" id="tempt-fate">
+          Tempt Fate
+        </h2>
+        <p>
+          When a hero makes a skill roll, they can decide to <b>tempt fate</b>{" "}
+          by taking an added complication to gain{" "}
+          <Modifier type="f" count="1" /> to their skill roll. The GM usually
+          decides the extra complication, which happens regardless of the skill
+          roll’s outcome.
+        </p>
+        <p>Common complications include:</p>
+        <ul>
+          <li>
+            <span>
+              Collateral damage, as in you or someone else takes unintended
+              damage, usually equal to the creature’s proficiency bonus.
+            </span>
+          </li>
+          <li>
+            <span>
+              Sacrifice a number of gold equal to your proficiency bonus, or an
+              item
+            </span>
+          </li>
+          <li>
+            <span>Betray an ally or anger someone</span>
+          </li>
+          <li>
+            <span>Start a negative countdown, or increase an existing one</span>
+          </li>
+        </ul>
+        <p>
+          Tempt fate is always a choice that you can willingly reject or suggest
+          an alteration that would make you consider taking it. The GM has the
+          final say on the complication to tempt fate.
+        </p>
+        <h3 className="header">Tempt Fate Examples</h3>
+        <p>Here are more detailed examples:</p>
+        <ul>
+          <li>
+            <span>
+              <i>
+                A trap will spring when you break the relic’s protective
+                enchantment, and you will take physical damage equal to your
+                shaken value.
+              </i>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i>
+                You will lose some treasure that you collected if you can sneak
+                past the dragon.
+              </i>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i>
+                Your reputation with your church will be ruined if you use your
+                divine power in this way.
+              </i>
+            </span>
+          </li>
+          <li>
+            <span>
+              <i>
+                You can try again to open the door, but the negative countdown
+                for the guards being alerted is going to increase by two ticks.
+              </i>
+            </span>
+          </li>
+        </ul>
 
         <h2 id="group-rolls">Group Rolls</h2>
         <p>

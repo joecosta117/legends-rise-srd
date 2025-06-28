@@ -1420,7 +1420,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (2 lightning damage) only for enemies.
+                (2 lightning damage) for enemies.
               </span>
             ),
           },
