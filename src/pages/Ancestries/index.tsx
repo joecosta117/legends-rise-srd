@@ -35,7 +35,7 @@ function Ancestries() {
     { label: "Silvan", onClick: handleAncestry },
     { label: "Umbraling", onClick: handleAncestry },
     { label: "Wight", onClick: handleAncestry },
-    { label: "Mixed", onClick: handleAncestry },
+    // { label: "Mixed", onClick: handleAncestry },
   ];
 
   return (
@@ -69,7 +69,10 @@ function Ancestries() {
           title="Ancestry List"
           content={
             <div>
-              <ul className="ancestries-list" style={{ paddingTop: "10px" }}>
+              <ul
+                className="ancestries-list"
+                style={{ paddingTop: "10px", paddingBottom: "0" }}
+              >
                 <li>
                   <b>Humans:</b>{" "}
                   <span>
@@ -165,11 +168,42 @@ function Ancestries() {
                     You are an undead revenant, kept alive by your anger.
                   </span>
                 </li>
-                <li>
+                {/* <li>
                   <b>Mixed:</b>{" "}
                   <span>
                     Your parents are from two different ancestries, granting you
                     a unique blend of traits.
+                  </span>
+                </li> */}
+              </ul>
+            </div>
+          }
+        />
+
+        <Accordion
+          title="Mixed Ancestry"
+          content={
+            <div>
+              <p>
+                You were born with parents from two different ancestries, such
+                as an elven father and human mother. If you would like to play a
+                hero with two different ancestries, choose an ancestry for each
+                of your hero’s parents. You can mix and match your visual
+                appearance, as well as the features you gain from your mixed
+                ancestry, including secondary and primary ancestral traits.
+              </p>
+              <ul>
+                <li>
+                  <span>
+                    <b>Size:</b> Choose a size from one of your parental
+                    ancestries.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Traits:</b> Choose a primary trait from one of your
+                    parental ancestries and the secondary trait from your other
+                    parental ancestry.
                   </span>
                 </li>
               </ul>
@@ -1368,7 +1402,7 @@ function Ancestries() {
               />
             </div>
           )}
-          {selectedAncestry === "Mixed" && (
+          {/* {selectedAncestry === "Mixed" && (
             <div>
               <h3 className="header" id="mixed">
                 Mixed Ancestry
@@ -1397,7 +1431,7 @@ function Ancestries() {
                 </li>
               </ul>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

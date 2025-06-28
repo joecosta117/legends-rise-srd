@@ -80,7 +80,7 @@ function HomePage() {
           <div className="section__content">
             <Accordion
               title="High Customization"
-              content="At 1st level, heroes choose from an ancestry, class, and subclass. As your hero levels up, they gain talents, a heroic arcehtype, and a legendary archetype. You can play a giantkin warrior that chooses the juggernaut subclass, but then later learns fire magic from the pyromancer heroic archetype and then finally becomes a elemental lord of fire through the emergent primordial legendary archetype."
+              content="At 1st level, heroes choose from an ancestry, class, and subclass. As your hero levels up, they gain talents, a heroic archetype, and a legendary archetype. You can play a giantkin warrior that chooses the juggernaut subclass, but then later learns fire magic from the pyromancer heroic archetype and then finally becomes a elemental lord of fire through the emergent primordial legendary archetype."
             />
             <Accordion
               title="Unique Magic System"
