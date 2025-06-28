@@ -287,7 +287,8 @@ function HeroCreationSteps() {
         <p>
           Choose a class for your hero, which represents your training and
           talents as an adventurer. Classes grant your hero many abilities and
-          powers.
+          powers. You also choose a <b>subclass</b>, which represents a further
+          specialization of your chosen class.
         </p>
         <button className="link-button" onClick={() => handleLink("classes")}>
           CLASSES LIST
