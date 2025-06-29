@@ -262,10 +262,9 @@ function CombatActs() {
         <div>
           <AbilityCard
             accordion
-            descriptor="You carefully step away."
+            descriptor="You aid an ally through encouraging words, a clever insight, magic, or a well timed distraction."
             frequency="At-will"
             keywords="Range"
-            requirement="You aid an ally through encouraging words, a clever insight, magic, or a well timed distraction."
             target="1 ally within 1 zone"
             effect={
               <span>
@@ -528,7 +527,7 @@ function CombatActs() {
               <p>
                 Your action is the main act you do during a turn, usually some
                 type of attack or other important ability. Actions often require
-                you make a roll.
+                you to make a roll.
               </p>
               <h3 className="header">Maneuvers</h3>
               <p>
