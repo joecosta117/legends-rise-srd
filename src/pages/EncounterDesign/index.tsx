@@ -32,6 +32,13 @@ function EncounterDesign() {
             </a>
           </li>
           <li>
+            <a href="#combat-encounter-objectives">
+              <span>
+                <b>Combat Objectives</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#skill-encounter">
               <span>
                 <b>Skill Encounters</b>
@@ -328,6 +335,141 @@ function EncounterDesign() {
           simple to keep their turns quick as they are many of them at
           once.{" "}
         </p>
+
+        <h2 id="combat-encounter-objectives">Combat Objectives</h2>
+        <p>
+          Not every battle should end with every enemy lying dead. In Legends
+          Rise, combat encounters are more exciting and memorable when they
+          serve a larger purpose. Giving fights a clear objective that players
+          know from the outset, helps keep the pacing sharp, creates tactical
+          variety, and reinforces story stakes. When designing encounters,
+          consider what the heroes are trying to achieve beyond just survival.
+        </p>
+        <p>
+          Letting players know the objective at the start helps them strategize,
+          use their abilities with purpose, and engage with the fiction. Once
+          the objective is completed, end the encounter, even if enemies remain.
+          A retreating force, a crumbling dungeon, or a sudden shift in the
+          battlefield can all justify moving on. Not every fight should be a
+          slugfest, and the most memorable combats are often the ones where
+          killing wasn’t the point.
+        </p>
+        <p>
+          Below are several objective types you can use to keep combat fresh and
+          meaningful:
+        </p>
+        <Accordion
+          title="Defeat All Enemies"
+          content={
+            <div>
+              <p>
+                The classic objective: defeat every enemy on the battlefield.
+                This works well when the enemy is personally invested in the
+                fight, the stakes are clear, and both sides are committed to
+                total victory. For example, the heroes are ambushed by assassins
+                sent to eliminate them and must slay every attacker to survive.
+              </p>
+            </div>
+          }
+        />
+        <Accordion
+          title="Reduce Their Numbers"
+          content={
+            <div>
+              <p>
+                Sometimes, the goal isn’t complete extermination but turning the
+                tide. You can end the encounter early when all non-minion
+                enemies are defeated, less than half the enemy force remains, or
+                when the heroes now outnumber the foes (especially if they
+                started outnumbered). This allows for satisfying victories
+                without grinding down minor enemies. For example, a skirmish
+                with a roving warband ends once the war leader and her champions
+                are defeated, causing the remaining minion troops to scatter.
+              </p>
+            </div>
+          }
+        />
+        <Accordion
+          title="Defeat a Specific Foe"
+          content={
+            <div>
+              <p>
+                Targeted elimination puts the focus on one powerful enemy. Once
+                that key target falls, the rest may surrender, flee, or no
+                longer matter. This objective works well in boss fights or
+                battles against leaders whose forces lose morale when their
+                commander dies. For example, the heroes must take down a
+                necromancer raising the dead, and once he's gone, the undead
+                collapse.
+              </p>
+            </div>
+          }
+        />
+        <Accordion
+          title="Retrieve Something"
+          content={
+            <div>
+              <p>
+                This objective involves reaching and securing a specific item or
+                resource, either in the middle of a chaotic battlefield or
+                behind enemy lines. Make sure the players know what they’re
+                after and where it is. For example, a rogue steals a powerful
+                relic mid-fight and attempts to escape while their allies delay
+                the party. The heroes must retrieve the relic before it’s lost.
+              </p>
+            </div>
+          }
+        />
+        <Accordion
+          title="Destroy or Stop Something"
+          content={
+            <div>
+              <p>
+                Sometimes the goal is to break or disable something vital: a
+                summoning circle, a war machine, a power crystal, or a cursed
+                artifact. These objectives often involve a progress countdown as
+                multiple rolls are needed to complete the objective in addition
+                to fighting enemies. For example, during a ritual to awaken a
+                slumbering god, the heroes must destroy the four eldritch sigils
+                (d4 countdown) before the final verse is sung.
+              </p>
+            </div>
+          }
+        />
+        <Accordion
+          title="Protect or Save Something"
+          content={
+            <div>
+              <p>
+                This type flips the usual script: the players are on the
+                defensive. Their job is to keep someone or something alive or
+                intact. This works great for escort missions, hostage rescues,
+                or guarding fragile objectives. For example, the heroes must
+                defend an ancient tree from cultists seeking to corrupt the
+                forest's heart with a negative countdown representing how close
+                the cultists are to victory. If the heroes defeat the cultists
+                before the culitists decrease the countdown to 0, then the tree
+                is saved.
+              </p>
+            </div>
+          }
+        />
+        <Accordion
+          title="Hold Them Off"
+          content={
+            <div>
+              <p>
+                This objective introduces a time limit usually in the form of a
+                progress countdown. The players aren’t meant to win by force,
+                just survive or delay the enemy long enough. After each round,
+                deincrement the countdown die to signal when the objective is
+                complete. For example, the heroes must hold the gates for a d6
+                countdown until the townspeople can evacuate and the mages seal
+                the portal.
+              </p>
+            </div>
+          }
+        />
 
         <h2 id="skill-encounter">Skill Encounters</h2>
         <p>
