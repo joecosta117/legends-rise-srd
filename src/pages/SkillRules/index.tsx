@@ -58,7 +58,7 @@ function SkillRules() {
           <li>
             <a href="#progress-countdowns">
               <span>
-                <b>Progress Countdowns</b>
+                <b>Countdowns</b>
               </span>
             </a>
           </li>
@@ -424,11 +424,11 @@ function SkillRules() {
           success.
         </p>
 
-        <h2 id="progress-countdowns">Progress Countdowns</h2>
+        <h2 id="progress-countdowns">Countdowns</h2>
         <p>
           For longer term challenges, such as crafting an item or infiltrating
-          an evil castle, the GM can use <b>progress countdowns</b>, which mark
-          the heroes’ ongoing effort. Not every skill roll requires a progress
+          an evil castle, the GM can use <b>countdowns</b>, which mark the
+          heroes’ ongoing effort. Not every skill roll requires a progress
           countdown, as most challenges can be resolved by a single skill roll.
           However, for complex or long term challenges, countdowns are a useful
           tool.
@@ -481,8 +481,8 @@ function SkillRules() {
 
         <h3 className="header">Types of Countdowns</h3>
         <p>
-          There are three types of progress countdowns: positive, negative, and
-          dual.{" "}
+          There are four types of countdowns: positive, negative, dual, and
+          simple.{" "}
         </p>
         <h4 className="header">Positive Countdowns</h4>
         <p>
@@ -587,6 +587,14 @@ function SkillRules() {
             The negative countdown die deincrements by 2.
           </li>
         </ul>
+        <h4 className="header">Simple Countdowns</h4>
+        <p>
+          Simple countdowns are used to keep track of time, and usually tick
+          down after certain time has passed. For example, the heroes have to
+          hold off zombies for 6 rounds before the local priest finishes
+          consecrating the temple. The GM sets a d6 countdown die that
+          deincrements after each round.
+        </p>
 
         <h2 id="downtime-activities">Downtime Activities</h2>
         <p>

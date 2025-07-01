@@ -27,7 +27,7 @@ function CombatRules() {
             className="internal-link"
             to="/rules/skills#progress-countdowns"
           >
-            progress countdown
+            countdown
           </Link>
           .
         </p>

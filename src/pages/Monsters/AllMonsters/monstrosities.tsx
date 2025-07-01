@@ -1908,7 +1908,7 @@ const MonstrosityMonsters = [
                   className="internal-link"
                   to="/rules/skills#progress-countdowns"
                 >
-                  progress countdown
+                  countdown
                 </Link>{" "}
                 'break out' of skill tier 3.
               </span>

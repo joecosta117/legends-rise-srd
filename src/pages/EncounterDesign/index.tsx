@@ -427,9 +427,9 @@ function EncounterDesign() {
               <p>
                 Sometimes the goal is to break or disable something vital: a
                 summoning circle, a war machine, a power crystal, or a cursed
-                artifact. These objectives often involve a progress countdown as
-                multiple rolls are needed to complete the objective in addition
-                to fighting enemies. For example, during a ritual to awaken a
+                artifact. These objectives often involve a countdown as multiple
+                rolls are needed to complete the objective in addition to
+                fighting enemies. For example, during a ritual to awaken a
                 slumbering god, the heroes must destroy the four eldritch sigils
                 (d4 countdown) before the final verse is sung.
               </p>
@@ -460,8 +460,8 @@ function EncounterDesign() {
             <div>
               <p>
                 This objective introduces a time limit usually in the form of a
-                progress countdown. The players aren’t meant to win by force,
-                just survive or delay the enemy long enough. After each round,
+                countdown. The players aren’t meant to win by force, just
+                survive or delay the enemy long enough. After each round,
                 deincrement the countdown die to signal when the objective is
                 complete. For example, the heroes must hold the gates for a d6
                 countdown until the townspeople can evacuate and the mages seal
@@ -483,14 +483,14 @@ function EncounterDesign() {
           skill encounter could be flying an airship through a magical storm or
           a chase scene through a bustling city.
         </p>
-        <h3 className="header">Progress Countdowns</h3>
+        <h3 className="header">Countdowns</h3>
         <p>
           Skill encounters utilize{" "}
           <Link
             className="internal-link"
             to="/rules/skills#progress-countdowns"
           >
-            positive progress countdowns
+            positive countdowns
           </Link>{" "}
           to mark the progress of the skill encounter. Instead of EP, the
           encounter's difficulty is determined by the countdown die:
