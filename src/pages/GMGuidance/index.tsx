@@ -7,7 +7,7 @@ function OptionalRules() {
   return (
     <div className="gm-guidance">
       <div className="gm-guidance-content">
-        <h1 className="gm-guidance__title">GM's Advice</h1>
+        <h1 className="gm-guidance__title">GM Advice</h1>
         <p>
           This page lists geneneral advice on running the game for the GM from
           when to level up heroes to what kind of adventures to run.
