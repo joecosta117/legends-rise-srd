@@ -153,6 +153,12 @@ function OptionalRules() {
           class's normal amount. They also gain their class's starting
           equipment.
         </p>
+        <p>
+          Heroes can also change or update their background to reflect their new
+          class. For example, a level 0 elf that chooses the arcanist class,
+          might change their background from "noble from the elven woods" to
+          "noble wizard from the elven woods".
+        </p>
 
         <h2 id="damage-rolls">Rolling for Damage</h2>
         <p>
