@@ -328,8 +328,8 @@ function Swordmage() {
             <h3 className="header">Dimensional Enspell</h3>
             <p>
               You can siphon some of your spell energy to travel across the
-              battlefield. When you enspell weapon with a tier 1 or higher
-              battle spell, you can{" "}
+              battlefield. When you enspell weapon with a tier 1+ battle spell,
+              you can{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#special-movement"

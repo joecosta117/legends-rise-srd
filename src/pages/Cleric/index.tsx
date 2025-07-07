@@ -322,8 +322,7 @@ function Cleric() {
             </p>
             <h3 className="header">Divine Inspiration (1st-Level Feature)</h3>
             <p>
-              When you target an ally with a tier 1 or higher battle spell, they
-              gain 2{" "}
+              When you target an ally with a tier 1+ battle spell, they gain 2{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#temporary-hit-points"
@@ -493,7 +492,7 @@ function Cleric() {
               descriptor="You cleanse an ally of debilitations with a spell."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You cast a battle spell of tier 1 or higher that targets a friendly creature"
+              trigger="You cast a tier 1+ battle spell that targets a friendly creature"
               effect={
                 <span>
                   Triggering creatures can make an{" "}

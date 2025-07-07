@@ -385,7 +385,7 @@ function Arcanist() {
               descriptor="You amplify your dangerous magic."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You cast a battle spell of tier 1 or higher that deals initial damage"
+              trigger="You cast a tier 1+ battle spell that deals initial damage"
               effect="Increase the triggering spell’s initial damage by the spell tier."
             />
 
@@ -450,7 +450,7 @@ function Arcanist() {
               descriptor="With little strain, you cast a familiar spell."
               frequency="Encounter"
               keywords="Spellshape"
-              trigger="You cast a battle spell of tier 1 or higher"
+              trigger="You cast a tier 1+ battle spell"
               effect="You don’t spend mana on the triggering spell."
             />
 

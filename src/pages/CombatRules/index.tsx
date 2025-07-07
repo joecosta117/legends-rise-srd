@@ -697,11 +697,14 @@ function CombatRules() {
           defeated or dead.
         </p>
 
-        <h2 id="dying">Defeat and Dying</h2>
+        <h2 id="dying">Dying</h2>
         <p>
           When your hit points equal 0, you are <b>dying</b>. While dying, you
-          take <Modifier type="mf" count="1" /> to attack and skill rolls. You
-          are no longer dying if you <ToolTip preset="heal" />.
+          are{" "}
+          <Link className="internal-link" to="/conditions#dazed">
+            dazed
+          </Link>
+          . You are no longer dying if you <ToolTip preset="heal" />.
         </p>
         <h3 className="header">Wounds</h3>
         <p>
@@ -712,7 +715,7 @@ function CombatRules() {
           success makes you dying, then you also take a wound.
         </p>
         <p>
-          Wounds represent how close your hero is to defeat after sustaining
+          Wounds represent how close your hero is to death after sustaining
           massive injuries. Wounds always reset to 0 after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             long rest
@@ -728,13 +731,8 @@ function CombatRules() {
           <li>
             <span>
               <b>Vanquished:</b> You fall unconscious and are narratively
-              removed from the combat, but you don’t die. You can’t{" "}
-              <ToolTip preset="heal" /> until the combat is over. Once you heal,
-              your wounds are decreased to 2 but you are{" "}
-              <Link className="internal-link" to="/conditions#hindered">
-                hindered
-              </Link>{" "}
-              until you take a{" "}
+              removed from the scene. You return to consciousness fully restored
+              after your fellow heroes take a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
                 long rest
               </Link>
@@ -744,13 +742,13 @@ function CombatRules() {
           <li>
             <span>
               <b>Last Stand:</b> You choose to go out in a blaze of glory. You
-              immediately can use any ability as narratively appropriate. If the
-              ability requires a roll, you automatically get a critical success.
-              After your last stand is over, you die.
+              immediately can use an action or maneuver as narratively
+              appropriate. If the ability requires a roll, you automatically get
+              a critical success. After your last stand is over, you die.
             </span>
           </li>
         </ul>
-        <h3 className="header">NPC Death</h3>
+        <h3 className="header">NPC Defeat</h3>
         <p>
           When an enemy drops to 0 hit points, typically the enemy dies or is
           knocked unconscious depending on the heroes' choice. However, for

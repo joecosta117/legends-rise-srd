@@ -1468,8 +1468,8 @@ function HeroicArchetypes() {
             <h4 className="header">Trickster's Cloak (7th-Level Feature)</h4>
             <p>
               Your illusions constantly hide you and your allies. When you cast
-              a battle spell of tier 1 or higher, choose a willing creature
-              within 1 zone. The target becomes{" "}
+              a tier 1+ battle spell, choose a willing creature within 1 zone.
+              The target becomes{" "}
               <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
@@ -1519,8 +1519,8 @@ function HeroicArchetypes() {
             <h4 className="header">Dimensional Jaunt (7th-Level Feature)</h4>
             <p>
               You are constantly teleporting across the battlefield. When you
-              cast a battle spell of tier 1 or higher, choose a willing creature
-              within your zone to{" "}
+              cast a tier 1+ battle spell, choose a willing creature within your
+              zone to{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#special-movement"
@@ -1736,8 +1736,8 @@ function HeroicArchetypes() {
 
             <h4 className="header">Charge Weapon (7th-Level Feature)</h4>
             <p>
-              After you cast a battle spell of tier 1 or higher, you empower
-              your weapon with magic (next turn ends). While charged, your next
+              After you cast a tier 1+ battle spell, you empower your weapon
+              with magic (next turn ends). While charged, your next
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -2690,8 +2690,8 @@ function HeroicArchetypes() {
             <h4 className="header">Friendly Ward (7th-Level Feature)</h4>
             <p>
               You can split your magical energy to shield an ally. When you cast
-              a battle spell of tier 1 or higher, choose a creature within 1
-              zone of you to gain{" "}
+              a tier 1+ battle spell, choose a creature within 1 zone of you to
+              gain{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#temporary-hit-points"

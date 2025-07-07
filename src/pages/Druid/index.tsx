@@ -692,7 +692,7 @@ function Druid() {
               actType="Reaction"
               descriptor="You unleash elemental fury around you as you use your magic."
               frequency="At-will"
-              trigger="You cast a battle spell of tier 1 or higher"
+              trigger="You cast a tier 1+ battle spell"
               effect="Enemies within your zone take 1 damage per triggering spell tier. The damage type matches the damage type of your elemental attunement. If you have dual attunement class talent, then choose one of your attuned elements’ damage types."
             />
 

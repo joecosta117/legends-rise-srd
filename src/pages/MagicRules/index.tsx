@@ -73,8 +73,8 @@ function MagicRules() {
           times in a short time.
         </p>
         <p>
-          When you cast a battle spell of tier 1 or higher, you must spend mana
-          equal to the spell tier. After a{" "}
+          When you cast a tier 1+ battle spell, you must spend mana equal to the
+          spell tier. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             short rest
           </Link>
