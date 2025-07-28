@@ -240,7 +240,6 @@ function Warrior() {
           <div>
             <h1>Warrior Subclasses</h1>
             <p>These are the subclass choices for the warrior.</p>
-
             <h2>Slayer</h2>
             <p>
               You focus your fighting tactics on pure offense, hoping to finish
@@ -256,9 +255,10 @@ function Warrior() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              total is 10 or more over the target’s defense, then double your
-              weapon damage instead of adding your proficiency bonus for a
-              critical success.
+              total is 10 or more over the target’s defense, you achieve a super
+              critical. This is a critical success, but instead of adding your
+              proficiency bonus to the damage, you add dobule your proficiency
+              bonus.
             </p>
 
             <h2>Juggernaut</h2>
@@ -271,7 +271,6 @@ function Warrior() {
               </Link>
               , and your Guard and Spirit both increase by +1.
             </p>
-
             <h2>Weapon Master</h2>
             <p>You use well practiced maneuvers to throw off your foes.</p>
             <h3 className="header">
