@@ -1083,6 +1083,364 @@ const MonstrosityMonsters = [
     ),
   },
   {
+    name: "Wererat",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Skirmisher",
+    threat: "Standard",
+    description:
+      "Quick, shape-shifting predator cursed by the moon, wererats bite their foes with cunning fury and unnatural resilience.",
+    tactics: (
+      <span>
+        Wererats will rush the heroes to use cursed bite and{" "}
+        <Link className="internal-link" to="/combat-abilities#disengage">
+          disengage
+        </Link>{" "}
+        as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Wererat"
+        hp="12"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Small or Medium Monstrosity"
+        tier="1"
+        vision="night"
+        threat="Standard"
+        role="Skirmisher"
+        actions={[
+          {
+            basic: true,
+            name: "Cursed Bite (Rat Form Only)",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "4 physical damage",
+            success:
+              "Target becomes cursed with lycanthropy (long rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a wererat under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a long rest.",
+          },
+          {
+            basic: true,
+            name: "Shortsword",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "4 physical damage",
+          },
+          {
+            basic: true,
+            name: "Crossbow",
+            keywords: "range, weapon",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "Guard",
+            damage: "3 physical damage",
+          },
+        ]}
+        maneuvers={[
+          {
+            basic: true,
+            name: "Shapechange",
+            keywords: "magical, shapeshift",
+            effect:
+              "Wererat transforms into a humanoid rat form, or they return to their true humanoid form.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Werewolf",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Major",
+    description:
+      "Savage, shape-shifting predator cursed by the moon, werewolves tears through foes with primal fury and unnatural resilience.",
+    tactics: (
+      <span>
+        Werewolves will rush the heroes to use cursed bite and{" "}
+        <Link className="internal-link" to="/combat-abilities#trip">
+          trip
+        </Link>{" "}
+        as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Werewolf"
+        hp="24"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Small or Medium Monstrosity"
+        tier="1"
+        threat="Major"
+        role="Bruiser"
+        vision="night"
+        traits={[
+          {
+            name: "Pack Tactics",
+            description:
+              "The werewolf gains +1 fortune on attack rolls against creatures engaged to an ally",
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Cursed Bite (Wolf Form Only)",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "4 physical damage",
+            success:
+              "Target becomes cursed with lycanthropy (long rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a long rest.",
+          },
+          {
+            basic: true,
+            name: "Axe",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "4 physical damage",
+          },
+          {
+            basic: true,
+            name: "Bow",
+            keywords: "range, weapon",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "Guard",
+            damage: "3 physical damage",
+          },
+        ]}
+        maneuvers={[
+          {
+            basic: true,
+            name: "Shapechange",
+            keywords: "magical, shapeshift",
+            effect:
+              "Werewolf transforms into a large humanoid wolf form, or they return to their true humanoid form.",
+          },
+        ]}
+      />
+    ),
+  },
+  {
+    name: "Alpha Werewolf",
+    tier: "1",
+    type: "Monstrosity",
+    role: "Bruiser",
+    threat: "Boss",
+    description:
+      "Savage, shape-shifting predator cursed by the moon, werewolves tears through foes with primal fury and unnatural resilience. The alpha werewolf is the fierce leader of a pack of werewolves, and is the most powerful of them all.",
+    tactics: (
+      <span>
+        The alpha werewolf will rush the heroes to use cursed bite and{" "}
+        <Link className="internal-link" to="/combat-abilities#trip">
+          trip
+        </Link>{" "}
+        as their maneuver.
+      </span>
+    ),
+    statBlock: (
+      <Monster
+        name="Alpha Werewolf"
+        hp="12"
+        evn="13"
+        mgt="15"
+        res="11"
+        pb="2"
+        type="Small or Medium Monstrosity"
+        tier="1"
+        threat="Boss"
+        role="Bruiser"
+        vision="night"
+        traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monster's hit points equal the listed total multiplied by
+                the number of heroes. Boss monsters also get one turn per hero.
+                At the end of a boss monster's turn, they can take direct damage
+                equal to their proficiency bonus to end one condition affecting
+                them.
+              </span>
+            ),
+          },
+          {
+            name: "Blood Sense",
+            description:
+              "The alpha werewolf gains +1 fortune on attack rolls against shaken creatures",
+          },
+        ]}
+        actions={[
+          {
+            basic: true,
+            name: "Cursed Bite (Wolf Form Only)",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "4 physical damage",
+            success:
+              "Target becomes cursed with lycanthropy (long rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a long rest.",
+          },
+          {
+            basic: true,
+            name: "Greataxe",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "4 physical damage",
+          },
+          {
+            basic: true,
+            name: "Bow",
+            keywords: "range, weapon",
+            target: <span>1 creature within 3 zones</span>,
+            defense: "Guard",
+            damage: "3 physical damage",
+          },
+        ]}
+        maneuvers={[
+          {
+            basic: true,
+            name: "Shapechange",
+            keywords: "magical, shapeshift",
+            effect:
+              "Alpha werewolf transforms into a large humanoid wolf form, or they return to their true humanoid form.",
+          },
+        ]}
+        bossActions={[
+          {
+            name: "Primal Roar",
+            round: "1",
+            keywords: "range",
+            target: <span>1d4+1 enemies</span>,
+            defense: "Spirit",
+            critical: (
+              <span>
+                Same as a success, and the target must spend a maneuver on their
+                next turn to{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>{" "}
+                away from the alpha werewolf
+              </span>
+            ),
+            success: (
+              <span>
+                <Link className="internal-link" to="/conditions#hindered">
+                  hindered
+                </Link>{" "}
+                (overcome ends)
+              </span>
+            ),
+            partial: "hindered (next turn ends)",
+          },
+          {
+            name: "Summon the Pack",
+            round: "3",
+            effect:
+              "4 lesser werewolves (see below statblock) appear within 2 zones of the alpha werewolf",
+          },
+          {
+            name: "Savage Rage",
+            round: "5",
+            duration: "Scene ends",
+            effect:
+              "The alpha werewolf gains +1 fortune to all attack rolls and ends any negative effects on itself",
+          },
+        ]}
+      />
+    ),
+    secondaryMonster: (
+      <Monster
+        name="Lesser Werewolf"
+        hp="2"
+        evn="13"
+        mgt="17"
+        res="11"
+        pb="2"
+        type="Medium Monstrosity"
+        tier="1"
+        threat="Minion"
+        role=""
+        vision="night"
+        actions={[
+          {
+            basic: true,
+            name: "Bite",
+            keywords: "melee, weapon",
+            target: (
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            ),
+            defense: "Guard",
+            damage: "1 physical damage",
+          },
+        ]}
+      />
+    ),
+  },
+  {
     name: "Cave Worm",
     tier: "2",
     type: "Monstrosity",
