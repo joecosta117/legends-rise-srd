@@ -24,6 +24,8 @@ function LegendaryArchetypes() {
     { label: "Emergent Primordial", onClick: handleArchetype },
     { label: "Eternal Trickster", onClick: handleArchetype },
     { label: "Faerie Lord", onClick: handleArchetype },
+    { label: "Forged Eternal", onClick: handleArchetype },
+    { label: "Godslayer", onClick: handleArchetype },
     { label: "Infinite Wanderer", onClick: handleArchetype },
     { label: "Legendary Hero", onClick: handleArchetype },
     { label: "Legendary Sovereign", onClick: handleArchetype },
@@ -31,6 +33,8 @@ function LegendaryArchetypes() {
     { label: "Nameless One", onClick: handleArchetype },
     { label: "Primal Aspect", onClick: handleArchetype },
     { label: "Saint", onClick: handleArchetype },
+    { label: "Timeless Oracle", onClick: handleArchetype },
+    { label: "Warden of the Veil", onClick: handleArchetype },
   ];
 
   return (
@@ -41,7 +45,7 @@ function LegendaryArchetypes() {
           At 8th level your hero has grown into a legend, one that will be
           remembered for ages to come. You pick your legendary archetype that
           best captures your character’s growing myth starting at 8th level. An
-          Archmage might become a lich, archmage, or demigod!
+          arcanist might become a demigod, lich, or warden of the veil!
         </p>
 
         <Accordion
@@ -492,7 +496,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
               </Link>{" "}
-              (scene ends). At the end of the combat, the ground opens up to
+              (scene ends). At the end of the scene, the ground opens up to
               hell, and you step out with hit points equal to your{" "}
               <ToolTip preset="shakenVal" />.
             </p>
@@ -603,7 +607,7 @@ function LegendaryArchetypes() {
               </Link>{" "}
               damage per tier. Both damage types are either cold, fire,
               lightning, or toxic (your choice) as appropriate to your type of
-              dragon. At the end of the combat, elements coalesce to reform your
+              dragon. At the end of the scene, elements coalesce to reform your
               body with hit points equal to your <ToolTip preset="shakenVal" />.
             </p>
             <p>
@@ -952,6 +956,180 @@ function LegendaryArchetypes() {
             </p>
           </div>
         )}
+        {selectedArchetype === "Forged Eternal" && (
+          <div>
+            <h2>Forged Eternal</h2>
+            <p>
+              Your mortal shell was only the beginning. Through arcane craft,
+              divine decree, or some unknowable convergence of will and
+              invention, you have cast aside flesh and become something more:
+              enduring, tireless, and unbound by time. Whether a gleaming war
+              machine, a soul-forged sentinel, or a mind encoded into an eternal
+              frame, you are living proof that legends can be built to last
+              forever.
+            </p>
+            <h3 className="header">Archetype Features</h3>
+            <p>
+              Your hit points increase by +8, and you gain the following
+              features.
+            </p>
+            <h4 className="header">Machine Knowledge (8th-Level Feature)</h4>
+            <p>
+              You delve into the magic of the arcane. You learn the{" "}
+              <Link className="internal-link" to="/battle-spells#arcane">
+                arcane
+              </Link>{" "}
+              tradition and a battle spell from that tradition. If you don’t
+              have mana, then your mana equals 5, and you learn a tier 1 and
+              tier 2 battle spell. When you gain a class talent, you can instead
+              learn a magic tradition or battle spell.
+            </p>
+            <h4 className="header">Forged Ascension (8th-Level Feature)</h4>
+            <p>
+              You transfer your essence into a construct body and you gain the
+              following benefits:
+            </p>
+            <ul>
+              <li>
+                <span>Your creature type becomes constuct</span>
+              </li>
+              <li>
+                <span>
+                  You don’t need to eat, drink, or breathe. You are unaffected
+                  by diseases and can’t die of old age.
+                </span>
+              </li>
+              <li>
+                <span>Your Guard increases by +1</span>
+              </li>
+              <li>
+                <span>
+                  You gain{" "}
+                  <Link
+                    className="internal-link"
+                    to="/rules/combat#resistances-and-weaknesses"
+                  >
+                    resistance
+                  </Link>{" "}
+                  to arcane damage.
+                </span>
+              </li>
+            </ul>
+
+            <h4 className="header">
+              Augmented Modular Defense (10th-Level Feature)
+            </h4>
+            <p>You gain the following ability:</p>
+            <AbilityCard
+              name="Augmented Modular Defense"
+              actType="Reaction"
+              descriptor="Your construct body adapts to protect you from harm."
+              frequency="At-will"
+              keywords="Magical"
+              trigger="You make an overcome roll or an attack roll is made against you"
+              effect={
+                <span>
+                  <span>Choose one of the following options:</span>
+                  <ul>
+                    <li>
+                      <span>
+                        After the roll is resolved, teleport up to 1 zone
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Triggering attack roll takes{" "}
+                        <Modifier type="mf" count="1" /> only against you
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        Your overcome roll gains <Modifier type="f" count="1" />
+                      </span>
+                    </li>
+                  </ul>
+                </span>
+              }
+            />
+
+            <h4 className="header">Immortal Machine (10th-Level Feature)</h4>
+            <p>
+              If you are killed, your essence transfers to a backup construct
+              body after 1d10 days. When your adventures end, it is not death
+              that greets you, but silence. Your form enters a dormant state,
+              buried beneath stone, sealed in a vault, or left standing vigil
+              over a forgotten gate. Ages pass, empires crumble, but your legend
+              does not fade. Someday, when the world needs your strength again,
+              a spark will awaken you, and the forged eternal will rise once
+              more.
+            </p>
+          </div>
+        )}
+        {selectedArchetype === "Godslayer" && (
+          <div>
+            <h2>Godslayer</h2>
+            <p>
+              You exist to end what should not be slain: beings whose names echo
+              through legend and nightmare alike. God-kings, elder dragons,
+              star-born tyrants, and demon princes have all felt your wrath.
+              When others falter in awe, you step forward with blade drawn. You
+              are not a hero. You are the end of legends.
+            </p>
+            <h3 className="header">Archetype Features</h3>
+            <p>
+              Your hit points increase by +12, and you gain the following
+              features.
+            </p>
+            <h4 className="header">Slayer's Training (8th-Level Feature)</h4>
+            <p>
+              You learn a{" "}
+              <Link className="internal-link" to="/fighting-styles">
+                fighting style
+              </Link>{" "}
+              or technique. When you pick a class talent, you can instead learn
+              a fighting style or technique. You also gain training in all armor
+              and weapons.
+            </p>
+            <h4 className="header">Legendary Sense (8th-Level Feature)</h4>
+            <p>
+              You sense the general location of any major or boss monster within
+              your realm.
+            </p>
+
+            <h4 className="header">Execution of Myth (8th-Level Feature)</h4>
+            <p>You gain the following ability:</p>
+            <AbilityCard
+              name="Execution of Myth"
+              actType="Action"
+              descriptor="You attempt to fell a mighty foe with a single strike."
+              frequency="Encounter"
+              keywords="Escalation"
+              effect={<span>Strike and you deal double damage</span>}
+            />
+
+            <h4 className="header">Titan Ender (10th-Level Feature)</h4>
+            <p>When you strike, your damage increases by your tier.</p>
+
+            <h4 className="header">
+              Godslayer Never Rests (10th-Level Feature)
+            </h4>
+            <p>
+              Your role in the cosmos is to end reality warping threats, and you
+              never stop. If you are killed, you return to life after 1d10 days
+              in the realm of your death if your foe is still alive, or another
+              realm where a legendary enemy lives.
+            </p>
+            <p>
+              At the end of your adventures, the gods lie broken, and the world
+              knows peace, but your power has no place in a quiet age. Reality
+              itself begins to reject you, and your body fades as you become a
+              scar in the fabric of the cosmos, a silent reminder that even
+              divinity can fall. Some say your weapon or soul became a falling
+              star, destined to find the next hero bold enough to challenge the
+              heavens when the age of legendary threats begins anew.
+            </p>
+          </div>
+        )}
         {selectedArchetype === "Infinite Wanderer" && (
           <div>
             <h2>Infinite Wanderer</h2>
@@ -1042,10 +1220,7 @@ function LegendaryArchetypes() {
               rest of the multiverse.
             </p>
             <h3 className="header">Archetype Features</h3>
-            <p>
-              Your hit points increase by +8, and you gain the following
-              features.
-            </p>
+            <p>You gain the following features.</p>
             <h4 className="header">Legendary Champion (8th-Level Feature)</h4>
             <p>Choose what type of hero you are: magic or martial.</p>
             <h5>Magic Hero</h5>
@@ -1382,7 +1557,7 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/conditions#confused">
                 confused
               </Link>{" "}
-              (scene ends). At the end of the combat, reality ripples and shakes
+              (scene ends). At the end of the scene, reality ripples and shakes
               as a slightly distorted version of yourself appears from nothing
               with hit points equal to your <ToolTip preset="shakenVal" />.
             </p>
@@ -1533,6 +1708,143 @@ function LegendaryArchetypes() {
               in a sanctuary dedicated to your deity. At the end of your
               adventures, you ascend to sit at the right hand side of your deity
               as their trusted advisor and become a legend among your faith.
+            </p>
+          </div>
+        )}
+        {selectedArchetype === "Timeless Oracle" && (
+          <div>
+            <h2>Timeless Oracle</h2>
+            <p>
+              You have glimpsed the weave of fate and stepped beyond its
+              threads. Whether guided by visions, stars, or echoes of forgotten
+              futures, you now walk a path outside time itself. Past and future
+              blur before you, and prophecy bends to your will. You shape what
+              must be with knowledge no mortal should possess.
+            </p>
+            <h3 className="header">Archetype Features</h3>
+            <p>
+              Your hit points increase by +8, and you gain the following
+              features.
+            </p>
+            <h4 className="header">Timeless Knowledge (8th-Level Feature)</h4>
+            <p>
+              You delve into the time bending magic beyond most mortals. You
+              learn the{" "}
+              <Link className="internal-link" to="/battle-spells#time">
+                time
+              </Link>{" "}
+              tradition and a battle spell from that tradition. If you don’t
+              have mana, then your mana equals 5, and you learn a tier 1 and
+              tier 2 battle spell. When you gain a class talent, you can instead
+              learn a magic tradition or battle spell.
+            </p>
+            <h4 className="header">Fate Die (8th-Level Feature)</h4>
+            <p>
+              After a short rest, roll a d20 and record the result. This is your
+              fate die. When you see the result of a roll, you can replace the
+              result with your fate die's result.
+            </p>
+
+            <h4 className="header">Prophetic Knowledge (10th-Level Feature)</h4>
+            <p>
+              At the start of an encounter, you can use free actions to{" "}
+              <Link className="internal-link" to="/combat-abilities#study">
+                study
+              </Link>{" "}
+              a number of time equal to your proficiency bonus.
+            </p>
+
+            <h4 className="header">Eternal Seer (10th-Level Feature)</h4>
+            <p>
+              Once per long rest, when you are vanquished, reality rewinds. You
+              defeat is reversed and you <ToolTip preset="heal" /> equal to your
+              shaken value. If you have used your fate die, then you gain
+              another fate die.
+            </p>
+
+            <p>
+              At the end of your adventures, time no longer holds meaning. Your
+              presence begins to fade from the world like a dream forgotten upon
+              waking. Some say you now dwell at the edge of time, watching every
+              moment unfold at once. Others claim your final breath was the
+              beginning of a prophecy yet to come. But in every age, when fate
+              teeters on the edge, someone hears your voice in their dreams,
+              whispering the path forward.
+            </p>
+          </div>
+        )}
+        {selectedArchetype === "Warden of the Veil" && (
+          <div>
+            <h2>Warden of the Veil</h2>
+            <p>
+              You have become a sentinel at the threshold between worlds.
+              Whether chosen by ancient spirits, cursed by the beyond, or
+              self-appointed to guard what must not cross, you stand watch over
+              the veil between realities. No hostile entity passes unnoticed, no
+              trespass goes unpunished. You are the warden of the veil, and the
+              boundary between realms holds because you will it.
+            </p>
+            <h3 className="header">Archetype Features</h3>
+            <p>
+              Your hit points increase by +10, and you gain the following
+              features.
+            </p>
+            <h4 className="header">Warden's Training (8th-Level Feature)</h4>
+            <p>
+              You learn a{" "}
+              <Link className="internal-link" to="/fighting-styles">
+                fighting style
+              </Link>{" "}
+              or technique. When you pick a class talent, you can instead learn
+              a fighting style or technique. You also gain training in light
+              armor and all weapons.
+            </p>
+            <h4 className="header">Exile to the Beyond (8th-Level Feature)</h4>
+            <p>
+              You learn the{" "}
+              <Link className="internal-link" to="/battle-spells#holy-banish">
+                banish
+              </Link>{" "}
+              battle spell even if you don’t know the holy magic tradition. Once
+              per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                short rest
+              </Link>
+              , you can cast this spell at your highest spell tier without
+              spending mana.
+            </p>
+
+            <h4 className="header">
+              Dimensional Anchor Aura (10th-Level Feature)
+            </h4>
+            <p>
+              Tears in reality have little effect near you. You and allies
+              within your zone can't be{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#special-movement"
+              >
+                teleported
+              </Link>{" "}
+              against your will. Enemies within your zone can't teleport unless
+              from an ability from you or an ally.
+            </p>
+            <h4 className="header">Eternal Guardian (10th-Level Feature)</h4>
+            <p>
+              Once per long rest, when you are vanquished, you continue to fight
+              as a ghostly projection for 1d4 rounds, ignoring all further
+              damage and dealing half damage with your abilities. At the end of
+              the scene, your body reforms with hit points equal to your{" "}
+              <ToolTip preset="shakenVal" />.
+            </p>
+            <p>
+              At the end of your adventures, your form vanishes like mist in
+              moonlight. Some say you were claimed by the entities you once held
+              back. Others whisper that you became one with the veil itself, now
+              a nameless guardian felt in shivers down spines of those that
+              threaten other realms. When the barriers weaken and the worlds
+              threaten to bleed together, those who remember you feel a cold
+              wind rise, and know the warden walks again.
             </p>
           </div>
         )}
