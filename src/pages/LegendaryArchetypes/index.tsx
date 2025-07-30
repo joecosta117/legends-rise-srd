@@ -1108,7 +1108,26 @@ function LegendaryArchetypes() {
             />
 
             <h4 className="header">Titan Ender (10th-Level Feature)</h4>
-            <p>When you strike, your damage increases by your tier.</p>
+            {/* <p>
+              When you strike, your damage increases by your tier. You gain{" "}
+              <Modifier type="f" count="1" /> on attack rolls against major or
+              boss monsters, increasing to{" "}
+            </p> */}
+            <p>You gain the following benefits:</p>
+            <ul>
+              <li>
+                <span>
+                  You gain <Modifier type="f" count="1" /> on attack rolls
+                  against huge or colossal creatures
+                </span>
+              </li>
+              <li>
+                <span>
+                  You gain <Modifier type="f" count="1" /> on attack rolls
+                  against major or boss monsters
+                </span>
+              </li>
+            </ul>
 
             <h4 className="header">
               Godslayer Never Rests (10th-Level Feature)
