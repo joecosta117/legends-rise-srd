@@ -47,7 +47,10 @@ function Armor() {
             <tr>
               <td>Shield</td>
               <td>Guard +1</td>
-              <td>Can be used as a melee weapon, dealing 2 physical damage</td>
+              <td>
+                Can be used as a standard melee weapon, dealing 2 physical
+                damage
+              </td>
             </tr>
           </tbody>
         </table>
