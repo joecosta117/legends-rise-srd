@@ -317,9 +317,9 @@ function HeroCreationSteps() {
           </Link>{" "}
           to add your proficiency bonus to the result. You can only invoke your
           background if the background is relevant towards the challenge. For
-          example, a hero with the background <i>dragon hunter</i> could invoke
-          this background to add their proficiency bonus on their skill roll to
-          track a monster in the forest.
+          example, a hero with the background "dragon hunter" could invoke this
+          background to add their proficiency bonus on their skill roll to track
+          a monster in the forest.
         </p>
         <Accordion title="Choosing Your Background" content={backgroundInfo} />
         <h3 className="header">Invoking Knacks</h3>
