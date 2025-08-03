@@ -283,7 +283,7 @@ function HeroCreationSteps() {
         >
           ANCESTRIES LIST
         </button>
-        <h2>Step 2: Choose a Class</h2>
+        <h2>Step 2: Choose a Class and Subclass</h2>
         <p>
           Choose a class for your hero, which represents your training and
           talents as an adventurer. Classes grant your hero many abilities and
