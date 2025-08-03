@@ -947,21 +947,15 @@ function FightingStyles() {
                 descriptor="As an ally pulls themself together, your medical advice improves the process."
                 trigger={
                   <span>
-                    You see an ally with your zone{" "}
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#rally"
-                    >
-                      rally
-                    </Link>{" "}
-                    or make an{" "}
+                    You see an ally with your zone <ToolTip preset="heal" /> or
+                    make an{" "}
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>
                   </span>
                 }
                 frequency="At-will"
-                effect="If the triggering ally used Rally then increase the hit points regained by your proficiency bonus, or they gain +1 fortune to their overcome roll."
+                effect="If the triggering ally healed, then increase the amount by your proficiency bonus, or if they made an overcome roll, then they gain +1 fortune to that roll."
               />
               <AbilityCard
                 name="Overcome This"
