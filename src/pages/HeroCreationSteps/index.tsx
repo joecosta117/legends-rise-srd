@@ -229,7 +229,7 @@ function HeroCreationSteps() {
         <b>Skills:</b>{" "}
         <i>
           animal friend, ancient history, dragon lore, military tactics, lock
-          perception, picking, sneaking, tinkering, tracking
+          picking, perception, sneaking, tinkering, tracking
         </i>
       </p>
       <p>
