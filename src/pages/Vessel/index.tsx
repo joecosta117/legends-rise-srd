@@ -318,11 +318,10 @@ function Vessel() {
               </li>
               <li>
                 <span>
-                  <b>Inferno:</b> When you use monstrous form, fire explodes
-                  from you that deals fire damage equal to your tier to all
-                  enemies within your zone. On later turns while in your
-                  monstrous form, you can use a maneuver to deal this same
-                  damage again.
+                  <b>Inferno:</b> When you use monstrous form, flames erupt that
+                  deal fire damage equal to your tier to all enemies within your
+                  zone. On later turns while in your monstrous form, you can use
+                  a maneuver to deal this same damage again.
                 </span>
               </li>
               <li>
@@ -354,22 +353,21 @@ function Vessel() {
             </p>
             <h3 className="header">Divine Type (1st-Level Feature)</h3>
             <p>
-              Choose angel or demon. You gain the following benefit depending on
-              your choice:
+              Choose angel or demon. While in your monstrous form, you gain the
+              following benefit depending on your choice:
             </p>
             <ul>
               <li>
                 <span>
-                  <b>Angel:</b> While in your monstrous form, you gain a fury
-                  point whenever an ally within your zone takes damage.
+                  <b>Angel:</b> You gain a fury point whenever an ally within
+                  your zone takes damage.
                 </span>
               </li>
               <li>
                 <span>
-                  <b>Demon:</b> While in your monstrous form, you gain a fury
-                  point whenever an enemy within your zone is reduced to 0 hit
-                  points or takes damage from a critically successful attack
-                  roll.
+                  <b>Demon:</b> You gain a fury point whenever an enemy within
+                  your zone is reduced to 0 hit points or takes damage from a
+                  critically successful attack roll.
                 </span>
               </li>
             </ul>
@@ -662,8 +660,8 @@ function Vessel() {
 
             <h3 className="header">Momentous Fury</h3>
             <p>
-              When you enter an encounter, your starting fury points equal your
-              momentum.
+              When you enter an encounter, your starting fury points equal to
+              your momentum die.
             </p>
 
             <h3 className="header">Undying Monster</h3>
