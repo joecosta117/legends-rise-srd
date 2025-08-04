@@ -1761,7 +1761,8 @@ function LegendaryArchetypes() {
             <p>
               After a short rest, roll a d20 and record the result. This is your
               fate die. When you see the result of a roll, you can replace the
-              result with your fate die's result.
+              result with your fate die's result. You can only have one fate die
+              at a time.
             </p>
 
             <h4 className="header">Prophetic Knowledge (10th-Level Feature)</h4>
