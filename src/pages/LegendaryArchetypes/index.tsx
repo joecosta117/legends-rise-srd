@@ -164,7 +164,7 @@ function LegendaryArchetypes() {
             <p>
               Your soul becomes fully angelic. Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you become vanquished, your body disappears in a flash of
               radiant light. Make an{" "}
@@ -484,7 +484,7 @@ function LegendaryArchetypes() {
             <p>
               Your soul becomes fully demonic. Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you are vanquished, your body disappears in a flash of
               unholy energy. Make an{" "}
@@ -1367,7 +1367,7 @@ function LegendaryArchetypes() {
             <p>
               Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you are vanquished, you instead{" "}
               <Link className="internal-link" to="/combat-abilities#stand">
@@ -1564,7 +1564,7 @@ function LegendaryArchetypes() {
               Your soul and body transforms into a terribly unknown aberration.
               Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you are vanquished, your body disappears into a psychic
               explosion. Make an{" "}
@@ -1778,7 +1778,7 @@ function LegendaryArchetypes() {
             <p>
               Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you are vanquished, reality rewinds. You defeat is reversed
               and you <ToolTip preset="heal" /> equal to your shaken value. If
@@ -1856,7 +1856,7 @@ function LegendaryArchetypes() {
             <p>
               Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you are vanquished, you continue to fight as a ghostly
               projection for 1d4 rounds, ignoring all further damage and dealing

@@ -665,7 +665,7 @@ function CombatRules() {
               Unless the feature specifies, temporary hit points last until
               after a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               .
             </span>
@@ -717,7 +717,7 @@ function CombatRules() {
           Wounds represent how close your hero is to death after sustaining
           massive injuries. Wounds always reset to 0 after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           .
         </p>
@@ -733,7 +733,7 @@ function CombatRules() {
               removed from the scene. You return to consciousness fully restored
               after your fellow heroes take a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               .
             </span>
@@ -777,7 +777,7 @@ function CombatRules() {
           Heroes add the momentum die's value to all rolls. Your momentum die
           always resets to 0 after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           .
         </p>

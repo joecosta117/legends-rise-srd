@@ -35,7 +35,7 @@ export const ritualSpells = [
             </span>
           }
           partial="Sensors can see in normal light"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -64,7 +64,7 @@ export const ritualSpells = [
           critical="Servant lasts for a full day"
           success="Servant lasts for 8 hours"
           partial="Servant lasts for 1 hour"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -82,7 +82,7 @@ export const ritualSpells = [
           critical="Item lasts for a full day"
           success="Item lasts for 8 hours"
           partial="Item lasts for 1 hour"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -100,7 +100,7 @@ export const ritualSpells = [
           critical="Same as success, and the steed can walk on water and gains a fly speed of 1"
           success="Steed lasts for 8 hours"
           partial="Steed lasts for 1 hour"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -128,7 +128,7 @@ export const ritualSpells = [
           critical="Same as success, but the size of the disguise can be one larger or smaller"
           success="Disguise lasts for 8 hours"
           partial="Disguise lasts for 1 hour, and creatures have +1 fortune on skill rolls to see through the illusion"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -150,7 +150,7 @@ export const ritualSpells = [
             </span>
           }
           partial="Target gains night vision for 1 hour"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -177,7 +177,7 @@ export const ritualSpells = [
             </span>
           }
           partial="Target becomes invisible for 10 minutes"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -206,7 +206,7 @@ export const ritualSpells = [
           critical="Lock duration is unlimited"
           success="Lock duration is a full day"
           partial="Lock duration is 1 hour"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -225,7 +225,7 @@ export const ritualSpells = [
           critical="Duration is 8 hours"
           success="Duration is 1 hour"
           partial="Duration is 10 minutes"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -244,7 +244,7 @@ export const ritualSpells = [
           critical="Same as a success, and the target can write and speak the language perfectly too"
           success="Target understands the language perfectly"
           partial="Target doesn’t understand the language perfectly, but instead only makes out bits and pieces of words correctly"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -280,7 +280,7 @@ export const ritualSpells = [
           critical="Same as a success, but you and the duplicate can communicate telepathically with one another"
           success="You have control over the duplicate and can give it verbal commands"
           partial="Duplicate is not under your control, and might regard you as neutral or hostile"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -299,7 +299,7 @@ export const ritualSpells = [
           critical="Spell lasts for 8 hours"
           success="Spell lasts for 1 hour"
           partial="Spell lasts for 10 minutes"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -318,7 +318,7 @@ export const ritualSpells = [
           critical="Range of the spell is your realm"
           success="Range of the spell is 10 miles"
           partial="Range of the spell is 1 mile"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -355,7 +355,7 @@ export const ritualSpells = [
             </span>
           }
           partial="Eye has normal vision"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -374,7 +374,7 @@ export const ritualSpells = [
           critical="Target can be anywhere within your realm"
           success="Target can't be more than 100 miles away"
           partial="Target can't be more than 10 miles away"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -403,7 +403,7 @@ export const ritualSpells = [
           critical="Other creatures take +1 misfortune to enter the dome"
           success="Spell works"
           partial="Other creatures gain +1 fortune to enter the dome"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -433,7 +433,7 @@ export const ritualSpells = [
           critical="Your sensor can see anything invisible"
           success="Spell works"
           partial="Spell works, but the target is aware they’re being magically spied on"
-          failure="Spell fails, target gains a brief glimpse of you and knows your location, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, target gains a brief glimpse of you and knows your location, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -454,7 +454,7 @@ export const ritualSpells = [
           critical="Structure is the size of a large keep"
           success="Structure is the size of a mansion"
           partial="Structure is the size of a normal house"
-          failure="Spell fails, and you can't attempt this spell again until after a long rest"
+          failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -486,7 +486,7 @@ export const ritualSpells = [
           critical="Teleportation works as intended"
           success="Teleport to a location 1d12 miles away from the intended target"
           partial="Teleport to a location 2d12+6 miles away from the intended target"
-          failure="Teleport to a random location within your realm, and you can't attempt this spell again until after a long rest"
+          failure="Teleport to a random location within your realm, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -518,7 +518,7 @@ export const ritualSpells = [
           critical="Teleportation works as intended"
           success="Teleport to a location 1d12 miles away from the intended target"
           partial="Teleport to a location 2d12+6 miles away from the intended target"
-          failure="Teleport to a random location within a random realm, and you can't attempt this spell again until after a long rest"
+          failure="Teleport to a random location within a random realm, and you can't attempt this spell again until after a safe rest"
         />
       ),
     },
@@ -552,13 +552,13 @@ export const ritualSpells = [
               </Link>{" "}
               until after a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               .
             </span>
           }
           partial="Same as a success, but the target is hindered for a week"
-          failure="Spell fails, you can't attempt this spell again until after a long rest, and you take a growing +1 misfortune on this spell to resurrect the same target again."
+          failure="Spell fails, you can't attempt this spell again until after a safe rest, and you take a growing +1 misfortune on this spell to resurrect the same target again."
         />
       ),
     },

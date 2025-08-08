@@ -1129,7 +1129,7 @@ const MonstrosityMonsters = [
             defense: "Guard",
             damage: "4 physical damage",
             success:
-              "Target becomes cursed with lycanthropy (long rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a wererat under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a long rest.",
+              "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a wererat under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
           {
             basic: true,
@@ -1222,7 +1222,7 @@ const MonstrosityMonsters = [
             defense: "Guard",
             damage: "4 physical damage",
             success:
-              "Target becomes cursed with lycanthropy (long rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a long rest.",
+              "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
           {
             basic: true,
@@ -1327,7 +1327,7 @@ const MonstrosityMonsters = [
             defense: "Guard",
             damage: "4 physical damage",
             success:
-              "Target becomes cursed with lycanthropy (long rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a long rest.",
+              "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
           {
             basic: true,

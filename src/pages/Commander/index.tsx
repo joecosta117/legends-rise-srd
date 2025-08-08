@@ -264,7 +264,7 @@ function Commander() {
               </Link>{" "}
               set to 1 after a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               .
             </p>
