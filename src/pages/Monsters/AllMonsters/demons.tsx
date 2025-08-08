@@ -899,17 +899,10 @@ const DemonMonsters = [
               <span>
                 The pride demon's aura fills their enemies with overconfidence.
                 Enemies within the pride demon's zone can't{" "}
-                <Link
-                  className="internal-link"
-                  to="/combat-abilities#disengage"
-                >
-                  disengage
-                </Link>
-                ,{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
-                </Link>
-                , or{" "}
+                </Link>{" "}
+                or{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#special-movement"

@@ -626,7 +626,6 @@ function Druid() {
               frequency="At-will"
               keywords="Magical"
               trigger="You see a creature take damage within your call spirit animal's zone"
-              // @ts-ignore
               effect={
                 <span>
                   <span>
@@ -644,9 +643,9 @@ function Druid() {
                         <i>Owl:</i>{" "}
                         <Link
                           className="internal-link"
-                          to="/combat-abilities#disengage"
+                          to="/combat-abilities#move"
                         >
-                          Disengage
+                          Move
                         </Link>{" "}
                         as a free action
                       </span>
@@ -667,7 +666,7 @@ function Druid() {
                         >
                           spellcast
                         </Link>{" "}
-                        a tier 0 battle spell as a reaction
+                        a tier 0 battle spell as a free action
                       </span>
                     </li>
                   </ul>

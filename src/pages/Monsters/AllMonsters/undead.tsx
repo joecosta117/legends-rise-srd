@@ -331,10 +331,6 @@ const UndeadMonsters = [
           hide
         </Link>{" "}
         in darkness, or attack then{" "}
-        <Link className="internal-link" to="/combat-abilities#disengage">
-          disengage
-        </Link>{" "}
-        or{" "}
         <Link className="internal-link" to="/combat-abilities#move">
           move
         </Link>{" "}

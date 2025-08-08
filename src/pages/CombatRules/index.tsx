@@ -269,11 +269,7 @@ function CombatRules() {
             move
           </Link>{" "}
           within your zone, or to an adjacent zone if you’re at a zone’s border.
-          You can’t{" "}
-          <Link className="internal-link" to="/combat-abilities#disengage">
-            disengage
-          </Link>{" "}
-          while your speed is 0. If you’re in a{" "}
+          If you’re in a{" "}
           <Link className="internal-link" to="/rules/combat#zone-types">
             difficult zone
           </Link>
@@ -372,11 +368,7 @@ function CombatRules() {
               </Link>{" "}
               to enter or exit a difficult zone, you only get to the border of
               the zone, and next time you move, you can fully enter or exit the
-              zone. You also can’t crawl or{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>{" "}
-              inside a difficult zone.
+              zone.
             </span>
           </li>
           <li>

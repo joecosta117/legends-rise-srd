@@ -156,13 +156,6 @@ function Commander() {
                     Strike
                   </Link>
                   , and choose an an ally within 1 zone. The chosen ally can{" "}
-                  <Link
-                    className="internal-link"
-                    to="/combat-abilities#disengage"
-                  >
-                    disengage
-                  </Link>
-                  ,{" "}
                   <Link className="internal-link" to="/combat-abilities#move">
                     move
                   </Link>
@@ -406,10 +399,6 @@ function Commander() {
             <h3 className="header">Greater Inspiration</h3>
             <p>
               When you use inspiring attack, the chosen ally can{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>
-              ,{" "}
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>
@@ -495,10 +484,6 @@ function Commander() {
             <p>
               When you use inspiring attack, you and all allies within 1 zone
               can{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>{" "}
-              or{" "}
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>{" "}

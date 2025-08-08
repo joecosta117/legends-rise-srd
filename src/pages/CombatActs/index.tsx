@@ -196,30 +196,6 @@ function CombatActs() {
       ),
     },
     {
-      title: "Disengage (Maneuver)",
-      id: "disengage",
-      actType: "Maneuver",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You carefully step away."
-            frequency="At-will"
-            requirement={
-              <span>
-                You aren't in a{" "}
-                <Link className="internal-link" to="/rules/combat#zone-types">
-                  difficult zone
-                </Link>{" "}
-                and your speed isn't 0
-              </span>
-            }
-            effect="You traverse anywhere within your zone, or if you’re already at your zone’s border, you can cross into the adjacent zone."
-          />
-        </div>
-      ),
-    },
-    {
       title: "Grab (Maneuver)",
       id: "grab",
       actType: "Maneuver",

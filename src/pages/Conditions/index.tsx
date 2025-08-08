@@ -45,23 +45,13 @@ function Conditions() {
       title: "Prone",
       id: "prone",
       content: (
-        <div>
-          <ul style={{ marginTop: "0" }}>
-            <li>
-              <span>
-                You take <Modifier type="mf" count="1" /> to{" "}
-                <Link className="internal-link" to="/rules/combat#attack-roll">
-                  attack rolls
-                </Link>
-                , and attack rolls against you gain{" "}
-                <Modifier type="f" count="1" />
-              </span>
-            </li>
-            <li>
-              <span>Your speed is halved</span>
-            </li>
-          </ul>
-        </div>
+        <p>
+          You take <Modifier type="mf" count="1" /> to{" "}
+          <Link className="internal-link" to="/rules/combat#attack-roll">
+            attack rolls
+          </Link>
+          , and attack rolls against you gain <Modifier type="f" count="1" />
+        </p>
       ),
     },
     {
@@ -72,28 +62,20 @@ function Conditions() {
           <ul style={{ marginTop: "0" }}>
             <li>
               <span>
+                You can't{" "}
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
+                </Link>
+              </span>
+            </li>
+            <li>
+              <span>
                 You take <Modifier type="mf" count="1" /> to{" "}
                 <Link className="internal-link" to="/rules/combat#attack-roll">
                   attack rolls
                 </Link>
                 , and attack rolls against you gain{" "}
                 <Modifier type="f" count="1" />
-              </span>
-            </li>
-
-            <li>
-              <span>
-                You can't{" "}
-                <Link
-                  className="internal-link"
-                  to="/combat-abilities#disengage"
-                >
-                  disengage
-                </Link>{" "}
-                or{" "}
-                <Link className="internal-link" to="/combat-abilities#move">
-                  move
-                </Link>
               </span>
             </li>
             <li>
@@ -103,7 +85,6 @@ function Conditions() {
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>
-                , but they can only move at half their speed
               </span>
             </li>
             <li>

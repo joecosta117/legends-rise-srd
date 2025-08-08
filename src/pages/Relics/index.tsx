@@ -1201,15 +1201,8 @@ function Relics() {
               keywords="Magical"
               effect={
                 <span>
-                  <Link
-                    className="internal-link"
-                    to="/combat-abilities#disengage"
-                  >
-                    Disengage
-                  </Link>{" "}
-                  or{" "}
                   <Link className="internal-link" to="/combat-abilities#move">
-                    move
+                    Move
                   </Link>
                 </span>
               }

@@ -4654,13 +4654,6 @@ export const teleportationSpells = [
               <span>
                 Create a portal in each of the targeted zones. Creatures of your
                 choice can{" "}
-                <Link
-                  className="internal-link"
-                  to="/combat-abilities#disengage"
-                >
-                  disengage
-                </Link>{" "}
-                or{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}

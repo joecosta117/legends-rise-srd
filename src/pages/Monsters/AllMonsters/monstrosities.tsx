@@ -1093,8 +1093,8 @@ const MonstrosityMonsters = [
     tactics: (
       <span>
         Wererats will rush the heroes to use cursed bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#disengage">
-          disengage
+        <Link className="internal-link" to="/combat-abilities#move">
+          move
         </Link>{" "}
         as their maneuver.
       </span>
