@@ -116,7 +116,7 @@ function Druid() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 4
+                  <b>Recoveries:</b> 6
                 </span>
               </li>
               <li>

@@ -94,7 +94,7 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 5
+                  <b>Recoveries:</b> 7
                 </span>
               </li>
               <li>
@@ -423,7 +423,7 @@ function Ranger() {
               <li>
                 <span>
                   Your hit points increase to 12 per tier, and your recoveries
-                  increase to 6.
+                  increase to 8.
                 </span>
               </li>
               <li>

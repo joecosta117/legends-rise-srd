@@ -95,7 +95,7 @@ function Vessel() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 6
+                  <b>Recoveries:</b> 8
                 </span>
               </li>
               <li>

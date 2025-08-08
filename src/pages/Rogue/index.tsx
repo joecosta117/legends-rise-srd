@@ -93,7 +93,7 @@ function Rogue() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 5
+                  <b>Recoveries:</b> 7
                 </span>
               </li>
               <li>

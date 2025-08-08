@@ -116,7 +116,7 @@ function Arcanist() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 4
+                  <b>Recoveries:</b> 8
                 </span>
               </li>
               <li>

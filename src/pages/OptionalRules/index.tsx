@@ -112,17 +112,17 @@ function OptionalRules() {
         <ul>
           <li>
             <span>
-              <b>Easy Encounter:</b> 100 XP per hero
+              <b>Easy Encounter:</b> 50 XP per hero
             </span>
           </li>
           <li>
             <span>
-              <b>Medium Encounter:</b> 200 XP per hero
+              <b>Medium Encounter:</b> 100 XP per hero
             </span>
           </li>
           <li>
             <span>
-              <b>Hard Encounter:</b> 300 XP per hero
+              <b>Hard Encounter:</b> 200 XP per hero
             </span>
           </li>
         </ul>

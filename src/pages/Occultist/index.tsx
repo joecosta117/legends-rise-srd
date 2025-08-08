@@ -116,7 +116,7 @@ function Occultist() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b> 4
+                  <b>Recoveries:</b> 6
                 </span>
               </li>
               <li>
@@ -380,7 +380,7 @@ function Occultist() {
               <li>
                 <span>
                   Your starting hit points increase to 10, and your recoveries
-                  increase to 5.
+                  increase to 7.
                 </span>
               </li>
               <li>
