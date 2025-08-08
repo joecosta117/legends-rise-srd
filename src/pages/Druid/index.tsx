@@ -288,7 +288,7 @@ function Druid() {
               associated damage type, you deal additional damage equal to your
               tier. You can change your realm attunement after a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                short rest
               </Link>
               .
             </p>

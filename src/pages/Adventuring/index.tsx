@@ -254,33 +254,40 @@ function Adventuring() {
           During adventures, resting will be your best chance to recover after a
           harrowing day. There are two types of rest:
         </p>
-        <ul>
-          <li>
-            <span>
-              <b>Short Rest:</b> This rest typically requires a few minutes to
-              catch your breath and quickly mend wounds, but can be shorter if
-              narratively appropriate as decided by the GM. Certain abilities
-              require a short rest before they can be used again. You can also
-              spend recoveries to <ToolTip preset="heal" /> during a short rest.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Long Rest:</b> This rest requires a full night of sleep. After
-              a long rest, you gain the benefits of taking a short rest,{" "}
-              <ToolTip preset="heal" /> all hit points, lose any{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                wounds
-              </Link>
-              , regain spent recoveries, and the{" "}
-              <Link className="internal-link" to="/rules/combat#momentum">
-                momentum die
-              </Link>{" "}
-              resets to 0. A hero can’t benefit from more than one long rest in
-              a day.
-            </span>
-          </li>
-        </ul>
+        <h3 className="header">Short Rest</h3>
+        <p>
+          his rest typically requires a few minutes to catch your breath and
+          quickly mend wounds, but can be shorter if narratively appropriate as
+          decided by the GM. Certain abilities require a short rest before they
+          can be used again. You can also spend recoveries to{" "}
+          <ToolTip preset="heal" /> during a short rest.
+        </p>
+        <h3 className="header">Safe Rest</h3>
+        <p>
+          This rest requires at least 24 hours of relaxation in a secure haven,
+          such as a town, inn, or other location free from immediate danger.
+          Sleeping while traveling or hiding in a dungeon crawling with monsters
+          is not enough.
+        </p>
+        <p>
+          After a safe rest, you gain the benefits of a short rest,{" "}
+          <ToolTip preset="heal" /> all hit points, remove all{" "}
+          <Link className="internal-link" to="/rules/combat#dying">
+            wounds
+          </Link>
+          , regain spent recoveries, and reset the{" "}
+          <Link className="internal-link" to="/rules/combat#momentum">
+            momentum die
+          </Link>{" "}
+          to 0. A hero can’t benefit from more than one safe rest in a day.
+        </p>
+        <p>
+          For example, in The Lord of the Rings, the Fellowship’s journey from
+          the Shire to Rivendell involves many nights of sleep, yet they are
+          never truly safe due to the Nazgûl pursuit. Only upon reaching
+          Rivendell, a secure haven, do they enjoy the full recovery of a safe
+          rest.
+        </p>
       </div>
     </div>
   );

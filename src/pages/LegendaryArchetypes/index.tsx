@@ -1776,10 +1776,13 @@ function LegendaryArchetypes() {
 
             <h4 className="header">Eternal Seer (10th-Level Feature)</h4>
             <p>
-              Once per long rest, when you are vanquished, reality rewinds. You
-              defeat is reversed and you <ToolTip preset="heal" /> equal to your
-              shaken value. If you have used your fate die, then you gain
-              another fate die.
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you are vanquished, reality rewinds. You defeat is reversed
+              and you <ToolTip preset="heal" /> equal to your shaken value. If
+              you have used your fate die, then you gain another fate die.
             </p>
 
             <p>
@@ -1851,10 +1854,14 @@ function LegendaryArchetypes() {
             </p>
             <h4 className="header">Eternal Guardian (10th-Level Feature)</h4>
             <p>
-              Once per long rest, when you are vanquished, you continue to fight
-              as a ghostly projection for 1d4 rounds, ignoring all further
-              damage and dealing half damage with your abilities. At the end of
-              the scene, your body reforms with hit points equal to your{" "}
+              Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                long rest
+              </Link>
+              , when you are vanquished, you continue to fight as a ghostly
+              projection for 1d4 rounds, ignoring all further damage and dealing
+              half damage with your abilities. At the end of the scene, your
+              body reforms with hit points equal to your{" "}
               <ToolTip preset="shakenVal" />.
             </p>
             <p>

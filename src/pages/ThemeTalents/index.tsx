@@ -91,7 +91,7 @@ function ThemeTalents() {
           telepathically communicate with one another within 1 mile. The
           familiar dies after taking any damage, but can be resummoned after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           .
         </span>
@@ -119,11 +119,7 @@ function ThemeTalents() {
       title: "Risky Ritual",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can cast a{" "}
+          Once per session, you can cast a{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
           </Link>{" "}
@@ -160,13 +156,10 @@ function ThemeTalents() {
       content: (
         <span>
           You always can detect magic near you, such as in the same room, but
-          you don’t know the precise location or nature of the magic. Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can heighten your senses to discern the precise location and
-          nature of magic within the same room, or within 1 mile at tier 2, or
-          within your realm at tier 3.
+          you don’t know the precise location or nature of the magic. Once per
+          session, you can heighten your senses to discern the precise location
+          and nature of magic within the same room, or within 1 mile at tier 2,
+          or within your realm at tier 3.
         </span>
       ),
     },
@@ -212,11 +205,7 @@ function ThemeTalents() {
       title: "Quick Ritual",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can cast a{" "}
+          Once per session, you can cast a{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
           </Link>{" "}
@@ -312,11 +301,7 @@ function ThemeTalents() {
       title: "Flashback",
       content: (
         <span>
-          You’re always prepared. Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , when you make a{" "}
+          You’re always prepared. Once per session, when you make a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -334,12 +319,8 @@ function ThemeTalents() {
       title: "Right Tool for the Job",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can declare to have any non-magical item of your tier on your
-          person.
+          Once per session, you can declare to have any non-magical item of your
+          tier on your person.
         </span>
       ),
     },
@@ -456,13 +437,9 @@ function ThemeTalents() {
       title: "Augury",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can ask a higher power on the result of a proposed course of
-          action. The entity replies in a one word answer (good, bad, or
-          unknown) to the best of its knowledge.
+          Once per session, you can ask a higher power on the result of a
+          proposed course of action. The entity replies in a one word answer
+          (good, bad, or unknown) to the best of its knowledge.
         </span>
       ),
     },
@@ -470,12 +447,8 @@ function ThemeTalents() {
       title: "Desperate Prayer",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can quickly ask the higher powers for a creature to gain{" "}
-          <Modifier type="f" count="1" /> to a{" "}
+          Once per session, you can quickly ask the higher powers for a creature
+          to gain <Modifier type="f" count="1" /> to a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -489,13 +462,9 @@ function ThemeTalents() {
         <span>
           Within the same room or nearby area, you can sense the presence of
           undead and creatures from the outer realms, such as angels, fiends, or
-          faeries. Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can heighten your senses to discern the precise location and
-          nature of the creatures within the same room, or within 1 mile at tier
-          2, or within your realm at tier 3.
+          faeries. Once per session, you can heighten your senses to discern the
+          precise location and nature of the creatures within the same room, or
+          within 1 mile at tier 2, or within your realm at tier 3.
         </span>
       ),
     },
@@ -524,7 +493,7 @@ function ThemeTalents() {
           communicate with one another within 1 mile. The servitor dies after
           taking any damage, but can be resummoned after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           .
         </span>
@@ -588,11 +557,8 @@ function ThemeTalents() {
       title: "Minor Miracle",
       content: (
         <span>
-          You can channel your faith to manifest a minor miracle. Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , when you see a creature get a failure or partial success on a{" "}
+          You can channel your faith to manifest a minor miracle. Once per
+          session, when you see a creature get a failure or partial success on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -619,16 +585,13 @@ function ThemeTalents() {
       title: "Adrenaline Rush",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can gain <Modifier type="f" count="1" /> to all{" "}
+          You can push your body beyond your limits. You can take direct equal
+          to your proficiency bonus to gain <Modifier type="f" count="1" /> to
+          all{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
-          during a scene, but then take <Modifier type="mf" count="1" /> to all
-          skill rolls until you take a long rest.
+          during a scene.
         </span>
       ),
     },
@@ -709,11 +672,7 @@ function ThemeTalents() {
       title: "Martial Persistence",
       content: (
         <span>
-          Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , when you get a failure on a{" "}
+          Once per session, when you get a failure on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -794,7 +753,7 @@ function ThemeTalents() {
           , all allies gain a stacking <Modifier type="f" count="1" /> to their
           next skill roll that lasts until after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           .
         </span>
@@ -823,10 +782,10 @@ function ThemeTalents() {
           You can craft natural poultices and other herbal remedies that enhance
           one’s physical capabilities. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           , you can create a number of poultices equal to your proficiency
-          bonus, but their effects fade after the next long rest. When a
+          bonus, but their effects fade after the next safe rest. When a
           creature uses one of your poultices, they gain one of the following
           effects of your choice: swim speed 1 for a scene, climb speed 1 for a
           scene, <ToolTip preset="night" /> for a scene, cure a non-magical
@@ -853,13 +812,9 @@ function ThemeTalents() {
       content: (
         <span>
           You reach out to the ancient spirits that inhabit the land, plants,
-          and elements. Once per{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          , you can speak to ancient spirits for a scene. The spirits do their
-          best to answer your questions, but their knowledge is limited to the
-          nearby area.
+          and elements. Once per session, you can speak to ancient spirits for a
+          scene. The spirits do their best to answer your questions, but their
+          knowledge is limited to the nearby area.
         </span>
       ),
     },
@@ -897,7 +852,7 @@ function ThemeTalents() {
           nature companion dies after taking any damage, but you can befriend a
           new companion after a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
+            safe rest
           </Link>
           .
         </span>
@@ -920,14 +875,9 @@ function ThemeTalents() {
       title: "Shapeshifter",
       content: (
         <span>
-          You can transform into a tiny or small creature such as a spider,
-          robin, cat, or fish. Your defenses all equal 10, and if you take any
-          damage, you revert back to your normal form and can’t transform again
-          until after a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            long rest
-          </Link>
-          .
+          Once per session, you can transform into a tiny or small creature such
+          as a spider, robin, cat, or fish. Your defenses all equal 10, and if
+          you take any damage, you revert back to your normal form.
         </span>
       ),
     },

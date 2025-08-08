@@ -120,13 +120,13 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 4. You can only gain the benefits of
+                  <ToolTip preset="heal" /> 5. You can only gain the benefits of
                   this potion once per{" "}
                   <Link
                     className="internal-link"
                     to="/rules/adventuring#resting"
                   >
-                    long rest
+                    safe rest
                   </Link>
                   .
                 </span>
@@ -138,7 +138,7 @@ function Consumables() {
               content={
                 <span>
                   This vial of cool blue liquid restores magical essence beyond
-                  your normal limits. When you drink this potion, you regain 1
+                  your normal limits. When you drink this potion, you regain 2
                   mana. You can only gain the benefits of this potion once per{" "}
                   <Link
                     className="internal-link"

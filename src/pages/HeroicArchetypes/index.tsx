@@ -750,7 +750,7 @@ function HeroicArchetypes() {
               </Link>
               . A creature can only remove a wound this way once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               .
             </p>

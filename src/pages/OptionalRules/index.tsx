@@ -24,6 +24,13 @@ function OptionalRules() {
             </a>
           </li>
           <li>
+            <a href="#xp">
+              <span>
+                <b>Experience Points Leveling</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#level-0">
               <span>
                 <b>Level 0 Heroes</b>
@@ -96,6 +103,34 @@ function OptionalRules() {
           </Link>
           , one of the consequences could be the GM incrementing the doom die by
           1.
+        </p>
+
+        <h2 id="xp">Experience Points (XP) Leveling</h2>
+        <p>
+          Instead of milestone leveling, the GM may award XP after encounters:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Easy Encounter:</b> 100 XP per hero
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Medium Encounter:</b> 200 XP per hero
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Hard Encounter:</b> 300 XP per hero
+            </span>
+          </li>
+        </ul>
+        <p>
+          Heroes level up when they reach <b>1,000 XP</b>. Upon leveling up,
+          subtract 1,000 XP and continue tracking toward the next level. If the
+          GM wants a faster leveling pace, then level up heroes when they reach
+          500 XP, ro 2,000 XP for a slower leveling pace.
         </p>
 
         <h2 id="level-0">Level 0 Heroes</h2>

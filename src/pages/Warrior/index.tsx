@@ -257,7 +257,7 @@ function Warrior() {
               </Link>{" "}
               total is 10 or more over the target’s defense, you achieve a super
               critical. This is a critical success, but instead of adding your
-              proficiency bonus to the damage, you add dobule your proficiency
+              proficiency bonus to the damage, you add double your proficiency
               bonus.
             </p>
 
@@ -430,7 +430,7 @@ function Warrior() {
             <p>
               Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , you can turn a{" "}
               <Link className="internal-link" to="/combat-abilities#strike">

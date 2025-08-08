@@ -1658,7 +1658,7 @@ function Relics() {
                       className="internal-link"
                       to="/rules/adventuring#resting"
                     >
-                      long rest
+                      safe rest
                     </Link>
                     .
                   </span>

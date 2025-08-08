@@ -711,8 +711,7 @@ function CombatRules() {
           At the end of your turn while dying, make an overcome roll to see if
           you inch closer to death. On a failure, you take a <b>wound</b>. If
           you take damage while dying, you also take a wound, or two wounds if
-          the damage came from a critical success. If damage from a critical
-          success makes you dying, then you also take a wound.
+          the damage came from a critical success.
         </p>
         <p>
           Wounds represent how close your hero is to death after sustaining

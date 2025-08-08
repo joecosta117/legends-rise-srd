@@ -43,8 +43,11 @@ function Summoner() {
         Minions follow different rules from regular creatures. Minions of the
         same type are part of a <b>minion group</b>.
       </p>
-      <h4 className="header">One Turn</h4>
-      <p>All minions of a minion group act on the same turn in combat.</p>
+      <h4 className="header">One Turn, One Act</h4>
+      <p>
+        All minions of a minion group act on the same turn in combat. On a
+        minion's turn, they can use a maneuver or action, but not both.
+      </p>
       <h4 className="header">Easy to Kill</h4>
       <p>
         When a minion takes damage, if the damage is less than the minion’s
@@ -1063,7 +1066,7 @@ function Summoner() {
             <p>
               Once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , when you use conjure summons, you conjure two major summons. You
               can spend one maneuver to command both summons at once.

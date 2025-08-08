@@ -360,7 +360,7 @@ function Ranger() {
               dies, but you can resummon it at full hit points during a short
               rest by spending a recovery. After a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                long rest
+                safe rest
               </Link>
               , you can freely resummon the primal beast and change the type of
               primal beast.

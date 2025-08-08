@@ -73,7 +73,7 @@ export const airSpells = [
           keywords="Escalation, Magical, Range"
           target="1 creature within 3 zones"
           defense="Guard"
-          damage="5 lightning damage per your tier"
+          damage="5 lightning damage per spell tier"
         />
       ),
     },

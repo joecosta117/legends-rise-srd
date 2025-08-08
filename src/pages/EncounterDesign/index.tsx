@@ -48,7 +48,42 @@ function EncounterDesign() {
         </ul>
 
         <h2 id="encounter-points">Encounter Difficulty</h2>
+        <p>Heroes can face three different difficulties of encounters:</p>
+        <ul>
+          <li>
+            <span>
+              <b>Easy Encounters:</b> An easily winnable battle that can serve
+              as a reminder that the heroes are badass. For even easier
+              challenges, you can still have them, but don't increase the{" "}
+              <Link className="internal-link" to="/rules/combat#momentum">
+                momentum die
+              </Link>{" "}
+              from such trivial enounters.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Medium Encounters:</b> A fierce challenge that will tax the
+              heroes, but they should succeed barring terrible luck or terrible
+              tactics. This is the standard for encounters.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Hard Encounters:</b> A really tough challenge that endangers
+              the heroes, but they should prevail with good tactics. This is a
+              good standard for boss fights or significant challenge of a story
+              arc.
+            </span>
+          </li>
+        </ul>
         <p>
+          Heroes can typically handle a maximum of 4 to 6 medium encounters
+          between safe rests. Two easy encounters equals a medium encounter, and
+          a hard encounter is worth two medium encounters.
+        </p>
+
+        {/* <p>
           Each encounter is worth a number of <b>encounter points (EP)</b>,
           which determines the difficulty. Typically 1 EP is equal to one hero.
           The higher number of EPs, the more difficult an encounter.
@@ -125,19 +160,42 @@ function EncounterDesign() {
           <li>
             <span>1 easy encounter and 2 hard encounters</span>
           </li>
-        </ul>
+        </ul> */}
 
         <h2 id="combat-encounter">Combat Encounters</h2>
         <p>
           When heroes need to fight monsters with weapons and magic, it's time
           for a combat encounter. This is the most common type of encounter in
-          Legends Rise.
+          Legends Rise. Combat encounter difficulty is determined by the number
+          of <b>adversaries</b>:
         </p>
-        <h3 className="header">Threat Levels</h3>
+        <ul>
+          <li>
+            <span>
+              <b>Easy Encounter:</b> An easy encounter has less adversaries than
+              the number of heroes, but not less than half.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Medium Encounter:</b> A medium encounter has an equal number of
+              adversaries to the heroes.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Hard Encounter:</b> A hard encounter has more adversaries than
+              the heroes, but no more than double the number of heroes. For a
+              climatic battle that ends an arc or campaign, you can possibly
+              create an even harder encounters such as a boss monster with an
+              extra monster or two.
+            </span>
+          </li>
+        </ul>
+        <h3 className="header">Adversary Threat Level</h3>
         <p>
-          Depending on the <b>threat levels</b>, a monster or hazard is worth a
-          certain number of EPs. A standard monster or hazard is worth 1 EP, so
-          a medium encounter for four heroes is four standard monsters.
+          A standard monster or hazard equals one adversary, so a medium
+          encounter for four heroes is four standard monsters.
         </p>
         <h4 className="header">Minion Threats</h4>
         <p>
@@ -147,17 +205,17 @@ function EncounterDesign() {
           <ul style={{ marginTop: "0" }}>
             <li>
               <span>
-                <b>Tier 1:</b> 4 minions equal 1 EP
+                <b>Tier 1:</b> 4 minions equal one adversary
               </span>
             </li>
             <li>
               <span>
-                <b>Tier 2:</b> 5 minions equal 1 EP
+                <b>Tier 2:</b> 5 minions equal one adversary
               </span>
             </li>
             <li>
               <span>
-                <b>Tier 3:</b> 6 minions equal 1 EP
+                <b>Tier 3:</b> 6 minions equal one adversary
               </span>
             </li>
           </ul>
@@ -169,9 +227,11 @@ function EncounterDesign() {
                   Minions follow different rules from regular monsters. Minions
                   of the same type are part of a <b>minion group</b>.
                 </p>
-                <h4 className="header">One Turn</h4>
+                <h4 className="header">One Turn, One Act</h4>
                 <p>
                   All minions of a minion group act on the same turn in combat.
+                  On a minion's turn, they can use a maneuver or action, but not
+                  both.
                 </p>
                 <h4 className="header">Easy to Kill</h4>
                 <p>
@@ -221,26 +281,23 @@ function EncounterDesign() {
         </p>
 
         <h4 className="header">Minor Threats</h4>
-        <b className="encounter-content__subtitle">½ EP</b>
+        <b className="encounter-content__subtitle">½ Adversary</b>
         <p>
           Minor monsters and hazards are weaker than standard threats, but
-          stronger than minions. Since minors are worth ½ EP, always use two
-          minors to equal 1 EP.
+          stronger than minions. Since minors are weaker, always use two minors
+          to equal one adversary.
         </p>
-        <h4 className="header">Standard Threats</h4>
-        <b className="encounter-content__subtitle">1 EP</b>
-        <p>
-          Standard threats are the most typical monsters and hazards. A good
-          fight for four heroes is four standard monsters.
-        </p>
+
         <h4 className="header">Major Threats</h4>
-        <b className="encounter-content__subtitle">2 EP</b>
+        <b className="encounter-content__subtitle">2 Adversaries</b>
         <p>
           Major monsters and hazards are stronger than standard threats, but
           weaker than bosses. Major threats always get two turns per round.
         </p>
         <h4 className="header">Boss Threats</h4>
-        <b className="encounter-content__subtitle">EP = Number of Heroes + 1</b>
+        <b className="encounter-content__subtitle">
+          # of Adversaries = Double the # of Heroes
+        </b>
         <p>
           Boss threats are the strongest monster heroes can face. Only monsters
           can be bosses. Boss monsters get as many turns per round as the number
@@ -250,9 +307,9 @@ function EncounterDesign() {
 
         <h3 className="header">Different Tier Threats</h3>
         <p>
-          The above EPs per threat assumes the heroes are facing monsters and
-          hazards of their tier. In general, you should only use monsters and
-          hazards of the same tier as the heroes. Otherwise, the encounter
+          The above guidelines per threat assumes the heroes are facing monsters
+          and hazards of their tier. In general, you should only use monsters
+          and hazards of the same tier as the heroes. Otherwise, the encounter
           builder rules won't work. This is because heroes have a huge advantage
           against lower tier threats, but are hugely disadvantaged against
           higher tier threats. For more information on heroes facing different
@@ -492,8 +549,8 @@ function EncounterDesign() {
           >
             positive countdowns
           </Link>{" "}
-          to mark the progress of the skill encounter. Instead of EP, the
-          encounter's difficulty is determined by the countdown die:
+          to mark the progress of the skill encounter. The encounter's
+          difficulty is determined by the countdown die:
         </p>
         <ul>
           <li>
@@ -512,14 +569,11 @@ function EncounterDesign() {
           <li>
             <span>
               <b>Hard Encounter:</b> Countdown die size is equal to double the
-              number of heroes.
+              number of heroes or more.
             </span>
           </li>
         </ul>
-        <p>
-          Unlike combat encounters, there are no insane difficulty skill
-          encounters.
-        </p>
+
         <h4 className="header">Consequences</h4>
         <p>
           During skill encounters, the consequences on a failure or partial

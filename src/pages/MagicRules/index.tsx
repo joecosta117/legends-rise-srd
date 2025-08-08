@@ -235,7 +235,7 @@ function MagicRules() {
             You fail to learn the ritual spell, and can’t try again until after
             a{" "}
             <Link className="internal-link" to="/rules/adventuring#resting">
-              long rest
+              safe rest
             </Link>
             .
           </li>
