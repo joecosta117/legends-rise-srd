@@ -1130,11 +1130,8 @@ function HeroicArchetypes() {
                     Strike
                   </Link>{" "}
                   at each target, and you can{" "}
-                  <Link
-                    className="internal-link"
-                    to="/combat-abilities#disengage"
-                  >
-                    disengage
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
                   </Link>{" "}
                   before each strike
                 </span>
@@ -1222,10 +1219,6 @@ function HeroicArchetypes() {
                 taunted
               </Link>{" "}
               by you, you gain an extra maneuver each turn to{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>{" "}
-              or{" "}
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>
@@ -1423,8 +1416,8 @@ function HeroicArchetypes() {
             <h4 className="header">Wave Magic (7th-Level Feature)</h4>
             <p>
               You glide around like on water. When you cast a spell, you can
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
               </Link>{" "}
               as a free action.
             </p>

@@ -395,8 +395,8 @@ const HumanoidMonsters = [
         </Link>
         . If near the heroes, an assassin instead uses cunning movement to get
         close, uses blade, then{" "}
-        <Link className="internal-link" to="/combat-abilities#disengage">
-          disengage
+        <Link className="internal-link" to="/combat-abilities#move">
+          move
         </Link>{" "}
         to escape.
       </span>
@@ -1010,13 +1010,6 @@ const HumanoidMonsters = [
             effect: (
               <span>
                 The scout can{" "}
-                <Link
-                  className="internal-link"
-                  to="/combat-abilities#disengage"
-                >
-                  disengage
-                </Link>{" "}
-                twice or{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}

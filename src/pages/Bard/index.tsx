@@ -423,15 +423,8 @@ function Bard() {
               trigger="You use a bardic performance"
               effect={
                 <span>
-                  <Link
-                    className="internal-link"
-                    to="/combat-abilities#disengage"
-                  >
-                    Disengage
-                  </Link>{" "}
-                  or{" "}
                   <Link className="internal-link" to="/combat-abilities#move">
-                    move
+                    Move
                   </Link>
                 </span>
               }

@@ -1184,10 +1184,6 @@ function LegendaryArchetypes() {
             <h4 className="header">Wanderer’s Step (8th-Level Feature)</h4>
             <p>
               You move across space with every step. Whenever you{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>{" "}
-              or
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>
@@ -1311,10 +1307,6 @@ function LegendaryArchetypes() {
               </Link>
               , each ally within 1 zone can also rally as a free action. Then
               you or any affected allies can also{" "}
-              <Link className="internal-link" to="/combat-abilities#disengage">
-                disengage
-              </Link>{" "}
-              or{" "}
               <Link className="internal-link" to="/combat-abilities#move">
                 move
               </Link>{" "}

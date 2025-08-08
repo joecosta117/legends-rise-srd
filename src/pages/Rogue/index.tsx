@@ -149,21 +149,14 @@ function Rogue() {
               frequency="At-will"
               effect={
                 <span>
-                  <Link
-                    className="internal-link"
-                    to="/combat-abilities#disengage"
-                  >
-                    Disengage
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    Move
                   </Link>{" "}
                   then{" "}
                   <Link className="internal-link" to="/combat-abilities#strike">
                     strike
                   </Link>
-                  , or{" "}
-                  <Link className="internal-link" to="/combat-abilities#strike">
-                    strike
-                  </Link>{" "}
-                  then disengage
+                  , or strike then move
                 </span>
               }
             />
@@ -445,15 +438,8 @@ function Rogue() {
               frequency="At-will"
               effect={
                 <span>
-                  <Link
-                    className="internal-link"
-                    to="/combat-abilities#disengage"
-                  >
-                    Disengage
-                  </Link>{" "}
-                  or{" "}
                   <Link className="internal-link" to="/combat-abilities#move">
-                    move
+                    Move
                   </Link>
                   , then{" "}
                   <Link className="internal-link" to="/combat-abilities#study">

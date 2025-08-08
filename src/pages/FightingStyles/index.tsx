@@ -174,11 +174,8 @@ function FightingStyles() {
                 frequency="At-will"
                 effect={
                   <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      Disengage
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
                     </Link>{" "}
                     then{" "}
                     <Link
@@ -597,11 +594,8 @@ function FightingStyles() {
                       Hinder
                     </Link>{" "}
                     then{" "}
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      disengage
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
                     </Link>
                   </span>
                 }
@@ -830,15 +824,8 @@ function FightingStyles() {
                 }
                 effect={
                   <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      Disengage
-                    </Link>{" "}
-                    or{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
-                      move
+                      Move
                     </Link>
                   </span>
                 }
@@ -927,13 +914,6 @@ function FightingStyles() {
                 effect={
                   <span>
                     Target can spend a recovery. You can{" "}
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      disengage
-                    </Link>{" "}
-                    or{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
                       move
                     </Link>{" "}
@@ -1199,7 +1179,7 @@ function FightingStyles() {
                       to="/rules/combat#ongoing-damage"
                     >
                       ongoing
-                    </Link>
+                    </Link>{" "}
                     physical damage per your tier
                   </span>
                 }
@@ -1208,15 +1188,12 @@ function FightingStyles() {
               <AbilityCard
                 name="Nimble Escape"
                 actType="Reaction"
-                descriptor="As an enemy catches you, you swiftly roll away to avoid further harm."
+                descriptor="As an enemy catches you, you swiftly flee to avoid further harm."
                 frequency="At-will"
                 effect={
                   <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      Disengage
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
                     </Link>
                   </span>
                 }
@@ -1224,17 +1201,14 @@ function FightingStyles() {
                 requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
               />
               <AbilityCard
-                name="Quick Retreat"
+                name="Quick Traversal"
                 actType="Maneuver"
                 frequency="At-will"
-                descriptor="You escape from danger impossibly fast."
+                descriptor="You stride impossibly fast."
                 effect={
                   <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      Disengage
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
                     </Link>{" "}
                     twice
                   </span>

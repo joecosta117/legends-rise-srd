@@ -697,13 +697,10 @@ function Ancestries() {
                 <li>
                   <span>
                     <b>Nimble Steps (Ligh Elf Only) (S):</b> When you{" "}
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      disengage
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      move
                     </Link>
-                    , you can traverse up to 1 zone away.{" "}
+                    , you don't trigger reactions.
                   </span>
                 </li>
                 <li>
@@ -868,11 +865,8 @@ function Ancestries() {
                 }
                 effect={
                   <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disengage"
-                    >
-                      Disengage
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
                     </Link>
                     . If your movement puts you out of range of the triggering
                     attack roll, then the roll has no effect on you.

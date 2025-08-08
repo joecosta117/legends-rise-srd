@@ -527,11 +527,8 @@ const FaerieMonsters = [
             success: (
               <span>
                 Sprite can{" "}
-                <Link
-                  className="internal-link"
-                  to="/combat-abilities#disengage"
-                >
-                  disengage
+                <Link className="internal-link" to="/combat-abilities#move">
+                  move
                 </Link>
               </span>
             ),
