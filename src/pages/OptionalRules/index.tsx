@@ -130,7 +130,7 @@ function OptionalRules() {
           Heroes level up when they reach <b>1,000 XP</b>. Upon leveling up,
           subtract 1,000 XP and continue tracking toward the next level. If the
           GM wants a faster leveling pace, then level up heroes when they reach
-          500 XP, ro 2,000 XP for a slower leveling pace.
+          500 XP, or 2,000 XP for a slower leveling pace.
         </p>
 
         <h2 id="level-0">Level 0 Heroes</h2>
