@@ -140,23 +140,23 @@ function Rogue() {
               </li>
             </ul>
 
-            <h3 className="header">Evasive Attack</h3>
+            <h3 className="header">Cloak and Dagger</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Evasive Attack"
+              name="Cloak and Dagger"
               actType="Action"
-              descriptor="You dart around as you attack."
+              descriptor="After you attack, you safely dart to a better position."
               frequency="At-will"
               effect={
                 <span>
-                  <Link className="internal-link" to="/combat-abilities#move">
-                    Move
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
                   </Link>{" "}
                   then{" "}
-                  <Link className="internal-link" to="/combat-abilities#strike">
-                    strike
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
                   </Link>
-                  , or strike then move
+                  , and your move doesn't trigger reactions.
                 </span>
               }
             />

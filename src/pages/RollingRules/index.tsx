@@ -234,10 +234,11 @@ function RollingRules() {
           depending on the total. Most abilities have different effects
           depending the degree of success.
         </p>
-        <ul>
+        {/* <ul style={{ marginBottom: "0" }}>
           <li>
             <span>
-              <b>Critical Success:</b> Your total is 5 or more above the TN.
+              <b>Critical Success:</b> Your total meets or exceeds the TN by 5
+              or more.
             </span>
           </li>
           <li>
@@ -247,17 +248,45 @@ function RollingRules() {
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> Your total is below the TN but by less
-              than 5.
+              <b>Partial Success:</b> Your total is less than the TN.
             </span>
           </li>
           <li>
             <span>
               <b>Failure:</b>
             </span>{" "}
-            Your total is 5 or more below the TN.
+            Your total is less than the TN by 6 or more.
           </li>
         </ul>
+        <p>
+          A quick way to remember this: start at the TN and check in steps of 5:
+          every ±5 points moves you up or down one degree.
+        </p> */}
+        <ul>
+          <li>
+            <span>
+              <b>Critical Success:</b> Your total meets or exceeds the TN by 5
+              or more.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Success:</b> Your total meets or exceeds the TN.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Partial Success:</b> Your total is less than the TN.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Failure:</b>
+            </span>{" "}
+            Your total is less than the TN by 5 or more.
+          </li>
+        </ul>
+        <h4 className="header">Overcome Rolls</h4>
         <p>
           Overcome rolls only have two possible results: failure or success.
         </p>

@@ -1118,6 +1118,21 @@ function FightingStyles() {
             <p>You value speed and light weapons.</p>
             <div className="techniques">
               <AbilityCard
+                name="Careful Stride"
+                actType="Maneuver"
+                descriptor="You dart around the battlefield while avoiding reprisal."
+                requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
+                frequency="At-will"
+                effect={
+                  <span>
+                    <Link className="internal-link" to="/combat-abilities#move">
+                      Move
+                    </Link>{" "}
+                    without triggering reactions.
+                  </span>
+                }
+              />
+              <AbilityCard
                 name="Double Charge"
                 actType="Action"
                 descriptor="You dash across the battlefield before foes can react."
@@ -1139,27 +1154,7 @@ function FightingStyles() {
                   </span>
                 }
               />
-              <AbilityCard
-                name="Hit and Run"
-                actType="Action"
-                descriptor="After you attack, you dart across the battlefield."
-                requirement="You’re wielding a standard melee weapon, thrown ranged weapon, or short ranged weapon"
-                frequency="At-will"
-                effect={
-                  <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#strike"
-                    >
-                      Strike
-                    </Link>{" "}
-                    then{" "}
-                    <Link className="internal-link" to="/combat-abilities#move">
-                      move
-                    </Link>
-                  </span>
-                }
-              />
+
               <AbilityCard
                 name="Knife's Edge"
                 actType="Action"

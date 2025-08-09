@@ -378,6 +378,13 @@ const Navigation = () => {
             >
               <Link
                 className="navigation__links-container__dropdown__item"
+                to="/rules"
+                onClick={toggleMobileNav}
+              >
+                All Rules
+              </Link>
+              <Link
+                className="navigation__links-container__dropdown__item"
                 to="/abilities-and-keywords"
                 onClick={toggleMobileNav}
               >
@@ -396,14 +403,6 @@ const Navigation = () => {
                 onClick={toggleMobileNav}
               >
                 Conditions
-              </Link>
-
-              <Link
-                className="navigation__links-container__dropdown__item"
-                to="/rules"
-                onClick={toggleMobileNav}
-              >
-                All Rules
               </Link>
             </div>
           </div>
