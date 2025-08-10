@@ -143,12 +143,8 @@ const ElementalMonsters = [
     tactics: (
       <span>
         Earth elementals like to fight near heroes by using slam followed up by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#shove">
-          shove
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -214,12 +210,8 @@ const ElementalMonsters = [
     tactics: (
       <span>
         Fire elementals like to fight near heroes by using slam followed up by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -290,12 +282,8 @@ const ElementalMonsters = [
     tactics: (
       <span>
         Ice elementals like to fight near heroes by using slam followed up by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -377,12 +365,8 @@ const ElementalMonsters = [
     tactics: (
       <span>
         Water elementals like to fight near heroes by using slam followed up by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -593,12 +577,8 @@ const ElementalMonsters = [
       <span>
         Earthquake elementals like to fight near heroes by using slam followed
         up by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#shove">
-          shove
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -686,12 +666,8 @@ const ElementalMonsters = [
       <span>
         Inferno elementals like to fight near heroes by using slam followed up
         by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -871,12 +847,8 @@ const ElementalMonsters = [
       <span>
         Tsunami elementals like to fight near heroes by using slam or crashing
         undercurrent if available, and then followed up by{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>

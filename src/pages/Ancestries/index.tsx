@@ -1096,26 +1096,11 @@ function Ancestries() {
                     to{" "}
                     <Link
                       className="internal-link"
-                      to="/combat-abilities#disarm"
+                      to="/combat-abilities#gambit"
                     >
-                      disarm
-                    </Link>
-                    ,{" "}
-                    <Link className="internal-link" to="/combat-abilities#grab">
-                      grab
-                    </Link>
-                    ,{" "}
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#shove"
-                    >
-                      shove
-                    </Link>
-                    ,{" "}
-                    <Link className="internal-link" to="/combat-abilities#trip">
-                      trip
-                    </Link>
-                    , and any{" "}
+                      gambit
+                    </Link>{" "}
+                    and any{" "}
                     <Link className="internal-link" to="/rules/skills">
                       skill rolls
                     </Link>{" "}

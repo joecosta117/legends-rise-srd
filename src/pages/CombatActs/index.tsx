@@ -58,7 +58,7 @@ function CombatActs() {
             accordion
             descriptor="You rush forward before attacking."
             frequency="At-will"
-            effect="Move and end your movement to disarm, grab, shove, trip, or strike with a melee weapon."
+            effect="Move and end your movement to strike with a melee weapon."
           />
         </div>
       ),
@@ -169,14 +169,14 @@ function CombatActs() {
       ),
     },
     {
-      title: "Disarm (Maneuver)",
-      id: "disarm",
+      title: "Gambit (Maneuver)",
+      id: "gambit",
       actType: "Maneuver",
       content: (
         <div>
           <AbilityCard
             accordion
-            descriptor="You attempt to knock an item from a foe’s grasp."
+            descriptor="With a physical exploit, you throw your foe off balance."
             frequency="At-will"
             target={
               <span>
@@ -187,45 +187,24 @@ function CombatActs() {
                 creature
               </span>
             }
-            keywords="Melee"
-            defense="Guard"
-            damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success="Choose an item for the target to drop or you take the chosen item (your choice)."
-          />
-        </div>
-      ),
-    },
-    {
-      title: "Grab (Maneuver)",
-      id: "grab",
-      actType: "Maneuver",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You try to grab a creature within reach."
-            frequency="At-will"
-            target={
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            }
-            requirement="You have a free hand"
             keywords="Melee"
             defense="Guard"
             damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
             success={
               <span>
+                Choose one of the following effects: choose an item for the
+                target to drop, target falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+                , target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                until you let go
+                until you let go, or target is pushed within their zone
               </span>
             }
+            critical="Choose two effects from the success list"
           />
         </div>
       ),
@@ -345,34 +324,6 @@ function CombatActs() {
       ),
     },
     {
-      title: "Shove (Maneuver)",
-      id: "shove",
-      actType: "Maneuver",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You push a creature away"
-            frequency="At-will"
-            target={
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            }
-            keywords="Melee"
-            defense="Guard"
-            damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success="Push target within their zone"
-            critical="Push target up to 1 zone away"
-          />
-        </div>
-      ),
-    },
-    {
       title: "Stand (Maneuver)",
       id: "stand",
       actType: "Maneuver",
@@ -442,40 +393,6 @@ function CombatActs() {
                 by you (next turn ends)
               </span>
             }
-          />
-        </div>
-      ),
-    },
-    {
-      title: "Trip (Maneuver)",
-      id: "trip",
-      actType: "Maneuver",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You knock a foe to the ground."
-            frequency="At-will"
-            target={
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            }
-            keywords="Melee"
-            defense="Guard"
-            damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success={
-              <span>
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
-                </Link>
-              </span>
-            }
-            critical="Same as a success, and the target takes 1 physical damage per your tier"
           />
         </div>
       ),

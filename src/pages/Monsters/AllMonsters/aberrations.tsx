@@ -17,12 +17,8 @@ const AberrationMonsters = [
       <span>
         Deep ones prefer to fight near heroes to use pincer into paralyzing
         tentacle, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -116,12 +112,8 @@ const AberrationMonsters = [
     tactics: (
       <span>
         Void cursed prefer to fight near heroes to use void touch, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -192,8 +184,8 @@ const AberrationMonsters = [
           hinder
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -332,8 +324,8 @@ const AberrationMonsters = [
       <span>
         Brain Reapers prefer to fight near heroes to use tentacle or psychic
         blast if available, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver. If they have a seized foe, then the brain reaper always
         uses devour brain.
@@ -423,8 +415,8 @@ const AberrationMonsters = [
     tactics: (
       <span>
         Brain spawn prefer to fight near heroes to use tentacle and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver. If they have a seized foe, then the brain spawn always
         uses body snatcher.
@@ -500,12 +492,8 @@ const AberrationMonsters = [
     tactics: (
       <span>
         Brain abominations prefer to fight near heroes to use tentacle, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver. Against ranged foes, the abomination uses psychic spike
         or mental agony if available.
@@ -1051,12 +1039,8 @@ const AberrationMonsters = [
     tactics: (
       <span>
         Voidlings prefer to fight near heroes to use tentacl rend, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>

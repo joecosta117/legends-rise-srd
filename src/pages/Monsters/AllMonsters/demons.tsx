@@ -76,12 +76,8 @@ const DemonMonsters = [
       <span>
         Soulwretches fight in groups and rush heroes in hopes to prove their
         worth. Each turn they use sludge slam and{" "}
-        <Link className="internal-link" to="/conditions#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/conditions#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -133,12 +129,8 @@ const DemonMonsters = [
       <span>
         Hellhouds charge the heroes using bite or fire breath if available, and
         will{" "}
-        <Link className="internal-link" to="/conditions#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/conditions#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -444,8 +436,8 @@ const DemonMonsters = [
     tactics: (
       <span>
         Lust demons get close to the heroes to use claw or{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         one before using draining kiss. Lust demons will also use demonic charm
         on dangerous heroes to keep themselves safe from harm.
@@ -685,14 +677,10 @@ const DemonMonsters = [
         Greed demons get close to the heroes to use hungry maw and often uses{" "}
         <Link className="internal-link" to="/combat-abilities#hinder">
           hinder
-        </Link>
-        ,{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>
-        , or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        </Link>{" "}
+        or{" "}
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as maneuvers.
       </span>
@@ -1061,12 +1049,8 @@ const DemonMonsters = [
       <span>
         Horned demons fight in groups and rush heroes in hopes to prove their
         worth. Each turn they use weapon and{" "}
-        <Link className="internal-link" to="/conditions#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/conditions#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1217,8 +1201,8 @@ const DemonMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/conditions#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1898,14 +1882,10 @@ const DemonMonsters = [
         from their scorching blood. Each turn, Wrath will use broken blade
         unless they have have enough fury to use wrath unbound. As a maneuver,
         Wrath will use{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>
-        ,{" "}
-        <Link className="internal-link" to="/combat-abilities#shove">
-          shove
-        </Link>
-        , or{" "}
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
+        </Link>{" "}
+        or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">
           taunt
         </Link>

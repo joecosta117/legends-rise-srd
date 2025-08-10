@@ -287,24 +287,12 @@ function LegendaryArchetypes() {
             <h4 className="header">Unerring Accuracy (10th-Level Feature)</h4>
             <p>
               You gain <Modifier type="f" count="1" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#disarm">
-                disarm
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#grab">
-                grab
-              </Link>
-              ,{" "}
+              <Link className="internal-link" to="/combat-abilities#gambit">
+                gambit
+              </Link>{" "}
+              and{""}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#shove">
-                shove
-              </Link>
-              , or{" "}
-              <Link className="internal-link" to="/combat-abilities#trip">
-                trip
               </Link>
               .
             </p>
@@ -1361,17 +1349,13 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you are vanquished, you instead{" "}
-              <Link className="internal-link" to="/combat-abilities#stand">
-                stand
-              </Link>{" "}
-              and <ToolTip preset="heal" /> equal to your{" "}
-              <ToolTip preset="shakenVal" />. At the end of your adventures, you
-              fully ascend to your throne and begin a long and prosperous rule
-              over your domain. Your renown guarantees prosperity for your
-              people for decades to come. Your descendants will one day earn
-              your throne and cement your legacy as one of the greatest
-              sovereigns in history.
+              , when you are vanquished, you instead <ToolTip preset="heal" />{" "}
+              equal to your <ToolTip preset="shakenVal" />. At the end of your
+              adventures, you fully ascend to your throne and begin a long and
+              prosperous rule over your domain. Your renown guarantees
+              prosperity for your people for decades to come. Your descendants
+              will one day earn your throne and cement your legacy as one of the
+              greatest sovereigns in history.
             </p>
           </div>
         )}

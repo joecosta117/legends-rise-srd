@@ -15,12 +15,8 @@ const UndeadMonsters = [
       <span>
         Skeleton minions mindlessly get close to heroes to use rusty sword or
         stay afar to shoot their old bow. Skeletons close to heroes can also{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver, while skeletons at range use{" "}
         <Link className="internal-link" to="/combat-abilities#aim">
@@ -84,12 +80,8 @@ const UndeadMonsters = [
     tactics: (
       <span>
         Zombies mindlessly get close to heroes to use rend, and{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -168,12 +160,8 @@ const UndeadMonsters = [
     tactics: (
       <span>
         Zombie minions mindlessly get close to heroes to use rend, and{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -247,11 +235,11 @@ const UndeadMonsters = [
         Wraith minions harass the nearest heroes to use weakening touch, and be
         close enough for vengeful death. In addition to weakening touch, wraith
         minions use{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
+        <Link className="internal-link" to="/combat-abilities#hinder">
           hinder
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
+        <Link className="internal-link" to="/combat-abilities#taunt">
           taunt
         </Link>{" "}
         as a maneuver.
@@ -954,12 +942,8 @@ const UndeadMonsters = [
       <span>
         Ghouls rush towards their prey, hoping to weaken them with their death
         stench. On its turn, a ghoul uses rend along with{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -1032,16 +1016,8 @@ const UndeadMonsters = [
         someone down with skeletal slam. If engagaged to multiple heroes, the
         skeletal giant will use broad rend instead of skeletal slam. For
         maneuvers, the undead uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>
-        ,{" "}
-        <Link className="internal-link" to="/combat-abilities#shove">
-          shove
-        </Link>
-        , or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as maneuvers.
       </span>
@@ -1124,12 +1100,8 @@ const UndeadMonsters = [
         Vampire spawns are not mindless undead, and rush the weakest hero. On
         their turn, a vampire spawn uses rend or bite if the target is already
         seized, and{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1625,14 +1597,10 @@ const UndeadMonsters = [
         Mummy guardians stay within 1 zone of allies, especially a royal mummy
         so they can use their guardian's sacrifice reaction. Each turn, a mummy
         guardian will use khopesh to taunt heroes, and use{" "}
-        <Link className="internal-link" to="/combat-abilities#shove">
-          shove
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
-        heroes away or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
-        </Link>{" "}
-        as maneuvers.
+        as a maneuver.
       </span>
     ),
     statBlock: (
@@ -1898,12 +1866,8 @@ const UndeadMonsters = [
         A gravewyrm remnant opens up with draining breath before moving near
         heroes to keep them in range of boneshatter. Otherwise, the gravewyrm
         remnant uses decaying rend and{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -2000,12 +1964,8 @@ const UndeadMonsters = [
           hide
         </Link>{" "}
         as a maneuver, otherwise it uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -2114,8 +2074,8 @@ const UndeadMonsters = [
           taunt
         </Link>
         , or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>

@@ -72,8 +72,8 @@ const ConstructMonsters = [
     tactics: (
       <span>
         Animated armor prefer to fight near heroes by using glaive then{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -138,8 +138,8 @@ const ConstructMonsters = [
       <span>
         Iron hounds chase after their designated target and use bite to capture
         them along with{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -265,8 +265,8 @@ const ConstructMonsters = [
       <span>
         Clockwork juggernauts prefer to fight near heroes by using juggernaut's
         charge or axe, then{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -387,12 +387,8 @@ const ConstructMonsters = [
     tactics: (
       <span>
         Flesh golems prefer to fight near heroes by using slam, then{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -556,14 +552,10 @@ const ConstructMonsters = [
       <span>
         Stone Golems prefer to fight near heroes to use slam and binding stone
         if available. For maneuvers, stone golems often use{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
-        </Link>
-        .
+        as a maneuver.
       </span>
     ),
     statBlock: (
@@ -782,14 +774,10 @@ const ConstructMonsters = [
       <span>
         Iron Golems prefer to fight near heroes to use iron blade and poison
         breath if available. For maneuvers, Iron golems often use{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
-        </Link>
-        .
+        as a maneuver.
       </span>
     ),
     statBlock: (

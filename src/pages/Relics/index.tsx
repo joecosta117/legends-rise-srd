@@ -1107,22 +1107,10 @@ function Relics() {
             <p>
               While wearing these gauntlets, you gain{" "}
               <Modifier count="1" type="f" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#disarm">
-                disarm
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#grab">
-                grab
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#shove">
-                shove
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#trip">
-                trip
-              </Link>
-              , and skill rolls involving physical strength.
+              <Link className="internal-link" to="/combat-abilities#gambit">
+                gambit
+              </Link>{" "}
+              and skill rolls involving physical strength.
             </p>
           </div>
         ),
@@ -1364,23 +1352,11 @@ function Relics() {
             <p>
               While wearing these gauntlets, you gain{" "}
               <Modifier type="f" count="1" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#disarm">
-                disarm
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#grab">
-                grab
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#shove">
-                shove
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#trip">
-                trip
-              </Link>
-              , and skill rolls involving athleticism. You also gain the
-              following ability:
+              <Link className="internal-link" to="/combat-abilities#gambit">
+                gambit
+              </Link>{" "}
+              and skill rolls involving athleticism. You also gain the following
+              ability:
             </p>
             <AbilityCard
               descriptor="The gauntlets enlarge your body."

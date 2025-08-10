@@ -380,8 +380,8 @@ const MonstrosityMonsters = [
       <span>
         Chimeras prefer to fight close enough to heroes for them to use dragon
         breath or rend, and then use{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -582,12 +582,8 @@ const MonstrosityMonsters = [
       <span>
         Griffons prefer to fight near heroes to use rend or griffon shriek if
         available, and{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -655,12 +651,8 @@ const MonstrosityMonsters = [
       <span>
         Minotaur exiles prefer to fight near heroes by moving towards them with
         minotaur's charge, and use{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -727,12 +719,8 @@ const MonstrosityMonsters = [
       <span>
         Hydras prefer to fight close enough to heroes for them to be in range of
         bite and each turn use{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -1179,8 +1167,8 @@ const MonstrosityMonsters = [
     tactics: (
       <span>
         Werewolves will rush the heroes to use cursed bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1272,8 +1260,8 @@ const MonstrosityMonsters = [
     tactics: (
       <span>
         The alpha werewolf will rush the heroes to use cursed bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1452,8 +1440,8 @@ const MonstrosityMonsters = [
       <span>
         Cave worms prefer to fight close enough to heroes to use bite and each
         turn use{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>

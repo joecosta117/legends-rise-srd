@@ -277,28 +277,20 @@ function Rogue() {
             <h3 className="header">Panache (1st-Level Feature)</h3>
             <p>
               Your stylish moves build your confidence. When you{" "}
-              <Link className="internal-link" to="/combat-abilities#disarm">
-                disarm
+              <Link className="internal-link" to="/combat-abilities#gambit">
+                gambit
               </Link>
               ,{" "}
               <Link className="internal-link" to="/combat-abilities#help">
                 help
               </Link>
-              ,
+              ,{" "}
               <Link className="internal-link" to="/combat-abilities#hinder">
                 hinder
               </Link>
               ,{" "}
-              <Link className="internal-link" to="/combat-abilities#shove">
-                shove
-              </Link>
-              ,{" "}
               <Link className="internal-link" to="/combat-abilities#taunt">
                 taunt
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#trip">
-                trip
               </Link>
               , or another ability of significant style (GM’s discretion), you
               gain a panache token that lasts for the scene. When you make a

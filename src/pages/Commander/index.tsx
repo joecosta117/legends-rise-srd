@@ -333,20 +333,8 @@ function Commander() {
                     Strike
                   </Link>
                   , and choose an ally within 1 zone. The chosen ally can{" "}
-                  <Link className="internal-link" to="/combat-abilities#grab">
-                    grab
-                  </Link>
-                  ,{" "}
-                  <Link className="internal-link" to="/combat-abilities#hinder">
-                    hinder
-                  </Link>
-                  ,{" "}
-                  <Link className="internal-link" to="/combat-abilities#shove">
-                    shove
-                  </Link>
-                  , or{" "}
-                  <Link className="internal-link" to="/combat-abilities#trip">
-                    trip
+                  <Link className="internal-link" to="/combat-abilities#gambit">
+                    gambit
                   </Link>{" "}
                   as a reaction.
                 </span>

@@ -372,6 +372,8 @@ function FightingStyles() {
                 name="Interrupt Grab"
                 actType="Reaction"
                 descriptor="You grab someone as they try to flee."
+                target="triggering creature"
+                keywords="Melee"
                 trigger={
                   <span>
                     You see an{" "}
@@ -386,12 +388,14 @@ function FightingStyles() {
                   </span>
                 }
                 frequency="At-will"
-                effect={
+                defense="Guard"
+                critical="Same as success, and 1 physical damage per your tier"
+                success={
                   <span>
-                    <Link className="internal-link" to="/combat-abilities#grab">
-                      Grab
+                    <Link className="internal-link" to="/conditions#seized">
+                      seized
                     </Link>{" "}
-                    the triggering creature
+                    until you let go
                   </span>
                 }
               />
@@ -418,12 +422,24 @@ function FightingStyles() {
                 actType="Maneuver"
                 descriptor="As you grab your enemy, you shove them to the ground."
                 frequency="At-will"
-                effect={
+                keywords="Melee"
+                target={
                   <span>
-                    <Link className="internal-link" to="/combat-abilities#grab">
-                      Grab
+                    1{" "}
+                    <Link className="internal-link" to="/rules/combat#engaged">
+                      engaged
                     </Link>{" "}
-                    and on a success or higher, the target is knocked{" "}
+                    creature
+                  </span>
+                }
+                defense="Guard"
+                success={
+                  <span>
+                    target is{" "}
+                    <Link className="internal-link" to="/conditions#seized">
+                      seized
+                    </Link>{" "}
+                    until you let go, and also falls{" "}
                     <Link className="internal-link" to="/conditions#prone">
                       prone
                     </Link>
@@ -500,7 +516,7 @@ function FightingStyles() {
                       Strike
                     </Link>{" "}
                     and on a success or higher, choose an item for the target to
-                    drop or you take the chosen item (your choice)
+                    drop
                   </span>
                 }
               />
@@ -519,17 +535,11 @@ function FightingStyles() {
                     creature use a magical or ranged ability
                   </span>
                 }
-                effect={
-                  <span>
-                    <Link
-                      className="internal-link"
-                      to="/combat-abilities#disarm"
-                    >
-                      Disarm
-                    </Link>{" "}
-                    the triggering creature
-                  </span>
-                }
+                keywords="Melee"
+                defense="Guard"
+                target="triggering creature"
+                critical="Same as success, and 1 physical damage per your tier"
+                success={<span>target drops an item of your choice</span>}
               />
               <AbilityCard
                 name="Dueling Parry"
@@ -723,12 +733,15 @@ function FightingStyles() {
                   </span>
                 }
                 requirement="You're wielding a heavy melee weapon"
-                effect={
+                keywords="Melee"
+                defense="Guard"
+                target="triggering creature"
+                critical="Same as success, and 1 physical damage per your tier"
+                success={
                   <span>
-                    <Link className="internal-link" to="/combat-abilities#trip">
-                      Trip
-                    </Link>{" "}
-                    the triggering creature
+                    <Link className="internal-link" to="/conditions#prone">
+                      prone
+                    </Link>
                   </span>
                 }
               />

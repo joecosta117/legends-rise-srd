@@ -69,8 +69,8 @@ const AngelMonsters = [
     tactics: (
       <span>
         Unicorns prefer to fight near the heroes to{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         then horn.
       </span>
@@ -127,8 +127,8 @@ const AngelMonsters = [
     tactics: (
       <span>
         Pegasi prefer to fight near the heroes to{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         then hoof.
       </span>
@@ -174,8 +174,8 @@ const AngelMonsters = [
       <span>
         Young celestial dragons will rush the heroes to use rend or holyfire
         breath if available, as well as{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         , or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">
@@ -269,8 +269,8 @@ const AngelMonsters = [
       <span>
         Adult celestial dragons will rush the heroes to use rend or holyfire
         breath if available, as well as{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         , or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">
@@ -439,8 +439,8 @@ const AngelMonsters = [
       <span>
         Ancient celestial dragons will rush the heroes to use rend or holyfire
         breath if available, as well as{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         , or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">
@@ -879,12 +879,8 @@ const AngelMonsters = [
       <span>
         Angel high guards prefer to fight near the heroes to use holy spear and
         use{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as maneuvers to keep foes away from the angel's protectee.
       </span>
@@ -955,8 +951,8 @@ const AngelMonsters = [
         Archangels will rush the heroes to use heavenly blade or banishing smite
         if available. If foes flee, then the archangel will use celestial pull
         to bring them back. Each turn the archangel will use angelic step,{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         , or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">

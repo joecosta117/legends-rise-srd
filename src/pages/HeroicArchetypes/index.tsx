@@ -567,20 +567,8 @@ function HeroicArchetypes() {
             <p>
               You know how to best use your body despite your size. You ignore
               any penalties from being smaller for{" "}
-              <Link className="internal-link" to="/combat-abilities#disarm">
-                disarm
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#grab">
-                grab
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#shove">
-                shove
-              </Link>
-              , or{" "}
-              <Link className="internal-link" to="/combat-abilities#trip">
-                trip
+              <Link className="internal-link" to="/combat-abilities#gambit">
+                gambit
               </Link>
               .
             </p>
@@ -994,20 +982,8 @@ function HeroicArchetypes() {
               <li>
                 <span>
                   Creatures take <Modifier type="mf" count="1" /> to{" "}
-                  <Link className="internal-link" to="/combat-abilities#disarm">
-                    disarm
-                  </Link>
-                  ,
-                  <Link className="internal-link" to="/combat-abilities#grab">
-                    grab
-                  </Link>
-                  ,{" "}
-                  <Link className="internal-link" to="/combat-abilities#shove">
-                    shove
-                  </Link>
-                  , or{" "}
-                  <Link className="internal-link" to="/combat-abilities#trip">
-                    trip
+                  <Link className="internal-link" to="/combat-abilities#gambit">
+                    gambit
                   </Link>{" "}
                   you
                 </span>
@@ -2050,20 +2026,8 @@ function HeroicArchetypes() {
             <h4 className="header">Minor Telekinesis (7th-Level Feature)</h4>
             <p>
               You can{" "}
-              <Link className="internal-link" to="/combat-abilities#disarm">
-                disarm
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#grab">
-                grab
-              </Link>
-              ,{" "}
-              <Link className="internal-link" to="/combat-abilities#shove">
-                shove
-              </Link>
-              , and{" "}
-              <Link className="internal-link" to="/combat-abilities#trip">
-                trip
+              <Link className="internal-link" to="/combat-abilities#gambit">
+                gambit
               </Link>{" "}
               with a range of 1 zone, and those abilities gain the magical and
               range keyword for you.

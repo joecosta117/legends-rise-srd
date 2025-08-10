@@ -202,8 +202,8 @@ const HumanoidMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver, then use greataxe.
       </span>
@@ -268,7 +268,7 @@ const HumanoidMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
+        <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
         as a maneuver, then use sword.
@@ -674,8 +674,8 @@ const HumanoidMonsters = [
           hinder
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver, then uses jagged blade.
       </span>
@@ -896,16 +896,12 @@ const HumanoidMonsters = [
         Grunts work together to take down one or two foes, and follow orders
         from whoever is in charge. Besides their attacks, grunts use their
         maneuver to{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>
-        ,{" "}
-        <Link className="internal-link" to="/combat-abilities#taunt">
-          taunt
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         , or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#taunt">
+          taunt
         </Link>
         .
       </span>
@@ -1788,16 +1784,8 @@ const HumanoidMonsters = [
         Elite grunts work together to take down one or two foes, and follow
         orders from whoever is in charge. Besides their attacks, elite grunts
         use their maneuver to{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>
-        ,{" "}
-        <Link className="internal-link" to="/combat-abilities#taunt">
-          taunt
-        </Link>
-        , or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>
         .
       </span>
@@ -2212,7 +2200,7 @@ const HumanoidMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
+        <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
         as a maneuver, then use sword.
@@ -2300,8 +2288,8 @@ const HumanoidMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver, then use greataxe.
       </span>

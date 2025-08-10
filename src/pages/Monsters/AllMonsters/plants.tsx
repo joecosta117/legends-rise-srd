@@ -15,12 +15,8 @@ const PlantMonsters = [
     tactics: (
       <span>
         Rot saplings prefer to fight near heroes to use scratch, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -71,12 +67,8 @@ const PlantMonsters = [
     tactics: (
       <span>
         Rot spawns prefer to fight near heroes to use scratch, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#grab">
-          grab
-        </Link>{" "}
-        or{" "}
-        <Link className="internal-link" to="/combat-abilities#trip">
-          trip
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
         </Link>{" "}
         as a maneuver.
       </span>
@@ -611,7 +603,13 @@ const PlantMonsters = [
     description:
       "Awakened trees are large trees given life by magic, usually by woodlords. After centuries, they eventually become woodlords.",
     tactics: (
-      <span>Awakened trees prefer to be near heroes to use slam and grab.</span>
+      <span>
+        Awakened trees prefer to be near heroes to use slam and{" "}
+        <Link className="internal-link" to="/combat-abilities#gambit">
+          gambit
+        </Link>
+        .
+      </span>
     ),
     statBlock: (
       <Monster
