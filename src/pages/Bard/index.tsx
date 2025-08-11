@@ -232,6 +232,7 @@ function Bard() {
               actType="Maneuver"
               descriptor="With an inspiring performance, your allies courageously push back against your enemies."
               frequency="At-will"
+              target="You and all allies within your zone"
               duration="Start of your next turn"
               effect={
                 <span>

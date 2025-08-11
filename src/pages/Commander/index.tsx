@@ -272,8 +272,7 @@ function Commander() {
             <p>You motivate your allies to victory.</p>
             <h3 className="header">Uplifting Presence (1st-Level Feature)</h3>
             <p>
-              While you are conscious, you and allies that start their turn
-              within your zone gain{" "}
+              You and allies that start their turn within your zone gain{" "}
               <b>
                 +1 <img className="icon" src={fortune} alt="fortune icon" />
               </b>{" "}
@@ -303,9 +302,8 @@ function Commander() {
             <p>Your presence causes dread among your foes.</p>
             <h3 className="header">Fearful Presence (1st-Level Feature)</h3>
             <p>
-              While you are conscious, enemies that make a roll with{" "}
-              <Modifier type="mf" /> in your zone increase the number of{" "}
-              <Modifier type="mf" /> by 1.{" "}
+              Enemies that make a roll with <Modifier type="mf" /> in your zone
+              increase the number of <Modifier type="mf" /> by 1.{" "}
             </p>
           </div>
         )}
