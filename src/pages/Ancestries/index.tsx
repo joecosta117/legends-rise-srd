@@ -1096,9 +1096,9 @@ function Ancestries() {
                     to{" "}
                     <Link
                       className="internal-link"
-                      to="/combat-abilities#gambit"
+                      to="/combat-abilities#overpower"
                     >
-                      gambit
+                      overpower
                     </Link>{" "}
                     and any{" "}
                     <Link className="internal-link" to="/rules/skills">

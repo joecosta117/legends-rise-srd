@@ -287,8 +287,8 @@ function LegendaryArchetypes() {
             <h4 className="header">Unerring Accuracy (10th-Level Feature)</h4>
             <p>
               You gain <Modifier type="f" count="1" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#gambit">
-                gambit
+              <Link className="internal-link" to="/combat-abilities#overpower">
+                overpower
               </Link>{" "}
               and{""}
               <Link className="internal-link" to="/combat-abilities#strike">

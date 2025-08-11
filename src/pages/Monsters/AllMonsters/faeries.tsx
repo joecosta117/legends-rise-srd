@@ -944,8 +944,8 @@ const FaerieMonsters = [
     tactics: (
       <span>
         Skin hags prefer to fight near heroes to use tearing claw then{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver. Once a hero is bleeding or seized, the skin hag will use
         drain blood.

@@ -1107,8 +1107,8 @@ function Relics() {
             <p>
               While wearing these gauntlets, you gain{" "}
               <Modifier count="1" type="f" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#gambit">
-                gambit
+              <Link className="internal-link" to="/combat-abilities#overpower">
+                overpower
               </Link>{" "}
               and skill rolls involving physical strength.
             </p>
@@ -1352,8 +1352,8 @@ function Relics() {
             <p>
               While wearing these gauntlets, you gain{" "}
               <Modifier type="f" count="1" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#gambit">
-                gambit
+              <Link className="internal-link" to="/combat-abilities#overpower">
+                overpower
               </Link>{" "}
               and skill rolls involving athleticism. You also gain the following
               ability:

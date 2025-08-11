@@ -76,8 +76,8 @@ const DemonMonsters = [
       <span>
         Soulwretches fight in groups and rush heroes in hopes to prove their
         worth. Each turn they use sludge slam and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -129,8 +129,8 @@ const DemonMonsters = [
       <span>
         Hellhouds charge the heroes using bite or fire breath if available, and
         will{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -436,8 +436,8 @@ const DemonMonsters = [
     tactics: (
       <span>
         Lust demons get close to the heroes to use claw or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         one before using draining kiss. Lust demons will also use demonic charm
         on dangerous heroes to keep themselves safe from harm.
@@ -679,8 +679,8 @@ const DemonMonsters = [
           hinder
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as maneuvers.
       </span>
@@ -1049,8 +1049,8 @@ const DemonMonsters = [
       <span>
         Horned demons fight in groups and rush heroes in hopes to prove their
         worth. Each turn they use weapon and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1201,8 +1201,8 @@ const DemonMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -1882,8 +1882,8 @@ const DemonMonsters = [
         from their scorching blood. Each turn, Wrath will use broken blade
         unless they have have enough fury to use wrath unbound. As a maneuver,
         Wrath will use{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">

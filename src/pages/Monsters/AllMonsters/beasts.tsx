@@ -15,8 +15,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant apes will rush the heroes to use fist and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -95,8 +95,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Tyrannosaurus will rush the heroes to use bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -243,8 +243,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant sharks will rush the heroes to use bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -328,8 +328,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant bears will rush the heroes to use rend and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -407,8 +407,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant scorpions will rush the heroes to use pincer or stinger and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -489,8 +489,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant spiders will rush the heroes to use mandibles or web area and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -562,8 +562,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant snakes will rush the heroes to use bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -620,8 +620,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Lions will rush the heroes to use fist and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -677,8 +677,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant wolves will rush the heroes to use bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -734,8 +734,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant octopuses will rush the heroes to use tentacle and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -792,8 +792,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Velociraptors will rush the heroes to use bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>
@@ -849,8 +849,8 @@ const BeastMonsters = [
     tactics: (
       <span>
         Giant crabs will rush the heroes to use tentacle and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>

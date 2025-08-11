@@ -169,8 +169,8 @@ function CombatActs() {
       ),
     },
     {
-      title: "Gambit (Maneuver)",
-      id: "gambit",
+      title: "Overpower (Maneuver)",
+      id: "overpower",
       actType: "Maneuver",
       content: (
         <div>

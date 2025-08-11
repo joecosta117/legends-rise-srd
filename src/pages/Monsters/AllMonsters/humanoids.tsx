@@ -202,8 +202,8 @@ const HumanoidMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver, then use greataxe.
       </span>
@@ -674,8 +674,8 @@ const HumanoidMonsters = [
           hinder
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver, then uses jagged blade.
       </span>
@@ -896,8 +896,8 @@ const HumanoidMonsters = [
         Grunts work together to take down one or two foes, and follow orders
         from whoever is in charge. Besides their attacks, grunts use their
         maneuver to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         , or{" "}
         <Link className="internal-link" to="/combat-abilities#taunt">
@@ -1784,8 +1784,8 @@ const HumanoidMonsters = [
         Elite grunts work together to take down one or two foes, and follow
         orders from whoever is in charge. Besides their attacks, elite grunts
         use their maneuver to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         .
       </span>
@@ -2288,8 +2288,8 @@ const HumanoidMonsters = [
           taunt
         </Link>{" "}
         or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver, then use greataxe.
       </span>

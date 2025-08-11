@@ -567,8 +567,8 @@ function HeroicArchetypes() {
             <p>
               You know how to best use your body despite your size. You ignore
               any penalties from being smaller for{" "}
-              <Link className="internal-link" to="/combat-abilities#gambit">
-                gambit
+              <Link className="internal-link" to="/combat-abilities#overpower">
+                overpower
               </Link>
               .
             </p>
@@ -982,8 +982,11 @@ function HeroicArchetypes() {
               <li>
                 <span>
                   Creatures take <Modifier type="mf" count="1" /> to{" "}
-                  <Link className="internal-link" to="/combat-abilities#gambit">
-                    gambit
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#overpower"
+                  >
+                    overpower
                   </Link>{" "}
                   you
                 </span>
@@ -2026,8 +2029,8 @@ function HeroicArchetypes() {
             <h4 className="header">Minor Telekinesis (7th-Level Feature)</h4>
             <p>
               You can{" "}
-              <Link className="internal-link" to="/combat-abilities#gambit">
-                gambit
+              <Link className="internal-link" to="/combat-abilities#overpower">
+                overpower
               </Link>{" "}
               with a range of 1 zone, and those abilities gain the magical and
               range keyword for you.

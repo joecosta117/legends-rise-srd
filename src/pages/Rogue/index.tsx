@@ -277,8 +277,8 @@ function Rogue() {
             <h3 className="header">Panache (1st-Level Feature)</h3>
             <p>
               Your stylish moves build your confidence. When you{" "}
-              <Link className="internal-link" to="/combat-abilities#gambit">
-                gambit
+              <Link className="internal-link" to="/combat-abilities#overpower">
+                overpower
               </Link>
               ,{" "}
               <Link className="internal-link" to="/combat-abilities#help">

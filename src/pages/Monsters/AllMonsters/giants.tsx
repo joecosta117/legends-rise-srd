@@ -16,8 +16,8 @@ const GiantMonsters = [
       <span>
         Ogre warriors rush to fight the heroes close up to use their greatclub.
         On each turn, an ogre will also use{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -235,8 +235,8 @@ const GiantMonsters = [
     tactics: (
       <span>
         Trolls prefer to fight near heroes to use rend and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -325,8 +325,8 @@ const GiantMonsters = [
       <span>
         Cyclops warriors prefer to fight near heroes and use sweep against
         multiple heroes whenever possible along with{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -589,8 +589,8 @@ const GiantMonsters = [
     tactics: (
       <span>
         Troll minions prefer to fight near heroes to use rend and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -667,8 +667,8 @@ const GiantMonsters = [
     tactics: (
       <span>
         Dire trolls prefer to fight near heroes to use bite and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -1083,8 +1083,8 @@ const GiantMonsters = [
     tactics: (
       <span>
         Frost giants prefer to fight near heroes to use{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         , then use ice breath if avaialbe. On other turns, frost giants use
         greataxe or cleave against multiple heroes.
@@ -1301,8 +1301,8 @@ const GiantMonsters = [
     tactics: (
       <span>
         Mountain giants prefer to fight near heroes to use{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         , then use maul or sweep against multiple heroes.
       </span>

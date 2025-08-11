@@ -15,8 +15,8 @@ const OozeMonsters = [
     tactics: (
       <span>
         Black oozes prefer to fight near heroes to use pseudopod, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit"></Link> as
-        a maneuver.
+        <Link className="internal-link" to="/combat-abilities#overpower"></Link>{" "}
+        as a maneuver.
       </span>
     ),
     statBlock: (
@@ -86,8 +86,8 @@ const OozeMonsters = [
       <span>
         Ooze cubes prefer to fight near heroes to use pseudopod or engulf, and
         uses{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -194,8 +194,8 @@ const OozeMonsters = [
       <span>
         Necro oozes prefer to fight near heroes to use draining pseudopod, and
         uses{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>

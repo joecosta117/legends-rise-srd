@@ -331,8 +331,11 @@ function Commander() {
                     Strike
                   </Link>
                   , and choose an ally within 1 zone. The chosen ally can{" "}
-                  <Link className="internal-link" to="/combat-abilities#gambit">
-                    gambit
+                  <Link
+                    className="internal-link"
+                    to="/combat-abilities#overpower"
+                  >
+                    overpower
                   </Link>{" "}
                   as a reaction.
                 </span>

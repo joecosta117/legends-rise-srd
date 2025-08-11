@@ -151,8 +151,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Frost drakes tend to charge into combat to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         , and then use rend. If they are near death, they charge the nearest
         enemy to explode near them.
@@ -221,8 +221,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Poison drakes tend to charge into combat to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         , and then use rend. If they are near death, they charge the nearest
         enemy to explode near them.
@@ -306,8 +306,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Young volcanic dragons tend to charge to the toughest enemy to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         them then use rend. Volcanic dragon always uses its volcanic breath if
         possible.
@@ -391,8 +391,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Adult volcanic dragons tend to charge to the toughest enemy to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         them then use rend. Volcanic dragon always uses its volcanic breath if
         possible. Smarter than young dragons, the volcanic dragon will grab a
@@ -560,8 +560,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Ancient volcanic dragons tend to charge to the toughest enemy to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         them then use rend. Volcanic dragon always uses its volcanic breath if
         possible. Smarter than young dragons, the volcanic dragon will grab a
@@ -739,8 +739,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Young tundra dragons tend to charge to the toughest enemy to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         them then use rend. A tundra dragon always uses its glacial breath if
         possible.
@@ -816,8 +816,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Adult tundra dragons tend to charge to the toughest enemy to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         them then use rend. A tundra dragon always uses its glacial breath if
         possible. Smarter than young dragons, the tundra dragon will grab a
@@ -966,8 +966,8 @@ const DragonMonsters = [
     tactics: (
       <span>
         Ancient tundra dragons tend to charge to the toughest enemy to{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         them then use rend. A tundra dragon always uses its glacial breath if
         possible. Smarter than young dragons, the tundra dragon will grab a
@@ -2454,8 +2454,8 @@ const DragonMonsters = [
           hinder
         </Link>
         , or{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as their maneuver.
       </span>

@@ -15,8 +15,8 @@ const PlantMonsters = [
     tactics: (
       <span>
         Rot saplings prefer to fight near heroes to use scratch, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -67,8 +67,8 @@ const PlantMonsters = [
     tactics: (
       <span>
         Rot spawns prefer to fight near heroes to use scratch, and uses{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>{" "}
         as a maneuver.
       </span>
@@ -605,8 +605,8 @@ const PlantMonsters = [
     tactics: (
       <span>
         Awakened trees prefer to be near heroes to use slam and{" "}
-        <Link className="internal-link" to="/combat-abilities#gambit">
-          gambit
+        <Link className="internal-link" to="/combat-abilities#overpower">
+          overpower
         </Link>
         .
       </span>
