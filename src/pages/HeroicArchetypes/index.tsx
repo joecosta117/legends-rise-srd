@@ -1825,7 +1825,7 @@ function HeroicArchetypes() {
               </li>
             </ul>
             <h3 className="header">7th-Level Features</h3>
-            <p>You gain the paladin's zealous blessing feature.</p>
+            <p>You gain the paladin's blessed aura feature.</p>
           </div>
         )}
         {selectedArchetype === "Poisoner" && (
