@@ -159,7 +159,11 @@ function Commander() {
                   <Link className="internal-link" to="/combat-abilities#move">
                     move
                   </Link>
-                  , strike, or cast a tier 0 Battle spell as a reaction.
+                  ,{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  , or cast a tier 0 Battle spell as a reaction.
                 </span>
               }
             />
@@ -323,7 +327,7 @@ function Commander() {
             <AbilityCard
               name="Debilitate Command"
               actType="Action"
-              descriptor="As you attack, you urge your ally to hinder a foe."
+              descriptor="As you attack, you urge your ally to debilitate a foe."
               frequency="At-will"
               effect={
                 <span>
@@ -331,11 +335,19 @@ function Commander() {
                     Strike
                   </Link>
                   , and choose an ally within 1 zone. The chosen ally can{" "}
+                  <Link className="internal-link" to="/combat-abilities#hinder">
+                    hinder
+                  </Link>
+                  ,{" "}
                   <Link
                     className="internal-link"
                     to="/combat-abilities#overpower"
                   >
                     overpower
+                  </Link>
+                  , or{" "}
+                  <Link className="internal-link" to="/combat-abilities#taunt">
+                    taunt
                   </Link>{" "}
                   as a reaction.
                 </span>
@@ -412,6 +424,30 @@ function Commander() {
               until the end of their first turn.
             </p>
 
+            <h3 className="header">Final Gambit</h3>
+            <p>You gain the following ability:</p>
+            <AbilityCard
+              name="Final Gambit"
+              actType="Action"
+              descriptor="With a rallying cry, you urge your allies to take a heroic stand."
+              frequency="Encounter"
+              target="You and allies within 1 zone"
+              // keywords="Escalation"
+              effect={
+                <span>
+                  Targets can spend a recovery and use their reaction to
+                  <Link className="internal-link" to="/combat-abilities#move">
+                    move
+                  </Link>
+                  ,{" "}
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    strike
+                  </Link>
+                  , or cast a tier 0 Battle spell.
+                </span>
+              }
+            />
+
             <h3 className="header">Inspiring Presence</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> inspirer subclass
@@ -419,19 +455,6 @@ function Commander() {
             <p>
               At the start of a combat encounter, you all gain temporary hit
               points equal to your tier (scene ends).
-            </p>
-
-            <h3 className="header">Momentous Aggression</h3>
-            <p>
-              You and your allies add the{" "}
-              <Link className="internal-link" to="/rules/combat#momentum">
-                momentum die
-              </Link>{" "}
-              to damage dealt from an{" "}
-              <Link className="internal-link" to="/rules/combat#attack-roll">
-                attack roll
-              </Link>
-              .
             </p>
 
             <h3 className="header">Tactical Presence</h3>
