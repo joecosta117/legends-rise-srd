@@ -135,10 +135,10 @@ function Commander() {
               <li>
                 <span>
                   <i>Suggestion:</i> You learn the{" "}
-                  <Link className="internal-link" to="/fighting-styles#archery">
-                    archery
+                  <Link className="internal-link" to="/fighting-styles#medic">
+                    medic
                   </Link>{" "}
-                  fighting style and assisting shot technique.
+                  fighting style and doctor's visit technique.
                 </span>
               </li>
             </ul>
