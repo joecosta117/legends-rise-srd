@@ -1618,9 +1618,9 @@ function HeroicArchetypes() {
 
             <h4 className="header">Restorative Power (5th-Level Feature)</h4>
             <p>
-              When you use a magical ability to <ToolTip preset="heal" /> a
-              creature, the healing amount increases by the spell’s tier or your
-              tier if the ability isn’t a spell. The creature can also make an{" "}
+              When you use an ability to <ToolTip preset="heal" /> a creature,
+              the healing amount increases by the spell’s tier or your tier if
+              the ability isn’t a spell. The creature can also make an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
@@ -1629,17 +1629,13 @@ function HeroicArchetypes() {
 
             <h4 className="header">Aura of Preservation (7th-Level Feature)</h4>
             <p>
-              You radiate life boosting energy to fend off death. While you
-              aren’t{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                defeated
-              </Link>
-              , any creature of your choice within your zone{" "}
-              <ToolTip preset="heals" /> 1 if they start their turn{" "}
+              You radiate life boosting energy to fend off death. When you or an
+              ally starts their turn{" "}
               <Link className="internal-link" to="/rules/combat#dying">
                 dying
-              </Link>
-              .
+              </Link>{" "}
+              within your zone, they <ToolTip preset="heal" /> equal to your
+              tier.
             </p>
           </div>
         )}
