@@ -361,26 +361,26 @@ function Rogue() {
               <ToolTip preset="shaken" /> targets.
             </p>
 
-            <h3 className="header">Lightning Reflexes</h3>
+            <h3 className="header">Poisonous Attack</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Lightning Reflexes"
-              actType="Reaction"
-              descriptor="You quickly dodge to avoid harm."
-              trigger={
+              name="Poisonous Attack"
+              actType="Ability"
+              descriptor="You quickly coat your weapon in debilitating poison as you strike."
+              frequency="At-will"
+              effect={
                 <span>
-                  When you see an enemy make an{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/combat#attack-roll"
-                  >
-                    attack roll
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>
+                  , but you deal toxic damage instead of your weapon's normal
+                  damage type. On a success, the target is{" "}
+                  <Link className="internal-link" to="/conditions#hindered">
+                    hindered
                   </Link>{" "}
-                  against your Guard
+                  (next turn ends).
                 </span>
               }
-              frequency="At-will"
-              effect="Triggering attack roll against only you takes +1 misfortune"
             />
 
             {/* <h3 className="header">Slip the Knife</h3>
