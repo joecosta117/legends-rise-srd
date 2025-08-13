@@ -968,7 +968,7 @@ function Summoner() {
                 <span>Staring hit points equal 10</span>
               </li>
               <li>
-                <span>You have 5 recoveries</span>
+                <span>You have 7 recoveries</span>
               </li>
               <li>
                 <span>

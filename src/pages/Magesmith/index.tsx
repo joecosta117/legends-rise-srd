@@ -555,7 +555,7 @@ function Magesmith() {
                 <span>
                   <i>Vanguard:</i> When you use vanguard challenge, you can
                   choose an ally within 1 zone to gain the same temporary hit
-                  points adn the abilty gains the range keyword.
+                  points and the abilty gains the range keyword.
                 </span>
               </li>
             </ul>
@@ -567,15 +567,6 @@ function Magesmith() {
             <p>
               When you use etch rune, you can spend mana equal to your tier to
               target 1d4+1 creatures within 1 zone.
-            </p>
-
-            <h3 className="header">No Friendly Fire</h3>
-            <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> machinist subclass
-            </p>
-            <p>
-              When your arcane turret uses the Fire or Magnify actions, you and
-              allies are unaffected.
             </p>
 
             <h3 className="header">Recharge Magic Item</h3>
@@ -590,6 +581,15 @@ function Magesmith() {
               requirement="Targeted item has an encounter ability that has already been used"
               effect="Targeted item regains another use of its encounter ability."
             />
+
+            <h3 className="header">Skittering Turret</h3>
+            <p style={{ marginBottom: 0 }}>
+              <b>Requirement:</b> machinist subclass
+            </p>
+            <p>
+              When you command your arcane turret, it can move and use an
+              action.
+            </p>
 
             <h3 className="header">Spell Store</h3>
             <p>You gain the following ability:</p>

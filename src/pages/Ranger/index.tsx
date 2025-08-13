@@ -472,8 +472,7 @@ function Ranger() {
                   Mark prey, then{" "}
                   <Link className="internal-link" to="/combat-abilities#aim">
                     aim
-                  </Link>{" "}
-                  your prey
+                  </Link>
                 </span>
               }
             />

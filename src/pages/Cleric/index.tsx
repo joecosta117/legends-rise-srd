@@ -443,36 +443,25 @@ function Cleric() {
               trigger="You cast a battle spell that heals a creature"
               effect={
                 <span>
-                  Choose one target of the spell to <ToolTip preset="heal" />{" "}
-                  equal to your proficiency bonus.
+                  Choose one target of the spell to additionally{" "}
+                  <ToolTip preset="heal" /> equal to your proficiency bonus.
                 </span>
               }
             />
 
             <h2>Tier 2 Class Talents</h2>
-            <h3 className="header">Invigorating Spell</h3>
-            <p>You gain the following ability:</p>
-            <AbilityCard
-              name="Invigorating Spell"
-              actType="Reaction"
-              descriptor="As you wield divine magic, you bestow a blessing upon an ally."
-              frequency="Encounter"
-              keywords="Spellshape"
-              trigger="You cast a battle spell"
-              effect={
-                <span>
-                  Choose one creature within 1 zone to gain 2{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/combat#temporary-hit-points"
-                  >
-                    temporary hit points
-                  </Link>{" "}
-                  per the triggering spell tier, or 1 temporary hit point for a
-                  tier 0 spell (scene ends)
-                </span>
-              }
-            />
+            <h3 className="header">Invigorating Prayer</h3>
+            <p>
+              When you choose a target for your opening prayer feature, they
+              gain{" "}
+              <Link
+                className="internal-link"
+                to="/rules/combat#temporary-hit-points"
+              >
+                temporary hit points
+              </Link>{" "}
+              equal to your proficiency bonus (scene ends).
+            </p>
 
             <h3 className="header">Mass Inspiration</h3>
             <p style={{ marginBottom: 0 }}>
@@ -489,13 +478,13 @@ function Cleric() {
             <AbilityCard
               name="Purifying Spell"
               actType="Reaction"
-              descriptor="You cleanse an ally of debilitations with a spell."
+              descriptor="As you wield divine magic, you cleanse an ally of affliction."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You cast a tier 1+ battle spell that targets a friendly creature"
+              trigger="You cast a tier 1+ battle spell"
               effect={
                 <span>
-                  Triggering creatures can make an{" "}
+                  Choose a creatures within 1 zone to make an{" "}
                   <Link className="internal-link" to="/rules/combat#overcome">
                     overcome roll
                   </Link>{" "}

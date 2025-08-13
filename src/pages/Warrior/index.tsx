@@ -304,18 +304,10 @@ function Warrior() {
               . You can take this class talent multiple times.
             </p>
 
-            <h3 className="header">Greater Comeback</h3>
+            <h3 className="header">Greater Interrupt</h3>
             <p>
-              When you use comeback attack, you gain a number of{" "}
-              <Modifier type="f" /> to your{" "}
-              <Link className="internal-link" to="/combat-abilities#strike">
-                strike
-              </Link>{" "}
-              equal to the{" "}
-              <Link className="internal-link" to="/rules/combat#momentum">
-                momentum die
-              </Link>{" "}
-              .
+              When you get a critical success on interrupt attack, you disrupt
+              the triggering action.
             </p>
 
             <h3 className="header">Tough</h3>

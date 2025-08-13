@@ -625,8 +625,9 @@ function Vessel() {
               <b>Requirement:</b> beast subclass
             </p>
             <p>
-              When you use monstrous form, make an attack roll against the
-              Spirit of each enemy within 1 zone.
+              When you use monstrous form, reach greater fury, or reach apex
+              fury, make an attack roll against the Spirit of each enemy within
+              1 zone.
             </p>
             <ul>
               <li>

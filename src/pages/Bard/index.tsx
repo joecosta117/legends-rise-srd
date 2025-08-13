@@ -459,10 +459,7 @@ function Bard() {
             <h3 className="header">Extend Performance</h3>
             <p>
               When you use a bardic performance, you can spend mana equal to
-              your tier to increase the duration to last the scene. If the
-              bardic performance affects enemies, then enemies make overcome
-              rolls at the end of their turns to end the performance’s effect on
-              themselves.
+              your tier to increase the duration to last the scene.
             </p>
 
             <h3 className="header">Inspiring Drama</h3>

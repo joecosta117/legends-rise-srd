@@ -437,7 +437,7 @@ function Arcanist() {
               name="Arcane Vitality"
               actType="Free"
               descriptor="You transmute some of your life force into magical essence."
-              frequency="Encounter"
+              frequency="At-will"
               keywords="Magical"
               effect="Spend a recovery, but instead of regaining hit points, you regain mana equal to your tier."
             />

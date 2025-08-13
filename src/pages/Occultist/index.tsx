@@ -444,7 +444,7 @@ function Occultist() {
               descriptor="Your spell punishes a foe's resilience."
               frequency="At-will"
               keywords="Spellshape"
-              trigger="You cast a battle spell that imposes a condition with duration turn ends"
+              trigger="You cast a battle spell that imposes a condition with duration next turn ends"
               effect="Choose one target of the triggering spell, and extend the duration of the condition on that target to the end of the scene"
             />
 
@@ -501,7 +501,7 @@ function Occultist() {
                 ongoing
               </Link>{" "}
               damage equal to your tier. This ongoing damage only ends when the
-              creature is no longer the target of your hex.
+              creature is no longer the target of your hex or the scene ends.
             </p>
 
             <h3 className="header">Defensive Sacrifice</h3>
