@@ -101,9 +101,9 @@ const Hazard: React.FC<MonsterProps> = ({
         case "1":
           return "14";
         case "2":
-          return "17";
+          return "16";
         case "3":
-          return "20";
+          return "18";
       }
     }
   };
