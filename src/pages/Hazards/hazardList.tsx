@@ -237,9 +237,9 @@ const HazardList = [
       <Monster
         name="Ghostly Warrior"
         hp="4"
-        evn="15"
+        evn="16"
         mgt="17"
-        res="13"
+        res="14"
         pb="4"
         type="Medium Undead"
         tier="2"

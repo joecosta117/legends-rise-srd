@@ -22,9 +22,9 @@ const DragonMonsters = [
       <Monster
         name="Dragon Hatchling"
         hp="6"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         speeds="fly 1"
         pb="2"
         type="Medium Dragon"
@@ -92,9 +92,9 @@ const DragonMonsters = [
       <Monster
         name="Flame Drake"
         hp="8"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -162,9 +162,9 @@ const DragonMonsters = [
       <Monster
         name="Frost Drake"
         hp="12"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -232,9 +232,9 @@ const DragonMonsters = [
       <Monster
         name="Poison Drake"
         hp="10"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -317,9 +317,9 @@ const DragonMonsters = [
       <Monster
         name="Young Volcanic Dragon"
         hp="24"
-        evn="15"
+        evn="16"
         mgt="15"
-        res="13"
+        res="12"
         speeds="fly 1"
         pb="2"
         type="Large Dragon"
@@ -403,9 +403,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Volcanic Dragon"
         hp="30"
-        evn="17"
+        evn="18"
         mgt="17"
-        res="15"
+        res="14"
         pb="4"
         type="Huge Dragon"
         tier="2"
@@ -572,9 +572,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Volcanic Dragon"
         hp="54"
-        evn="19"
+        evn="20"
         mgt="19"
-        res="17"
+        res="16"
         pb="6"
         speeds="fly 2"
         type="Colossal Dragon"
@@ -750,10 +750,10 @@ const DragonMonsters = [
       <Monster
         name="Young Tundra Dragon"
         hp="24"
-        evn="13"
+        evn="14"
         speeds="fly 1"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -828,10 +828,10 @@ const DragonMonsters = [
       <Monster
         name="Adult Tundra Dragon"
         hp="30"
-        evn="15"
+        evn="16"
         mgt="17"
         speeds="fly 1"
-        res="13"
+        res="14"
         pb="4"
         type="Huge Dragon"
         tier="2"
@@ -978,9 +978,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Tundra Dragon"
         hp="54"
-        evn="17"
+        evn="18"
         mgt="19"
-        res="15"
+        res="16"
         speeds="fly 2"
         pb="6"
         type="Colossal Dragon"
@@ -1136,9 +1136,9 @@ const DragonMonsters = [
       <Monster
         name="Young Storm Dragon"
         hp="16"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -1214,9 +1214,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Storm Dragon"
         hp="22"
-        evn="15"
+        evn="16"
         mgt="17"
-        res="13"
+        res="14"
         pb="4"
         type="Huge Dragon"
         tier="2"
@@ -1373,9 +1373,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Storm Dragon"
         hp="42"
-        evn="17"
+        evn="18"
         mgt="19"
-        res="15"
+        res="16"
         pb="6"
         type="Huge Dragon"
         tier="3"
@@ -1540,9 +1540,9 @@ const DragonMonsters = [
       <Monster
         name="Young Swamp Dragon"
         hp="20"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -1624,9 +1624,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Swamp Dragon"
         hp="26"
-        evn="15"
+        evn="16"
         mgt="17"
-        res="13"
+        res="14"
         pb="4"
         type="Huge Dragon"
         tier="2"
@@ -1794,9 +1794,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Swamp Dragon"
         hp="48"
-        evn="17"
+        evn="18"
         mgt="19"
-        res="15"
+        res="16"
         pb="6"
         type="Colossal Dragon"
         tier="3"
@@ -1966,7 +1966,7 @@ const DragonMonsters = [
     role: "Disabler",
     threat: "Major",
     description:
-      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant whil others rule more justly.",
+      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant while others rule more justly.",
     tactics: (
       <span>
         Young forest dragons will rush the heroes to use poisonous rend or
@@ -1978,9 +1978,9 @@ const DragonMonsters = [
       <Monster
         name="Young Forest Dragon"
         hp="20"
-        evn="13"
+        evn="14"
         mgt="15"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -2062,7 +2062,7 @@ const DragonMonsters = [
     role: "Disabler",
     threat: "Boss",
     description:
-      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant whil others rule more justly.",
+      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant while others rule more justly.",
     tactics: (
       <span>
         Adult forest dragons will rush the heroes to use poisonous rend or
@@ -2075,9 +2075,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Forest Dragon"
         hp="26"
-        evn="15"
+        evn="16"
         mgt="17"
-        res="13"
+        res="14"
         pb="4"
         type="Huge Dragon"
         tier="2"
@@ -2253,7 +2253,7 @@ const DragonMonsters = [
     role: "Disabler",
     threat: "Boss",
     description:
-      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant whil others rule more justly.",
+      "The crafty forest dragons live in deep forests and rarely seen by civilization. Forest dragons are the rulers of their domain, depending fealty from other forest denizens. Some forest dragons rule as a petty tyrant while others rule more justly.",
     tactics: (
       <span>
         Ancient forest dragons will rush the heroes to use poisonous rend or
@@ -2266,9 +2266,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Forest Dragon"
         hp="48"
-        evn="17"
+        evn="18"
         mgt="19"
-        res="15"
+        res="16"
         pb="6"
         type="Colossal Dragon"
         tier="3"
@@ -2464,9 +2464,9 @@ const DragonMonsters = [
       <Monster
         name="Young Infernal Dragon"
         hp="24"
-        evn="12"
+        evn="13"
         mgt="15"
-        res="12"
+        res="13"
         pb="2"
         type="Large Dragon Fiend"
         tier="1"
@@ -2550,9 +2550,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Infernal Dragon"
         hp="30"
-        evn="14"
+        evn="15"
         mgt="17"
-        res="14"
+        res="15"
         pb="4"
         type="Huge Dragon Fiend"
         tier="2"
@@ -2694,9 +2694,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Infernal Dragon"
         hp="54"
-        evn="16"
+        evn="17"
         mgt="19"
-        res="16"
+        res="17"
         pb="6"
         type="Colossal Dragon Fiend"
         tier="3"
@@ -2838,9 +2838,9 @@ const DragonMonsters = [
       <Monster
         name="Young Void Dragon"
         hp="20"
-        evn="12"
+        evn="13"
         mgt="15"
-        res="12"
+        res="13"
         pb="2"
         type="Large Dragon Aberration"
         tier="1"
@@ -2936,9 +2936,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Void Dragon"
         hp="26"
-        evn="14"
+        evn="15"
         mgt="17"
-        res="14"
+        res="15"
         pb="4"
         type="Huge Dragon Aberration"
         tier="2"
@@ -3112,9 +3112,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Void Dragon"
         hp="48"
-        evn="16"
+        evn="17"
         mgt="19"
-        res="16"
+        res="17"
         pb="6"
         type="Colossal Dragon Aberration"
         tier="3"
@@ -3293,9 +3293,9 @@ const DragonMonsters = [
       <Monster
         name="Young Umbral Dragon"
         hp="20"
-        evn="13"
+        evn="14"
         mgt="13"
-        res="11"
+        res="12"
         pb="2"
         type="Large Dragon"
         tier="1"
@@ -3400,9 +3400,9 @@ const DragonMonsters = [
       <Monster
         name="Adult Umbral Dragon"
         hp="26"
-        evn="15"
+        evn="16"
         mgt="15"
-        res="13"
+        res="14"
         pb="4"
         type="Huge Dragon"
         tier="2"
@@ -3588,9 +3588,9 @@ const DragonMonsters = [
       <Monster
         name="Ancient Umbral Dragon"
         hp="48"
-        evn="17"
+        evn="18"
         mgt="17"
-        res="15"
+        res="16"
         pb="6"
         type="Colossal Dragon"
         tier="3"

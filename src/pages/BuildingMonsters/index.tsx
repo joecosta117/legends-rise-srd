@@ -124,21 +124,21 @@ function BuildingMonsters() {
             <tr>
               <td>1</td>
               <td>10</td>
-              <td>13, 11</td>
+              <td>14, 12</td>
               <td>+2</td>
               <td>melee 3/6, range 2/5, multi 1/3</td>
             </tr>
             <tr>
               <td>2</td>
               <td>26</td>
-              <td>15, 13</td>
+              <td>16, 14</td>
               <td>+4</td>
               <td>melee 6/12, range 4/10, multi 2/6</td>
             </tr>
             <tr>
               <td>3</td>
               <td>48</td>
-              <td>17, 15</td>
+              <td>18, 16</td>
               <td>+6</td>
               <td>melee 9/18, range 6/15, multi 3/9</td>
             </tr>
