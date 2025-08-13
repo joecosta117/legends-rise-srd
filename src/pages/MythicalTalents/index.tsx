@@ -14,7 +14,7 @@ function MythicalTalents() {
         <p>You gain a fly speed equal to your land speed.</p>
 
         <h3 className="header">Mythical Fortitude</h3>
-        <p>Your hit points increase by your class's starting amount.</p>
+        <p>Your hit points increase by +10.</p>
 
         <h3 className="header">Mythical Hero</h3>
         <p>
