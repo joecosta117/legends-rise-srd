@@ -93,7 +93,7 @@ function SkillRules() {
           <tbody>
             <tr>
               <td>0</td>
-              <td>9</td>
+              <td>11</td>
               <td>
                 Challenges easy for anyone such as overhearing a loud argument
                 nearby, climbing a knotted rope, or recalling a well known fact.
@@ -101,7 +101,7 @@ function SkillRules() {
             </tr>
             <tr>
               <td>1</td>
-              <td>12</td>
+              <td>14</td>
               <td>
                 Challenges that are troubling for low level heroes such as
                 sneaking past cultists, navigating through a forest, or breaking
@@ -110,7 +110,7 @@ function SkillRules() {
             </tr>
             <tr>
               <td>2</td>
-              <td>15</td>
+              <td>17</td>
               <td>
                 Challenges that are difficult for experienced heroes such as
                 disarming a powerful mage's trap, persuading a monarch, or
@@ -119,7 +119,7 @@ function SkillRules() {
             </tr>
             <tr>
               <td>3</td>
-              <td>18</td>
+              <td>20</td>
               <td>
                 Challenges that are difficult for even the most powerful of
                 heroes such as closing a planar portal with their bare hands,
@@ -128,7 +128,7 @@ function SkillRules() {
             </tr>
             <tr>
               <td>4</td>
-              <td>21</td>
+              <td>23</td>
               <td>
                 Challenges are beyond mortals such as swimming up a waterfall,
                 deceiving a god, or stealing someone’s worn armor without them

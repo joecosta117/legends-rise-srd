@@ -99,11 +99,11 @@ const Hazard: React.FC<MonsterProps> = ({
     if (tier) {
       switch (tier) {
         case "1":
-          return "12";
+          return "14";
         case "2":
-          return "15";
+          return "17";
         case "3":
-          return "18";
+          return "20";
       }
     }
   };
