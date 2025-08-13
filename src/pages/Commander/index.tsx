@@ -101,8 +101,7 @@ function Commander() {
               </li>
               <li>
                 <span>
-                  <b>Training:</b> Light armor, heavy armor, shields, and all
-                  weapons
+                  <b>Training:</b> All armor and weapons
                 </span>
               </li>
               <li>
@@ -173,7 +172,7 @@ function Commander() {
             <AbilityCard
               name="Inspiring Attack"
               actType="Action"
-              descriptor="As you attack, you urge your ally to seize the moment."
+              descriptor="With a rallying strike, you inspire your comrade’s resolve and encourage them to regain their stamina."
               frequency="Encounter"
               keywords="Escalation"
               effect={
