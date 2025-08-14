@@ -711,8 +711,8 @@ function Summoner() {
                   </li>
                   <li>
                     <span>
-                      Assault damage equals 3 per your tier, and deals unholy
-                      damage
+                      Assault deals unholy damage, and major summons deals 3
+                      damage per your tier
                     </span>
                   </li>
                   <li>
@@ -997,7 +997,11 @@ function Summoner() {
             <p>
               When you use conjure summons, choose a number of enemies equal to
               your proficiency bonus within your major summons’ zone. Chosen
-              enemies take 1 unholy damage per your tier.
+              enemies become{" "}
+              <Link className="internal-link" to="/conditions#hindered">
+                hindered
+              </Link>{" "}
+              (next turn ends).
             </p>
 
             <h3 className="header">Destructive Aura</h3>

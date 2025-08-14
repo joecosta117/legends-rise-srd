@@ -432,7 +432,6 @@ function LegendaryArchetypes() {
               frequency="Encounter"
               keywords="Aura, Magical"
               duration="Scene ends"
-              target="You and each ally within your zone"
               effect={
                 <span>
                   Your zone becomes a{" "}
