@@ -491,6 +491,16 @@ function Swordmage() {
             />
 
             <h2>Tier 2 Class Talents</h2>
+
+            <h3 className="header">Arcane Interrupt</h3>
+            <p style={{ marginBottom: 0 }}>
+              <b>Requirement:</b> mage hunter subclass
+            </p>
+            <p>
+              When you get a critical success on dimensional interrupt, you
+              disrupt the triggering ability.
+            </p>
+
             <h3 className="header">Dimensional Lunge</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
@@ -514,12 +524,13 @@ function Swordmage() {
               <b>Requirement:</b> aegis subclass
             </p>
             <p>
-              When you use aegis shield and after the result of the{" "}
+              When you use aegis shield, you can magically swap places with your
+              ally if they are willing. You become the target of the triggering{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
-              </Link>
-              , you can magically swap places with your ally if they are
-              willing.
+              </Link>{" "}
+              with aegis shield's misfortune penalty applying to the attack roll
+              only against you.
             </p>
 
             <h3 className="header">Greater Destructive Enspell</h3>
@@ -537,19 +548,6 @@ function Swordmage() {
               </Link>{" "}
               damage equal to your tier of the same damage type your strike
               deals.
-            </p>
-
-            <h3 className="header">Greater Interrupt</h3>
-            <p style={{ marginBottom: 0 }}>
-              <b>Requirement:</b> mage hunter subclass
-            </p>
-            <p>
-              When you use dimensional interrupt, on a critical successful
-              <Link className="internal-link" to="/combat-abilities#strike">
-                strike
-              </Link>
-              , your target’s magical ability has no effect or the ability
-              they’re focusing on ends.
             </p>
 
             <h3 className="header">Spell Parry</h3>

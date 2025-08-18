@@ -609,15 +609,14 @@ function Vessel() {
               <b>Requirement:</b> undeath subclass
             </p>
             <p>
-              When you see a creature reduced to 0 hit points within your zone,
-              you gain{" "}
+              When you see a creature take damage within your zone, you gain{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#temporary-hit-points"
               >
                 temporary hit points
               </Link>{" "}
-              equal to your proficiency bonus.
+              equal to your tier (scene ends).
             </p>
 
             <h3 className="header">Frightening Howl</h3>

@@ -307,7 +307,7 @@ function Warrior() {
             <h3 className="header">Greater Interrupt</h3>
             <p>
               When you get a critical success on interrupt attack, you disrupt
-              the triggering action.
+              the triggering ability.
             </p>
 
             <h3 className="header">Tough</h3>
