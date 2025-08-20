@@ -247,9 +247,14 @@ function Vessel() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Monstrous Regeneration</h3>
             <p>
-              Your monstrous powers keep you from dying. When you have greater
-              fury, you have <ToolTip preset="regen" /> equal to your tier, or
-              equal to your proficiency bonus if you have apex fury.
+              Your monstrous powers shrug off wounds that would fell mortals.
+              When you have greater fury, you have <ToolTip preset="regen" />{" "}
+              equal to your tier, or equal to your proficiency bonus if you have
+              apex fury. You don't benefit from this regeneration while you are{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                dying
+              </Link>
+              .
             </p>
           </div>
         )}
@@ -553,7 +558,8 @@ function Vessel() {
               <li>
                 <span>
                   <b>Angel:</b> Allies that start their turn within your zone
-                  gain the benefits of your monstrous regeneration feature.
+                  gain the benefits of your monstrous regeneration feature if
+                  you aren't dying.
                 </span>
               </li>
               <li>
@@ -664,14 +670,27 @@ function Vessel() {
               your momentum die.
             </p>
 
-            <h3 className="header">Undying Monster</h3>
-            <p>
-              While in your monstrous form, you can't be{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                defeated
-              </Link>{" "}
-              until the scene ends.
-            </p>
+            <h3 className="header">Time To Die</h3>
+            <p>You gain the following ability:</p>
+            <AbilityCard
+              name="Time To Die"
+              actType="Action"
+              descriptor="You unleash a furious blow that could fell any foe."
+              frequency="Encounter"
+              keywords="Escalation"
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  with a melee weapon, and you deal additional damage equal to
+                  double your fury points. If the target is{" "}
+                  <ToolTip preset="shaken" /> after taking this damage, then
+                  they are instead reduced to 0 hit points except for boss
+                  monsters.
+                </span>
+              }
+            />
           </div>
         )}
       </div>
