@@ -637,11 +637,15 @@ function Vessel() {
             <ul>
               <li>
                 <span>
-                  <b>Critical: </b> Same as a success, and{" "}
+                  <b>Critical: </b>
+                  <Link className="internal-link" to="/conditions#hindered">
+                    hindered
+                  </Link>{" "}
+                  (scene ends) or{" "}
                   <Link className="internal-link" to="/conditions#dazed">
                     dazed
                   </Link>{" "}
-                  (next turn ends) as they cower in fear
+                  (scene ends) if already hindered
                 </span>
               </li>
               <li>
@@ -650,16 +654,11 @@ function Vessel() {
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
                   </Link>{" "}
-                  (scene ends)
-                </span>
-              </li>
-              <li>
-                <span>
-                  <b>Partial: </b>
-                  <Link className="internal-link" to="/conditions#hindered">
-                    hindered
+                  (next turn ends) or{" "}
+                  <Link className="internal-link" to="/conditions#dazed">
+                    dazed
                   </Link>{" "}
-                  (next turn ends)
+                  (next turn ends) if already hindered
                 </span>
               </li>
             </ul>
