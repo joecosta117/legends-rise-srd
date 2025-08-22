@@ -585,9 +585,9 @@ function ThemeTalents() {
       title: "Adrenaline Rush",
       content: (
         <span>
-          You can push your body beyond your limits. You can take direct equal
-          to your proficiency bonus to gain <Modifier type="f" count="1" /> to
-          all{" "}
+          You can push your body beyond your limits. You can take direct damage
+          equal to your proficiency bonus to gain{" "}
+          <Modifier type="f" count="1" /> to all{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
