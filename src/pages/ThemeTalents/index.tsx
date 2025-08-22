@@ -642,11 +642,11 @@ function ThemeTalents() {
       content: (
         <span>
           You can channel your faith to manifest a minor miracle. Once per
-          session, when you see a creature get a failure or partial success on a{" "}
+          session, when you see a creature get a success or lower on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
-          , you can turn the result into an automatic success.
+          , you can turn the result into a critical success.
         </span>
       ),
     },
