@@ -116,6 +116,22 @@ function ThemeTalents() {
       ),
     },
     {
+      title: "Rapid Downtime",
+      content: (
+        <span>
+          During a safe rest, you can do a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>{" "}
+          activity, but you can't spend gold to attempt additional downtime
+          activities during this rest.
+        </span>
+      ),
+    },
+    {
       title: "Risky Ritual",
       content: (
         <span>
@@ -325,6 +341,22 @@ function ThemeTalents() {
       ),
     },
     {
+      title: "Rapid Downtime",
+      content: (
+        <span>
+          During a safe rest, you can do a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>{" "}
+          activity, but you can't spend gold to attempt additional downtime
+          activities during this rest.
+        </span>
+      ),
+    },
+    {
       title: "Wide Network",
       content: (
         <span>
@@ -499,6 +531,22 @@ function ThemeTalents() {
         </span>
       ),
     },
+    {
+      title: "Rapid Downtime",
+      content: (
+        <span>
+          During a safe rest, you can do a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>{" "}
+          activity, but you can't spend gold to attempt additional downtime
+          activities during this rest.
+        </span>
+      ),
+    },
   ];
   const divineT2Talents = [
     {
@@ -630,6 +678,22 @@ function ThemeTalents() {
       title: "Protector",
       content:
         "When an ally close to you takes damage from a non-combat related danger, you can instead take the damage.",
+    },
+    {
+      title: "Rapid Downtime",
+      content: (
+        <span>
+          During a safe rest, you can do a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>{" "}
+          activity, but you can't spend gold to attempt additional downtime
+          activities during this rest.
+        </span>
+      ),
     },
     {
       title: "Risk Taker",
@@ -866,6 +930,22 @@ function ThemeTalents() {
           climb speed equal to your land speed, <ToolTip preset="night" />, or
           swim speed equal to your land speed. You can choose this theme talent
           multiple times, choosing a different option each time.
+        </span>
+      ),
+    },
+    {
+      title: "Rapid Downtime",
+      content: (
+        <span>
+          During a safe rest, you can do a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime
+          </Link>{" "}
+          activity, but you can't spend gold to attempt additional downtime
+          activities during this rest.
         </span>
       ),
     },
