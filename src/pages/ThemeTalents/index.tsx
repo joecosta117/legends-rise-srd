@@ -199,6 +199,21 @@ function ThemeTalents() {
       ),
     },
     {
+      title: "Rapid Construction",
+      content: (
+        <span>
+          Once per session, you can craft as a{" "}
+          <Link
+            className="internal-link"
+            to="/rules/skills#downtime-activities"
+          >
+            downtime activity
+          </Link>{" "}
+          during a short rest.
+        </span>
+      ),
+    },
+    {
       title: "Spell Learner",
       content: (
         <span>
@@ -385,6 +400,15 @@ function ThemeTalents() {
       ),
     },
     {
+      title: "Clever Edge",
+      content: (
+        <span>
+          When you gain a <Modifier type="f" /> to a skill roll from one of your
+          knacks, reroll the <Modifier type="f" /> and take the higher result.
+        </span>
+      ),
+    },
+    {
       title: "Gambler",
       content: (
         <span>
@@ -555,6 +579,18 @@ function ThemeTalents() {
         "You always know if someone of your tier or lower is lying to you.",
     },
     {
+      title: "Group Prayer",
+      content: (
+        <span>
+          Once per session, when you and your allies do a{" "}
+          <Link className="internal-link" to="/rules/skills#group-rolls">
+            group roll
+          </Link>
+          , you all gain <Modifier type="f" count="1" /> to your skill roll.
+        </span>
+      ),
+    },
+    {
       title: "Purifying Touch",
       content:
         "With a quick prayer and touch, you can cure people of minor afflictions such as non-magical illnesses or diseases, or magical illnesses or diseases at tier 3.",
@@ -635,11 +671,11 @@ function ThemeTalents() {
         <span>
           You can push your body beyond your limits. You can take direct damage
           equal to your proficiency bonus to gain{" "}
-          <Modifier type="f" count="1" /> to all{" "}
+          <Modifier type="f" count="1" /> to a{" "}
           <Link className="internal-link" to="/rules/skills">
-            skill rolls
-          </Link>{" "}
-          during a scene.
+            skill roll
+          </Link>
+          .
         </span>
       ),
     },
@@ -733,14 +769,14 @@ function ThemeTalents() {
   ];
   const martialT2Talents = [
     {
-      title: "Martial Persistence",
+      title: "Mighty Deed",
       content: (
         <span>
-          Once per session, when you get a failure on a{" "}
+          Once per session, you can treat the result of your{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
-          </Link>
-          , you can reroll and take the higher result.
+          </Link>{" "}
+          as one degree higher.
         </span>
       ),
     },
@@ -775,6 +811,21 @@ function ThemeTalents() {
           , they gain <Modifier type="f" count="1" /> if your chosen presence
           would help in the situation, such as respected helping persuade a lord
           or feared helping scare off a gang.
+        </span>
+      ),
+    },
+    {
+      title: "We Stand Together",
+      content: (
+        <span>
+          When you enter a skill encounter, you and your allies each gain{" "}
+          <Link
+            className="internal-link"
+            to="/rules/combat#temporary-hit-points"
+          >
+            temporary hit points
+          </Link>{" "}
+          equal to your proficiency bonus (scene ends).
         </span>
       ),
     },
@@ -955,9 +1006,9 @@ function ThemeTalents() {
       title: "Shapeshifter",
       content: (
         <span>
-          Once per session, you can transform into a tiny or small creature such
-          as a spider, robin, cat, or fish. Your defenses all equal 10, and if
-          you take any damage, you revert back to your normal form.
+          Once per session, you can transform into an animal of large size or
+          smaller. Your Guard equals 8 plus your proficiency bonus, and if you
+          take any damage, you revert back to your normal form.
         </span>
       ),
     },
@@ -981,6 +1032,15 @@ function ThemeTalents() {
             magic tradition
           </Link>{" "}
           .
+        </span>
+      ),
+    },
+    {
+      title: "Tree Travel",
+      content: (
+        <span>
+          Once per session, you can teleport you and your allies through one
+          tree to another tree of the same type within 1 mile.
         </span>
       ),
     },
