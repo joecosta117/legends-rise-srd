@@ -128,7 +128,7 @@ function SkillRules() {
             </tr>
             <tr>
               <td>4</td>
-              <td>22</td>
+              <td>20</td>
               <td>
                 Challenges are beyond mortals such as swimming up a waterfall,
                 deceiving a god, or stealing someone’s worn armor without them
