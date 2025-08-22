@@ -471,7 +471,7 @@ function ThemeTalents() {
       title: "Veil of Night",
       content: (
         <span>
-          "Your trickery has tapped into deep magic that enshrouds you from the
+          Your trickery has tapped into deep magic that enshrouds you from the
           sight of others. You are always{" "}
           <Link className="internal-link" to="/rules/combat#stealth">
             invisible
@@ -835,7 +835,7 @@ function ThemeTalents() {
       title: "General",
       content: (
         <span>
-          You have started your own mercenary company of soldiers. During
+          You have started your own mercenary company of soldiers. During{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
@@ -859,7 +859,7 @@ function ThemeTalents() {
           session with an additional{" "}
           <Link className="internal-link" to="/rules/rolling#hero-point">
             hero point
-          </Link>{" "}
+          </Link>
           , and your maximum amount of hero points you can have at once
           increases by +1. When you spend a hero point on a{" "}
           <Link className="internal-link" to="/rules/skills">
