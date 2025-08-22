@@ -725,7 +725,8 @@ function HeroicArchetypes() {
                   <Link className="internal-link" to="/rules/combat#overcome">
                     overcome roll
                   </Link>{" "}
-                  with <Modifier type="f" count="1" /> against an effect
+                  with <Modifier type="f" count="1" /> against an effect or end
+                  an effect with a duration of (next turn ends)
                 </span>
               </li>
             </ul>
@@ -1624,7 +1625,8 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
-              against an effect.
+              against an effect or end an effect with a duration of (next turn
+              ends).
             </p>
 
             <h4 className="header">Aura of Preservation (7th-Level Feature)</h4>

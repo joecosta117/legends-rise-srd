@@ -285,7 +285,8 @@ function FightingStyles() {
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>{" "}
-                    against an effect, then{" "}
+                    against an effect or end an effect with a duration of (next
+                    turn ends), then{" "}
                     <Link
                       className="internal-link"
                       to="/combat-abilities#strike"
@@ -963,7 +964,8 @@ function FightingStyles() {
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>{" "}
-                    against an effect
+                    against an effect or end an effect with a duration of (next
+                    turn ends)
                   </span>
                 }
               />

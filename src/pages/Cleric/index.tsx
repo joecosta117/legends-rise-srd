@@ -392,7 +392,8 @@ function Cleric() {
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
-              against an effect.
+              against an effect or end an effect with a duration of (next turn
+              ends).
             </p>
 
             <h3 className="header">Expanded Cleric Magic</h3>
@@ -484,11 +485,12 @@ function Cleric() {
               trigger="You cast a tier 1+ battle spell"
               effect={
                 <span>
-                  Choose a creatures within 1 zone to make an{" "}
+                  Choose a creature within 1 zone to either make an{" "}
                   <Link className="internal-link" to="/rules/combat#overcome">
                     overcome roll
                   </Link>{" "}
-                  against an effect.
+                  against an effect or end an effect with a duration of (next
+                  turn ends).
                 </span>
               }
             />
