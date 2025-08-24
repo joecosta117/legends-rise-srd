@@ -376,8 +376,8 @@ function ThemeTalents() {
       content: (
         <span>
           Once per significant location, such as a town or city, you can create
-          a non-player character (NPC) that you know in the area. You gain +1
-          fortune to{" "}
+          a non-player character (NPC) that you know in the area. You gain{" "}
+          <Modifier type="f" count="1" /> to{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}

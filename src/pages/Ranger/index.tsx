@@ -190,12 +190,11 @@ function Ranger() {
 
             <h3 className="header">Monster Bestiary</h3>
             <p>
-              You have studied and picked up tricks on defeating certain
-              monsters that you’ve collected in a growing bestiary. Choose
-              aberration, angel, beast, construct, dragon, elemental, faerie,
-              fiend, giant, monstrosity, ooze, plant, or undead. You gain the
-              following benefits against your creatures of your chosen creature
-              type:
+              You have studied certain monsters and added your notes in a
+              growing bestiary. Choose two from aberration, angel, beast,
+              construct, dragon, elemental, faerie, fiend, giant, humanoid,
+              monstrosity, ooze, plant, or undead. You gain the following
+              benefits against creatures of your chosen creature types:
             </p>
             <ul className="no-spacing">
               <li>
@@ -225,6 +224,10 @@ function Ranger() {
                 </span>
               </li>
             </ul>
+            <p>
+              At higher levels, you can pick an additional creature type at 5th
+              and 8th level.
+            </p>
 
             <h3 className="header">Survivalist</h3>
             <p>You gain a theme talent from the nature theme.</p>
@@ -531,6 +534,13 @@ function Ranger() {
             />
 
             <h2>Tier 2 Class Talents</h2>
+            <h3 className="header">Diverse Pathfinder</h3>
+            <p>
+              Choose another environment for favored environment or two creature
+              types for monster bestiary. You can take this class talent
+              multiple times.
+            </p>
+
             <h3 className="header">Dual Predators</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> beast companion subclass
@@ -542,12 +552,6 @@ function Ranger() {
                 strike
               </Link>{" "}
               your prey.
-            </p>
-
-            <h3 className="header">Expanded Environments</h3>
-            <p>
-              Choose another environment for favored environment. You can take
-              this class talent multiple times.
             </p>
 
             <h3 className="header">Hunter’s Defenses</h3>
