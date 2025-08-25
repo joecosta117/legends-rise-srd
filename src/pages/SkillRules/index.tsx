@@ -841,7 +841,7 @@ function SkillRules() {
                   <span>
                     <b>Failure:</b>
                   </span>{" "}
-                  You fail to learn anything new.
+                  You fail to learn anything.
                 </li>
               </ul>
             </div>
