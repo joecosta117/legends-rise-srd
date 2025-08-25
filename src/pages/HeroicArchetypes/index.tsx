@@ -2108,7 +2108,10 @@ function HeroicArchetypes() {
                 <span>You gain the mark prey feature.</span>
               </li>
               <li>
-                <span>You gain the monster bestiary feature.</span>
+                <span>
+                  You gain the monster bestiary feature, but you don't gain a
+                  new creatures type at 5th and 8th level.
+                </span>
               </li>
             </ul>
             <h3 className="header">7th-Level Features</h3>

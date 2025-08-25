@@ -629,13 +629,12 @@ function BuildingMonsters() {
         <p>
           The first step is determining what tier is your new hazard. Usually
           the tier matches the same tier as your heroes. A hazard's tier
-          determines their TN, proficiency bonus, and damage.
+          determines their proficiency bonus and damage.
         </p>
         <table>
           <thead>
             <tr>
               <th>Tier</th>
-              <th>TN</th>
               <th>PB</th>
               <th>Consequence</th>
               <th>Damage</th>
@@ -644,23 +643,20 @@ function BuildingMonsters() {
           <tbody>
             <tr>
               <td>1</td>
-              <td>12</td>
               <td>+2</td>
               <td>4</td>
               <td>melee 5, range 4, multi 2</td>
             </tr>
             <tr>
               <td>2</td>
-              <td>15</td>
-              <td>8</td>
               <td>+4</td>
+              <td>8</td>
               <td>melee 10, range 8, multi 4</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>18</td>
-              <td>12</td>
               <td>+6</td>
+              <td>12</td>
               <td>melee 15, range 12, multi 6</td>
             </tr>
           </tbody>
@@ -781,16 +777,16 @@ function BuildingMonsters() {
         <ul>
           <li>
             <span>
-              <b>Downgrade a Tier:</b> Decrease the hazard's TN by 2, decrease
-              it's proficiency bonus by 2, and divide it's damage by it's
-              original tier then multiply the damage by the lower tier.
+              <b>Downgrade a Tier:</b> Decrease it's proficiency bonus by 2 and
+              divide it's damage by it's original tier then multiply the damage
+              by the lower tier.
             </span>
           </li>
           <li>
             <span>
-              <b>Upgrade a Tier:</b> Increase the hazard's TN by 2, increase
-              it's proficiency bonus by 2, and divide it's damage by it's
-              original tier then multiply the damage by the higher tier.
+              <b>Upgrade a Tier:</b> Increase it's proficiency bonus by 2 and
+              divide it's damage by it's original tier then multiply the damage
+              by the higher tier.
             </span>
           </li>
         </ul>

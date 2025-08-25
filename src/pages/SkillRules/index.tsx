@@ -72,28 +72,24 @@ function SkillRules() {
         </ul>
 
         <h2 id="making-skill-rolls">Making Skill Rolls</h2>
-        <b style={{ textAlign: "left" }}>
-          1d20 + Background + Knack vs Skill Tier's TN
-        </b>
+        <b style={{ textAlign: "left" }}>1d20 + Background + Knack vs TN 15</b>
         <p>Follow the below five steps for every skill roll.</p>
-        <h3 className="header">Step 1: GM Sets the Skill Tier and TN</h3>
+        <h3 className="header">Step 1: GM Sets the Skill Tier</h3>
         <p>
           The GM determines the difficulty of a skill roll by assigning it a{" "}
-          <b>skill tier</b>, which determines the TN. These tiers correspond to
+          <b>skill tier</b>, but the TN is always 15. These tiers correspond to
           your hero’s tiers:
         </p>
         <table>
           <thead>
             <tr>
               <th style={{ padding: "0 10px" }}>Skill Tier</th>
-              <th style={{ padding: "0 10px" }}>TN</th>
               <th>Types of Challenges</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>0</td>
-              <td>12</td>
               <td>
                 Challenges easy for anyone such as overhearing a loud argument
                 nearby, climbing a knotted rope, or recalling a well known fact.
@@ -101,7 +97,6 @@ function SkillRules() {
             </tr>
             <tr>
               <td>1</td>
-              <td>14</td>
               <td>
                 Challenges that are troubling for low level heroes such as
                 sneaking past cultists, navigating through a forest, or breaking
@@ -110,7 +105,6 @@ function SkillRules() {
             </tr>
             <tr>
               <td>2</td>
-              <td>16</td>
               <td>
                 Challenges that are difficult for experienced heroes such as
                 disarming a powerful mage's trap, persuading a monarch, or
@@ -119,7 +113,6 @@ function SkillRules() {
             </tr>
             <tr>
               <td>3</td>
-              <td>18</td>
               <td>
                 Challenges that are difficult for even the most powerful of
                 heroes such as closing a planar portal with their bare hands,
@@ -128,7 +121,6 @@ function SkillRules() {
             </tr>
             <tr>
               <td>4</td>
-              <td>20</td>
               <td>
                 Challenges are beyond mortals such as swimming up a waterfall,
                 deceiving a god, or stealing someone’s worn armor without them

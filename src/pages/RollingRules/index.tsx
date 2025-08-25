@@ -216,7 +216,7 @@ function RollingRules() {
                 </Link>
                 :
               </b>{" "}
-              The TN depends on the skill tier.
+              The TN is always 15.
             </span>
           </li>
         </ul>

@@ -762,12 +762,15 @@ function CombatRules() {
         <h2 id="momentum">Momentum Die</h2>
         <p>
           As the heroes achieve victories, they gain momentum to help push them
-          to greater heroics, which is represented by a d4 die called the{" "}
-          <b>momentum die</b>. After each victory in a skill encounter, combat
-          encounter, or important role playing scenes (determined by the GM),
-          the heroes increase the momentum die's value by 1 to a maximum of 4.
-          Heroes add the momentum die's value to all rolls. Your momentum die
-          always resets to 0 after a{" "}
+          to greater heroics in combat, which is represented by a d4 die called
+          the <b>momentum die</b>. After each victory in a skill encounter,
+          combat encounter, or important role playing scenes (determined by the
+          GM), the heroes increase the momentum die's value by 1 to a maximum of
+          4. Heroes add the momentum die's value to{" "}
+          <Link className="internal-link" to="/rules/combat#attack-roll">
+            attack rolls
+          </Link>
+          . Your momentum die always resets to 0 once you start a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
