@@ -96,7 +96,7 @@ function HomePage() {
             />
             <Accordion
               title="Exciting Narrative Rules"
-              content="Legends Rise encourages heroic fantasy even outside of combat. Heroes leverage their backgrounds and knacks to conquer skill challenges, while also having powerful narrative powers from their theme talents. GMs can utilize countdowns for complex skill encounters. Every roll in Legends Rise has 4 results: failure, partial success, success, and critical success; which leads to interesting and dynamic results during skill challenges."
+              content="Legends Rise encourages heroic fantasy even outside of combat. Heroes leverage their experiences to conquer skill challenges, while also having powerful narrative powers from their theme talents. GMs can utilize countdowns for complex skill encounters. Every roll in Legends Rise has 4 results: failure, partial success, success, and critical success; which leads to interesting and dynamic results during skill challenges."
             />
             <Accordion
               title="Easy to Run"

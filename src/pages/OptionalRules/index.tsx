@@ -141,10 +141,10 @@ function OptionalRules() {
         </p>
         <p>
           Level 0 heroes still follow the typical hero creation steps, but don't
-          pick a class. Instead heroes pick an ancestry, background, and choose
-          two knacks as normal. Their tier is still 1, and their proficiency
-          bonus is 2 as normal. A level 0 hero's hit points start at 6 and begin
-          with 4 recoveries. They don't have training in armor or weapons.
+          pick a class. Instead heroes pick an ancestry and choose only one
+          experience. Their tier is still 1, and their proficiency bonus is 2 as
+          normal. A level 0 hero's hit points start at 6 and begin with 4
+          recoveries. They don't have training in armor or weapons.
         </p>
         <h3 className="header">Starting Equipment</h3>
         <p>
@@ -185,14 +185,8 @@ function OptionalRules() {
         <p>
           When the heroes level up to 1st level, they choose a class, which
           increases their starting hit points and recoveries to match their
-          class's normal amount. They also gain their class's starting
-          equipment.
-        </p>
-        <p>
-          Heroes can also change or update their background to reflect their new
-          class. For example, a level 0 elf that chooses the arcanist class,
-          might change their background from "noble from the elven woods" to
-          "noble wizard from the elven woods".
+          class's normal amount. They also gain their class's starting equipment
+          and choose a second experience.
         </p>
 
         <h2 id="damage-rolls">Rolling for Damage</h2>

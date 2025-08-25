@@ -72,7 +72,7 @@ function SkillRules() {
         </ul>
 
         <h2 id="making-skill-rolls">Making Skill Rolls</h2>
-        <b style={{ textAlign: "left" }}>1d20 + Background + Knack vs TN 15</b>
+        <b style={{ textAlign: "left" }}>1d20 + Experience vs TN 15</b>
         <p>Follow the below five steps for every skill roll.</p>
         <h3 className="header">Step 1: GM Sets the Skill Tier</h3>
         <p>
@@ -139,14 +139,12 @@ function SkillRules() {
           old and less sturdy than normal. The GM gives the hero{" "}
           <Modifier type="f" count="1" /> on their skill roll.
         </p>
-        <h3 className="header">Step 3: Invoking Backgrounds and Knacks</h3>
+        <h3 className="header">Step 3: Invoking Experiences</h3>
         <p>
-          If a player has an appropriate background, they can invoke it to add
-          their proficiency bonus to their skill roll. Similarly, if a player
-          has an appropriate knack, they can invoke it to add{" "}
-          <Modifier type="f" count="1" /> to their skill roll. You can only
-          invoke one knack per skill roll. The GM is the final arbiter if your
-          background and knack fits the challenge or not.
+          If a player has an appropriate experience, they can invoke it to add
+          their proficiency bonus to their skill roll. You can only invoke one
+          experience per skill roll. The GM is the final arbiter if your
+          experience fits the challenge or not.
         </p>
 
         <h3 className="header">Step 4: Roll and Interpret the Result</h3>
@@ -684,8 +682,7 @@ function SkillRules() {
                   <span>
                     <b>Failure:</b>
                   </span>{" "}
-                  You fail to craft the item, and ruin the raw materials
-                  supplied.
+                  You fail to craft the item.
                 </li>
               </ul>
               <h4 className="header">Upgrading Relics</h4>
@@ -740,10 +737,7 @@ function SkillRules() {
                   <span>
                     <b>Failure:</b>
                   </span>{" "}
-                  You lose half the amount of gold you would earn from a
-                  success. If you don’t have enough gold to lose, then you go
-                  into debt. You can’t attempt to earn gold again until you pay
-                  your debt.
+                  You earn nothing.
                 </li>
               </ul>
             </div>
@@ -832,7 +826,7 @@ function SkillRules() {
                     <Link className="internal-link" to="/ritual-spells">
                       ritual spell
                     </Link>{" "}
-                    if you have a magical background. Regardless of your choice,
+                    if you have a magical experience. Regardless of your choice,
                     you spend gold equal to your tier or treat your result as a
                     failure.
                   </span>

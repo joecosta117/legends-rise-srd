@@ -368,9 +368,13 @@ function Warrior() {
               or technique. Make this choice again.
             </p>
 
-            <h3 className="header">Improved Indomitable</h3>
+            <h3 className="header">Momentous Indomitable</h3>
             <p>
-              You add your proficiency bonus to{" "}
+              You add the{" "}
+              <Link className="internal-link" to="/rules/combat#momentum">
+                momentum die
+              </Link>{" "}
+              value to{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>

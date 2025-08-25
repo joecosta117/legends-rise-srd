@@ -304,10 +304,7 @@ function Bard() {
               performances.
             </p>
             <h3 className="header">Student of Lore (1st-Level Feature)</h3>
-            <p>
-              You gain a knack related to a knowledgeable topic such as ancient
-              history. You also gain the following ability:
-            </p>
+            <p>You also gain the following ability:</p>
             <AbilityCard
               name="Lore Drop"
               actType="Reaction"

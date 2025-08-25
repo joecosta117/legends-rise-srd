@@ -233,7 +233,12 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Expert (S):</b> You gain another knack.
+                    <b>Quick Learner (S):</b> When you make a{" "}
+                    <Link className="internal-link" to="/rules/skills">
+                      skill roll
+                    </Link>{" "}
+                    with no relevant experience, you still add half your
+                    proficiency bonus to the roll.
                   </span>
                 </li>
                 <li>

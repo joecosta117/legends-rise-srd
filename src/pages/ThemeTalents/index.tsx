@@ -272,7 +272,7 @@ function ThemeTalents() {
             downtime
           </Link>
           , you gain an extra downtime activity that represents the assistance
-          of your apprentices. You gain the knack “Master Mage” towards{" "}
+          of your apprentices. You gain <Modifier type="f" count="1" /> to{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -403,8 +403,8 @@ function ThemeTalents() {
       title: "Clever Edge",
       content: (
         <span>
-          When you gain a <Modifier type="f" /> to a skill roll from one of your
-          knacks, reroll the <Modifier type="f" /> and take the higher result.
+          When you make a skill roll with <Modifier type="f" />, reroll the{" "}
+          <Modifier type="f" /> die and take the higher result.
         </span>
       ),
     },
@@ -444,7 +444,7 @@ function ThemeTalents() {
             downtime
           </Link>
           , you gain an extra downtime activity that represents the assistance
-          of your guild. You gain the knack 'Guildmaster' towards{" "}
+          of your guild. You gain <Modifier type="f" count="1" /> to{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -629,7 +629,7 @@ function ThemeTalents() {
             downtime
           </Link>
           , you gain an extra downtime activity that represents the assistance
-          of your flock. You gain the knack 'Archpriest' towards{" "}
+          of your flock. You gain <Modifier type="f" count="1" /> to{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
@@ -843,11 +843,11 @@ function ThemeTalents() {
             downtime
           </Link>
           , you gain an extra downtime activity that represents the assistance
-          of your soldiers. You gain the knack 'General' towards{" "}
+          of your soldiers. You gain <Modifier type="f" count="1" /> to{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
-          when you can leverage your mercenaries.
+          when you can leverage your troops.
         </span>
       ),
     },
@@ -1059,7 +1059,7 @@ function ThemeTalents() {
             downtime
           </Link>
           , you gain an extra downtime activity that represents the assistance
-          of your grove. You gain the knack “Grove Leader" towards{" "}
+          of your grove. You gain <Modifier type="f" count="1" /> to{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}

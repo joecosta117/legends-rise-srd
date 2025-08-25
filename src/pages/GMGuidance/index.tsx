@@ -70,8 +70,8 @@ function OptionalRules() {
         <h4 className="header">Encourage Creativity</h4>
         <p>
           Encourage your players to solve problems with creative solutions. When
-          your players use their background or knacks in creative ways, say yes,
-          unless the player's idea clashes too hard with the fiction and tone.
+          your players use their experiences in creative ways, say yes, unless
+          the player's idea clashes too hard with the fiction and tone.
         </p>
         <h4 className="header">Every Rolls Matters</h4>
         <p>

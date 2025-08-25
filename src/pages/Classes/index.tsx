@@ -227,11 +227,11 @@ function Classes() {
           what you gain at each level.
         </p>
         <p>
-          At levels 5 and 8, you enter a new tier of play. At both levels, your
-          background expands. At 5th level, you choose a heroic archetype, or a
-          legendary archetype at 8th level.
+          At levels 5 and 8, you enter a new tier of play. At both levels, you
+          gain a new experience. At 5th level, you choose a heroic archetype, or
+          a legendary archetype at 8th level.
         </p>
-        <Accordion
+        {/* <Accordion
           title="Background Expands Rules"
           content={
             <div>
@@ -255,7 +255,7 @@ function Classes() {
               </p>
             </div>
           }
-        />
+        /> */}
 
         <Accordion
           title="Leveling Up"
@@ -313,7 +313,7 @@ function Classes() {
             </tr>
             <tr>
               <td>3</td>
-              <td>class feature, new knack</td>
+              <td>class feature</td>
               <td>1</td>
               <td>+2</td>
             </tr>
@@ -325,7 +325,7 @@ function Classes() {
             </tr>
             <tr>
               <td>5</td>
-              <td>heroic archetype, expanded background</td>
+              <td>heroic archetype, new experience</td>
               <td>2</td>
               <td>+4</td>
             </tr>
@@ -337,13 +337,13 @@ function Classes() {
             </tr>
             <tr>
               <td>7</td>
-              <td>heroic archetype feature, new knack</td>
+              <td>heroic archetype feature</td>
               <td>2</td>
               <td>+4</td>
             </tr>
             <tr>
               <td>8</td>
-              <td>legendary archetype, expanded background</td>
+              <td>legendary archetype, new experience</td>
               <td>3</td>
               <td>+6</td>
             </tr>
@@ -355,7 +355,7 @@ function Classes() {
             </tr>
             <tr>
               <td>10</td>
-              <td>legendary archetype feature, new knack</td>
+              <td>legendary archetype feature</td>
               <td>3</td>
               <td>+6</td>
             </tr>
@@ -376,7 +376,7 @@ function Classes() {
           <Link className="internal-link" to="/mythical-talents">
             mythical talent
           </Link>
-          . Level 11 and higher heroes are the powerful heroes in the
+          . Level 11 and higher heroes are the most powerful heroes in the
           multiverse.
         </p>
 

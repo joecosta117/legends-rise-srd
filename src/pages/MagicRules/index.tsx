@@ -150,7 +150,7 @@ function MagicRules() {
         <p>
           All explicit spells are battle spells or ritual spells, and ritual
           spells are useful out of combat. However, heroes with magical
-          backgrounds can use <b>freeform spells</b> to aid them in{" "}
+          experiences can use <b>freeform spells</b> to aid them in{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>
@@ -160,19 +160,19 @@ function MagicRules() {
         </p>
         <p>
           For example, a hero needs to leap across a wide chasm and the GM asks
-          for a skill roll. The hero invokes their background “shaman of the
+          for a skill roll. The hero invokes their experience “shaman of the
           elven woods” to use a magic to help them jump. Knowing the air
           tradition, the hero uses a freeform spell to summon a gust of wind to
           push them across the chasm. The hero makes their skill roll, and after
-          adding their background bonus, they get a success!
+          adding their experience bonus, they get a success!
         </p>
         <p>
           In another example, a GM asks for a skill roll to get past the lock.
-          The hero lacks any thievery skills, but their background “archmage’s
+          The hero lacks any thievery skills, but their experience “archmage’s
           apprentice” might be useful in finding a magical solution. Using their
           time tradition, the hero attempts a freeform spell to magically age
           the door’s lock until it falls apart. The hero makes their skill roll,
-          and after adding their background bonus, they get a success!
+          and after adding their experience bonus, they get a success!
         </p>
 
         <h2 id="ritual">Ritual Spells</h2>
@@ -191,7 +191,7 @@ function MagicRules() {
         </p>
         <h3 className="header">Learning Ritual Spells</h3>
         <p>
-          If you have a magical background, then you can learn{" "}
+          If you have a magical experience, then you can learn{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spells
           </Link>{" "}
@@ -307,7 +307,7 @@ function MagicRules() {
         </p>
         <h4 className="header">Secondary Spellcaster</h4>
         <p>
-          Anyone with a sufficient magical background, such as “mage’s
+          Anyone with a sufficient magical experience, such as “mage’s
           apprentice”, can become a secondary spellcaster in a ritual by
           attempting a{" "}
           <Link className="internal-link" to="/rules/skills">

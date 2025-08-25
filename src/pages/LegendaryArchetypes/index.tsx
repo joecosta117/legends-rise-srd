@@ -781,11 +781,15 @@ function LegendaryArchetypes() {
             </p>
             <h4 className="header">Supernatural Cunning (8th-Level Feature)</h4>
             <p>
-              You learn another knack, and the bonus from knacks to{" "}
+              You add the{" "}
+              <Link className="internal-link" to="/rules/combat#momentum">
+                momentum die
+              </Link>{" "}
+              value to{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill rolls
-              </Link>{" "}
-              increases to <Modifier type="f" count="3" />
+              </Link>
+              .
             </p>
 
             <h4 className="header">Disappearing Trick (8th-Level Feature)</h4>
@@ -1313,8 +1317,8 @@ function LegendaryArchetypes() {
                 downtime
               </Link>
               , you gain an extra downtime activity that represents the
-              assistance of your household. You gain the knack “Sovereign”
-              towards{" "}
+              assistance of your household. You gain{" "}
+              <Modifier type="f" count="1" /> to{" "}
               <Link className="internal-link" to="/rules/skills">
                 skill rolls
               </Link>{" "}

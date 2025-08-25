@@ -185,7 +185,7 @@ function Rogue() {
             />
 
             <h3 className="header">Expertise</h3>
-            <p>You gain two knacks.</p>
+            <p>You gain a theme talent from the cunning theme.</p>
 
             <h3 className="header">Subclass</h3>
             <p>
