@@ -818,7 +818,7 @@ function SkillRules() {
                 </li>
                 <li>
                   <span>
-                    <b>Success:</b> You learn a technique, a{" "}
+                    <b>Success:</b> You gain an experience, learn a technique, a{" "}
                     <Link className="internal-link" to="/battle-spells">
                       battle spell
                     </Link>{" "}
