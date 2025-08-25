@@ -244,42 +244,42 @@ function HeroCreationSteps() {
       </p> */}
     </div>
   );
-  const knackInfo = (
-    <div>
-      <p>
-        All heroes learn two knacks at 1st level, of which players define
-        themselves. A knack is a word or phrase that represent specific talents,
-        skills, or characterists your hero possesses. As your hero progresses,
-        they will automatically gain more knacks.
-      </p>
-      <p>
-        Here are some examples of knacks you could pick, but feel free to make
-        up your own:
-      </p>
-      <p>
-        <b>Characteristics:</b>{" "}
-        <i>
-          athletic, bookworm, charming, helpful, intimidating, leader, lone
-          wolf, silver tongue, survivor, young and naive
-        </i>
-      </p>
-      <p>
-        <b>Skills:</b>{" "}
-        <i>
-          animal friend, ancient history, dragon lore, military tactics, lock
-          picking, perception, sneaking, tinkering, tracking
-        </i>
-      </p>
-      <p>
-        <b>Phrases:</b>{" "}
-        <i>
-          always a step ahead, burn it all down, for the greater good, keep them
-          guessing, I still remember, it's all a part of the plan, love is my
-          shield, nature provides, pain makes you stronger
-        </i>
-      </p>
-    </div>
-  );
+  // const knackInfo = (
+  //   <div>
+  //     <p>
+  //       All heroes learn two knacks at 1st level, of which players define
+  //       themselves. A knack is a word or phrase that represent specific talents,
+  //       skills, or characterists your hero possesses. As your hero progresses,
+  //       they will automatically gain more knacks.
+  //     </p>
+  //     <p>
+  //       Here are some examples of knacks you could pick, but feel free to make
+  //       up your own:
+  //     </p>
+  //     <p>
+  //       <b>Characteristics:</b>{" "}
+  //       <i>
+  //         athletic, bookworm, charming, helpful, intimidating, leader, lone
+  //         wolf, silver tongue, survivor, young and naive
+  //       </i>
+  //     </p>
+  //     <p>
+  //       <b>Skills:</b>{" "}
+  //       <i>
+  //         animal friend, ancient history, dragon lore, military tactics, lock
+  //         picking, perception, sneaking, tinkering, tracking
+  //       </i>
+  //     </p>
+  //     <p>
+  //       <b>Phrases:</b>{" "}
+  //       <i>
+  //         always a step ahead, burn it all down, for the greater good, keep them
+  //         guessing, I still remember, it's all a part of the plan, love is my
+  //         shield, nature provides, pain makes you stronger
+  //       </i>
+  //     </p>
+  //   </div>
+  // );
 
   return (
     <div className="hero-creation-steps">
