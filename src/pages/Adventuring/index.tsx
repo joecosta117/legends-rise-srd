@@ -54,6 +54,13 @@ function Adventuring() {
               </span>
             </a>
           </li>
+          <li>
+            <a href="#scene">
+              <span>
+                <b>Scenes</b>
+              </span>
+            </a>
+          </li>
         </ul>
 
         <h2 id="crashing">Crashing</h2>
@@ -302,6 +309,51 @@ function Adventuring() {
           never truly safe due to the Nazgûl pursuit. Only upon reaching
           Rivendell, a secure haven, do they enjoy the full recovery of a safe
           rest.
+        </p>
+
+        <h2 id="scene">Scenes</h2>
+        <p>
+          A <strong>scene</strong> is a distinct moment of action or
+          storytelling, much like a scene in a movie, TV show, or novel. A scene
+          usually revolves around a single challenge, event, or dramatic beat.
+        </p>
+        <ul>
+          <li>
+            <span>
+              <strong>Combat:</strong> From the moment blades are drawn until
+              the danger ends is a single scene.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Exploration:</strong> Overcoming one significant obstacle
+              or navigating a tense situation counts as a scene. For example,
+              sneaking into a guarded keep or deciphering the traps of a
+              treasure vault are both scenes.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Social:</strong> A major interaction or negotiation is a
+              scene. For example, bargaining with a noble, interrogating a
+              prisoner, or rallying townsfolk are all scenes.
+            </span>
+          </li>
+        </ul>
+
+        <h3 className="header">Duration & Boundaries</h3>
+        <p>
+          Scenes typically last 10–60 minutes of in-world time, though the GM
+          decides the exact boundaries. When the focus shifts dramatically— a
+          fight ends, the heroes move to a new location, or a conversation wraps
+          up— the current scene ends and a new one begins.
+        </p>
+
+        <h3 className="header">Rules Interactions</h3>
+        <p>
+          If an ability lasts “scene ends”, it ends when that scene concludes.
+          If an ability can be used “once per scene”, you regain access to it at
+          the start of the next scene.
         </p>
       </div>
     </div>
