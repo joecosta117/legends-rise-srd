@@ -94,7 +94,7 @@ function Paladin() {
               </li>
               <li>
                 <span>
-                  <b>Recoveries:</b>
+                  <b>Recoveries:</b> 8
                 </span>
               </li>
               <li>
