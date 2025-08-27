@@ -69,6 +69,27 @@ function ThemeTalents() {
 
   const arcaneT1Talents = [
     {
+      title: "Arcane Improviser",
+      content: (
+        <span>
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can cast a{" "}
+          <Link className="internal-link" to="/ritual-spells">
+            ritual spell
+          </Link>{" "}
+          you don’t know, but the spell’s tier must be equal to or lower than
+          your tier. You take <Modifier type="mf" count="1" /> to the ritual{" "}
+          <Link className="internal-link" to="/rules/skills">
+            skill roll
+          </Link>
+          .
+        </span>
+      ),
+    },
+    {
       title: "Artificer",
       content: (
         <span>
@@ -87,13 +108,19 @@ function ThemeTalents() {
         <span>
           You gain the service of a minor spirit that takes the form of a tiny
           creature such as an animal or construct. Your familiar’s defenses
-          equal 8 + your proficiency bonus. You and your familiar can
-          telepathically communicate with one another within 1 mile. The
-          familiar dies after taking any damage, but can be resummoned after a{" "}
+          equal 8 + your proficiency bonus and has hit points equal to double
+          your proficiency bonus. You and your familiar can telepathically
+          communicate with one another within 1 mile. When the familiar is
+          reduced to 0 hit points, it dies, but you can resummon it at full hit
+          points during a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            short rest
+          </Link>{" "}
+          by spending a recovery. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
-          .
+          , you can freely resummon the familiar.
         </span>
       ),
     },
@@ -119,7 +146,11 @@ function ThemeTalents() {
       title: "Rapid Downtime",
       content: (
         <span>
-          During a safe rest, you can do a{" "}
+          During a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can do a{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
@@ -128,23 +159,6 @@ function ThemeTalents() {
           </Link>{" "}
           activity, but you can't spend gold to attempt additional downtime
           activities during this rest.
-        </span>
-      ),
-    },
-    {
-      title: "Risky Ritual",
-      content: (
-        <span>
-          Once per session, you can cast a{" "}
-          <Link className="internal-link" to="/ritual-spells">
-            ritual spell
-          </Link>{" "}
-          you don’t know, but the spell’s tier must be equal to or lower than
-          your tier. You take <Modifier type="mf" count="1" /> to the ritual
-          <Link className="internal-link" to="/rules/skills">
-            skill roll
-          </Link>
-          .
         </span>
       ),
     },
@@ -172,10 +186,13 @@ function ThemeTalents() {
       content: (
         <span>
           You always can detect magic near you, such as in the same room, but
-          you don’t know the precise location or nature of the magic. Once per
-          session, you can heighten your senses to discern the precise location
-          and nature of magic within the same room, or within 1 mile at tier 2,
-          or within your realm at tier 3.
+          you don’t know the precise location or nature of the magic. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can heighten your senses to discern the precise location and
+          nature of magic within the same room, or within 1 mile at tier 2, or
+          within your realm at tier 3.
         </span>
       ),
     },
@@ -189,7 +206,7 @@ function ThemeTalents() {
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
           </Link>{" "}
-          that you know. You can get an automatic success on the chosen spell’s
+          that you know. You can get an automatic success on the chosen spell’s{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -202,14 +219,18 @@ function ThemeTalents() {
       title: "Rapid Construction",
       content: (
         <span>
-          Once per session, you can craft as a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can use an action to do the craft{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
           >
             downtime activity
-          </Link>{" "}
-          during a short rest.
+          </Link>
+          .
         </span>
       ),
     },
@@ -236,7 +257,11 @@ function ThemeTalents() {
       title: "Quick Ritual",
       content: (
         <span>
-          Once per session, you can cast a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can cast a{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
           </Link>{" "}
@@ -332,12 +357,12 @@ function ThemeTalents() {
       title: "Flashback",
       content: (
         <span>
-          You’re always prepared. Once per session, when you make a{" "}
+          Once per scene, when you make a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
-          , you can retroactively say how you prepared for a challenge to gain
-          <Modifier type="f" count="1" /> on the skill roll.
+          , you can retroactively say how you prepared for a challenge to gain{" "}
+          <Modifier type="f" count="1" /> to the skill roll.
         </span>
       ),
     },
@@ -350,7 +375,7 @@ function ThemeTalents() {
       title: "Right Tool for the Job",
       content: (
         <span>
-          Once per session, you can declare to have any non-magical item of your
+          Once per scene, you can declare to have any non-magical item of your
           tier on your person.
         </span>
       ),
@@ -359,7 +384,11 @@ function ThemeTalents() {
       title: "Rapid Downtime",
       content: (
         <span>
-          During a safe rest, you can do a{" "}
+          During a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can do a{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
@@ -493,9 +522,13 @@ function ThemeTalents() {
       title: "Augury",
       content: (
         <span>
-          Once per session, you can ask a higher power on the result of a
-          proposed course of action. The entity replies in a one word answer
-          (good, bad, or unknown) to the best of its knowledge.
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can ask a higher power on the result of a proposed course of
+          action. The entity replies in a one word answer (good, bad, or
+          unknown) to the best of its knowledge.
         </span>
       ),
     },
@@ -503,7 +536,7 @@ function ThemeTalents() {
       title: "Desperate Prayer",
       content: (
         <span>
-          Once per session, you can quickly ask the higher powers for a creature
+          Once per scene, you can quickly ask the higher powers for a creature
           to gain <Modifier type="f" count="1" /> to a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
@@ -518,9 +551,13 @@ function ThemeTalents() {
         <span>
           Within the same room or nearby area, you can sense the presence of
           undead and creatures from the outer realms, such as angels, fiends, or
-          faeries. Once per session, you can heighten your senses to discern the
-          precise location and nature of the creatures within the same room, or
-          within 1 mile at tier 2, or within your realm at tier 3.
+          faeries. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can heighten your senses to discern the precise location and
+          nature of the creatures within the same room, or within 1 mile at tier
+          2, or within your realm at tier 3.
         </span>
       ),
     },
@@ -545,13 +582,18 @@ function ThemeTalents() {
         <span>
           You gain the service of a minor, tiny angelic or fiendish spirit
           depending on your deity. Your deity’s servitor’s defenses equal 8 +
-          your proficiency bonus. You and the servitor can telepathically
-          communicate with one another within 1 mile. The servitor dies after
-          taking any damage, but can be resummoned after a{" "}
+          your proficiency bonus and has hit points equal to double your
+          proficiency bonus. You and the servitor can telepathically communicate
+          with one another within 1 mile. When the servitor is reduced to 0 hit
+          points, it dies, but you can resummon it at full hit points during a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            short rest
+          </Link>{" "}
+          by spending a recovery. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
-          .
+          , you can freely resummon the servitor.
         </span>
       ),
     },
@@ -559,7 +601,11 @@ function ThemeTalents() {
       title: "Rapid Downtime",
       content: (
         <span>
-          During a safe rest, you can do a{" "}
+          During a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can do a{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
@@ -582,7 +628,7 @@ function ThemeTalents() {
       title: "Group Prayer",
       content: (
         <span>
-          Once per session, when you and your allies do a{" "}
+          Once per scene, when you and your allies do a{" "}
           <Link className="internal-link" to="/rules/skills#group-rolls">
             group roll
           </Link>
@@ -719,7 +765,11 @@ function ThemeTalents() {
       title: "Rapid Downtime",
       content: (
         <span>
-          During a safe rest, you can do a{" "}
+          During a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can do a{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
@@ -772,7 +822,7 @@ function ThemeTalents() {
       title: "Mighty Deed",
       content: (
         <span>
-          Once per session, you can treat the result of your{" "}
+          Once per scene, you can treat the result of your{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
@@ -803,8 +853,8 @@ function ThemeTalents() {
       title: "Warrior's Presence",
       content: (
         <span>
-          Choose respected or feared as your presence. When you or a nearby ally
-          makes a{" "}
+          Choose respected or feared as your presence. When you or an ally makes
+          a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -927,9 +977,13 @@ function ThemeTalents() {
       content: (
         <span>
           You reach out to the ancient spirits that inhabit the land, plants,
-          and elements. Once per session, you can speak to ancient spirits for a
-          scene. The spirits do their best to answer your questions, but their
-          knowledge is limited to the nearby area.
+          and elements. Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can speak to ancient spirits for a scene. The spirits do their
+          best to answer your questions, but their knowledge is limited to the
+          nearby area.
         </span>
       ),
     },
@@ -960,16 +1014,21 @@ function ThemeTalents() {
       title: "Nature Companion",
       content: (
         <span>
-          "You befriend an animal, small elemental spirit, or small faerie. Your
-          nature companion’s defenses equal 8 + your proficiency bonus. You and
-          your companion can understand each other well enough that you can give
-          it basic commands, but the nature companion won’t fight for you. Your
-          nature companion dies after taking any damage, but you can befriend a
-          new companion after a{" "}
+          You befriend an animal, small elemental spirit, or small faerie. Your
+          nature companion’s defenses equal 8 + your proficiency bonus and has
+          hit points equal to double your proficiency bonus. You and your
+          companion can understand each other well enough that you can give it
+          basic commands, but the nature companion isn't strong enough to fight.
+          When the companion is reduced to 0 hit points, it dies, but you can
+          resummon it at full hit points during a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            short rest
+          </Link>{" "}
+          by spending a recovery. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
-          .
+          , you can freely resummon the companion.
         </span>
       ),
     },
@@ -988,7 +1047,11 @@ function ThemeTalents() {
       title: "Rapid Downtime",
       content: (
         <span>
-          During a safe rest, you can do a{" "}
+          During a{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can do a{" "}
           <Link
             className="internal-link"
             to="/rules/skills#downtime-activities"
@@ -1006,7 +1069,7 @@ function ThemeTalents() {
       title: "Shapeshifter",
       content: (
         <span>
-          Once per session, you can transform into an animal of large size or
+          Once per scene, you can transform into an animal of large size or
           smaller. Your Guard equals 8 plus your proficiency bonus, and if you
           take any damage, you revert back to your normal form.
         </span>
@@ -1039,8 +1102,12 @@ function ThemeTalents() {
       title: "Tree Travel",
       content: (
         <span>
-          Once per session, you can teleport you and your allies through one
-          tree to another tree of the same type within 1 mile.
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#resting">
+            safe rest
+          </Link>
+          , you can teleport you and your allies through one tree to another
+          tree within 20 miles, or within the same realm at tier 3.
         </span>
       ),
     },
