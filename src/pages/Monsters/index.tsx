@@ -17,6 +17,10 @@ import FaerieMonsters from "./AllMonsters/faeries";
 import BeastMonsters from "./AllMonsters/beasts";
 import { useState, useEffect, JSX } from "react";
 import Pagination from "../../components/Pagination";
+import Monster from "../../components/Monster";
+import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
+import basicAtk from "../../assets/monster-strike.png";
 
 interface MonsterListProps {
   name: string;
@@ -198,6 +202,141 @@ function Monsters() {
           When building encounters, carefully consider how many enemies to use
           as well as the type and class of your chosen enemies.
         </p>
+        <Accordion
+          title="Reading Monster Entries"
+          content={
+            <div>
+              <p>
+                Each monster entry begins with its name, tier, role, and threat
+                level. Each monster also has a brief description of them as well
+                as preferred tactics in combat. Their stat block provides
+                essential information such as hit points (HP), defenses, and
+                special abilities.
+              </p>
+              <Monster
+                name="Monster Example"
+                hp="12"
+                evn="14"
+                res="12"
+                pb="2"
+                type="Size and Creature Type"
+                tier="1"
+                threat="Standard"
+                role="Role"
+                resistances="any resistances"
+                weaknesses="any weaknesses"
+                speeds="fly 1"
+                vision="night"
+                traits={[
+                  {
+                    name: "Trait Example",
+                    description: (
+                      <span>
+                        Traits such as regeneration, auras, or other passive
+                        effects are listed under traits.
+                      </span>
+                    ),
+                  },
+                ]}
+                actions={[
+                  {
+                    basic: true,
+                    name: "Attack Example",
+                    keywords: "melee, weapon",
+                    target: (
+                      <span>
+                        1{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#engaged"
+                        >
+                          engaged
+                        </Link>{" "}
+                        creature
+                      </span>
+                    ),
+                    defense: "Guard",
+                    damage: "4 physical damage",
+                  },
+                ]}
+                maneuvers={[
+                  {
+                    name: "Maneuver Example",
+                    effect:
+                      "Any special maneuvers are listed under the maneuver section.",
+                  },
+                ]}
+                reactions={[
+                  {
+                    name: "Reaction Example",
+                    effect:
+                      "Any special reactions are listed under the maneuver section.",
+                  },
+                ]}
+              />
+              <h3 className="header" style={{ marginTop: "15px" }}>
+                General Statistics
+              </h3>
+              <p>
+                In the top section of a monster's entry, you will find general
+                information on the monster:
+              </p>
+              <ul>
+                <li>
+                  <span>
+                    <b>Hit Points:</b> Will be abbreviated as HP with the
+                    monster's <ToolTip preset="shaken" /> value in parenthesis.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Proficiency Bonus:</b> Will be abbreviated as PB. Add
+                    this bonus to all attack rolls the monster makes.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Resistances and Weaknesses:</b> If the monster has any
+                    resistances or weaknesses, then they will be listed.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Speed:</b> If the monster has any special speeds, then
+                    they will be listed. Otherwise, you can assume all monstes
+                    have a land speed of 1.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Vision:</b> If the monster has any special vision, then
+                    they will be listed.
+                  </span>
+                </li>
+              </ul>
+
+              <h3 className="header">Special Abilities</h3>
+              <p>
+                On the bottom half of a monster's entry, you'll find any special
+                abilities they have such as passive traits, actions, maneuvers,
+                and reactions. Like heroes, monsters can use basic actions and
+                maneuvers. The symbol{" "}
+                <img className="attack-icon" src={basicAtk} alt="attack icon" />{" "}
+                that appears next to a monster's action indicates the ability is
+                treated as a{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                .
+              </p>
+              <p>
+                For boss monsters, they also have boss abilities, which are
+                special abilities that activate at the start of round 1, 3, and
+                5. These abilities don't count as the boss's turn.
+              </p>
+            </div>
+          }
+        />
 
         <div className="filters">
           <div className="filters__section">

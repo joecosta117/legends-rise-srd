@@ -4,6 +4,9 @@ import Dropdown from "../../components/Dropdown";
 import { useState, useEffect, JSX } from "react";
 import Pagination from "../../components/Pagination";
 import HazardList from "./hazardList";
+import Hazard from "../../components/Hazard";
+import { Link } from "react-router-dom";
+import ToolTip from "../../components/ToolTip";
 
 interface SortedHazardsProps {
   name: string;
@@ -113,6 +116,89 @@ function Hazards() {
           When building encounters, carefully consider how many enemies to use
           as hazards are best alongside regular monsters.
         </p>
+
+        <Accordion
+          title="Reading Hazard Entries"
+          content={
+            <div>
+              <p>
+                Each hazard entry begins with its name, tier, and threat level.
+                Each hazard also has a brief description of the danger. Their
+                stat block provides essential information such as their TN and
+                special abilities.
+              </p>
+              <Hazard
+                name="Hazard Example"
+                countdown="d6"
+                tier="1"
+                threat="Standard"
+                consequence="4 necrotic damage"
+                actions={[
+                  {
+                    basic: true,
+                    name: "Siphon Life",
+                    keywords: "magical",
+                    target: <span>1d4+1 enemies within the hazard's zone</span>,
+                    defense: "Spirit",
+                    damage: "2 necrotic damage",
+                    success: (
+                      <span>
+                        <Link
+                          className="internal-link"
+                          to="/conditions#hindered"
+                        >
+                          hindered
+                        </Link>{" "}
+                        (next turn ends)
+                      </span>
+                    ),
+                  },
+                ]}
+              />
+              <h3 className="header" style={{ marginTop: "15px" }}>
+                General Statistics
+              </h3>
+              <p>
+                In the top section of a hazard's entry, you will find general
+                information on the hazard:
+              </p>
+              <ul>
+                <li>
+                  <span>
+                    <b>Countdown Die:</b> The size of the hazard's countdown die
+                    before it is defeated.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>TN:</b> The TN for skill rolls made against the hazard.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Proficiency Bonus:</b> Will be abbreviated as PB. Add
+                    this bonus to all attack rolls the hazard makes.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>Consequence:</b> When a hero gets a failure or partial
+                    success on a skill roll against the hazard, they take the
+                    stated damage.
+                  </span>
+                </li>
+              </ul>
+
+              <h3 className="header">Special Abilities</h3>
+              <p>
+                On the bottom half of a hazard's entry, you'll find the hazard's
+                special action they take on their turn. Remember hazards don't
+                have maneuvers or reactions, and instead take a single action on
+                their turn. Unlike monsters, hazards can't use basic actions.
+              </p>
+            </div>
+          }
+        />
 
         <div className="filters">
           <div className="filters__section">

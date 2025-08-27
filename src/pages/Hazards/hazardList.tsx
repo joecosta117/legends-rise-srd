@@ -189,6 +189,12 @@ const HazardList = [
         tier="1"
         threat="Major"
         consequence="4 necrotic damage"
+        traits={[
+          {
+            name: "Major Hazard",
+            description: <span>Major hazards get two turns per round.</span>,
+          },
+        ]}
         actions={[
           {
             basic: true,
@@ -390,6 +396,12 @@ const HazardList = [
         tier="2"
         threat="Major"
         consequence="8 unholy damage"
+        traits={[
+          {
+            name: "Major Hazard",
+            description: <span>Major hazards get two turns per round.</span>,
+          },
+        ]}
         actions={[
           {
             basic: true,
@@ -424,6 +436,12 @@ const HazardList = [
         tier="2"
         threat="Major"
         consequence="8 psychic damage"
+        traits={[
+          {
+            name: "Major Hazard",
+            description: <span>Major hazards get two turns per round.</span>,
+          },
+        ]}
         actions={[
           {
             basic: true,
