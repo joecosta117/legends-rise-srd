@@ -256,7 +256,7 @@ function Adventuring() {
         </p>
         <h3 className="header">Short Rest</h3>
         <p>
-          his rest typically requires a few minutes to catch your breath and
+          This rest typically requires a few minutes to catch your breath and
           quickly mend wounds, but can be shorter if narratively appropriate as
           decided by the GM. Certain abilities require a short rest before they
           can be used again. You can also spend recoveries to{" "}
