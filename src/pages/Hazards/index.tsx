@@ -6,7 +6,6 @@ import Pagination from "../../components/Pagination";
 import HazardList from "./hazardList";
 import Hazard from "../../components/Hazard";
 import { Link } from "react-router-dom";
-import ToolTip from "../../components/ToolTip";
 
 interface SortedHazardsProps {
   name: string;
