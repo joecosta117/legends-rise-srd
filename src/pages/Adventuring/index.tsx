@@ -267,20 +267,35 @@ function Adventuring() {
           This rest requires at least 24 hours of relaxation in a secure haven,
           such as a town, inn, or other location free from immediate danger.
           Sleeping while traveling or hiding in a dungeon crawling with monsters
-          is not enough.
+          is not enough. You gain the following benefits from a safe rest:
         </p>
-        <p>
-          After a safe rest, you gain the benefits of a short rest,{" "}
-          <ToolTip preset="heal" /> all hit points, remove all{" "}
-          <Link className="internal-link" to="/rules/combat#dying">
-            wounds
-          </Link>
-          , regain spent recoveries, and reset the{" "}
-          <Link className="internal-link" to="/rules/combat#momentum">
-            momentum die
-          </Link>{" "}
-          to 0. A hero can’t benefit from more than one safe rest in a day.
-        </p>
+        <ul>
+          <li>
+            <span>
+              <ToolTip preset="heal" /> all hit points
+            </span>
+          </li>
+          <li>
+            <span>
+              Remove all{" "}
+              <Link className="internal-link" to="/rules/combat#dying">
+                wounds
+              </Link>
+            </span>
+          </li>
+          <li>
+            <span>Regain expended recoveries</span>
+          </li>
+          <li>
+            <span>
+              Reset the{" "}
+              <Link className="internal-link" to="/rules/combat#momentum">
+                momentum die
+              </Link>{" "}
+              to 0
+            </span>
+          </li>
+        </ul>
         <p>
           For example, in The Lord of the Rings, the Fellowship’s journey from
           the Shire to Rivendell involves many nights of sleep, yet they are
