@@ -120,15 +120,7 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 5. You can only gain the benefits of
-                  this potion once per{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    safe rest
-                  </Link>
-                  .
+                  <ToolTip preset="heal" /> 4.
                 </span>
               }
             />
@@ -138,15 +130,8 @@ function Consumables() {
               content={
                 <span>
                   This vial of cool blue liquid restores magical essence beyond
-                  your normal limits. When you drink this potion, you regain 2
-                  mana. You can only gain the benefits of this potion once per{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    safe rest
-                  </Link>
-                  .
+                  your normal limits. When you drink this potion, you regain 1
+                  mana.
                 </span>
               }
             />
@@ -217,15 +202,7 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 12. You can only gain the benefits
-                  of this potion once per{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    safe rest
-                  </Link>
-                  .
+                  <ToolTip preset="heal" /> 8.
                 </span>
               }
             />
@@ -235,15 +212,8 @@ function Consumables() {
               content={
                 <span>
                   This vial of cool blue liquid restores magical essence beyond
-                  your normal limits. When you drink this potion, you regain 4
-                  mana. You can only gain the benefits of this potion once per{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    safe rest
-                  </Link>
-                  .
+                  your normal limits. When you drink this potion, you regain 2
+                  mana.
                 </span>
               }
             />
@@ -345,15 +315,7 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 18. You can only gain the benefits
-                  of this potion once per{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    safe rest
-                  </Link>
-                  .
+                  <ToolTip preset="heal" /> 12.
                 </span>
               }
             />
@@ -363,15 +325,8 @@ function Consumables() {
               content={
                 <span>
                   This vial of cool blue liquid restores magical essence beyond
-                  your normal limits. When you drink this potion, you regain 6
-                  mana. You can only gain the benefits of this potion once per{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    safe rest
-                  </Link>
-                  .
+                  your normal limits. When you drink this potion, you regain 3
+                  mana.
                 </span>
               }
             />
