@@ -43,7 +43,7 @@ function CombatRules() {
           <li>
             <a href="#zones">
               <span>
-                <b>Zones</b>
+                <b>Zones and Movement</b>
               </span>
             </a>
           </li>
@@ -177,7 +177,7 @@ function CombatRules() {
           </li>
         </ol>
 
-        <h2 id="zones">Zones</h2>
+        <h2 id="zones">Zones and Movement</h2>
         <p>
           The battlefield is divided into zones. Zones can have certain traits
           like difficult, dangerous, and others that affect anyone within the
