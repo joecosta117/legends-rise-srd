@@ -73,8 +73,8 @@ function Adventuring() {
         </p>
         <h3 className="header">Breaking Your Fall</h3>
         <p>
-          You can attempt to catch yourself to soften when falling from a great
-          height. Make a{" "}
+          You can attempt to catch yourself when falling from a great height.
+          Make a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
@@ -112,8 +112,8 @@ function Adventuring() {
         </ul>
         <h4 className="header">Crashing Into Creatures</h4>
         <p>
-          If you land on a creature or crash into one, that creature takes
-          physical damage equal to half of the damage you take from the crash.
+          If you fall on a creature or crash into one, that creature takes
+          physical damage equal to the damage you take from the crash.
         </p>
         <h3 className="header">Crashing With Zones</h3>
         <p>

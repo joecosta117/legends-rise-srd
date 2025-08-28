@@ -63,22 +63,22 @@ function CombatActs() {
         </div>
       ),
     },
-    {
-      title: "Prepare (Action)",
-      id: "prepare",
-      actType: "Action",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You prepare to react to an incoming danger."
-            frequency="At-will"
-            duration="Start of your next turn"
-            effect="Choose an ability that takes a maneuver or action. Assign a trigger. When the trigger occurs, you can use a reaction to do your prepared ability."
-          />
-        </div>
-      ),
-    },
+    // {
+    //   title: "Prepare (Action)",
+    //   id: "prepare",
+    //   actType: "Action",
+    //   content: (
+    //     <div>
+    //       <AbilityCard
+    //         accordion
+    //         descriptor="You prepare to react to an incoming danger."
+    //         frequency="At-will"
+    //         duration="Start of your next turn"
+    //         effect="Choose an ability that takes a maneuver or action. Assign a trigger. When the trigger occurs, you can use a reaction to do your prepared ability."
+    //       />
+    //     </div>
+    //   ),
+    // },
     {
       title: "Rally (Action)",
       id: "rally",
