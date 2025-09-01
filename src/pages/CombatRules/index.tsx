@@ -674,13 +674,8 @@ function CombatRules() {
           <Link className="internal-link" to="/combat-abilities#rally">
             rally
           </Link>{" "}
-          action in combat. Outside of combat, you can spend any number of
-          recoveries during a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            short rest
-          </Link>
-          . When you spend a recovery, you heal equal to your{" "}
-          <ToolTip preset="shakenVal" />.
+          action or from other abilities. When you spend a recovery, you heal
+          equal to your <ToolTip preset="shakenVal" />.
         </p>
         <h4 className="header">Regeneration</h4>
         <p>

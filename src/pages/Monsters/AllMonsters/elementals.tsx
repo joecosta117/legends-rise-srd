@@ -1025,7 +1025,12 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1135,7 +1140,12 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1241,7 +1251,12 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1345,7 +1360,12 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1446,7 +1466,12 @@ const ElementalMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1526,7 +1551,7 @@ const ElementalMonsters = [
     statBlock: (
       <Monster
         name="Fire Primordial"
-        hp="42"
+        hp="252"
         evn="18"
         mgt="17"
         res="16"
@@ -1543,11 +1568,10 @@ const ElementalMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1557,7 +1581,7 @@ const ElementalMonsters = [
               <span>
                 When the fire primordial is reduced to 0 hit points, it explodes
                 in flames. Make an attack roll against each creature within 1
-                zone of the fire primordial, dealing 12 fire damage.
+                zone of the fire primordial, dealing 18 fire damage.
               </span>
             ),
           },
@@ -1577,7 +1601,7 @@ const ElementalMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 fire damage",
+            damage: "15 fire damage",
           },
           {
             basic: true,
@@ -1585,10 +1609,10 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "9 fire damage",
+            damage: "15 fire damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1605,10 +1629,10 @@ const ElementalMonsters = [
             keywords: "magical, range,recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
-            damage: "12 fire damage",
+            damage: "18 fire damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1624,7 +1648,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 fire damage) for the scene
+                (6 fire damage) for the scene
               </span>
             ),
           },
@@ -1632,15 +1656,14 @@ const ElementalMonsters = [
         reactions={[
           {
             name: "Rebirth",
-            keywords: "magical, range",
+            keywords: "magical",
             trigger:
               "Fire primordial reduced to 0 hit points and explosive death happens",
             requirement:
               "The fire primordial hasn't used this ability in this scene",
             effect: (
               <span>
-                Fire primordial <ToolTip preset="heals" /> 10 per number of
-                heroes.
+                Fire primordial <ToolTip preset="heals" /> 50
               </span>
             ),
           },
@@ -1664,7 +1687,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zones
                 </Link>{" "}
-                (3 fire damage)
+                (6 fire damage)
               </span>
             ),
           },
@@ -1703,7 +1726,7 @@ const ElementalMonsters = [
     statBlock: (
       <Monster
         name="Air Primordial"
-        hp="48"
+        hp="288"
         evn="18"
         mgt="17"
         res="16"
@@ -1720,11 +1743,10 @@ const ElementalMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1736,7 +1758,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (3 physical damage).
+                (6 physical damage).
               </span>
             ),
           },
@@ -1756,7 +1778,7 @@ const ElementalMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -1773,7 +1795,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "6 lightning damage",
+            damage: "12 lightning damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1814,7 +1836,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (3 physical damage)
+                (6 physical damage)
               </span>
             ),
           },
@@ -1826,7 +1848,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>All creatues in 3 connected zones</span>,
             defense: "Guard",
-            damage: "9 lightning damage",
+            damage: "15 lightning damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1842,21 +1864,6 @@ const ElementalMonsters = [
             keywords: "magical, range",
             effect:
               "Air primordial conjures 6 greater elemental minions (air) within 2 zones",
-          },
-          {
-            name: "Set the World Ablaze",
-            round: "3",
-            keywords: "magical, range",
-            target: <span>All zones</span>,
-            effect: (
-              <span>
-                All zones become{" "}
-                <Link className="internal-link" to="/rules/combat#zone-types">
-                  dangerous zones
-                </Link>{" "}
-                (3 fire damage)
-              </span>
-            ),
           },
           {
             name: "Greater Tempest",
@@ -1892,7 +1899,7 @@ const ElementalMonsters = [
     statBlock: (
       <Monster
         name="Earth Primordial"
-        hp="54"
+        hp="324"
         evn="20"
         mgt="19"
         res="16"
@@ -1908,11 +1915,10 @@ const ElementalMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1944,7 +1950,7 @@ const ElementalMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -1961,7 +1967,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "12 physical damage",
           },
           {
             basic: false,
@@ -1969,7 +1975,7 @@ const ElementalMonsters = [
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
                 Target swallowed by the earth. While swallowed, the target is{" "}
@@ -1980,7 +1986,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>
-                , and takes 3{" "}
+                , and takes 6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2018,7 +2024,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>All huge or smaller creatures</span>,
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -2033,21 +2039,6 @@ const ElementalMonsters = [
             keywords: "magical, range",
             effect:
               "Air primordial conjures 6 greater elemental minions (earth) within 2 zones",
-          },
-          {
-            name: "Set the World Ablaze",
-            round: "3",
-            keywords: "magical, range",
-            target: <span>All zones</span>,
-            effect: (
-              <span>
-                All zones become{" "}
-                <Link className="internal-link" to="/rules/combat#zone-types">
-                  dangerous zones
-                </Link>{" "}
-                (3 fire damage)
-              </span>
-            ),
           },
           {
             name: "Rageful Thrash",
@@ -2082,7 +2073,7 @@ const ElementalMonsters = [
     statBlock: (
       <Monster
         name="Water Primordial"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -2099,11 +2090,10 @@ const ElementalMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2123,7 +2113,7 @@ const ElementalMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
                 If huge or smaller, the target gets swallowed by the water
@@ -2131,7 +2121,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>
-                , takes 3{" "}
+                , takes 6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2150,7 +2140,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "12 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -2171,7 +2161,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (3 physical damage). When a creature takes this damage, make an
+                (6 physical damage). When a creature takes this damage, make an
                 attack roll against their Guard, and on a success, they are{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
@@ -2220,7 +2210,7 @@ const ElementalMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 fire damage",
+            damage: "15 fire damage",
           },
           {
             name: "Pulling Waves",
@@ -2228,7 +2218,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>All enemies</span>,
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "12 physical damage",
             success: "Target pulled into the primordial's zone",
           },
         ]}
@@ -2253,7 +2243,7 @@ const ElementalMonsters = [
     statBlock: (
       <Monster
         name="Ice Primordial"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -2270,11 +2260,10 @@ const ElementalMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2286,7 +2275,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 cold damage) to enemies. The ice primordial is also immune to
+                (6 cold damage) to enemies. The ice primordial is also immune to
                 the penalties caused by its own difficult zones.
               </span>
             ),
@@ -2307,7 +2296,7 @@ const ElementalMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -2323,7 +2312,7 @@ const ElementalMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "6 cold damage",
+            damage: "12 cold damage",
           },
           {
             basic: false,
@@ -2337,7 +2326,7 @@ const ElementalMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (3 cold damage). When a creature takes this damage, make an
+                (6 cold damage). When a creature takes this damage, make an
                 attack roll against their Guard, and on a success, they are{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
@@ -2371,16 +2360,16 @@ const ElementalMonsters = [
             keywords: "magical",
             effect: (
               <span>
-                Ice primordial gains 6{" "}
+                Ice primordial gains 30{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#temporary-hit-points"
                 >
                   temporary hit points
                 </Link>{" "}
-                per hero (scene ends). When a creature damages the primordial
-                while it has these temporary hit points, the creature takes 6
-                cold damage.
+                (scene ends). When a creature damages the primordial while it
+                has these temporary hit points, the creature takes 9 cold
+                damage.
               </span>
             ),
           },

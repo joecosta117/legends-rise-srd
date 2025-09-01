@@ -51,7 +51,7 @@
   }
 
   &:nth-of-type(2) {
-    border-bottom: none;
+    // border-bottom: none;
 
     @include mq('s') {
       .section__container {
@@ -61,6 +61,19 @@
       .section__content {
         grid-column: 1;
         grid-row: 1;
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    border-bottom: none;
+
+    @include mq('s') {
+      .section__container {
+        grid-column: 1;
+      }
+      .section__content {
+        grid-column: 2;
       }
     }
   }

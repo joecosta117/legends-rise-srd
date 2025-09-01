@@ -242,32 +242,6 @@ function Paladin() {
               </Link>
               .
             </p>
-            {/* <h3 className="header">Zealous Blessing</h3>
-            <p>Choose one of the following blessings:</p>
-            <ul>
-              <li>
-                <span>
-                  <b>Aegis:</b> Increase your Guard and Spirit by +1.
-                </span>
-              </li>
-              <li>
-                <span>
-                  <b>Wrath:</b> When you{" "}
-                  <Link className="internal-link" to="/combat-abilities#strike">
-                    strike
-                  </Link>
-                  , you deal additional holy or unholy (your choice) damage
-                  equal to your tier.
-                </span>
-              </li>
-            </ul>
-            <p>
-              After a{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
-              </Link>
-              , you can change your blessing.
-            </p> */}
           </div>
         )}
 
@@ -411,6 +385,7 @@ function Paladin() {
               actType="Action"
               descriptor="With your attack, you summon a heavenly spirit to punish your foe if they harm others."
               frequency="At-will"
+              keywords="Magical"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">

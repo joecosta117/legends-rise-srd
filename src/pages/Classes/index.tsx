@@ -155,6 +155,18 @@ function Classes() {
               <li>
                 <span>
                   <b>
+                    <Link className="internal-link" to="/classes/seeker">
+                      Seeker
+                    </Link>
+                    :
+                  </b>{" "}
+                  You are a mystical warrior that seeks harmony within
+                  themselves and the world.
+                </span>
+              </li>
+              <li>
+                <span>
+                  <b>
                     <Link className="internal-link" to="/classes/summoner">
                       Summoner
                     </Link>

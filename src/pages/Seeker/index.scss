@@ -1,0 +1,9 @@
+@import "../../styles/index.scss";
+
+.seeker {
+  @include page-layout();
+}
+
+.seeker-content {
+  @include class-page-content();
+}

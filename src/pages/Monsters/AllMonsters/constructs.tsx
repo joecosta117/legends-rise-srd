@@ -396,7 +396,7 @@ const ConstructMonsters = [
     statBlock: (
       <Monster
         name="Flesh Golem"
-        hp="12"
+        hp="72"
         evn="14"
         mgt="15"
         res="12"
@@ -412,11 +412,10 @@ const ConstructMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -455,7 +454,7 @@ const ConstructMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
           },
         ]}
         bossActions={[
@@ -574,7 +573,12 @@ const ConstructMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -797,7 +801,12 @@ const ConstructMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Broken Armor",
@@ -949,7 +958,7 @@ const ConstructMonsters = [
     statBlock: (
       <Monster
         name="Clockwork Colossus"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -964,10 +973,10 @@ const ConstructMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                to end one condition affecting them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -997,7 +1006,7 @@ const ConstructMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -1012,7 +1021,7 @@ const ConstructMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 5 zones</span>,
             defense: "Spirit",
-            damage: "6 arcane damage",
+            damage: "12 arcane damage",
           },
           {
             basic: false,
@@ -1025,7 +1034,7 @@ const ConstructMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "9 arcane damage",
+            damage: "15 arcane damage",
             effect:
               "Any creature reduced to 0 hit points from this damage is immediately defeated.",
           },
@@ -1052,7 +1061,7 @@ const ConstructMonsters = [
             round: "1",
             target: <span>All enemies</span>,
             defense: "Spirit",
-            damage: "9 arcane damage",
+            damage: "15 arcane damage",
             success: (
               <span>
                 Target{" "}
@@ -1077,7 +1086,7 @@ const ConstructMonsters = [
             round: "5",
             target: <span>All other creatures</span>,
             defense: "Spirit",
-            damage: "9 arcane damage",
+            damage: "15 arcane damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">

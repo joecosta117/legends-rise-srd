@@ -550,8 +550,8 @@ function LegendaryArchetypes() {
               </Link>{" "}
               battle spell even if you don’t know the arcane magic tradition.
               Once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , you can cast this spell at a spell tier equal to your tier
               without spending mana.
@@ -1738,10 +1738,14 @@ function LegendaryArchetypes() {
             </p>
             <h4 className="header">Fate Die (8th-Level Feature)</h4>
             <p>
-              After a short rest, roll a d20 and record the result. This is your
-              fate die. When you see the result of a roll, you can replace the
-              result with your fate die's result. You can only have one fate die
-              at a time.
+              After a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                safe rest
+              </Link>
+              , roll a number of d20 equal to your proficiency bonus, and record
+              the results. These are your fate dice. When you see the result of
+              a roll, you can replace the result with one of your fate dice's
+              results. Your fate dice reset after a safe rest.
             </p>
 
             <h4 className="header">Prophetic Knowledge (10th-Level Feature)</h4>
@@ -1761,7 +1765,8 @@ function LegendaryArchetypes() {
               </Link>
               , when you are vanquished, reality rewinds. You defeat is reversed
               and you <ToolTip preset="heal" /> equal to your shaken value. If
-              you have used your fate die, then you gain another fate die.
+              you have used your fate dice in this scene, then you recover one
+              fate die.
             </p>
 
             <p>
@@ -1809,8 +1814,8 @@ function LegendaryArchetypes() {
               </Link>{" "}
               battle spell even if you don’t know the holy magic tradition. Once
               per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , you can cast this spell at your highest spell tier without
               spending mana.

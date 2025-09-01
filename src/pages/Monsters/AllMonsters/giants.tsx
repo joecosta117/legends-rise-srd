@@ -165,7 +165,12 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -258,7 +263,12 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Troll Regeneration",
@@ -346,7 +356,12 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -420,7 +435,7 @@ const GiantMonsters = [
     statBlock: (
       <Monster
         name="Oni"
-        hp="10"
+        hp="60"
         evn="13"
         mgt="13"
         res="13"
@@ -437,11 +452,10 @@ const GiantMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -461,7 +475,7 @@ const GiantMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -477,7 +491,7 @@ const GiantMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "2 unholy damage",
+            damage: "4 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -493,7 +507,7 @@ const GiantMonsters = [
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the oni's zone</span>,
             defense: "Guard",
-            damage: "3 cold damage",
+            damage: "5 cold damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -572,7 +586,7 @@ const GiantMonsters = [
             keywords: "magical",
             duration: "Scene ends",
             effect:
-              "Oni's cursed falchion lights with hellfire, and it now deals 5 unholy damage.",
+              "Oni's cursed falchion lights with hellfire, and it now deals 7 unholy damage.",
           },
         ]}
       />
@@ -690,7 +704,12 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Troll Regeneration",
@@ -814,7 +833,12 @@ const GiantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Troll Regeneration",

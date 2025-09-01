@@ -267,6 +267,25 @@ function DualClass() {
       ),
     },
     {
+      title: "Seeker Dual Class Features",
+      content: (
+        <div>
+          <p>
+            If you choose seeker as one of your two classes, then you gain the
+            following features
+          </p>
+          <ul>
+            <li>
+              <span>You gain the seeker’s spirit strike feature.</span>
+            </li>
+            <li>
+              <span>You gain the seeker’s disrupt essence feature.</span>
+            </li>
+          </ul>
+        </div>
+      ),
+    },
+    {
       title: "Summoner Dual Class Features",
       content: (
         <div>

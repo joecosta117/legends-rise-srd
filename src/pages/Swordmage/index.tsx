@@ -211,11 +211,8 @@ function Swordmage() {
             <p>
               You have attuned yourself to a specific weapon that typically
               serves as your implement. Choose one weapon to be your arcane
-              weapon that you can change during a{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
-              </Link>
-              . As a maneuver, you can{" "}
+              weapon that you can change during 10 minutes. As a maneuver, you
+              can{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#special-movement"

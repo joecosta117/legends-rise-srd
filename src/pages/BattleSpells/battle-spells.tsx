@@ -2341,7 +2341,7 @@ export const holySpells = [
           target="1 creature per spell tier within your zone"
           keywords="Magical"
           duration="Scene ends"
-          effect="Target gains +1 fortune to all rolls."
+          effect="Target gains +1 fortune to attack rolls and overcome rolls."
         />
       ),
     },
@@ -2850,9 +2850,9 @@ export const illusionSpells = [
           effect={
             <span>
               You impose <Modifier type="mf" count="1" /> on the triggering
-              roll. The target is then immune to this spell until after a{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              roll. The target is then immune to this spell for the{" "}
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               .
             </span>
@@ -3132,8 +3132,8 @@ export const lifeSpells = [
           accordion
           descriptor="You infuse a creature with life from your touch."
           frequency="Spell 0 (Life)"
-          target="1 creature you can touch"
-          keywords="Magical, Melee"
+          target="1 creature within your zone"
+          keywords="Magical"
           effect="Target can spend a recovery"
         />
       ),
@@ -3158,7 +3158,7 @@ export const lifeSpells = [
           keywords="Magical"
           effect={
             <span>
-              Target <ToolTip preset="heal" /> 1
+              Target <ToolTip preset="heals" /> equal to your tier
             </span>
           }
         />
@@ -3194,7 +3194,7 @@ export const lifeSpells = [
           effect={
             <span>
               Target can spend a recovery, but they instead{" "}
-              <ToolTip preset="heal" /> 4 per spell tier
+              <ToolTip preset="heal" /> 5 per spell tier
             </span>
           }
         />
@@ -3210,6 +3210,7 @@ export const lifeSpells = [
             descriptor="With a word, you mend an ally’s wounds."
             frequency="Spell 1 (Life)"
             keywords="Magical, Range"
+            target="1 creature within 1 zone"
             effect={
               <span>
                 Target can spend a recovery, but they instead{" "}
@@ -3290,20 +3291,22 @@ export const lifeSpells = [
   ],
   [
     {
-      title: "Full Heal (Action)",
+      title: "Wellspring of Life (Action)",
       actType: "Action",
       spell: (
         <div>
           <AbilityCard
             accordion
-            descriptor="You infuse an ally with a wave of positive energy that mends all their wounds."
+            descriptor="You infuse a creature with enough positive energy that they exude healing energy."
             frequency="Spell 3 (Life)"
-            target="1 creature within 3 zones"
-            keywords="Magical, Range"
+            target="1 creature within 2 zones"
+            keywords="Aura, Magical, Range"
             effect={
               <span>
-                Target can spend a recovery, but <ToolTip preset="heal" /> 12
-                per spell tier, and end all negative conditions affecting them
+                Target ends all negative conditions affecting them, and gains{" "}
+                <ToolTip preset="regen" /> 2 per the spell tier while{" "}
+                <ToolTip preset="shaken" />. At the start of their turn, all
+                shaken allies within their zone also heal this same amount.
               </span>
             }
           />

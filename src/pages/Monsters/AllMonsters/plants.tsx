@@ -237,7 +237,12 @@ const PlantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -369,7 +374,7 @@ const PlantMonsters = [
     statBlock: (
       <Monster
         name="Dryad Queen"
-        hp="10"
+        hp="60"
         evn="14"
         mgt="11"
         res="12"
@@ -384,11 +389,10 @@ const PlantMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -419,7 +423,7 @@ const PlantMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -435,7 +439,7 @@ const PlantMonsters = [
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "2 physical damage",
+            damage: "4 physical damage",
           },
         ]}
         maneuvers={[
@@ -531,7 +535,12 @@ const PlantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -684,7 +693,7 @@ const PlantMonsters = [
     statBlock: (
       <Monster
         name="Rot Woodlord"
-        hp="26"
+        hp="156"
         evn="16"
         mgt="17"
         res="14"
@@ -700,11 +709,10 @@ const PlantMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -724,7 +732,7 @@ const PlantMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -740,7 +748,7 @@ const PlantMonsters = [
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "8 physical damage",
           },
           {
             basic: false,
@@ -756,7 +764,7 @@ const PlantMonsters = [
             name: "Uproot",
             defense: "Guard",
             target: "1d4+1 enemies in the rot woodlord's zone",
-            critical: <span>Same as a success, and 2 physical damage</span>,
+            critical: <span>Same as a success, and 4 physical damage</span>,
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -788,7 +796,7 @@ const PlantMonsters = [
                   hindered
                 </Link>{" "}
                 (next turn ends). If they're already hindered, then they instead
-                take 2 necrotic damage.
+                take 4 necrotic damage.
               </span>
             ),
           },
@@ -888,7 +896,12 @@ const PlantMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Green Aura",

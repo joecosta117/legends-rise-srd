@@ -74,9 +74,9 @@ function MagicRules() {
         </p>
         <p>
           When you cast a tier 1+ battle spell, you must spend mana equal to the
-          spell tier. After a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            short rest
+          spell tier. At the start of each{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
           </Link>
           , a hero regains all expended mana.
         </p>
@@ -103,12 +103,8 @@ function MagicRules() {
           <b>implement</b>. Implements can be anything such as a wand, staff,
           book, prayer beads, weapon, or holy symbol. If you have an implement
           in one of your hands you can cast spells as long as you can also
-          speak. You can only use an implement if you have properly aligned your
-          magical energy to it, which takes a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            short rest
-          </Link>{" "}
-          to do so while holding the implement.
+          speak. You can only use an implement if you have spent 10 minutes
+          aligning your magical energy to it while holding the implement.
         </p>
 
         <h2 id="battle">Battle Spells</h2>

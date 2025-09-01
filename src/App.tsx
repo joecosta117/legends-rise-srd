@@ -12,6 +12,7 @@ import Druid from "./pages/Druid";
 import Magesmith from "./pages/Magesmith";
 import Occultist from "./pages/Occultist";
 import Paladin from "./pages/Paladin";
+import Seeker from "./pages/Seeker";
 import Ranger from "./pages/Ranger";
 import Rogue from "./pages/Rogue";
 import Summoner from "./pages/Summoner";
@@ -73,6 +74,7 @@ function App() {
             <Route path="/classes/magesmith" element={<Magesmith />} />
             <Route path="/classes/occultist" element={<Occultist />} />
             <Route path="/classes/paladin" element={<Paladin />} />
+            <Route path="/classes/seeker" element={<Seeker />} />
             <Route path="/classes/ranger" element={<Ranger />} />
             <Route path="/classes/rogue" element={<Rogue />} />
             <Route path="/classes/summoner" element={<Summoner />} />

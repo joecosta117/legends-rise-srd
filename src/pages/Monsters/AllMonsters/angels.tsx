@@ -203,7 +203,12 @@ const AngelMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Blessed Aura",
@@ -282,7 +287,7 @@ const AngelMonsters = [
     statBlock: (
       <Monster
         name="Adult Celestial Dragon"
-        hp="30"
+        hp="180"
         evn="17"
         mgt="17"
         res="15"
@@ -320,7 +325,7 @@ const AngelMonsters = [
                 >
                   temporary hit points
                 </Link>
-                , the amount increases by 2.
+                , the amount increases by 4.
               </span>
             ),
           },
@@ -340,7 +345,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
           },
           {
             basic: false,
@@ -352,11 +357,11 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "4 holy damage",
+            damage: "8 holy damage",
             effect: (
               <span>
                 The dragon and 1d4+1 allies within the targeted zones{" "}
-                <ToolTip preset="heal" /> 4.
+                <ToolTip preset="heal" /> 12.
               </span>
             ),
           },
@@ -402,7 +407,7 @@ const AngelMonsters = [
             round: "3",
             keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
-            damage: "3 fire and 3 holy damage",
+            damage: "10 holy damage",
             defense: "Spirit",
             success: (
               <span>
@@ -452,7 +457,7 @@ const AngelMonsters = [
     statBlock: (
       <Monster
         name="Ancient Celestial Dragon"
-        hp="54"
+        hp="324"
         evn="19"
         mgt="19"
         res="17"
@@ -470,11 +475,10 @@ const AngelMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -490,7 +494,7 @@ const AngelMonsters = [
                 >
                   temporary hit points
                 </Link>
-                , the amount increases by 3.
+                , the amount increases by 6.
               </span>
             ),
           },
@@ -510,7 +514,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 {" "}
@@ -531,11 +535,11 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "6 holy damage",
+            damage: "12 holy damage",
             effect: (
               <span>
                 The dragon and 2d4+2 allies within the targeted zones{" "}
-                <ToolTip preset="heal" /> 6.
+                <ToolTip preset="heal" /> 18.
               </span>
             ),
           },
@@ -583,7 +587,7 @@ const AngelMonsters = [
             keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
-            damage: "5 fire and 5 holy damage",
+            damage: "16 holy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -964,7 +968,7 @@ const AngelMonsters = [
     statBlock: (
       <Monster
         name="Archangel"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -982,11 +986,10 @@ const AngelMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1017,7 +1020,7 @@ const AngelMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 holy damage",
+            damage: "18 holy damage",
           },
           {
             basic: false,
@@ -1025,7 +1028,7 @@ const AngelMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "6 holy damage",
+            damage: "12 holy damage",
             success: (
               <span>
                 Target{" "}
@@ -1045,7 +1048,7 @@ const AngelMonsters = [
             keywords: "magical, recharge",
             effect: (
               <span>
-                Archangel uses holy blade, but deals 6 additional damage, and on
+                Archangel uses holy blade, but deals 9 additional damage, and on
                 a success, the target is banished to their home realm (turn
                 ends), or banished (overcome ends) on a critical success.
               </span>
@@ -1084,11 +1087,11 @@ const AngelMonsters = [
             keywords: "magical",
             defense: "Spirit",
             target: "All enemies in the archangel's zone",
-            damage: "5 fire and 5 holy damage",
+            damage: "16 holy damage",
             effect: (
               <span>
                 Archangel ends all negative effects on them and{" "}
-                <ToolTip preset="heals" /> 12
+                <ToolTip preset="heals" /> 18
               </span>
             ),
           },
@@ -1098,7 +1101,7 @@ const AngelMonsters = [
             keywords: "magical, range",
             target: "3 zones within 5 zones",
             defense: "Spirit",
-            damage: "10 holy damage",
+            damage: "16 holy damage",
           },
         ]}
       />

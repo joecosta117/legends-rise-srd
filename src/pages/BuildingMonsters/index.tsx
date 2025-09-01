@@ -209,8 +209,8 @@ function BuildingMonsters() {
           <tbody>
             <tr>
               <td>Minion</td>
-              <td>Change to their proficiency bonus</td>
-              <td>Change to their tier</td>
+              <td>Equal to their proficiency bonus (PB)</td>
+              <td>Equal to their tier</td>
               <td>-</td>
             </tr>
             <tr>
@@ -233,9 +233,9 @@ function BuildingMonsters() {
             </tr>
             <tr>
               <td>Boss</td>
-              <td>x Number of heroes</td>
-              <td>-</td>
-              <td>One turn per hero, boss resilience, and boss actions</td>
+              <td>x6</td>
+              <td>+PB, or plus their tier for automatic damage</td>
+              <td>Two turns per round, boss resilience, and boss actions</td>
             </tr>
           </tbody>
         </table>
@@ -249,8 +249,9 @@ function BuildingMonsters() {
         <p>
           Unlike normal monsters, bosses can shake off conditions and effects
           that would normally last longer. At the end of a boss monster's turn,
-          they can take damage equal to their proficiency bonus to end one
-          effect on them, such a spell effect, condition, or ongoing damage.
+          they can take direct damage equal to double their proficiency bonus to
+          end one effect on them, such a spell effect, condition, or ongoing
+          damage.
         </p>
         <h4 className="header">Boss Actions</h4>
         <p>
@@ -570,19 +571,22 @@ function BuildingMonsters() {
           <li>
             <span>
               <b>Major Monsters:</b> You can upgrade a major monster to a boss
-              monster by halving their hit points, then multipling them by the
-              number of heroes. Make sure to give the new boss monster boss
-              actions (see the previous section on creating your own boss
-              actions) and let them get one turn per hero each round. You can
-              downgrade a major monster to a standard monster by halving their
-              hit points and giving them only one turn per round.
+              monster by tripling their hit points. Add their proficiency bonus
+              to all damage, or half for automatic damage. Make sure to give the
+              new boss monster boss actions (see the previous section on
+              creating your own boss actions). At the end of their turn, they
+              can take direct damage equal to double their proficiency bonus to
+              end a condition. You can downgrade a major monster to a standard
+              monster by halving their hit points and giving them only one turn
+              per round.
             </span>
           </li>
           <li>
             <span>
               <b>Boss Monsters:</b> You can downgrade a boss monster to a major
-              monster by doubling their hit points, removing their boss actions,
-              and they only get turns per round.
+              monster by dividing their hit points by 3, removing their boss
+              actions, and removing their trait to remove a condition by taking
+              damage.
             </span>
           </li>
         </ul>

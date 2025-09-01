@@ -69,7 +69,6 @@ function HeroicArchetypes() {
     { label: "Lifeweaver", onClick: handleArchetype },
     { label: "Magesmith Multiclass", onClick: handleArchetype },
     { label: "Mage Knight", onClick: handleArchetype },
-
     { label: "Necromancer", onClick: handleArchetype },
     { label: "Occultist Multiclass", onClick: handleArchetype },
     { label: "Paladin Multiclass", onClick: handleArchetype },
@@ -79,6 +78,7 @@ function HeroicArchetypes() {
     { label: "Pyromancer", onClick: handleArchetype },
     { label: "Ranger Multiclass", onClick: handleArchetype },
     { label: "Rogue Multiclass", onClick: handleArchetype },
+    { label: "Seeker Multiclass", onClick: handleArchetype },
     { label: "Seraph", onClick: handleArchetype },
     { label: "Shadowmancer", onClick: handleArchetype },
     { label: "Skirmisher", onClick: handleArchetype },
@@ -87,7 +87,6 @@ function HeroicArchetypes() {
     { label: "Summoner Multiclass", onClick: handleArchetype },
     { label: "Swordmage Multiclass", onClick: handleArchetype },
     { label: "Thrower", onClick: handleArchetype },
-
     { label: "Warder", onClick: handleArchetype },
     { label: "Warrior Multiclass", onClick: handleArchetype },
     { label: "Wrecker", onClick: handleArchetype },
@@ -141,6 +140,7 @@ function HeroicArchetypes() {
     { label: "Paladin Multiclass", onClick: handleArchetype },
     { label: "Ranger Multiclass", onClick: handleArchetype },
     { label: "Rogue Multiclass", onClick: handleArchetype },
+    { label: "Seeker Multiclass", onClick: handleArchetype },
     { label: "Summoner Multiclass", onClick: handleArchetype },
     { label: "Swordmage Multiclass", onClick: handleArchetype },
 
@@ -688,15 +688,10 @@ function HeroicArchetypes() {
               </li>
               <li>
                 <span>
-                  When you or an ally spends a recovery during a{" "}
-                  <Link
-                    className="internal-link"
-                    to="/rules/adventuring#resting"
-                  >
-                    short rest
-                  </Link>
-                  , they <ToolTip preset="heal" /> additional hit points equal
-                  to your proficiency bonus
+                  Your medical expertise helps your allies better recover. When
+                  you or an ally within your zone spends a recovery, they{" "}
+                  <ToolTip preset="heal" /> additional hit points equal to your
+                  proficiency bonus.
                 </span>
               </li>
             </ul>
@@ -706,18 +701,16 @@ function HeroicArchetypes() {
               and provide relief in battle. You can create a number of herbal
               remedies during a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+                safe rest
               </Link>{" "}
-              equal to your tier, and the remedies' effectiveness fades after
-              the next rest. A creature with the herbal remedy can use a
-              maneuver to apply the salve to gain the following benefits:
+              equal to your proficiency bonus, and the remedies' effectiveness
+              fades after the next safe rest. A creature with a herbal remedy
+              can use a maneuver to apply the salve to gain the following
+              benefits:
             </p>
             <ul>
               <li>
-                <span>
-                  Spend a recovery and <ToolTip preset="heal" /> additional hit
-                  points equal to your proficiency bonus
-                </span>
+                <span>Spend a recovery</span>
               </li>
               <li>
                 <span>
@@ -945,8 +938,8 @@ function HeroicArchetypes() {
               you use dragon breath weapon, you regain a use of the ability when
               you become <ToolTip preset="shaken" />. You can only gain a second
               use of this ability once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               .
             </p>
@@ -2030,8 +2023,8 @@ function HeroicArchetypes() {
               <Link className="internal-link" to="/combat-abilities#overpower">
                 overpower
               </Link>{" "}
-              with a range of 1 zone, and those abilities gain the magical and
-              range keyword for you.
+              with a range of 1 zone, and gains the magical and range keyword
+              for you.
             </p>
           </div>
         )}
@@ -2146,6 +2139,33 @@ function HeroicArchetypes() {
             </ul>
             <h3 className="header">7th-Level Features</h3>
             <p>You gain the rogue’s agile feature.</p>
+          </div>
+        )}
+        {selectedArchetype === "Seeker Multiclass" && (
+          <div>
+            <h2>Seeker Multiclass</h2>
+            <p>You have learned to harmonize your inner essence.</p>
+            <h3 className="header">5th-Level Features</h3>
+            <p>You gain the following features from the seeker at 5th level:</p>
+            <ul>
+              <li>
+                <span>Your hit points increase by +12</span>
+              </li>
+              <li>
+                <span>Training in light armor and all weapons.</span>
+              </li>
+              <li>
+                <span>You gain the spirit strike feature.</span>
+              </li>
+              <li>
+                <span>You gain the disrupt essence feature.</span>
+              </li>
+              <li>
+                <span>You gain the mystic deflection feature.</span>
+              </li>
+            </ul>
+            <h3 className="header">7th-Level Features</h3>
+            <p>You gain the seeker's seeker speed feature.</p>
           </div>
         )}
         {selectedArchetype === "Seraph" && (
