@@ -33,7 +33,12 @@ const MonstrosityMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -126,7 +131,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Medusa"
-        hp="10"
+        hp="60"
         evn="12"
         mgt="11"
         res="14"
@@ -141,11 +146,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -175,7 +179,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -191,7 +195,7 @@ const MonstrosityMonsters = [
             keywords: "range, weapon",
             target: <span>1 creatue within 3 zones</span>,
             defense: "Guard",
-            damage: "2 physical damage",
+            damage: "4 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -235,7 +239,7 @@ const MonstrosityMonsters = [
             keywords: "range",
             round: "1",
             defense: "Guard",
-            damage: "3 toxic damage",
+            damage: "5 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -389,7 +393,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Chimera"
-        hp="12"
+        hp="72"
         evn="14"
         mgt="15"
         res="12"
@@ -405,11 +409,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -429,7 +432,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
           },
           {
             basic: false,
@@ -437,7 +440,7 @@ const MonstrosityMonsters = [
             keywords: "recharge",
             target: <span>1d4+1 enemies in the chimera's zone</span>,
             defense: "Guard",
-            damage: "3 fire damage",
+            damage: "5 fire damage",
           },
         ]}
         reactions={[
@@ -499,7 +502,7 @@ const MonstrosityMonsters = [
             name: "Thrash",
             round: "5",
             effect:
-              "The chimera uses rend against three creatures, and if no creature is close enough, then it can move first.",
+              "The chimera can move then uses rend against 1d4+1 creatures.",
           },
         ]}
       />
@@ -728,7 +731,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Hydra"
-        hp="12"
+        hp="72"
         evn="14"
         mgt="15"
         res="12"
@@ -743,11 +746,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -755,7 +757,7 @@ const MonstrosityMonsters = [
             name: "Hydra Regeneration",
             description: (
               <span>
-                Hydra has <ToolTip preset="regen" /> 2. When the hydra takes
+                Hydra has <ToolTip preset="regen" /> 3. When the hydra takes
                 fire or toxic damage, then their regeneration doesn't work on
                 their next turn. When the hydra takes 5 or more damage in a
                 single turn, one of its heads dies. When the hydra regenerates,
@@ -779,7 +781,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
           },
           {
             basic: false,
@@ -795,7 +797,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "6 physical damage",
           },
         ]}
         bossActions={[
@@ -936,7 +938,12 @@ const MonstrosityMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1005,7 +1012,12 @@ const MonstrosityMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1269,7 +1281,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Alpha Werewolf"
-        hp="12"
+        hp="72"
         evn="14"
         mgt="15"
         res="12"
@@ -1284,11 +1296,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1313,7 +1324,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
             success:
               "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
@@ -1331,7 +1342,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
           },
           {
             basic: true,
@@ -1339,7 +1350,7 @@ const MonstrosityMonsters = [
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
           },
         ]}
         maneuvers={[
@@ -1449,7 +1460,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Cave Worm"
-        hp="30"
+        hp="180"
         evn="16"
         mgt="17"
         res="14"
@@ -1465,11 +1476,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1485,7 +1495,7 @@ const MonstrosityMonsters = [
             name: "Shifting Ground",
             description: (
               <span>
-                The ave worm's colossal movements make the ground shake as it
+                The cave worm's colossal movements make the ground shake as it
                 burrows. The cave worm's zone is a difficult zone for huge or
                 smaller creatures.
               </span>
@@ -1507,7 +1517,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "12 physical damage",
             success: (
               <span>
                 If huge or smaller, the target gets swallowed by the cave worm.
@@ -1519,7 +1529,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>
-                , and takes 2{" "}
+                , and takes 4{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1537,7 +1547,7 @@ const MonstrosityMonsters = [
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "8 physical damage",
             effect:
               "The cave worm spits out a creature or rock from its stomach. If the spit out entity is a creature, it takes crash damage.",
           },
@@ -1549,7 +1559,7 @@ const MonstrosityMonsters = [
             keywords: "range",
             round: "1",
             defense: "Guard",
-            damage: "9 physical",
+            damage: "10 physical",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -1570,14 +1580,14 @@ const MonstrosityMonsters = [
             target: "Each other creature within 1 zone of the worm",
             keywords: "range",
             defense: "Guard",
-            damage: "9 physical",
+            damage: "10 physical",
           },
           {
             name: "Tail Tremors",
             round: "5",
             duration: "Scene ends",
             target: "All creatures within within 1 zone of the cave worm",
-            critical: "Same as success, and 4 physical damage",
+            critical: "Same as success, and 6 physical damage",
             success: "prone",
             effect: "Targeted zones become difficult zones",
           },
@@ -1606,7 +1616,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Sphinx"
-        hp="26"
+        hp="156"
         evn="14"
         mgt="15"
         res="14"
@@ -1622,11 +1632,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1655,7 +1664,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1695,7 +1704,7 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             round: "1",
             defense: "Spirit",
-            damage: "9 arcane",
+            damage: "10 arcane",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1756,7 +1765,12 @@ const MonstrosityMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Storm Aura",
@@ -1844,7 +1858,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Kraken"
-        hp="48"
+        hp="288"
         evn="17"
         mgt="17"
         res="17"
@@ -1861,11 +1875,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1901,7 +1914,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -1917,7 +1930,7 @@ const MonstrosityMonsters = [
             keywords: "melee, weapon",
             target: <span>1 creature seized by the kraken</span>,
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 If huge or smaller, the target gets swallowed by the greed
@@ -1929,7 +1942,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>
-                , and takes 3{" "}
+                , and takes 6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1946,7 +1959,7 @@ const MonstrosityMonsters = [
           {
             name: "Constrict",
             target: "All creatures seized by the kraken",
-            damage: "3 physical damage",
+            damage: "6 physical damage",
             effect:
               "If the target is holding their breath, then they lose 1d4 rounds of air",
           },
@@ -1958,14 +1971,14 @@ const MonstrosityMonsters = [
             keywords: "magical, range",
             round: "1",
             defense: "Guard",
-            damage: "9 lightning",
+            damage: "15 lightning",
             effect: (
               <span>
                 Targeted zone becomes a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 lightning damage) for the scene
+                (6 lightning damage) for the scene
               </span>
             ),
           },
@@ -1986,7 +1999,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 toxic damage). When a creature takes this damage, the kraken
+                (6 toxic damage). When a creature takes this damage, the kraken
                 makes an attack roll against the creatue's Guard, and the
                 creatue is{" "}
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2001,7 +2014,7 @@ const MonstrosityMonsters = [
             round: "5",
             keywords: "magical, range",
             target: "All enemies",
-            damage: "9 psychic damage",
+            damage: "15 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -2032,7 +2045,7 @@ const MonstrosityMonsters = [
     statBlock: (
       <Monster
         name="Terror That Walks"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -2049,11 +2062,10 @@ const MonstrosityMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2065,7 +2077,7 @@ const MonstrosityMonsters = [
             name: "Regeneration",
             description: (
               <span>
-                The terror that walks has <ToolTip preset="regen" /> 3.
+                The terror that walks has <ToolTip preset="regen" /> 6.
               </span>
             ),
           },
@@ -2085,7 +2097,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
                 If huge or smaller, the target gets swallowed by the kaiju.
@@ -2097,7 +2109,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>
-                , and takes 3{" "}
+                , and takes 6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2115,10 +2127,10 @@ const MonstrosityMonsters = [
             keywords: "magical, range, recharge",
             target: <span>3 connected zones within 5 zones</span>,
             defense: "Spirit",
-            damage: "9 arcane damage",
+            damage: "15 arcane damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2161,7 +2173,7 @@ const MonstrosityMonsters = [
             round: "3",
             target: "All other creatues within 1 zone of the terror that walks",
             defense: "Guard",
-            damage: "9 physical",
+            damage: "15 physical",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -2182,7 +2194,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 arcane damage)
+                (6 arcane damage)
               </span>
             ),
             keywords: "aura, magical",
@@ -2223,7 +2235,12 @@ const MonstrosityMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Antimagic Zone",

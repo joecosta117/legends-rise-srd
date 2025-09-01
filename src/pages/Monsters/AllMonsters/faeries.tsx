@@ -36,7 +36,12 @@ const FaerieMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -117,7 +122,7 @@ const FaerieMonsters = [
     statBlock: (
       <Monster
         name="Adult Glamour Dragon"
-        hp="26"
+        hp="156"
         evn="16"
         mgt="17"
         res="14"
@@ -134,11 +139,10 @@ const FaerieMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -158,7 +162,7 @@ const FaerieMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -178,7 +182,7 @@ const FaerieMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "6 psychic damage",
+            damage: "10 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#vulnerable">
@@ -302,7 +306,7 @@ const FaerieMonsters = [
     statBlock: (
       <Monster
         name="Ancient Glamour Dragon"
-        hp="48"
+        hp="288"
         evn="18"
         mgt="19"
         res="16"
@@ -319,11 +323,10 @@ const FaerieMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -356,7 +359,7 @@ const FaerieMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -376,7 +379,7 @@ const FaerieMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "9 psychic damage",
+            damage: "15 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#vulnerable">
@@ -713,7 +716,12 @@ const FaerieMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -770,7 +778,7 @@ const FaerieMonsters = [
     statBlock: (
       <Monster
         name="Forest Hag"
-        hp="10"
+        hp="60"
         evn="12"
         mgt="11"
         res="14"
@@ -785,11 +793,10 @@ const FaerieMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -814,7 +821,7 @@ const FaerieMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -830,7 +837,7 @@ const FaerieMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "2 psychic damage",
+            damage: "4 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -846,7 +853,7 @@ const FaerieMonsters = [
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "5 psychic damage",
+            damage: "7 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#confused">
@@ -880,7 +887,7 @@ const FaerieMonsters = [
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -895,7 +902,7 @@ const FaerieMonsters = [
             round: "3",
             keywords: "magical, range",
             target: "1 creature within 3 zones",
-            damage: "5 psychic damage",
+            damage: "7 psychic damage",
             success: (
               <span>
                 The target must use their reaction to{" "}
@@ -917,7 +924,7 @@ const FaerieMonsters = [
             keywords: "magical",
             target: "All enemies within the hag's zone",
             defense: "Guard",
-            damage: "3 toxic damage",
+            damage: "5 toxic damage",
 
             success: (
               <span>
@@ -967,7 +974,12 @@ const FaerieMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Stolen Skin",
@@ -1065,7 +1077,12 @@ const FaerieMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Freezing Aura",

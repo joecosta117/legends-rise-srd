@@ -203,7 +203,7 @@ const OozeMonsters = [
     statBlock: (
       <Monster
         name="Necro Ooze"
-        hp="10"
+        hp="60"
         evn="12"
         mgt="15"
         res="12"
@@ -214,6 +214,17 @@ const OozeMonsters = [
         role="Disabler"
         resistances="necrotic"
         traits={[
+          {
+            name: "Boss Monster",
+            description: (
+              <span>
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
+              </span>
+            ),
+          },
           {
             name: "Ooze Resilience",
             description: (
@@ -249,7 +260,7 @@ const OozeMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "3 necroitc damage",
+            damage: "5 necroitc damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -268,7 +279,7 @@ const OozeMonsters = [
             effect: (
               <span>
                 The triggering healing amount is halved, and the necro ooze{" "}
-                <ToolTip preset="heals" /> 2
+                <ToolTip preset="heals" /> 3
               </span>
             ),
           },
@@ -280,7 +291,7 @@ const OozeMonsters = [
             keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
-            damage: "3 necrotic damage",
+            damage: "5 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -302,8 +313,8 @@ const OozeMonsters = [
             effect: (
               <span>
                 The necro ooze kills any number of necro spawn it created, and{" "}
-                <ToolTip preset="heals" /> 2 per killed necro spawn. If there
-                are no necro spawn left, the necro ooze instead heals 2.
+                <ToolTip preset="heals" /> 3 per killed necro spawn. If there
+                are no necro spawn left, the necro ooze instead heals 3.
               </span>
             ),
           },

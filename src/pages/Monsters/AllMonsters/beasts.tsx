@@ -37,7 +37,12 @@ const BeastMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -104,7 +109,7 @@ const BeastMonsters = [
     statBlock: (
       <Monster
         name="Tyrannosaurus"
-        hp="12"
+        hp="72"
         evn="14"
         mgt="15"
         res="12"
@@ -118,11 +123,10 @@ const BeastMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -142,7 +146,7 @@ const BeastMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
             success: (
               <span>
                 If larger or smaller, the target gets swallowed by the
@@ -154,7 +158,7 @@ const BeastMonsters = [
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>
-                , and takes 1{" "}
+                , and takes 2{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -180,7 +184,7 @@ const BeastMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -200,18 +204,12 @@ const BeastMonsters = [
         ]}
         bossActions={[
           {
-            name: "Tyrannosaurus Roar",
+            name: "Tyrannosaurus Rampage",
             round: "1",
-            keywords: "range",
-            target: "All enemies",
-            defense: "Spirit",
-            critical: "hindered (overcome ends)",
-            success: (
+            effect: (
               <span>
-                <Link className="internal-link" to="/conditions#hindered">
-                  hindered
-                </Link>{" "}
-                (next turn ends)
+                The tyrannosaurus uses charge and can move twice as part of the
+                charge
               </span>
             ),
           },
@@ -265,7 +263,12 @@ const BeastMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Aquatic",
@@ -350,7 +353,12 @@ const BeastMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Mauler",

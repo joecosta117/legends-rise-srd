@@ -213,14 +213,11 @@ function Magesmith() {
 
             <h3 className="header">Arcane Upgrades</h3>
             <p>
-              You can infuse items with magical power. During a{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
-              </Link>
-              , you can infuse a single item in your possession with an upgrade.
-              The maximum number of upgrades you can have equals 1 plus your
-              tier. An item can have a number of upgrades up to your tier, but
-              can’t have the same upgrade multiple times.
+              You can infuse items with magical power. You can spend 10 minutes
+              to infuse a single item in your possession with an upgrade. The
+              maximum number of upgrades you can have equals 1 plus your tier.
+              An item can have a number of upgrades up to your tier, but can’t
+              have the same upgrade multiple times.
             </p>
             <p>
               You start off knowing 4 upgrades and learn an additional upgrade
@@ -735,8 +732,8 @@ function Magesmith() {
                 dimensional step
               </Link>{" "}
               battle spell once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>{" "}
               without spending mana, even if they don’t know the spell.
             </p>

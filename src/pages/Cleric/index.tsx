@@ -275,8 +275,8 @@ function Cleric() {
               </Link>{" "}
               battle spell even if you don’t know the life magic tradition. Once
               per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , you can cast this spell at your highest spell tier without
               spending mana.
@@ -578,8 +578,8 @@ function Cleric() {
             <h3 className="header">Plentiful Prayers</h3>
             <p>
               You can use prayer of healing a second time per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               .
             </p>

@@ -405,7 +405,7 @@ function Arcanist() {
             <p>
               During a{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+                safe rest
               </Link>
               , you can replace one of your known battle spells with another
               battle spell of the same tier and from the same{" "}
@@ -514,8 +514,8 @@ function Arcanist() {
             <h3 className="header">Unparalleled Magic</h3>
             <p>
               You can use high magic a second time per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               .
             </p>

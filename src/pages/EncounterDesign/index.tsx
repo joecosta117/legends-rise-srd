@@ -227,13 +227,13 @@ function EncounterDesign() {
                   Minions follow different rules from regular monsters. Minions
                   of the same type are part of a <b>minion group</b>.
                 </p>
-                <h4 className="header">One Turn, One Act</h4>
+                <h3 className="header">One Turn, One Act</h3>
                 <p>
                   All minions of a minion group act on the same turn in combat.
                   On a minion's turn, they can use a maneuver or action, but not
                   both.
                 </p>
-                <h4 className="header">Easy to Kill</h4>
+                <h3 className="header">Easy to Kill</h3>
                 <p>
                   When a minion takes damage, if the damage is less than the
                   minion’s maximum hit points, then the minion becomes{" "}
@@ -241,7 +241,7 @@ function EncounterDesign() {
                   then any damage kills it.
                 </p>
 
-                <h4 className="header">Overkill</h4>
+                <h3 className="header">Overkill</h3>
                 <p>
                   When a minion dies from an ability that targets only it with
                   an attack roll, any leftover damage beyond the minion’s
@@ -251,7 +251,7 @@ function EncounterDesign() {
                   carried over to a third minion, and so on!
                 </p>
 
-                <h4 className="header">Group Attack</h4>
+                <h3 className="header">Group Attack</h3>
                 <p>
                   Minions within the same group and zone can{" "}
                   <Link className="internal-link" to="/combat-abilities#strike">
@@ -285,25 +285,51 @@ function EncounterDesign() {
         <p>
           Minor monsters and hazards are weaker than standard threats, but
           stronger than minions. Since minors are weaker, always use two minors
-          to equal one adversary.
+          to equal one adversary. A group of two minor threats act on the same
+          turn in combat.
         </p>
 
         <h4 className="header">Major Threats</h4>
         <b className="encounter-content__subtitle">2 Adversaries</b>
         <p>
           Major monsters and hazards are stronger than standard threats, but
-          weaker than bosses. Major threats always get two turns per round.
+          weaker than bosses. Major threats always get two turns per round, but
+          can't take these turns in a row.
         </p>
         <h4 className="header">Boss Threats</h4>
-        <b className="encounter-content__subtitle">
-          # of Adversaries = Double the # of Heroes
-        </b>
+        <b className="encounter-content__subtitle">6 Adversaries</b>
         <p>
           Boss threats are the strongest monster heroes can face. Only monsters
-          can be bosses. Boss monsters get as many turns per round as the number
-          of heroes. So if a boss dragon faces off against four heroes, the
-          dragon gets 4 turns a round!
+          can be bosses. Like major monsters, boss monsters get two turns per
+          round, but can't take these turns in a row. Boss monsters are meant to
+          be a hard encounter for a group of heroes.
         </p>
+        <Accordion
+          title="Bosses for Different Sized Parties"
+          content={
+            <div>
+              <p>
+                Boss monsters are meant to be a solo threat for a group of 4-5
+                heroes, and provide a hard encounter. However, for smaller or
+                larger groups of heroes, you can make some adjustments.
+              </p>
+              <h3 className="header">Smaller Number of Heroes</h3>
+              <p>
+                If you have 3 heroes, then remove a fourth of the boss's hit
+                points. For 2 heroes, instead remove half the boss's hit points.
+              </p>
+              <h3 className="header">Larger Number of Heroes</h3>
+              <p>
+                If you have 6-7 heroes, then add the boss's hit points by a
+                third, and give it a third turn per round. For 8 or more heroes,
+                double the boss's hit points and give it a fourth turn.
+                Alternatively, for larger groups of heroes, keep the boss
+                monster as is, and instead add lackeys to the fight like a group
+                of minions or two.
+              </p>
+            </div>
+          }
+        />
 
         <h3 className="header">Different Tier Threats</h3>
         <p>

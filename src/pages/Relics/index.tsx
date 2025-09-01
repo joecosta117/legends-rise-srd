@@ -769,8 +769,8 @@ function Relics() {
                 battle spell
               </Link>{" "}
               . Once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , you can cast the wand’s spell of a spell tier equal to your tier
               without spending mana.
@@ -882,8 +882,8 @@ function Relics() {
                 battle spell
               </Link>{" "}
               . Once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , you can cast the wand’s spell of a spell tier equal to your tier
               without spending mana.
@@ -975,8 +975,8 @@ function Relics() {
                 battle spell
               </Link>{" "}
               . Once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , you can cast the wand’s spell of a spell tier equal to your tier
               without spending mana.
@@ -1079,8 +1079,8 @@ function Relics() {
             </p>
             <p>
               Once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               , while wearing these boots, you can cast the{" "}
               <Link
@@ -1569,21 +1569,19 @@ function Relics() {
               <h3 className="header">Aligning Relics</h3>
               <p>
                 Relics require heroes to align their energy to the item before
-                they can properly use it. You can align to a relic during a{" "}
-                <Link className="internal-link" to="/rules/adventuring#resting">
-                  short rest
-                </Link>
-                . You can align to a number of relics equal to your tier, which
-                is referred to as your <b>align limit</b>. If you try to align
-                to another relic despite already being at your align limit, then
-                you need to unalign from another relic.
+                they can properly use it. You can align to a relic by spending
+                10 minutes holding the relic and attuning to it. You can align
+                to a number of relics equal to your tier, which is referred to
+                as your <b>align limit</b>. If you try to align to another relic
+                despite already being at your align limit, then you need to
+                unalign from another relic.
               </p>
               <p>
                 Only one person can be aligned to a relic at a time. If you
                 align to a relic already aligned by someone else, then you
                 remove that person’s connection to the relic. This connection
                 naturally breaks if the person aligned to the relic dies or
-                voluntarily ends their connection during a short rest.
+                voluntarily ends their connection.
               </p>
               <h3 className="header">Equipping Relic</h3>
               <p>
@@ -1595,10 +1593,9 @@ function Relics() {
               </p>
               <h3 className="header">Transferring Magic</h3>
               <p>
-                You can transfer the magic of a relic to a mundane item. This
-                process can be done during a short rest. The hero transferring
-                the magic of a relic must be aligned to it. The transferer must
-                succeed on a{" "}
+                You can transfer the magic of a relic to a mundane item. The
+                hero transferring the magic of a relic must be aligned to it.
+                The transferer must spend 10 minutes and succeed on a{" "}
                 <Link className="internal-link" to="/rules/skills">
                   skill roll
                 </Link>{" "}

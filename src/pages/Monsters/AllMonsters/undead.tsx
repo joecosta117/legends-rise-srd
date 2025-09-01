@@ -422,7 +422,12 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Death Burst",
@@ -512,7 +517,12 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Light Vulnerability",
@@ -680,7 +690,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Poltergeist"
-        hp="10"
+        hp="60"
         evn="13"
         mgt="11"
         res="13"
@@ -705,11 +715,10 @@ const UndeadMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -733,7 +742,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone
                 </Link>{" "}
-                for enemies. .
+                for enemies.
               </span>
             ),
           },
@@ -753,7 +762,7 @@ const UndeadMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "3 necrotic damage",
+            damage: "5 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -791,7 +800,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (1 necrotic damage) from ghostly spectral hands
+                (2 necrotic damage) from ghostly spectral hands
               </span>
             ),
           },
@@ -801,7 +810,7 @@ const UndeadMonsters = [
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             round: "3",
             success: (
               <span>
@@ -817,7 +826,7 @@ const UndeadMonsters = [
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
             defense: "Spirit",
-            damage: "3 psychic damage",
+            damage: "5 psychic damage",
             round: "5",
             success: (
               <span>
@@ -1040,7 +1049,12 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1363,7 +1377,12 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Misty Escape",
@@ -1507,7 +1526,12 @@ const UndeadMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Regal Presence",
@@ -1679,7 +1703,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Gravewyrm"
-        hp="48"
+        hp="288"
         evn="17"
         mgt="19"
         res="17"
@@ -1697,11 +1721,10 @@ const UndeadMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1737,7 +1760,7 @@ const UndeadMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -1753,7 +1776,7 @@ const UndeadMonsters = [
             keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "9 necrotic damage",
+            damage: "15 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -1840,7 +1863,7 @@ const UndeadMonsters = [
             keywords: "magical",
             target: "All enemies",
             defense: "Spirit",
-            damage: "9 necrotic damage",
+            damage: "15 necrotic damage",
             round: "5",
             success: (
               <span>
@@ -2173,7 +2196,7 @@ const UndeadMonsters = [
     statBlock: (
       <Monster
         name="Lich"
-        hp="42"
+        hp="252"
         evn="16"
         mgt="15"
         res="18"
@@ -2190,11 +2213,10 @@ const UndeadMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2219,7 +2241,7 @@ const UndeadMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "9 necrotic damage",
+            damage: "15 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -2235,7 +2257,7 @@ const UndeadMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "9 necrotic damage",
+            damage: "15 necrotic damage",
           },
           {
             basic: false,
@@ -2243,14 +2265,14 @@ const UndeadMonsters = [
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
-            damage: "6 necrotic damage",
+            damage: "12 necrotic damage",
             effect: (
               <span>
                 Targeted zone becomes a{" "}
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 necrotic damage) for the scene
+                (6 necrotic damage) for the scene
               </span>
             ),
           },
@@ -2260,7 +2282,7 @@ const UndeadMonsters = [
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "15 necrotic damage",
+            damage: "21 necrotic damage",
             success: (
               <span>
                 If the target is <ToolTip preset="shaken" /> after taking this
@@ -2277,7 +2299,7 @@ const UndeadMonsters = [
             target: "up to 1 zone",
             effect: (
               <span>
-                Lich{" "}
+                Enemies engaged to the lich take 6 necrotic damage, and the lich{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#special-movement"
@@ -2304,8 +2326,13 @@ const UndeadMonsters = [
             keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
-            damage: "9 necrotic damage",
-            effect: "Lich regains hit points equal to half the damage dealt",
+            damage: "15 necrotic damage",
+            effect: (
+              <span>
+                Lich
+                <ToolTip preset="heals" /> 10 per target
+              </span>
+            ),
           },
           {
             basic: false,
@@ -2317,7 +2344,7 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (6 necrotic damage) only for enemies.
+                (9 necrotic damage) only for enemies.
               </span>
             ),
             round: "5",

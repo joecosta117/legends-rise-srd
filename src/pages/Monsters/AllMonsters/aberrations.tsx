@@ -41,7 +41,12 @@ const AberrationMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Aquatic",
@@ -193,7 +198,7 @@ const AberrationMonsters = [
     statBlock: (
       <Monster
         name="Deep Lurker"
-        hp="10"
+        hp="60"
         evn="14"
         mgt="13"
         res="14"
@@ -210,11 +215,10 @@ const AberrationMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -226,13 +230,13 @@ const AberrationMonsters = [
             keywords: "melee, weapon",
             target: <span>1 creature within the deep lurker's zone</span>,
             defense: "Guard",
-            damage: "3 physical damage",
+            damage: "5 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (overcome ends) and deep lurker gains 1{" "}
+                (overcome ends) and deep lurker gains 2{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#temporary-hit-points"
@@ -249,7 +253,7 @@ const AberrationMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "2 psychic damage",
+            damage: "4 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -284,7 +288,7 @@ const AberrationMonsters = [
             round: "1",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
-            damage: "3 psychic damage",
+            damage: "5 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -516,7 +520,12 @@ const AberrationMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -604,7 +613,7 @@ const AberrationMonsters = [
     statBlock: (
       <Monster
         name="Elder Reaper"
-        hp="26"
+        hp="156"
         evn="14"
         mgt="15"
         res="16"
@@ -621,11 +630,10 @@ const AberrationMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -637,7 +645,7 @@ const AberrationMonsters = [
             keywords: "melee, weapon",
             target: <span>1 creature within the elder reaper's zone</span>,
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -653,7 +661,7 @@ const AberrationMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "4 psychic damage",
+            damage: "8 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -669,7 +677,7 @@ const AberrationMonsters = [
             keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "6 psychic damage",
+            damage: "10 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#confused">
@@ -712,7 +720,7 @@ const AberrationMonsters = [
             round: "1",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
-            damage: "6 psychic damage",
+            damage: "10 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -756,7 +764,7 @@ const AberrationMonsters = [
     statBlock: (
       <Monster
         name="Void Seer"
-        hp="22"
+        hp="132"
         evn="14"
         mgt="15"
         res="16"
@@ -773,11 +781,10 @@ const AberrationMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonusto end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -789,7 +796,7 @@ const AberrationMonsters = [
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
           },
           {
             basic: false,
@@ -815,18 +822,18 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>2. Disintegrate:</i> Void seer makes an attack roll
-                    against the Spirit of 1 creature within 3 zones, dealing 8
+                    against the Spirit of 1 creature within 3 zones, dealing 12
                     arcane damage. If this damage reduces the the target to 0
                     hit points, then they beceome defeated.
                   </li>
                   <li>
                     <i>3. Explosion:</i> Void seer makes an attack roll against
                     the Guard of all creatures in 1 zone within 3 zones, dealing
-                    4 fire damage.
+                    8 fire damage.
                   </li>
                   <li>
                     <i>4. Freezing Ray:</i> Void seer makes an attack roll
-                    against the Guard of 1 creature within 3 zones, dealing 6
+                    against the Guard of 1 creature within 3 zones, dealing 10
                     cold damage and the target is{" "}
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
@@ -835,7 +842,7 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>5. Poison Ray:</i> Void seer makes an attack roll against
-                    the Guard of 1 creature within 3 zones, dealing 6 toxic
+                    the Guard of 1 creature within 3 zones, dealing 10 toxic
                     damage and the target falls{" "}
                     <Link className="internal-link" to="/conditions#prone">
                       prone
@@ -844,7 +851,7 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>6. Psychic Confusion:</i> Void seer makes an attack roll
-                    against the Spirit of 1 creature within 3 zones, dealing 6
+                    against the Spirit of 1 creature within 3 zones, dealing 10
                     psychic damage and the target is{" "}
                     <Link className="internal-link" to="/conditions#confused">
                       confused
@@ -853,15 +860,15 @@ const AberrationMonsters = [
                   </li>
                   <li>
                     <i>7. Telekinetic Beam:</i> Void seer makes an attack roll
-                    against the Guard of 1 creature within 3 zones, dealing 6
-                    physical damage and the target is moved within 1 zone on a
+                    against the Guard of 1 creature within 3 zones, dealing 10
+                    physical damage and the target is shoved within 1 zone on a
                     success or higher.
                   </li>
 
                   <li>
                     <i>8. Wither:</i> Void seer makes an attack roll against the
-                    Spirit of 1 creature within 3 zones, dealing 6 necrotic
-                    damage and the target takes 2{" "}
+                    Spirit of 1 creature within 3 zones, dealing 10 necrotic
+                    damage and the target takes 4{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#ongoing-damage"
@@ -966,7 +973,12 @@ const AberrationMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Gift of the Void",
@@ -1137,7 +1149,12 @@ const AberrationMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Dreams of the Elder God",

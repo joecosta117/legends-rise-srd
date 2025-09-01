@@ -310,7 +310,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     made against your Guard
                   </span>
@@ -555,7 +555,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     made against your Guard
                   </span>
@@ -916,22 +916,29 @@ function FightingStyles() {
                 descriptor="You soothe a hurt friend."
                 target="1 damaged ally within your zone"
                 frequency="At-will"
-                effect="Ally gains 1 temporary hit point per your tier (scene ends)"
+                effect="Ally gains 2 temporary hit point per your tier (scene ends)"
               />
               <AbilityCard
                 name="Doctor's Visit"
                 actType="Action"
                 keywords="Melee"
-                target="1 willing creature you can touch"
+                target="1 creature you can touch"
                 descriptor="You stride to an ally and help quickly patch up their wounds."
                 frequency="At-will"
                 effect={
                   <span>
-                    Target can spend a recovery. You can{" "}
+                    Target can{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#rally"
+                    >
+                      rally
+                    </Link>
+                    . You can{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
                       move
                     </Link>{" "}
-                    to the target before they spend the recovery.
+                    to the target before they rally.
                   </span>
                 }
               />
@@ -960,7 +967,7 @@ function FightingStyles() {
                 target="1 creature you can touch"
                 effect={
                   <span>
-                    The target can make an{" "}
+                    Target can make an{" "}
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>{" "}
@@ -1107,7 +1114,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     against your ally
                   </span>
@@ -1265,7 +1272,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     against a creature's Guard
                   </span>
@@ -1448,7 +1455,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     made against your Guard
                   </span>

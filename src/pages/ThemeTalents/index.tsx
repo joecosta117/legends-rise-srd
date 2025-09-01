@@ -112,11 +112,7 @@ function ThemeTalents() {
           your proficiency bonus. You and your familiar can telepathically
           communicate with one another within 1 mile. When the familiar is
           reduced to 0 hit points, it dies, but you can resummon it at full hit
-          points during a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            short rest
-          </Link>{" "}
-          by spending a recovery. After a{" "}
+          points by spending a recovery. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
@@ -357,7 +353,11 @@ function ThemeTalents() {
       title: "Flashback",
       content: (
         <span>
-          Once per scene, when you make a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
+          </Link>
+          , when you make a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -375,8 +375,12 @@ function ThemeTalents() {
       title: "Right Tool for the Job",
       content: (
         <span>
-          Once per scene, you can declare to have any non-magical item of your
-          tier on your person.
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
+          </Link>
+          , you can declare to have any non-magical item of your tier on your
+          person.
         </span>
       ),
     },
@@ -536,8 +540,12 @@ function ThemeTalents() {
       title: "Desperate Prayer",
       content: (
         <span>
-          Once per scene, you can quickly ask the higher powers for a creature
-          to gain <Modifier type="f" count="1" /> to a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
+          </Link>
+          , you can quickly ask the higher powers for a creature to gain{" "}
+          <Modifier type="f" count="1" /> to a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
@@ -585,11 +593,8 @@ function ThemeTalents() {
           your proficiency bonus and has hit points equal to double your
           proficiency bonus. You and the servitor can telepathically communicate
           with one another within 1 mile. When the servitor is reduced to 0 hit
-          points, it dies, but you can resummon it at full hit points during a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            short rest
-          </Link>{" "}
-          by spending a recovery. After a{" "}
+          points, it dies, but you can resummon it at full hit points by
+          spending a recovery. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
@@ -628,7 +633,11 @@ function ThemeTalents() {
       title: "Group Prayer",
       content: (
         <span>
-          Once per scene, when you and your allies do a{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
+          </Link>
+          , when you and your allies do a{" "}
           <Link className="internal-link" to="/rules/skills#group-rolls">
             group roll
           </Link>
@@ -822,7 +831,11 @@ function ThemeTalents() {
       title: "Mighty Deed",
       content: (
         <span>
-          Once per scene, you can treat the result of your{" "}
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
+          </Link>
+          , you can treat the result of your{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
@@ -1020,11 +1033,7 @@ function ThemeTalents() {
           companion can understand each other well enough that you can give it
           basic commands, but the nature companion isn't strong enough to fight.
           When the companion is reduced to 0 hit points, it dies, but you can
-          resummon it at full hit points during a{" "}
-          <Link className="internal-link" to="/rules/adventuring#resting">
-            short rest
-          </Link>{" "}
-          by spending a recovery. After a{" "}
+          resummon it at full hit points by spending a recovery. After a{" "}
           <Link className="internal-link" to="/rules/adventuring#resting">
             safe rest
           </Link>
@@ -1069,9 +1078,13 @@ function ThemeTalents() {
       title: "Shapeshifter",
       content: (
         <span>
-          Once per scene, you can transform into an animal of large size or
-          smaller. Your Guard equals 8 plus your proficiency bonus, and if you
-          take any damage, you revert back to your normal form.
+          Once per{" "}
+          <Link className="internal-link" to="/rules/adventuring#scene">
+            scene
+          </Link>
+          , you can transform into an animal of large size or smaller. Your
+          Guard equals 8 plus your proficiency bonus, and if you take any
+          damage, you revert back to your normal form.
         </span>
       ),
     },

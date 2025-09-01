@@ -49,8 +49,8 @@ function ReadingAbilities() {
           <li>
             <span>
               <b>Encounter:</b> These abilities can only be used once per{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                short rest
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
               </Link>
               .
             </span>
@@ -120,11 +120,14 @@ function ReadingAbilities() {
           </li>
           <li>
             <span>
-              <b>Recharge:</b> The ability's frequency is encounter (once per
-              short rest), and the creature regains a use of this ability after
-              they become <ToolTip preset="shaken" />. A creature can only
-              regain a use of this ability once per short rest. This keyword is
-              usually reserved for monsters.
+              <b>Recharge:</b> The ability's frequency is encounter (once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#scene">
+                scene
+              </Link>
+              ), and the creature regains a use of this ability after they
+              become <ToolTip preset="shaken" />. A creature can only regain a
+              use of this ability once per scene. This keyword is usually
+              reserved for monsters.
             </span>
           </li>
           <li>

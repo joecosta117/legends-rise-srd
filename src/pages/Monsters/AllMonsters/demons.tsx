@@ -296,7 +296,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Nightmare Demon"
-        hp="10"
+        hp="60"
         evn="13"
         mgt="11"
         res="13"
@@ -313,11 +313,10 @@ const DemonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -337,7 +336,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "6 physical damage",
           },
         ]}
         maneuvers={[
@@ -373,7 +372,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (1 psychic damage), and when a creature takes this damage, the
+                (2 psychic damage), and when a creature takes this damage, the
                 demon makes an attack roll against the creature's Spirit. On a
                 success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#hindered">
@@ -417,7 +416,7 @@ const DemonMonsters = [
                   hinder
                 </Link>{" "}
                 against each enemy within 1 zone, and <ToolTip preset="heals" />{" "}
-                2 for each enemy they hinder.
+                3 for each enemy they hinder.
               </span>
             ),
           },
@@ -462,7 +461,12 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Shapechanger",
@@ -582,7 +586,12 @@ const DemonMonsters = [
           },
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -790,7 +799,12 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1140,7 +1154,12 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1292,7 +1311,12 @@ const DemonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Death Throes",
@@ -1718,7 +1742,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Demon Lord of Greed"
-        hp="42"
+        hp="252"
         evn="16"
         mgt="15"
         res="18"
@@ -1736,11 +1760,10 @@ const DemonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1760,7 +1783,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
           },
           {
             basic: true,
@@ -1768,7 +1791,7 @@ const DemonMonsters = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "9 unholy damage",
+            damage: "15 unholy damage",
             success: "Target can't use or benefit from relics (next turn ends)",
           },
           {
@@ -1777,10 +1800,10 @@ const DemonMonsters = [
             keywords: "magical, range",
             target: <span>1d4 creatures within 3 zones</span>,
             defense: "Spirit",
-            damage: "6 unholy damage",
+            damage: "12 unholy damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1797,10 +1820,10 @@ const DemonMonsters = [
             keywords: "magical, range, recharge",
             target: <span>All creatures in 3 zones within 5 zones</span>,
             defense: "Spirit",
-            damage: "12 unholy damage",
+            damage: "18 unholy damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1820,7 +1843,8 @@ const DemonMonsters = [
             target: "up to 1 zone",
             effect: (
               <span>
-                Demon lord of greed{" "}
+                Enemies engaged to the demon lord of greed take 6 unholy damage,
+                and the demon lord{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#special-movement"
@@ -1845,7 +1869,7 @@ const DemonMonsters = [
             keywords: "magical, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
-            damage: "12 unholy damage",
+            damage: "18 unholy damage",
             success:
               "Target chooses one of the following: they expend 3 mana if they have 3 mana to spend, or an encounter ability that hasn't been used yet can't be used for this scene.",
           },
@@ -1855,11 +1879,11 @@ const DemonMonsters = [
             keywords: "magical, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
-            critical: "Same as a success, but the healing increases to 6",
+            critical: "Same as a success, but the healing increases to 9",
             success: (
               <span>
                 Target can't use or benefit from relics (overcome ends), and
-                demon lord of greed <ToolTip preset="heals" /> 3
+                demon lord of greed <ToolTip preset="heals" /> 6
               </span>
             ),
             partial: "Target can't use or benefit from relics (next turn ends)",
@@ -1895,7 +1919,7 @@ const DemonMonsters = [
     statBlock: (
       <Monster
         name="Demon Lord of Wrath"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -1913,11 +1937,10 @@ const DemonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1925,10 +1948,11 @@ const DemonMonsters = [
             name: "Wrath Unbound",
             description: (
               <span>
-                When the demon lord of wrath takes damage, they gain 1 fury up
-                to a maximum of 4, which is represented by a d4. Fury can only
+                When the demon lord of wrath takes damage, they gain 1 wrath up
+                to a maximum of 4, which is represented by a d4. Wrath can only
                 be increased once per turn. The demon lord adds a number of{" "}
-                <Modifier type="f" /> to their attack rolls equal to their fury.
+                <Modifier type="f" /> to their attack rolls equal to their
+                wrath.
               </span>
             ),
           },
@@ -1937,7 +1961,7 @@ const DemonMonsters = [
             description: (
               <span>
                 When the demon lord of wrath takes damage, all enemies within
-                their zone takes 3 fire damage.
+                their zone takes 6 fire damage.
               </span>
             ),
           },
@@ -1957,7 +1981,7 @@ const DemonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -1974,11 +1998,11 @@ const DemonMonsters = [
               <span>All enemies within the demon lord of wrath's zone</span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             effect: (
               <span>
                 Wrath swings his sword in a wide arc. Their fury resets to 0,
-                and they <ToolTip preset="heal" /> 6
+                and they <ToolTip preset="heal" /> 9
               </span>
             ),
           },
@@ -1989,7 +2013,7 @@ const DemonMonsters = [
             round: "1",
             keywords: "range",
             target: "All creatues in 1 zone within 5 zones",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -2006,7 +2030,7 @@ const DemonMonsters = [
             keywords: "magical",
             duration: "Scene ends",
             effect:
-              "All negative effects end on the demon lord of wrath and their damage deals direct damage. Their sword ignites in hellfire, making broken blade deal 15 unholy damage and unleash wrath deal 12 unholy damage.",
+              "All negative effects end on the demon lord of wrath and their damage deals direct damage. Their sword ignites in hellfire, making broken blade deal 21 unholy damage and unleash wrath deal 18 unholy damage.",
           },
           {
             name: "Burning Seismic Slam",
@@ -2016,7 +2040,7 @@ const DemonMonsters = [
               <span>All enemies within the demon lord of wrath's zone</span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -2031,7 +2055,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 fire damage) for the scene
+                (6 fire damage) for the scene
               </span>
             ),
           },

@@ -44,10 +44,10 @@ function HomePage() {
             />
             <Accordion
               title="Tactical"
-              content="Fighting monsters and villains is an important part of Legends Rise, and each hero has plenty of tactical options to choose from. Spellcasters cast different battle spells while martial heroes attack with different weapon techniques."
+              content="Fighting monsters and villains is an important part of Legends Rise, and each hero has plenty of tactical options to choose in combat. Spellcasters cast different spells while martial heroes use different weapon techniques."
             />
             <Accordion
-              title="Cinematic and Narrative"
+              title="Cinematic"
               content="All heroes have flashy moves that change the battlefield from exploding fireballs to unleashing a hail of arrows. Out of combat, heroes have powerful narrative abilities such as always being hidden or creating your own mercenary company!"
             />
             <Accordion
@@ -88,11 +88,11 @@ function HomePage() {
             />
             <Accordion
               title="Exciting Martial Heroes"
-              content="Doing the same thing every turn gets boring fast. When martial heroes in Legends Rise attack, they choose from different weapon techniques. Do you ground slam, juggernaut's charge, or cleave?"
+              content="Doing the same thing every turn gets boring fast. When martial heroes in Legends Rise attack, they choose from different weapon techniques. Do you ground slam, juggernaut's charge, or cleave? Outside of combat, martial heroes gain powerful narrative abilities such as breaking buildings with a punch or become permamently invisible."
             />
             <Accordion
               title="No Wasted Turns"
-              content="What's worse, waiting for your turn only to whiff your attack or hitting your attack only to roll poorly on damage? Both suck! In Legends Rise, you deal some damage on a glancing blow, and there are no damage rolls. How well your attack roll goes then determines how hard you hit with only truly bad rolls missing entirely."
+              content="What's worse, waiting for your turn only to whiff your attack or hitting your attack only to roll poorly on damage? Both suck! In Legends Rise, you deal some damage on a glancing blow. How well your attack roll goes then determines how hard you hit with only truly bad rolls missing entirely."
             />
             <Accordion
               title="Exciting Narrative Rules"
@@ -101,6 +101,47 @@ function HomePage() {
             <Accordion
               title="Easy to Run"
               content="As a long time game master, I wanted to make running Legends Rise an easy experience. Legends Rise provides plenty of tools to game masters to handle all sorts of situations such as negotiations, downtime, and more. Building encounters has never been easier with enemies having defined roles and easy to build enemy rules."
+            />
+          </div>
+        </div>
+
+        <div className="section">
+          <div className="section__container">
+            <div className="section__container__tile">
+              <div className="section__container__content">
+                <h2 className="section__title">
+                  What Does Legends Rise Not Do?
+                </h2>
+                <p>
+                  Legends Rise is meant to emulate high fantasy heroes fighting
+                  monsters in cinematic and tactical ways as the heroes steadily
+                  rise to legendary status. As such, there are some things that
+                  Legends Rise does not do.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="section__content">
+            <Accordion
+              title="Low Fantasy"
+              content="Legends Rise is not a low fantasy game. Heroes are powerful and can do amazing things. Combat is fast and furious with heroes unleashing powerful attacks and spells against epic monsters. Eventually heroes can become demigods, legendary rulers, or even a dragon! If you want a low fantasy game that is more gritty, look at an OSR games like Shadowdark."
+            />
+            <Accordion
+              title="Realism"
+              content="Legends Rise is not a simulationist game with rules on encumberance, tracking rations, calculating jump distance, or rules on attacking different body parts. The rules are designed to be easy to remember and use, with a focus on fun and cinematic gameplay. If you want a more realistic game, look at Mythras or RuneQuest."
+            />
+            <Accordion
+              title="Fully Narrative Rules"
+              content="Although Legends Rise embraces some narrative gameplay with theme talents, tempt fate, experiences, and degrees of success, it is not a fully narrative game like FATE or Powered by the Apocalypse. Legends Rise has tactical combat with zones, complex battle abilities, and monsters with tactical depth. If you want a more narrative game, look at Daggerheart, Dungeon World, Fabula Ultima, or Quest."
+            />
+            <Accordion
+              title="No Combat"
+              content="Legends Rise is focused on epic heroes battling monsters and villains. Combat is an important part of the game with many rules and abilities centered on combat. However, combat is not the only part of the game, and there are plenty of opportunities for roleplaying, exploration, and problem solving. However, if you want a game without combat or very rare combat, such as a game about political intrigue, look at Legend of the Five Rings or Court of Blades."
+            />
+            <Accordion
+              title="Grid Combat"
+              content="Legends Rise does not use a grid for combat. Instead, combat uses zones to represent different areas of the battlefield. This abstraction maintains a degree of tactical positioning without going full theater of the mind. However, if you want to play a game with more precise tactical movement with a grid, look at Draw Steel or Pathfinder."
             />
           </div>
         </div>

@@ -658,9 +658,9 @@ function Ancestries() {
                     (water). Once per{" "}
                     <Link
                       className="internal-link"
-                      to="/rules/adventuring#resting"
+                      to="/rules/adventuring#scene"
                     >
-                      short rest
+                      scene
                     </Link>
                     , you can cast this spell at a spell tier equal to your tier
                     without spending mana.
@@ -919,9 +919,9 @@ function Ancestries() {
                     battle spell. Once per{" "}
                     <Link
                       className="internal-link"
-                      to="/rules/adventuring#resting"
+                      to="/rules/adventuring#scene"
                     >
-                      short rest
+                      scene
                     </Link>
                     , you can cast this spell at a spell tier equal to your tier
                     without spending mana.
@@ -1310,9 +1310,9 @@ function Ancestries() {
                     Once per{" "}
                     <Link
                       className="internal-link"
-                      to="/rules/adventuring#resting"
+                      to="/rules/adventuring#scene"
                     >
-                      short rest
+                      scene
                     </Link>
                     , you can cast this spell at a spell tier equal to your tier
                     without spending mana.

@@ -332,7 +332,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -402,7 +407,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Volcanic Dragon"
-        hp="30"
+        hp="180"
         evn="18"
         mgt="17"
         res="14"
@@ -420,11 +425,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -444,7 +448,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
           },
           {
             basic: false,
@@ -456,10 +460,10 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 fire damage",
+            damage: "10 fire damage",
             success: (
               <span>
-                2{" "}
+                4{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -521,7 +525,7 @@ const DragonMonsters = [
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -541,7 +545,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (4 fire damage)
+                (6 fire damage)
               </span>
             ),
           },
@@ -571,7 +575,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Volcanic Dragon"
-        hp="54"
+        hp="324"
         evn="20"
         mgt="19"
         res="16"
@@ -589,11 +593,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -613,7 +616,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
           },
           {
             basic: false,
@@ -625,7 +628,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 fire damage",
+            damage: "15 fire damage",
             success: (
               <span>
                 3{" "}
@@ -644,7 +647,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zones
                 </Link>{" "}
-                (3 fire damage) for the scene.
+                (6 fire damage) for the scene.
               </span>
             ),
           },
@@ -700,7 +703,7 @@ const DragonMonsters = [
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -720,7 +723,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (6 fire damage)
+                (9 fire damage)
               </span>
             ),
           },
@@ -765,7 +768,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -827,7 +835,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Tundra Dragon"
-        hp="30"
+        hp="180"
         evn="16"
         mgt="17"
         speeds="fly 1"
@@ -845,11 +853,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -869,7 +876,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "12 physical damage",
           },
           {
             basic: false,
@@ -881,7 +888,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 cold damage",
+            damage: "10 cold damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -897,7 +904,7 @@ const DragonMonsters = [
             name: "Numbing Blood Spray",
             trigger: <span>The dragon takes damage</span>,
             effect:
-              "All other creatures within the dragon's zone take 2 cold damage",
+              "All other creatures within the dragon's zone take 4 cold damage",
           },
         ]}
         bossActions={[
@@ -935,7 +942,7 @@ const DragonMonsters = [
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
             defense: "Guard",
-            damage: "6 cold damage",
+            damage: "10 cold damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -977,7 +984,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Tundra Dragon"
-        hp="54"
+        hp="324"
         evn="18"
         mgt="19"
         res="16"
@@ -995,11 +1002,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1019,7 +1025,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
           },
           {
             basic: false,
@@ -1031,7 +1037,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 cold damage",
+            damage: "15 cold damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1056,7 +1062,7 @@ const DragonMonsters = [
             name: "Numbing Blood Spray",
             trigger: <span>The dragon takes damage</span>,
             effect:
-              "All other creatures within the dragon's zone take 3 cold damage",
+              "All other creatures within the dragon's zone take 6 cold damage",
           },
         ]}
         bossActions={[
@@ -1095,7 +1101,7 @@ const DragonMonsters = [
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
             defense: "Guard",
-            damage: "9 cold damage",
+            damage: "15 cold damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1150,7 +1156,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -1213,7 +1224,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Storm Dragon"
-        hp="22"
+        hp="132"
         evn="16"
         mgt="17"
         res="14"
@@ -1230,11 +1241,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1254,7 +1264,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
           },
           {
             basic: true,
@@ -1262,7 +1272,7 @@ const DragonMonsters = [
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "6 lightning damage",
+            damage: "10 lightning damage",
             success:
               "light arcs to another creature within the same zone, dealing 2 lightning damage",
           },
@@ -1272,7 +1282,7 @@ const DragonMonsters = [
             keywords: "range",
             target: <span>1d4 creatures within 3 zones</span>,
             defense: "Guard",
-            damage: "4 physical damage",
+            damage: "8 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -1287,7 +1297,7 @@ const DragonMonsters = [
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
-            damage: "8 lightning damage",
+            damage: "12 lightning damage",
           },
         ]}
         bossActions={[
@@ -1328,7 +1338,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (2 physical damage). When a creature takes this damage, the
+                (4 physical damage). When a creature takes this damage, the
                 dragon makes an attack roll against the creature's Guard. On a
                 success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#seized">
@@ -1345,7 +1355,7 @@ const DragonMonsters = [
             keywords: "range",
             target: "All creatures in 2 zones within 3 zones",
             defense: "Guard",
-            damage: "8 lightning damage",
+            damage: "12 lightning damage",
           },
         ]}
       />
@@ -1372,7 +1382,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Storm Dragon"
-        hp="42"
+        hp="252"
         evn="18"
         mgt="19"
         res="16"
@@ -1389,11 +1399,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1413,7 +1422,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
           },
           {
             basic: true,
@@ -1421,7 +1430,7 @@ const DragonMonsters = [
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "9 lightning damage",
+            damage: "15 lightning damage",
             success:
               "light arcs to another creature within the same zone, dealing 3 lightning damage",
           },
@@ -1431,7 +1440,7 @@ const DragonMonsters = [
             keywords: "range",
             target: <span>1d4 creatures within 3 zones</span>,
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "12 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#prone">
@@ -1448,7 +1457,7 @@ const DragonMonsters = [
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
             defense: "Guard",
-            damage: "12 lightning damage",
+            damage: "18 lightning damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -1498,7 +1507,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (3 physical damage). When a creature takes this damage, the
+                (6 physical damage). When a creature takes this damage, the
                 dragon makes an attack roll against the creature's Guard. On a
                 success, the creature is{" "}
                 <Link className="internal-link" to="/conditions#seized">
@@ -1515,7 +1524,7 @@ const DragonMonsters = [
             keywords: "range",
             target: "All creatures in 3 zones within 3 zones",
             defense: "Guard",
-            damage: "12 lightning damage",
+            damage: "18 lightning damage",
           },
         ]}
       />
@@ -1554,7 +1563,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Aquatic",
@@ -1623,7 +1637,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Swamp Dragon"
-        hp="26"
+        hp="156"
         evn="16"
         mgt="17"
         res="14"
@@ -1640,11 +1654,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1668,7 +1681,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "12 physical damage",
           },
           {
             basic: false,
@@ -1676,10 +1689,10 @@ const DragonMonsters = [
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
-            damage: "6 toxic damage",
+            damage: "10 toxic damage",
             success: (
               <span>
-                2{" "}
+                4{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1756,10 +1769,10 @@ const DragonMonsters = [
             keywords: "range",
             target: "All creatures in 2 zones within 3 zones",
             defense: "Guard",
-            damage: "4 toxic damage",
+            damage: "8 toxic damage",
             success: (
               <span>
-                2{" "}
+                4{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1793,7 +1806,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Swamp Dragon"
-        hp="48"
+        hp="288"
         evn="18"
         mgt="19"
         res="16"
@@ -1810,11 +1823,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -1838,10 +1850,10 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1860,10 +1872,10 @@ const DragonMonsters = [
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
             defense: "Guard",
-            damage: "9 toxic damage",
+            damage: "15 toxic damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1941,10 +1953,10 @@ const DragonMonsters = [
             keywords: "range",
             target: "All creatures in 3 zones within 3 zones",
             defense: "Guard",
-            damage: "6 toxic damage",
+            damage: "12 toxic damage",
             success: (
               <span>
-                3{" "}
+                6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -1992,7 +2004,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -2074,7 +2091,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Forest Dragon"
-        hp="26"
+        hp="156"
         evn="16"
         mgt="17"
         res="14"
@@ -2091,11 +2108,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2115,7 +2131,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2135,7 +2151,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 toxic damage",
+            damage: "10 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2207,7 +2223,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (overcome ends) and while seized, the target takes 2{" "}
+                (overcome ends) and while seized, the target takes 4{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2232,7 +2248,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (2 toxic damage). When a creature takes this damage, the dragon
+                (4 toxic damage). When a creature takes this damage, the dragon
                 can make an attack roll against the enemy's Guard. On a success,
                 the target falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
@@ -2265,7 +2281,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Forest Dragon"
-        hp="48"
+        hp="288"
         evn="18"
         mgt="19"
         res="16"
@@ -2282,11 +2298,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2306,7 +2321,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2326,7 +2341,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 toxic damage",
+            damage: "15 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2399,7 +2414,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/conditions#hindered">
                   hindered
                 </Link>{" "}
-                (overcome ends) and while seized, the target takes 3{" "}
+                (overcome ends) and while seized, the target takes 6{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
@@ -2424,7 +2439,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 toxic damage). When a creature takes this damage, the dragon
+                (6 toxic damage). When a creature takes this damage, the dragon
                 can make an attack roll against the enemy's Guard. On a success,
                 the target falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
@@ -2479,7 +2494,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Profane Aura",
@@ -2549,7 +2569,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Infernal Dragon"
-        hp="30"
+        hp="180"
         evn="15"
         mgt="17"
         res="15"
@@ -2567,11 +2587,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2583,7 +2602,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (2 unholy damage) to enemies.
+                (4 unholy damage) to enemies.
               </span>
             ),
           },
@@ -2603,7 +2622,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "12 physical damage",
           },
           {
             basic: false,
@@ -2615,7 +2634,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "4 unholy damage",
+            damage: "8 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2693,7 +2712,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Infernal Dragon"
-        hp="54"
+        hp="324"
         evn="17"
         mgt="19"
         res="17"
@@ -2711,11 +2730,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2727,7 +2745,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 unholy damage) to enemies.
+                (6 unholy damage) to enemies.
               </span>
             ),
           },
@@ -2747,7 +2765,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
           },
           {
             basic: false,
@@ -2759,7 +2777,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "6 unholy damage",
+            damage: "12 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2852,7 +2870,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -2935,7 +2958,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Void Dragon"
-        hp="26"
+        hp="156"
         evn="15"
         mgt="17"
         res="15"
@@ -2952,11 +2975,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -2976,7 +2998,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "6 physical damage",
+            damage: "10 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -2996,7 +3018,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "6 psychic damage",
+            damage: "10 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -3062,7 +3084,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (2 cold damage). When an enemy enters or starts their turn in a
+                (4 cold damage). When an enemy enters or starts their turn in a
                 zone adjacent to the targeted zone, the dragon makes an attack
                 roll against the enemy's Guard. On a success, the enemy is
                 pulled into the targeted zone.
@@ -3075,7 +3097,7 @@ const DragonMonsters = [
             keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
-            damage: "6 arcane damage",
+            damage: "10 arcane damage",
             success: (
               <span>
                 <Link
@@ -3111,7 +3133,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Void Dragon"
-        hp="48"
+        hp="288"
         evn="17"
         mgt="19"
         res="17"
@@ -3128,18 +3150,17 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
           {
             name: "Maddening Whispers",
             description:
-              "When a hindered or confused creature starts their turn within the dragon's sight, they take 3 psychic damage as the void whispers maddeness into their mind.",
+              "When a hindered or confused creature starts their turn within the dragon's sight, they take 6 psychic damage as the void whispers maddeness into their mind.",
           },
         ]}
         actions={[
@@ -3157,7 +3178,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "15 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -3177,7 +3198,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "9 psychic damage",
+            damage: "15 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -3244,7 +3265,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   difficult zone and dangerous zone
                 </Link>{" "}
-                (3 cold damage). When an enemy enters or starts their turn in a
+                (6 cold damage). When an enemy enters or starts their turn in a
                 zone adjacent to the targeted zone, the dragon makes an attack
                 roll against the enemy's Guard. On a success, the enemy is
                 pulled into the targeted zone.
@@ -3257,7 +3278,7 @@ const DragonMonsters = [
             keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
-            damage: "9 arcane damage",
+            damage: "15 arcane damage",
             success: (
               <span>
                 <Link
@@ -3307,7 +3328,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
           {
             name: "Light Vulnerability",
@@ -3399,7 +3425,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Adult Umbral Dragon"
-        hp="26"
+        hp="156"
         evn="16"
         mgt="15"
         res="14"
@@ -3416,11 +3442,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -3452,7 +3477,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "12 physical damage",
           },
           {
             basic: false,
@@ -3464,7 +3489,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "6 necrotic damage",
+            damage: "10 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -3543,7 +3568,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zones
                 </Link>{" "}
-                (2 necrotic damage). When a creature takes this damage, the
+                (4 necrotic damage). When a creature takes this damage, the
                 dragon can make an attack roll against the creature's Spirit. On
                 a success, the creature is seized (next turn ends) from shadowy
                 claws.
@@ -3587,7 +3612,7 @@ const DragonMonsters = [
     statBlock: (
       <Monster
         name="Ancient Umbral Dragon"
-        hp="48"
+        hp="288"
         evn="18"
         mgt="17"
         res="16"
@@ -3604,11 +3629,10 @@ const DragonMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them.
               </span>
             ),
           },
@@ -3644,7 +3668,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "12 physical damage",
+            damage: "18 physical damage",
           },
           {
             basic: false,
@@ -3656,7 +3680,7 @@ const DragonMonsters = [
               </span>
             ),
             defense: "Spirit",
-            damage: "9 necrotic damage",
+            damage: "15 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -3736,7 +3760,7 @@ const DragonMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zones
                 </Link>{" "}
-                (3 necrotic damage). When a creature takes this damage, the
+                (6 necrotic damage). When a creature takes this damage, the
                 dragon can make an attack roll against the creature's Spirit. On
                 a success, the creature is seized (next turn ends) from shadowy
                 claws.
@@ -3793,7 +3817,12 @@ const DragonMonsters = [
         traits={[
           {
             name: "Major Monster",
-            description: <span>Major monsters get two turns per round.</span>,
+            description: (
+              <span>
+                Major monsters get two turns per round, but can't take these
+                turns in a row.
+              </span>
+            ),
           },
         ]}
         actions={[

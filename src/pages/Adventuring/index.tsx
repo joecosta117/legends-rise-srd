@@ -258,23 +258,11 @@ function Adventuring() {
 
         <h2 id="resting">Resting</h2>
         <p>
-          During adventures, resting will be your best chance to recover after a
-          harrowing day. There are two types of rest:
-        </p>
-        <h3 className="header">Short Rest</h3>
-        <p>
-          This rest typically requires a few minutes to catch your breath and
-          quickly mend wounds, but can be shorter if narratively appropriate as
-          decided by the GM. Certain abilities require a short rest before they
-          can be used again. You can also spend recoveries to{" "}
-          <ToolTip preset="heal" /> during a short rest.
-        </p>
-        <h3 className="header">Safe Rest</h3>
-        <p>
-          This rest requires at least 24 hours of relaxation in a secure haven,
-          such as a town, inn, or other location free from immediate danger.
-          Sleeping while traveling or hiding in a dungeon crawling with monsters
-          is not enough. You gain the following benefits from a safe rest:
+          Heroes can take a <b>safe rest</b> when they spend at least 24 hours
+          of relaxation in a secure haven, such as a town, inn, or other
+          location free from immediate danger. Sleeping while traveling or
+          hiding in a dungeon crawling with monsters is not enough. You gain the
+          following benefits from a safe rest:
         </p>
         <ul>
           <li>
@@ -343,10 +331,11 @@ function Adventuring() {
 
         <h3 className="header">Duration & Boundaries</h3>
         <p>
-          Scenes typically last 10–60 minutes of in-world time, though the GM
-          decides the exact boundaries. When the focus shifts dramatically— a
-          fight ends, the heroes move to a new location, or a conversation wraps
-          up— the current scene ends and a new one begins.
+          Scenes typically last 10–60 minutes of in-world time, with combat
+          often being a chaotic minute, but the GM decides the exact boundaries.
+          When the focus shifts dramatically— a fight ends, the heroes move to a
+          new location, or a conversation wraps up— the current scene ends and a
+          new one begins.
         </p>
 
         <h3 className="header">Rules Interactions</h3>

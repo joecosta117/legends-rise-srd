@@ -88,13 +88,14 @@ function CombatActs() {
           <AbilityCard
             accordion
             descriptor="You push yourself to stay in the fight longer."
-            frequency="Encounter"
+            frequency="At-will"
             effect={
               <span>
-                Spend a recovery then{" "}
+                Spend a recovery and{" "}
                 <Link className="internal-link" to="/combat-abilities#defend">
                   defend
                 </Link>
+                . Only heroes can use this ability.
               </span>
             }
           />
@@ -164,47 +165,6 @@ function CombatActs() {
                 against you
               </span>
             }
-          />
-        </div>
-      ),
-    },
-    {
-      title: "Overpower (Maneuver)",
-      id: "overpower",
-      actType: "Maneuver",
-      content: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="With a physical exploit, you throw your foe off balance."
-            frequency="At-will"
-            target={
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            }
-            keywords="Melee"
-            defense="Guard"
-            damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
-            success={
-              <span>
-                Choose one of the following effects: choose an item for the
-                target to drop, target falls{" "}
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
-                </Link>
-                , target is{" "}
-                <Link className="internal-link" to="/conditions#seized">
-                  seized
-                </Link>{" "}
-                until you let go, or target is pushed within their zone
-              </span>
-            }
-            critical="Choose two effects from the success list"
           />
         </div>
       ),
@@ -319,6 +279,47 @@ function CombatActs() {
             descriptor="You stride forward."
             frequency="At-will"
             effect="You stride up a number of zones equal to your speed."
+          />
+        </div>
+      ),
+    },
+    {
+      title: "Overpower (Maneuver)",
+      id: "overpower",
+      actType: "Maneuver",
+      content: (
+        <div>
+          <AbilityCard
+            accordion
+            descriptor="With a physical exploit, you throw your foe off balance."
+            frequency="At-will"
+            target={
+              <span>
+                1{" "}
+                <Link className="internal-link" to="/rules/combat#engaged">
+                  engaged
+                </Link>{" "}
+                creature
+              </span>
+            }
+            keywords="Melee"
+            defense="Guard"
+            damage="(+1 fortune for each size larger you are than the target, or +1 misfortune for each size smaller you are than the target)"
+            success={
+              <span>
+                Choose one of the following effects: choose an item for the
+                target to drop, target falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+                , target is{" "}
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
+                </Link>{" "}
+                until you let go, or target is pushed within their zone
+              </span>
+            }
+            critical="Choose two effects from the success list"
           />
         </div>
       ),
