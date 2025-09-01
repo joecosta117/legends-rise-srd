@@ -25,17 +25,10 @@ function HeroCreationSteps() {
         </i>
       </p>
       <p>
-        <b>Expertise:</b>{" "}
-        <i>
-          Acrobatics, Alchemy, Animal Handler, Cartography, Deceit, Diplomacy,
-          Healing, Navigation, Performance, Stealth, Tracking
-        </i>
-      </p>
-      <p>
         <b>Personality Traits:</b>{" "}
         <i>
-          Ambitious, Brave, Charming, Idealist, Lone Wolf, Reckless, Respected,
-          Vengeful, Wise, Young and Naive
+          Ambitious, Animal Friend, Brave, Charming, Idealist, Liar, Lone Wolf,
+          Reckless, Respected, Vengeful, Wise, Young and Naive
         </i>
       </p>
       <p>
@@ -45,6 +38,34 @@ function HeroCreationSteps() {
           Guessing, I Still Remember, It's All a Part of the Plan, Love Is My
           Shield, Nature Provides, Pain Makes You Stronger
         </i>
+      </p>
+      <h3 className="header">Tips on Creating Experiences</h3>
+      <p>
+        Your hero is unique because of their own story, so here are some
+        guidelines for coming up with appropriate experiences.
+      </p>
+      <h4 className="header">Use Your Class</h4>
+      <p>
+        Choose at least one experience that is tied to your class's training. An
+        arcanist with the experience <i>smith</i> and <i>bookworm</i> isn’t
+        informative if the hero knows about magic. A better experience would be{" "}
+        <i>magical smith</i> or <i>bookworm mage</i> so your hero can leverage
+        their class’s magical talents during{" "}
+        <Link className="internal-link" to="/rules/skills">
+          skill rolls
+        </Link>
+        .
+      </p>
+      <h4 className="header">World Build</h4>
+      <p>
+        Instead of choosing a single word, add some details from the world your
+        hero lives in. For example, instead of <i>thief</i> as an experience,
+        choose <i>thief of the black rose guild</i>. Instead of <i>lone wolf</i>
+        , choose <i>lone wolf from the golden city</i>. By adding world related
+        details to your experiences, you help ground your hero into the story
+        and world you and your GM are crafting together. Cementing your hero’s
+        experience in the campaign setting makes your hero feel more real in the
+        fiction and gives story hooks for your GM to use.
       </p>
       {/* <p>
         <b>Professions, Trades, or Connections:</b> Did your hero have any
@@ -148,34 +169,6 @@ function HeroCreationSteps() {
         </li>
       </ul> */}
 
-      <h3 className="header">Tips on Creating Experiences</h3>
-      <p>
-        Your hero is unique because of their own story, so here are some
-        guidelines for coming up with appropriate experiences.
-      </p>
-      <h4 className="header">Use Your Class</h4>
-      <p>
-        Choose at least one experience that is tied to your class's training. An
-        arcanist with the experience <i>smith</i> and <i>bookworm</i> isn’t
-        informative if the hero knows about magic. A better experience would be{" "}
-        <i>magical smith</i> or <i>bookworm wizard</i> so your hero can leverage
-        their class’s magical talents during{" "}
-        <Link className="internal-link" to="/rules/skills">
-          skill rolls
-        </Link>
-        .
-      </p>
-      <h4 className="header">World Build</h4>
-      <p>
-        Instead of choosing a single word, add some details from the world your
-        hero lives in. For example, instead of <i>gladiator</i> as an
-        experience, choose <i>gladiator from the golden city</i>. Instead of{" "}
-        <i>thief</i>, choose <i>thief of the black rose guild</i>. By adding
-        world related details to your experiences, you help ground your hero
-        into the story and world you and your GM are crafting together.
-        Cementing your hero’s experience in the campaign setting makes your hero
-        feel more real in the fiction and gives story hooks for your GM to use.
-      </p>
       {/* <h4 className="header">Evocative, Not Simple</h4>
       <p>
         An experience shouldn’t be a single word, but instead should be a short
