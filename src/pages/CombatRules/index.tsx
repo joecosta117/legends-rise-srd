@@ -688,8 +688,8 @@ function CombatRules() {
         <p>
           When your hit points equal 0, you are <b>dying</b>. While dying, you
           are{" "}
-          <Link className="internal-link" to="/conditions#dazed">
-            dazed
+          <Link className="internal-link" to="/conditions#hindered">
+            hindered
           </Link>
           . You are no longer dying if you <ToolTip preset="heal" />.
         </p>
