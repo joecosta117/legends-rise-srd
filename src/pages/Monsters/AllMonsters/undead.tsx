@@ -2317,7 +2317,7 @@ const UndeadMonsters = [
             name: "Rise My Minions",
             keywords: "magical, range",
             round: "1",
-            success: <span>Lich summons 6 wraith minions within 3 zones.</span>,
+            effect: <span>Lich summons 6 wraith minions within 3 zones.</span>,
           },
           {
             basic: false,
