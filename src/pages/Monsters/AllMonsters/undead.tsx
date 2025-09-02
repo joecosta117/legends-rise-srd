@@ -2327,10 +2327,9 @@ const UndeadMonsters = [
             target: "All enemies",
             defense: "Spirit",
             damage: "15 necrotic damage",
-            effect: (
+            success: (
               <span>
-                Lich
-                <ToolTip preset="heals" /> 10 per target
+                Lich <ToolTip preset="heals" /> 10 per target that takes damage
               </span>
             ),
           },
