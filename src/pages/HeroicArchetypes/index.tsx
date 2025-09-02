@@ -2195,16 +2195,16 @@ function HeroicArchetypes() {
 
             <h4 className="header">Seraph’s Grace (5th-Level Feature)</h4>
             <p>
-              You provide the warm protection of the heavens. After a rest,
-              choose a number of creatures equal to your proficiency bonus.
-              Chosen creatures gain 1{" "}
+              You provide the warm protection of the heavens. At the start of a
+              scene, choose a number of creatures equal to your proficiency
+              bonus. Chosen creatures gain{" "}
               <Link
                 className="internal-link"
                 to="/rules/combat#temporary-hit-points"
               >
                 temporary hit points
               </Link>{" "}
-              per your tier.
+              equal to your proficiency bonus (scene ends).
             </p>
 
             <h4 className="header">Heavenly Aspect (7th-Level Feature)</h4>
