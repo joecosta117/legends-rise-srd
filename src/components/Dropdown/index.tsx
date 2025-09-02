@@ -74,7 +74,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     ].find(
       (arrow) => (arrow as HTMLElement).dataset.type === type,
     ) as HTMLElement;
-    const content = [...document.querySelectorAll(".dropdown-content")].find(
+    const content = [...document.querySelectorAll(".dropdown")].find(
       (content) => (content as HTMLElement).dataset.type === type,
     ) as HTMLElement;
 
