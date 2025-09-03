@@ -183,7 +183,11 @@ function Warrior() {
               frequency="At-will"
               trigger={
                 <span>
-                  You see a creature{" "}
+                  You see an{" "}
+                  <Link className="internal-link" to="/rules/combat#engaged">
+                    engaged
+                  </Link>{" "}
+                  creature{" "}
                   <Link className="internal-link" to="/combat-abilities#move">
                     move
                   </Link>
