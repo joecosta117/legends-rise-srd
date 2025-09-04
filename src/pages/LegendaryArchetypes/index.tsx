@@ -1552,8 +1552,8 @@ function LegendaryArchetypes() {
               </Link>{" "}
               against each foe’s Spirit within 1 zone, dealing psychic damage
               equal to your proficiency bonus. On a success, a target is also
-              <Link className="internal-link" to="/conditions#confused">
-                confused
+              <Link className="internal-link" to="/conditions#dazed">
+                dazed
               </Link>{" "}
               (scene ends). At the end of the scene, reality ripples and shakes
               as a slightly distorted version of yourself appears from nothing

@@ -7,23 +7,23 @@ function Conditions() {
   scrollToHash();
 
   const conditionContent = [
-    {
-      title: "Confused",
-      id: "confused",
-      content: (
-        <p>
-          On your turn, you must use your action to{" "}
-          <Link className="internal-link" to="/combat-abilities#charge">
-            charge
-          </Link>
-          ,{" "}
-          <Link className="internal-link" to="/combat-abilities#strike">
-            strike
-          </Link>
-          , or use a tier 0 battle spell against the nearest creature.
-        </p>
-      ),
-    },
+    // {
+    //   title: "Confused",
+    //   id: "confused",
+    //   content: (
+    //     <p>
+    //       On your turn, you must use your action to{" "}
+    //       <Link className="internal-link" to="/combat-abilities#charge">
+    //         charge
+    //       </Link>
+    //       ,{" "}
+    //       <Link className="internal-link" to="/combat-abilities#strike">
+    //         strike
+    //       </Link>
+    //       , or use a tier 0 battle spell against the nearest creature.
+    //     </p>
+    //   ),
+    // },
     {
       title: "Dazed",
       id: "dazed",

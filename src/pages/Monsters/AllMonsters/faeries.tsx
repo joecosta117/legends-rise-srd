@@ -849,15 +849,15 @@ const FaerieMonsters = [
           },
           {
             basic: false,
-            name: "Confusing Curse",
+            name: "Sleepy Curse",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "7 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (next turn ends)
               </span>

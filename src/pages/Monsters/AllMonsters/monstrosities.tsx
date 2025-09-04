@@ -896,10 +896,15 @@ const MonstrosityMonsters = [
             damage: "2 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
-                </Link>{" "}
-                (next turn ends)
+                Target must use a reaction to{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , or use a tier 0 battle spell against their closest ally.
               </span>
             ),
           },
@@ -2152,10 +2157,10 @@ const MonstrosityMonsters = [
             critical: (
               <span>
                 Same as a success, and the target becomes{" "}
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
-                (next turn ends)
+                while hindered
               </span>
             ),
             success: (

@@ -576,8 +576,8 @@ const AberrationMonsters = [
             damage: "6 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -680,8 +680,8 @@ const AberrationMonsters = [
             damage: "10 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -852,11 +852,22 @@ const AberrationMonsters = [
                   <li>
                     <i>6. Psychic Confusion:</i> Void seer makes an attack roll
                     against the Spirit of 1 creature within 3 zones, dealing 10
-                    psychic damage and the target is{" "}
-                    <Link className="internal-link" to="/conditions#confused">
-                      confused
-                    </Link>{" "}
-                    (next turn ends) on a success or higher.
+                    psychic damage. On a success or higher, the target must use
+                    their reaction to{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#charge"
+                    >
+                      charge
+                    </Link>
+                    ,{" "}
+                    <Link
+                      className="internal-link"
+                      to="/combat-abilities#strike"
+                    >
+                      strike
+                    </Link>
+                    , or use a tier 0 battle spell against the nearest ally.
                   </li>
                   <li>
                     <i>7. Telekinetic Beam:</i> Void seer makes an attack roll
@@ -1012,8 +1023,8 @@ const AberrationMonsters = [
             damage: "8 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>
@@ -1167,8 +1178,8 @@ const AberrationMonsters = [
                 (3 psychic damage) to enemies, and when a creature takes this
                 damage, the nascent elder god makes an attack roll against their
                 Spirit. On a success, they are{" "}
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (next turn ends).
               </span>

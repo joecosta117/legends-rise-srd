@@ -452,8 +452,8 @@ const HazardList = [
             damage: "8 psychic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (overcome ends)
               </span>

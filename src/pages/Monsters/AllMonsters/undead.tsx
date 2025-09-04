@@ -2362,7 +2362,8 @@ const UndeadMonsters = [
       "Dream wraiths are powerful undead that feast off of nightmares and dreams of mortals. In places where great evil happened that resulted in numerous nightmares, dream wraiths are sometimes born.",
     tactics: (
       <span>
-        Dream Wraiths prefer to fight up close to heroes to use wraith touch and{" "}
+        Dream Wraiths prefer to fight up close to heroes to use nightmare touch
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#hinder">
           hinder
         </Link>{" "}
@@ -2387,14 +2388,19 @@ const UndeadMonsters = [
         speeds="fly 1"
         traits={[
           {
-            name: "Dream State",
-            description: "A confused creature can't target the dream wraith.",
+            name: "Dream Immunity",
+            description: (
+              <span>
+                Creatures cursed by nightmare touch can't target the dream
+                wraith.
+              </span>
+            ),
           },
         ]}
         actions={[
           {
             basic: true,
-            name: "Wraith Touch",
+            name: "Nightmare Touch",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -2409,34 +2415,32 @@ const UndeadMonsters = [
             damage: "12 necrotic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions/confused">
-                  confused
-                </Link>{" "}
-                (next turn ends)
+                Target is cursed by nightmares (next turn ends). While cursed,
+                they see all allies as enemies.
               </span>
             ),
           },
-          {
-            basic: true,
-            name: "Psychic Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Spirit",
-            damage: "12 psychic damage",
-          },
+          // {
+          //   basic: true,
+          //   name: "Psychic Rend",
+          //   keywords: "melee, weapon",
+          //   target: (
+          //     <span>
+          //       1{" "}
+          //       <Link className="internal-link" to="/rules/combat#engaged">
+          //         engaged
+          //       </Link>{" "}
+          //       creature
+          //     </span>
+          //   ),
+          //   defense: "Spirit",
+          //   damage: "12 psychic damage",
+          // },
         ]}
         reactions={[
           {
             name: "Dream Assault",
-            trigger: "A confused creature uses a hostile ability within 1 zone",
+            trigger: "A hindered creature uses a hostile ability within 1 zone",
             effect: (
               <span>
                 The dream wraith can{" "}
@@ -2446,7 +2450,7 @@ const UndeadMonsters = [
                 >
                   teleport
                 </Link>{" "}
-                to the triggering creature and use psychic rend against them
+                to the triggering creature and use nightmare touch against them
               </span>
             ),
           },

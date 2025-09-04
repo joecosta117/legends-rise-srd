@@ -340,8 +340,8 @@ function FightingStyles() {
                     </Link>{" "}
                     with a natural melee weapon, and on a success or higher, the
                     target is{" "}
-                    <Link className="internal-link" to="/conditions#confused">
-                      confused
+                    <Link className="internal-link" to="/conditions#hindered">
+                      hindered
                     </Link>{" "}
                     (next turn ends)
                   </span>
@@ -365,7 +365,7 @@ function FightingStyles() {
                     <Link className="internal-link" to="/conditions#seized">
                       seized
                     </Link>{" "}
-                    (next turn ends)
+                    (overcome ends)
                   </span>
                 }
               />

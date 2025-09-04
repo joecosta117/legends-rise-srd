@@ -225,13 +225,7 @@ function Weapons() {
             <tr>
               <td>Clubs</td>
               <td>Club, Morningstar, Staff</td>
-              <td>
-                target is{" "}
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
-                </Link>{" "}
-                (next turn ends)
-              </td>
+              <td>target can't use reactions (next turn ends)</td>
             </tr>
             <tr>
               <td>Firearms</td>

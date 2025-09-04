@@ -1204,8 +1204,8 @@ export const eldritchSpells = [
           damage="2 psychic damage per your tier"
           critical={
             <span>
-              <Link className="internal-link" to="/conditions#confused">
-                confused
+              <Link className="internal-link" to="/conditions#dazed">
+                dazed
               </Link>{" "}
               (next turn ends)
             </span>
@@ -1237,19 +1237,20 @@ export const eldritchSpells = [
           }
           success={
             <span>
-              <Link className="internal-link" to="/conditions#confused">
-                confused
+              Target is confused (scene ends). While confused, they must use an
+              action to{" "}
+              <Link className="internal-link" to="/combat-abilities#charge">
+                charge
               </Link>{" "}
-              (scene ends)
+              or
+              <Link className="internal-link" to="/combat-abilities#strike">
+                strike
+              </Link>{" "}
+              their closest ally
             </span>
           }
           partial={
-            <span>
-              <Link className="internal-link" to="/conditions#confused">
-                confused
-              </Link>{" "}
-              (next turn ends)
-            </span>
+            <span>Same as a success, but confused (next turn ends)</span>
           }
         />
       ),
@@ -1299,8 +1300,8 @@ export const eldritchSpells = [
             damage="2 psychic damage per spell tier"
             success={
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (next turn ends)
               </span>
@@ -1676,10 +1677,16 @@ export const enchantmentSpells = [
             damage="2 psychic damage per spell tier"
             success={
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                Target is confused (scene ends). While confused, they must use
+                an action to{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
                 </Link>{" "}
-                (scene ends)
+                or
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>{" "}
+                their closest ally.
               </span>
             }
           />
@@ -4714,8 +4721,8 @@ export const teleportationSpells = [
             critical={
               <span>
                 Same as a success, but target becomes{" "}
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (scene ends) when they reappear
               </span>

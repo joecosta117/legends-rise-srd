@@ -1023,16 +1023,14 @@ const DemonMonsters = [
             target: <span>1 creature within 2 zones</span>,
             defense: "Spirit",
             damage: "8 psychic damage",
-            critical: (
-              <span>Same as a success, but confused (overcome ends)</span>
-            ),
+            critical: <span>Same as a success, but dazed (overcome ends)</span>,
             success: (
               <span>
                 Envy demon takes on the appearance of the target. The target
                 experiences disorientation as the demon starts stealing their
                 memories and becomes{" "}
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
+                <Link className="internal-link" to="/conditions#dazed">
+                  dazed
                 </Link>{" "}
                 (next turn ends)
               </span>
@@ -1690,17 +1688,23 @@ const DemonMonsters = [
             damage: "9 toxic damage",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
-                </Link>{" "}
-                (overcome ends) and 3{" "}
+                Target is confused (overcome ends), taking 3{" "}
                 <Link
                   className="internal-link"
                   to="/rules/combat#ongoing-damage"
                 >
                   ongoing
                 </Link>{" "}
-                toxic damage while confused
+                toxic damage while confused. While confused, they must use an
+                action to{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , or use a tier 0 battle spell against their closest ally.
               </span>
             ),
           },

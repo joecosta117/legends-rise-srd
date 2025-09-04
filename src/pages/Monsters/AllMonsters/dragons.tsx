@@ -2925,13 +2925,19 @@ const DragonMonsters = [
             name: "Gaze of Madness",
             defense: "Spirit",
             target: "1 creature within 2 zones",
-            critical: "confused (overcome ends)",
+            critical: "Confused (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
-                </Link>{" "}
-                (next turn ends)
+                Target is confused (next turn ends). While confused, they must
+                use an action to{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , or use a tier 0 battle spell against their closest ally.
               </span>
             ),
           },
@@ -3034,13 +3040,19 @@ const DragonMonsters = [
             name: "Gaze of Madness",
             defense: "Spirit",
             target: "1 creature within 2 zones",
-            critical: "confused (overcome ends)",
+            critical: "Confused (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
-                </Link>{" "}
-                (next turn ends)
+                Target is confused (next turn ends). While confused, they must
+                use an action to{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , or use a tier 0 battle spell against their closest ally.
               </span>
             ),
           },
@@ -3160,7 +3172,7 @@ const DragonMonsters = [
           {
             name: "Maddening Whispers",
             description:
-              "When a hindered or confused creature starts their turn within the dragon's sight, they take 6 psychic damage as the void whispers maddeness into their mind.",
+              "When a hindered creature or creature confused by gaze of madness starts their turn within the dragon's sight, they take 6 psychic damage as the void whispers oblivion into their mind.",
           },
         ]}
         actions={[
@@ -3214,13 +3226,19 @@ const DragonMonsters = [
             name: "Gaze of Madness",
             defense: "Spirit",
             target: "1 creature within 2 zones",
-            critical: "confused (overcome ends)",
+            critical: "Confused (overcome ends)",
             success: (
               <span>
-                <Link className="internal-link" to="/conditions#confused">
-                  confused
-                </Link>{" "}
-                (next turn ends)
+                Target is confused (next turn ends). While confused, they must
+                use an action to{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
+                </Link>
+                ,{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , or use a tier 0 battle spell against their closest ally.
               </span>
             ),
           },
