@@ -1242,7 +1242,7 @@ export const eldritchSpells = [
               <Link className="internal-link" to="/combat-abilities#charge">
                 charge
               </Link>{" "}
-              or
+              or{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -1682,7 +1682,7 @@ export const enchantmentSpells = [
                 <Link className="internal-link" to="/combat-abilities#charge">
                   charge
                 </Link>{" "}
-                or
+                or{" "}
                 <Link className="internal-link" to="/combat-abilities#strike">
                   strike
                 </Link>{" "}
