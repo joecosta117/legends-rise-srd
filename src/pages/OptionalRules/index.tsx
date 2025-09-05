@@ -322,7 +322,7 @@ function OptionalRules() {
         </p>
         <p>
           In certain campaign settings, scars can represent dark corruption that
-          slowly transforms heroes into monsters. When a hero gets their third
+          slowly transforms heroes into monsters. When a hero gets their final
           scar, the darkness takes them and they return to the story corrupted
           by evil.
         </p>
