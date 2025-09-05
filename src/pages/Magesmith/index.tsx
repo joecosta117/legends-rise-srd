@@ -110,7 +110,7 @@ function Magesmith() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 10
+                  <b>Starting Hit Points:</b> 14
                 </span>
               </li>
               <li>
@@ -277,9 +277,9 @@ function Magesmith() {
               effect={
                 <span>
                   <span>
-                    You create a turret within 1 zone of you with defenses = 8
-                    plus your proficiency bonus and hit points = double your
-                    proficiency bonus. When you command your turret, it can only{" "}
+                    You create a turret within 1 zone of you with defenses equal
+                    to your own and with 1 hit point. When you command your
+                    turret, it can only{" "}
                     <Link className="internal-link" to="/combat-abilities#move">
                       move
                     </Link>{" "}

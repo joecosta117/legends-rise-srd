@@ -166,7 +166,7 @@ export const airSpells = [
           <Monster
             name="Air Elemental"
             type="Large Elemental"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="10 + PB"
             mgt="10 + PB"
             res="8 + PB"
@@ -361,7 +361,7 @@ export const arcaneSpells = [
           <Monster
             name="Dragon Spirit"
             type="Large Dragon"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="12 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -419,7 +419,7 @@ export const arcaneSpells = [
           <Monster
             name="Arcane Hand"
             type="Large export Construct"
-            hp="5 per spell tier (ST)"
+            hp="8 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -681,7 +681,7 @@ export const deathSpells = [
           <Monster
             name="Undead"
             type="Medium Undead"
-            hp="5 per spell tier (ST)"
+            hp="8 per spell tier (ST)"
             evn="10 + double ST"
             mgt="12 + double ST"
             res="8 + double ST"
@@ -1086,7 +1086,7 @@ export const earthSpells = [
           <Monster
             name="Earth Elemental"
             type="Large Elemental"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="12 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -1357,7 +1357,7 @@ export const eldritchSpells = [
           <Monster
             name="Aberration"
             type="Large Aberration"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="10 + PB"
             mgt="10 + PB"
             res="8 + PB"
@@ -1922,7 +1922,7 @@ export const fireSpells = [
           <Monster
             name="Fire Elemental"
             type="Large Elemental"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -2425,7 +2425,7 @@ export const holySpells = [
           <Monster
             name="Angelic Warrior"
             type="Medium Angel"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="11 + PB"
             mgt="10 + PB"
             res="9 + PB"
@@ -2750,7 +2750,7 @@ export const iceSpells = [
           <Monster
             name="Ice Elemental"
             type="Large Elemental"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -2966,7 +2966,7 @@ export const illusionSpells = [
           <Monster
             name="Illusionary Creature"
             type="Medium Construct"
-            hp="5 per spell tier (ST)"
+            hp="8 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -3157,7 +3157,7 @@ export const lifeSpells = [
             <span>
               1{" "}
               <Link className="internal-link" to="/rules/combat#dying">
-                dying
+                unconscious
               </Link>{" "}
               creature within your zone
             </span>
@@ -3201,7 +3201,7 @@ export const lifeSpells = [
           effect={
             <span>
               Target can spend a recovery, but they instead{" "}
-              <ToolTip preset="heal" /> 5 per spell tier
+              <ToolTip preset="heal" /> 7 per spell tier
             </span>
           }
         />
@@ -3221,7 +3221,7 @@ export const lifeSpells = [
             effect={
               <span>
                 Target can spend a recovery, but they instead{" "}
-                <ToolTip preset="heal" /> 6 per spell tier
+                <ToolTip preset="heal" /> 8 per spell tier
               </span>
             }
           />
@@ -3254,17 +3254,14 @@ export const lifeSpells = [
           frequency="Spell 2 (Life)"
           trigger={
             <span>
-              You see a creature within 1 zone become{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                dying or vanquished
-              </Link>
+              You see a creature within 1 zone reduced to 0 hit points
             </span>
           }
           keywords="Magical, Range"
           effect={
             <span>
               Triggering creature can spend a recovery, but they instead{" "}
-              <ToolTip preset="heal" /> 6 per spell tier, or heal 1 if they
+              <ToolTip preset="heal" /> 8 per spell tier, or heal 1 if they
               don't spend a recovery
             </span>
           }
@@ -3704,7 +3701,7 @@ export const natureSpells = [
           <Monster
             name="Nature Spirit"
             type="Medium Animal or Plant"
-            hp="5 per spell tier (ST), or 4 per ST (air only)"
+            hp="8 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -3871,7 +3868,7 @@ export const natureSpells = [
           <Monster
             name="Faerie Warrior"
             type="Small Faerie"
-            hp="5 per spell tier (ST)"
+            hp="8 per spell tier (ST)"
             evn="10 + PB"
             mgt="8 + PB"
             res="10 + PB"
@@ -3944,7 +3941,7 @@ export const natureSpells = [
           <Monster
             name="Kaiju"
             type="Colossal Monstrosity"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="12 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -4270,7 +4267,7 @@ export const shadowSpells = [
           <Monster
             name="Living Shadow"
             type="Medium Undead"
-            hp="5 per spell tier (ST)"
+            hp="8 per spell tier (ST)"
             evn="10 + PB"
             mgt="10 + PB"
             res="8 + PB"
@@ -5425,7 +5422,7 @@ export const unholySpells = [
           <Monster
             name="Demon"
             type="Large Fiend"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"
@@ -5935,7 +5932,7 @@ export const waterSpells = [
           <Monster
             name="Water Elemental"
             type="Large Elemental"
-            hp="6 per spell tier (ST)"
+            hp="10 per spell tier (ST)"
             evn="10 + PB"
             mgt="12 + PB"
             res="8 + PB"

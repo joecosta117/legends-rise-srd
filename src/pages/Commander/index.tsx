@@ -91,7 +91,7 @@ function Commander() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 10
+                  <b>Starting Hit Points:</b> 14
                 </span>
               </li>
               <li>

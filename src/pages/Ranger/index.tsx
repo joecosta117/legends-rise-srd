@@ -89,7 +89,7 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 10
+                  <b>Starting Hit Points:</b> 14
                 </span>
               </li>
               <li>
@@ -371,7 +371,7 @@ function Ranger() {
             <Monster
               name="Primal Beast"
               type="Medium Animal"
-              hp="triple your proficiency bonus (PB) or double your PB (Air only)"
+              hp="8 per your tier"
               evn="10 + PB"
               // mgt="12 + PB"
               res="8 + PB"
@@ -425,7 +425,7 @@ function Ranger() {
             <ul>
               <li>
                 <span>
-                  Your hit points increase to 12 per tier, and your recoveries
+                  Your starting hit points increase to 16, and your recoveries
                   increase to 8.
                 </span>
               </li>

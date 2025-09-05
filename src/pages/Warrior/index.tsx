@@ -87,7 +87,7 @@ function Warrior() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 12
+                  <b>Starting Hit Points:</b> 16
                 </span>
               </li>
               <li>
@@ -230,12 +230,7 @@ function Warrior() {
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome rolls
               </Link>{" "}
-              against effects at the start of your turn, instead of at the end,
-              except for{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                dying
-              </Link>
-              .
+              against effects at the start of your turn, instead of at the end.
             </p>
           </div>
         )}
@@ -316,12 +311,8 @@ function Warrior() {
 
             <h3 className="header">Tough</h3>
             <p>
-              Your maximum hit points increases by your proficiency bonus, and
-              you are defeated at four{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                wounds
-              </Link>{" "}
-              instead of three.
+              Your maximum hit points increases by your proficiency bonus and
+              your recoveries increase by +1.
             </p>
 
             <h3 className="header">Unmatched Precision</h3>
@@ -390,8 +381,8 @@ function Warrior() {
               <b>Requirement:</b> juggernaut subclass
             </p>
             <p>
-              When you are <ToolTip preset="shaken" />, but not dying, you gain{" "}
-              <ToolTip preset="regen" /> equal to your tier.
+              When you are <ToolTip preset="shaken" />, but not unconscious, you
+              gain <ToolTip preset="regen" /> equal to your tier.
             </p>
 
             <h3 className="header">Unerring Accuracy</h3>

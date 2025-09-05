@@ -90,7 +90,7 @@ function Vessel() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 12
+                  <b>Starting Hit Points:</b> 16
                 </span>
               </li>
               <li>
@@ -252,7 +252,7 @@ function Vessel() {
               equal to your tier, or equal to your proficiency bonus if you have
               apex fury. You don't benefit from this regeneration while you are{" "}
               <Link className="internal-link" to="/rules/combat#dying">
-                dying
+                unconscious
               </Link>
               .
             </p>
@@ -559,7 +559,7 @@ function Vessel() {
                 <span>
                   <b>Angel:</b> Allies that start their turn within your zone
                   gain the benefits of your monstrous regeneration feature if
-                  you aren't dying.
+                  you aren't unconscious.
                 </span>
               </li>
               <li>

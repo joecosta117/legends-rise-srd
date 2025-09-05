@@ -120,7 +120,7 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 4.
+                  <ToolTip preset="heal" /> 6.
                 </span>
               }
             />
@@ -202,7 +202,7 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 8.
+                  <ToolTip preset="heal" /> 12.
                 </span>
               }
             />
@@ -315,7 +315,7 @@ function Consumables() {
                 <span>
                   This vial of warm red liquid soothes aches and closes wounds
                   beyond your normal limits. When you drink this potion, you{" "}
-                  <ToolTip preset="heal" /> 12.
+                  <ToolTip preset="heal" /> 18.
                 </span>
               }
             />

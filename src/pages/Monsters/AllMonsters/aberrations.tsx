@@ -1,7 +1,7 @@
 import Monster from "../../../components/Monster";
 import { Link } from "react-router-dom";
 import Tooltip from "../../../components/ToolTip";
-// import ToolTip from "../../../components/ToolTip";
+import ToolTip from "../../../components/ToolTip";
 // import Modifier from "../../../components/Modifier";
 
 const AberrationMonsters = [
@@ -383,8 +383,8 @@ const AberrationMonsters = [
             damage: "10 physical damage",
             success: (
               <span>
-                If this damage reduces the creature to 0 hit points, then they
-                are immediately defeated
+                If a <ToolTip preset="shaken" /> target takes this damage, then
+                they are instead reduced to 0 hit points.
               </span>
             ),
           },
@@ -823,8 +823,8 @@ const AberrationMonsters = [
                   <li>
                     <i>2. Disintegrate:</i> Void seer makes an attack roll
                     against the Spirit of 1 creature within 3 zones, dealing 12
-                    arcane damage. If this damage reduces the the target to 0
-                    hit points, then they beceome defeated.
+                    arcane damage. If a <ToolTip preset="shaken" /> target takes
+                    this damage, then they are instead reduced to 0 hit points.
                   </li>
                   <li>
                     <i>3. Explosion:</i> Void seer makes an attack roll against

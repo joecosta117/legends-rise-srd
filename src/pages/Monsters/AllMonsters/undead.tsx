@@ -2017,13 +2017,9 @@ const UndeadMonsters = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zone
                 </Link>{" "}
-                (3 necrotic damage) to enemies and filled with darkness. Enemies
-                within the umbral titan's zone take{" "}
-                <Modifier type="mf" count="1" /> to overcome rolls from{" "}
-                <Link className="internal-link" to="/rules/combat#dying">
-                  dying
-                </Link>
-                .
+                (3 necrotic damage) to enemies and filled with darkness. When an
+                enemy <ToolTip preset="heals" /> within the umbral titan's zone,
+                they only heal half the amount.
               </span>
             ),
           },

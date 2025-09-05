@@ -132,7 +132,7 @@ function Summoner() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 8
+                  <b>Starting Hit Points:</b> 12
                 </span>
               </li>
               <li>
@@ -254,8 +254,8 @@ function Summoner() {
             <Monster
               name="Major Summons"
               type="Medium Creature (type determined by your subclass)"
-              hp="8 per your tier"
-              evn="10 + PB"
+              hp="10 per your tier"
+              evn="10 + your proficiency bonus (PB)"
               mgt="12 + PB"
               res="8 + PB"
               pb="PB"
@@ -965,7 +965,7 @@ function Summoner() {
             </p>
             <ul>
               <li>
-                <span>Staring hit points equal 10</span>
+                <span>Staring hit points increase to 14</span>
               </li>
               <li>
                 <span>You have 7 recoveries</span>

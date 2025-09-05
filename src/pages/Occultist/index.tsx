@@ -111,7 +111,7 @@ function Occultist() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 8
+                  <b>Starting Hit Points:</b> 12
                 </span>
               </li>
               <li>
@@ -324,8 +324,8 @@ function Occultist() {
             <Monster
               name="Empowered Familiar"
               type="Medium Aberration, Fiend, or Undead (same as your familiar)"
-              hp="triple your proficiency bonus (PB)"
-              evn="10 + PB"
+              hp="8 per your tier"
+              evn="10 + your proficiency bonus (PB)"
               // mgt="12 + PB"
               res="8 + PB"
               pb="PB"
@@ -379,7 +379,7 @@ function Occultist() {
             <ul>
               <li>
                 <span>
-                  Your starting hit points increase to 10, and your recoveries
+                  Your starting hit points increase to 14, and your recoveries
                   increase to 7.
                 </span>
               </li>

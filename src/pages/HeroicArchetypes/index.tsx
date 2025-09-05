@@ -285,7 +285,7 @@ function HeroicArchetypes() {
             <p>You favor catching your foe off guard from the shadows.</p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Ambusher Tactics (5th-Level Feature)</h4>
@@ -363,7 +363,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +8</span>
+                <span>Your hit points increase by +12</span>
               </li>
               <li>
                 <span>
@@ -396,7 +396,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Archer Tactics (5th-Level Feature)</h4>
@@ -467,7 +467,7 @@ function HeroicArchetypes() {
             <p>You gain the following features from the bard at 5th level:</p>
             <ul>
               <li>
-                <span>Your hit points increase by +8</span>
+                <span>Your hit points increase by +12</span>
               </li>
               <li>
                 <span>
@@ -497,7 +497,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Brawler Tactics (5th-Level Feature)</h4>
@@ -583,7 +583,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Time Magic (5th-Level Feature)</h4>
@@ -627,7 +627,7 @@ function HeroicArchetypes() {
             <p>You gain the following features from the cleric at 5th level:</p>
             <ul>
               <li>
-                <span>Your hit points increase by +8</span>
+                <span>Your hit points increase by +12</span>
               </li>
               <li>
                 <span>
@@ -664,7 +664,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Medic Tactics (5th-Level Feature)</h4>
@@ -705,7 +705,8 @@ function HeroicArchetypes() {
               </Link>{" "}
               equal to your proficiency bonus, and the remedies' effectiveness
               fades after the next safe rest. A creature with a herbal remedy
-              can use a maneuver to apply the salve to gain the following
+              can use a maneuver to apply the salve to a creature that they can
+              touch (including themselves) for the target to gain the following
               benefits:
             </p>
             <ul>
@@ -723,14 +724,16 @@ function HeroicArchetypes() {
                 </span>
               </li>
             </ul>
-            <h4 className="header">Greater Remedies (7th-Level Feature)</h4>
+            <h4 className="header">
+              Resuscitation Training (7th-Level Feature)
+            </h4>
             <p>
-              When a creature regains hit points from your herbal remedies, they
-              can remove a{" "}
+              Your abilities that <ToolTip preset="heal" />, including your
+              herbal remedies, can heal a creature unconscious from the{" "}
               <Link className="internal-link" to="/rules/combat#dying">
-                wound
+                gamble death action
               </Link>
-              . A creature can only remove a wound this way once per{" "}
+              . A creature can only be healed this way once per{" "}
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
@@ -748,7 +751,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +10</span>
+                <span>Your hit points increase by +14</span>
               </li>
               <li>
                 <span>Training in all armor and weapons.</span>
@@ -773,7 +776,7 @@ function HeroicArchetypes() {
             <p>You harness the frigid might of winter to freeze your foes.</p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Winter Magic (5th-Level Feature)</h4>
@@ -823,7 +826,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Demonic Magic (5th-Level Feature)</h4>
@@ -870,7 +873,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Draconic Power (5th-Level Feature)</h4>
@@ -954,7 +957,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Dreadnought Tactics (5th-Level Feature)</h4>
@@ -1023,7 +1026,7 @@ function HeroicArchetypes() {
             <p>You gain the following features from the druid at 5th level:</p>
             <ul>
               <li>
-                <span>Your hit points increase by +8</span>
+                <span>Your hit points increase by +12</span>
               </li>
               <li>
                 <span>
@@ -1056,7 +1059,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Dual Wielder Tactics (5th-Level Feature)</h4>
@@ -1135,7 +1138,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Duelist Tactics (5th-Level Feature)</h4>
@@ -1207,7 +1210,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Enchantment Magic (5th-Level Feature)</h4>
@@ -1260,7 +1263,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Earth Magic (5th-Level Feature)</h4>
@@ -1309,7 +1312,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Gravity Magic (5th-Level Feature)</h4>
@@ -1356,7 +1359,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Watery Magic (5th-Level Feature)</h4>
@@ -1405,7 +1408,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Illusion Magic (5th-Level Feature)</h4>
@@ -1452,7 +1455,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Dimensional Magic (5th-Level Feature)</h4>
@@ -1506,7 +1509,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Knave Tactics (5th-Level Feature)</h4>
@@ -1594,7 +1597,7 @@ function HeroicArchetypes() {
             <p>You conjure healing magic to soothe the wounds of others.</p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Vitality Magic (5th-Level Feature)</h4>
@@ -1612,9 +1615,9 @@ function HeroicArchetypes() {
 
             <h4 className="header">Restorative Power (5th-Level Feature)</h4>
             <p>
-              When you use an ability to <ToolTip preset="heal" /> a creature,
-              the healing amount increases by the spell’s tier or your tier if
-              the ability isn’t a spell. The creature can also make an{" "}
+              When you use an ability that <ToolTip preset="heals" /> a
+              creature, the healing amount increases by the spell’s tier or your
+              tier if the ability isn’t a spell. The creature can also make an{" "}
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>{" "}
@@ -1622,16 +1625,30 @@ function HeroicArchetypes() {
               ends).
             </p>
 
-            <h4 className="header">Aura of Preservation (7th-Level Feature)</h4>
+            <h4 className="header">Life Shield (7th-Level Feature)</h4>
             <p>
-              You radiate life boosting energy to fend off death. When you or an
-              ally starts their turn{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                dying
-              </Link>{" "}
-              within your zone, they <ToolTip preset="heal" /> equal to your
-              tier.
+              {/* You radiate life boosting energy to fend off death. When you or an
+              ally starts their turn <ToolTip preset="shaken" /> within your
+              zone, they <ToolTip preset="heal" /> equal to your tier.  */}
+              You gain the following ability:
             </p>
+            <AbilityCard
+              name="Life Shield"
+              actType="Maneuver"
+              descriptor="You ward an ally from death."
+              target="1 creature within your zone"
+              frequency="Encounter"
+              duration="Scene ends"
+              keywords="Magical"
+              effect={
+                <span>
+                  When the target is reduced to 0 hit points, they can spend a
+                  recovery or <ToolTip preset="heal" /> equal to your tier if
+                  they don't have a recovery. After they are healed in this way,
+                  this ability ends.
+                </span>
+              }
+            />
           </div>
         )}
         {selectedArchetype === "Magesmith Multiclass" && (
@@ -1644,7 +1661,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +10</span>
+                <span>Your hit points increase by +14</span>
               </li>
               <li>
                 <span>
@@ -1678,7 +1695,7 @@ function HeroicArchetypes() {
             <p>You blend magic with weapons to achieve devastating effect.</p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Combat Magic (5th-Level Feature)</h4>
@@ -1717,7 +1734,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Necrotic Magic (5th-Level Feature)</h4>
@@ -1773,7 +1790,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +8</span>
+                <span>Your hit points increase by +12</span>
               </li>
               <li>
                 <span>
@@ -1804,7 +1821,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +12</span>
+                <span>Your hit points increase by +16</span>
               </li>
               <li>
                 <span>Training in all armor and weapons.</span>
@@ -1832,7 +1849,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Toxic Magic (5th-Level Feature)</h4>
@@ -1885,7 +1902,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Protector Tactics (5th-Level Feature)</h4>
@@ -1976,7 +1993,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Psychic Magic (5th-Level Feature)</h4>
@@ -2037,7 +2054,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Flame Magic (5th-Level Feature)</h4>
@@ -2089,7 +2106,7 @@ function HeroicArchetypes() {
             <p>You gain the following features from the ranger at 5th level:</p>
             <ul>
               <li>
-                <span>Your hit points increase by +10</span>
+                <span>Your hit points increase by +14</span>
               </li>
               <li>
                 <span>Training in light armor and all weapons.</span>
@@ -2119,7 +2136,7 @@ function HeroicArchetypes() {
             <p>You gain the following features from the rogue at 5th level:</p>
             <ul>
               <li>
-                <span>Your hit points increase by +10</span>
+                <span>Your hit points increase by +14</span>
               </li>
               <li>
                 <span>
@@ -2149,7 +2166,7 @@ function HeroicArchetypes() {
             <p>You gain the following features from the seeker at 5th level:</p>
             <ul>
               <li>
-                <span>Your hit points increase by +12</span>
+                <span>Your hit points increase by +16</span>
               </li>
               <li>
                 <span>Training in light armor and all weapons.</span>
@@ -2177,7 +2194,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Celestial Magic (5th-Level Feature)</h4>
@@ -2230,7 +2247,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Umbral Magic (5th-Level Feature)</h4>
@@ -2296,7 +2313,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Skirmisher Tactics (5th-Level Feature)</h4>
@@ -2370,7 +2387,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Solar Magic (5th-Level Feature)</h4>
@@ -2424,7 +2441,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Storm Magic (5th-Level Feature)</h4>
@@ -2483,7 +2500,7 @@ function HeroicArchetypes() {
                 </span>
               </li>
               <li>
-                <span>Your hit points increase by +8</span>
+                <span>Your hit points increase by +12</span>
               </li>
               <li>
                 <span>
@@ -2517,7 +2534,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +10</span>
+                <span>Your hit points increase by +14</span>
               </li>
               <li>
                 <span>You gain training all weapons and light armor.</span>
@@ -2550,7 +2567,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Thrower Tactics (5th-Level Feature)</h4>
@@ -2611,7 +2628,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +12</span>
+                <span>Your hit points increase by +16</span>
               </li>
               <li>
                 <span>Training in all armor and weapons.</span>
@@ -2639,7 +2656,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Abjuration Magic (5th-Level Feature)</h4>
@@ -2693,7 +2710,7 @@ function HeroicArchetypes() {
             </p>
             <ul>
               <li>
-                <span>Your hit points increase by +12</span>
+                <span>Your hit points increase by +16</span>
               </li>
               <li>
                 <span>Training in all armor and weapons.</span>
@@ -2721,7 +2738,7 @@ function HeroicArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Wrecker Tactics (5th-Level Feature)</h4>

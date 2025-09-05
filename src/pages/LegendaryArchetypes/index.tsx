@@ -88,7 +88,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Empyreal Soul (8th-Level Feature)</h4>
@@ -166,8 +166,8 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you become vanquished, your body disappears in a flash of
-              radiant light. Make an{" "}
+              , when you are reduced to 0 hit points, your body disappears in a
+              flash of radiant light. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -196,7 +196,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Magical Knowledge (8th-Level Feature)</h4>
@@ -246,7 +246,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Training in Violence (8th-Level Feature)</h4>
@@ -275,26 +275,14 @@ function LegendaryArchetypes() {
               </li>
               <li>
                 <span>
-                  The number of{" "}
-                  <Link className="internal-link" to="/rules/combat#dying">
-                    wounds
-                  </Link>{" "}
-                  you can suffer before being defeated increases by +1
+                  You gain <Modifier type="f" count="1" /> to overcome rolls.
                 </span>
               </li>
             </ul>
 
             <h4 className="header">Unerring Accuracy (10th-Level Feature)</h4>
             <p>
-              You gain <Modifier type="f" count="1" /> to{" "}
-              <Link className="internal-link" to="/combat-abilities#overpower">
-                overpower
-              </Link>{" "}
-              and{""}
-              <Link className="internal-link" to="/combat-abilities#strike">
-                strike
-              </Link>
-              .
+              You gain <Modifier type="f" count="1" /> to attack rolls.
             </p>
             <h4 className="header">Finish the Fight (10th-Level Feature)</h4>
             <p>
@@ -326,7 +314,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Divine Body (8th-Level Feature)</h4>
@@ -387,7 +375,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Devil Soul (8th-Level Feature)</h4>
@@ -473,8 +461,8 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you are vanquished, your body disappears in a flash of
-              unholy energy. Make an{" "}
+              , when you are reduced to 0 hit points, your body disappears in a
+              flash of unholy energy. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -503,7 +491,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Dragon Soul (8th-Level Feature)</h4>
@@ -581,9 +569,12 @@ function LegendaryArchetypes() {
             </ul>
             <h4 className="header">Draconic Apotheosis (10th-Level Feature)</h4>
             <p>
-              Your body and soul have fully become a dragon’s. Once per long
-              rest, when you are vanquished, your body explodes in elemental
-              energy. Make an{" "}
+              Your body and soul have fully become a dragon’s. Once per{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                safe rest
+              </Link>
+              , when you are reduced to 0 hit points, your body explodes in
+              elemental energy. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -614,7 +605,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Elemental Body (8th-Level Feature)</h4>
@@ -776,7 +767,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Supernatural Cunning (8th-Level Feature)</h4>
@@ -862,7 +853,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Green Body (8th-Level Feature)</h4>
@@ -961,7 +952,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Machine Knowledge (8th-Level Feature)</h4>
@@ -1068,7 +1059,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +16, and you gain the following
               features.
             </p>
             <h4 className="header">Slayer's Training (8th-Level Feature)</h4>
@@ -1151,7 +1142,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Worldly Jaunt (8th-Level Feature)</h4>
@@ -1231,7 +1222,7 @@ function LegendaryArchetypes() {
             <p>Choose what type of hero you are: magic or martial.</p>
             <h5>Magic Hero</h5>
             <p>
-              Your hit points increase by +8. You learn a{" "}
+              Your hit points increase by +12. You learn a{" "}
               <Link className="internal-link" to="/battle-spells">
                 magic tradition
               </Link>{" "}
@@ -1242,7 +1233,7 @@ function LegendaryArchetypes() {
             </p>
             <h5>Martial Hero</h5>
             <p>
-              Your hit points increase by +12, and you learn a{" "}
+              Your hit points increase by +16, and you learn a{" "}
               <Link className="internal-link" to="/fighting-styles">
                 fighting style
               </Link>{" "}
@@ -1287,7 +1278,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Rally to Me! (8th-Level Feature)</h4>
@@ -1352,13 +1343,14 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you are vanquished, you instead <ToolTip preset="heal" />{" "}
-              equal to your <ToolTip preset="shakenVal" />. At the end of your
-              adventures, you fully ascend to your throne and begin a long and
-              prosperous rule over your domain. Your renown guarantees
-              prosperity for your people for decades to come. Your descendants
-              will one day earn your throne and cement your legacy as one of the
-              greatest sovereigns in history.
+              , when you are reduced to 0 hit points, you instead{" "}
+              <ToolTip preset="heal" /> equal to your{" "}
+              <ToolTip preset="shakenVal" />. At the end of your adventures, you
+              fully ascend to your throne and begin a long and prosperous rule
+              over your domain. Your renown guarantees prosperity for your
+              people for decades to come. Your descendants will one day earn
+              your throne and cement your legacy as one of the greatest
+              sovereigns in history.
             </p>
           </div>
         )}
@@ -1373,7 +1365,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Forbidden Knowledge (8th-Level Feature)</h4>
@@ -1461,7 +1453,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Void Body (8th-Level Feature)</h4>
@@ -1545,8 +1537,8 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you are vanquished, your body disappears into a psychic
-              explosion. Make an{" "}
+              , when you are reduced to 0 hit points, your body disappears into
+              a psychic explosion. Make an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -1577,7 +1569,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Nature Power (8th-Level Feature)</h4>
@@ -1634,7 +1626,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Divine Power (8th-Level Feature)</h4>
@@ -1692,7 +1684,7 @@ function LegendaryArchetypes() {
                   Target can end all negative conditions affecting them, and if
                   they’re{" "}
                   <Link className="internal-link" to="/rules/combat#dying">
-                    dying
+                    unconscious
                   </Link>
                   , then they <ToolTip preset="heal" /> equal to your
                   proficiency bonus.
@@ -1721,7 +1713,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +8, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Timeless Knowledge (8th-Level Feature)</h4>
@@ -1763,10 +1755,10 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you are vanquished, reality rewinds. You defeat is reversed
-              and you <ToolTip preset="heal" /> equal to your shaken value. If
-              you have used your fate dice in this scene, then you recover one
-              fate die.
+              , when you are reduced to 0 hit points, reality rewinds. You
+              defeat is reversed and you <ToolTip preset="heal" /> equal to your
+              shaken value. If you have used your fate dice in this scene, then
+              you recover one fate die.
             </p>
 
             <p>
@@ -1793,7 +1785,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +10, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Warden's Training (8th-Level Feature)</h4>
@@ -1842,10 +1834,10 @@ function LegendaryArchetypes() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , when you are vanquished, you continue to fight as a ghostly
-              projection for 1d4 rounds, ignoring all further damage and dealing
-              half damage with your abilities. At the end of the scene, your
-              body reforms with hit points equal to your{" "}
+              , when you are reduced to 0 hit points, you continue to fight as a
+              ghostly projection for 1d4 rounds, ignoring all further damage and
+              dealing half damage with your abilities. At the end of the scene,
+              your body reforms with hit points equal to your{" "}
               <ToolTip preset="shakenVal" />.
             </p>
             <p>

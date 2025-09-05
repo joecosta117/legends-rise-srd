@@ -64,7 +64,7 @@ function CombatRules() {
           <li>
             <a href="#dying">
               <span>
-                <b>Defeat and Dying</b>
+                <b>Death</b>
               </span>
             </a>
           </li>
@@ -684,15 +684,57 @@ function CombatRules() {
           defeated or dead.
         </p>
 
-        <h2 id="dying">Dying</h2>
+        <h2 id="dying">Death</h2>
         <p>
-          When your hit points equal 0, you are <b>dying</b>. While dying, you
-          are{" "}
+          When your hit points are reduced to 0, you risk dying and must make a
+          death action:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Defeat:</b> You fall unconscious and are{" "}
+              <Link className="internal-link" to="/conditions#prone">
+                prone
+              </Link>
+              . While unconscious, you can’t be targeted by an ability that
+              deals damage. Unless healed by another ability, you can only{" "}
+              <Link className="internal-link" to="/combat-abilities#rally">
+                rally
+              </Link>{" "}
+              once the scene is over and the danger has passed.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Gamble:</b> Make an overcome roll. On a success, you{" "}
+              <ToolTip preset="heal" /> equal to your shaken value as you stay
+              on your feet with a surge of power. On a failure, you fall
+              unconscious, can't take additional damage, and can't heal until
+              you take a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                safe rest
+              </Link>{" "}
+              as you sustain massive injuries, enter a coma, or are cursed.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Sacrifice:</b> You sacrifice your life to take a heroic last
+              stand. You immediately take a turn even if you already went this
+              round. If you use any ability that requires a roll, you
+              automatically get a critical success. After your turn is over, you
+              die.
+            </span>
+          </li>
+        </ul>
+        {/* <p>
+          While dying, you are{" "}
           <Link className="internal-link" to="/conditions#hindered">
             hindered
           </Link>
           . You are no longer dying if you <ToolTip preset="heal" />.
         </p>
+
         <h3 className="header">Wounds</h3>
         <p>
           At the end of your turn while dying, make an overcome roll to see if
@@ -733,13 +775,12 @@ function CombatRules() {
               a critical success. After your last stand is over, you die.
             </span>
           </li>
-        </ul>
-        <h3 className="header">NPC Defeat</h3>
+        </ul> */}
+        <h3 className="header">NPC Death</h3>
         <p>
           When an enemy drops to 0 hit points, typically the enemy dies or is
-          knocked unconscious depending on the heroes' choice. However, for
-          special villains or important NPCs, the GM can decide for them to
-          follow the same rules as heroes.
+          knocked unconscious depending on the heroes' choice. For special
+          villains, you might have them make a dramatic escape instead of dying.
         </p>
 
         <h2 id="overcome">Overcome Rolls</h2>
@@ -949,13 +990,8 @@ function CombatRules() {
         <p>
           A creature can hold their breath for a number of rounds equal to
           double their tier. When a creature runs out of breath, the creature
-          drops to 0 hit points at the start of their next turn and begins
-          drowning. While drowning, a creature automatically fails{" "}
-          <Link className="internal-link" to="/rules/combat#dying">
-            dying
-          </Link>{" "}
-          overcome rolls to avoid getting wounds. The creature can’t{" "}
-          <ToolTip preset="heal" /> until they can breath again.
+          drops to 0 hit points at the start of their next turn. The creature
+          can’t <ToolTip preset="heal" /> until they can breath again.
         </p>
       </div>
     </div>

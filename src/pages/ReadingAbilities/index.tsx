@@ -78,7 +78,7 @@ function ReadingAbilities() {
               person using this ability up to a certain range. When the user of
               this ability is{" "}
               <Link className="internal-link" to="/rules/combat#dying">
-                defeated
+                unconscious
               </Link>{" "}
               or killed, the ability ends, unless otherwise specified by the
               ability’s duration.
@@ -157,12 +157,12 @@ function ReadingAbilities() {
               </li>
               <li>
                 <span>
-                  Once the creature starts{" "}
+                  Once the creature is{" "}
                   <Link className="internal-link" to="/rules/combat#dying">
-                    dying
-                  </Link>
-                  , they revert back to their original form and the ability
-                  ends.
+                    unconscious
+                  </Link>{" "}
+                  or killed, they revert back to their original form and the
+                  ability ends.
                 </span>
               </li>
             </ul>

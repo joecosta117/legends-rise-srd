@@ -916,7 +916,18 @@ function FightingStyles() {
                 descriptor="You soothe a hurt friend."
                 target="1 damaged ally within your zone"
                 frequency="At-will"
-                effect="Ally gains 2 temporary hit point per your tier (scene ends)"
+                effect={
+                  <span>
+                    Ally gains 2{" "}
+                    <Link
+                      className="internal-link"
+                      to="/rules/combat#temporary-hit-points"
+                    >
+                      temporary hit points
+                    </Link>{" "}
+                    per your tier (scene ends)
+                  </span>
+                }
               />
               <AbilityCard
                 name="Doctor's Visit"
@@ -949,7 +960,7 @@ function FightingStyles() {
                 trigger={
                   <span>
                     You see an ally with your zone <ToolTip preset="heal" /> or
-                    make an{" "}
+                    makes an{" "}
                     <Link className="internal-link" to="/rules/combat#overcome">
                       overcome roll
                     </Link>
@@ -986,7 +997,7 @@ function FightingStyles() {
                   <span>
                     1{" "}
                     <Link className="internal-link" to="/rules/combat#dying">
-                      dying
+                      unconscious
                     </Link>{" "}
                     creature you can touch
                   </span>

@@ -271,14 +271,6 @@ function Adventuring() {
             </span>
           </li>
           <li>
-            <span>
-              Remove all{" "}
-              <Link className="internal-link" to="/rules/combat#dying">
-                wounds
-              </Link>
-            </span>
-          </li>
-          <li>
             <span>Regain expended recoveries</span>
           </li>
           <li>

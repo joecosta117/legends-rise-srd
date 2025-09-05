@@ -89,7 +89,7 @@ function Paladin() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 12
+                  <b>Starting Hit Points:</b> 16
                 </span>
               </li>
               <li>

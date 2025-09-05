@@ -91,8 +91,8 @@ function HomePage() {
               content="Doing the same thing every turn gets boring fast. When martial heroes in Legends Rise attack, they choose from different weapon techniques. Do you ground slam, juggernaut's charge, or cleave? Outside of combat, martial heroes gain powerful narrative abilities such as breaking buildings with a punch or become permamently invisible."
             />
             <Accordion
-              title="No Wasted Turns"
-              content="What's worse, waiting for your turn only to whiff your attack or hitting your attack only to roll poorly on damage? Both suck! In Legends Rise, you deal some damage on a glancing blow. How well your attack roll goes then determines how hard you hit with only truly bad rolls missing entirely."
+              title="One Roll Attacks"
+              content="In Legends Rise, every attack is fast, impactful, and intuitive as just one roll decides both your accuracy and your damage. No more clunky “hit, but deal 2 damage” moments or wasting turns with total whiffs; even a partial success still leaves a mark. High rolls feel truly rewarding because the better you strike, the harder you hit, keeping combat both exciting and streamlined."
             />
             <Accordion
               title="Exciting Narrative Rules"

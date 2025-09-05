@@ -309,15 +309,16 @@ function OptionalRules() {
         <p>
           For darker and dangerous campaigns, along with the doom die,{" "}
           <b>scars</b> captures the trauma of heroic adventures from too many
-          near death experiences. When a hero becomes{" "}
+          near death experiences. When a hero goes unconscious from the{" "}
           <Link className="internal-link" to="/rules/combat#dying">
-            vanquished
+            death actions
           </Link>{" "}
           or is brought back to life, they gain a scar. Scars are permament
           representations of the hero's trauma, and they can be physical or
-          mental. When a hero gains 3 scars, their journey ends, and their fate
-          determined by their player. The hero can still be played as an NPC,
-          but the player must create a new hero to play.
+          mental. When a hero gains scars equal to their recoveries, their
+          journey ends, and their fate is determined by their player. The hero
+          can still be played as an NPC, but the player must create a new hero
+          to play.
         </p>
         <p>
           In certain campaign settings, scars can represent dark corruption that

@@ -1035,8 +1035,12 @@ const ConstructMonsters = [
             ),
             defense: "Spirit",
             damage: "15 arcane damage",
-            effect:
-              "Any creature reduced to 0 hit points from this damage is immediately defeated.",
+            effect: (
+              <span>
+                If a <ToolTip preset="shaken" /> target takes this damage, then
+                they are instead reduced to 0 hit points.
+              </span>
+            ),
           },
         ]}
         maneuvers={[

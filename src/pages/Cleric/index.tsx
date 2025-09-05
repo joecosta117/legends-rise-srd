@@ -112,7 +112,7 @@ function Cleric() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 8
+                  <b>Starting Hit Points:</b> 12
                 </span>
               </li>
               <li>
@@ -339,7 +339,7 @@ function Cleric() {
             <ul>
               <li>
                 <span>
-                  Your starting hit points increase to 10, and your recoveries
+                  Your starting hit points increase to 14, and your recoveries
                   increase to 7.
                 </span>
               </li>
