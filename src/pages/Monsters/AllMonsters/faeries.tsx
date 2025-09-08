@@ -72,7 +72,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Dazzling Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "3 psychic damage",
@@ -175,7 +175,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Dazzling Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -213,7 +213,7 @@ const FaerieMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -262,7 +262,7 @@ const FaerieMonsters = [
           {
             name: "Faerie Temptations",
             round: "5",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             critical:
@@ -372,7 +372,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Dazzling Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -410,7 +410,7 @@ const FaerieMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -460,7 +460,7 @@ const FaerieMonsters = [
           {
             name: "Faerie Temptations",
             round: "5",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             critical:
@@ -850,7 +850,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Sleepy Curse",
-            keywords: "magical, range, recharge",
+            keywords: "magical, range, powerful, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "7 psychic damage",
@@ -884,7 +884,7 @@ const FaerieMonsters = [
           {
             name: "Cursed Vines",
             round: "1",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "5 physical damage",
@@ -900,7 +900,7 @@ const FaerieMonsters = [
           {
             name: "Corrupting Betrayal",
             round: "3",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "1 creature within 3 zones",
             damage: "7 psychic damage",
             success: (
@@ -921,7 +921,7 @@ const FaerieMonsters = [
           {
             name: "Exhale Toxic Fumes",
             round: "5",
-            keywords: "magical",
+            keywords: "magical, powerful",
             target: "All enemies within the hag's zone",
             defense: "Guard",
             damage: "5 toxic damage",
@@ -1149,7 +1149,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Freezing Blast",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "8 cold damage",

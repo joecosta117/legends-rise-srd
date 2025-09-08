@@ -472,7 +472,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Necrotic Blast",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
             damage: "4 necrotic damage",
@@ -565,7 +565,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Banshee's Wail",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: "All living enemies within the banshee's zone",
             defense: "Spirit",
             damage: "3 necrotic damage",
@@ -775,7 +775,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Possession",
-            keywords: "magical, melee, recharge",
+            keywords: "magical, range, recharge",
             target: "1 creature within 3 zones",
             defense: "Spirit",
             partial:
@@ -807,7 +807,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Telekinetic Storm",
-            keywords: "magical",
+            keywords: "magical, powerful",
             target: "All enemies within the poltergeist's turn",
             defense: "Guard",
             damage: "5 physical damage",
@@ -823,7 +823,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Terrifying Scream",
-            keywords: "magical",
+            keywords: "magical, powerful",
             target: "All enemies within the poltergeist's turn",
             defense: "Spirit",
             damage: "5 psychic damage",
@@ -920,7 +920,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Haunting Presence",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: <span>All enemies within the ghost's zone</span>,
             success: (
               <span>
@@ -1330,7 +1330,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Vampiric Domination",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             critical:
@@ -1563,7 +1563,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Defend your Ruler!",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: <span>All enemies within the royal mummy's zone</span>,
             defense: "Spirit",
             damage: "6 psychic damage",
@@ -1773,7 +1773,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Draining Breath",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "15 necrotic damage",
@@ -1825,7 +1825,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Roar of Doom",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             round: "1",
@@ -1860,7 +1860,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Your Souls Belong to Me",
-            keywords: "magical",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "15 necrotic damage",
@@ -1942,7 +1942,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Draining Breath",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "9 necrotic damage",
@@ -2056,7 +2056,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Finger of Death",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "12 necrotic damage",
@@ -2156,7 +2156,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Necrotic Wave",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "9 necrotic damage",
@@ -2275,7 +2275,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Die Mortal",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "21 necrotic damage",
@@ -2319,7 +2319,7 @@ const UndeadMonsters = [
             basic: false,
             round: "3",
             name: "Drain Life",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "15 necrotic damage",

@@ -464,7 +464,7 @@ const PlantMonsters = [
         bossActions={[
           {
             name: "Overgrowth",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             round: "1",
             target: "1 zone within 3 zones",
             duration: "Scene ends",
@@ -492,7 +492,7 @@ const PlantMonsters = [
           },
           {
             name: "You Serve Me Now",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             round: "5",
             target: "1 creature within 2 zones",
             defense: "Spirit",
@@ -956,7 +956,7 @@ const PlantMonsters = [
           {
             basic: false,
             name: "Vine Lash",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Guard",
             damage: "9 physical",

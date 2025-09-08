@@ -465,7 +465,8 @@ const ConstructMonsters = [
             effect: (
               <span>
                 The flesh golem charges forward at near super speed then uses
-                slam against the target. On a success or higher, the target is
+                slam against the target, and this ability gains the powerful
+                keyword for this use. On a success or higher, the target is
                 knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
@@ -491,7 +492,8 @@ const ConstructMonsters = [
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>{" "}
-                on a success or higher.
+                on a success or higher. Slam gains the powerful keyword for this
+                use.
               </span>
             ),
           },
@@ -608,7 +610,7 @@ const ConstructMonsters = [
           {
             basic: false,
             name: "Binding Stone",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
             defense: "Guard",
             critical: (
@@ -847,7 +849,7 @@ const ConstructMonsters = [
           {
             basic: false,
             name: "Poison Breath",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
             defense: "Guard",
             damage: "9 toxic damage",
@@ -1026,7 +1028,7 @@ const ConstructMonsters = [
           {
             basic: false,
             name: "Hyper Beam",
-            keywords: "magical, range, recharge",
+            keywords: "magical, range, powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the clockwork colossus's zone and an
@@ -1065,6 +1067,7 @@ const ConstructMonsters = [
             round: "1",
             target: <span>All enemies</span>,
             defense: "Spirit",
+            keywords: "magical, powerful, range",
             damage: "15 arcane damage",
             success: (
               <span>
@@ -1090,6 +1093,7 @@ const ConstructMonsters = [
             round: "5",
             target: <span>All other creatures</span>,
             defense: "Spirit",
+            keywords: "magical, powerful, range",
             damage: "15 arcane damage",
             success: (
               <span>

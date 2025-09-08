@@ -365,7 +365,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Arcane Burst",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "4 arcane damage",
@@ -1144,7 +1144,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Elemental Burst",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "3 damage of the chosen element damage type",
@@ -1520,7 +1520,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Arcane Burst",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "8 arcane damage",
@@ -1576,7 +1576,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Profane Flames",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "6 unholy damage",
@@ -2057,7 +2057,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Withering Blast",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "6 necrotic damage",
@@ -2474,7 +2474,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Weapon Storm",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: "All enemies within the master spellsword's zone",
             defense: "Guard",
             damage: "6 physical damage",
@@ -2559,7 +2559,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Arcane Burst",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "12 arcane damage",
@@ -2624,7 +2624,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Profane Flames",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "9 unholy damage",
@@ -2905,7 +2905,7 @@ const HumanoidMonsters = [
           {
             basic: false,
             name: "Withering Blast",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "9 necrotic damage",

@@ -178,7 +178,7 @@ function Paladin() {
               actType="Action"
               descriptor="You channel the powers of the divine into your attack."
               frequency="Encounter"
-              keywords="Escalation, Magical"
+              keywords="Escalation, Magical, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">

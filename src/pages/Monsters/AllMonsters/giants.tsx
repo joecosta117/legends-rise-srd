@@ -504,7 +504,7 @@ const GiantMonsters = [
           {
             basic: false,
             name: "Demonic Chill",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: <span>1d4+1 enemies within the oni's zone</span>,
             defense: "Guard",
             damage: "5 cold damage",
@@ -538,7 +538,7 @@ const GiantMonsters = [
           {
             name: "Fear My Power",
             round: "1",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             critical: (
@@ -564,7 +564,7 @@ const GiantMonsters = [
           {
             name: "Demonic Control",
             round: "3",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: <span>1 creature within 2 zones</span>,
             defense: "Spirit",
             critical: (
@@ -1172,7 +1172,7 @@ const GiantMonsters = [
           {
             basic: false,
             name: "Ice Breath",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             target: <span>1d4+1 enemies within the giant's zone</span>,
             defense: "Guard",
             damage: "6 cold damage",
@@ -1264,7 +1264,7 @@ const GiantMonsters = [
           {
             basic: false,
             name: "Winter's Chill",
-            keywords: "magical, range, recharge",
+            keywords: "magical, range, powerful, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "6 cold damage",

@@ -703,7 +703,7 @@ function Relics() {
               name="Energy Burst"
               actType="Action"
               descriptor="You unleash an explosion of elemental power from your weapon."
-              keywords="Escalation, Magic"
+              keywords="Escalation, Magical, Powerful"
               target="1d4+1 enemies within your zone"
               defense="Special"
               damage="3 damage per your tier. The damage type matches the weapon’s chosen damage type. The targeted defense is Guard (natural damage types) or Spirit (mystical damage types)."

@@ -60,7 +60,7 @@ const DragonMonsters = [
           {
             basic: true,
             name: "Breath Weapon",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>1d4+1 enemies within the dragon hatchling's zone</span>
             ),
@@ -360,7 +360,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Volcanic Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Guard",
             damage: "3 fire damage",
@@ -453,7 +453,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Volcanic Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and one adjacent zone
@@ -494,7 +494,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -520,7 +520,7 @@ const DragonMonsters = [
           {
             name: "Volcanic Quake",
             round: "3",
-            keywords: "range",
+            keywords: "powerful, range",
             target: (
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
@@ -621,7 +621,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Volcanic Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and one adjacent zone
@@ -671,7 +671,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -698,7 +698,7 @@ const DragonMonsters = [
           {
             name: "Volcanic Quake",
             round: "3",
-            keywords: "range",
+            keywords: "powerful, range",
             target: (
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
@@ -796,7 +796,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Glacial Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Guard",
             damage: "3 cold damage",
@@ -881,7 +881,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Glacial Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -911,7 +911,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -937,7 +937,7 @@ const DragonMonsters = [
           {
             name: "Chilling Winds",
             round: "3",
-            keywords: "range",
+            keywords: "powerful, range",
             target: (
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
@@ -956,7 +956,7 @@ const DragonMonsters = [
             name: "Furious Thrash",
             round: "5",
             effect:
-              "The dragon uses rend against each creature within their zone",
+              "The dragon uses rend against each creature within their zone, and this ability gains the powerful keyword for this use.",
           },
         ]}
       />
@@ -1030,7 +1030,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Glacial Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -1069,7 +1069,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1096,7 +1096,7 @@ const DragonMonsters = [
           {
             name: "Chilling Winds",
             round: "3",
-            keywords: "range",
+            keywords: "powerful, range",
             target: (
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
@@ -1115,7 +1115,7 @@ const DragonMonsters = [
             name: "Furious Thrash",
             round: "5",
             effect:
-              "The dragon uses rend against each creature within their zone",
+              "The dragon uses rend against each creature within their zone, and this ability gains the powerful keyword for this use.",
           },
         ]}
       />
@@ -1194,7 +1194,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Lightning Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "4 lightning damage",
@@ -1294,7 +1294,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Lightning Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "12 lightning damage",
@@ -1304,7 +1304,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1352,7 +1352,7 @@ const DragonMonsters = [
           {
             name: "Thunder Cloud",
             round: "5",
-            keywords: "range",
+            keywords: "powerful, range",
             target: "All creatures in 2 zones within 3 zones",
             defense: "Guard",
             damage: "12 lightning damage",
@@ -1452,7 +1452,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Lightning Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: (
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
@@ -1472,7 +1472,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1521,7 +1521,7 @@ const DragonMonsters = [
           {
             name: "Thunder Cloud",
             round: "5",
-            keywords: "range",
+            keywords: "powerful, range",
             target: "All creatures in 3 zones within 3 zones",
             defense: "Guard",
             damage: "18 lightning damage",
@@ -1595,7 +1595,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Corrosive Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "3 toxic damage",
@@ -1686,7 +1686,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Corrosive Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "10 toxic damage",
@@ -1722,7 +1722,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1766,7 +1766,7 @@ const DragonMonsters = [
           {
             name: "Acid Rain",
             round: "5",
-            keywords: "range",
+            keywords: "powerful, range",
             target: "All creatures in 2 zones within 3 zones",
             defense: "Guard",
             damage: "8 toxic damage",
@@ -1867,7 +1867,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Corrosive Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: (
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
@@ -1905,7 +1905,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1950,7 +1950,7 @@ const DragonMonsters = [
           {
             name: "Acid Rain",
             round: "5",
-            keywords: "range",
+            keywords: "powerful, range",
             target: "All creatures in 3 zones within 3 zones",
             defense: "Guard",
             damage: "12 toxic damage",
@@ -2040,7 +2040,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Venemous Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Guard",
             damage: "3 toxic damage",
@@ -2144,7 +2144,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Venemous Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -2188,7 +2188,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2214,7 +2214,7 @@ const DragonMonsters = [
           {
             name: "Animated Vines",
             round: "3",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: <span>2 creatures within 3 zones</span>,
             defense: "Guard",
             partial: "seized (next turn ends)",
@@ -2334,7 +2334,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Venemous Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -2378,7 +2378,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2405,7 +2405,7 @@ const DragonMonsters = [
           {
             name: "Animated Vines",
             round: "3",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: <span>3 creatures within 3 zones</span>,
             defense: "Guard",
             partial: "seized (next turn ends)",
@@ -2534,7 +2534,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Hellfire Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "2 unholy damage",
@@ -2627,7 +2627,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Hellfire Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -2655,7 +2655,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2770,7 +2770,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Hellfire Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -2798,7 +2798,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2906,7 +2906,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Void Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "3 psychic damage",
@@ -3017,7 +3017,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Void Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -3061,7 +3061,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3106,7 +3106,7 @@ const DragonMonsters = [
           {
             name: "There is No Escaping the Void",
             round: "5",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "10 arcane damage",
@@ -3203,7 +3203,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Void Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -3247,7 +3247,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3293,7 +3293,7 @@ const DragonMonsters = [
           {
             name: "There is No Escaping the Void",
             round: "5",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "15 arcane damage",
@@ -3386,7 +3386,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Shadow Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "3 necrotic damage",
@@ -3500,7 +3500,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Shadow Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -3551,7 +3551,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3691,7 +3691,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Shadow Breath",
-            keywords: "range, recharge",
+            keywords: "powerful, range, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -3742,7 +3742,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (

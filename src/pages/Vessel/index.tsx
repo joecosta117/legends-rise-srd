@@ -676,7 +676,7 @@ function Vessel() {
               actType="Action"
               descriptor="You unleash a furious blow that could fell any foe."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">

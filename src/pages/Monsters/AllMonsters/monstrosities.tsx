@@ -236,7 +236,7 @@ const MonstrosityMonsters = [
           {
             name: "Spit Venom",
             target: "All creatures in 1 zone within 3 zones",
-            keywords: "range",
+            keywords: "powerful, range",
             round: "1",
             defense: "Guard",
             damage: "5 toxic damage",
@@ -437,7 +437,7 @@ const MonstrosityMonsters = [
           {
             basic: false,
             name: "Dragon Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies in the chimera's zone</span>,
             defense: "Guard",
             damage: "5 fire damage",
@@ -470,7 +470,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/combat-abilities#charge">
                   charge
                 </Link>{" "}
-                to use rend, but can{" "}
+                with the powerful keyword on the strike, but can{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}
@@ -484,7 +484,7 @@ const MonstrosityMonsters = [
           },
           {
             name: "Lion Roar",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             round: "3",
             defense: "Spirit",
             target: "All enemies within the chimera's zone",
@@ -502,7 +502,7 @@ const MonstrosityMonsters = [
             name: "Thrash",
             round: "5",
             effect:
-              "The chimera can move then uses rend against 1d4+1 creatures.",
+              "The chimera can move then uses rend against 1d4+1 creatures. Rend gains the powerful keyword for this use.",
           },
         ]}
       />
@@ -625,7 +625,7 @@ const MonstrosityMonsters = [
           {
             basic: false,
             name: "Griffon Shriek",
-            keywords: "range, recharge",
+            keywords: "powerful, recharge",
             target: <span>All enemies within the griffon's zone</span>,
             defense: "Spirit",
             critical: "hindered (overcome ends)",
@@ -804,7 +804,7 @@ const MonstrosityMonsters = [
           {
             name: "Hydra Roar",
             target: "All enemies",
-            keywords: "range",
+            keywords: "powerful, range",
             round: "1",
             defense: "Spirit",
             critical: "hindered (overcome ends)",
@@ -821,7 +821,8 @@ const MonstrosityMonsters = [
             name: "Frenzy",
             round: "3",
             target: "Each enemy within the hydra's zone",
-            effect: "Hydra uses bite against each target",
+            effect:
+              "Hydra uses bite against each target and bite gains the powerful keyword for this use.",
           },
           {
             name: "Hydra Rage",
@@ -1371,7 +1372,7 @@ const MonstrosityMonsters = [
           {
             name: "Primal Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>1d4+1 enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1561,7 +1562,7 @@ const MonstrosityMonsters = [
           {
             name: "Burrow Charge",
             target: "All creatures in 1 zone",
-            keywords: "range",
+            keywords: "powerful, range",
             round: "1",
             defense: "Guard",
             damage: "10 physical",
@@ -1583,7 +1584,7 @@ const MonstrosityMonsters = [
             name: "Thrash",
             round: "3",
             target: "Each other creature within 1 zone of the worm",
-            keywords: "range",
+            keywords: "powerful, range",
             defense: "Guard",
             damage: "10 physical",
           },
@@ -1591,6 +1592,7 @@ const MonstrosityMonsters = [
             name: "Tail Tremors",
             round: "5",
             duration: "Scene ends",
+            keywords: "powerful, range",
             target: "All creatures within within 1 zone of the cave worm",
             critical: "Same as success, and 6 physical damage",
             success: "prone",
@@ -1706,7 +1708,7 @@ const MonstrosityMonsters = [
           {
             name: "Time Dilation",
             target: "All creatures in 1 zone",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             round: "1",
             defense: "Spirit",
             damage: "10 arcane",
@@ -1973,7 +1975,7 @@ const MonstrosityMonsters = [
           {
             name: "Lightning Storm",
             target: "All creatures in 1 zone",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             round: "1",
             defense: "Guard",
             damage: "15 lightning",
@@ -2017,7 +2019,7 @@ const MonstrosityMonsters = [
           {
             name: "Psychic Scream",
             round: "5",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All enemies",
             damage: "15 psychic damage",
             success: (
@@ -2129,7 +2131,7 @@ const MonstrosityMonsters = [
           {
             basic: true,
             name: "Beam of Utter Destruction",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>3 connected zones within 5 zones</span>,
             defense: "Spirit",
             damage: "15 arcane damage",
@@ -2151,7 +2153,7 @@ const MonstrosityMonsters = [
           {
             name: "World Ending Roar",
             target: "All enemies",
-            keywords: "range",
+            keywords: "powerful, range",
             round: "1",
             defense: "Spirit",
             critical: (
@@ -2178,6 +2180,7 @@ const MonstrosityMonsters = [
             round: "3",
             target: "All other creatues within 1 zone of the terror that walks",
             defense: "Guard",
+            keywords: "powerful, range",
             damage: "15 physical",
             success: (
               <span>
@@ -2300,7 +2303,7 @@ const MonstrosityMonsters = [
           {
             basic: false,
             name: "Mental Overload",
-            keywords: "magical, range, recharge",
+            keywords: "magical, powerful, range, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "9 psychic damage",

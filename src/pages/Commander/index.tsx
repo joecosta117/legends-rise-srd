@@ -174,7 +174,7 @@ function Commander() {
               actType="Action"
               descriptor="With a rallying strike, you inspire your comrade’s resolve and encourage them to regain their stamina."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">

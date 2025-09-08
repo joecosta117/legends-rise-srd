@@ -324,7 +324,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="Your surprise attack leaves your foe bleeding if not dead."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">
@@ -435,7 +435,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="You fire off multiple arrows at once."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">
@@ -529,7 +529,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="With a hard hitting punch or kick, you knock your foe so hard they can barely move in pain."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effectTiers
               effect={
                 <span>
@@ -916,7 +916,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="You exhale elemental energy like a dragon."
               frequency="Encounter"
-              keywords="Escalation, Magical, Range"
+              keywords="Escalation, Magical, Powerful, Range"
               target="1d4+1 enemies within your zone and an adjacent zone"
               defense="Guard"
               damage="3 damage per tier of the damage type chosen by draconic power"
@@ -1097,7 +1097,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="In a flurry of steel and movement, you strike at each nearby foe as you dodge any reprisal."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               target="All enemies in your zone"
               requirement="You’re wielding a weapon in each hand"
               effect={
@@ -1553,7 +1553,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="With a vicious cut, you aim for a foe’s eyes."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">
@@ -1945,7 +1945,7 @@ function HeroicArchetypes() {
               actType="Maneuver"
               descriptor="With a defiant roar, you goad all your foes to focus their ire on you."
               frequency="Encounter"
-              keywords="Range"
+              keywords="Powerful, Range"
               target="Each enemy of your choice within 1 zone"
               defense="Spirit"
               success={
@@ -2352,7 +2352,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="With near supernatural speed, you attack twice as you dart across the battlefield."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">
@@ -2604,7 +2604,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="You throw a projectile that slashes through multiple targets before returning back to you."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               target="1d4+1 enemies within 1 zone"
               effect="Strike each target with a thrown ranged weapon"
             />
@@ -2773,7 +2773,7 @@ function HeroicArchetypes() {
               actType="Action"
               descriptor="With a heavy swing, you knock your foe back and cause a large ripple to nearby foes."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">

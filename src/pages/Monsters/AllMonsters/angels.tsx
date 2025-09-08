@@ -247,7 +247,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Holyfire Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "2 holy damage",
@@ -350,7 +350,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Holyfire Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -379,7 +379,7 @@ const AngelMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -405,7 +405,7 @@ const AngelMonsters = [
           {
             name: "Condemning Flames",
             round: "3",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All creatures in 1 zone within 3 zones",
             damage: "10 holy damage",
             defense: "Spirit",
@@ -528,7 +528,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Holyfire Breath",
-            keywords: "recharge",
+            keywords: "powerful, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -557,7 +557,7 @@ const AngelMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "range",
+            keywords: "powerful, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -584,7 +584,7 @@ const AngelMonsters = [
           {
             name: "Condemning Flames",
             round: "3",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
             damage: "16 holy damage",
@@ -1045,7 +1045,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Banishing Smite",
-            keywords: "magical, recharge",
+            keywords: "magical, powerful, recharge",
             effect: (
               <span>
                 Archangel uses holy blade, but deals 9 additional damage, and on
@@ -1084,7 +1084,7 @@ const AngelMonsters = [
           {
             name: "Cleansing Flames",
             round: "3",
-            keywords: "magical",
+            keywords: "magical, powerful",
             defense: "Spirit",
             target: "All enemies in the archangel's zone",
             damage: "16 holy damage",
@@ -1098,7 +1098,7 @@ const AngelMonsters = [
           {
             name: "Seals of Condemnation",
             round: "5",
-            keywords: "magical, range",
+            keywords: "magical, powerful, range",
             target: "3 zones within 5 zones",
             defense: "Spirit",
             damage: "16 holy damage",

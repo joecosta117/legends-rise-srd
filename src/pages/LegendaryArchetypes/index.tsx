@@ -705,7 +705,7 @@ function LegendaryArchetypes() {
               actType="Action"
               descriptor="Elemental energy explodes from your form in a devastating display of primordial power."
               frequency="Encounter"
-              keywords="Escalation, Magical, Range"
+              keywords="Escalation, Magical, Powerful, Range"
               target="All enemies within 1 zone"
               defense="Guard"
               damage="3 damage per your tier. The damage type and success effect matches your elemental realm: cold (ice), fire (fire), lightning (air), or physical (earth, water)"
@@ -1085,7 +1085,7 @@ function LegendaryArchetypes() {
               actType="Action"
               descriptor="You attempt to fell a mighty foe with a single strike."
               frequency="Encounter"
-              keywords="Escalation"
+              keywords="Escalation, Powerful"
               effect={<span>Strike and you deal double damage</span>}
             />
 

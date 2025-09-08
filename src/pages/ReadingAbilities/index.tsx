@@ -114,6 +114,14 @@ function ReadingAbilities() {
           </li>
           <li>
             <span>
+              <b>Powerful:</b> When you make an attack roll with this ability,
+              treat a failure as a partial success. If this ability also has the
+              escalation keyword and is used on round 3 or later, a failure is
+              instead treated as a success.
+            </span>
+          </li>
+          <li>
+            <span>
               <b>Range:</b> The ability can be used at a far range, such as
               shooting a ray of magic across the battlefield.
             </span>
