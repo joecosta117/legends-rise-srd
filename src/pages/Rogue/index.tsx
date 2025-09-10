@@ -232,7 +232,7 @@ function Rogue() {
               name="Shadow Leap"
               actType="Maneuver"
               descriptor="You teleport through the darkness."
-              target="area in darkness within 1 zone per tier, including another creature’s shadow"
+              target="area in darkness within 1 zone, including another creature’s shadow"
               frequency="At-will"
               effect={
                 <span>
