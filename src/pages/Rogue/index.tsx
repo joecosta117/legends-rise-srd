@@ -206,13 +206,17 @@ function Rogue() {
 
             <h2>3rd Level Features</h2>
             <p>You gain the following features at 3rd level.</p>
-            <h3 className="header">Agile</h3>
+            <h3 className="header">Slippery</h3>
             <p>
-              You ignore any effects from a failure or partial success{" "}
+              When a creature gets a failure on an{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              against your Guard.
+              against you, you can{" "}
+              <Link className="internal-link" to="/combat-abilities#move">
+                move
+              </Link>{" "}
+              as a free action.
             </p>
           </div>
         )}
@@ -453,15 +457,6 @@ function Rogue() {
               (next turn ends) or until you use a hostile ability.
             </p>
 
-            <h3 className="header">Slippery Mind</h3>
-            <p>
-              You ignore any effects from a failure or partial success{" "}
-              <Link className="internal-link" to="/rules/combat#attack-roll">
-                attack roll
-              </Link>{" "}
-              against your Spirit.
-            </p>
-
             <h3 className="header">Start with Style</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> swashbuckler subclass
@@ -473,6 +468,15 @@ function Rogue() {
                 momentum die
               </Link>{" "}
               .
+            </p>
+
+            <h3 className="header">Vanish</h3>
+            <p>
+              For your slippery feature, you can{" "}
+              <Link className="internal-link" to="/combat-abilities#hide">
+                hide
+              </Link>{" "}
+              after you move as part of the same free action.
             </p>
 
             <h2>Tier 3 Class Talents</h2>
