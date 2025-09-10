@@ -208,7 +208,7 @@ function Rogue() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Agile</h3>
             <p>
-              You ignore any effects from a partial success{" "}
+              You ignore any effects from a failure or partial success{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
@@ -455,7 +455,7 @@ function Rogue() {
 
             <h3 className="header">Slippery Mind</h3>
             <p>
-              You ignore any effects from a partial success{" "}
+              You ignore any effects from a failure or partial success{" "}
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
