@@ -3137,7 +3137,7 @@ export const lifeSpells = [
       spell: (
         <AbilityCard
           accordion
-          descriptor="You infuse a creature with life from your touch."
+          descriptor="You infuse a nearby creature with life."
           frequency="Spell 0 (Life)"
           target="1 creature within your zone"
           keywords="Magical"
