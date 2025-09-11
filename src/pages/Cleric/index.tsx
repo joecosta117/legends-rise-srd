@@ -303,7 +303,7 @@ function Cleric() {
             <p>You gain the following features at 3rd level.</p>
             <h3 className="header">Opening Prayer</h3>
             <p>
-              At the start of combat, choose one creature to gain{" "}
+              At the start of an encounter, choose one creature to gain{" "}
               <b>
                 +1 <img className="icon" src={fortune} alt="fortune icon" />
               </b>{" "}
