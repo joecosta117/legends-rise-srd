@@ -451,7 +451,7 @@ function Ancestries() {
                 actType="Action"
                 descriptor="You bite down on a living foe, draining their blood, and gaining a surge of vitality."
                 frequency="Encounter"
-                keywords="Escalation, Melee, Powerful"
+                keywords="Escalation, Melee"
                 target={
                   <span>
                     1 living{" "}
@@ -525,7 +525,7 @@ function Ancestries() {
                 actType="Action"
                 descriptor="Like a dragon, you exhale elemental energy at your foes."
                 frequency="Encounter"
-                keywords="Escalation, Powerful"
+                keywords="Escalation"
                 target="1d4+1 enemies in your zone"
                 defense="Guard"
                 damage="3 damage per your tier of the damage type chosen for draconic heritage"
@@ -1021,7 +1021,7 @@ function Ancestries() {
                 actType="Maneuver"
                 descriptor="With a loud yip from such a small frame, you momentarily catch your foes’ bewildered attention."
                 frequency="Encounter"
-                keywords="Powerful"
+                keywords="Escalation"
                 target="1d4+1 enemies within your zone"
                 defense="Spirit"
                 critical={

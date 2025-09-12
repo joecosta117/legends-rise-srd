@@ -78,7 +78,7 @@ function Adventuring() {
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
-          to see how best you can slow your descent, with the skill tier
+          to see how best you can slow your descent, with the skill difficulty
           depending on the severity of the fall as determined by the GM. Falling
           from a second floor building would be skill tier 1, while falling from
           the clouds is skill tier 3.
@@ -86,28 +86,18 @@ function Adventuring() {
         <ul>
           <li>
             <span>
-              <b>Critical Success:</b> You take no damage.
+              <b>Success:</b> You take no damage.
             </span>
           </li>
           <li>
             <span>
-              <b>Success:</b> You take half damage.
+              <b>Partial Success:</b> You take half damage.
             </span>
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> You take full damage.
+              <b>Failure:</b> You take full damage.
             </span>
-          </li>
-          <li>
-            <span>
-              <b>Failure:</b>
-            </span>{" "}
-            You take full damage and fall{" "}
-            <Link className="internal-link" to="/conditions#prone">
-              prone
-            </Link>
-            .
           </li>
         </ul>
         <h4 className="header">Crashing Into Creatures</h4>
@@ -238,20 +228,20 @@ function Adventuring() {
         <ul>
           <li>
             <span>
-              <b>Friendly:</b> The NPC trusts you, and you gain{" "}
-              <Modifier type="f" count="1" /> on skill rolls with them.
+              <b>Friendly:</b> The NPC trusts you, and any skill rolls use easy
+              difficulty.
             </span>
           </li>
           <li>
             <span>
-              <b>Neutral:</b> The NPC neither trusts nor mistrusts you, and
-              there is no modification to any skill roll.
+              <b>Neutral:</b> The NPC neither trusts nor mistrusts you, and any
+              skill rolls use normal difficulty.
             </span>
           </li>
           <li>
             <span>
-              <b>Hostile:</b> The NPC mistrusts you, and you take{" "}
-              <Modifier type="mf" count="1" /> on skill rolls with them.
+              <b>Hostile:</b> The NPC mistrusts you, and any skill rolls use
+              hard difficulty.
             </span>
           </li>
         </ul>

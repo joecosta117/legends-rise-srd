@@ -342,7 +342,7 @@ function LegendaryArchetypes() {
               frequency="Encounter"
               keywords="Magical"
               trigger="You see the result of your roll"
-              effect="Treat the triggering result as one degree of success higher"
+              effect="Treat the triggering result as one roll result higher"
             />
             <h4 className="header">Miracle (10th-Level Feature)</h4>
             <p>
@@ -705,7 +705,7 @@ function LegendaryArchetypes() {
               actType="Action"
               descriptor="Elemental energy explodes from your form in a devastating display of primordial power."
               frequency="Encounter"
-              keywords="Escalation, Magical, Powerful, Range"
+              keywords="Escalation, Magical, Range"
               target="All enemies within 1 zone"
               defense="Guard"
               damage="3 damage per your tier. The damage type and success effect matches your elemental realm: cold (ice), fire (fire), lightning (air), or physical (earth, water)"
@@ -1085,7 +1085,7 @@ function LegendaryArchetypes() {
               actType="Action"
               descriptor="You attempt to fell a mighty foe with a single strike."
               frequency="Encounter"
-              keywords="Escalation, Powerful"
+              keywords="Escalation"
               effect={<span>Strike and you deal double damage</span>}
             />
 

@@ -15,7 +15,7 @@ function RollingRules() {
         <p>
           Do you hit the demon with your blade or shoot the ogre with fiery
           magic? Can you sneak past the guards? In this game, most rolls rely on
-          a 20-sided die, a d20, to determine the degrees of success or failure.
+          a 20-sided die, a d20, to determine the roll result.
         </p>
         <h2>Table of Contents</h2>
         <ul style={{ marginTop: "0" }}>
@@ -37,13 +37,6 @@ function RollingRules() {
             <a href="#hero-point">
               <span>
                 <b>Hero Points</b>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="#different-tiers">
-              <span>
-                <b>Different Tiers</b>
               </span>
             </a>
           </li>
@@ -216,13 +209,16 @@ function RollingRules() {
                 </Link>
                 :
               </b>{" "}
-              The TN is always 15.
+              The TN is always 12.
             </span>
           </li>
         </ul>
 
-        <h3 className="header">Degrees of Success</h3>
+        <h3 className="header">Roll Results</h3>
         <p>
+          Each type of roll has a number of different <b>roll results</b> that
+          determine how well you succeed or fail. Most abilities have different
+          effects depending the roll result.{" "}
           <Link className="internal-link" to="/rules/combat#attack-roll">
             Attack rolls
           </Link>{" "}
@@ -230,9 +226,11 @@ function RollingRules() {
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
-          have four possible results, or <b>degrees of success</b> for each roll
-          depending on the total. Most abilities have different effects
-          depending the degree of success.
+          have three possible roll results, while{" "}
+          <Link className="internal-link" to="/rules/combat#overcome">
+            overcome Rolls
+          </Link>{" "}
+          only have two possible results.
         </p>
         {/* <ul style={{ marginBottom: "0" }}>
           <li>
@@ -262,34 +260,7 @@ function RollingRules() {
           A quick way to remember this: start at the TN and check in steps of 5:
           every ±5 points moves you up or down one degree.
         </p> */}
-        <ul>
-          <li>
-            <span>
-              <b>Critical Success:</b> Your total meets or exceeds the TN by 5
-              or more.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Success:</b> Your total meets or exceeds the TN.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Partial Success:</b> Your total is less than the TN.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Failure:</b>
-            </span>{" "}
-            Your total is less than the TN by 5 or more.
-          </li>
-        </ul>
-        <h4 className="header">Overcome Rolls</h4>
-        <p>
-          Overcome rolls only have two possible results: failure or success.
-        </p>
+
         <h4 className="header">Examples</h4>
         <p>
           Natalia the rogue slashes at a fiend. She makes her attack roll by
@@ -299,10 +270,8 @@ function RollingRules() {
         </p>
         <p>
           However, her ally, Elrin the arcanist isn’t as lucky. Elrin makes an
-          attack roll to shoot a bolt of magic at the same fiend, but gets a 8
-          for his total. His total is less than the fiend’s 12 Guard, but only 4
-          below the TN so Elrin gets a partial success. If his total instead was
-          a 7, then his result would be 5 below than the TN and would instead be
+          attack roll to shoot a bolt of magic at the same fiend. He gets a 8
+          for his total, which is less than the fiend's 12 Guard, so Elrin gets
           a failure.
         </p>
 
@@ -337,57 +306,6 @@ function RollingRules() {
           normally let you bring others along with you. The GM asks Dash to
           spend a hero point for Dash to teleport both them and their friend to
           safety.
-        </p>
-
-        <h2 id="different-tiers">Different Tiers</h2>
-        <p>
-          Sometimes heroes face threats far below them or beyond them. The
-          degree of success of a roll can be affected by the tier of the
-          challenge relative to the roller’s tier.
-        </p>
-        <p>
-          For{" "}
-          <Link className="internal-link" to="/rules/skills">
-            skill rolls
-          </Link>
-          , the GM sets the skill tier of the task, and in combat encounters,
-          the tier matches the enemy’s tier. If you make a roll against a
-          challenge who’s tier is higher than yours, then decrease the degree of
-          success on the roll for each tier difference. However, if the
-          challenge’s tier is lower than yours, then increase the degree of
-          success on the roll for each tier difference.
-        </p>
-        <p>
-          For example, a tier 1 hero gets a 16 on their skill roll to deceive an
-          archangel, which is normally a success. However, the GM assigned this
-          situation a skill tier of 3, which is higher than the hero’s tier by
-          two. That drops the hero’s success to a failure!
-        </p>
-        {/* <h3 className="header">Attack Rolls</h3>
-        <p>
-          If a difference in tiers downgrades an{" "}
-          <Link className="internal-link" to="/rules/combat#attack-roll">
-            attack roll
-          </Link>
-          's result to a failure, then no effect or damage occurs even if it
-          normallly would. For example, a tier 1 carrion demon attacks a tier 2
-          rogue, and gets a partial success on their claw attack roll. Since the
-          rogue is one tier higher, the carrion demon downgrades their attack
-          roll result to a failure. Normally, a failed attack roll still deals
-          half damage, but in this case, the carrion demon deals no damage!
-        </p> */}
-
-        <h3 className="header">Overcome Rolls</h3>
-        <p>
-          Unlike attack rolls or skill rolls, overcome rolls are binary. If a
-          creature makes an overcome roll against an effect, check the effect’s
-          tier in relation to the creature’s tier. The effect’s tier can be the
-          origin’s tier, such as the tier of whoever imposed the effect on the
-          creature. If you make an overcome roll against an effect with a higher
-          tier than your tier, you take <Modifier type="mf" count="1" /> to your
-          roll for each tier difference. However, if you make an overcome roll
-          against an effect with a lower tier than your tier, you gain{" "}
-          <Modifier type="f" count="1" /> to your roll for each tier difference.
         </p>
       </div>
     </div>

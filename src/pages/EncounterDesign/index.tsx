@@ -294,15 +294,17 @@ function EncounterDesign() {
         <p>
           Major monsters and hazards are stronger than standard threats, but
           weaker than bosses. Major threats always get two turns per round, but
-          can't take these turns in a row.
+          can't take these turns in a row. On attack rolls, they deal half
+          damage even on a failure.
         </p>
         <h4 className="header">Boss Threats</h4>
         <b className="encounter-content__subtitle">6 Adversaries</b>
         <p>
           Boss threats are the strongest monster heroes can face. Only monsters
           can be bosses. Like major monsters, boss monsters get two turns per
-          round, but can't take these turns in a row. Boss monsters are meant to
-          be a hard encounter for a group of heroes.
+          round, but can't take these turns in a row. On attack rolls, they deal
+          half damage even on a failure. Boss monsters are meant to be a hard
+          encounter for a group of heroes.
         </p>
         <Accordion
           title="Bosses for Different Sized Parties"
@@ -338,12 +340,7 @@ function EncounterDesign() {
           and hazards of the same tier as the heroes. Otherwise, the encounter
           builder rules won't work. This is because heroes have a huge advantage
           against lower tier threats, but are hugely disadvantaged against
-          higher tier threats. For more information on heroes facing different
-          tier threats,{" "}
-          <Link className="internal-link" to="/rules/rolling#different-tiers">
-            see here
-          </Link>
-          .
+          higher tier threats.
         </p>
 
         <h3 className="header">Monster Roles</h3>

@@ -415,7 +415,8 @@ const ConstructMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -465,8 +466,7 @@ const ConstructMonsters = [
             effect: (
               <span>
                 The flesh golem charges forward at near super speed then uses
-                slam against the target, and this ability gains the powerful
-                keyword for this use. On a success or higher, the target is
+                slam against the target. On a success or higher, the target is
                 knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
@@ -492,8 +492,7 @@ const ConstructMonsters = [
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>{" "}
-                on a success or higher. Slam gains the powerful keyword for this
-                use.
+                on a success or higher.
               </span>
             ),
           },
@@ -578,7 +577,8 @@ const ConstructMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -610,7 +610,7 @@ const ConstructMonsters = [
           {
             basic: false,
             name: "Binding Stone",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
             defense: "Guard",
             critical: (
@@ -806,7 +806,8 @@ const ConstructMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -849,7 +850,7 @@ const ConstructMonsters = [
           {
             basic: false,
             name: "Poison Breath",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
             defense: "Guard",
             damage: "9 toxic damage",
@@ -978,7 +979,8 @@ const ConstructMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1028,7 +1030,7 @@ const ConstructMonsters = [
           {
             basic: false,
             name: "Hyper Beam",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: (
               <span>
                 2d4+2 enemies within the clockwork colossus's zone and an
@@ -1067,7 +1069,7 @@ const ConstructMonsters = [
             round: "1",
             target: <span>All enemies</span>,
             defense: "Spirit",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             damage: "15 arcane damage",
             success: (
               <span>
@@ -1093,7 +1095,7 @@ const ConstructMonsters = [
             round: "5",
             target: <span>All other creatures</span>,
             defense: "Spirit",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             damage: "15 arcane damage",
             success: (
               <span>

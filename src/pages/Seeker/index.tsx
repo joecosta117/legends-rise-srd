@@ -170,7 +170,7 @@ function Seeker() {
               actType="Action"
               descriptor="You strike at the very essence of a foe, throwing their spirit into turmoil."
               frequency="Encounter"
-              keywords="Escalation, Magical, Powerful"
+              keywords="Escalation, Magical"
               effect={
                 <span>
                   <Link className="internal-link" to="/combat-abilities#strike">

@@ -163,7 +163,7 @@ function Warrior() {
               actType="Action"
               descriptor="You pull yourself together as you attack."
               frequency="Encounter"
-              keywords="Escalation, Powerful"
+              keywords="Escalation"
               effect={
                 <span>
                   Spend a recovery then{" "}

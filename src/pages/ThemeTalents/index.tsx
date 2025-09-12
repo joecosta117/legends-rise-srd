@@ -637,11 +637,11 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/adventuring#scene">
             scene
           </Link>
-          , when you and your allies do a{" "}
+          , when you or an ally does a{" "}
           <Link className="internal-link" to="/rules/skills#group-rolls">
             group roll
           </Link>
-          , you all gain <Modifier type="f" count="1" /> to your skill roll.
+          , the leader upgrades their roll result.
         </span>
       ),
     },
@@ -749,7 +749,7 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
-          as one degree higher.
+          as one roll result higher.
         </span>
       ),
     },
@@ -839,7 +839,7 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
-          as one degree higher.
+          as one roll result higher.
         </span>
       ),
     },

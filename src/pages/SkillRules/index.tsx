@@ -72,74 +72,115 @@ function SkillRules() {
         </ul>
 
         <h2 id="making-skill-rolls">Making Skill Rolls</h2>
-        <b style={{ textAlign: "left" }}>1d20 + Experience vs TN 15</b>
-        <p>Follow the below five steps for every skill roll.</p>
-        <h3 className="header">Step 1: GM Sets the Skill Tier</h3>
+        <b style={{ textAlign: "left" }}>1d20 + Experience vs TN 12</b>
+        <p>Follow the below three steps for every skill roll.</p>
+        <h3 className="header">Step 1: GM Sets the Skill Difficulty</h3>
         <p>
-          The GM determines the difficulty of a skill roll by assigning it a{" "}
-          <b>skill tier</b>, but the TN is always 15. These tiers correspond to
-          your hero’s tiers:
+          When a hero attempts a skill roll, the GM sets the{" "}
+          <b>skill difficulty</b> of the challenge. This determines how easy or
+          hard it is to achieve a good result. The GM determines the skill
+          difficulty depending on the severity of the challenge, the hero's
+          capabilities, or their approach to solving the problem.
+        </p>
+        <h4 className="header">Difficulty Levels</h4>
+        <p>There are three difficulty levels for skill rolls:</p>
+        <ul>
+          <li>
+            <span>
+              <b>Easy: </b>The challenge is well within reach or the heroes have
+              a strong advantage.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Normal: </b>The challenge is appropriately risky or uncertain.
+              This is the default difficulty for skill rolls.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Hard: </b>The challenge is well above the heroes’ abilities, or
+              the situation is highly unfavorable.
+            </span>
+          </li>
+        </ul>
+        <p>
+          If the challenge seems easier than easy, then the hero automatically
+          succeeds without a roll. If the challenge seems harder than hard, then
+          the hero automatically fails without a roll.
+        </p>
+
+        <h4 className="header">Appropriate Challenges</h4>
+        <p>
+          Heroes grow in skill as they level up and jump to new tiers. The
+          following are examples of normal difficulty challenges a hero of that
+          tier might face.
         </p>
         <table>
           <thead>
             <tr>
-              <th style={{ padding: "0 10px" }}>Skill Tier</th>
-              <th>Types of Challenges</th>
+              <th style={{ padding: "0 10px" }}>Hero Tier</th>
+              <th>Normal Difficulty Challenges</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>0</td>
               <td>
-                Challenges easy for anyone such as overhearing a loud argument
-                nearby, climbing a knotted rope, or recalling a well known fact.
+                Overhearing a loud argument nearby, climbing a knotted rope, or
+                recalling a well known fact.
               </td>
             </tr>
             <tr>
               <td>1</td>
               <td>
-                Challenges that are troubling for low level heroes such as
-                sneaking past cultists, navigating through a forest, or breaking
+                Sneaking past cultists, navigating through a forest, or breaking
                 down a heavy door.
               </td>
             </tr>
             <tr>
               <td>2</td>
               <td>
-                Challenges that are difficult for experienced heroes such as
-                disarming a powerful mage's trap, persuading a monarch, or
+                Disarming a powerful mage's trap, persuading a monarch, or
                 leaping across a very wide chasm.
               </td>
             </tr>
             <tr>
               <td>3</td>
               <td>
-                Challenges that are difficult for even the most powerful of
-                heroes such as closing a planar portal with their bare hands,
-                navigating hell, or threatening an archfiend to back down.
+                Closing a planar portal with their bare hands, safely navigating
+                the elemental realms, or threatening an archfiend to back down.
               </td>
             </tr>
             <tr>
               <td>4</td>
               <td>
-                Challenges are beyond mortals such as swimming up a waterfall,
-                deceiving a god, or stealing someone’s worn armor without them
-                noticing!
+                Swimming up a waterfall, deceiving a god, or stealing someone’s
+                worn armor without them noticing!
               </td>
             </tr>
           </tbody>
         </table>
+        <h4 className="header">Different Tier Challenges</h4>
+        <p>
+          If the heroes are facing a challenge that is a higher tier than them,
+          the GM should make any skill rolls have a hard difficulty. If the
+          heroes face a challenge with a lower tier than them, the GM should
+          instead give skill rolls an easy difficulty. For example, if a tier 2
+          hero is using the craft downtime activity to make a tier 1 item, the
+          GM sets the skill difficulty to easy.
+        </p>
 
-        <h3>Step 2: Difficult Adjustments</h3>
+        <h4 className="header">Minor Difficulty Adjustments</h4>
         <p>
           A GM might want to grant a hero a small bonus or penalty on a skill
-          roll without changing the skill tier. You can easily give a hero
+          roll without changing the skill difficulty. You can easily give a hero
           either <Modifier type="f" /> and <Modifier type="mf" /> in this case.
           Perhaps, a hero wants to break down a regular door, but the door is
           old and less sturdy than normal. The GM gives the hero{" "}
           <Modifier type="f" count="1" /> on their skill roll.
         </p>
-        <h3 className="header">Step 3: Invoking Experiences</h3>
+        <h3 className="header">Step 2: Invoking Experiences</h3>
         <p>
           If a player has an appropriate experience, they can invoke it to add
           their proficiency bonus to their skill roll. You can only invoke one
@@ -147,41 +188,204 @@ function SkillRules() {
           experience fits the challenge or not.
         </p>
 
-        <h3 className="header">Step 4: Roll and Interpret the Result</h3>
+        <h3 className="header">Step 3: Roll and Interpret the Result</h3>
         <p>
-          The hero rolls their dice which has four possible results: failure,
-          partial success, success, or critical success. Let’s break down what
-          each means.
-        </p>
-        <h4 className="header">
-          Failure <i>"No, and consequence..."</i>
-        </h4>
-        <p>
-          If you get a failure on a skill roll, you fail to overcome the
-          challenge and something bad happens. Here are some examples:
+          The hero rolls their dice and checks their result. Normal difficulty
+          challenges have three roll results:
         </p>
         <ul>
           <li>
             <span>
-              You failed to persuade the queen to help you, and you angered her
-              enough to detain you!
+              <b>Success (17+): </b> You achieve your goal.
             </span>
           </li>
           <li>
             <span>
-              You failed to disable the trap, and instead set it off, you take
-              physical damage equal to your shaken value!
+              <b>Partial Success (12-16): </b> You achieve your goal, but with a
+              consequence or complication.
             </span>
           </li>
           <li>
             <span>
-              You failed to navigate through the forest and are now lost.
-              However, you've drawn attention of hungry dark faeries. The GM
-              sstarts a negative countdown "dark faeries find you"!
+              <b>Failure (11 or Lower): </b> You do not achieve your goal.
+            </span>
+          </li>
+        </ul>
+        <h4 className="header">Adjusting Results for Difficulty</h4>
+        <p>If the difficulty is easy or hard, you adjust the roll results:</p>
+        <ul>
+          <li>
+            <span>
+              <b>Easy: </b>Upgrade the roll result with success becoming a
+              critical success. A critical success is the same as a success, but
+              with a bonus benefit.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Hard: </b>Downgrade the roll result with failure becoming a
+              critical failure. A critical failure is the same as a failure, but
+              with an extra complication.
             </span>
           </li>
         </ul>
 
+        <table>
+          <thead>
+            <tr>
+              <th style={{ padding: "0 10px" }}>Roll Result</th>
+              <th>Easy Difficulty</th>
+              <th>Normal Difficulty</th>
+              <th>Hard Difficulty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>17+</td>
+              <td>Critical Success</td>
+              <td>Success</td>
+              <td>Partial Success</td>
+            </tr>
+            <tr>
+              <td>12-16</td>
+              <td>Success</td>
+              <td>Partial Success</td>
+              <td>Failure</td>
+            </tr>
+            <tr>
+              <td>11 or Lower</td>
+              <td>Partial Success</td>
+              <td>Failure</td>
+              <td>Critical Failure</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4 className="header">Extra Benefit Guidelines</h4>
+        <p>
+          For an extra benefit from a critical success, the heroes earn a reward
+          beyond achieving their goal. Possible benefits include:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Speed: </b>Finish the task faster than expected, saving time or
+              gaining an extra action, such as during downtime.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Quality: </b>Produce an exceptional result (a finely crafted
+              item, a more detailed clue, a perfect disguise).
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Momentum: </b>Gain a <Modifier type="f" /> on the next related
+              roll, give an ally a bonus, or even increase the momentum die by
+              1.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Resource Boon: </b>Save materials, earn extra profit, or gain
+              an unexpected useful item.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Narrative Shift: </b>Impress an NPC, uncover a secret, or
+              create a new opportunity.
+            </span>
+          </li>
+        </ul>
+        <h4 className="header">Extra Complication Guidelines</h4>
+        <p>
+          For a complication or consequence from a partial success or critical
+          failure, the heroes suffer a setback as the scene becomes more tense
+          and interesting. Possible complications include:
+        </p>
+        <ul>
+          <li>
+            <span>
+              <b>Escalation: </b>Increase an existing countdown or worsen an
+              ongoing danger.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Collateral: </b>Break something valuable, harm an ally (damage
+              equal to their proficiency bonus), or alert an enemy.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Setback: </b>Lose time, waste resources, or make the task
+              harder going forward.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Narrative Twist: </b>Introduce a new obstacle, negative
+              countdown, rival, or enemy action.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Spillover: </b>The failure causes problems in another area
+              (drawing unwanted attention, creating a new complication
+              elsewhere).
+            </span>
+          </li>
+        </ul>
+        <p>
+          <i>
+            <b>GM Tip: </b> Complications should push the story forward, but not
+            stall it. Even a critical failure should create interesting new
+            choices, not dead ends.
+          </i>
+        </p>
+
+        {/* <h4 className="header">
+          Critical Success <i>"Yes, and benefit..."</i>
+        </h4>
+        <p>
+          Same as a success, but you performed extraordinarily. You achieved
+          what you wanted and more. Here are some examples:
+        </p>
+        <ul>
+          <li>
+            <span>
+              You convince the ruler to aid your friends, but also provide
+              additional support.
+            </span>
+          </li>
+          <li>
+            <span>
+              You scale the enemy fortress so swiftly, no guard even notices
+              you.
+            </span>
+          </li>
+          <li>
+            <span>
+              As you successfully disarm the trap, you notice someone lurking
+              nearby in the shadows that's unaware you caught them.
+            </span>
+          </li>
+          <li>
+            <span>
+              You slam open the door so hard, you knock down the two guards that
+              were waiting on the other side.
+            </span>
+          </li>
+        </ul>
+        <h4 className="header">
+          Success <i>"Yes"</i>
+        </h4>
+        <p>
+          You succeed at the challenge, achieving what you wanted without any
+          consequences.
+        </p>
         <h4 className="header">
           Partial Success <i>"Yes, but consequence..."</i>
         </h4>
@@ -215,48 +419,41 @@ function SkillRules() {
             </span>
           </li>
         </ul>
-
         <h4 className="header">
-          Success <i>"Yes"</i>
+          Minor Failure <i>"No"</i>
         </h4>
         <p>
-          You succeed at the challenge, achieving what you wanted without any
-          consequences.
+          If you get a minor failure on a skill roll, you fail to overcome the
+          challenge. You must try a different approach to solving the problem.
         </p>
-
         <h4 className="header">
-          Critical Success <i>"Yes, and benefit..."</i>
+          Failure <i>"No, and consequence..."</i>
         </h4>
         <p>
-          Same as a success, but you performed extraordinarily. You achieved
-          what you wanted and more. Here are some examples:
+          If you get a failure on a skill roll, you fail to overcome the
+          challenge and something bad happens. Here are some examples:
         </p>
         <ul>
           <li>
             <span>
-              You convince the ruler to aid your friends, but also provide
-              additional support.
+              You failed to persuade the queen to help you, and you angered her
+              enough to detain you!
             </span>
           </li>
           <li>
             <span>
-              You scale the enemy fortress so swiftly, no guard even notices
-              you.
+              You failed to disable the trap, and instead set it off, you take
+              physical damage equal to your shaken value!
             </span>
           </li>
           <li>
             <span>
-              As you successfully disarm the trap, you notice someone lurking
-              nearby in the shadows that's unaware you caught them.
+              You failed to navigate through the forest and are now lost.
+              However, you've drawn attention of hungry dark faeries. The GM
+              sstarts a negative countdown "dark faeries find you"!
             </span>
           </li>
-          <li>
-            <span>
-              You slam open the door so hard, you knock down the two guards that
-              were waiting on the other side.
-            </span>
-          </li>
-        </ul>
+        </ul> */}
 
         <h2 id="repeated-attempts">Repeated Attempts</h2>
         <p>
@@ -273,11 +470,11 @@ function SkillRules() {
           try again later.
         </p>
 
-        <h2 id="helping-another-hero">Helping Another Hero</h2>
+        {/* <h2 id="helping-another-hero">Helping Another Hero</h2>
         <p>
           A hero can aid another at a task. One hero will make the final skill
-          roll, while the assister helps them by also making the same skill
-          roll:
+          roll, while the assister helps them by also making the same skill roll
+          at a normal difficulty. Only one hero can assist another at a time.
         </p>
         <ul>
           <li>
@@ -305,19 +502,17 @@ function SkillRules() {
             to their skill roll.
           </li>
         </ul>
-        <p>Only one person can assist another at a time.</p>
+        <p>Only one person can assist another at a time.</p> */}
 
-        <h2 className="header" id="tempt-fate">
-          Tempt Fate
-        </h2>
+        <h2 id="tempt-fate">Tempt Fate</h2>
         <p>
           When a hero makes a skill roll, they can decide to <b>tempt fate</b>{" "}
-          by taking an added complication to gain{" "}
+          by taking an extra complication to gain{" "}
           <Modifier type="f" count="1" /> to their skill roll. The GM usually
-          decides the extra complication, which happens regardless of the skill
+          decides the bonus consequence, which happens regardless of the skill
           roll’s outcome.
         </p>
-        <p>Common complications include:</p>
+        {/* <p>Common complications include:</p>
         <ul>
           <li>
             <span>
@@ -337,7 +532,7 @@ function SkillRules() {
           <li>
             <span>Start a negative countdown, or increase an existing one</span>
           </li>
-        </ul>
+        </ul> */}
         <p>
           Tempt fate is always a choice that you can willingly reject or suggest
           an alteration that would make you consider taking it. The GM has the
@@ -383,35 +578,38 @@ function SkillRules() {
 
         <h2 id="group-rolls">Group Rolls</h2>
         <p>
-          When a party of heroes are trying to accomplish something as a group,
-          the GM can ask for a <b>group roll</b>. The more skilled of the group
-          can help the others.
+          When a party of heroes attempts a challenge together, the GM can ask
+          for a <b>group roll</b>. The heroes choose one hero to lead the
+          effort. That hero makes the skill roll that determines the outcome for
+          the entire group.
         </p>
         <p>
-          To make a group roll, everyone in the group makes the skill roll. The
-          best result is counted as the group’s united effort. However, for each
-          failure, the group’s result is downgraded by one degree of success.
+          Before rolling, each other hero declares how they are helping (or
+          hindering) the group.
         </p>
+        <ul>
+          <li>
+            <span>
+              If a hero has a relevant experience, the leader gains{" "}
+              <Modifier type="f" count="1" /> to their skill roll.
+            </span>
+          </li>
+          <li>
+            <span>
+              If a hero doesn't have a relevant experience, the leader takes{" "}
+              <Modifier type="mf" count="1" /> to their skill roll.
+            </span>
+          </li>
+        </ul>
         <p>
-          For example, if four heroes try to sneak across a demonic wasteland,
-          they all make skill rolls. One hero rolled a critical success, which
-          is the best roll. However, another hero rolled a failure, which then
-          downgraded the group’s overall result from a critical success to a
-          success.
-        </p>
-        <h3 className="header">Larger Groups</h3>
-        <p>
-          With large groups of heroes, such as 6 or more, the odds of failures
-          becomes higher. For these large group rolls, ignore each failure for
-          each critical success on a 1:1 basis.
-        </p>
-        <p>
-          For example, if a group of 6 heroes make a group skill roll and one
-          hero gets a critical success, which is the best result. However, three
-          other heroes rolled failures. One of the failures is ignored as the
-          group got one critical success, but the two other failures will
-          downgrade the group’s result from a critical success to a partial
-          success.
+          A rogue leads their allies in sneaking through a bandit camp. The
+          arcanist has the “street urchin” experience and recalls their time
+          sneaking through the city to avoid trouble, which grants the rogue{" "}
+          <Modifier type="f" count="1" />. However, the paladin and cleric have
+          no relevant experience and the rogue takes{" "}
+          <Modifier type="mf" count="2" />. The rogue makes the group's skill
+          roll with <Modifier type="mf" count="1" />, and gets a success, so the
+          heroes sneak past the bandits without trouble!
         </p>
 
         <h2 id="progress-countdowns">Countdowns</h2>
@@ -428,10 +626,11 @@ function SkillRules() {
           <b>Countdown die</b> help track the progression, usually represented
           by a die set to its highest number. The GM sets the die size needed to
           accomplish the task, usually a d4 for a positive countdown, then sets
-          a d4 on the table at 4. You can consult the below table for further
-          guidance.
+          a d4 on the table at 4.
+          {/* You can consult the below table for further
+          guidance. */}
         </p>
-        <table style={{ marginBottom: "10px" }}>
+        {/* <table style={{ marginBottom: "10px" }}>
           <thead>
             <tr>
               <th>Difficulty</th>
@@ -456,18 +655,21 @@ function SkillRules() {
               <td>1/2 x number of heroes</td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
         <p>
           For group challenges, if the challenge is simple enough, you can use
           the group roll rules. However, for more complex group challenges, set
-          the countdown die based on the group’s size.
+          the countdown die equal to the number of heroes. For example, the GM
+          can set the countdown "escape the collapsing evil fortress" for a
+          group of heroes. There are six heroes, so the GM places a d6 on the
+          table at 6.
         </p>
-        <p>
+        {/* <p>
           For example, the GM can set the countdown "escape the collapsing evil
           fortress" for a group of heroes. The GM decides this is a hard
           challenge, so the countdown die size is double the number of heroes.
           They are four heroes, so the GM places a d8 set at 8 on the table.
-        </p>
+        </p> */}
 
         <h3 className="header">Types of Countdowns</h3>
         <p>
@@ -477,17 +679,11 @@ function SkillRules() {
         <h4 className="header">Positive Countdowns</h4>
         <p>
           Positive countdowns are ones that represent a hero or group of heroes’
-          goal, and as they heroes roll well, they decrement the countdown die
-          towards accomplishing their goal. The goal can be “craft a magic
-          wand”, “infiltrate the iron keep”, or “stop the lich’s evil ritual”.
-          When a hero makes a skill roll, they tick down the countdown.
+          goal, and each success ticks the countdown closer to completion. The
+          goal can be “infiltrate the iron keep” or “stop the lich’s evil
+          ritual”. When a hero makes a skill roll, they tick down the countdown.
         </p>
         <ul>
-          <li>
-            <span>
-              <b>Critical Success:</b> The countdown die deincrements by 2.
-            </span>
-          </li>
           <li>
             <span>
               <b>Success:</b> The countdown die deincrements by 1.
@@ -503,8 +699,7 @@ function SkillRules() {
             <span>
               <b>Failure:</b>
             </span>{" "}
-            No success, and there's a consequence, such as the countdown die
-            incrementing by 1!
+            No change to the countdown die
           </li>
         </ul>
         <h4 className="header">Negative Countdowns</h4>
@@ -519,26 +714,20 @@ function SkillRules() {
         <ul>
           <li>
             <span>
-              <b>Critical Success:</b> The countdown die increments by 1!
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Success:</b> No effect. You don’t do bad enough to increase the
-              danger, but you also don't do well enough to lower the danger.
+              <b>Success:</b> No effect to the countdown die.
             </span>
           </li>
           <li>
             <span>
               <b>Partial Success:</b> The countdown die deincrements by 1 as the
-              consequence.
+              complication.
             </span>
           </li>
           <li>
             <span>
               <b>Failure:</b>
             </span>{" "}
-            The countdown die deincrements by 2 as the consequence.
+            The countdown die deincrements by 1.
           </li>
         </ul>
         <h4 className="header">Dual Countdowns</h4>
@@ -556,25 +745,19 @@ function SkillRules() {
         <ul>
           <li>
             <span>
-              <b>Critical Success:</b> The positive countdown die deincrements
-              by 2.
-            </span>
-          </li>
-          <li>
-            <span>
               <b>Success:</b> The positive countdown die deincrements by 1.
             </span>
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> Both countdown dice deincrement by 1.
+              <b>Partial Success:</b> Both countdown die deincrement by 1.
             </span>
           </li>
           <li>
             <span>
               <b>Failure:</b>
             </span>{" "}
-            The negative countdown die deincrements by 2.
+            The negative countdown die deincrements by 1.
           </li>
         </ul>
         <h4 className="header">Simple Countdowns</h4>
@@ -630,9 +813,9 @@ function SkillRules() {
         <h3 className="header">Aiding Downtime Rolls</h3>
         <p>
           If the downtime activity requires a skill roll, you can improve your
-          chances through an ally’s help or spending gold. A friend can help you
-          like any other skill roll, but they must spend their downtime activity
-          aiding you. You can also spend gold to improve your skill roll by{" "}
+          chances through an ally’s help or spending gold. A friend can spend
+          their downtime activity to give you <Modifier type="f" count="1" /> to
+          your skill roll. You can also spend gold to improve your skill roll by{" "}
           <Modifier type="f" count="1" /> for each amount spent. At tier 1, it
           costs 1 gold, then 3 gold at tier 2, and 6 gold at tier 3.
         </p>
@@ -646,60 +829,49 @@ function SkillRules() {
           content={
             <div>
               <p>
-                You spend your downtime forging an item, perhaps even magical.
-                You must spend half the item’s cost (rounded down) in raw
-                materials before beginning this downtime activity. If you’re
-                crafting a non-magical item with an item tier lower than your
-                wealth tier, then you don’t have to pay the cost in raw
-                materials.
+                You spend your downtime forging an item by making a skill roll.
+                If you’re crafting a non-magical item with an item tier lower
+                than your wealth tier, then you don’t have to pay the cost in
+                raw materials. If you are crafting a magic item that uses a
+                spell such as a magic wand of fireball, then unless you know the
+                spell, you take <Modifier type="mf" count="1" /> to skill rolls
+                to craft this item.
               </p>
-              <p>
-                Make a skill roll with the skill tier equaling the item’s tier
-                you’re attempting to craft. If you are crafting a magic item
-                that uses a spell such as a magic wand of fireball, then unless
-                you know the spell, you take <Modifier type="mf" count="1" /> to
-                skill rolls to craft this item.
-              </p>
+
               <ul className="degrees">
-                <li>
-                  <span>
-                    <b>Critical Success:</b> You craft the item but only spend
-                    half the cost in raw materials.
-                  </span>
-                </li>
                 <li>
                   <span>
                     <b>Success:</b> You craft the item.
                   </span>
                 </li>
+
                 <li>
                   <span>
-                    <b>Partial Success:</b> You craft the item, but spend the
-                    full cost of the item in raw materials.
+                    <b>Partial Success:</b> You craft the item if you spend half
+                    the item’s cost (rounded down) in raw materials
                   </span>
                 </li>
                 <li>
                   <span>
-                    <b>Failure:</b>
-                  </span>{" "}
-                  You fail to craft the item.
+                    <b>Failure: </b> You fail to craft the item.
+                  </span>
                 </li>
               </ul>
               <h4 className="header">Upgrading Relics</h4>
               <p>
                 You can upgrade a relic's tier to make the item’s power
                 stronger. This process is the same as crafting a relic with the
-                skill tier equalling the item’s intended upgraded tier, but the
-                cost is different. The cost in raw materials for upgrading a
-                relic is half the difference in price between the current item’s
-                value and the tier you’re upgrading to.
+                item's tier equalling the upgraded tier. The partial success
+                cost in raw materials for upgrading a relic is half the
+                difference in price between the current item’s value and the
+                tier you’re upgrading to.
               </p>
               <p>
                 For example, if you have a tier 1 energy weapon, you can upgrade
                 it to tier 2 greater energy weapon. A tier 1 relic costs 5 gold,
                 and a tier 2 relic costs 15 gold, so half the difference is 5.
-                You pay 5 gold in raw materials then make a skill roll to
-                upgrade the relic's magic.
+                On a partial successful skill roll, you pay 5 gold in raw
+                materials then make a skill roll to upgrade the relic's magic.
               </p>
             </div>
           }
@@ -711,16 +883,10 @@ function SkillRules() {
               <p>
                 You spend your downtime making money by working a job, such as
                 being a laborer, monetizing your artistic talents, or using your
-                knowledge to consult. Make a skill roll to determine how much
-                gold you earn:
+                knowledge to consult. Make a skill roll at normal difficulty to
+                determine how much gold you earn:
               </p>
               <ul className="degrees">
-                <li>
-                  <span>
-                    <b>Critical Success:</b> You earn double the amount of a
-                    success.
-                  </span>
-                </li>
                 <li>
                   <span>
                     <b>Success:</b> At the end of the downtime, you earn 2 gold
@@ -735,9 +901,8 @@ function SkillRules() {
                 </li>
                 <li>
                   <span>
-                    <b>Failure:</b>
-                  </span>{" "}
-                  You earn nothing.
+                    <b>Failure:</b> You earn nothing.
+                  </span>
                 </li>
               </ul>
             </div>
@@ -769,11 +934,12 @@ function SkillRules() {
               <p>
                 You spend your downtime working on a long term project (either a
                 new one or continuing to work on an old project). If starting a
-                new project, start a positive countdown with a d6 or larger die
-                if the GM thinks is appropriate. A long term project covers any
-                activity such as researching a magical ritual, constructing a
-                tower, making an alliance with a new ally, investigating a
-                mystery, or more.
+                new project, start a positive countdown with a d4 or larger die
+                if the GM thinks is appropriate. When starting or continuing a
+                project, make a skill roll towards that project's countdown. A
+                long term project covers any activity such as researching a
+                magical ritual, constructing a tower, making an alliance with a
+                new ally, investigating a mystery, or more.
               </p>
             </div>
           }
@@ -807,15 +973,9 @@ function SkillRules() {
               <p>
                 You spend your downtime training your combat skills. You can
                 only use this downtime activity once per downtime. Make a skill
-                roll.
+                roll at normal difficulty.
               </p>
               <ul className="degrees">
-                <li>
-                  <span>
-                    <b>Critical Success:</b> Same as a success, but the cost is
-                    free.
-                  </span>
-                </li>
                 <li>
                   <span>
                     <b>Success:</b> You gain an experience, learn a technique, a{" "}
@@ -826,22 +986,19 @@ function SkillRules() {
                     <Link className="internal-link" to="/ritual-spells">
                       ritual spell
                     </Link>{" "}
-                    if you have a magical experience. Regardless of your choice,
-                    you spend gold equal to your tier or treat your result as a
-                    failure.
+                    if you have a magically related experience.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <b>Partial Success:</b> Same as a success, but the cost
-                    doubles.
+                    <b>Partial Success:</b> Same as a success, but you must
+                    spend gold equal to your tier.
                   </span>
                 </li>
                 <li>
                   <span>
-                    <b>Failure:</b>
-                  </span>{" "}
-                  You fail to learn anything.
+                    <b>Failure:</b> You fail to learn anything.
+                  </span>
                 </li>
               </ul>
             </div>

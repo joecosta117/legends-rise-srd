@@ -133,7 +133,7 @@ function HomePage() {
             />
             <Accordion
               title="Fully Narrative Rules"
-              content="Although Legends Rise embraces some narrative gameplay with theme talents, tempt fate, experiences, and degrees of success, it is not a fully narrative game like FATE or Powered by the Apocalypse. Legends Rise has tactical combat with zones, complex battle abilities, and monsters with tactical depth. If you want a more narrative game, look at Daggerheart, Dungeon World, Fabula Ultima, or Quest."
+              content="Although Legends Rise embraces some narrative gameplay with theme talents, tempt fate, experiences, and non-binary roll results, it is not a fully narrative game like FATE or Powered by the Apocalypse. Legends Rise has tactical combat with zones, complex battle abilities, and monsters with tactical depth. If you want a more narrative game, look at Daggerheart, Dungeon World, Fabula Ultima, or Quest."
             />
             <Accordion
               title="No Combat"

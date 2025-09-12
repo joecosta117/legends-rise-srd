@@ -206,7 +206,8 @@ const AngelMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -247,7 +248,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Holyfire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "2 holy damage",
@@ -305,11 +306,11 @@ const AngelMonsters = [
             name: "Boss Monster",
             description: (
               <span>
-                Boss monster's hit points equal the listed total multiplied by
-                the number of heroes. Boss monsters also get one turn per hero.
-                At the end of a boss monster's turn, they can take direct damage
-                equal to their proficiency bonus to end one condition affecting
-                them.
+                Boss monsters get two turns per round, but can't take these
+                turns in a row. At the end of a boss monster's turn, they can
+                take direct damage equal to double their proficiency bonus to
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -350,7 +351,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Holyfire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -379,7 +380,7 @@ const AngelMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -405,7 +406,7 @@ const AngelMonsters = [
           {
             name: "Condemning Flames",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
             damage: "10 holy damage",
             defense: "Spirit",
@@ -478,7 +479,8 @@ const AngelMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -528,7 +530,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Holyfire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -557,7 +559,7 @@ const AngelMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -584,7 +586,7 @@ const AngelMonsters = [
           {
             name: "Condemning Flames",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
             damage: "16 holy damage",
@@ -989,7 +991,8 @@ const AngelMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1045,7 +1048,7 @@ const AngelMonsters = [
           {
             basic: false,
             name: "Banishing Smite",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             effect: (
               <span>
                 Archangel uses holy blade, but deals 9 additional damage, and on
@@ -1084,7 +1087,7 @@ const AngelMonsters = [
           {
             name: "Cleansing Flames",
             round: "3",
-            keywords: "magical, powerful",
+            keywords: "magical",
             defense: "Spirit",
             target: "All enemies in the archangel's zone",
             damage: "16 holy damage",
@@ -1098,7 +1101,7 @@ const AngelMonsters = [
           {
             name: "Seals of Condemnation",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "3 zones within 5 zones",
             defense: "Spirit",
             damage: "16 holy damage",

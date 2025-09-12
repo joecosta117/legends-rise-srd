@@ -120,7 +120,7 @@ function FightingStyles() {
                     >
                       attack roll
                     </Link>{" "}
-                    as one degree of success lower.
+                    as one roll result lower.
                   </span>
                 }
               />
@@ -1392,7 +1392,7 @@ function FightingStyles() {
                     >
                       attack rolls
                     </Link>{" "}
-                    as one degree lower
+                    as one roll result lower
                   </span>
                 }
               />
@@ -1452,7 +1452,7 @@ function FightingStyles() {
                     >
                       attack rolls
                     </Link>{" "}
-                    as one degree of success lower
+                    as one roll result lower
                   </span>
                 }
               />

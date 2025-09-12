@@ -69,6 +69,13 @@ function CombatRules() {
             </a>
           </li>
           <li>
+            <a href="#overcome">
+              <span>
+                <b>Overcome Rolls</b>
+              </span>
+            </a>
+          </li>
+          <li>
             <a href="#momentum">
               <span>
                 <b>Momentum Die</b>
@@ -403,33 +410,60 @@ function CombatRules() {
         <h3 className="header">Resolving an Attack Roll</h3>
         <p>
           Compare your attack roll to the target’s specified defense. Abilities
-          often have other effects that happen on certain degrees of success. If
-          the ability deals damage, then the degrees of success are always the
-          same:
+          often have other effects that happen on certain roll results. If the
+          ability deals damage, then the roll results are always the same:
         </p>
         <ul>
           <li>
             <span>
-              <b>Critical Success:</b> Same as a success, and you deal
+              <b>Critical Success:</b> Your result is 5 or more above the
+              target's defense. You deal full damage from your ability plus
               additional damage equal to your proficiency bonus.
             </span>
           </li>
           <li>
             <span>
-              <b>Success:</b> You deal full damage from your ability.
+              <b>Success:</b> Your result meets or exceeds the target's defense.
+              You deal full damage from your ability.
             </span>
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> You graze the target, dealing half damage.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Failure:</b> No damage as you miss or your attack has no effect
+              <b>Failure:</b> Your result is less than the target's defense, and
+              you deal no damage.
             </span>
           </li>
         </ul>
+        <h4 className="header">Glancing Blows</h4>
+        <p>
+          In combat, heroes are always contributing, even when their attacks
+          don’t fully connect.{" "}
+          <b>
+            When a hero gets a failure on an attack roll, they still deal half
+            damage
+          </b>
+          , representing a glancing strike or partial effect of their attack.
+          This ensures every turn feels impactful and cinematic, letting players
+          feel heroic and keep the action flowing. From a meta perspective,
+          missing isn't fun for players, especially after waiting for their
+          turn.
+        </p>
+        <p>
+          Monsters, on the other hand, only deal damage on successful attacks.
+          Only major or boss monsters deal half damage on a miss, reflecting
+          their villainous threat. This distinction preserves the tension of
+          enemy attacks missing or hitting, while keeping hero turns fast,
+          exciting, and meaningful.
+        </p>
+        <h4 className="header">Different Tiers</h4>
+        <p>
+          When a crature makes an attack roll against a creature of a different
+          tier, then the attack's roll result is adjusted. When attacking a
+          lower tier foe, the roll result is upgraded, but downgraded when
+          attacking a higher tier foe. For example, a tier 1 hero rolls a
+          success on their attack roll against a tier 2 demon, but their roll
+          result is instead downgraded to a failure.
+        </p>
         {/* <h4 className="header">No Whiffs</h4>
         <p>
           Unlike{" "}
@@ -574,8 +608,8 @@ function CombatRules() {
         </p>
         <ul>
           <li>
-            If the damage is caused by an attack roll, the result is treated as
-            one degree of success lower.
+            If the damage is caused by an attack roll, the roll result is
+            downgraded.
           </li>
           <li>If the damage does not involve an attack roll, it is halved.</li>
         </ul>
@@ -585,8 +619,8 @@ function CombatRules() {
         </p>
         <ul>
           <li>
-            If the damage is caused by an attack roll, the result is treated as
-            one degree of success higher.
+            If the damage is caused by an attack roll, the roll result is
+            upgraded.
           </li>
           <li>If the damage does not involve an attack roll, it is doubled.</li>
         </ul>
@@ -788,11 +822,12 @@ function CombatRules() {
         <p>
           Overcome rolls represent your ability to resist ongoing harmful
           effects, such as poison or escaping a grapple. The TN for overcome
-          rolls is always 10, and unlike normal rolls, there are only two
-          degrees of success: failure and success. On a success, the effect
-          ends, but on a failure, the effect continues. Most ongoing effects
-          will specify you can make an overcome roll with “(overcome ends)”
-          mentioned at the end.
+          rolls is always 10, and unlike normal rolls, there are only two roll
+          results: failure and success. You make the roll without adding your
+          proficiency bonus and succeed on a 10 or higher. On a success, the
+          effect ends, but on a failure, the effect continues. Most ongoing
+          effects will specify you can make an overcome roll with “(overcome
+          ends)” mentioned at the end.
         </p>
 
         <h2 id="momentum">Momentum Die</h2>

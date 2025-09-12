@@ -170,7 +170,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Fire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the hellhound's zone</span>,
             defense: "Guard",
             damage: "3 fire damage",
@@ -316,7 +316,8 @@ const DemonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -400,9 +401,8 @@ const DemonMonsters = [
                 >
                   teleports
                 </Link>{" "}
-                to the target and uses claw against them, and this ability gains
-                the powerful keyword for this use. The invisibility ends after
-                the attack roll.
+                to the target and uses claw against them. The invisibility ends
+                after the attack roll.
               </span>
             ),
           },
@@ -465,7 +465,8 @@ const DemonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -590,7 +591,8 @@ const DemonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -639,7 +641,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Profane Webs",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the demon's zone</span>,
             defense: "Guard",
             critical:
@@ -803,7 +805,8 @@ const DemonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -839,7 +842,7 @@ const DemonMonsters = [
             keywords: "melee, weapon",
             target: <span>1d4+1 enemies within the demon's zone</span>,
             effect:
-              "The wrath demon uses claw against each target, but the attack roll's degree of success is one lower",
+              "The wrath demon uses claw against each target, but the attack roll's roll result is one lower",
           },
         ]}
         maneuvers={[
@@ -937,7 +940,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Blinding Majesty",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>All enemies within the demon's zone</span>,
             defense: "Spirit",
             critical: <span>blinded (overcome ends)</span>,
@@ -1020,7 +1023,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Siphon Identity",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
             defense: "Spirit",
             damage: "8 psychic damage",
@@ -1156,7 +1159,8 @@ const DemonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1181,7 +1185,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Demon Lord's Blessing",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>All enemies within the infernal herald's zone</span>,
             defense: "Spirit",
             damage: "6 unholy damage",
@@ -1313,7 +1317,8 @@ const DemonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1362,7 +1367,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Hellfire Arrival",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "12 unholy damage",
@@ -1444,7 +1449,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "All Foes To Me!",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Guard",
             damage: "9 physical",
@@ -1683,7 +1688,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Madness Plague",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "9 toxic damage",
@@ -1768,7 +1773,8 @@ const DemonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1822,7 +1828,7 @@ const DemonMonsters = [
           {
             basic: false,
             name: "Rain Hellfire",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All creatures in 3 zones within 5 zones</span>,
             defense: "Spirit",
             damage: "18 unholy damage",
@@ -1871,7 +1877,7 @@ const DemonMonsters = [
           {
             name: "Greed's Bounty",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             damage: "18 unholy damage",
@@ -1881,7 +1887,7 @@ const DemonMonsters = [
           {
             name: "Greed's Hunger",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: "Same as a success, but the healing increases to 9",
@@ -1945,7 +1951,8 @@ const DemonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2016,7 +2023,7 @@ const DemonMonsters = [
           {
             name: "Titantic Leap",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: "All creatues in 1 zone within 5 zones",
             damage: "15 physical damage",
             success: (
@@ -2040,7 +2047,7 @@ const DemonMonsters = [
           {
             name: "Burning Seismic Slam",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: (
               <span>All enemies within the demon lord of wrath's zone</span>
             ),
