@@ -44,7 +44,8 @@ const AberrationMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -218,7 +219,8 @@ const AberrationMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -266,7 +268,7 @@ const AberrationMonsters = [
           {
             basic: false,
             name: "Eldritch Domination",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
             defense: "Spirit",
             success: "target controlled by the deep lurker (next turn ends)",
@@ -284,7 +286,7 @@ const AberrationMonsters = [
         bossActions={[
           {
             name: "Psychic Scramble",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             round: "1",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
@@ -310,7 +312,7 @@ const AberrationMonsters = [
             round: "5",
             target: "All enemies within the deep lurker's zone",
             effect:
-              "The deep lurker can use tentacle against each target, and the temporary hit points gained by this ability stack. Tentacle gains the powerful keyword for this use.",
+              "The deep lurker can use tentacle against each target, and the temporary hit points gained by this ability stack.",
           },
         ]}
       />
@@ -391,7 +393,7 @@ const AberrationMonsters = [
           {
             basic: false,
             name: "Psychic Blast",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "6 psychic damage",
@@ -523,7 +525,8 @@ const AberrationMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -570,7 +573,7 @@ const AberrationMonsters = [
           {
             basic: false,
             name: "Mental Agony",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Spirit",
             damage: "6 psychic damage",
@@ -633,7 +636,8 @@ const AberrationMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -674,7 +678,7 @@ const AberrationMonsters = [
           {
             basic: false,
             name: "Psychic Blast",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "10 psychic damage",
@@ -716,7 +720,7 @@ const AberrationMonsters = [
         bossActions={[
           {
             name: "Mental Break",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             round: "1",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
@@ -741,8 +745,7 @@ const AberrationMonsters = [
             keywords: "magical, range",
             round: "5",
             target: "All enemies within the elder reaper's zone",
-            effect:
-              "The elder reaper can use tentacle against each target, and this ability gains the powerful keyword for this use.",
+            effect: "The elder reaper can use tentacle against each target.",
           },
         ]}
       />
@@ -785,7 +788,8 @@ const AberrationMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -914,7 +918,7 @@ const AberrationMonsters = [
         bossActions={[
           {
             name: "Opening Salvo",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             round: "1",
             target: "1d4+1 creatures within 3 zones",
             effect:
@@ -947,7 +951,7 @@ const AberrationMonsters = [
             round: "5",
             target: "1d4+1 creatures within 3 zones",
             effect:
-              "The void seer uses eye ray against each target, and uses a different ray for each target. Eye ray gains the powerful keyword for this use.",
+              "The void seer uses eye ray against each target, and uses a different ray for each target.",
           },
         ]}
       />
@@ -988,7 +992,8 @@ const AberrationMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1164,7 +1169,8 @@ const AberrationMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1237,7 +1243,7 @@ const AberrationMonsters = [
           {
             basic: true,
             name: "Unravel Reality",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "9 psychic damage",

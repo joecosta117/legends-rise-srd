@@ -168,7 +168,8 @@ const GiantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -266,7 +267,8 @@ const GiantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -359,7 +361,8 @@ const GiantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -455,7 +458,8 @@ const GiantMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -504,7 +508,7 @@ const GiantMonsters = [
           {
             basic: false,
             name: "Demonic Chill",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the oni's zone</span>,
             defense: "Guard",
             damage: "5 cold damage",
@@ -538,7 +542,7 @@ const GiantMonsters = [
           {
             name: "Fear My Power",
             round: "1",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             critical: (
@@ -564,7 +568,7 @@ const GiantMonsters = [
           {
             name: "Demonic Control",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>1 creature within 2 zones</span>,
             defense: "Spirit",
             critical: (
@@ -707,7 +711,8 @@ const GiantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -836,7 +841,8 @@ const GiantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1172,7 +1178,7 @@ const GiantMonsters = [
           {
             basic: false,
             name: "Ice Breath",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the giant's zone</span>,
             defense: "Guard",
             damage: "6 cold damage",
@@ -1264,7 +1270,7 @@ const GiantMonsters = [
           {
             basic: false,
             name: "Winter's Chill",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "6 cold damage",

@@ -60,7 +60,7 @@ const DragonMonsters = [
           {
             basic: true,
             name: "Breath Weapon",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>1d4+1 enemies within the dragon hatchling's zone</span>
             ),
@@ -335,7 +335,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -360,7 +361,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Volcanic Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Guard",
             damage: "3 fire damage",
@@ -428,7 +429,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -453,7 +455,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Volcanic Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and one adjacent zone
@@ -494,7 +496,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -520,7 +522,7 @@ const DragonMonsters = [
           {
             name: "Volcanic Quake",
             round: "3",
-            keywords: "powerful, range",
+            keywords: "range",
             target: (
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
@@ -596,7 +598,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -621,7 +624,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Volcanic Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and one adjacent zone
@@ -671,7 +674,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -698,7 +701,7 @@ const DragonMonsters = [
           {
             name: "Volcanic Quake",
             round: "3",
-            keywords: "powerful, range",
+            keywords: "range",
             target: (
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
@@ -771,7 +774,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -796,7 +800,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Glacial Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Guard",
             damage: "3 cold damage",
@@ -856,7 +860,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -881,7 +886,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Glacial Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -911,7 +916,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -937,7 +942,7 @@ const DragonMonsters = [
           {
             name: "Chilling Winds",
             round: "3",
-            keywords: "powerful, range",
+            keywords: "range",
             target: (
               <span>All creatures in 2 zones within 3 zones of the dragon</span>
             ),
@@ -956,7 +961,7 @@ const DragonMonsters = [
             name: "Furious Thrash",
             round: "5",
             effect:
-              "The dragon uses rend against each creature within their zone, and this ability gains the powerful keyword for this use.",
+              "The dragon uses rend against each creature within their zone.",
           },
         ]}
       />
@@ -1005,7 +1010,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1030,7 +1036,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Glacial Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -1069,7 +1075,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1096,7 +1102,7 @@ const DragonMonsters = [
           {
             name: "Chilling Winds",
             round: "3",
-            keywords: "powerful, range",
+            keywords: "range",
             target: (
               <span>All creatures in 3 zones within 3 zones of the dragon</span>
             ),
@@ -1115,7 +1121,7 @@ const DragonMonsters = [
             name: "Furious Thrash",
             round: "5",
             effect:
-              "The dragon uses rend against each creature within their zone, and this ability gains the powerful keyword for this use.",
+              "The dragon uses rend against each creature within their zone.",
           },
         ]}
       />
@@ -1159,7 +1165,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1194,7 +1201,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Lightning Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "4 lightning damage",
@@ -1244,7 +1251,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1294,7 +1302,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Lightning Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "12 lightning damage",
@@ -1304,7 +1312,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1352,7 +1360,7 @@ const DragonMonsters = [
           {
             name: "Thunder Cloud",
             round: "5",
-            keywords: "powerful, range",
+            keywords: "range",
             target: "All creatures in 2 zones within 3 zones",
             defense: "Guard",
             damage: "12 lightning damage",
@@ -1402,7 +1410,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1452,7 +1461,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Lightning Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: (
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
@@ -1472,7 +1481,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1521,7 +1530,7 @@ const DragonMonsters = [
           {
             name: "Thunder Cloud",
             round: "5",
-            keywords: "powerful, range",
+            keywords: "range",
             target: "All creatures in 3 zones within 3 zones",
             defense: "Guard",
             damage: "18 lightning damage",
@@ -1566,7 +1575,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1595,7 +1605,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Corrosive Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "3 toxic damage",
@@ -1657,7 +1667,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1686,7 +1697,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Corrosive Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "10 toxic damage",
@@ -1722,7 +1733,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1766,7 +1777,7 @@ const DragonMonsters = [
           {
             name: "Acid Rain",
             round: "5",
-            keywords: "powerful, range",
+            keywords: "range",
             target: "All creatures in 2 zones within 3 zones",
             defense: "Guard",
             damage: "8 toxic damage",
@@ -1826,7 +1837,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1867,7 +1879,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Corrosive Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: (
               <span>All creatures in 2 connected zones within 3 zones</span>
             ),
@@ -1905,7 +1917,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -1950,7 +1962,7 @@ const DragonMonsters = [
           {
             name: "Acid Rain",
             round: "5",
-            keywords: "powerful, range",
+            keywords: "range",
             target: "All creatures in 3 zones within 3 zones",
             defense: "Guard",
             damage: "12 toxic damage",
@@ -2007,7 +2019,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -2040,7 +2053,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Venemous Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Guard",
             damage: "3 toxic damage",
@@ -2111,7 +2124,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2144,7 +2158,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Venemous Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -2188,7 +2202,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2214,7 +2228,7 @@ const DragonMonsters = [
           {
             name: "Animated Vines",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>2 creatures within 3 zones</span>,
             defense: "Guard",
             partial: "seized (next turn ends)",
@@ -2301,7 +2315,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2334,7 +2349,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Venemous Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -2378,7 +2393,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2405,7 +2420,7 @@ const DragonMonsters = [
           {
             name: "Animated Vines",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>3 creatures within 3 zones</span>,
             defense: "Guard",
             partial: "seized (next turn ends)",
@@ -2497,7 +2512,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -2534,7 +2550,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Hellfire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "2 unholy damage",
@@ -2590,7 +2606,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2627,7 +2644,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Hellfire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -2655,7 +2672,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2733,7 +2750,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2770,7 +2788,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Hellfire Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -2798,7 +2816,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -2873,7 +2891,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -2906,7 +2925,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Void Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "3 psychic damage",
@@ -2984,7 +3003,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -3017,7 +3037,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Void Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -3061,7 +3081,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3106,7 +3126,7 @@ const DragonMonsters = [
           {
             name: "There is No Escaping the Void",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "10 arcane damage",
@@ -3165,7 +3185,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -3203,7 +3224,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Void Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -3247,7 +3268,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3293,7 +3314,7 @@ const DragonMonsters = [
           {
             name: "There is No Escaping the Void",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "15 arcane damage",
@@ -3349,7 +3370,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -3386,7 +3408,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Shadow Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "3 necrotic damage",
@@ -3463,7 +3485,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -3500,7 +3523,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Shadow Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -3551,7 +3574,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3650,7 +3673,8 @@ const DragonMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -3691,7 +3715,7 @@ const DragonMonsters = [
           {
             basic: false,
             name: "Shadow Breath",
-            keywords: "powerful, range, recharge",
+            keywords: "range, recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -3742,7 +3766,7 @@ const DragonMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -3838,7 +3862,8 @@ const DragonMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },

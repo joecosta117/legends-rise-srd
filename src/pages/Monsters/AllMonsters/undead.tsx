@@ -425,7 +425,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -472,7 +473,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Necrotic Blast",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: "All creatures in 1 zone within 3 zones",
             defense: "Spirit",
             damage: "4 necrotic damage",
@@ -520,7 +521,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -565,7 +567,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Banshee's Wail",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: "All living enemies within the banshee's zone",
             defense: "Spirit",
             damage: "3 necrotic damage",
@@ -718,7 +720,8 @@ const UndeadMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -807,7 +810,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Telekinetic Storm",
-            keywords: "magical, powerful",
+            keywords: "magical",
             target: "All enemies within the poltergeist's turn",
             defense: "Guard",
             damage: "5 physical damage",
@@ -823,7 +826,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Terrifying Scream",
-            keywords: "magical, powerful",
+            keywords: "magical",
             target: "All enemies within the poltergeist's turn",
             defense: "Spirit",
             damage: "5 psychic damage",
@@ -920,7 +923,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Haunting Presence",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>All enemies within the ghost's zone</span>,
             success: (
               <span>
@@ -1052,7 +1055,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1330,7 +1334,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Vampiric Domination",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             critical:
@@ -1380,7 +1384,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1529,7 +1534,8 @@ const UndeadMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1563,7 +1569,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Defend your Ruler!",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>All enemies within the royal mummy's zone</span>,
             defense: "Spirit",
             damage: "6 psychic damage",
@@ -1724,7 +1730,8 @@ const UndeadMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1773,7 +1780,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Draining Breath",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "15 necrotic damage",
@@ -1825,7 +1832,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Roar of Doom",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             round: "1",
@@ -1860,7 +1867,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Your Souls Belong to Me",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "15 necrotic damage",
@@ -1942,7 +1949,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Draining Breath",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "9 necrotic damage",
@@ -2056,7 +2063,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Finger of Death",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "12 necrotic damage",
@@ -2156,7 +2163,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Necrotic Wave",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Spirit",
             damage: "9 necrotic damage",
@@ -2212,7 +2219,8 @@ const UndeadMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2275,7 +2283,7 @@ const UndeadMonsters = [
           {
             basic: false,
             name: "Die Mortal",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "21 necrotic damage",
@@ -2319,7 +2327,7 @@ const UndeadMonsters = [
             basic: false,
             round: "3",
             name: "Drain Life",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             damage: "15 necrotic damage",

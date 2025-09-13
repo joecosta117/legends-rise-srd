@@ -192,7 +192,13 @@ const HazardList = [
         traits={[
           {
             name: "Major Hazard",
-            description: <span>Major hazards get two turns per round.</span>,
+            description: (
+              <span>
+                Major hazards get two turns per round, but can't take these
+                turns in a row. Major hazards also deal half damage on a failed
+                attack roll.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -399,7 +405,13 @@ const HazardList = [
         traits={[
           {
             name: "Major Hazard",
-            description: <span>Major hazards get two turns per round.</span>,
+            description: (
+              <span>
+                Major hazards get two turns per round, but can't take these
+                turns in a row. Major hazards also deal half damage on a failed
+                attack roll.
+              </span>
+            ),
           },
         ]}
         actions={[
@@ -439,7 +451,13 @@ const HazardList = [
         traits={[
           {
             name: "Major Hazard",
-            description: <span>Major hazards get two turns per round.</span>,
+            description: (
+              <span>
+                Major hazards get two turns per round, but can't take these
+                turns in a row. Major hazards also deal half damage on a failed
+                attack roll.
+              </span>
+            ),
           },
         ]}
         actions={[

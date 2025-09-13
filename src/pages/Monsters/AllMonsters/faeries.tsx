@@ -39,7 +39,8 @@ const FaerieMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -72,7 +73,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Dazzling Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
             defense: "Spirit",
             damage: "3 psychic damage",
@@ -142,7 +143,8 @@ const FaerieMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -175,7 +177,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Dazzling Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 1d4+1 enemies within the dragon's zone and an adjacent zone
@@ -213,7 +215,7 @@ const FaerieMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -262,7 +264,7 @@ const FaerieMonsters = [
           {
             name: "Faerie Temptations",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             critical:
@@ -326,7 +328,8 @@ const FaerieMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -372,7 +375,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Dazzling Breath",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             target: (
               <span>
                 2d4+2 enemies within the dragon's zone and an adjacent zone
@@ -410,7 +413,7 @@ const FaerieMonsters = [
           {
             name: "Frightening Roar",
             round: "1",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (
@@ -460,7 +463,7 @@ const FaerieMonsters = [
           {
             name: "Faerie Temptations",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "All enemies",
             defense: "Spirit",
             critical:
@@ -719,7 +722,8 @@ const FaerieMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -796,7 +800,8 @@ const FaerieMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -850,7 +855,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Sleepy Curse",
-            keywords: "magical, range, powerful, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
             damage: "7 psychic damage",
@@ -884,7 +889,7 @@ const FaerieMonsters = [
           {
             name: "Cursed Vines",
             round: "1",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "5 physical damage",
@@ -900,7 +905,7 @@ const FaerieMonsters = [
           {
             name: "Corrupting Betrayal",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: "1 creature within 3 zones",
             damage: "7 psychic damage",
             success: (
@@ -921,7 +926,7 @@ const FaerieMonsters = [
           {
             name: "Exhale Toxic Fumes",
             round: "5",
-            keywords: "magical, powerful",
+            keywords: "magical",
             target: "All enemies within the hag's zone",
             defense: "Guard",
             damage: "5 toxic damage",
@@ -977,7 +982,8 @@ const FaerieMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1080,7 +1086,8 @@ const FaerieMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1149,7 +1156,7 @@ const FaerieMonsters = [
           {
             basic: false,
             name: "Freezing Blast",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "8 cold damage",

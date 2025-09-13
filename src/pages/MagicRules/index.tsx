@@ -145,14 +145,17 @@ function MagicRules() {
         <h2 id="freeform">Freeform Spells</h2>
         <p>
           All explicit spells are battle spells or ritual spells, and ritual
-          spells are useful out of combat. However, heroes with magical
-          experiences can use <b>freeform spells</b> to aid them in{" "}
+          spells are useful out of combat. However, heroes with magically
+          relevant experiences can use <b>freeform spells</b> to aid them in{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>
           . Freeform spells are narratively restricted by what magic traditions
           the hero knows. A magical hero that only knows the fire magic
-          tradition can’t freeze water into ice!
+          tradition can’t freeze water into ice! For minor magic tricks like
+          lighting a candle or cleaning off dirt off clothing, anyone with a
+          magically releavant experience can perform that magic without a skill
+          roll.
         </p>
         <p>
           For example, a hero needs to leap across a wide chasm and the GM asks
@@ -200,17 +203,10 @@ function MagicRules() {
           permanently learn the ritual spell by making a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
-          </Link>
-          . The roll’s skill tier matches the spell’s tier.
+          </Link>{" "}
+          at normal difficulty if the ritual's spell tier equals your tier.
         </p>
         <ul>
-          <li>
-            <span>
-              <b>Critical Success:</b> Same as a success, and the first time you
-              attempt the ritual spell, you gain <Modifier type="f" count="1" />{" "}
-              to the skill roll.
-            </span>
-          </li>
           <li>
             <span>
               <b>Success:</b> You learn the ritual spell. The magic of the
@@ -226,14 +222,13 @@ function MagicRules() {
           </li>
           <li>
             <span>
-              <b>Failure:</b>
-            </span>{" "}
-            You fail to learn the ritual spell, and can’t try again until after
-            a{" "}
-            <Link className="internal-link" to="/rules/adventuring#resting">
-              safe rest
-            </Link>
-            .
+              <b>Failure:</b> You fail to learn the ritual spell, and can’t try
+              again until after a{" "}
+              <Link className="internal-link" to="/rules/adventuring#resting">
+                safe rest
+              </Link>
+              .
+            </span>
           </li>
         </ul>
         <h3 className="header">Casting Ritual Spell</h3>
@@ -259,7 +254,7 @@ function MagicRules() {
           In the description of a{" "}
           <Link className="internal-link" to="/ritual-spells">
             ritual spell
-          </Link>{" "}
+          </Link>
           , the time required to cast the spell will be specified as cast.
           Usually this time is long such as 10 minutes to even a day or week.
           During this time, a participating spellcaster can’t perform any other
@@ -304,40 +299,10 @@ function MagicRules() {
         <h4 className="header">Secondary Spellcaster</h4>
         <p>
           Anyone with a sufficient magical experience, such as “mage’s
-          apprentice”, can become a secondary spellcaster in a ritual by
-          attempting a{" "}
-          <Link className="internal-link" to="/rules/skills">
-            skill roll
-          </Link>
-          .
+          apprentice”, can become a secondary spellcaster in the ritual. For
+          each secondary spellcaster, the primary spellcaster gains{" "}
+          <Modifier type="f" count="1" /> to their ritual's skill roll.
         </p>
-        <ul>
-          <li>
-            <span>
-              <b>Critical Success:</b> The primary spellcaster gains{" "}
-              <Modifier type="f" count="2" /> to their ritual's skill roll.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Success:</b> The primary spellcaster gains{" "}
-              <Modifier type="f" count="1" /> to their ritual's skill roll.our
-              total meets or exceeds the TN.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Partial Success:</b> No effect, as you neither help nor hurt.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Failure:</b>
-            </span>{" "}
-            The primary spellcaster takes <Modifier type="mf" count="1" /> to
-            their ritual's skill roll.
-          </li>
-        </ul>
         <p>
           Secondary spellcasters can rotate out with the primary spellcaster for
           ritual spells that take very long to cast such as days or more!
@@ -350,7 +315,7 @@ function MagicRules() {
           <Link className="internal-link" to="/ritual-spells">
             ritual spells
           </Link>{" "}
-          require material cost, which others can help supply.
+          require material cost, which others can help supply part of the cost.
         </p>
       </div>
     </div>

@@ -240,7 +240,8 @@ const PlantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -392,7 +393,8 @@ const PlantMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -464,7 +466,7 @@ const PlantMonsters = [
         bossActions={[
           {
             name: "Overgrowth",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             round: "1",
             target: "1 zone within 3 zones",
             duration: "Scene ends",
@@ -492,7 +494,7 @@ const PlantMonsters = [
           },
           {
             name: "You Serve Me Now",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             round: "5",
             target: "1 creature within 2 zones",
             defense: "Spirit",
@@ -538,7 +540,8 @@ const PlantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -712,7 +715,8 @@ const PlantMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -899,7 +903,8 @@ const PlantMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -956,7 +961,7 @@ const PlantMonsters = [
           {
             basic: false,
             name: "Vine Lash",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
             defense: "Guard",
             damage: "9 physical",
@@ -967,7 +972,7 @@ const PlantMonsters = [
           {
             name: "Quick Vine",
             effect:
-              "The green man can use vine, but treats the attack roll as one degree of success lower",
+              "The green man can use vine, but treats the attack roll as one roll result lower",
           },
         ]}
       />

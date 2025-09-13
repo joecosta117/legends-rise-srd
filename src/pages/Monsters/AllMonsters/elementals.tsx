@@ -60,7 +60,7 @@ const ElementalMonsters = [
             basic: false,
             name: "Spew Elements",
             target: "1d4+1 enemies within the sprite's zone",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             defense: "Guard",
             damage:
               "2 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
@@ -477,7 +477,7 @@ const ElementalMonsters = [
             basic: false,
             name: "Hurl Element",
             target: "1d4+1 enemies within the sprite's zone",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             defense: "Guard",
             damage:
               "2 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
@@ -983,7 +983,7 @@ const ElementalMonsters = [
             basic: false,
             name: "Hurl Element",
             target: "1d4+1 enemies within the sprite's zone",
-            keywords: "powerful, recharge",
+            keywords: "recharge",
             defense: "Guard",
             damage:
               "3 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
@@ -1028,7 +1028,8 @@ const ElementalMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1073,7 +1074,7 @@ const ElementalMonsters = [
           {
             basic: false,
             name: "Lightning Flurry",
-            keywords: "magical, powerful, recharge",
+            keywords: "magical, recharge",
             target: <span>All enemies in the genie's zone</span>,
             defense: "Guard",
             damage: "6 lightning damage",
@@ -1143,7 +1144,8 @@ const ElementalMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1254,7 +1256,8 @@ const ElementalMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1363,7 +1366,8 @@ const ElementalMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1469,7 +1473,8 @@ const ElementalMonsters = [
             description: (
               <span>
                 Major monsters get two turns per round, but can't take these
-                turns in a row.
+                turns in a row. Major monsters also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -1508,7 +1513,7 @@ const ElementalMonsters = [
           {
             basic: false,
             name: "Great Wave",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "6 physical damage",
@@ -1571,7 +1576,8 @@ const ElementalMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1626,7 +1632,7 @@ const ElementalMonsters = [
           {
             basic: false,
             name: "Inferno Burst",
-            keywords: "magical, powerful, range,recharge",
+            keywords: "magical, range,recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
             defense: "Guard",
             damage: "18 fire damage",
@@ -1746,7 +1752,8 @@ const ElementalMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1808,7 +1815,7 @@ const ElementalMonsters = [
           {
             basic: false,
             name: "Tempest's Pull",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>All enemies within 3 zones</span>,
             defense: "Guard",
             critical: (
@@ -1845,7 +1852,7 @@ const ElementalMonsters = [
           {
             name: "Storm Breath",
             round: "1",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>All creatues in 3 connected zones</span>,
             defense: "Guard",
             damage: "15 lightning damage",
@@ -1918,7 +1925,8 @@ const ElementalMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -1972,7 +1980,7 @@ const ElementalMonsters = [
           {
             basic: false,
             name: "Swallowed by the Earth",
-            keywords: "magical, powerful, range, recharge",
+            keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
             damage: "18 physical damage",
@@ -2021,7 +2029,7 @@ const ElementalMonsters = [
           {
             name: "Earthquake",
             round: "1",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>All huge or smaller creatures</span>,
             defense: "Guard",
             damage: "15 physical damage",
@@ -2046,7 +2054,7 @@ const ElementalMonsters = [
             effect: (
               <span>
                 The primordial uses quaking slam against each creature within 1
-                zone, and this ability gains the powerful keyword for this use.
+                zone.
               </span>
             ),
           },
@@ -2093,7 +2101,8 @@ const ElementalMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2203,7 +2212,7 @@ const ElementalMonsters = [
           {
             name: "Steam Breath",
             round: "3",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: (
               <span>
                 2d4+2 enemies within the primordial's zone and adjacent zone
@@ -2215,7 +2224,7 @@ const ElementalMonsters = [
           {
             name: "Pulling Waves",
             round: "5",
-            keywords: "magical, powerful, range",
+            keywords: "magical, range",
             target: <span>All enemies</span>,
             defense: "Guard",
             damage: "12 physical damage",
@@ -2263,7 +2272,8 @@ const ElementalMonsters = [
                 Boss monsters get two turns per round, but can't take these
                 turns in a row. At the end of a boss monster's turn, they can
                 take direct damage equal to double their proficiency bonus to
-                end one condition affecting them.
+                end one condition affecting them. Boss monsters also deal half
+                damage on a failed attack roll.
               </span>
             ),
           },
@@ -2383,7 +2393,7 @@ const ElementalMonsters = [
           {
             name: "Roar of Defiance",
             round: "5",
-            keywords: "powerful, range",
+            keywords: "range",
             target: <span>All enemies</span>,
             defense: "Spirit",
             critical: (

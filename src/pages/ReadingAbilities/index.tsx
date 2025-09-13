@@ -92,10 +92,10 @@ function ReadingAbilities() {
               <Link className="internal-link" to="/rules/combat#attack-roll">
                 attack roll
               </Link>{" "}
-              rolled from this ability treats the result as one degree of
-              success higher. For example, if an arcanist casts fireball at
-              round 3 and rolls a success on their attack roll, then the attack
-              is upgraded to a critical success!
+              rolled from this ability treats the result as one roll result
+              higher. For example, if an arcanist casts fireball at round 3 and
+              rolls a success on their attack roll, then the attack is upgraded
+              to a critical success!
             </span>
           </li>
           <li>
@@ -110,14 +110,6 @@ function ReadingAbilities() {
                 engaged
               </Link>{" "}
               to a target, such as swinging a sword.
-            </span>
-          </li>
-          <li>
-            <span>
-              <b>Powerful:</b> When you make an attack roll with this ability,
-              treat a failure as a partial success. If this ability also has the
-              escalation keyword and is used on round 3 or later, a failure is
-              instead treated as a success.
             </span>
           </li>
           <li>
