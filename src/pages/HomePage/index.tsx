@@ -92,7 +92,7 @@ function HomePage() {
             />
             <Accordion
               title="One Roll Attacks"
-              content="In Legends Rise, every attack is fast, impactful, and intuitive as just one roll decides both your accuracy and your damage. No more clunky “hit, but deal 2 damage” moments or wasting turns with total whiffs; even a partial success still leaves a mark. High rolls feel truly rewarding because the better you strike, the harder you hit, keeping combat both exciting and streamlined."
+              content="In Legends Rise, every attack is fast, impactful, and intuitive as just one roll decides both your accuracy and your damage. No more clunky “hit, but deal 2 damage” moments or wasting turns with total whiffs; even on a failure, you still graze your foe. High rolls feel truly rewarding because the better you strike, the harder you hit, keeping combat both exciting and streamlined."
             />
             <Accordion
               title="Exciting Narrative Rules"
