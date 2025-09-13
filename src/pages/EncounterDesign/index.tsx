@@ -578,21 +578,22 @@ function EncounterDesign() {
         <ul>
           <li>
             <span>
-              <b>Easy Encounter:</b> Countdown die size is equal to the number
-              of heroes.
+              <b>Easy Encounter:</b> Countdown die size is equal to half the
+              number of heroes.
             </span>
           </li>
           <li>
             <span>
               <b>Medium Encounter:</b> Countdown die size is equal to number of
-              heroes multiplied by 1.5. So for four heroes, the countdown die is
-              a d6.
+              heroes.
             </span>
           </li>
           <li>
             <span>
-              <b>Hard Encounter:</b> Countdown die size is equal to double the
-              number of heroes or more.
+              <b>Hard Encounter:</b> Countdown die size is equal to the number
+              of heroes multiplied by 1.5, but no more than doubled. So for four
+              heroes, the countdown die is a d6, or a d8 for extremely hard
+              encounters.
             </span>
           </li>
         </ul>
