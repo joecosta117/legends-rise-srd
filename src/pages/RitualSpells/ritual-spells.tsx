@@ -28,7 +28,7 @@ export const ritualSpells = [
               The skill tier matches your tier.
             </span>
           }
-          critical="Same as success, and the sensors see through invisibility"
+          // critical="Same as success, and the sensors see through invisibility"
           success={
             <span>
               Sensors have <ToolTip preset="night" />
@@ -61,8 +61,8 @@ export const ritualSpells = [
               from you.
             </span>
           }
-          critical="Servant lasts for a full day"
-          success="Servant lasts for 8 hours"
+          // critical="Servant lasts for a full day"
+          success="Servant lasts a full day"
           partial="Servant lasts for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
@@ -79,8 +79,8 @@ export const ritualSpells = [
           keywords="Magical"
           cast="10 minutes"
           effect="You create an item within your hands. The item can’t weigh more than a heavy piece of armor. If you attempt to cast this spell again, the previous item is destroyed."
-          critical="Item lasts for a full day"
-          success="Item lasts for 8 hours"
+          // critical="Item lasts for a full day"
+          success="Item lasts a full day"
           partial="Item lasts for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
@@ -97,8 +97,8 @@ export const ritualSpells = [
           keywords="Magical"
           cast="10 minutes"
           effect="The steed appears before you and can take the shape of whichever you choose such as a horse, camel, or giant lizard. The steed’s defenses equal your own, and it has 1 hit point."
-          critical="Same as success, and the steed can walk on water and gains a fly speed of 1"
-          success="Steed lasts for 8 hours"
+          // critical="Same as success, and the steed can walk on water and gains a fly speed of 1"
+          success="Steed lasts a full day"
           partial="Steed lasts for 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
@@ -125,8 +125,8 @@ export const ritualSpells = [
               with the skill tier matching the spellcaster’s tier.
             </span>
           }
-          critical="Same as success, but the size of the disguise can be one larger or smaller"
-          success="Disguise lasts for 8 hours"
+          // critical="Same as success, but the size of the disguise can be one larger or smaller"
+          success="Same as a partial succcess, but the disguise lasts a full day"
           partial="Disguise lasts for 1 hour, and creatures have +1 fortune on skill rolls to see through the illusion"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
@@ -143,10 +143,10 @@ export const ritualSpells = [
           keywords="Magical, Melee"
           cast="10 minutes"
           target="1 creature per your tier you can touch"
-          critical="Target gains night vision for a full day"
+          // critical="Target gains night vision for a full day"
           success={
             <span>
-              Target gains <ToolTip preset="night" /> for 8 hours
+              Target gains <ToolTip preset="night" /> for a full day
             </span>
           }
           partial="Target gains night vision for 1 hour"
@@ -166,17 +166,17 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 creature per your tier you can touch"
           effect="Invisibility ends early if the target uses a hostile ability."
-          critical="Target becomes invisible for 8 hours"
+          // critical="Target becomes invisible for 8 hours"
           success={
             <span>
               Target becomes{" "}
               <Link className="internal-link" to="/rules/combat#stealth">
                 invisible
               </Link>{" "}
-              for 1 hour
+              for 8 hours
             </span>
           }
-          partial="Target becomes invisible for 10 minutes"
+          partial="Target becomes invisible for a scene"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
@@ -203,7 +203,7 @@ export const ritualSpells = [
               by anyone not designated by you, the spell ends.
             </span>
           }
-          critical="Lock duration is unlimited"
+          // critical="Lock duration is unlimited"
           success="Lock duration is a full day"
           partial="Lock duration is 1 hour"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
@@ -222,9 +222,9 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 creature per your tier you can touch"
           effect="Target can walk on any solid surface"
-          critical="Duration is 8 hours"
-          success="Duration is 1 hour"
-          partial="Duration is 10 minutes"
+          // critical="Duration is 8 hours"
+          success="Duration lasts for 8 hours"
+          partial="Duration lasts for a scene"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
@@ -241,8 +241,8 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 creature per your tier you can touch"
           effect="Target can understand all languages"
-          critical="Same as a success, and the target can write and speak the language perfectly too"
-          success="Target understands the language perfectly"
+          // critical="Same as a success, and the target can write and speak the language perfectly too"
+          success="Target understands the language perfectly, and write and speak the language too"
           partial="Target doesn’t understand the language perfectly, but instead only makes out bits and pieces of words correctly"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
@@ -277,8 +277,8 @@ export const ritualSpells = [
               bonus equals double the spell tier.
             </span>
           }
-          critical="Same as a success, but you and the duplicate can communicate telepathically with one another"
-          success="You have control over the duplicate and can give it verbal commands"
+          // critical="Same as a success, but you and the duplicate can communicate telepathically with one another"
+          success="You have control over the duplicate and can communicate telepathically with one another"
           partial="Duplicate is not under your control, and might regard you as neutral or hostile"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
@@ -296,9 +296,9 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 creature you can touch"
           effect="Target gains a fly speed of 1"
-          critical="Spell lasts for 8 hours"
-          success="Spell lasts for 1 hour"
-          partial="Spell lasts for 10 minutes"
+          // critical="Spell lasts for 8 hours"
+          success="Spell lasts for 8 hours"
+          partial="Spell lasts for a scene"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
@@ -315,7 +315,7 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 object or creature familiar to you"
           effect="You sense the direction to the target’s location. If the target is in motion, you know the direction of their movement"
-          critical="Range of the spell is your realm"
+          // critical="Range of the spell is your realm"
           success="Range of the spell is 10 miles"
           partial="Range of the spell is 1 mile"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
@@ -344,11 +344,11 @@ export const ritualSpells = [
               through solid barriers.
             </span>
           }
-          critical={
-            <span>
-              Eye has <ToolTip preset="blind" />
-            </span>
-          }
+          // critical={
+          //   <span>
+          //     Eye has <ToolTip preset="blind" />
+          //   </span>
+          // }
           success={
             <span>
               Eye has <ToolTip preset="night" />
@@ -371,7 +371,7 @@ export const ritualSpells = [
           cast="10 minutes"
           target="1 familiar creature"
           effect="You send a short, spoken message (1 minute or less) that is heard in the target’s mind, and the target can respond with the same message limitations"
-          critical="Target can be anywhere within your realm"
+          // critical="Target can be anywhere within your realm"
           success="Target can't be more than 100 miles away"
           partial="Target can't be more than 10 miles away"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
@@ -400,7 +400,7 @@ export const ritualSpells = [
               with the skill tier matching the spell tier.
             </span>
           }
-          critical="Other creatures take +1 misfortune to enter the dome"
+          // critical="Other creatures take +1 misfortune to enter the dome"
           success="Spell works"
           partial="Other creatures gain +1 fortune to enter the dome"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
@@ -430,7 +430,7 @@ export const ritualSpells = [
               everything nearby.
             </span>
           }
-          critical="Your sensor can see anything invisible"
+          // critical="Your sensor can see anything invisible"
           success="Spell works"
           partial="Spell works, but the target is aware they’re being magically spied on"
           failure="Spell fails, target gains a brief glimpse of you and knows your location, and you can't attempt this spell again until after a safe rest"
@@ -451,9 +451,9 @@ export const ritualSpells = [
           cast="1 day"
           requirement="Precious materials worth 6 gold"
           effect="You construct a castle, mansion, tower, temple, or any type of structure near you. You can determine if the structure has walls surrounding it or any other nearby structural features."
-          critical="Structure is the size of a large keep"
-          success="Structure is the size of a mansion"
-          partial="Structure is the size of a normal house"
+          // critical="Structure is the size of a large keep"
+          success="Same as a partial success, but the structure is the size of a small castle"
+          partial="Structure is the size of a small tower"
           failure="Spell fails, and you can't attempt this spell again until after a safe rest"
         />
       ),
@@ -483,9 +483,9 @@ export const ritualSpells = [
               yourself, equal to your proficiency bonus.
             </span>
           }
-          critical="Teleportation works as intended"
-          success="Teleport to a location 1d12 miles away from the intended target"
-          partial="Teleport to a location 2d12+6 miles away from the intended target"
+          // critical="Teleportation works as intended"
+          success="Teleportation works as intended"
+          partial="Teleport to a location 2d10 miles away from the intended target"
           failure="Teleport to a random location within your realm, and you can't attempt this spell again until after a safe rest"
         />
       ),
@@ -515,9 +515,9 @@ export const ritualSpells = [
               yourself, equal to your proficiency bonus.
             </span>
           }
-          critical="Teleportation works as intended"
-          success="Teleport to a location 1d12 miles away from the intended target"
-          partial="Teleport to a location 2d12+6 miles away from the intended target"
+          // critical="Teleportation works as intended"
+          success="Teleportation works as intended"
+          partial="Teleport to a location 2d10 miles away from the intended target"
           failure="Teleport to a random location within a random realm, and you can't attempt this spell again until after a safe rest"
         />
       ),
@@ -541,23 +541,14 @@ export const ritualSpells = [
               </Link>
             </span>
           }
-          critical="Same as a success, but the target isn’t hindered"
+          // critical="Same as a success, but the target isn’t hindered"
           success={
             <span>
               If the target is willing, they are resurrected with 1 hit point
-              and any resources are already spent, such as recoveries. The
-              journey from the afterlife leaves the target weak, and they’re{" "}
-              <Link className="internal-link" to="/conditions#hindered">
-                hindered
-              </Link>{" "}
-              until after a{" "}
-              <Link className="internal-link" to="/rules/adventuring#resting">
-                safe rest
-              </Link>
-              .
+              and any resources are already spent, such as recoveries.
             </span>
           }
-          partial="Same as a success, but the target is hindered for a week"
+          partial="Same as a success, but the target is hindered until after a safe rest."
           failure="Spell fails, you can't attempt this spell again until after a safe rest, and you take a growing +1 misfortune on this spell to resurrect the same target again."
         />
       ),
@@ -573,10 +564,10 @@ export const ritualSpells = [
           keywords="Magical"
           cast="1 day"
           requirement="Precious materials worth 15 gold"
-          critical="Same as a success, but there are no complications"
-          success="You make a wish that is granted with complications, such as angering a god or taking riches from a criminal organization now mad at you. You also take a growing +1 misfortune to this spell"
-          partial="Nothing happens, but you take a growing +1 misfortune to this spell"
-          failure="Same as a partial, but an ironic complication occurs such as being trapped in a vault of treasure or achieving divinity in a reality with no one else"
+          // critical="Same as a success, but there are no complications"
+          success="You make a wish that is granted with a complication, such as angering a god or taking riches from a criminal organization now mad at you. You also take a growing +1 misfortune to cast this spell"
+          partial="Same as a success, but roll a 1d100. On a 50 or less, you can't cast this spell again."
+          failure="Spell fails, you can't attempt this spell again until after a safe rest, and you take a growing +1 misfortune to cast this spell."
         />
       ),
     },
