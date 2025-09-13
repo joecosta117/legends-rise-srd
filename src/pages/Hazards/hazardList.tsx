@@ -194,8 +194,9 @@ const HazardList = [
             name: "Major Hazard",
             description: (
               <span>
-                Major hazards get two turns per round. Major hazards also deal
-                half damage on a failed attack roll.
+                Major hazards get two turns per round, but can't take these
+                turns in a row. Major hazards also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -406,8 +407,9 @@ const HazardList = [
             name: "Major Hazard",
             description: (
               <span>
-                Major hazards get two turns per round. Major hazards also deal
-                half damage on a failed attack roll.
+                Major hazards get two turns per round, but can't take these
+                turns in a row. Major hazards also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
@@ -451,8 +453,9 @@ const HazardList = [
             name: "Major Hazard",
             description: (
               <span>
-                Major hazards get two turns per round. Major hazards also deal
-                half damage on a failed attack roll.
+                Major hazards get two turns per round, but can't take these
+                turns in a row. Major hazards also deal half damage on a failed
+                attack roll.
               </span>
             ),
           },
