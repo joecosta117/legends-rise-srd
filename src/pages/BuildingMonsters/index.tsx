@@ -672,7 +672,7 @@ function BuildingMonsters() {
           Whenever a hero gets a failure or partial success on a skill roll,
           they take damage of the listed amount. Usually just the hero that did
           poorly on the skill roll takes this damage, but you can rule all
-          heroes half the damage instead.
+          heroes take half the damage instead.
         </p>
         <h4 className="header">Damage</h4>
         <p>Hazards have three types of attacks that deal damage:</p>
@@ -697,9 +697,9 @@ function BuildingMonsters() {
         <h3 className="header">Determine the Threat Level</h3>
         <p>
           Unlike monsters, hazards only have two threat levels: standard or
-          major. All standard hazards have a countdown die of d6, while major
-          hazards have a countdown die of d12. Like major monsters, major
-          hazards get two turns per round.
+          major. All standard hazards have a countdown die of d4, while major
+          hazards have a countdown die of d8. Like major monsters, major hazards
+          get two turns per round.
         </p>
         <h3 className="header">Hazard Ability</h3>
         <p>
@@ -758,14 +758,14 @@ function BuildingMonsters() {
           <li>
             <span>
               <b>Standard Hazards:</b> You can upgrade a standard hazard to a
-              major hazard by increasing their countdown die size to d12 and
+              major hazard by increasing their countdown die size to d8 and
               giving them a second turn per round.
             </span>
           </li>
           <li>
             <span>
               <b>Major Hazards:</b> You can downgrade a major hazard to a
-              standard hazard by halving their countdown die size to d6 and
+              standard hazard by halving their countdown die size to d4 and
               giving them only one turn per round.
             </span>
           </li>

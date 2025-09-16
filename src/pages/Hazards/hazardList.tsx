@@ -12,7 +12,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Siphoning Spirits"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 necrotic damage"
@@ -46,7 +46,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Storm Altar"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 lightning damage"
@@ -78,7 +78,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Astral Rift"
-        countdown="d6"
+        countdown="d4"
         tier="3"
         threat="Standard"
         consequence="12 arcane damage"
@@ -116,7 +116,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Temporal Flux"
-        countdown="d6"
+        countdown="d4"
         tier="2"
         threat="Standard"
         consequence="8 arcane damage"
@@ -151,7 +151,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Doom Chimes"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 necrotic damage"
@@ -185,7 +185,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Bloodsoaked Ground"
-        countdown="d12"
+        countdown="d8"
         tier="1"
         threat="Major"
         consequence="4 necrotic damage"
@@ -231,7 +231,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Restless Tomb"
-        countdown="d6"
+        countdown="d4"
         tier="2"
         threat="Standard"
         consequence="8 necrotic damage"
@@ -298,7 +298,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Carnivorous Vines"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 physical damage"
@@ -331,7 +331,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Sporespawn Fungus"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 toxic damage"
@@ -364,7 +364,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Howling Tree"
-        countdown="d6"
+        countdown="d4"
         tier="2"
         threat="Standard"
         consequence="8 psychic damage"
@@ -398,7 +398,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Cursed Idol"
-        countdown="d12"
+        countdown="d8"
         tier="2"
         threat="Major"
         consequence="8 unholy damage"
@@ -444,7 +444,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Eldritch Obelisk"
-        countdown="d12"
+        countdown="d8"
         tier="2"
         threat="Major"
         consequence="8 psychic damage"
@@ -490,7 +490,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Blasphemous Tome"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 unholy damage"
@@ -528,7 +528,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Clockwork Turret"
-        countdown="d12"
+        countdown="d8"
         tier="2"
         threat="Standard"
         consequence="8 arcane damage"
@@ -554,7 +554,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Raging Fire"
-        countdown="d6"
+        countdown="d4"
         tier="1"
         threat="Standard"
         consequence="4 fire damage"
@@ -591,7 +591,7 @@ const HazardList = [
     statBlock: (
       <Hazard
         name="Doom Eclipse"
-        countdown="d6"
+        countdown="d4"
         tier="3"
         threat="Standard"
         consequence="12 necrotic damage"
