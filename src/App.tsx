@@ -18,7 +18,7 @@ import Rogue from "./pages/Rogue";
 import Summoner from "./pages/Summoner";
 import Swordmage from "./pages/Swordmage";
 import Warrior from "./pages/Warrior";
-import DualClass from "./pages/DualClass";
+// import DualClass from "./pages/DualClass";
 import ThemeTalents from "./pages/ThemeTalents";
 import FightingStyles from "./pages/FightingStyles";
 import BattleSpells from "./pages/BattleSpells";
