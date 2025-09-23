@@ -11,12 +11,17 @@ const ClassHeader = () => {
     ) as NodeListOf<HTMLElement>;
 
     tabs.forEach((tab) => {
+      // if (tab.children[0].innerHTML === capPath) {
+      //   tab.dataset.selected = "true";
+      // } else if (
+      //   tab.children[0].innerHTML === "Dual Class" &&
+      //   capPath === "Dual-class"
+      // ) {
+      //   tab.dataset.selected = "true";
+      // } else {
+      //   tab.dataset.selected = "false";
+      // }
       if (tab.children[0].innerHTML === capPath) {
-        tab.dataset.selected = "true";
-      } else if (
-        tab.children[0].innerHTML === "Dual Class" &&
-        capPath === "Dual-class"
-      ) {
         tab.dataset.selected = "true";
       } else {
         tab.dataset.selected = "false";
@@ -86,10 +91,10 @@ const ClassHeader = () => {
       <div className="class-tabs__tab" data-selected="false">
         <Link to="/classes/warrior">Warrior</Link>
       </div>
-      <div className="divider">|</div>
+      {/* <div className="divider">|</div>
       <div className="class-tabs__tab" data-selected="false">
         <Link to="/classes/dual-class">Dual Class</Link>
-      </div>
+      </div> */}
     </div>
   );
 };

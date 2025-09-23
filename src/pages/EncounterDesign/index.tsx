@@ -541,11 +541,10 @@ function EncounterDesign() {
               <p>
                 This objective introduces a time limit usually in the form of a
                 countdown. The players aren’t meant to win by force, just
-                survive or delay the enemy long enough. After each round,
-                deincrement the countdown die to signal when the objective is
-                complete. For example, the heroes must hold the gates for a d6
-                countdown until the townspeople can evacuate and the mages seal
-                the portal.
+                survive or delay the enemy long enough. After each round, reduce
+                the countdown die to signal when the objective is complete. For
+                example, the heroes must hold the gates for a d6 countdown until
+                the townspeople can evacuate and the mages seal the portal.
               </p>
             </div>
           }
@@ -553,16 +552,25 @@ function EncounterDesign() {
 
         <h2 id="skill-encounter">Skill Encounters</h2>
         <p>
-          Not all encounters are fights. Skill encounters are challenges that
-          require a group effort but aren't resolved by combat. Skill encounters
-          utilize{" "}
+          Not all encounters are fights that require the more tactical and
+          granular combat rules. Skill encounters are challenges that require a
+          group effort to solve. Skill encounters utilize{" "}
           <Link className="internal-link" to="/rules/skills">
             skill rolls
           </Link>{" "}
           along with other out of combat abilities such as theme talents. A
-          skill encounter could be flying an airship through a magical storm or
-          a chase scene through a bustling city.
+          skill encounter could be flying an airship through a magical storm,
+          leading an army in mass combat, or a chase scene through a bustling
+          city.
         </p>
+        <p>
+          In a skill encounter, heroes take turns making skill rolls, but
+          enemies (if present) don't take turns. Instead any enemy moves are
+          treated as complications from skill rolls such as a hero getting a
+          partial success and they take damage from a foe or environmental
+          effect.{" "}
+        </p>
+
         <h3 className="header">Countdowns</h3>
         <p>
           Skill encounters utilize{" "}
@@ -598,7 +606,7 @@ function EncounterDesign() {
           </li>
         </ul>
 
-        <h4 className="header">Consequences</h4>
+        <h4 className="header">Complications</h4>
         <p>
           During skill encounters, the consequences on a failure or partial
           success skill roll should be significant. Taking damage is the
@@ -608,7 +616,7 @@ function EncounterDesign() {
           <li>
             <span>
               <b>
-                The hero that got the consequence takes damage equal to double
+                The hero that got the complication takes damage equal to double
                 their proficiency bonus
               </b>
               . For example, a hero tries to close a magic portal to hell, but
@@ -624,7 +632,7 @@ function EncounterDesign() {
           </li>
         </ul>
         <p>
-          From a meta perspective, the consequence of skill encounters is
+          From a meta perspective, the complication of skill encounters is
           usually damage or something as signifcant due to skill encounters
           boosting the heroes'{" "}
           <Link className="internal-link" to="/rules/combat#momentum">
@@ -634,12 +642,8 @@ function EncounterDesign() {
           skill encounters without much risk and max out the momentum die.
           However, if some heroes take enough damage during a skill encounter,
           they will have to spend recoveries, which limits their how much more
-          they can press on for the day.
+          they can press on before taking a safe rest.
         </p>
-
-        {/* TODO: Add lancer like sitreps here
-        <h2 id="encounter-situations">Encounter Situations</h2>
-        <p>PUt lancer type of sit reps</p> */}
       </div>
     </div>
   );

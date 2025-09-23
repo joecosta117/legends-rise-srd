@@ -686,13 +686,13 @@ function SkillRules() {
         <ul>
           <li>
             <span>
-              <b>Success:</b> The countdown die deincrements by 1.
+              <b>Success:</b> The countdown die lowers by 1.
             </span>
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> The countdown die deincrements by 1 and
-              there is a consequence.
+              <b>Partial Success:</b> The countdown die lowers by 1 and there is
+              a consequence.
             </span>
           </li>
           <li>
@@ -719,7 +719,7 @@ function SkillRules() {
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> The countdown die deincrements by 1 as the
+              <b>Partial Success:</b> The countdown die lowers by 1 as the
               complication.
             </span>
           </li>
@@ -727,7 +727,7 @@ function SkillRules() {
             <span>
               <b>Failure:</b>
             </span>{" "}
-            The countdown die deincrements by 1.
+            The countdown die lowers by 1.
           </li>
         </ul>
         <h4 className="header">Dual Countdowns</h4>
@@ -745,19 +745,19 @@ function SkillRules() {
         <ul>
           <li>
             <span>
-              <b>Success:</b> The positive countdown die deincrements by 1.
+              <b>Success:</b> The positive countdown die lowers by 1.
             </span>
           </li>
           <li>
             <span>
-              <b>Partial Success:</b> Both countdown die deincrement by 1.
+              <b>Partial Success:</b> Both countdown die lower by 1.
             </span>
           </li>
           <li>
             <span>
               <b>Failure:</b>
             </span>{" "}
-            The negative countdown die deincrements by 1.
+            The negative countdown die lowers by 1.
           </li>
         </ul>
         <h4 className="header">Simple Countdowns</h4>
@@ -765,8 +765,8 @@ function SkillRules() {
           Simple countdowns are used to keep track of time, and usually tick
           down after certain time has passed. For example, the heroes have to
           hold off zombies for 6 rounds before the local priest finishes
-          consecrating the temple. The GM sets a d6 countdown die that
-          deincrements after each round.
+          consecrating the temple. The GM sets a d6 countdown die that lowers
+          after each round.
         </p>
 
         <h2 id="downtime-activities">Downtime Activities</h2>

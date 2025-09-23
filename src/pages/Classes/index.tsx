@@ -203,7 +203,7 @@ function Classes() {
           }
         />
 
-        <h3 className="header" style={{ marginTop: "25px" }}>
+        {/* <h3 className="header" style={{ marginTop: "25px" }}>
           Dual Class
         </h3>
         <p>
@@ -216,7 +216,7 @@ function Classes() {
           onClick={() => handleLink("classes/dual-class")}
         >
           DUAL CLASS RULES
-        </button>
+        </button> */}
         <h3 className="header" style={{ marginTop: "25px" }}>
           Themes
         </h3>

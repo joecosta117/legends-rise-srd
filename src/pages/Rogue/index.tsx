@@ -172,16 +172,30 @@ function Rogue() {
               when using a heavy melee weapon or wearing heavy armor.
             </p>
 
-            <h3 className="header">Opportunist</h3>
+            <h3 className="header">Cheap Shot</h3>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Opportunist"
+              name="Cheap Shot"
               actType="Reaction"
-              descriptor="Before a foe has a chance to react, you seize your opportunity."
-              frequency="Reaction"
-              trigger="You see an ally finish their turn"
-              requirement="You haven’t taken a turn yet this round"
-              effect="You take your turn next"
+              descriptor="You seize the opening your ally creates, striking from the flank before your foe can recover."
+              frequency="At-will"
+              trigger={
+                <span>
+                  You see an ally make an attack roll against a{" "}
+                  <Link className="internal-link" to="/conditions#vulnerable">
+                    vulnerable
+                  </Link>{" "}
+                  creature
+                </span>
+              }
+              effect={
+                <span>
+                  <Link className="internal-link" to="/combat-abilities#strike">
+                    Strike
+                  </Link>{" "}
+                  the same target if they are within your weapon's range
+                </span>
+              }
             />
 
             <h3 className="header">Expertise</h3>
@@ -412,16 +426,6 @@ function Rogue() {
             /> */}
 
             <h2>Tier 2 Class Talents</h2>
-            <h3 className="header">Greater Opportunist</h3>
-            <p>
-              When you use opportunist, you gain <Modifier type="f" count="1" />{" "}
-              to your next{" "}
-              <Link className="internal-link" to="/rules/combat#attack-roll">
-                attack roll
-              </Link>{" "}
-              on that turn.
-            </p>
-
             <h3 className="header">Insightful Movement</h3>
             <p style={{ marginBottom: 0 }}>
               <b>Requirement:</b> investigator subclass
@@ -444,6 +448,16 @@ function Rogue() {
                 </span>
               }
             />
+
+            <h3 className="header">Low Blow</h3>
+            <p>
+              When you get a success or higher on your strike from cheap shot,
+              the target is{" "}
+              <Link className="internal-link" to="/conditions#dazed">
+                dazed
+              </Link>{" "}
+              (next turn ends).
+            </p>
 
             <h3 className="header">Meld the Shadows</h3>
             <p style={{ marginBottom: 0 }}>
@@ -535,9 +549,9 @@ function Rogue() {
               damage.
             </p>
 
-            <h3 className="header">Uncanny Opportunist</h3>
+            <h3 className="header">Vicious Rhythm</h3>
             <p>
-              You gain a second reaction that you can only use on opportunist.
+              You gain a second reaction that you can only use on cheap shot.
             </p>
           </div>
         )}
