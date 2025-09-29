@@ -79,7 +79,7 @@ function Ranger() {
             <ul style={{ marginTop: "10px" }}>
               <li>
                 <span>
-                  <b>Theme:</b> Martial
+                  <b>Theme:</b> Nature
                 </span>
               </li>
               <li>
