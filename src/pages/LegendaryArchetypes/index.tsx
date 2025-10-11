@@ -88,7 +88,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Empyreal Soul (8th-Level Feature)</h4>
@@ -196,7 +196,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +10, and you gain the following
               features.
             </p>
             <h4 className="header">Magical Knowledge (8th-Level Feature)</h4>
@@ -246,7 +246,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +16, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Training in Violence (8th-Level Feature)</h4>
@@ -314,7 +314,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +16, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Divine Body (8th-Level Feature)</h4>
@@ -375,7 +375,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Devil Soul (8th-Level Feature)</h4>
@@ -491,7 +491,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Dragon Soul (8th-Level Feature)</h4>
@@ -605,7 +605,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Elemental Body (8th-Level Feature)</h4>
@@ -767,7 +767,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Supernatural Cunning (8th-Level Feature)</h4>
@@ -853,7 +853,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Green Body (8th-Level Feature)</h4>
@@ -952,7 +952,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +10, and you gain the following
               features.
             </p>
             <h4 className="header">Machine Knowledge (8th-Level Feature)</h4>
@@ -1059,7 +1059,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +16, and you gain the following
+              Your hit points increase by +14, and you gain the following
               features.
             </p>
             <h4 className="header">Slayer's Training (8th-Level Feature)</h4>
@@ -1142,7 +1142,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Worldly Jaunt (8th-Level Feature)</h4>
@@ -1222,7 +1222,7 @@ function LegendaryArchetypes() {
             <p>Choose what type of hero you are: magic or martial.</p>
             <h5>Magic Hero</h5>
             <p>
-              Your hit points increase by +12. You learn a{" "}
+              Your hit points increase by +10. You learn a{" "}
               <Link className="internal-link" to="/battle-spells">
                 magic tradition
               </Link>{" "}
@@ -1233,7 +1233,7 @@ function LegendaryArchetypes() {
             </p>
             <h5>Martial Hero</h5>
             <p>
-              Your hit points increase by +16, and you learn a{" "}
+              Your hit points increase by +14, and you learn a{" "}
               <Link className="internal-link" to="/fighting-styles">
                 fighting style
               </Link>{" "}
@@ -1278,7 +1278,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Rally to Me! (8th-Level Feature)</h4>
@@ -1365,7 +1365,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +10, and you gain the following
               features.
             </p>
             <h4 className="header">Forbidden Knowledge (8th-Level Feature)</h4>
@@ -1453,7 +1453,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Void Body (8th-Level Feature)</h4>
@@ -1569,7 +1569,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +10, and you gain the following
               features.
             </p>
             <h4 className="header">Nature Power (8th-Level Feature)</h4>
@@ -1626,7 +1626,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +10, and you gain the following
               features.
             </p>
             <h4 className="header">Divine Power (8th-Level Feature)</h4>
@@ -1713,7 +1713,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +12, and you gain the following
+              Your hit points increase by +10, and you gain the following
               features.
             </p>
             <h4 className="header">Timeless Knowledge (8th-Level Feature)</h4>
@@ -1785,7 +1785,7 @@ function LegendaryArchetypes() {
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>
-              Your hit points increase by +14, and you gain the following
+              Your hit points increase by +12, and you gain the following
               features.
             </p>
             <h4 className="header">Warden's Training (8th-Level Feature)</h4>

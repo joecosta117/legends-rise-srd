@@ -110,7 +110,7 @@ function Magesmith() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 14
+                  <b>Starting Hit Points:</b> 12
                 </span>
               </li>
               <li>

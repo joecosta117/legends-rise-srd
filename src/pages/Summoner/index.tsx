@@ -132,7 +132,7 @@ function Summoner() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 12
+                  <b>Starting Hit Points:</b> 10
                 </span>
               </li>
               <li>
@@ -965,7 +965,7 @@ function Summoner() {
             </p>
             <ul>
               <li>
-                <span>Staring hit points increase to 14</span>
+                <span>Staring hit points increase to 12</span>
               </li>
               <li>
                 <span>You have 7 recoveries</span>

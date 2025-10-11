@@ -111,7 +111,7 @@ function Druid() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 12
+                  <b>Starting Hit Points:</b> 10
                 </span>
               </li>
               <li>

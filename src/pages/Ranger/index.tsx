@@ -89,7 +89,7 @@ function Ranger() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 14
+                  <b>Starting Hit Points:</b> 12
                 </span>
               </li>
               <li>
@@ -425,7 +425,7 @@ function Ranger() {
             <ul>
               <li>
                 <span>
-                  Your starting hit points increase to 16, and your recoveries
+                  Your starting hit points increase to 14, and your recoveries
                   increase to 8.
                 </span>
               </li>

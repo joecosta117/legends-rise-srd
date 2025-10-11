@@ -87,7 +87,7 @@ function Warrior() {
               </li>
               <li>
                 <span>
-                  <b>Starting Hit Points:</b> 16
+                  <b>Starting Hit Points:</b> 14
                 </span>
               </li>
               <li>
