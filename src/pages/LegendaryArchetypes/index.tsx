@@ -266,9 +266,7 @@ function LegendaryArchetypes() {
                 <span>Your defenses all increase by +1</span>
               </li>
               <li>
-                <span>
-                  Your maximum hit points increase by your proficiency bonus
-                </span>
+                <span>Your hit points increase by your proficiency bonus</span>
               </li>
               <li>
                 <span>Your recoveries increase by +1</span>
