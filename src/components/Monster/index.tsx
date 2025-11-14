@@ -278,7 +278,7 @@ const Monster: React.FC<MonsterProps> = ({
                     {action.partial && (
                       <p>
                         <span className="degree-effect">
-                          <i>• Partial:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof action.partial === "string"
                             ? transformEffect(action.partial)
                             : action.partial}
@@ -380,7 +380,7 @@ const Monster: React.FC<MonsterProps> = ({
                     {maneuver.partial && (
                       <p>
                         <span className="degree-effect">
-                          <i>• Partial:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof maneuver.partial === "string"
                             ? transformEffect(maneuver.partial)
                             : maneuver.partial}
@@ -490,7 +490,7 @@ const Monster: React.FC<MonsterProps> = ({
                     {reaction.partial && (
                       <p>
                         <span className="degree-effect">
-                          <i>• Partial:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof reaction.partial === "string"
                             ? transformEffect(reaction.partial)
                             : reaction.partial}
@@ -591,7 +591,7 @@ const Monster: React.FC<MonsterProps> = ({
                     {bossAction.partial && (
                       <p>
                         <span className="degree-effect">
-                          <i>• Partial:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof bossAction.partial === "string"
                             ? transformEffect(bossAction.partial)
                             : bossAction.partial}

@@ -176,7 +176,7 @@ const AbilityCard: React.FC<AbilityCardProps> = ({
             )}
             {partial && (
               <p>
-                <b>• Partial:</b>{" "}
+                <b>• Failure:</b>{" "}
                 {typeof partial === "string"
                   ? transformEffect(partial)
                   : partial}
@@ -227,7 +227,7 @@ const AbilityCard: React.FC<AbilityCardProps> = ({
             )}
             {partial && (
               <p>
-                <b>• Partial:</b>{" "}
+                <b>• Failure:</b>{" "}
                 {typeof partial === "string"
                   ? transformEffect(partial)
                   : partial}
@@ -272,7 +272,7 @@ const AbilityCard: React.FC<AbilityCardProps> = ({
               )}
               {partial && (
                 <p>
-                  <b>• Partial:</b>{" "}
+                  <b>• Failure:</b>{" "}
                   {typeof partial === "string"
                     ? transformEffect(partial)
                     : partial}
