@@ -229,7 +229,7 @@ const Hazard: React.FC<MonsterProps> = ({
                     {action.partial && (
                       <p>
                         <span className="degree-effect">
-                          <i>• Partial:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof action.partial === "string"
                             ? transformEffect(action.partial)
                             : action.partial}
@@ -339,7 +339,7 @@ const Hazard: React.FC<MonsterProps> = ({
                     {reaction.partial && (
                       <p>
                         <span className="degree-effect">
-                          <i>• Partial:</i>{" "}
+                          <i>• Failure:</i>{" "}
                           {typeof reaction.partial === "string"
                             ? transformEffect(reaction.partial)
                             : reaction.partial}
