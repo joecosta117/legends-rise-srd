@@ -829,6 +829,15 @@ function CombatRules() {
           effects will specify you can make an overcome roll with “(overcome
           ends)” mentioned at the end.
         </p>
+        <h3 className="header">Different Tiers</h3>
+        <p>
+          When a creature needs to make an overcome roll against an effect of a
+          different tier, no roll is needed. When overcoming a lower tier
+          effect, the result is automatically a success, or a failure when
+          overcoming a higher tier effect. For example, a tier 1 hero needs to
+          make an overcome roll against a magical effect from a tier 2 demon, so
+          the hero automatically fails their overcome roll.
+        </p>
 
         <h2 id="momentum">Momentum Die</h2>
         <p>
