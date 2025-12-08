@@ -50,7 +50,7 @@ function Conditions() {
           <Link className="internal-link" to="/rules/combat#attack-roll">
             attack rolls
           </Link>
-          , and attack rolls against you gain <Modifier type="f" count="1" />
+          , and attack rolls against you gain <Modifier type="f" count="1" />.
         </p>
       ),
     },
@@ -89,8 +89,8 @@ function Conditions() {
             </li>
             <li>
               <span>
-                You can use a maneuver to attempt to escape by making an
-                overcome roll, and ending this condition on a success.
+                You can use a maneuver to escape by making an overcome roll, and
+                ending this condition on a success.
               </span>
             </li>
           </ul>
@@ -118,9 +118,6 @@ function Conditions() {
                 superseding older ones.
               </span>
             </li>
-            <li>
-              <span>This condition ends early if your taunter is defeated</span>
-            </li>
           </ul>
         </div>
       ),
@@ -133,7 +130,7 @@ function Conditions() {
           <Link className="internal-link" to="/rules/combat#attack-roll">
             Attack rolls
           </Link>{" "}
-          against you gain <Modifier type="f" count="1" />
+          against you gain <Modifier type="f" count="1" />.
         </p>
       ),
     },
