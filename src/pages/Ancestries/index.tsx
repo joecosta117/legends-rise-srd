@@ -991,7 +991,7 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
-                    <b>Strenght in Numbers (S):</b> You gain{" "}
+                    <b>Strength in Numbers (S):</b> You gain{" "}
                     <b>
                       +1{" "}
                       <img className="icon" src={fortune} alt="fortune icon" />

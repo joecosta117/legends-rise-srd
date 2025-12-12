@@ -1023,7 +1023,7 @@ export const earthSpells = [
         <div>
           <AbilityCard
             accordion
-            descriptor="You cover an ally in stone to protect their weak spots."
+            descriptor="You cover an ally in stone to protect their weak spots and enhance their strength."
             frequency="Spell 1 (Earth)"
             keywords="Magical"
             target="1 creature per spell tier in your zone"
@@ -1038,7 +1038,7 @@ export const earthSpells = [
                 </Link>{" "}
                 per spell tier (scene ends). While the target has these
                 temporary hit points, they gain <Modifier count="1" type="f" />{" "}
-                to melee abilities.
+                to melee attack rolls.
               </span>
             }
           />
