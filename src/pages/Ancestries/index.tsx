@@ -889,7 +889,8 @@ function Ancestries() {
               </h3>
               <p>
                 Gnomes originated from the magical green realm, and still retain
-                faerie magic as well as a neverending drive to try new things.
+                fae magic as well as a supernatural drive for whimsy and
+                novelty.
               </p>
               <ul>
                 <li>
@@ -911,6 +912,54 @@ function Ancestries() {
                 </li>
                 <li>
                   <span>
+                    <b>Chaotic Whimsy (P):</b> At the start of a scene, you can
+                    choose to roll a d6 for one of the following effects:
+                  </span>
+                  <ul style={{ marginLeft: "10px", marginTop: "0px" }}>
+                    <li>
+                      <span>
+                        <b>1:</b> You immediately teleport up to 1 zone away.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <b>2:</b> Your speeds increase by 1 (scene ends).
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <b>3:</b> You gain{" "}
+                        <Link
+                          className="internal-link"
+                          to="/rules/combat#temporary-hit-points"
+                        >
+                          temporary hit points
+                        </Link>{" "}
+                        equal to your proficiency bonus (scene ends).
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <b>4:</b> You gain <Modifier type="f" count="1" /> to
+                        your first roll in this scene.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <b>5:</b> Your size shrinks to tiny or grows to large
+                        (your choice) for the scene.
+                      </span>
+                    </li>
+                    <li>
+                      <span>
+                        <b>6:</b> You become invisible until after you use an
+                        action or the scene ends.
+                      </span>
+                    </li>
+                  </ul>
+                </li>
+                {/* <li>
+                  <span>
                     <b>Faerie Lights (P):</b> You learn the{" "}
                     <Link
                       className="internal-link"
@@ -928,7 +977,7 @@ function Ancestries() {
                     , you can cast this spell at a spell tier equal to your tier
                     without spending mana.
                   </span>
-                </li>
+                </li> */}
               </ul>
             </div>
           )}
@@ -1092,16 +1141,9 @@ function Ancestries() {
                 duration="Scene ends"
                 effect={
                   <span>
-                    You gain{" "}
-                    <Link
-                      className="internal-link"
-                      to="/rules/combat#temporary-hit-points"
-                    >
-                      temporary hit points
-                    </Link>{" "}
-                    equal to your proficiency bonus, your natural melee weapons
-                    deal 3 physical damage, and <Modifier type="f" count="1" />{" "}
-                    to{" "}
+                    You gain <ToolTip preset="regen" /> equal to your tier while{" "}
+                    <ToolTip preset="shaken" />, your natural melee weapons deal
+                    3 physical damage, and <Modifier type="f" count="1" /> to{" "}
                     <Link
                       className="internal-link"
                       to="/combat-abilities#overpower"
