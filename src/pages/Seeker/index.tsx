@@ -386,7 +386,7 @@ function Seeker() {
 
             <h3 className="header">Greater Disruption</h3>
             <p>
-              When you use your essence disruption ability, on a success, the
+              When you get a success on your essence disruption ability, the
               target is also{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
