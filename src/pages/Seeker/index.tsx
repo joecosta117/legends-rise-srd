@@ -386,16 +386,12 @@ function Seeker() {
 
             <h3 className="header">Greater Disruption</h3>
             <p>
-              When you use your essence disruption ability, make your attack
-              roll against the target's Spirit, and on a success, the target is{" "}
-              <Link className="internal-link" to="/conditions#dazed">
-                dazed
-              </Link>{" "}
-              (scene ends) instead of{" "}
+              When you use your essence disruption ability, on a success, the
+              target is also{" "}
               <Link className="internal-link" to="/conditions#hindered">
                 hindered
-              </Link>
-              .
+              </Link>{" "}
+              while dazed.
             </p>
 
             <h3 className="header">Phase Rush</h3>
