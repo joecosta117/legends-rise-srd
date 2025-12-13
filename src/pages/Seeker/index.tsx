@@ -177,15 +177,12 @@ function Seeker() {
                     Strike
                   </Link>
                   , dealing psychic damage instead of your weapon's normal
-                  damage type. On a success, the target is{" "}
-                  <Link className="internal-link" to="/conditions#hindered">
-                    hindered
+                  damage type. Make your attack roll against the target's Spirit
+                  instead of Guard. On a success, the target is also{" "}
+                  <Link className="internal-link" to="/conditions#dazed">
+                    dazed
                   </Link>{" "}
-                  (scene ends), and also{" "}
-                  <Link className="internal-link" to="/conditions#vulnerable">
-                    vulnerable
-                  </Link>{" "}
-                  while hindered on a critical success.
+                  (scene ends).
                 </span>
               }
             />
