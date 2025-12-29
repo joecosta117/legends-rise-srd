@@ -1897,8 +1897,8 @@ function HeroicArchetypes() {
           <div>
             <h2>Protector</h2>
             <p>
-              You employ underhand tactics and tricks to get the upper hand on
-              your enemies.
+              You focus on defending others from harm by turning your foes'
+              attention on yourself.
             </p>
             <h3 className="header">Archetype Features</h3>
             <p>

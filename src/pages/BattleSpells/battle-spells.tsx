@@ -83,10 +83,10 @@ export const airSpells = [
       spell: (
         <AbilityCard
           accordion
-          descriptor="You clap your hands to unleash a thunderous boom that deafens."
+          descriptor="You clap your hands to unleash a thunderous boom that deafens foes."
           frequency="Spell 1 (Air)"
           keywords="Escalation, Magical"
-          target="1d4+1 enemies within your zone"
+          target="All enemies within your zone"
           defense="Guard"
           damage="2 physical damage per spell tier"
           success={
@@ -391,7 +391,7 @@ export const arcaneSpells = [
                 basic: false,
                 name: "Breath Weapon",
                 frequency: "Once per spell",
-                keywords: "range",
+                keywords: "magical",
                 target: "1d4+1 enemies within the dragon spirit’s zone",
                 defense: "Guard",
                 damage: "2 damage of the chosen damage type per spell tier",
@@ -824,16 +824,16 @@ export const deathSpells = [
       spell: (
         <AbilityCard
           accordion
-          descriptor="You unleash a blast of necrotic energy that saps the energy of anything it touches."
+          descriptor="You unleash a blast of necrotic energy that saps the strength of nearby foes."
           frequency="Spell 2 (Death)"
-          target="1d4+1 enemies in your zone"
-          keywords="Escalation, Magical, Range"
+          target="All enemies in your zone"
+          keywords="Escalation, Magical"
           defense="Spirit"
           damage="2 necrotic damage per spell tier"
           success={
             <span>
-              <Link className="internal-link" to="/conditions#hindered">
-                hindered
+              <Link className="internal-link" to="/conditions#dazed">
+                dazed
               </Link>{" "}
               (scene ends)
             </span>
@@ -2105,10 +2105,10 @@ export const gravitySpells = [
           accordion
           descriptor="You manipulate gravity around you to either draw your enemies closer or push them away."
           frequency="Spell 1 (Gravity)"
-          target="1d4+1 enemies within your zone"
+          target="All enemies in your zone"
           defense="Guard"
           damage="2 physical damage per spell tier"
-          keywords="Escalation, Magical, Range"
+          keywords="Escalation, Magical"
           success={
             <span>
               Pull the target to become{" "}
@@ -2994,9 +2994,9 @@ export const illusionSpells = [
               {
                 basic: false,
                 name: "Scary Visage",
-                keywords: "magical, ranged",
+                keywords: "magical",
                 frequency: "Once per spell",
-                target: "1d4+1 enemies within the illusionary creature’s zone",
+                target: "1d4+1 enemies in the illusionary creature’s zone",
                 defense: "Spirit",
                 critical: "hindered (scene ends)",
                 success: (
@@ -3329,7 +3329,7 @@ export const lightSpells = [
           accordion
           descriptor="With a flash of light, you attempt to blind your foes."
           frequency="Spell 0 (Light)"
-          target="1d4+1 enemies within your zone"
+          target="1d4+1 enemies in your zone"
           keywords="Magical"
           defense="Guard"
           critical={
@@ -5000,7 +5000,7 @@ export const toxicSpells = [
           accordion
           descriptor="You launch a spray of acid at multiple foes."
           frequency="Spell 0 (Toxic)"
-          target="1d4+1 enemies within your zone"
+          target="1d4+1 enemies in your zone"
           defense="Guard"
           damage="1 acid damage per your tier"
           keywords="Magical"
@@ -5154,10 +5154,10 @@ export const toxicSpells = [
           accordion
           descriptor="You spray burning acid from your fingertips."
           frequency="Spell 2 (Toxic)"
-          target="1d4+1 creatures within your zone"
+          target="All enemies in your zone"
           defense="Guard"
           damage="2 toxic damage per spell tier"
-          keywords="Escalation, Magical, Range"
+          keywords="Escalation, Magical"
           success={
             <span>
               1{" "}
