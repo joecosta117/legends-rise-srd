@@ -1772,7 +1772,7 @@ export const enchantmentSpells = [
             effect={
               <span>
                 When an enemy starts in or enters the target's zone, make an
-                attack roll against the enemy's Spirit. On a success, the target
+                attack roll against the enemy's Spirit. On a success, the enemy
                 falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
