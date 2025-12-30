@@ -264,7 +264,7 @@ const MonstrosityMonsters = [
             round: "5",
             duration: "Scene ends",
             effect:
-              "Petrifying gaze extends to any creature that starts or enters anywhere within 1 zone of the medusa",
+              "Petrifying gaze extends to any creature that starts in or enters anywhere within 1 zone of the medusa",
           },
         ]}
       />

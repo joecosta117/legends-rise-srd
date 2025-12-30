@@ -2187,9 +2187,9 @@ const DragonMonsters = [
                   difficult zone
                 </Link>{" "}
                 until the start of the dragon's next turn that doesn't affect
-                the dragon. When an enemy starts or enters the targeted zones,
-                the dragon can make an attack roll against the enemy's Guard. On
-                a success, the target is{" "}
+                the dragon. When an enemy starts in or enters the targeted
+                zones, the dragon can make an attack roll against the enemy's
+                Guard. On a success, the target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
@@ -2378,9 +2378,9 @@ const DragonMonsters = [
                   difficult zone
                 </Link>{" "}
                 until the start of the dragon's next turn that doesn't affect
-                the dragon. When an enemy starts or enters the targeted zones,
-                the dragon can make an attack roll against the enemy's Guard. On
-                a success, the target is{" "}
+                the dragon. When an enemy starts in or enters the targeted
+                zones, the dragon can make an attack roll against the enemy's
+                Guard. On a success, the target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}

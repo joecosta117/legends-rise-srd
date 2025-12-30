@@ -550,7 +550,16 @@ export const arcaneSpells = [
           target="1 creature within 3 zones"
           keywords="Escalation, Magical, Range"
           defense="Spirit"
-          damage="5 arcane damage per spell tier. If this damage kills the target, then they can’t be resurrected outside of mythical tier magic."
+          damage={
+            <span>
+              5 arcane damage per spell tier. If this damage makes the target{" "}
+              <ToolTip preset="shaken" /> or they are already shaken, then they
+              must succeed on an overcome roll or die. Major and boss enemies
+              make this roll twice, and take the highest result. If this spell
+              kills the target, then they can’t be resurrected outside of
+              mythical tier magic.
+            </span>
+          }
         />
       ),
     },
@@ -865,7 +874,7 @@ export const deathSpells = [
             mgt="12 + PB"
             res="8 + PB"
             pb="double ST"
-            speeds="other speeds depending on the original target"
+            speeds="same speeds as original target"
             resistances="necrotic"
             weaknesses="holy"
             summons
@@ -1714,6 +1723,40 @@ export const enchantmentSpells = [
     },
   ],
   [
+    // {
+    //   title: "Majestic Presence (Action)",
+    //   actType: "Action",
+    //   spell: (
+    //     <div>
+    //       <AbilityCard
+    //         accordion
+    //         descriptor="You take on the visage of a deific entity that overwhelms your foes."
+    //         frequency="Spell 3 (Enchantment)"
+    //         target="All enemies within 1 zone"
+    //         keywords="Escalation, Magical, Range"
+    //         defense="Spirit"
+    //         critical={
+    //           <span>
+    //             Same as a success, but also{" "}
+    //             <Link className="internal-link" to="/conditions#hindered">
+    //               hindered
+    //             </Link>{" "}
+    //             while dazed
+    //           </span>
+    //         }
+    //         success={<span>dazed (scene ends)</span>}
+    //         partial={
+    //           <span>
+    //             <Link className="internal-link" to="/conditions#dazed">
+    //               dazed
+    //             </Link>{" "}
+    //             (next turn ends)
+    //           </span>
+    //         }
+    //       />
+    //     </div>
+    //   ),
+    // },
     {
       title: "Majestic Presence (Action)",
       actType: "Action",
@@ -1721,27 +1764,24 @@ export const enchantmentSpells = [
         <div>
           <AbilityCard
             accordion
-            descriptor="You take on the visage of a deific entity that overwhelms your foes."
+            descriptor="A creature briefly gains the authority of a deific entity that overwhelms your foes into obedience."
             frequency="Spell 3 (Enchantment)"
-            target="All enemies within 1 zone"
-            keywords="Escalation, Magical, Range"
-            defense="Spirit"
-            critical={
+            keywords="Escalation, Magical"
+            target="1 creature within 2 zones"
+            duration="Scene ends"
+            effect={
               <span>
-                Same as a success, but also{" "}
-                <Link className="internal-link" to="/conditions#hindered">
-                  hindered
+                When an enemy starts in or enters the target's zone, make an
+                attack roll against the enemy's Spirit. On a success, the target
+                falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
                 </Link>{" "}
-                while dazed
-              </span>
-            }
-            success={<span>dazed (scene ends)</span>}
-            partial={
-              <span>
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
-                </Link>{" "}
-                (next turn ends)
+                in awe. As a maneuver, the target can make a one word command at
+                a creature within 1 zone. Make an attack roll against the
+                commanded creature's spirit. On a success, the commanded
+                creature must spend a maneuver or action to follow the command
+                on their next turn.
               </span>
             }
           />
@@ -4385,33 +4425,19 @@ export const shadowSpells = [
   ],
   [
     {
-      title: "Shadow Assault (Action)",
+      title: "Eclipse Rift (Action)",
       actType: "Action",
       spell: (
-        <div>
-          <AbilityCard
-            accordion
-            descriptor="You conjure dozens of shadowy duplicates that swarm the battlefield around you."
-            frequency="Spell 2 (Shadow)"
-            target="1 zone per spell tier within 2 zones"
-            keywords="Magical, Range"
-            effect={
-              <span>
-                Targeted zones become{" "}
-                <Link className="internal-link" to="/rules/combat#zone-types">
-                  dangerous zones
-                </Link>{" "}
-                (1 necrotic damage per spell tier) that only hurts enemies. Your
-                duplicates give you{" "}
-                <Link className="internal-link" to="/rules/combat#cover">
-                  cover
-                </Link>{" "}
-                in the targeted zones.
-              </span>
-            }
-            duration="Scene ends"
-          />
-        </div>
+        <AbilityCard
+          accordion
+          descriptor="With a shadowy explosion, you open a tear to the shadow realm that blankets an area in darkness."
+          frequency="Spell 2 (Shadow)"
+          target="All creatures in 1 zone within 3 zones"
+          keywords="Escalation, Magical, Range"
+          defense="Spirit"
+          damage="3 necrotic damage per spell tier"
+          effect="The targeted zone's lighting becomes magical darkness (scene ends)."
+        />
       ),
     },
     {
@@ -4443,13 +4469,13 @@ export const shadowSpells = [
   ],
   [
     {
-      title: "Hungry Darkness (Action)",
+      title: "Shadow Army (Action)",
       actType: "Action",
       spell: (
         <div>
           <AbilityCard
             accordion
-            descriptor="You summon magical darkness from the shadow realm that weakens and consumes life."
+            descriptor="You conjure an army of shadowy duplicates that swarm the battlefield around you."
             frequency="Spell 3 (Shadow)"
             target="1 zone per spell tier within 5 zones"
             keywords="Magical, Range"
@@ -4459,18 +4485,20 @@ export const shadowSpells = [
                 <Link className="internal-link" to="/rules/combat#zone-types">
                   dangerous zones
                 </Link>{" "}
-                (1 necrotic damage per spell tier) filled with magical darkness.
-                When a creature takes this damage, make an{" "}
-                <Link className="internal-link" to="/rules/combat#attack-roll">
-                  attack rolls
+                (1 necrotic damage per spell tier) that only hurts enemies. When
+                a creature takes this damage, make an attack roll against their
+                Spirit. On a success, the target is{" "}
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
                 </Link>{" "}
-                against their Spirit, and on a success, they are{" "}
-                <Link className="internal-link" to="/conditions#seized">
-                  seized
+                (next turn ends). Your duplicates also give you and allies{" "}
+                <Link className="internal-link" to="/rules/combat#cover">
+                  cover
                 </Link>{" "}
-                (next turn ends) by shadowy tendrils.
+                in the targeted zones.
               </span>
             }
+            duration="Scene ends"
           />
         </div>
       ),
@@ -5519,23 +5547,30 @@ export const unholySpells = [
         <div>
           <AbilityCard
             accordion
-            descriptor="After you utter a damned word, you scourge the souls of your foes with infernal wrath."
+            descriptor="After you utter a profane word, you summon spirits of the damned to drag your foes to the underworld."
             frequency="Spell 3 (Unholy)"
             target="All enemies within 1 zone"
             defense="Spirit"
-            damage="2 unholy damage per spell tier, and if this damage kills the target, then their soul is dragged to the lower realms."
+            damage="2 unholy damage per spell tier, and if this spell kills the target, then their soul is dragged to the lower realms."
             keywords="Escalation, Magical, Range"
-            critical="Same as a success, but hindered (scene ends)"
+            critical={
+              <span>
+                Same as a success, and also 1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                unholy damage per spell tier while seized
+              </span>
+            }
             success={
               <span>
-                <Link className="internal-link" to="/conditions#hindered">
-                  hindered
+                <Link className="internal-link" to="/conditions#seized">
+                  seized
                 </Link>{" "}
-                (next turn ends), and{" "}
-                <Link className="internal-link" to="/conditions#dazed">
-                  dazed
-                </Link>{" "}
-                while hindered
+                (scene ends)
               </span>
             }
           />
@@ -5748,7 +5783,7 @@ export const warSpells = [
             accordion
             descriptor="You flourish your weapon then teleport around the battlefield, striking each foe within sight."
             frequency="Spell 3 (War)"
-            keywords="Magical"
+            keywords="Escalation, Magical, Range"
             target="All enemies within 1 zone"
             effect={
               <span>
@@ -5762,7 +5797,8 @@ export const warSpells = [
                 >
                   teleport
                 </Link>{" "}
-                to each target before you strike
+                to each target before you strike. Make a single attack roll for
+                all strikes.
               </span>
             }
           />

@@ -14,7 +14,7 @@ interface AbilityCardProps {
   duration?: string | JSX.Element;
   trigger?: string | JSX.Element;
   target?: string | JSX.Element;
-  damage?: string;
+  damage?: string | JSX.Element;
   defense?: string;
   critical?: string | JSX.Element;
   success?: string | JSX.Element;
