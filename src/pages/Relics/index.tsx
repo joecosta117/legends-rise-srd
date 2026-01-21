@@ -1604,13 +1604,6 @@ function Relics() {
               <ul>
                 <li>
                   <span>
-                    <b>Critical Success:</b> Same as a success, and the next
-                    time you attempt to transfer a relic's magic, you gain{" "}
-                    <Modifier type="f" count="1" /> to the skill roll.
-                  </span>
-                </li>
-                <li>
-                  <span>
                     <b>Success:</b>
                   </span>{" "}
                   You successfully transfer the magic from the original item to

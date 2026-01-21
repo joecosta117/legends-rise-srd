@@ -402,7 +402,7 @@ function Warrior() {
             <h3 className="header">Greater Technique</h3>
             <p>
               When you use a technique ability that has an effect on a success,
-              you still get the effect on a partial success.
+              you still get the effect on a failure.
             </p>
 
             <h3 className="header">Juggernaut's Comeback</h3>

@@ -6047,7 +6047,7 @@ export const waterSpells = [
             }
             success={
               <span>
-                Same as a partial success, but{" "}
+                Same as a failure, but{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}

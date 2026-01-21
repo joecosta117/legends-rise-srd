@@ -821,9 +821,9 @@ const AberrationMonsters = [
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
-                    (next turn ends) on a partial success, controlled by the
-                    void seer (next turn ends) on a success, and controlled for
-                    the scene (overcome ends) on a critical success.
+                    (next turn ends) on a failure, controlled by the void seer
+                    (next turn ends) on a success, and controlled for the scene
+                    (overcome ends) on a critical success.
                   </li>
                   <li>
                     <i>2. Disintegrate:</i> Void seer makes an attack roll

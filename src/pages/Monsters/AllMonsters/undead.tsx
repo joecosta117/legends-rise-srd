@@ -784,7 +784,7 @@ const UndeadMonsters = [
             partial:
               "Poltergeist enters the target’s body and the target is possessed (next turn ends). While possessed, the poltergeist decides the target’s turn and the poltergeist is untargetable from any effect and doesn’t take any turns except for boss actions. If the target takes any damage, then they can make an overcome roll, and on a success, the poltergeist is expelled.",
             success:
-              "Same as a partial success, but the possession lasts for the scene (overcome ends).",
+              "Same as a failure, but the possession lasts for the scene (overcome ends).",
             critical:
               "Same as a success, but +1 misfortune to overcome rolls to end this effect.",
           },
