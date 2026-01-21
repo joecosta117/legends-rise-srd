@@ -402,7 +402,7 @@ function Warrior() {
             <h3 className="header">Greater Technique</h3>
             <p>
               When you use a technique ability that has an effect on a success,
-              you still get the effect on a failure.
+              you still get the effect on a partial success.
             </p>
 
             <h3 className="header">Juggernaut's Comeback</h3>
@@ -423,7 +423,7 @@ function Warrior() {
               <Link className="internal-link" to="/rules/adventuring#resting">
                 safe rest
               </Link>
-              , you can turn a{" "}
+              , you can change the result of a{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
