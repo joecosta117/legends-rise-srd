@@ -696,7 +696,7 @@ const FaerieMonsters = [
     role: "Bruiser",
     threat: "Major",
     description:
-      "Redcaps are violent and sadistic faeries that enjoy murder and torturing mortals. Redcaps dervie their power from the blood of mortals and often travel to mortal realm to commit acts of violence.",
+      "Redcaps are violent and sadistic faeries that enjoy murder and torturing mortals. Redcaps derive their power from the blood of mortals and often travel to mortal realm to commit acts of violence.",
     tactics: (
       <span>
         Redcaps will rush the heroes to use halberd then soak blood if they deal
@@ -749,17 +749,18 @@ const FaerieMonsters = [
         maneuvers={[
           {
             name: "Blood Soak",
-            duration: "Turn ends",
+            duration: "Next turn ends",
             effect:
               "The redcap dips their halberd in freshly spilled blood from a foe, and they gain +1 fortune to attack rolls",
           },
         ]}
         reactions={[
           {
-            name: "Lethal Cleave",
+            name: "Bloodlust Frenzy",
             trigger:
               "The redcap reduces a creature to 0 hit points or gets a critical success on halberd",
-            effect: "The redcap can use halberd against a different creature",
+            effect:
+              "The redcap can use charge or halberd against a different creature",
           },
         ]}
       />
