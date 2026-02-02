@@ -907,6 +907,7 @@ const FaerieMonsters = [
             round: "3",
             keywords: "magical, range",
             target: "1 creature within 3 zones",
+            defense: "Spirit",
             damage: "7 psychic damage",
             success: (
               <span>
