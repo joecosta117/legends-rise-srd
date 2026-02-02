@@ -620,7 +620,7 @@ const FaerieMonsters = [
                     (overcome ends)
                   </li>
                   <li>
-                    <i>Subdual:</i> target takes 3 additional damage
+                    <i>Subdual:</i> target takes 2 additional damage
                   </li>
                 </ul>
               </span>
