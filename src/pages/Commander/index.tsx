@@ -275,15 +275,9 @@ function Commander() {
             <p>You motivate your allies to victory.</p>
             <h3 className="header">Uplifting Presence (1st-Level Feature)</h3>
             <p>
-              You and allies that start their turn within your zone gain{" "}
-              <b>
-                +1 <img className="icon" src={fortune} alt="fortune icon" />
-              </b>{" "}
-              to{" "}
-              <Link className="internal-link" to="/rules/combat#overcome">
-                overcome rolls
-              </Link>
-              .
+              You and allies within your zone that make a roll with{" "}
+              <Modifier type="f" />
+              increase the number of <Modifier type="f" /> by 1.{" "}
             </p>
 
             <h2>Tactician</h2>

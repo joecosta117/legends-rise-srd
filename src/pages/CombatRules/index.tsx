@@ -132,9 +132,11 @@ function CombatRules() {
           <li>
             <span>
               <b>Determine Surprise:</b> The GM determines whether anyone starts
-              the combat surprised. Aware creatures gain{" "}
-              <Modifier type="f" count="1" /> to attack rolls against surprised
-              creatures in the first round.
+              the combat surprised. Surprised creatures are{" "}
+              <Link className="internal-link" to="/conditions#vulnerable">
+                vulnerable
+              </Link>{" "}
+              in the first round.
             </span>
           </li>
           <li>
@@ -595,9 +597,9 @@ function CombatRules() {
         </p>
         <p>
           For example, you take ongoing necrotic damage, but you are already
-          taking ongoing fire damage. At the start of your turns, you take
-          damage from each effect. At the end of your turns, you make a separate
-          overcome roll against each ongoing effect.
+          taking ongoing fire damage. At the end of your turns, you take damage
+          from each effect. Then you make a separate overcome roll against each
+          ongoing effect.
         </p>
         <h3 className="header" id="resistances-and-weaknesses">
           Resistances and Weaknesses
