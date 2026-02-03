@@ -213,8 +213,16 @@ function Weapons() {
               </td>
             </tr>
             <tr>
+              <td>Bombs</td>
+              <td>Bomb, Hand Cannon, Grenade</td>
+              <td>
+                1d4 other creatures (your choice) within target's zone take 1
+                physical damage per your tier
+              </td>
+            </tr>
+            <tr>
               <td>Bows</td>
-              <td>Crossbow, longbow, shortbow</td>
+              <td>Composite Bow, Longbow, Shortbow</td>
               <td>target's speed is halved (next turn ends)</td>
             </tr>
             <tr>
@@ -228,19 +236,8 @@ function Weapons() {
               <td>target can't use reactions (next turn ends)</td>
             </tr>
             <tr>
-              <td>Firearms</td>
-              <td>Blunderbuss, Musket, Pistol</td>
-              <td>
-                target is{" "}
-                <Link className="internal-link" to="/conditions#vulnerable">
-                  vulnerable
-                </Link>{" "}
-                (next turn ends)
-              </td>
-            </tr>
-            <tr>
               <td>Flails</td>
-              <td>Flail, heavy flail, whip</td>
+              <td>Flail, Heavy Flail, Whip</td>
               <td>
                 target falls{" "}
                 <Link className="internal-link" to="/conditions#prone">
@@ -253,6 +250,16 @@ function Weapons() {
               <td>Hammer, Maul, Throwing Hammer</td>
               <td>target is pushed within their zone</td>
             </tr>
+            {/* <tr>
+              <td>Launcher</td>
+              <td>Arbalest, Harpoon Launcher, Shoulder Ballista</td>
+              <td>
+                target falls{" "}
+                <Link className="internal-link" to="/conditions#prone">
+                  prone
+                </Link>
+              </td>
+            </tr> */}
             <tr>
               <td>Polearms</td>
               <td>Javelin, Spear, Staff</td>
@@ -263,6 +270,22 @@ function Weapons() {
                 </Link>{" "}
                 (next turn ends)
               </td>
+            </tr>
+            <tr>
+              <td>Reloaders</td>
+              <td>Blunderbuss, Crossbow, Musket</td>
+              <td>
+                target is{" "}
+                <Link className="internal-link" to="/conditions#vulnerable">
+                  vulnerable
+                </Link>{" "}
+                (next turn ends)
+              </td>
+            </tr>
+            <tr>
+              <td>Repeaters</td>
+              <td>Repeater Crossbow, Pepperbox Pistol, Volley Bow</td>
+              <td>target can't use reactions (next turn ends)</td>
             </tr>
             <tr>
               <td>Unarmed</td>
