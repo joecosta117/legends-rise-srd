@@ -200,7 +200,7 @@ function Weapons() {
           <tbody>
             <tr>
               <td>Axes</td>
-              <td>Throwing axes, greataxe, handaxe</td>
+              <td>Throwing Axe, Greataxe, Handaxe</td>
               <td>
                 target takes 1{" "}
                 <Link
@@ -254,10 +254,7 @@ function Weapons() {
               <td>Launcher</td>
               <td>Arbalest, Harpoon Launcher, Shoulder Ballista</td>
               <td>
-                target falls{" "}
-                <Link className="internal-link" to="/conditions#prone">
-                  prone
-                </Link>
+                target is pushed within their zone
               </td>
             </tr> */}
             <tr>
