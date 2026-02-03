@@ -186,6 +186,7 @@ function Mounts() {
         <Monster
           name="Warhorse (Tier 1 Mount)"
           type="Large Animal"
+          mount
           hp="5"
           evn="12"
           mgt="14"
@@ -221,6 +222,7 @@ function Mounts() {
 
         <Monster
           name="Giant Eagle (Tier 2 Mount)"
+          mount
           type="Large Animal"
           hp="10"
           evn="14"
@@ -253,6 +255,7 @@ function Mounts() {
         <Monster
           name="Riding Dragon (Tier 3 Mount)"
           type="Large Dragon"
+          mount
           hp="15"
           evn="16"
           mgt="18"

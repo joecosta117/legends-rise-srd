@@ -10,6 +10,7 @@ import { BREAKPOINTS } from "../../utils/getBreakpoint";
 interface MonsterProps {
   name: string;
   summons?: boolean;
+  mount?: boolean;
   hp: string;
   evn: string;
   mgt?: string;
@@ -62,6 +63,7 @@ const Monster: React.FC<MonsterProps> = ({
   accordion,
   vision,
   summons,
+  mount,
   hp,
   evn,
   //@ts-ignore
@@ -127,7 +129,7 @@ const Monster: React.FC<MonsterProps> = ({
       <h3>
         <span>{name}</span>
         <span>
-          {summons
+          {summons || mount
             ? ""
             : `${getTier()} ${threat === "Standard" ? "" : threat} ${role}`}
         </span>
