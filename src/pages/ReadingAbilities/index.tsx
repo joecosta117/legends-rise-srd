@@ -32,7 +32,7 @@ function ReadingAbilities() {
           damage="You make an attack roll against the target’s specified defense. Any damage the ability does is then listed as well."
           critical="Additional effect against the target on a critical successful attack roll."
           success="Additional effect against the target on a successful attack roll."
-          partial="Additional effect against the target on a partially successful attack roll."
+          // partial="Additional effect against the target on a partially successful attack roll."
           failure="Any effect against the target on a failed attack roll."
           effect="Any other mechanical effects or information."
         />
