@@ -289,12 +289,7 @@ function Bard() {
               <Link className="internal-link" to="/rules/skills#tempt-fate">
                 tempt fate
               </Link>{" "}
-              on any roll, and when you or an ally tempt fate, the bonus
-              increases by{" "}
-              <b>
-                +1 <img className="icon" src={fortune} alt="fortune icon" />
-              </b>
-              .
+              on any roll.
             </p>
 
             <h2>Muse of Lore</h2>
@@ -560,7 +555,8 @@ function Bard() {
               <Link className="internal-link" to="/rules/combat#overcome">
                 overcome roll
               </Link>
-              . On a success, you ignore the extra complication from tempt fate.
+              without another tempt fate. On a success, you ignore the extra
+              complication from tempt fate.
             </p>
 
             <h3 className="header">Loremaster</h3>

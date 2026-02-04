@@ -453,7 +453,8 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>
-          , you gain an additional <Modifier type="f" count="1" /> to your roll.
+          , you can choose to raise the stakes. Your skill roll's result is
+          upgraded twice, but the additional complication becomes more severe.
         </span>
       ),
     },
@@ -979,9 +980,9 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/skills#tempt-fate">
             tempt fate
           </Link>{" "}
-          , you can accept an additional complication or increase the severity
-          of the original complication to increase your bonus from tempt fate to{" "}
-          <Modifier type="f" count="2" />.
+          , you ignore the additional complication. Instead, the GM banks the
+          complication and may invoke it in a later scene at increased severity,
+          when it would be most troublesome.
         </span>
       ),
     },

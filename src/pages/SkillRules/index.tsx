@@ -507,9 +507,9 @@ function SkillRules() {
         <h2 id="tempt-fate">Tempt Fate</h2>
         <p>
           When a hero makes a skill roll, they can decide to <b>tempt fate</b>{" "}
-          by taking an extra complication to treat the roll result as one
-          higher. The GM usually decides the consequence, which happens
-          regardless of the skill roll’s outcome.
+          by taking an extra complication to upgrade the roll result. The GM
+          usually decides the consequence, which happens regardless of the skill
+          roll’s outcome.
         </p>
         {/* <p>Common complications include:</p>
         <ul>
