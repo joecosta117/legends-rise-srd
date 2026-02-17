@@ -35,9 +35,10 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="2 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Poisoned Rend",
             keywords: "melee, weapon",
             target: (
@@ -75,11 +76,11 @@ const DemonMonsters = [
     tactics: (
       <span>
         Soulwretches fight in groups and rush heroes in hopes to prove their
-        worth. Each turn they use sludge slam and{" "}
-        <Link className="internal-link" to="/combat-abilities#overpower">
-          overpower
-        </Link>{" "}
-        as their maneuver.
+        worth. Each turn they use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -96,24 +97,7 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
-        actions={[
-          {
-            basic: true,
-            name: "Sludge Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
       />
     ),
   },
@@ -127,8 +111,11 @@ const DemonMonsters = [
       "Hellhouds are the fiery hounds of the underworld and used by other demons to retrieve wayward souls.",
     tactics: (
       <span>
-        Hellhouds charge the heroes using bite or fire breath if available, and
-        will{" "}
+        Hellhouds charge the heroes using{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        or fire breath if available, and will{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -150,25 +137,10 @@ const DemonMonsters = [
         vision="night"
         resistances="fire, unholy"
         weaknesses="holy"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Bite",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Fire Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the hellhound's zone</span>,
@@ -211,6 +183,7 @@ const DemonMonsters = [
         resistances="unholy"
         weaknesses="holy"
         speeds="land 0"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Stench of Laziness",
@@ -229,7 +202,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Sloth Slam",
             keywords: "melee, weapon",
             target: (
@@ -286,7 +259,11 @@ const DemonMonsters = [
       <span>
         Nightmare demons get close to the heroes to use nightmare form and then
         focus on killing their chosen target. Each turn the nightmare demon will
-        use claw and{" "}
+        use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#hinder">
           hinder
         </Link>{" "}
@@ -322,24 +299,7 @@ const DemonMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Claw",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-        ]}
+        basicMelee="6 physical"
         maneuvers={[
           {
             name: "Nightmare Form",
@@ -401,8 +361,8 @@ const DemonMonsters = [
                 >
                   teleports
                 </Link>{" "}
-                to the target and uses claw against them. The invisibility ends
-                after the attack roll.
+                to the target and uses strike against them. The invisibility
+                ends after the attack roll.
               </span>
             ),
           },
@@ -435,7 +395,11 @@ const DemonMonsters = [
       "Lust demons are demonic personification of lust, and are often called succubus or incubus. They enjoy luring their prey into a life of sinful debauchery so their souls will be condemned to the lower realms.",
     tactics: (
       <span>
-        Lust demons get close to the heroes to use claw or{" "}
+        Lust demons get close to the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -459,6 +423,7 @@ const DemonMonsters = [
         resistances="unholy"
         weaknesses="holy"
         speeds="fly 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -482,23 +447,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Claw",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Draining Kiss",
             keywords: "magical, melee",
             target: (
@@ -576,6 +525,7 @@ const DemonMonsters = [
         resistances="toxic, unholy"
         weaknesses="holy"
         speeds="climb 1"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Shapechanger",
@@ -599,7 +549,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Venemous Mandibles",
             keywords: "melee, weapon",
             target: (
@@ -623,7 +573,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Web",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -639,7 +589,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Profane Webs",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the demon's zone</span>,
@@ -712,6 +662,7 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Treasure Sense",
@@ -729,7 +680,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Hungry Maw",
             keywords: "melee, weapon",
             target: (
@@ -799,6 +750,7 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Major Monster",
@@ -813,7 +765,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Claw",
             keywords: "melee, weapon",
             target: (
@@ -837,7 +789,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Thrash",
             keywords: "melee, weapon",
             target: <span>1d4+1 enemies within the demon's zone</span>,
@@ -898,6 +850,7 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Prideful Aura",
@@ -922,23 +875,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Golden Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Blinding Majesty",
             keywords: "magical, recharge",
             target: <span>All enemies within the demon's zone</span>,
@@ -992,6 +929,7 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Shapechanger",
@@ -1005,23 +943,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Claw",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Siphon Identity",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
@@ -1064,7 +986,11 @@ const DemonMonsters = [
     tactics: (
       <span>
         Horned demons fight in groups and rush heroes in hopes to prove their
-        worth. Each turn they use weapon and{" "}
+        worth. Each turn they use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -1092,25 +1018,10 @@ const DemonMonsters = [
               "When a horned demon is reduced to 0 hit points, it explodes in profane energy. Each engaged creature to the horned demon takes 2 unholy damage.",
           },
         ]}
+        basicMelee="2 physical"
         actions={[
           {
-            basic: true,
-            name: "Spear",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Throw Hellfire",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1153,6 +1064,7 @@ const DemonMonsters = [
         resistances="unholy"
         weaknesses="holy"
         speeds="fly 1"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1167,7 +1079,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Mark of the Pit",
             keywords: "magical, ranged",
             target: <span>1 creature within 3 zones</span>,
@@ -1183,7 +1095,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Demon Lord's Blessing",
             keywords: "magical, recharge",
             target: <span>All enemies within the infernal herald's zone</span>,
@@ -1218,7 +1130,7 @@ const DemonMonsters = [
     tactics: (
       <span>
         Winged demons fight in groups and rush heroes in hopes to prove their
-        worth. Each turn they use claw and{" "}
+        worth. Each turn they use grasping claw and{" "}
         <Link className="internal-link" to="/conditions#taunt">
           taunt
         </Link>{" "}
@@ -1243,6 +1155,7 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Infernal Death",
@@ -1252,8 +1165,8 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Claw",
+            // basic: true,
+            name: "Grasping Claw",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -1271,7 +1184,7 @@ const DemonMonsters = [
                 <Link className="internal-link" to="/combat-abilities#seized">
                   seized
                 </Link>{" "}
-                (overcome ends)
+                (overcome ends) by all winged demons in a minion group
               </span>
             ),
           },
@@ -1292,7 +1205,11 @@ const DemonMonsters = [
         Conquest demons prefer to get close to the heroes to get them in range
         of their flame aura. A conquest demon will start off combat by using
         hellfire entrance to teleport to their foes. Each turn the demon will
-        use flaming sword and flaming whip.
+        use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and flaming whip.
       </span>
     ),
     statBlock: (
@@ -1311,6 +1228,7 @@ const DemonMonsters = [
         resistances="fire, unholy"
         weaknesses="cold, holy"
         speeds="fly 1"
+        basicMelee="12 fire"
         traits={[
           {
             name: "Major Monster",
@@ -1349,23 +1267,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Flaming Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 fire damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Hellfire Arrival",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1416,8 +1318,8 @@ const DemonMonsters = [
       "War demons are the greatest warriors of the hells and their arrival on the battlefield ensures doom for their foes. Unlike conquest demons that lead the armies of hell, war demons prefer to be in the thick of battle and revel in bloodshed. War demons are large demons encased in blood stained armor with dozens of weapons impaled on their body from past attempts to kill them. War demons prefer to wield large jagged glaives while telekinetically pulling weapons from their body to impale their foes.",
     tactics: (
       <span>
-        War demons prefer to get close to the heroes to use giant glaive or all
-        foes to me! if available. If a foe tries to run, the war demon uses
+        War demons prefer to get close to the heroes to use lunging glaive or
+        all foes to me! if available. If a foe tries to run, the war demon uses
         their no escape reaction. Against ranged foes, the war demon uses flying
         weapon to keep them in place.
       </span>
@@ -1437,17 +1339,18 @@ const DemonMonsters = [
         vision="night"
         resistances="unholy"
         weaknesses="holy"
+        basicMelee="9 physical"
         actions={[
           {
-            basic: true,
-            name: "Giant Glaive",
+            // basic: true,
+            name: "Lunging Glaive",
             keywords: "weapon",
             target: <span>1 creature within the war demon's zone</span>,
             defense: "Guard",
             damage: "9 physical damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "All Foes To Me!",
             keywords: "magical, recharge",
             target: <span>All enemies within 1 zone</span>,
@@ -1497,7 +1400,7 @@ const DemonMonsters = [
               </span>
             ),
             effect:
-              "The war demon uses giant glaive against the triggering creature. On a success or higher, the target is knocked prone",
+              "The war demon uses lunging glaive against the triggering creature. On a success or higher, the target is knocked prone",
           },
         ]}
       />
@@ -1536,6 +1439,7 @@ const DemonMonsters = [
         resistances="necrotic, unholy"
         weaknesses="holy"
         speeds="fly 2"
+        basicMelee="12 physical"
         traits={[
           {
             name: "Nourished By Death",
@@ -1552,7 +1456,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Death Blades",
             keywords: "melee, weapon",
             target: (
@@ -1640,6 +1544,7 @@ const DemonMonsters = [
         resistances="toxic, unholy"
         weaknesses="holy"
         speeds="fly 1"
+        basicMelee="9 physical"
         traits={[
           {
             name: "Plague Aura",
@@ -1662,7 +1567,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Venemous Rend",
             keywords: "melee, weapon",
             target: (
@@ -1686,7 +1591,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Madness Plague",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1765,6 +1670,7 @@ const DemonMonsters = [
         resistances="fire, unholy"
         weaknesses="holy"
         speeds="fly 1"
+        basicMelee="15 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -1781,23 +1687,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Claw",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "15 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Nullifying Curse",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1806,7 +1696,7 @@ const DemonMonsters = [
             success: "Target can't use or benefit from relics (next turn ends)",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Hellfire Rays",
             keywords: "magical, range",
             target: <span>1d4 creatures within 3 zones</span>,
@@ -1826,7 +1716,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Rain Hellfire",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 3 zones within 5 zones</span>,
@@ -1848,7 +1738,7 @@ const DemonMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Hellfire Walk",
             keywords: "magical, range",
             target: "up to 1 zone",
@@ -1943,6 +1833,7 @@ const DemonMonsters = [
         resistances="fire, unholy"
         weaknesses="cold, holy"
         speeds="fly 1"
+        basicMelee="18 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -1980,7 +1871,7 @@ const DemonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Broken Blade",
             keywords: "melee, weapon",
             target: (
@@ -2003,7 +1894,7 @@ const DemonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Unleash Wrath",
             keywords: "magical",
             target: (
@@ -2013,7 +1904,7 @@ const DemonMonsters = [
             damage: "15 physical damage",
             effect: (
               <span>
-                Wrath swings his sword in a wide arc. Their fury resets to 0,
+                Wrath swings his sword in a wide arc. Their wrath resets to 0,
                 and they <ToolTip preset="heal" /> 9
               </span>
             ),

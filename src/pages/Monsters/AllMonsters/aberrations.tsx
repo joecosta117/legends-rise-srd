@@ -38,6 +38,7 @@ const AberrationMonsters = [
         role="Bruiser"
         speeds="swim 1"
         resistances="psychic"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -56,7 +57,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Pincer",
             keywords: "melee, weapon",
             target: (
@@ -80,7 +81,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Paralyzing Tentacles",
             keywords: "melee, weapon",
             target: (
@@ -139,6 +140,7 @@ const AberrationMonsters = [
         threat="Standard"
         role="Brusier"
         resistances="psychic"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Aquatic",
@@ -147,7 +149,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Void Touch",
             keywords: "melee, weapon",
             target: (
@@ -211,6 +213,7 @@ const AberrationMonsters = [
         vision="night"
         resistances="psychic"
         speeds="swim 1"
+        basicMelee="5 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -227,7 +230,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "melee, weapon",
             target: <span>1 creature within the deep lurker's zone</span>,
@@ -250,7 +253,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Psychic Probe",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -266,7 +269,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Eldritch Domination",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 2 zones</span>,
@@ -351,9 +354,10 @@ const AberrationMonsters = [
         role="Disabler"
         vision="night"
         resistances="psychic"
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "melee, weapon",
             target: (
@@ -377,7 +381,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Devour Brain",
             keywords: "melee",
             target: <span>1 creature seized by the brain reaper</span>,
@@ -391,7 +395,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Psychic Blast",
             keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
@@ -442,9 +446,10 @@ const AberrationMonsters = [
         role="Bruiser"
         vision="night"
         resistances="psychic"
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "melee, weapon",
             target: (
@@ -468,7 +473,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Body Snatcher",
             keywords: "melee",
             target: <span>1 creature seized by the brain spawn</span>,
@@ -519,6 +524,7 @@ const AberrationMonsters = [
         role="Bruiser"
         vision="blind 3 zones"
         resistances="psychic"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Major Monster",
@@ -533,7 +539,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "melee, weapon",
             target: (
@@ -571,7 +577,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Mental Agony",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -587,7 +593,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Psychic Spike",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -628,6 +634,7 @@ const AberrationMonsters = [
         vision="night"
         resistances="psychic"
         speeds="land 0, swim 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -644,7 +651,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "melee, weapon",
             target: <span>1 creature within the elder reaper's zone</span>,
@@ -660,7 +667,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Psychic Disrupt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -676,7 +683,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Psychic Blast",
             keywords: "magical, range, recharge",
             target: <span>1d4+1 enemies within 1 zone</span>,
@@ -694,7 +701,7 @@ const AberrationMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Mental Interruption",
             keywords: "magical, range",
             trigger: (
@@ -708,7 +715,7 @@ const AberrationMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Reaper Domination",
             keywords: "magical",
             target: <span>1 creature seized by the elder reaper</span>,
@@ -780,6 +787,7 @@ const AberrationMonsters = [
         vision="night"
         resistances="psychic"
         speeds="land 0, fly 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -796,28 +804,20 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Bite",
-            keywords: "melee, weapon",
-            target: <span>1 engaged creature</span>,
-            defense: "Guard",
-            damage: "10 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Eye Ray",
             keywords: "magical, range",
             effect: (
               <span>
                 <span>
                   Void seer unleashes a magical ray from one of its many eyes.
-                  Choose a ray from below or roll a 1d8:
+                  Choose a ray from below or roll a 1d8. For each ray, make an
+                  attack roll against 1 creature within 3 zones with the
+                  targeted defense specified by the ray type.
                 </span>
                 <ul>
                   <li>
-                    <i>1. Control Ray:</i> Void seer makes an attack roll
-                    against the Spirit of 1 creature within 3 zones. The target
-                    is{" "}
+                    <i>1. Control Ray (Spirit):</i> Target is{" "}
                     <Link className="internal-link" to="/conditions#hindered">
                       hindered
                     </Link>{" "}
@@ -826,39 +826,34 @@ const AberrationMonsters = [
                     (overcome ends) on a critical success.
                   </li>
                   <li>
-                    <i>2. Disintegrate:</i> Void seer makes an attack roll
-                    against the Spirit of 1 creature within 3 zones, dealing 12
-                    arcane damage. If a <ToolTip preset="shaken" /> target takes
-                    this damage, then they are instead reduced to 0 hit points.
+                    <i>2. Disintegrate (Spirit):</i> Deals 12 arcane damage. If
+                    a <ToolTip preset="shaken" /> target takes this damage, then
+                    they are instead reduced to 0 hit points.
                   </li>
                   <li>
-                    <i>3. Explosion:</i> Void seer makes an attack roll against
-                    the Guard of all creatures in 1 zone within 3 zones, dealing
-                    8 fire damage.
+                    <i>3. Explosion (Guard):</i> Targets all creatures in 1 zone
+                    within 3 zones, dealing 8 fire damage.
                   </li>
                   <li>
-                    <i>4. Freezing Ray:</i> Void seer makes an attack roll
-                    against the Guard of 1 creature within 3 zones, dealing 10
-                    cold damage and the target is{" "}
+                    <i>4. Freezing Ray (Guard):</i> Deals 10 cold damage and the
+                    target is{" "}
                     <Link className="internal-link" to="/conditions#dazed">
                       dazed
                     </Link>{" "}
                     (next turn ends) on a success or higher.
                   </li>
                   <li>
-                    <i>5. Poison Ray:</i> Void seer makes an attack roll against
-                    the Guard of 1 creature within 3 zones, dealing 10 toxic
-                    damage and the target falls{" "}
+                    <i>5. Poison Ray (Guard):</i> Deals 10 toxic damage and the
+                    target falls{" "}
                     <Link className="internal-link" to="/conditions#prone">
                       prone
                     </Link>{" "}
                     in a coughing fit on a success or higher.
                   </li>
                   <li>
-                    <i>6. Psychic Confusion:</i> Void seer makes an attack roll
-                    against the Spirit of 1 creature within 3 zones, dealing 10
-                    psychic damage. On a success or higher, the target must use
-                    their reaction to{" "}
+                    <i>6. Psychic Confusion (Spirit):</i> Deals 10 psychic
+                    damage. On a success or higher, the target must use their
+                    reaction to{" "}
                     <Link
                       className="internal-link"
                       to="/combat-abilities#charge"
@@ -875,16 +870,14 @@ const AberrationMonsters = [
                     , or use a tier 0 battle spell against the nearest ally.
                   </li>
                   <li>
-                    <i>7. Telekinetic Beam:</i> Void seer makes an attack roll
-                    against the Guard of 1 creature within 3 zones, dealing 10
-                    physical damage and the target is shoved within 1 zone on a
-                    success or higher.
+                    <i>7. Telekinetic Beam (Guard):</i> Deals 10 physical damage
+                    and the target is shoved within 1 zone on a success or
+                    higher.
                   </li>
 
                   <li>
-                    <i>8. Wither:</i> Void seer makes an attack roll against the
-                    Spirit of 1 creature within 3 zones, dealing 10 necrotic
-                    damage and the target takes 4{" "}
+                    <i>8. Wither (Spirit):</i> Deals 10 necrotic damage and the
+                    target takes 4{" "}
                     <Link
                       className="internal-link"
                       to="/rules/combat#ongoing-damage"
@@ -900,7 +893,7 @@ const AberrationMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Antimagic Gaze",
             keywords: "magical, range",
             target: <span>1 magical effect within 3 zones</span>,
@@ -986,6 +979,7 @@ const AberrationMonsters = [
         vision="blind 3 zones"
         resistances="psychic"
         speeds="fly 1"
+        basicMelee="9 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1005,23 +999,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Void Staff",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "9 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Rupture Mind",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1067,7 +1045,11 @@ const AberrationMonsters = [
       "Voidlings are large bipedal horrors with tentacles for a mouth and large clawed hands. They aren't very intelligent but hunger for life, and follow the commands of their masters.",
     tactics: (
       <span>
-        Voidlings prefer to fight near heroes to use tentacl rend, and uses{" "}
+        Voidlings prefer to fight near heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , and uses{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -1088,33 +1070,24 @@ const AberrationMonsters = [
         role=""
         vision="blind 1 zone"
         resistances="psychic"
-        actions={[
+        basicMelee="3 physical"
+        traits={[
           {
-            basic: true,
-            name: "Tentacle Rend",
-            keywords: "melee, weapon",
-            target: (
+            name: "Tentacle Grab",
+            description: (
               <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-            success: (
-              <span>
+                On a successful strike, the target is{" "}
                 <Link className="internal-link" to="/conditions#seized">
                   seized
                 </Link>{" "}
-                (overcome ends)
+                (overcome ends) by all voidlings in a minion group.
               </span>
             ),
           },
+        ]}
+        actions={[
           {
-            basic: false,
+            // basic: false,
             name: "Void Intrusion",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1163,6 +1136,7 @@ const AberrationMonsters = [
         vision="blind 3 zones"
         resistances="psychic"
         speeds="speed 0, fly 1"
+        basicMelee="9 physical (birth only)"
         traits={[
           {
             name: "Major Monster",
@@ -1195,7 +1169,7 @@ const AberrationMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Void Pulse (cacoon only)",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1211,7 +1185,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Bite (birth only)",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
@@ -1241,7 +1215,7 @@ const AberrationMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Unravel Reality",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,

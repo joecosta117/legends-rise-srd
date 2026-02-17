@@ -30,9 +30,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Support"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Unholy Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -42,7 +43,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dark Blessing",
             keywords: "magical, range",
             target: "1 ally within 1 zone",
@@ -89,9 +90,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Support"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Hymn of Discord",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -101,7 +103,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Uplifting Song",
             keywords: "magical, range",
             target: "1 ally within 1 zone",
@@ -148,9 +150,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Profance Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -169,7 +172,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Diabolical Curse",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
@@ -205,7 +208,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        as a maneuver, then use greataxe.
+        as a maneuver, then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -220,6 +227,8 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         traits={[
           {
             name: "Rage",
@@ -229,24 +238,6 @@ const HumanoidMonsters = [
                 <Modifier type="f" count="1" /> to attack rolls
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Greataxe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
           },
         ]}
       />
@@ -271,7 +262,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
-        as a maneuver, then use sword.
+        as a maneuver, then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -286,37 +281,25 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Tank"
-        actions={[
-          {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Knightly Punishment",
             trigger:
               "The knight sees a creature within its zone make an attack roll against a knight's ally",
             effect: (
               <span>
                 The knight can{" "}
-                <Link className="internal-link" to="/combat-abilities#move">
-                  move
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
                 </Link>{" "}
-                then use sword against the triggering creature
+                or{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>{" "}
+                the triggering creature
               </span>
             ),
           },
@@ -353,9 +336,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Artillery"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Arcane Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -363,7 +347,7 @@ const HumanoidMonsters = [
             damage: "3 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Arcane Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -384,8 +368,11 @@ const HumanoidMonsters = [
       "Assassins are deadly and nimble warriors that prefer to strike from the shadows.",
     tactics: (
       <span>
-        On each turn, at range, an assassin uses crossbow then cunning movement
-        to find{" "}
+        On each turn, at range, an assassin uses{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        then cunning movement to find{" "}
         <Link className="internal-link" to="/rules/combat#stealth">
           cover
         </Link>{" "}
@@ -394,7 +381,11 @@ const HumanoidMonsters = [
           hide
         </Link>
         . If near the heroes, an assassin instead uses cunning movement to get
-        close, uses blade, then{" "}
+        close, uses{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , then{" "}
         <Link className="internal-link" to="/combat-abilities#move">
           move
         </Link>{" "}
@@ -413,44 +404,20 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="4 physical"
+        basicRanged="3 physical (3 zones)"
         traits={[
           {
             name: "Cunning Movement",
             description: (
               <span>
-                When the assassin uses crossbow or blade, it can{" "}
+                When the assassin uses strike, it can{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}
                 before or after the attack roll.
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
           },
         ]}
       />
@@ -471,7 +438,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#aim">
           aim
         </Link>{" "}
-        if they already used mark foe, then attacks with bow.
+        if they already used mark foe, then attacks with{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -486,35 +457,11 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Artillery"
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
-            name: "Longbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
+        basicRanged="3 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Mark Foe",
             keywords: "range",
             target: "1 creature within 2 zones",
@@ -541,7 +488,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#charge">
           charge
         </Link>{" "}
-        to get close or if already close, then uses sword.
+        to get close or if already close, then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -556,35 +507,11 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
-        actions={[
-          {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Longbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Smite",
             keywords: "magical",
             duration: "Current turn ends",
@@ -621,9 +548,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasping Vine",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -641,7 +569,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Difficult Terrain",
             keywords: "magical, range",
             target: "1 zone within 2 zones",
@@ -677,7 +605,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        as a maneuver, then uses jagged blade.
+        as a maneuver, then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -703,32 +635,8 @@ const HumanoidMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Jagged Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "range, weapon",
-            target: "1 creature within 3 zones",
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
       />
     ),
   },
@@ -743,8 +651,11 @@ const HumanoidMonsters = [
     tactics: (
       <span>
         Spellswords can fight from range or nearby. If they fight near the
-        heroes, they use their sword and then dimensional leap to get out of
-        danger.
+        heroes, they{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and then dimensional leap to get out of danger.
       </span>
     ),
     statBlock: (
@@ -759,25 +670,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Arcane Jolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -787,7 +683,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dimensional Leap",
             keywords: "magical, range",
             target: "up to 1 zone away",
@@ -819,11 +715,11 @@ const HumanoidMonsters = [
     tactics: (
       <span>
         Captains prefer to fight near their allies so they can give their allies
-        extra attacks. On each turn, a captain uses sword or crossobw, then uses{" "}
+        extra attacks. On each turn, a captain uses{" "}
         <Link className="internal-link" to="/combat-abilities#help">
           help
         </Link>{" "}
-        on an ally.
+        on an ally, then uses guiding sword or guiding crossbow.
       </span>
     ),
     statBlock: (
@@ -838,9 +734,11 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Support"
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Guiding Sword",
             keywords: "melee, weapon",
             target: (
@@ -864,7 +762,7 @@ const HumanoidMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Guiding Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -918,32 +816,8 @@ const HumanoidMonsters = [
         tier="1"
         threat="Minion"
         role=""
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
+        basicRanged="1 physical (3 zones)"
       />
     ),
   },
@@ -957,8 +831,11 @@ const HumanoidMonsters = [
       "Scouts are highly mobile combatants that often scout ahead for a large force.",
     tactics: (
       <span>
-        Scouts prefer to use longbow from range, and use double time to stay out
-        of trouble.
+        Scouts prefer to{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        from range, and use double time to stay out of trouble.
       </span>
     ),
     statBlock: (
@@ -973,35 +850,11 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Longbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-        ]}
+        basicMelee="4 physical"
+        basicRanged="3 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Double Time",
             effect: (
               <span>
@@ -1043,25 +896,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Entrapping Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -1076,7 +914,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Net",
             keywords: "weapon",
             target: <span>1 creature within the bounty hunter's zone</span>,
@@ -1125,6 +963,7 @@ const HumanoidMonsters = [
         threat="Standard"
         role="Artillery"
         resistances="chosen element"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Chosen Element",
@@ -1134,7 +973,7 @@ const HumanoidMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Elemental Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1142,7 +981,7 @@ const HumanoidMonsters = [
             damage: "3 damage of the chosen element damage type",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Elemental Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1168,8 +1007,11 @@ const HumanoidMonsters = [
     description: "Toughs are durable fighters that are hard to take down.",
     tactics: (
       <span>
-        Toughs prefer to fight near heroes. On each turn, a tough uses flail,
-        then uses{" "}
+        Toughs prefer to fight near heroes. On each turn, a tough uses{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , then uses{" "}
         <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
@@ -1188,35 +1030,11 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Tank"
-        actions={[
-          {
-            basic: true,
-            name: "Flail",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Shake It Off",
             effect: (
               <span>
@@ -1261,9 +1079,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Confusing Thought",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1281,7 +1100,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dancing Illusions",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
@@ -1324,9 +1143,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Weakening Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1344,7 +1164,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Animate Skeleton",
             keywords: "magical, range",
             duration: "Scene ends",
@@ -1384,9 +1204,10 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Maddening Thought",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1404,7 +1225,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Summon Tentacle",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
@@ -1443,7 +1264,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#aim">
           aim
         </Link>{" "}
-        then bow or burst of arrows if there are multiple heroes grouped up.
+        then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or burst of arrows if there are multiple heroes grouped up.
       </span>
     ),
     statBlock: (
@@ -1458,17 +1283,11 @@ const HumanoidMonsters = [
         tier="1"
         threat="Standard"
         role="Artillery"
+        basicMelee="3 physical"
+        basicRanged="3 physical (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Burst of Arrows",
             keywords: "range, weapon",
             target: <span>1d4 creatures in 1 zone within 3 zones</span>,
@@ -1508,9 +1327,10 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Artillery"
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Arcane Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1518,7 +1338,7 @@ const HumanoidMonsters = [
             damage: "6 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Arcane Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1526,7 +1346,7 @@ const HumanoidMonsters = [
             damage: "8 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Magic Wall",
             keywords: "magical, range",
             duration: "Start of master mage's next turn",
@@ -1564,9 +1384,10 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Support"
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Unholy Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1574,7 +1395,7 @@ const HumanoidMonsters = [
             damage: "4 unholy damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Profane Flames",
             keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
@@ -1596,7 +1417,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dark Blessing",
             keywords: "magical, range",
             target: "1 ally within 1 zone",
@@ -1628,7 +1449,11 @@ const HumanoidMonsters = [
     tactics: (
       <span>
         Weapon masters prefer to fight nearby. On each turn, a weapon masters
-        uses longbow or sword, and then uses swift attack.
+        uses{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , and then uses swift attack.
       </span>
     ),
     statBlock: (
@@ -1650,40 +1475,19 @@ const HumanoidMonsters = [
               "The weapon master can make an overcome effect to end a single effect on a success at the end of their turn.",
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: true,
-            name: "Longbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="8 physical"
+        basicRanged="4 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Swift Attack",
             effect: (
               <span>
-                Weapon master uses sword or longbow, but the attack roll's roll
-                result is downgraded by one.
+                Weapon master can{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , but the attack roll's roll result is downgraded by one.
               </span>
             ),
           },
@@ -1718,9 +1522,10 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Support"
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Guiding Sword",
             keywords: "melee, weapon",
             target: (
@@ -1744,7 +1549,7 @@ const HumanoidMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Guiding Crossbow",
             keywords: "ranged, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -1762,7 +1567,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Get in Here",
             effect:
               "Two elite grunts joins the combat within 2 zones of the warlord.",
@@ -1801,6 +1606,8 @@ const HumanoidMonsters = [
         type="Small or Medium Humanoid"
         tier="2"
         threat="Minion"
+        basicMelee="2 physical"
+        basicRanged="2 physical (3 zones)"
         role=""
         traits={[
           {
@@ -1816,32 +1623,6 @@ const HumanoidMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
       />
     ),
   },
@@ -1855,13 +1636,20 @@ const HumanoidMonsters = [
       "Master assassins are deadly and nimble warriors that prefer to strike from the shadows.",
     tactics: (
       <span>
-        On each turn, at range, a master assassin uses poison weapon then
-        crossbow and cunning movement to find{" "}
+        On each turn, at range, a master assassin uses poison weapon then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and cunning movement to find{" "}
         <Link className="internal-link" to="/rules/combat#stealth">
           cover
         </Link>
         . If near the heroes, an assassin instead uses poison weapon then
-        cunning movement to get close, and then attack with blade.
+        cunning movement to get close, and then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -1876,12 +1664,18 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="8 physical"
+        basicRanged="6 physical (3 zones)"
         traits={[
           {
             name: "Cunning Movement",
             description: (
               <span>
-                When the master assassin uses crossbow or blade, it can{" "}
+                When the master assassin uses{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , it can{" "}
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}
@@ -1890,35 +1684,9 @@ const HumanoidMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-        ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Poison Weapon",
             duration: "Current turn ends",
             effect:
@@ -1943,8 +1711,12 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#charge">
           charge
         </Link>{" "}
-        to get close or if already close, then uses sword. When they are weak or
-        an ally is weak, the high templar uses healing touch.
+        to get close or if already close, then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . When they are weak or an ally is weak, the high templar uses healing
+        touch.
       </span>
     ),
     statBlock: (
@@ -1959,35 +1731,11 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
-        actions={[
-          {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: true,
-            name: "Longbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="8 physical"
+        basicRanged="4 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Smite",
             keywords: "magical",
             duration: "Current turn ends",
@@ -1995,7 +1743,7 @@ const HumanoidMonsters = [
               "The high templar's weapons deal an extra 2 holy or unholy damage (your choice).",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Healing Touch",
             keywords: "magical, melee, recharge",
             target: "1 creature the high templar can touch",
@@ -2037,9 +1785,10 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Disabler"
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Weakening Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2055,7 +1804,7 @@ const HumanoidMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Withering Blast",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -2082,7 +1831,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Animate Zombies",
             keywords: "magical, range",
             duration: "Scene ends",
@@ -2122,9 +1871,10 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasping Vine",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2142,7 +1892,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Difficult Terrain",
             keywords: "magical, range",
             target: "1 zone within 2 zones",
@@ -2159,7 +1909,7 @@ const HumanoidMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Nature's Grasp",
             keywords: "magical, range",
             trigger: (
@@ -2203,7 +1953,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
-        as a maneuver, then use sword.
+        as a maneuver, then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -2218,27 +1972,11 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Tank"
-        actions={[
-          {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-        ]}
+        basicMelee="6 physical"
+        basicRanged="4 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Knightly Challenge",
             target: "All enemies within the knight's zone",
             effect: (
@@ -2254,17 +1992,21 @@ const HumanoidMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Knightly Punishment",
             trigger:
               "The knight sees a creature within its zone make an attack roll against a knight's ally",
             effect: (
               <span>
                 The knight can{" "}
-                <Link className="internal-link" to="/combat-abilities#move">
-                  move
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
                 </Link>{" "}
-                then use sword against the triggering creature
+                or{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>{" "}
+                the triggering creature
               </span>
             ),
           },
@@ -2291,7 +2033,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        as a maneuver, then use greataxe.
+        as a maneuver, then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -2306,6 +2052,8 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Bruiser"
+        basicMelee="8 physical"
+        basicRanged="4 physical (3 zones)"
         traits={[
           {
             name: "Rage",
@@ -2317,39 +2065,24 @@ const HumanoidMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Greataxe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-        ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "I Refuse Death",
             trigger: "Undying berserker is reduced to 0 hit points",
             requirement:
               "Undyirng bersker hasn't used this ability yet in this scene",
             effect: (
               <span>
-                Undying berserker is instead reduced to 1 hit point and can use
-                sword. If no target is close enough, the undying bersker can{" "}
-                <Link className="internal-link" to="/combat-abilities#move">
-                  move
+                Undying berserker is instead reduced to 1 hit point and can{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
                 </Link>{" "}
-                first
+                or{" "}
+                <Link className="internal-link" to="/combat-abilities#charge">
+                  charge
+                </Link>
+                .
               </span>
             ),
           },
@@ -2372,7 +2105,11 @@ const HumanoidMonsters = [
         <Link className="internal-link" to="/combat-abilities#aim">
           aim
         </Link>{" "}
-        then bow or burst of arrows if there are multiple heroes grouped up.
+        then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or burst of arrows if there are multiple heroes grouped up.
       </span>
     ),
     statBlock: (
@@ -2387,6 +2124,8 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Artillery"
+        basicMelee="6 physical"
+        basicRanged="6 physical (3 zones)"
         traits={[
           {
             name: "Expert Aim",
@@ -2400,15 +2139,7 @@ const HumanoidMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Burst of Arrows",
             keywords: "range, weapon",
             target: <span>1d4 creatures in 1 zone within 3 zones</span>,
@@ -2430,8 +2161,12 @@ const HumanoidMonsters = [
     tactics: (
       <span>
         Master spellswords can fight from range or nearby. If they fight near
-        the heroes, they use their sword and then dimensional leap to get out of
-        danger. A master spellsword always used weapon storm when possible.
+        the heroes, they{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and then dimensional leap to get out of danger. A master spellsword
+        always used weapon storm when possible.
       </span>
     ),
     statBlock: (
@@ -2446,25 +2181,10 @@ const HumanoidMonsters = [
         tier="2"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="8 physical"
         actions={[
           {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Arcane Jolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2472,7 +2192,7 @@ const HumanoidMonsters = [
             damage: "6 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Weapon Storm",
             keywords: "magical, recharge",
             target: "All enemies within the master spellsword's zone",
@@ -2494,7 +2214,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dimensional Leap",
             keywords: "magical, range",
             target: "up to 1 zone away",
@@ -2547,9 +2267,10 @@ const HumanoidMonsters = [
         tier="3"
         threat="Standard"
         role="Artillery"
+        basicMelee="9 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Arcane Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2557,7 +2278,7 @@ const HumanoidMonsters = [
             damage: "9 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Arcane Burst",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -2565,7 +2286,7 @@ const HumanoidMonsters = [
             damage: "12 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Magic Wall",
             keywords: "magical, range",
             duration: "Start of master mage's next turn",
@@ -2611,9 +2332,10 @@ const HumanoidMonsters = [
         tier="3"
         threat="Standard"
         role="Support"
+        basicMelee="9 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Unholy Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2622,7 +2344,7 @@ const HumanoidMonsters = [
             success: <span>weakness to all damage (next turn ends)</span>,
           },
           {
-            basic: false,
+            // basic: false,
             name: "Profane Flames",
             keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
@@ -2644,7 +2366,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dark Blessing",
             keywords: "magical, range",
             target: "1 ally within 1 zone",
@@ -2692,6 +2414,8 @@ const HumanoidMonsters = [
         tier="3"
         threat="Standard"
         role="Bruiser"
+        basicMelee="12 physical"
+        basicRanged="6 physical (3 zones)"
         traits={[
           {
             name: "Hard to Stop",
@@ -2701,50 +2425,34 @@ const HumanoidMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: true,
-            name: "Longbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Recovery Strike",
+            keywords: "recharge",
             requirement:
               "The legendary fighter hasn't used this ability this scene",
             effect: (
               <span>
-                Legendary fighter regains 18 hit points and end all negative
-                effects on themselves.
+                Legendary fighter regains 18 hit points, ends all negative
+                effects on themselves, and can melee{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>{" "}
+                .
               </span>
             ),
           },
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Swift Attack",
             effect: (
               <span>
-                Legendary fighter uses sword or longbow, but the attack roll's
-                roll result is downgraded by one.
+                Legendary fighter can{" "}
+                <Link className="internal-link" to="/combat-abilities#strike">
+                  strike
+                </Link>
+                , but the attack roll's roll result is downgraded by one.
               </span>
             ),
           },
@@ -2762,13 +2470,20 @@ const HumanoidMonsters = [
       "Legendary assassins are the most dangerous and deadly of their kind, and are feared throughout the land.",
     tactics: (
       <span>
-        On each turn, at range, a legendary assassin uses poison weapon then
-        crossbow and cunning movement to find{" "}
+        On each turn, at range, a legendary assassin uses poison weapon then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and cunning movement to find{" "}
         <Link className="internal-link" to="/rules/combat#stealth">
           cover
         </Link>
         . If near the heroes, an assassin instead uses poison weapon then
-        cunning movement to get close, and then attack with blade.
+        cunning movement to get close, and then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -2797,35 +2512,11 @@ const HumanoidMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "ranged, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "9 physical damage",
-          },
-        ]}
+        basicMelee="12 physical"
+        basicRanged="9 physical (3 zones)"
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Poison Weapon",
             duration: "Current turn ends",
             effect:
@@ -2885,9 +2576,10 @@ const HumanoidMonsters = [
         tier="3"
         threat="Standard"
         role="Disabler"
+        basicMelee="9 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Weakening Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2903,7 +2595,7 @@ const HumanoidMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Withering Blast",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -2930,7 +2622,7 @@ const HumanoidMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Animate Zombies",
             keywords: "magical, range",
             duration: "Scene ends",

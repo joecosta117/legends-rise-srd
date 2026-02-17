@@ -21,6 +21,7 @@ import Monster from "../../components/Monster";
 import { Link } from "react-router-dom";
 import ToolTip from "../../components/ToolTip";
 import basicAtk from "../../assets/monster-strike.png";
+import basicRangedAtk from "../../assets/range-strike.png";
 
 interface MonsterListProps {
   name: string;
@@ -210,8 +211,8 @@ function Monsters() {
                 Each monster entry begins with its name, tier, role, and threat
                 level. Each monster also has a brief description of them as well
                 as preferred tactics in combat. Their stat block provides
-                essential information such as hit points (HP), defenses, and
-                special abilities.
+                essential information such as hit points (HP), defenses, basic
+                attacks, and special abilities.
               </p>
               <Monster
                 name="Monster Example"
@@ -227,6 +228,8 @@ function Monsters() {
                 weaknesses="any weaknesses"
                 speeds="fly 1"
                 vision="night"
+                basicMelee="damage on melee strike"
+                basicRanged="damage on ranged strike (weapon's range)"
                 traits={[
                   {
                     name: "Trait Example",
@@ -240,7 +243,7 @@ function Monsters() {
                 ]}
                 actions={[
                   {
-                    basic: true,
+                    // basic: true,
                     name: "Attack Example",
                     keywords: "melee, weapon",
                     target: (
@@ -298,6 +301,36 @@ function Monsters() {
                   <span>
                     <b>Resistances and Weaknesses:</b> If the monster has any
                     resistances or weaknesses, then they will be listed.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>
+                      <img
+                        className="attack-icon"
+                        src={basicAtk}
+                        alt="attack icon"
+                      />
+                      :
+                    </b>{" "}
+                    How much damage the monster does on a melee strike from a
+                    claw, bite, or weapon attack.
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <b>
+                      <img
+                        className="attack-icon"
+                        src={basicRangedAtk}
+                        alt="attack icon"
+                      />
+                      :
+                    </b>{" "}
+                    How much damage the monster does on a ranged strike with the
+                    number of zones for the range listed in parenthesis. This
+                    could be from a weapon attack or natural ranged attack like
+                    spitting acid or shooting webs.
                   </span>
                 </li>
                 <li>

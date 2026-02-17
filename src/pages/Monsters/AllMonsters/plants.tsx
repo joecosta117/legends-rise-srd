@@ -14,7 +14,11 @@ const PlantMonsters = [
       "Rot saplings are small sentient plant creatues animated by dark magic to hate the living.",
     tactics: (
       <span>
-        Rot saplings prefer to fight near heroes to use scratch, and uses{" "}
+        Rot saplings prefer to fight near heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , and uses{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -35,24 +39,8 @@ const PlantMonsters = [
         role=""
         resistances="necrotic"
         weaknesses="fire"
-        actions={[
-          {
-            basic: true,
-            name: "Scratch",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
+        basicRanged="1 physical (3 zones)"
       />
     ),
   },
@@ -66,7 +54,8 @@ const PlantMonsters = [
       "Rot spawns are medium sized sentient plant creatues animated by dark magic to hate the living.",
     tactics: (
       <span>
-        Rot spawns prefer to fight near heroes to use scratch, and uses{" "}
+        Rot spawns prefer to fight near heroes to use grasping scratch , and
+        uses{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -87,6 +76,8 @@ const PlantMonsters = [
         role="Disabler"
         resistances="necrotic"
         weaknesses="fire"
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         traits={[
           {
             name: "Rotting Aura",
@@ -106,7 +97,7 @@ const PlantMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasping Scratch",
             keywords: "melee, weapon",
             target: (
@@ -164,25 +155,11 @@ const PlantMonsters = [
         role="Artillery"
         resistances="necrotic"
         weaknesses="fire"
+        basicMelee="3 physical"
+        basicRanged="3 physical (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Scratch",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Bleeding Needle",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -234,6 +211,7 @@ const PlantMonsters = [
         resistances="necrotic"
         weaknesses="fire"
         speeds="land 0"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -248,7 +226,7 @@ const PlantMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasping Vine",
             keywords: "range, weapon",
             target: <span>1 creature within 1 zone</span>,
@@ -300,8 +278,11 @@ const PlantMonsters = [
       "Dryads are faerie guardians of trees and those that dwell in wooded areas. Dryads prefer to convince intruders to leave or not harm their trees, but will resort to violence if necessary.",
     tactics: (
       <span>
-        Dryads prefer to fight near heroes to use branch, and uses tree stride
-        as a maneuver to keep their distance.
+        Dryads prefer to fight near heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , and uses tree stride as a maneuver to keep their distance.
       </span>
     ),
     statBlock: (
@@ -317,24 +298,7 @@ const PlantMonsters = [
         threat="Standard"
         role="Skirmisher"
         weaknesses="fire"
-        actions={[
-          {
-            basic: true,
-            name: "Branch",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="4 physical"
         maneuvers={[
           {
             name: "Tree Stride",
@@ -385,6 +349,7 @@ const PlantMonsters = [
         threat="Boss"
         role="Disabler"
         weaknesses="fire"
+        basicMelee="5 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -412,7 +377,7 @@ const PlantMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Branch",
             keywords: "melee, weapon",
             target: (
@@ -436,7 +401,7 @@ const PlantMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Leaf",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -546,9 +511,11 @@ const PlantMonsters = [
             ),
           },
         ]}
+        basicMelee="6 physical"
+        basicRanged="4 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -572,15 +539,7 @@ const PlantMonsters = [
             ),
           },
           {
-            basic: true,
-            name: "Throw Rock",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Awaken Tree",
             keywords: "magical, range, recharge",
             target: <span>1 tree within 2 zones</span>,
@@ -636,9 +595,10 @@ const PlantMonsters = [
         threat="Standard"
         role="Bruiser"
         weaknesses="fire"
+        basicMelee="8 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -661,7 +621,7 @@ const PlantMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -689,8 +649,8 @@ const PlantMonsters = [
       "Rot woodlords are large tree like guardians of forests that have been corrupted by the rot curse. Filled with hatred for the living, these corrupted trees seek to eradicate any newcomer to their woods. Overtime, a rot woodlord's woods becomes corruped as well and transforms into an area of great evil.",
     tactics: (
       <span>
-        Rot woodlords prefer to be near heroes to use slam and uproot. They also
-        use awakened tree if they need help.
+        Rot woodlords prefer to be near heroes to use rotting slam and uproot.
+        They also use awakened tree if they need help.
       </span>
     ),
     statBlock: (
@@ -721,9 +681,11 @@ const PlantMonsters = [
             ),
           },
         ]}
+        basicMelee="10 physical"
+        basicRanged="8 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Rotting Slam",
             keywords: "melee, weapon",
             target: (
@@ -747,15 +709,7 @@ const PlantMonsters = [
             ),
           },
           {
-            basic: true,
-            name: "Throw Rock",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Awaken Tree",
             keywords: "magical, range, recharge",
             target: <span>1 tree within 2 zones</span>,
@@ -841,28 +795,14 @@ const PlantMonsters = [
         role=""
         resistances="necrotic"
         weaknesses="fire"
-        actions={[
+        basicMelee="2 physical"
+        traits={[
           {
-            basic: true,
-            name: "Grasping Slam",
-            keywords: "melee, weapon",
-            target: (
+            name: "Grasping Vines",
+            description: (
               <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
-            success: (
-              <span>
-                <Link className="internal-link" to="/conditions#seized">
-                  seized
-                </Link>{" "}
-                (overcome ends)
+                On a successful strike, target is seized (overcome ends) by all
+                rot spawn minions in a minion group.
               </span>
             ),
           },
@@ -897,6 +837,8 @@ const PlantMonsters = [
         threat="Major"
         role="Bruiser"
         weaknesses="fire"
+        basicMelee="12 physical"
+        basicRanged="6 physical (3 zones)"
         traits={[
           {
             name: "Major Monster",
@@ -927,7 +869,7 @@ const PlantMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Vine",
             keywords: "melee, weapon",
             target: (
@@ -951,15 +893,7 @@ const PlantMonsters = [
             ),
           },
           {
-            basic: true,
-            name: "Thorn",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Vine Lash",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,

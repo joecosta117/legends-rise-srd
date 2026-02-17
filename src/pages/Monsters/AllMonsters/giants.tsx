@@ -14,8 +14,8 @@ const GiantMonsters = [
       "Ogres are the most brutish and dim witted of giants, with many other giants not even considering ogres as true giants. Ogre warriors are usually led by a cruel warlord. An ogre stands around 10 feet tall.",
     tactics: (
       <span>
-        Ogre warriors rush to fight the heroes close up to use their greatclub.
-        On each turn, an ogre will also use{" "}
+        Ogre warriors rush to fight the heroes close up to use their forceful
+        greatclub. On each turn, an ogre will also use{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -34,10 +34,12 @@ const GiantMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Greatclub",
+            // basic: true,
+            name: "Forceful Greatclub",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -57,14 +59,6 @@ const GiantMonsters = [
                 </Link>
               </span>
             ),
-          },
-          {
-            basic: true,
-            name: "Javelin",
-            keywords: "range, weapon",
-            target: <span>1 creature within 2 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
           },
         ]}
       />
@@ -99,25 +93,11 @@ const GiantMonsters = [
         tier="1"
         threat="Standard"
         role="Artillery"
+        basicMelee="3 physical"
+        basicRanged="3 physical (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Spear",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Thrown Spear",
             keywords: "melee, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -162,6 +142,8 @@ const GiantMonsters = [
         tier="1"
         threat="Major"
         role="Support"
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         traits={[
           {
             name: "Major Monster",
@@ -176,7 +158,7 @@ const GiantMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Jagged Axe",
             keywords: "melee, weapon",
             target: (
@@ -201,7 +183,7 @@ const GiantMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Spear",
             keywords: "melee, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -240,7 +222,11 @@ const GiantMonsters = [
       "Trolls are strange mutations of giants, with true giants believing trolls to be a former kingdom of giants cursed for their greed. Now trolls are tall greenish humanoid monsters consumed with hunger and can only be killed with acid or fire.",
     tactics: (
       <span>
-        Trolls prefer to fight near heroes to use rend and{" "}
+        Trolls prefer to fight near heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -297,24 +283,7 @@ const GiantMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="4 physical"
         reactions={[
           {
             name: "Angry Thrashing",
@@ -367,33 +336,11 @@ const GiantMonsters = [
             ),
           },
         ]}
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Club",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Throw Spear",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Sweep",
             keywords: "melee, weapon",
             target: (
@@ -449,6 +396,7 @@ const GiantMonsters = [
         role="Disabler"
         vision="night"
         resistances="unholy"
+        basicMelee="5 physical"
         weaknesses="holy"
         traits={[
           {
@@ -466,7 +414,7 @@ const GiantMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Cursed Falchion",
             keywords: "melee, weapon",
             target: (
@@ -490,7 +438,7 @@ const GiantMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Dark Curse",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -506,7 +454,7 @@ const GiantMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Demonic Chill",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the oni's zone</span>,
@@ -627,6 +575,7 @@ const GiantMonsters = [
         role=""
         vision="night"
         weaknesses="fire, toxic"
+        basicMelee="2 physical"
         traits={[
           {
             name: "Troll Regeneration",
@@ -651,24 +600,6 @@ const GiantMonsters = [
                 up with 4 hit points.
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
           },
         ]}
       />
@@ -741,25 +672,10 @@ const GiantMonsters = [
             ),
           },
         ]}
+        basicMelee="8 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -801,7 +717,7 @@ const GiantMonsters = [
           {
             name: "Angry Thrashing",
             trigger: "The troll takes fire or toxic damage",
-            effect: <span>Troll can use rend</span>,
+            effect: <span>Troll can strike</span>,
           },
         ]}
       />
@@ -871,32 +787,8 @@ const GiantMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Axe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: true,
-            name: "Throwing Axe",
-            keywords: "range, weapon",
-            target: <span>1 creature within 2 zones</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="6 physical"
+        basicRanged="4 physical (3 zones)"
         maneuvers={[
           {
             name: "Intimidating Roar",
@@ -923,7 +815,7 @@ const GiantMonsters = [
           {
             name: "Angry Thrashing",
             trigger: "The troll takes fire or toxic damage",
-            effect: <span>Troll can use axe</span>,
+            effect: <span>Troll can strike</span>,
           },
         ]}
       />
@@ -939,8 +831,11 @@ const GiantMonsters = [
       "Fire giants are true giants that live near volcanoes and elemental rifts to the fire realm. Fire giants focus on forging great weapons with their innate fire magic as well as training to become great warriors. A fire giant stands nearly 20 feet tall with well forged armor and giant swords.",
     tactics: (
       <span>
-        Fire giants prefer to fight near heroes to inflame weapon then use
-        greatsword or cleave against multiple heroes.
+        Fire giants prefer to fight near heroes to inflame weapon then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or cleave against multiple heroes.
       </span>
     ),
     statBlock: (
@@ -957,33 +852,11 @@ const GiantMonsters = [
         role="Bruiser"
         resistances="fire"
         weaknesses="cold"
+        basicMelee="8 physical"
+        basicRanged="4 fire (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Greatsword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: false,
-            name: "Throw Flame",
-            keywords: "magical, range",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 fire damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Cleave",
             keywords: "melee, weapon",
             target: (
@@ -1005,7 +878,7 @@ const GiantMonsters = [
             duration: "Until the fire giant's current turn ends",
             effect: (
               <span>
-                The fire giant's greatsword and cleave now deal 10 fire damage
+                The fire giant's melee strike and cleave now deal 10 fire damage
               </span>
             ),
           },
@@ -1041,25 +914,11 @@ const GiantMonsters = [
         role="Artillery"
         resistances="fire"
         weaknesses="cold"
+        basicMelee="6 physical"
+        basicRanged="6 fire (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Mace",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Throw Flame",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1079,7 +938,7 @@ const GiantMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Volcanic Burst",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1134,33 +993,11 @@ const GiantMonsters = [
         role="Bruiser"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="8 physical"
+        basicRanged="4 cold (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Greataxe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "8 physical damage",
-          },
-          {
-            basic: false,
-            name: "Ice Spike",
-            keywords: "magical, range",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 cold damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Cleave",
             keywords: "melee, weapon",
             target: (
@@ -1176,7 +1013,7 @@ const GiantMonsters = [
             damage: "8 physical damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Ice Breath",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the giant's zone</span>,
@@ -1226,10 +1063,12 @@ const GiantMonsters = [
         role="Disabler"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="6 physical"
+        basicRanged="4 cold (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Mace",
+            // basic: true,
+            name: "Freezing Mace",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -1252,7 +1091,7 @@ const GiantMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Ice Spike",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1268,7 +1107,7 @@ const GiantMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Winter's Chill",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1349,9 +1188,11 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Tank"
+        basicMelee="6 physical"
+        basicRanged="4 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Maul",
             keywords: "melee, weapon",
             target: (
@@ -1375,16 +1216,9 @@ const GiantMonsters = [
               </span>
             ),
           },
+
           {
-            basic: true,
-            name: "Throw Rock",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Sweep",
             keywords: "melee, weapon",
             target: (
@@ -1397,7 +1231,7 @@ const GiantMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "8 physical damage",
+            damage: "6 physical damage",
             success: (
               <span>
                 <span>
@@ -1422,8 +1256,8 @@ const GiantMonsters = [
       "Mountain giants are true giants that live in the highest reaches of the world within beautifully made stone fortresses created by their geomancers. Mountain giants rarely interact with other mortals but sometimes demand fealty from lesser settlements that live near their mountain. A mountain giant geomancer stands nearly 25 feet tall with ceremonial robes and commands powerful earth magic.",
     tactics: (
       <span>
-        Mountain giant geomancers prefer to fight far from heroes to use throw
-        rock and strength of the mountains. They stay near allies to trigger
+        Mountain giant geomancers prefer to fight far from heroes to use ranged
+        strike and strength of the mountains. They stay near allies to trigger
         stone shield.
       </span>
     ),
@@ -1439,32 +1273,8 @@ const GiantMonsters = [
         tier="2"
         threat="Standard"
         role="Support"
-        actions={[
-          {
-            basic: true,
-            name: "Hammer",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: true,
-            name: "Throw Rock",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="6 physical"
+        basicRanged="4 physical (3 zones)"
         maneuvers={[
           {
             name: "Toughness of the Mountains",

@@ -15,8 +15,11 @@ const ConstructMonsters = [
     tactics: (
       <span>
         Animated weapons usually fight in groups and swarm the heroes. Each
-        turn, an animated weapon will use slash or fire depending on the type of
-        weapon.
+        turn, an animated weapon will use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -32,32 +35,8 @@ const ConstructMonsters = [
         tier="1"
         threat="Minion"
         role=""
-        actions={[
-          {
-            basic: true,
-            name: "Slash",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-          {
-            basic: true,
-            name: "Fire",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
+        basicRanged="1 physical (3 zones)"
       />
     ),
   },
@@ -71,7 +50,11 @@ const ConstructMonsters = [
       "Animated armor are normal armor come to life from some magical means. Usually animated armor wield weapons and serve as mindless guardians to mages or a place of great treasure.",
     tactics: (
       <span>
-        Animated armor prefer to fight near heroes by using glaive then{" "}
+        Animated armor prefer to fight near heroes by using{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        then{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -92,35 +75,17 @@ const ConstructMonsters = [
         threat="Minor"
         role="Tank"
         resistances="physical"
+        basicMelee="2 physical"
         traits={[
           {
             name: "Broken Armor",
             description: (
               <span>
-                When a creatue deals damage to the construct with a critical
-                success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is gone
-                and their Guard decreases by 2.
+                When the construct becomes <ToolTip preset="shaken" />, their
+                armor breaks. The construct's physical resistance is gone and
+                their Guard decreases by 2.
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Glaive",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
           },
         ]}
       />
@@ -158,7 +123,7 @@ const ConstructMonsters = [
         role="Skirmisher"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -195,7 +160,11 @@ const ConstructMonsters = [
       "Clockworks are constructed soldiers, but unlike forgeborn, have limited thinking capabilities and are created with basic directions. Clockwork defenders are created to guard others or their clockwork brethern, and stand tall with a shield and flail.",
     tactics: (
       <span>
-        Clockwork defender prefer to fight near heroes by using flail then{" "}
+        Clockwork defender prefer to fight near heroes by using{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        then{" "}
         <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
@@ -219,35 +188,17 @@ const ConstructMonsters = [
         threat="Standard"
         role="Tank"
         resistances="physical"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Broken Armor",
             description: (
               <span>
-                When a creatue deals damage to the construct with a critical
-                success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is gone
-                and their Guard decreases by 2.
+                When the construct becomes <ToolTip preset="shaken" />, their
+                armor breaks. The construct's physical resistance is gone and
+                their Guard decreases by 2.
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Flail",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
           },
         ]}
       />
@@ -264,7 +215,7 @@ const ConstructMonsters = [
     tactics: (
       <span>
         Clockwork juggernauts prefer to fight near heroes by using juggernaut's
-        charge or axe, then{" "}
+        charge, then{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -283,25 +234,10 @@ const ConstructMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Axe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Juggernaut's Charge",
             effect: (
               <span>
@@ -346,9 +282,10 @@ const ConstructMonsters = [
         speeds="fly 1"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Flyby Rend",
             keywords: "melee, weapon",
             target: (
@@ -386,7 +323,11 @@ const ConstructMonsters = [
       "Flesh golems are constructs made of flesh stitched together limbs. Flesh golems are grotesque looking creatures that follow their master's commands, but when deeply hurt, these golems can go beserk.",
     tactics: (
       <span>
-        Flesh golems prefer to fight near heroes by using slam, then{" "}
+        Flesh golems prefer to fight near heroes by using{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , then{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -407,6 +348,7 @@ const ConstructMonsters = [
         role="Bruiser"
         resistances="arcane, lightning"
         weaknesses="fire"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -426,7 +368,7 @@ const ConstructMonsters = [
               <span>
                 When <ToolTip preset="shaken" />, the flesh golem goes beserk.
                 It gains <Modifier type="f" count="1" /> to attack rolls and on
-                its turn, the golem uses slam against the nearest creature.
+                its turn, the golem uses strike against the nearest creature.
               </span>
             ),
           },
@@ -440,24 +382,6 @@ const ConstructMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-        ]}
         bossActions={[
           {
             name: "Charge and Smash",
@@ -465,8 +389,8 @@ const ConstructMonsters = [
             target: <span>1 creature within 3 zones</span>,
             effect: (
               <span>
-                The flesh golem charges forward at near super speed then uses
-                slam against the target. On a success or higher, the target is
+                The flesh golem rushes forward at near super speed then uses
+                strike against the target. On a success or higher, the target is
                 knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
@@ -487,7 +411,7 @@ const ConstructMonsters = [
             round: "5",
             effect: (
               <span>
-                The flesh golem uses slam against each engaged creature and
+                The flesh golem uses strike against each engaged creature and
                 knocks a target{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
@@ -511,9 +435,10 @@ const ConstructMonsters = [
         tier="1"
         threat="Minor"
         role="Bruiser"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grab",
             keywords: "melee, weapon",
             target: (
@@ -571,6 +496,7 @@ const ConstructMonsters = [
         threat="Major"
         role="Bruiser"
         resistances="arcane, physical"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Major Monster",
@@ -585,7 +511,7 @@ const ConstructMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -608,7 +534,7 @@ const ConstructMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Binding Stone",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
@@ -666,32 +592,8 @@ const ConstructMonsters = [
         threat="Minion"
         role=""
         resistances="physical"
-        actions={[
-          {
-            basic: true,
-            name: "Melee Weapon",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-          {
-            basic: true,
-            name: "Ranged Weapon",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="2 physical"
+        basicRanged="2 physical (3 zones)"
       />
     ),
   },
@@ -722,24 +624,7 @@ const ConstructMonsters = [
         threat="Standard"
         role="Tank"
         resistances="arcane"
-        actions={[
-          {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-        ]}
+        basicMelee="6 physical"
         maneuvers={[
           {
             name: "Taunt Pulse",
@@ -800,6 +685,7 @@ const ConstructMonsters = [
         role="Tank"
         resistances="arcane, fire, physical"
         weaknesses="lightning"
+        basicMelee="9 physical"
         traits={[
           {
             name: "Major Monster",
@@ -815,16 +701,16 @@ const ConstructMonsters = [
             name: "Broken Armor",
             description: (
               <span>
-                When a creatue deals damage to the construct with a critical
-                success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is gone.
+                When the construct becomes <ToolTip preset="shaken" />, their
+                armor breaks. The construct's physical resistance is gone and
+                their Guard decreases by 2.
               </span>
             ),
           },
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Iron Blade",
             keywords: "melee, weapon",
             target: (
@@ -848,7 +734,7 @@ const ConstructMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Poison Breath",
             keywords: "magical, recharge",
             target: <span>1d4+1 enemies within the golem's zone</span>,
@@ -900,7 +786,11 @@ const ConstructMonsters = [
       "Golems are magical constructs that are tougher and more capable than lesser constructs such as clockworks. Golems typically serve a master, who is usually their creator. Golems can be created out of various materials such as wood, flesh, stone, or clay.",
     tactics: (
       <span>
-        Golems prefer to fight together against neraby heroes to use slam.
+        Golems prefer to fight together against neraby heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -916,27 +806,17 @@ const ConstructMonsters = [
         threat="Minion"
         role=""
         resistances="physical"
-        actions={[
+        basicMelee="3 physical"
+        traits={[
           {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
+            name: "Overpowering Strength",
+            description: (
               <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-            success: (
-              <span>
+                On a successful strike, the target is knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>
+                .
               </span>
             ),
           },
@@ -971,6 +851,7 @@ const ConstructMonsters = [
         threat="Boss"
         role="Bruiser"
         resistances="arcane, physical"
+        basicMelee="18 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -988,16 +869,16 @@ const ConstructMonsters = [
             name: "Broken Armor",
             description: (
               <span>
-                When a creatue deals damage to the construct with a critical
-                success or the construct becomes <ToolTip preset="shaken" />,
-                their armor breaks. The construct's physical resistance is gone.
+                When the construct becomes <ToolTip preset="shaken" />, their
+                armor breaks. The construct's physical resistance is gone and
+                their Guard decreases by 2.
               </span>
             ),
           },
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -1020,7 +901,7 @@ const ConstructMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Energy Beam",
             keywords: "magical, range",
             target: <span>1 creature within 5 zones</span>,
@@ -1028,7 +909,7 @@ const ConstructMonsters = [
             damage: "12 arcane damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Hyper Beam",
             keywords: "magical, range, recharge",
             target: (

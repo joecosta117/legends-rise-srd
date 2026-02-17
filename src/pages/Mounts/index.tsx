@@ -78,25 +78,8 @@ function Mounts() {
           mgt="12 + double T"
           res="8 + double T"
           pb="double T"
+          basicMelee="2 physical per T"
           summons
-          actions={[
-            {
-              basic: true,
-              name: "Slam",
-              keywords: "melee, weapon",
-              target: (
-                <span>
-                  1{" "}
-                  <Link className="internal-link" to="/rules/combat#engaged">
-                    engaged
-                  </Link>{" "}
-                  creature
-                </span>
-              ),
-              defense: "Guard",
-              damage: "2 physical damage per T",
-            },
-          ]}
         />
         <h3 className="header" style={{ marginTop: "25px" }}>
           Mount Traits
@@ -164,7 +147,7 @@ function Mounts() {
           <li>
             <span>
               Choose an effect to happen when your mount gets a success on their
-              attack roll for slam: target falls{" "}
+              attack roll for a melee strike: target falls{" "}
               <Link className="internal-link" to="/conditions#prone">
                 prone
               </Link>
@@ -192,9 +175,10 @@ function Mounts() {
           mgt="14"
           res="10"
           pb="2"
+          basicMelee="2 physical"
           actions={[
             {
-              basic: true,
+              // basic: true,
               name: "Slam",
               keywords: "melee, weapon",
               target: (
@@ -230,9 +214,10 @@ function Mounts() {
           res="12"
           pb="4"
           speeds="fly 1"
+          basicMelee="4 physical"
           actions={[
             {
-              basic: true,
+              // basic: true,
               name: "Slam",
               keywords: "melee, weapon",
               target: (
@@ -263,25 +248,10 @@ function Mounts() {
           pb="6"
           resistances="fire"
           speeds="fly 1"
+          basicMelee="6 physical"
           actions={[
             {
-              basic: true,
-              name: "Slam",
-              keywords: "melee, weapon",
-              target: (
-                <span>
-                  1{" "}
-                  <Link className="internal-link" to="/rules/combat#engaged">
-                    engaged
-                  </Link>{" "}
-                  creature
-                </span>
-              ),
-              defense: "Guard",
-              damage: "6 physical damage",
-            },
-            {
-              basic: false,
+              // basic: false,
               name: "Fire Spit",
               keywords: "ranged",
               target: "1 creature within 3 zones",

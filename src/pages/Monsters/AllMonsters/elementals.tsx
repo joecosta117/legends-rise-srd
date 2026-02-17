@@ -14,8 +14,11 @@ const ElementalMonsters = [
     tactics: (
       <span>
         Elemental sprites like to fight in groups by using their flight to avoid
-        too much harm. Each turn, a sprite will use slam or spew elements if
-        available.
+        too much harm. Each turn, a sprite will use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or spew elements if available.
       </span>
     ),
     statBlock: (
@@ -31,6 +34,7 @@ const ElementalMonsters = [
         tier="1"
         threat="Minor"
         role="Skirmisher"
+        basicMelee="3 physical (earth, water), fire (fire), lightning (air), or cold (ice)"
         traits={[
           {
             name: "Elemental Type",
@@ -40,24 +44,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage:
-              "3 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Spew Elements",
             target: "1d4+1 enemies within the sprite's zone",
             keywords: "recharge",
@@ -101,25 +88,11 @@ const ElementalMonsters = [
         role="Artillery"
         resistances="lightning"
         weaknesses="fire"
+        basicMelee="3 physical"
+        basicRanged="3 lighting (3 zones)"
         actions={[
           {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Electrical Zap",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -163,9 +136,11 @@ const ElementalMonsters = [
         role="Tank"
         resistances="physical"
         speeds="burrow 1"
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -186,14 +161,6 @@ const ElementalMonsters = [
                 </Link>
               </span>
             ),
-          },
-          {
-            basic: true,
-            name: "Hurl Stone",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
           },
         ]}
       />
@@ -230,9 +197,11 @@ const ElementalMonsters = [
         role="Skirmisher"
         resistances="fire"
         weaknesses="cold"
+        basicMelee="4 fire"
+        basicRanged="3 fire (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -258,14 +227,6 @@ const ElementalMonsters = [
                 fire damage
               </span>
             ),
-          },
-          {
-            basic: true,
-            name: "Hurl Flame",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 fire damage",
           },
         ]}
       />
@@ -302,6 +263,8 @@ const ElementalMonsters = [
         role="Disabler"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="3 cold"
+        basicRanged="2 cold (3 zones)"
         traits={[
           {
             name: "Freezing Aura",
@@ -318,7 +281,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -342,7 +305,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Hurl Ice",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -386,6 +349,8 @@ const ElementalMonsters = [
         role="Bruiser"
         resistances="fire"
         weaknesses="cold"
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         traits={[
           {
             name: "Aquatic",
@@ -394,7 +359,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -410,14 +375,6 @@ const ElementalMonsters = [
             damage: "4 physical damage",
             success: <span>Shoved within their zone</span>,
           },
-          {
-            basic: true,
-            name: "Hurl Water",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
         ]}
       />
     ),
@@ -432,8 +389,11 @@ const ElementalMonsters = [
       "Elemental minions are elemental creatures and resemble large humanoids of their elemental realm.",
     tactics: (
       <span>
-        Elemental minions like to fight in groups and use slam or hurl elements
-        against ranged foes.
+        Elemental minions like to fight in groups and use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or hurl elements against ranged foes.
       </span>
     ),
     statBlock: (
@@ -448,6 +408,7 @@ const ElementalMonsters = [
         tier="2"
         threat="Minion"
         role=""
+        basicMelee="2 physical (earth, water), fire (fire), lightning (air), or cold (ice)"
         traits={[
           {
             name: "Elemental Type",
@@ -457,26 +418,9 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage:
-              "2 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Hurl Element",
-            target: "1d4+1 enemies within the sprite's zone",
+            target: "1d4+1 enemies within the minion's zone",
             keywords: "recharge",
             defense: "Guard",
             damage:
@@ -520,7 +464,7 @@ const ElementalMonsters = [
         weaknesses="fire"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -536,7 +480,7 @@ const ElementalMonsters = [
             damage: "6 physical damage",
           },
           {
-            basic: true,
+            // basic: true,
             name: "Electrocuting Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -546,7 +490,7 @@ const ElementalMonsters = [
               "Lightning leaps out at another enemy within the target's zone dealing 4 lightning damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Storm's Vengeance",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -615,7 +559,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -643,7 +587,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Hurl Stone",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -699,7 +643,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -727,7 +671,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Hurl Flame",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -782,7 +726,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -806,7 +750,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Hurl Ice",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -817,7 +761,7 @@ const ElementalMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Create Blizzard",
             keywords: "magical, range",
             target: <span>1 zone within 3 zones</span>,
@@ -876,7 +820,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -893,7 +837,7 @@ const ElementalMonsters = [
             success: <span>Shoved within their zone</span>,
           },
           {
-            basic: true,
+            // basic: true,
             name: "Hurl Water",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -901,7 +845,7 @@ const ElementalMonsters = [
             damage: "4 physical damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Crashing Undercurrent",
             keywords: "magical, recharge",
             target: <span>All enemies within 1 zone</span>,
@@ -963,7 +907,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slam",
             keywords: "melee, weapon",
             target: (
@@ -980,7 +924,7 @@ const ElementalMonsters = [
               "3 physical (earth, water), fire (fire), lightning (air), or cold (ice) damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Hurl Element",
             target: "1d4+1 enemies within the sprite's zone",
             keywords: "recharge",
@@ -1036,7 +980,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Lightning Blades",
             keywords: "melee, weapon",
             target: (
@@ -1064,7 +1008,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Zapping Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1072,7 +1016,7 @@ const ElementalMonsters = [
             damage: "6 lightning damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Lightning Flurry",
             keywords: "magical, recharge",
             target: <span>All enemies in the genie's zone</span>,
@@ -1152,7 +1096,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Hammer",
             keywords: "melee, weapon",
             target: (
@@ -1175,7 +1119,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Hurl Stone",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1190,7 +1134,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Earth Wall",
             keywords: "magical, range",
             target: <span>1 zone border within 3 zones</span>,
@@ -1264,7 +1208,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Flaming Scimitar",
             keywords: "melee, weapon",
             target: (
@@ -1280,7 +1224,7 @@ const ElementalMonsters = [
             damage: "6 fire damage",
           },
           {
-            basic: true,
+            // basic: true,
             name: "Flaming Orb",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1300,7 +1244,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Incinerating Blast",
             keywords: "magical, range,",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1374,7 +1318,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Frozen Flail",
             keywords: "melee, weapon",
             target: (
@@ -1399,7 +1343,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Freezing Ray",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1481,7 +1425,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Staff",
             keywords: "melee, weapon",
             target: (
@@ -1497,7 +1441,7 @@ const ElementalMonsters = [
             damage: "6 physical damage",
           },
           {
-            basic: true,
+            // basic: true,
             name: "Aqua Orb",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1511,7 +1455,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Great Wave",
             keywords: "magical, range, recharge",
             target: <span>All enemies in 1 zone within 3 zones</span>,
@@ -1594,7 +1538,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Flaming Beak",
             keywords: "melee, weapon",
             target: (
@@ -1610,7 +1554,7 @@ const ElementalMonsters = [
             damage: "15 fire damage",
           },
           {
-            basic: true,
+            // basic: true,
             name: "Scorching Orb",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1630,7 +1574,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Inferno Burst",
             keywords: "magical, range,recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1772,7 +1716,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Entrapping Rend",
             keywords: "melee, weapon",
             target: (
@@ -1797,7 +1741,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Paralyzing Lightning",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1813,7 +1757,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Tempest's Pull",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 3 zones</span>,
@@ -1917,6 +1861,8 @@ const ElementalMonsters = [
         threat="Boss"
         role="Tank"
         resistances="physical"
+        basicMelee="15 physical"
+        basicRanged="12 physical (3 zones)"
         traits={[
           {
             name: "Boss Monster",
@@ -1945,7 +1891,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Quaking Slam",
             keywords: "melee, weapon",
             target: (
@@ -1970,15 +1916,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
-            name: "Throw Boulder",
-            keywords: "magical, range",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Swallowed by the Earth",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
@@ -2093,6 +2031,7 @@ const ElementalMonsters = [
         role="Bruiser"
         resistances="fire"
         weaknesses="cold"
+        basicMelee="18 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -2109,7 +2048,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Consuming Slam",
             keywords: "melee, weapon",
             target: (
@@ -2144,7 +2083,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Send Wave",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2159,7 +2098,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Hydraulic Cyclone",
             keywords: "magical, range, recharge",
             target: <span>1 zone within 3 zones</span>,
@@ -2264,6 +2203,8 @@ const ElementalMonsters = [
         role="Bruiser"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="18 cold"
+        basicRanged="12 cold (3 zones)"
         traits={[
           {
             name: "Boss Monster",
@@ -2293,7 +2234,7 @@ const ElementalMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Freezing Rend",
             keywords: "melee, weapon",
             target: (
@@ -2317,15 +2258,7 @@ const ElementalMonsters = [
             ),
           },
           {
-            basic: true,
-            name: "Freeze",
-            keywords: "magical, range",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "12 cold damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Primordial Blizzards",
             keywords: "magical, range, recharge",
             target: <span>3 zones within 3 zones</span>,

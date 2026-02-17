@@ -3,6 +3,7 @@ import React, { JSX } from "react";
 import misfortune from "../../assets/misfortune-icon-v2.png";
 import fortune from "../../assets/fortune-icon-v2.png";
 import basicAtk from "../../assets/monster-strike.png";
+import basicRangedAtk from "../../assets/range-strike.png";
 import { Link } from "react-router-dom";
 // @ts-ignore
 import { BREAKPOINTS } from "../../utils/getBreakpoint";
@@ -25,11 +26,13 @@ interface MonsterProps {
   tier?: string;
   threat?: string;
   traits?: Traits[];
-  actions: Abilities[];
+  actions?: Abilities[];
   maneuvers?: Abilities[];
   reactions?: Abilities[];
   bossActions?: Abilities[];
   accordion?: boolean;
+  basicMelee?: string;
+  basicRanged?: string;
 }
 
 interface Abilities {
@@ -81,6 +84,8 @@ const Monster: React.FC<MonsterProps> = ({
   threat,
   tier,
   bossActions,
+  basicMelee,
+  basicRanged,
 }) => {
   const transformEffect = (effect: string) => {
     const fortuneRegex = /(\+?\d*)\s*(fortune)/gi;
@@ -173,6 +178,27 @@ const Monster: React.FC<MonsterProps> = ({
             <b>Weaknesses</b> {weaknesses}
           </p>
         )}
+        {(basicMelee || basicRanged) && (
+          <p>
+            {basicMelee && (
+              <span>
+                <img className="attack-icon" src={basicAtk} alt="attack icon" />{" "}
+                {basicMelee}
+                {basicRanged && ";"}
+              </span>
+            )}{" "}
+            {basicRanged && (
+              <span>
+                <img
+                  className="attack-icon"
+                  src={basicRangedAtk}
+                  alt="attack icon"
+                />{" "}
+                {basicRanged}
+              </span>
+            )}
+          </p>
+        )}
         {(vision || speeds) && (
           <p>
             {speeds && (
@@ -188,6 +214,7 @@ const Monster: React.FC<MonsterProps> = ({
             )}
           </p>
         )}
+
         {traits && traits.length > 0 && (
           <div className="traits-section">
             <h4 data-type="trait">Traits</h4>

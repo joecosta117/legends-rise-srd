@@ -13,8 +13,11 @@ const UndeadMonsters = [
     description: "Skeleton minions are the most basic form of undead.",
     tactics: (
       <span>
-        Skeleton minions mindlessly get close to heroes to use rusty sword or
-        stay afar to shoot their old bow. Skeletons close to heroes can also{" "}
+        Skeleton minions mindlessly get close to heroes to{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . Skeletons close to heroes can also{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -40,32 +43,8 @@ const UndeadMonsters = [
         role="Minion"
         resistances="necrotic"
         weaknesses="holy"
-        actions={[
-          {
-            basic: true,
-            name: "Rusty Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-          {
-            basic: true,
-            name: "Old Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
+        basicRanged="1 physical (3 zones)"
       />
     ),
   },
@@ -79,7 +58,7 @@ const UndeadMonsters = [
       "Freshly dead corpses animated by dark magic become zombies, and they have an endless hunger for the living.",
     tactics: (
       <span>
-        Zombies mindlessly get close to heroes to use rend, and{" "}
+        Zombies mindlessly get close to heroes to use grabbing rend, and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -101,6 +80,7 @@ const UndeadMonsters = [
         role="Bruiser"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Unnatural Endurance",
@@ -122,8 +102,8 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
+            // basic: true,
+            name: "Grabbing Rend",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -159,7 +139,11 @@ const UndeadMonsters = [
       "Freshly dead corpses animated by dark magic become zombies, and they have an endless hunger for the living.",
     tactics: (
       <span>
-        Zombie minions mindlessly get close to heroes to use rend, and{" "}
+        Zombie minions mindlessly get close to heroes to{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -201,24 +185,7 @@ const UndeadMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="2 physical"
       />
     ),
   },
@@ -261,6 +228,7 @@ const UndeadMonsters = [
         resistances="necrotic"
         weaknesses="holy"
         speeds="fly 1"
+        basicMelee="3 necrotic"
         traits={[
           {
             name: "Vengeful Death",
@@ -276,7 +244,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Weakening Touch",
             keywords: "melee, weapon",
             target: (
@@ -340,6 +308,7 @@ const UndeadMonsters = [
         resistances="necrotic, physical"
         weaknesses="holy"
         vision="night"
+        basicMelee="4 necrotic"
         traits={[
           {
             name: "Light Vulnerability",
@@ -356,7 +325,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Shadow Touch",
             keywords: "melee, weapon",
             target: (
@@ -418,6 +387,7 @@ const UndeadMonsters = [
         resistances="necrotic"
         weaknesses="holy"
         vision="night"
+        basicMelee="3 physical"
         speeds="fly 1"
         traits={[
           {
@@ -447,7 +417,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Doom Ray",
             keywords: "magical, range",
             target: "1 creature within 3 zones</span",
@@ -455,23 +425,7 @@ const UndeadMonsters = [
             damage: "3 necrotic damage",
           },
           {
-            basic: true,
-            name: "Head Bash",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Necrotic Blast",
             keywords: "magical, range, recharge",
             target: "All creatures in 1 zone within 3 zones",
@@ -507,6 +461,7 @@ const UndeadMonsters = [
         resistances="necrotic, physical"
         weaknesses="holy"
         vision="night"
+        basicMelee="3 necrotic"
         speeds={
           <span>
             flying 1,{" "}
@@ -541,7 +496,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Sorrow's Touch",
             keywords: "melee, weapon",
             target: (
@@ -565,7 +520,7 @@ const UndeadMonsters = [
             damage: "3 necrotic damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Banshee's Wail",
             keywords: "magical, range, recharge",
             target: "All living enemies within the banshee's zone",
@@ -583,7 +538,7 @@ const UndeadMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Gaze of Torment",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
@@ -605,7 +560,11 @@ const UndeadMonsters = [
     tactics: (
       <span>
         Tomb knights stay near allies to protect them with defend from the
-        grave. They use glaive against nearby heroes and{" "}
+        grave. They{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        nearby heroes and{" "}
         <Link className="internal-link" to="/combat-abilities#defend">
           defend
         </Link>{" "}
@@ -631,27 +590,10 @@ const UndeadMonsters = [
         role="Tank"
         resistances="necrotic"
         weaknesses="holy"
-        actions={[
-          {
-            basic: true,
-            name: "Glaive",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Defend from the Grave",
             trigger:
               "Tomb knight sees an ally within the same zone take damage",
@@ -704,6 +646,7 @@ const UndeadMonsters = [
         resistances="necrotic, physical"
         weaknesses="holy"
         vision="night"
+        basicMelee="5 necrotic"
         speeds={
           <span>
             flying 1,{" "}
@@ -752,7 +695,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Draining Touch",
             keywords: "melee, weapon",
             target: (
@@ -776,7 +719,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Possession",
             keywords: "magical, range, recharge",
             target: "1 creature within 3 zones",
@@ -791,7 +734,7 @@ const UndeadMonsters = [
         ]}
         bossActions={[
           {
-            basic: false,
+            // basic: false,
             name: "Ghostly Terrain",
             keywords: "magical, range",
             target: "1 zone within 2 zones",
@@ -808,7 +751,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Telekinetic Storm",
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
@@ -824,7 +767,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Terrifying Scream",
             keywords: "magical",
             target: "All enemies within the poltergeist's turn",
@@ -873,6 +816,7 @@ const UndeadMonsters = [
         resistances="necrotic, physical"
         weaknesses="holy"
         vision="night"
+        basicMelee="3 necrotic"
         speeds={
           <span>
             flying 1,{" "}
@@ -897,7 +841,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Chilling Touch",
             keywords: "melee, weapon",
             target: (
@@ -921,7 +865,7 @@ const UndeadMonsters = [
             damage: "3 necrotic damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Haunting Presence",
             keywords: "magical, recharge",
             target: <span>All enemies within the ghost's zone</span>,
@@ -953,7 +897,11 @@ const UndeadMonsters = [
     tactics: (
       <span>
         Ghouls rush towards their prey, hoping to weaken them with their death
-        stench. On its turn, a ghoul uses rend along with{" "}
+        stench. On its turn, a ghoul uses{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        along with{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -975,6 +923,7 @@ const UndeadMonsters = [
         role="Bruiser"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Death Stench",
@@ -991,24 +940,6 @@ const UndeadMonsters = [
                 (next turn ends).
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
           },
         ]}
       />
@@ -1049,6 +980,7 @@ const UndeadMonsters = [
         role="Bruiser"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1063,7 +995,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Skeletal Slam",
             keywords: "melee, weapon",
             target: (
@@ -1086,7 +1018,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Broad Rend",
             keywords: "melee, weapon",
             target: (
@@ -1139,6 +1071,7 @@ const UndeadMonsters = [
         role="Tank"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Sunlight Weakness",
@@ -1161,7 +1094,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Rend",
             keywords: "melee, weapon",
             target: (
@@ -1185,7 +1118,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -1253,6 +1186,7 @@ const UndeadMonsters = [
         role="Disabler"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Misty Escape",
@@ -1288,7 +1222,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Taint Blood",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1304,7 +1238,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -1332,7 +1266,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Vampiric Domination",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
@@ -1378,6 +1312,7 @@ const UndeadMonsters = [
         role="Skirmisher"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1423,7 +1358,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Claw",
             keywords: "melee, weapon",
             target: (
@@ -1448,7 +1383,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -1478,7 +1413,7 @@ const UndeadMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Cloud of Bats",
             keywords: "magical",
             trigger: "Elder vampire takes damage",
@@ -1509,8 +1444,12 @@ const UndeadMonsters = [
     tactics: (
       <span>
         Royal mummy prefers to fight with nearby allies and get close to heroes
-        to use scepter or defend your ruler if available. Each turn, the royal
-        mummy uses mummy's curse against a hero.
+        to{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or defend your ruler if available. Each turn, the royal mummy uses
+        mummy's curse against a hero.
       </span>
     ),
     statBlock: (
@@ -1549,25 +1488,10 @@ const UndeadMonsters = [
             ),
           },
         ]}
+        basicMelee="6 physical"
         actions={[
           {
-            basic: true,
-            name: "Scepter",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Defend your Ruler!",
             keywords: "magical, recharge",
             target: <span>All enemies within the royal mummy's zone</span>,
@@ -1589,7 +1513,7 @@ const UndeadMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Mummy's Curse",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
@@ -1648,9 +1572,10 @@ const UndeadMonsters = [
         role="Tank"
         resistances="necrotic"
         weaknesses="holy, fire"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Khopesh",
             keywords: "melee, weapon",
             target: (
@@ -1676,7 +1601,7 @@ const UndeadMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Guardian's Sacrifice",
             keywords: "magical, range",
             trigger: "Mummy guardian sees ally take damage within 1 zone",
@@ -1721,6 +1646,7 @@ const UndeadMonsters = [
         role="Disabler"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="15 physical"
         speeds="fly 2"
         traits={[
           {
@@ -1754,7 +1680,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Draining Rend",
             keywords: "melee, weapon",
             target: (
@@ -1778,7 +1704,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Draining Breath",
             keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
@@ -1796,7 +1722,7 @@ const UndeadMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Dominating Gaze",
             keywords: "magical, range",
             target: "1 creature within 2 zones",
@@ -1807,7 +1733,7 @@ const UndeadMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Consume Soul",
             keywords: "magical, range",
             trigger: "A living creature within 1 zone of the gravewyrm dies",
@@ -1830,7 +1756,7 @@ const UndeadMonsters = [
         ]}
         bossActions={[
           {
-            basic: false,
+            // basic: false,
             name: "Roar of Doom",
             keywords: "magical, range",
             target: "All enemies",
@@ -1857,7 +1783,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             round: "3",
             name: "Unleash Souls",
             keywords: "magical",
@@ -1865,7 +1791,7 @@ const UndeadMonsters = [
               "Graveyrm releases souls that become 6 wraith minions within 2 zones",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Your Souls Belong to Me",
             keywords: "magical, range",
             target: "All enemies",
@@ -1918,9 +1844,10 @@ const UndeadMonsters = [
         resistances="necrotic"
         weaknesses="holy"
         speeds="fly 2"
+        basicMelee="12 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Decaying Rend",
             keywords: "melee, weapon",
             target: (
@@ -1947,7 +1874,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Draining Breath",
             keywords: "magical, range, recharge",
             target: <span>2d4+2 enemies within 1 zone</span>,
@@ -1965,7 +1892,7 @@ const UndeadMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Boneshatter",
             keywords: "magical, range",
             trigger: "Gravewyrm remnant takes damage",
@@ -2014,6 +1941,7 @@ const UndeadMonsters = [
         threat="Major"
         role="Bruiser"
         resistances="necrotic"
+        basicMelee="12 necrotic"
         weaknesses="holy"
         traits={[
           {
@@ -2033,7 +1961,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Umbral Claw",
             keywords: "melee, weapon",
             target: (
@@ -2061,7 +1989,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Finger of Death",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
@@ -2121,6 +2049,7 @@ const UndeadMonsters = [
         role="Tank"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="9 necrotic"
         traits={[
           {
             name: "Warrior's Aura",
@@ -2137,7 +2066,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Death Blade",
             keywords: "melee, weapon",
             target: (
@@ -2150,7 +2079,7 @@ const UndeadMonsters = [
               </span>
             ),
             defense: "Guard",
-            damage: "9 physical damage",
+            damage: "9 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions/dazed">
@@ -2161,7 +2090,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Necrotic Wave",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,
@@ -2211,6 +2140,7 @@ const UndeadMonsters = [
         role="Artillery"
         resistances="necrotic"
         weaknesses="holy"
+        basicMelee="15 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -2232,7 +2162,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Weakening Touch",
             keywords: "melee, weapon",
             target: (
@@ -2256,7 +2186,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Dark Bolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -2264,7 +2194,7 @@ const UndeadMonsters = [
             damage: "15 necrotic damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Withering Burst",
             keywords: "magical, range",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -2281,7 +2211,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Die Mortal",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
@@ -2297,7 +2227,7 @@ const UndeadMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Shadow Walk",
             keywords: "magical, range",
             target: "up to 1 zone",
@@ -2317,14 +2247,14 @@ const UndeadMonsters = [
         ]}
         bossActions={[
           {
-            basic: false,
+            // basic: false,
             name: "Rise My Minions",
             keywords: "magical, range",
             round: "1",
             effect: <span>Lich summons 6 wraith minions within 3 zones.</span>,
           },
           {
-            basic: false,
+            // basic: false,
             round: "3",
             name: "Drain Life",
             keywords: "magical, range",
@@ -2338,7 +2268,7 @@ const UndeadMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Death Aura",
             keywords: "aura, magical",
             effect: (
@@ -2388,6 +2318,7 @@ const UndeadMonsters = [
         threat="Standard"
         role="Skirmisher"
         resistances="necrotic"
+        basicMelee="12 necrotic"
         weaknesses="holy"
         speeds="fly 1"
         traits={[
@@ -2403,7 +2334,7 @@ const UndeadMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Nightmare Touch",
             keywords: "melee, weapon",
             target: (
@@ -2425,7 +2356,7 @@ const UndeadMonsters = [
             ),
           },
           // {
-          //   basic: true,
+          //   // basic: true,
           //   name: "Psychic Rend",
           //   keywords: "melee, weapon",
           //   target: (

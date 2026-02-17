@@ -175,9 +175,11 @@ export const airSpells = [
             resistances="lightning"
             summons
             accordion
+            basicMelee="triple ST physical"
+            basicRanged="double ST lightning (3 zones)"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
                 target: (
@@ -198,14 +200,6 @@ export const airSpells = [
                     </Link>
                   </span>
                 ),
-              },
-              {
-                basic: false,
-                name: "Zap",
-                keywords: "range, weapon",
-                target: "1 creature within 3 zones",
-                defense: "Guard",
-                damage: "double ST lightning damage",
               },
             ]}
           />
@@ -370,25 +364,10 @@ export const arcaneSpells = [
             resistances="chosen element"
             summons
             accordion
+            basicMelee="double ST physical"
             actions={[
               {
-                basic: true,
-                name: "Rend",
-                keywords: "melee, weapon",
-                target: (
-                  <span>
-                    1{" "}
-                    <Link className="internal-link" to="/rules/combat#engaged">
-                      engaged
-                    </Link>{" "}
-                    creature
-                  </span>
-                ),
-                defense: "Guard",
-                damage: "double ST physical damage",
-              },
-              {
-                basic: false,
+                // basic: false,
                 name: "Breath Weapon",
                 frequency: "Once per spell",
                 keywords: "magical",
@@ -428,9 +407,10 @@ export const arcaneSpells = [
             resistances="arcane"
             summons
             accordion
+            basicMelee="double ST physical"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Punch",
                 keywords: "melee, weapon",
                 target: (
@@ -699,6 +679,7 @@ export const deathSpells = [
             weaknesses="holy"
             summons
             accordion
+            basicMelee="double ST physical or necrotic (ghost only)"
             traits={[
               {
                 name: "Unnatural Endurance (zombie only)",
@@ -740,25 +721,6 @@ export const deathSpells = [
                     (next turn ends).
                   </span>
                 ),
-              },
-            ]}
-            actions={[
-              {
-                basic: true,
-                name: "Rend",
-                keywords: "melee, weapon",
-                target: (
-                  <span>
-                    1{" "}
-                    <Link className="internal-link" to="/rules/combat#engaged">
-                      engaged
-                    </Link>{" "}
-                    creature
-                  </span>
-                ),
-                defense: "Guard",
-                damage:
-                  "double ST physical damage or necrotic damage (ghost only)",
               },
             ]}
           />
@@ -879,9 +841,10 @@ export const deathSpells = [
             weaknesses="holy"
             summons
             accordion
+            basicMelee="triple ST necrotic"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Death Touch",
                 keywords: "melee, weapon",
                 target: (
@@ -1101,11 +1064,13 @@ export const earthSpells = [
             res="8 + PB"
             pb="double ST"
             // resistances="physical ST"
+            basicMelee="double ST physical"
+            basicRanged="double ST physical (3 zones)"
             summons
             accordion
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
                 target: (
@@ -1126,14 +1091,6 @@ export const earthSpells = [
                     </Link>
                   </span>
                 ),
-              },
-              {
-                basic: false,
-                name: "Rock Throw",
-                keywords: "range, weapon",
-                target: "1 creature within 3 zones",
-                defense: "Guard",
-                damage: "double ST physical damage",
               },
             ]}
           />
@@ -1374,9 +1331,10 @@ export const eldritchSpells = [
             pb="double ST"
             summons
             accordion
+            basicMelee="double ST physical"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Tentacle",
                 keywords: "melee, weapon",
                 target: (
@@ -1401,7 +1359,7 @@ export const eldritchSpells = [
                 ),
               },
               {
-                basic: false,
+                // basic: false,
                 name: "Mind Blast",
                 keywords: "magical, range",
                 target: "1 creature within 3 zones",
@@ -1971,9 +1929,11 @@ export const fireSpells = [
             weaknesses="cold"
             summons
             accordion
+            basicMelee="triple ST fire"
+            basicRanged="double ST fire (3 zones)"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
                 target: (
@@ -1999,14 +1959,6 @@ export const fireSpells = [
                     fire damage per spell tier
                   </span>
                 ),
-              },
-              {
-                basic: false,
-                name: "Throw Fire",
-                keywords: "range",
-                target: "1 creature within 3 zones",
-                defense: "Guard",
-                damage: "double ST fire damage",
               },
             ]}
           />
@@ -2494,24 +2446,7 @@ export const holySpells = [
                 ),
               },
             ]}
-            actions={[
-              {
-                basic: true,
-                name: "Holy Sword",
-                keywords: "melee, weapon",
-                target: (
-                  <span>
-                    1{" "}
-                    <Link className="internal-link" to="/rules/combat#engaged">
-                      engaged
-                    </Link>{" "}
-                    creature
-                  </span>
-                ),
-                defense: "Spirit",
-                damage: "double ST holy damage",
-              },
-            ]}
+            basicMelee="double ST holy"
             maneuvers={[
               {
                 name: "Angelic Prayer",
@@ -2799,9 +2734,11 @@ export const iceSpells = [
             weaknesses="fire"
             summons
             accordion
+            basicMelee="triple ST cold"
+            basicRanged="double ST cold (3 zones)"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
                 target: (
@@ -2823,14 +2760,6 @@ export const iceSpells = [
                     (next turn ends)
                   </span>
                 ),
-              },
-              {
-                basic: false,
-                name: "Ice Spike",
-                keywords: "ranged, weapon",
-                target: "1 creature within 3 zones",
-                defense: "Guard",
-                damage: "double ST cold damage",
               },
             ]}
           />
@@ -3014,25 +2943,10 @@ export const illusionSpells = [
             resistances="psychic"
             summons
             accordion
+            basicMelee="double ST psychic"
             actions={[
               {
-                basic: true,
-                name: "Illusionary Rend",
-                keywords: "melee, weapon",
-                target: (
-                  <span>
-                    1{" "}
-                    <Link className="internal-link" to="/rules/combat#engaged">
-                      engaged
-                    </Link>{" "}
-                    creature
-                  </span>
-                ),
-                defense: "Spirit",
-                damage: "double ST psychic damage",
-              },
-              {
-                basic: false,
+                // basic: false,
                 name: "Scary Visage",
                 keywords: "magical",
                 frequency: "Once per spell",
@@ -3749,6 +3663,7 @@ export const natureSpells = [
             speeds="fly 1 (air only), swim 1 (water only)"
             summons
             accordion
+            basicMelee="double ST physical or triple ST physical (land only)"
             traits={[
               {
                 name: "Aquatic (water only)",
@@ -3766,25 +3681,6 @@ export const natureSpells = [
                 ),
               },
             ]}
-            actions={[
-              {
-                basic: true,
-                name: "Slam",
-                keywords: "melee, weapon",
-                target: (
-                  <span>
-                    1{" "}
-                    <Link className="internal-link" to="/rules/combat#engaged">
-                      engaged
-                    </Link>{" "}
-                    creature
-                  </span>
-                ),
-                defense: "Guard",
-                damage:
-                  "double ST physical damage or triple ST physical damage (land only)",
-              },
-            ]}
             reactions={[
               {
                 name: "Nature's Fury",
@@ -3792,14 +3688,13 @@ export const natureSpells = [
                   "Nature spirit sees ally within their zone take damage",
                 effect: (
                   <span>
-                    "Nature spirit can{" "}
+                    Nature spirit can{" "}
                     <Link
                       className="internal-link"
                       to="/combat-abilities#charge"
                     >
                       charge
-                    </Link>{" "}
-                    to use slam"
+                    </Link>
                   </span>
                 ),
               },
@@ -3916,9 +3811,11 @@ export const natureSpells = [
             speeds="fly 1"
             summons
             accordion
+            basicMelee="double ST physical"
+            basicRanged="double ST physical (3 zones)"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Sleepy Bow",
                 keywords: "range, weapon",
                 target: "1 creature within 3 zones",
@@ -3927,7 +3824,7 @@ export const natureSpells = [
                 success: <span>Target's speed is halved (next turn ends)</span>,
               },
               {
-                basic: false,
+                // basic: false,
                 name: "Faerie Charm",
                 keywords: "magical, range",
                 target: "1 creature per spell tier within 3 zones",
@@ -3988,10 +3885,11 @@ export const natureSpells = [
             pb="double ST"
             speeds="land 2"
             summons
+            basicMelee="4 physical per ST"
             accordion
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Bite",
                 keywords: "melee, weapon",
                 target: (
@@ -4317,6 +4215,7 @@ export const shadowSpells = [
             vision="night"
             summons
             accordion
+            basicMelee="double ST necrotic"
             traits={[
               {
                 name: "Shadow Enmity",
@@ -4332,24 +4231,6 @@ export const shadowSpells = [
                     against its original owner.
                   </span>
                 ),
-              },
-            ]}
-            actions={[
-              {
-                basic: true,
-                name: "Shadow Claw",
-                keywords: "melee, weapon",
-                target: (
-                  <span>
-                    1{" "}
-                    <Link className="internal-link" to="/rules/combat#engaged">
-                      engaged
-                    </Link>{" "}
-                    creature
-                  </span>
-                ),
-                defense: "Spirit",
-                damage: "double ST necrotic damage",
               },
             ]}
           />
@@ -5460,9 +5341,10 @@ export const unholySpells = [
             weaknesses="holy"
             summons
             accordion
+            basicMelee="triple ST unholy"
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Corrupting Rend",
                 keywords: "melee, weapon",
                 target: (
@@ -5974,6 +5856,8 @@ export const waterSpells = [
             res="8 + PB"
             pb="double ST"
             resistances="fire"
+            basicMelee="triple ST physical"
+            basicRanged="double ST physical (3 zones)"
             weaknesses="cold"
             speeds="swim 1"
             summons
@@ -5986,7 +5870,7 @@ export const waterSpells = [
             ]}
             actions={[
               {
-                basic: true,
+                // basic: true,
                 name: "Slam",
                 keywords: "melee, weapon",
                 target: (
@@ -6007,14 +5891,6 @@ export const waterSpells = [
                     </Link>
                   </span>
                 ),
-              },
-              {
-                basic: false,
-                name: "Splash",
-                keywords: "ranged, weapon",
-                target: "1 creature within 3 zones",
-                defense: "Guard",
-                damage: "double ST physical damage",
               },
             ]}
           />

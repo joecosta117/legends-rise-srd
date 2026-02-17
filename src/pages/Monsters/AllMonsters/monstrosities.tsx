@@ -30,6 +30,7 @@ const MonstrosityMonsters = [
         tier="1"
         threat="Major"
         role="Disabler"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -44,7 +45,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Venemous Bite",
             keywords: "melee, weapon",
             target: (
@@ -70,7 +71,7 @@ const MonstrosityMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Paralyzing Gaze",
             keywords: "magical, range",
             target: <span>1 creature within 1 zone</span>,
@@ -142,6 +143,7 @@ const MonstrosityMonsters = [
         threat="Boss"
         role="Disabler"
         resistances="toxic"
+        basicMelee="5 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -168,7 +170,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Snake Fangs",
             keywords: "melee, weapon",
             target: (
@@ -192,7 +194,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Poison Bow",
             keywords: "range, weapon",
             target: <span>1 creatue within 3 zones</span>,
@@ -210,7 +212,7 @@ const MonstrosityMonsters = [
         ]}
         maneuvers={[
           {
-            basic: false,
+            // basic: false,
             name: "Petrifying Glance",
             keywords: "magical, range",
             target: <span>1 creature within 1 zone</span>,
@@ -281,24 +283,7 @@ const MonstrosityMonsters = [
         tier="1"
         threat="Minion"
         role=""
-        actions={[
-          {
-            basic: true,
-            name: "Slam",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
       />
     ),
   },
@@ -313,7 +298,11 @@ const MonstrosityMonsters = [
     tactics: (
       <span>
         Harpies prefer to fight near heroes to use harpy's song to lure heroes
-        close before then using rend on them.
+        close before using{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -329,25 +318,10 @@ const MonstrosityMonsters = [
         threat="Standard"
         role="Skirmisher"
         speeds="fly 1"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Harpy's Song",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -385,7 +359,11 @@ const MonstrosityMonsters = [
     tactics: (
       <span>
         Chimeras prefer to fight close enough to heroes for them to use dragon
-        breath or rend, and then use{" "}
+        breath or{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , and then use{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -406,6 +384,7 @@ const MonstrosityMonsters = [
         role="Bruiser"
         vision="night"
         speeds="fly 1"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -422,23 +401,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Dragon Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies in the chimera's zone</span>,
@@ -448,7 +411,7 @@ const MonstrosityMonsters = [
         ]}
         reactions={[
           {
-            basic: false,
+            // basic: false,
             name: "Tail Lash",
             trigger: (
               <span>
@@ -460,7 +423,7 @@ const MonstrosityMonsters = [
               </span>
             ),
             effect:
-              "The chimera can use rend against the triggering creature even if they aren't engaged to the chimera",
+              "The chimera can strike the triggering creature even if they aren't engaged to the chimera",
           },
         ]}
         bossActions={[
@@ -477,7 +440,7 @@ const MonstrosityMonsters = [
                 <Link className="internal-link" to="/combat-abilities#move">
                   move
                 </Link>{" "}
-                twice. On a successful rend, the target is knocked{" "}
+                twice. On a successful strike, the target is knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>
@@ -504,8 +467,7 @@ const MonstrosityMonsters = [
           {
             name: "Thrash",
             round: "5",
-            effect:
-              "The chimera can move then uses rend against 1d4+1 creatures.",
+            effect: "The chimera can move then strike against 1d4+1 creatures.",
           },
         ]}
       />
@@ -521,8 +483,11 @@ const MonstrosityMonsters = [
       "Spiderlings are a horrifying creatures that resemble a humanoid top half with a spider bottom half. They are cursed creatures that hate mortals and actively hunt those that live an uncursed life. Some spiderlings shun their anger and form small communities deep in the nightlands to mind their own business.",
     tactics: (
       <span>
-        Spiderlings prefer to fight near heroes to use sword but can also use
-        web to stop fleeing creatures.
+        Spiderlings prefer to fight near heroes to{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        but can also use web to stop fleeing creatures.
       </span>
     ),
     statBlock: (
@@ -539,25 +504,10 @@ const MonstrosityMonsters = [
         role="Bruiser"
         speeds="climb 1"
         vision="night"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Sword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Web",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -586,8 +536,11 @@ const MonstrosityMonsters = [
       "Griffons are regal beasts that resemble a cross between an eagle and lion. Griffons are terrifying hunters and quick to anger if disrepected.",
     tactics: (
       <span>
-        Griffons prefer to fight near heroes to use rend or griffon shriek if
-        available, and{" "}
+        Griffons prefer to fight near heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or griffon shriek if available, and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -608,25 +561,10 @@ const MonstrosityMonsters = [
         role="Skirmisher"
         speeds="fly 1"
         vision="night"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Griffon Shriek",
             keywords: "recharge",
             target: <span>All enemies within the griffon's zone</span>,
@@ -675,34 +613,18 @@ const MonstrosityMonsters = [
         tier="1"
         threat="Standard"
         role="Bruiser"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
-            name: "Horns",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Minotaur's Charge",
             effect: (
               <span>
                 Minotaur uses{" "}
                 <Link className="internal-link" to="/combat-abilities#charge">
                   charge
-                </Link>{" "}
-                to use horns, and on a success or higher attack roll, the target
-                is knocked{" "}
+                </Link>
+                , and on a success or higher attack roll, the target is knocked{" "}
                 <Link className="internal-link" to="/conditions#prone">
                   prone
                 </Link>
@@ -723,8 +645,11 @@ const MonstrosityMonsters = [
       "Hydras are legendary monsters known for their many heads and being nearly impossible to kill. Hydras are often used by powerful entities as guardians to ancient sites much like a human would have a guard dog.",
     tactics: (
       <span>
-        Hydras prefer to fight close enough to heroes for them to be in range of
-        bite and each turn use{" "}
+        Hydras prefer to fight close enough to heroes for them to be in range of{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and each turn use{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -744,6 +669,7 @@ const MonstrosityMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -772,23 +698,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: false,
-            name: "Bite",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Frenzy",
             keywords: "melee, weapon",
             target: (
@@ -825,7 +735,7 @@ const MonstrosityMonsters = [
             name: "Frenzy",
             round: "3",
             target: "Each enemy within the hydra's zone",
-            effect: "Hydra uses bite against each target.",
+            effect: "Hydra uses strike against each target.",
           },
           {
             name: "Hydra Rage",
@@ -866,9 +776,10 @@ const MonstrosityMonsters = [
         threat="Standard"
         role="Disabler"
         vision="night"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Poisoned Dagger",
             keywords: "melee, weapon",
             target: (
@@ -892,7 +803,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Confusing Whisper",
             keywords: "magical, range",
             target: <span>1 creature within 2 zones</span>,
@@ -944,6 +855,7 @@ const MonstrosityMonsters = [
         role="Support"
         vision="night"
         resistances="toxic"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -958,7 +870,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Profane Bite",
             keywords: "melee, weapon",
             target: (
@@ -1019,6 +931,8 @@ const MonstrosityMonsters = [
         role="Bruiser"
         vision="night"
         resistances="toxic"
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         traits={[
           {
             name: "Major Monster",
@@ -1033,7 +947,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Poison Scimitar",
             keywords: "melee, weapon",
             target: (
@@ -1056,16 +970,9 @@ const MonstrosityMonsters = [
               </span>
             ),
           },
+
           {
-            basic: true,
-            name: "Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Constrict",
             keywords: "melee, weapon",
             target: (
@@ -1123,9 +1030,11 @@ const MonstrosityMonsters = [
         vision="night"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="4 physical"
+        basicRanged="3 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Cursed Bite (Rat Form Only)",
             keywords: "melee, weapon",
             target: (
@@ -1142,34 +1051,10 @@ const MonstrosityMonsters = [
             success:
               "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a wererat under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
-          {
-            basic: true,
-            name: "Shortsword",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Crossbow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
         ]}
         maneuvers={[
           {
-            basic: true,
+            // basic: true,
             name: "Shapechange",
             keywords: "magical, shapeshift",
             effect:
@@ -1209,6 +1094,8 @@ const MonstrosityMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
+        basicMelee="4 physical"
+        basicRanged="2 physical (3 zones)"
         traits={[
           {
             name: "Pack Tactics",
@@ -1218,7 +1105,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Cursed Bite (Wolf Form Only)",
             keywords: "melee, weapon",
             target: (
@@ -1235,34 +1122,10 @@ const MonstrosityMonsters = [
             success:
               "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
-          {
-            basic: true,
-            name: "Axe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: true,
-            name: "Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
         ]}
         maneuvers={[
           {
-            basic: true,
+            // basic: true,
             name: "Shapechange",
             keywords: "magical, shapeshift",
             effect:
@@ -1302,6 +1165,8 @@ const MonstrosityMonsters = [
         threat="Boss"
         role="Bruiser"
         vision="night"
+        basicMelee="6 physical"
+        basicRanged="4 physical (3 zones)"
         traits={[
           {
             name: "Boss Monster",
@@ -1323,7 +1188,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Cursed Bite (Wolf Form Only)",
             keywords: "melee, weapon",
             target: (
@@ -1340,34 +1205,10 @@ const MonstrosityMonsters = [
             success:
               "Target becomes cursed with lycanthropy (safe rest ends). If reduced to 0 hit points, then the target must make an overcome roll. On a failure, they transform into a werewolf under the GM's control and heal equal to their shaken value. On a success, they become immune to the curse until after a safe rest.",
           },
-          {
-            basic: true,
-            name: "Greataxe",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: true,
-            name: "Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "5 physical damage",
-          },
         ]}
         maneuvers={[
           {
-            basic: true,
+            // basic: true,
             name: "Shapechange",
             keywords: "magical, shapeshift",
             effect:
@@ -1430,24 +1271,7 @@ const MonstrosityMonsters = [
         threat="Minion"
         role=""
         vision="night"
-        actions={[
-          {
-            basic: true,
-            name: "Bite",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "1 physical damage",
-          },
-        ]}
+        basicMelee="1 physical"
       />
     ),
   },
@@ -1515,9 +1339,10 @@ const MonstrosityMonsters = [
             ),
           },
         ]}
+        basicMelee="12 physical"
         actions={[
           {
-            basic: false,
+            // basic: false,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -1555,7 +1380,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Regurgitate",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -1619,8 +1444,8 @@ const MonstrosityMonsters = [
       "Sphinxes are majestic and magical creatures that look like a large lion with the head of a human. Sphinxes collect knowledge and have an innate understanding of prophecy and time. They are usually willing to help respectable mortals, but sphinxes are quick to anger.",
     tactics: (
       <span>
-        Sphinxs prefer to fight close enough to heroes to use claw and each turn
-        use{" "}
+        Sphinxs prefer to fight close enough to heroes to use disortion claw and
+        each turn use{" "}
         <Link className="internal-link" to="/combat-abilities#hinder">
           hinder
         </Link>{" "}
@@ -1641,6 +1466,7 @@ const MonstrosityMonsters = [
         role="Disabler"
         vision="night"
         speeds="fly 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -1666,8 +1492,8 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: false,
-            name: "Claw",
+            // basic: false,
+            name: "Disortion Claw",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -1690,7 +1516,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Unravel Magic",
             keywords: "magical, range",
             target: <span>1 magical effect within 1 zone</span>,
@@ -1777,6 +1603,7 @@ const MonstrosityMonsters = [
         threat="Major"
         role="Artillery"
         resistances="lighting"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1803,23 +1630,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Talon",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "6 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Call Lightning",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1835,7 +1646,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Cyclone",
             keywords: "magical, range, recharge",
             target: <span>1 zone within 2 zones</span>,
@@ -1886,6 +1697,8 @@ const MonstrosityMonsters = [
         vision="night"
         speeds="swim 2"
         resistances="cold, psychic, toxic"
+        basicMelee="15 physical"
+        basicRanged="12 toxic"
         traits={[
           {
             name: "Boss Monster",
@@ -1918,7 +1731,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "melee, weapon",
             target: (
@@ -1942,7 +1755,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Bite",
             keywords: "melee, weapon",
             target: <span>1 creature seized by the kraken</span>,
@@ -2074,6 +1887,7 @@ const MonstrosityMonsters = [
         vision="night"
         speeds="land 2, swim 2"
         resistances="arcane, physical, toxic"
+        basicMelee="18 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -2102,7 +1916,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -2140,7 +1954,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Beam of Utter Destruction",
             keywords: "magical, range, recharge",
             target: <span>3 connected zones within 5 zones</span>,
@@ -2250,6 +2064,7 @@ const MonstrosityMonsters = [
         role="Bruiser"
         vision="night"
         resistances="arcane"
+        basicMelee="12 physical"
         speeds="fly 1"
         traits={[
           {
@@ -2275,7 +2090,7 @@ const MonstrosityMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
@@ -2298,7 +2113,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Thrash",
             keywords: "melee, weapon",
             target: <span>1d4+1 engaged creature</span>,
@@ -2313,7 +2128,7 @@ const MonstrosityMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Mental Overload",
             keywords: "magical, range, recharge",
             target: <span>All enemies within 1 zone</span>,

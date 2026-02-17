@@ -37,9 +37,10 @@ const AngelMonsters = [
         speeds="fly 1"
         resistances="holy"
         weaknesses="unholy"
+        basicMelee="2 holy"
         actions={[
           {
-            basic: true,
+            // // basic: true,
             name: "Revealing Beam",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -72,7 +73,11 @@ const AngelMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        then horn.
+        then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -90,16 +95,7 @@ const AngelMonsters = [
         role="Support"
         resistances="holy"
         weaknesses="unholy"
-        actions={[
-          {
-            basic: true,
-            name: "Horn",
-            keywords: "magical, range",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
         maneuvers={[
           {
             name: "Healing Touch",
@@ -130,7 +126,11 @@ const AngelMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        then hoof.
+        then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -149,16 +149,7 @@ const AngelMonsters = [
         resistances="holy"
         weaknesses="unholy"
         speeds="fly 2"
-        actions={[
-          {
-            basic: true,
-            name: "Hoof",
-            keywords: "melee, weapon",
-            target: <span>1 engaged creature</span>,
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
+        basicMelee="4 physical"
       />
     ),
   },
@@ -172,8 +163,11 @@ const AngelMonsters = [
       "The goodly celestial dragons flourish in the heavenly upper realms among the angels and blessed souls. Celestial dragons sometimes serve good deities and archangels, while ancient celestial dragons justly rule domains of their own. Celestial dragons sometimes appear in the mortal realm to help guide mortals on a path of goodness or help prevent a great evil.",
     tactics: (
       <span>
-        Young celestial dragons will rush the heroes to use rend or holyfire
-        breath if available, as well as{" "}
+        Young celestial dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or holyfire breath if available, as well as{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>
@@ -200,6 +194,7 @@ const AngelMonsters = [
         resistances="fire, holy"
         weaknesses="unholy"
         speeds="fly 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -230,23 +225,7 @@ const AngelMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Holyfire Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -273,8 +252,11 @@ const AngelMonsters = [
       "The goodly celestial dragons flourish in the heavenly upper realms among the angels and blessed souls. Celestial dragons sometimes serve good deities and archangels, while ancient celestial dragons justly rule domains of their own. Celestial dragons sometimes appear in the mortal realm to help guide mortals on a path of goodness or help prevent a great evil.",
     tactics: (
       <span>
-        Adult celestial dragons will rush the heroes to use rend or holyfire
-        breath if available, as well as{" "}
+        Adult celestial dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or holyfire breath if available, as well as{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>
@@ -301,6 +283,7 @@ const AngelMonsters = [
         resistances="fire, holy"
         weaknesses="unholy"
         speeds="fly 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -333,23 +316,7 @@ const AngelMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "10 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Holyfire Breath",
             keywords: "recharge",
             target: (
@@ -443,8 +410,8 @@ const AngelMonsters = [
       "The goodly celestial dragons flourish in the heavenly upper realms among the angels and blessed souls. Celestial dragons sometimes serve good deities and archangels, while ancient celestial dragons justly rule domains of their own. Celestial dragons sometimes appear in the mortal realm to help guide mortals on a path of goodness or help prevent a great evil.",
     tactics: (
       <span>
-        Ancient celestial dragons will rush the heroes to use rend or holyfire
-        breath if available, as well as{" "}
+        Ancient celestial dragons will rush the heroes to use revealing rend or
+        holyfire breath if available, as well as{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>
@@ -471,6 +438,7 @@ const AngelMonsters = [
         resistances="fire, holy"
         weaknesses="unholy"
         speeds="fly 2"
+        basicMelee="15 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -503,8 +471,8 @@ const AngelMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
+            // // basic: true,
+            name: "Revealing Rend",
             keywords: "melee, weapon",
             target: (
               <span>
@@ -528,7 +496,7 @@ const AngelMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Holyfire Breath",
             keywords: "recharge",
             target: (
@@ -643,9 +611,10 @@ const AngelMonsters = [
         resistances="holy"
         weaknesses="unholy"
         speeds="fly 1"
+        basicMelee="6 holy"
         actions={[
           {
-            basic: true,
+            // // basic: true,
             name: "Holy Blade",
             keywords: "melee, weapon",
             target: (
@@ -669,7 +638,7 @@ const AngelMonsters = [
             ),
           },
           {
-            basic: true,
+            // // basic: true,
             name: "Sacred Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -719,9 +688,10 @@ const AngelMonsters = [
         resistances="holy"
         weaknesses="unholy"
         speeds="fly 1"
+        basicMelee="8 holy"
         actions={[
           {
-            basic: true,
+            // // basic: true,
             name: "Vengeful Blade",
             keywords: "melee, weapon",
             target: (
@@ -749,7 +719,7 @@ const AngelMonsters = [
             ),
           },
           {
-            basic: true,
+            // // basic: true,
             name: "Sacred Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -811,9 +781,10 @@ const AngelMonsters = [
         resistances="holy"
         weaknesses="unholy"
         speeds="fly 1"
+        basicMelee="6 holy"
         actions={[
           {
-            basic: true,
+            // // basic: true,
             name: "Disrupting Mace",
             keywords: "melee, weapon",
             target: (
@@ -837,7 +808,7 @@ const AngelMonsters = [
             ),
           },
           {
-            basic: true,
+            // // basic: true,
             name: "Holy Chains",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -907,33 +878,21 @@ const AngelMonsters = [
         resistances="holy"
         weaknesses="unholy"
         speeds="fly 1"
-        actions={[
+        basicMelee="3 holy"
+        traits={[
           {
-            basic: true,
-            name: "Holy Spear",
-            keywords: "melee, weapon",
-            target: (
+            name: "Angelic Mark",
+            description: (
               <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 holy damage",
-            success: (
-              <span>
-                <Link className="internal-link" to="/conditions#taunted">
-                  taunted
-                </Link>{" "}
-                by the angel (overcome ends)
+                On a successful strike, target is taunted (overcome ends) by all
+                angel high guards in a minion group.
               </span>
             ),
           },
+        ]}
+        actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Sacred Blast",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -954,9 +913,13 @@ const AngelMonsters = [
       "Archangels are the most powerful angels of the upper realms and lead lesser angels. Only seven archangels exist, and they rule as a unified body against the evils of the multiverse. When an archangel appears on the mortal realm, usually its a sign of mythical favor or great evil has befallen the world that threatens to destroy all of creation. Each archangel looks different, but generally they are over 20 feet tall humanoids clad in immaculate plate armor with large feathered wings and eyes that glow gold.",
     tactics: (
       <span>
-        Archangels will rush the heroes to use heavenly blade or banishing smite
-        if available. If foes flee, then the archangel will use celestial pull
-        to bring them back. Each turn the archangel will use angelic step,{" "}
+        Archangels will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or banishing smite if available. If foes flee, then the archangel will
+        use celestial pull to bring them back. Each turn the archangel will use
+        angelic step,{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>
@@ -983,6 +946,7 @@ const AngelMonsters = [
         resistances="fire, holy"
         weaknesses="unholy"
         speeds="fly 1"
+        basicMelee="18 holy"
         traits={[
           {
             name: "Boss Monster",
@@ -1010,23 +974,7 @@ const AngelMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Heavenly Blade",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "18 holy damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Celestial Pull",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -1046,14 +994,14 @@ const AngelMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Banishing Smite",
             keywords: "magical, recharge",
             effect: (
               <span>
-                Archangel uses holy blade, but deals 9 additional damage, and on
-                a success, the target is banished to their home realm (turn
-                ends), or banished (overcome ends) on a critical success.
+                Archangel uses strike, but deals 9 additional damage, and on a
+                success, the target is banished to their home realm (turn ends),
+                or banished (overcome ends) on a critical success.
               </span>
             ),
           },

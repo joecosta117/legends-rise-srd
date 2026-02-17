@@ -396,24 +396,31 @@ function BuildingMonsters() {
             </span>
           </li>
         </ul>
-        <h3 className="header">Basic Attacks</h3>
+        <h3 className="header">Basic Strikes</h3>
         <p>
-          Now that your new monster has their basic statistics done, it's time
-          to give them some basic attacks. For each monster, that means a melee
-          at-will action ability and possibly a range at-will action ability if
-          thematically appropriate. Use the damage for melee and range
-          abilities. Some monsters might not have a range ability like a zombie
-          with no means of attacking at range.
+          Each monster should have damage listed they do on a melee strike. The
+          damage is usually 3 per the monster's tier adjusted by their role and
+          threat level. If it makes sense for the monster to have a basic ranged
+          strike, then list that damage as well following the same guidelines
+          except 2 damage per monster's tier. The range typically for ranged
+          strikes is usually always 3 zones. Some monsters might not have a
+          range ability like a zombie with no means of attacking at range.
         </p>
         <p>
           For example, you are creating a tier 1 monster that is a zombie giant.
-          You give it a "slam" melee ability that deals 3 damage. You decide
-          this monster is a bruiser too, so you add its tier to the melee
-          damage, so now slam deals 4 damage. You decide the zombie giant can
-          throw rocks, so you also give it a "rock throw" range ability.
-          Consulting the table, you see the range ability should deal 2 damage.
-          Bruisers don't get a damage bonus to range abilities, so rock throw
-          only deals 2 damage.
+          Tier 1 monsters deal 3 damage on their melee strike. You decide this
+          monster is a bruiser too, so you add its tier to the melee damage, so
+          now slam deals 4 physical damage. You decide the zombie giant can
+          throw rocks, so it should have a ranged strike that deals 2 physical
+          damage. Bruisers don't get a damage bonus to range abilities, so rock
+          throw only deals 2 damage.
+        </p>
+        <h3 className="header">Special Abilities</h3>
+        <p>
+          Now that your new monster has their basic statistics done, it's time
+          to determine if they have any special abilities such as a maneuver,
+          reaction, or action. For damage dealing abilities, use the damage for
+          melee and range abilities.
         </p>
         <h4 className="header">Ranges</h4>
         <p>

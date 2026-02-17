@@ -515,17 +515,8 @@ function Equipment() {
               mgt="12 + double T"
               res="8 + double T"
               pb="double T"
+              basicMelee="2 physical per T"
               summons
-              actions={[
-                {
-                  basic: true,
-                  name: "Slam",
-                  keywords: "melee, weapon",
-                  target: "1 engaged creature",
-                  defense: "Guard",
-                  damage: "2 physical damage per T",
-                },
-              ]}
             />
             <h4>Mount Traits</h4>
             <p>Mounts get a number of mount traits equal to their tier.</p>
@@ -605,9 +596,10 @@ function Equipment() {
               mgt="14"
               res="10"
               pb="2"
+              basicMelee="2 physical"
               actions={[
                 {
-                  basic: true,
+                  // basic: true,
                   name: "Slam",
                   keywords: "melee, weapon",
                   target: "1 engaged creature",
@@ -628,9 +620,10 @@ function Equipment() {
               res="12"
               pb="4"
               speeds="fly 1"
+              basicMelee="2 physical"
               actions={[
                 {
-                  basic: true,
+                  // basic: true,
                   name: "Slam",
                   keywords: "melee, weapon",
                   target: "1 engaged creature",

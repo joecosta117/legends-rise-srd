@@ -134,7 +134,7 @@ function Hazards() {
                 consequence="4 necrotic damage"
                 actions={[
                   {
-                    basic: true,
+                    // basic: true,
                     name: "Siphon Life",
                     keywords: "magical",
                     target: <span>1d4+1 enemies within the hazard's zone</span>,

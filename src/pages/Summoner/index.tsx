@@ -210,28 +210,8 @@ function Summoner() {
               mgt="12 + PB"
               res="8 + PB"
               pb="PB"
+              basicMelee="1 physical per tier"
               summons
-              actions={[
-                {
-                  basic: true,
-                  name: "Assault",
-                  keywords: "melee, weapon",
-                  target: (
-                    <span>
-                      1{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#engaged"
-                      >
-                        engaged
-                      </Link>{" "}
-                      creature
-                    </span>
-                  ),
-                  defense: "Guard",
-                  damage: "1 physical damage per tier",
-                },
-              ]}
             />
 
             <Accordion
@@ -259,28 +239,8 @@ function Summoner() {
               mgt="12 + PB"
               res="8 + PB"
               pb="PB"
+              basicMelee="PB physical"
               summons
-              actions={[
-                {
-                  basic: true,
-                  name: "Assault",
-                  keywords: "melee, weapon",
-                  target: (
-                    <span>
-                      1{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#engaged"
-                      >
-                        engaged
-                      </Link>{" "}
-                      creature
-                    </span>
-                  ),
-                  defense: "Guard",
-                  damage: "PB physical damage",
-                },
-              ]}
             />
 
             <h3 className="header" style={{ marginTop: "25px" }}>
@@ -399,9 +359,9 @@ function Summoner() {
                       >
                         weakness
                       </Link>{" "}
-                      to cold damage, and their assault damage deals fire
-                      damage. On a critical successful assault from the major
-                      summons, the target takes{" "}
+                      to cold damage, and their strike damage deals fire damage.
+                      On a critical successful strike from the major summons,
+                      the target takes{" "}
                       <Link
                         className="internal-link"
                         to="/rules/combat#ongoing-damage"
@@ -427,9 +387,9 @@ function Summoner() {
                       >
                         weakness
                       </Link>{" "}
-                      to fire damage, and their assault damage deals cold
-                      damage. On a critical successful assault from the major
-                      summons, the target is{" "}
+                      to fire damage, and their strike damage deals cold damage.
+                      On a critical successful strike from the major summons,
+                      the target is{" "}
                       <Link className="internal-link" to="/conditions#seized">
                         seized
                       </Link>{" "}
@@ -531,7 +491,7 @@ function Summoner() {
                     </span>
                   </li>
                   <li>
-                    <span>Assault damage deals holy damage</span>
+                    <span>Strike damage deals holy damage</span>
                   </li>
                   <li>
                     <span>Summons creature type is angel</span>
@@ -562,7 +522,7 @@ function Summoner() {
               frequency="At-will"
               effect={
                 <span>
-                  Your major summons can use assault, and on a success or
+                  Your major summons can melee strike, and on a success or
                   higher, the target becomes{" "}
                   <Link className="internal-link" to="/conditions#taunted">
                     taunted
@@ -651,7 +611,7 @@ function Summoner() {
               descriptor="As your construct attacks, it wards an ally from the chaos of battle."
               keywords="Magical"
               frequency="At-will"
-              effect="Your major summons can use assault, and on a success or higher, choose an ally within the same zone to gain 1 temporary hit per your tier (scene ends)."
+              effect="Your major summons can melee strike, and on a success or higher, choose an ally within the same zone to gain 1 temporary hit per your tier (scene ends)."
             />
 
             <h2>Fiends</h2>
@@ -711,7 +671,7 @@ function Summoner() {
                   </li>
                   <li>
                     <span>
-                      Assault deals unholy damage, and major summons deals 3
+                      Strike deals unholy damage, and major summons deals 3
                       damage per your tier
                     </span>
                   </li>
@@ -733,7 +693,7 @@ function Summoner() {
               frequency="At-will"
               effect={
                 <span>
-                  Your major summons can use assault, and on a success or
+                  Your major summons can melee strike, and on a success or
                   higher, the target becomes{" "}
                   <Link className="internal-link" to="/conditions#hindered">
                     hindered
@@ -791,7 +751,7 @@ function Summoner() {
                     </span>
                   </li>
                   <li>
-                    <span>Assault damage deal necrotic damage</span>
+                    <span>Strike damage deal necrotic damage</span>
                   </li>
                   <li>
                     <span>
@@ -824,7 +784,7 @@ function Summoner() {
               frequency="At-will"
               effect={
                 <span>
-                  Your major summons can use assault, and on a success or
+                  Your major summons can melee strike, and on a success or
                   higher, they gain{" "}
                   <Link
                     className="internal-link"
@@ -919,10 +879,10 @@ function Summoner() {
 
             <h3 className="header">Ranged Combatant</h3>
             <p>
-              Your minor and major summons gain an action called far assault
+              Your minor and major summons gain an action called far strike
               (keywords: magical, ranged) that targets a creature within 3 zones
-              and deals the same damage and type of damage as their assault
-              ability.
+              and deals the same damage and type of damage as their melee
+              strike.
             </p>
 
             <h3 className="header">Special Adaptations</h3>
@@ -1053,7 +1013,7 @@ function Summoner() {
             <h3 className="header">Supernatural Growth</h3>
             <p>
               You can choose your major summons’ size to become large, or huge
-              starting at 8th level. While large, your summons can use assault
+              starting at 8th level. While large, your summons can melee strike
               with <Modifier type="mf" count="1" /> to target any creature
               within their zone.{" "}
             </p>
@@ -1134,8 +1094,8 @@ function Summoner() {
             </p>
             <p>
               All of your summons gain a fly speed equal to their land speed,
-              and your major summons' assault damage increases to 4 unholy
-              damage per your tier.
+              and your major summons' strike damage increases to 4 unholy damage
+              per your tier.
             </p>
           </div>
         )}

@@ -32,6 +32,7 @@ const OozeMonsters = [
         threat="Standard"
         role="Bruiser"
         resistances="toxic"
+        basicMelee="4 toxic"
         traits={[
           {
             name: "Ooze Resilience",
@@ -51,24 +52,6 @@ const OozeMonsters = [
                 new ooze has half the hit points of the original ooze.
               </span>
             ),
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Pseudopod",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 toxic damage",
           },
         ]}
       />
@@ -105,6 +88,7 @@ const OozeMonsters = [
         threat="Standard"
         role="Disabler"
         resistances="toxic"
+        basicMelee="3 toxic"
         traits={[
           {
             name: "Ooze Resilience",
@@ -118,7 +102,7 @@ const OozeMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Pseudopod",
             keywords: "melee, weapon",
             target: (
@@ -142,7 +126,7 @@ const OozeMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Engulf",
             keywords: "melee, weapon",
             target: (
@@ -212,6 +196,7 @@ const OozeMonsters = [
         tier="1"
         threat="Boss"
         role="Disabler"
+        basicMelee="5 necrotic"
         resistances="necrotic"
         traits={[
           {
@@ -248,7 +233,7 @@ const OozeMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Draining Pseudopod",
             keywords: "melee, weapon",
             target: (
@@ -335,24 +320,7 @@ const OozeMonsters = [
         threat="Minion"
         role=""
         resistances="necrotic"
-        actions={[
-          {
-            basic: true,
-            name: "Pseudopod",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Spirit",
-            damage: "1 necroitc damage",
-          },
-        ]}
+        basicMelee="1 necrotic"
       />
     ),
   },

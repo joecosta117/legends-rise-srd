@@ -33,6 +33,7 @@ const FaerieMonsters = [
         vision="night"
         resistances="psychic"
         speeds="fly 1, swim 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -47,7 +48,7 @@ const FaerieMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Vine Rend",
             keywords: "melee, weapon",
             target: (
@@ -71,7 +72,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Dazzling Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -133,6 +134,7 @@ const FaerieMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
+        basicMelee="10 physical"
         resistances="psychic"
         speeds="fly 1, swim 1"
         traits={[
@@ -151,7 +153,7 @@ const FaerieMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Vine Rend",
             keywords: "melee, weapon",
             target: (
@@ -175,7 +177,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Dazzling Breath",
             keywords: "recharge",
             target: (
@@ -319,6 +321,7 @@ const FaerieMonsters = [
         role="Disabler"
         vision="night"
         resistances="psychic"
+        basicMelee="15 physical"
         speeds="fly 2, swim 2"
         traits={[
           {
@@ -349,7 +352,7 @@ const FaerieMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Vine Rend",
             keywords: "melee, weapon",
             target: (
@@ -373,7 +376,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Dazzling Breath",
             keywords: "recharge",
             target: (
@@ -522,9 +525,11 @@ const FaerieMonsters = [
         threat="Minor"
         role="Skirmisher"
         speeds="land 0, fly 1"
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tiny Rapier",
             keywords: "melee, weapon",
             target: <span>1 engaged creature</span>,
@@ -538,14 +543,6 @@ const FaerieMonsters = [
                 </Link>
               </span>
             ),
-          },
-          {
-            basic: true,
-            name: "Tiny Bow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 2 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
           },
         ]}
       />
@@ -561,8 +558,11 @@ const FaerieMonsters = [
       "Pixies are small faeries with butterfly like wings that enjoy playing tricks on mortals. Pixies are whimsical creatures but can be deadly enemies if provoked.",
     tactics: (
       <span>
-        Pixies prefer to fight afar from heroes to use faerie dust then
-        shortbow.
+        Pixies prefer to fight afar from heroes to use faerie dust then{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        .
       </span>
     ),
     statBlock: (
@@ -579,24 +579,8 @@ const FaerieMonsters = [
         threat="Standard"
         role="Disabler"
         speeds="fly 1"
-        actions={[
-          {
-            basic: true,
-            name: "Shortsword",
-            keywords: "melee, weapon",
-            target: <span>1 engaged creature</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
-            name: "Shortbow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         maneuvers={[
           {
             name: "Pixie Dust",
@@ -604,8 +588,8 @@ const FaerieMonsters = [
             duration: "End of current turn",
             effect: (
               <span>
-                The pixie sprinkles magical dust on their shortsword or shortbow
-                that adds one of the following effecs on a successful strike:
+                The pixie sprinkles magical dust on their weapons that adds one
+                of the following effecs on a successful strike:
                 <ul>
                   <li>
                     <i>Charm:</i> target can't use hostile abilities against the
@@ -640,9 +624,11 @@ const FaerieMonsters = [
       "Satyrs are medium faeries with goat legs but humanoid upper half and goat horns. Satyrs are playful and view life as a party, with their hedonism well known. Satyrs enjoy bringing their party lifestyle to mortals for a night of passion and revelry before disappearing the next morning.",
     tactics: (
       <span>
-        Satyrs prefer to fight near or afar from heroes with either their
-        shortsword or shortbow, but they always use play the pipes as a
-        maneuver.
+        Satyrs prefer to fight near or afar from heroes to{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        , but they always use play the pipes as a maneuver.
       </span>
     ),
     statBlock: (
@@ -658,24 +644,8 @@ const FaerieMonsters = [
         tier="1"
         threat="Standard"
         role="Support"
-        actions={[
-          {
-            basic: true,
-            name: "Shortsword",
-            keywords: "melee, weapon",
-            target: <span>1 engaged creature</span>,
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
-            name: "Shortbow",
-            keywords: "range, weapon",
-            target: <span>1 creature within 3 zones</span>,
-            defense: "Guard",
-            damage: "2 physical damage",
-          },
-        ]}
+        basicMelee="3 physical"
+        basicRanged="2 physical (3 zones)"
         maneuvers={[
           {
             name: "Play the Pipes",
@@ -699,8 +669,11 @@ const FaerieMonsters = [
       "Redcaps are violent and sadistic faeries that enjoy murder and torturing mortals. Redcaps derive their power from the blood of mortals and often travel to mortal realm to commit acts of violence.",
     tactics: (
       <span>
-        Redcaps will rush the heroes to use halberd then soak blood if they deal
-        damage.
+        Redcaps will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        then soak blood if they deal damage.
       </span>
     ),
     statBlock: (
@@ -716,6 +689,7 @@ const FaerieMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -728,30 +702,12 @@ const FaerieMonsters = [
             ),
           },
         ]}
-        actions={[
-          {
-            basic: true,
-            name: "Halberd",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-        ]}
         maneuvers={[
           {
             name: "Blood Soak",
             duration: "Next turn ends",
             effect:
-              "The redcap dips their halberd in freshly spilled blood from a foe, and they gain +1 fortune to attack rolls",
+              "The redcap dips their weapon in freshly spilled blood from a foe, and they gain +1 fortune to attack rolls",
           },
         ]}
         reactions={[
@@ -760,7 +716,7 @@ const FaerieMonsters = [
             trigger:
               "The redcap reduces a creature to 0 hit points or gets a critical success on halberd",
             effect:
-              "The redcap can use charge or halberd against a different creature",
+              "The redcap can use charge or strike against a different creature",
           },
         ]}
       />
@@ -793,6 +749,7 @@ const FaerieMonsters = [
         threat="Boss"
         role="Disabler"
         vision="night"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -814,7 +771,7 @@ const FaerieMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Claw",
             keywords: "melee, weapon",
             target: (
@@ -838,7 +795,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Mocking Cackle",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -854,7 +811,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Sleepy Curse",
             keywords: "magical, range, recharge",
             target: <span>1 creature within 3 zones</span>,
@@ -978,6 +935,7 @@ const FaerieMonsters = [
         threat="Major"
         role="Bruiser"
         vision="night"
+        basicMelee="8 physical"
         traits={[
           {
             name: "Major Monster",
@@ -997,7 +955,7 @@ const FaerieMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tearing Claw",
             keywords: "melee, weapon",
             target: (
@@ -1025,7 +983,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Drain Blood",
             keywords: "melee",
             target: <span>1 engaged creature</span>,
@@ -1082,6 +1040,7 @@ const FaerieMonsters = [
         vision="night"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1108,7 +1067,7 @@ const FaerieMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Ice Staff",
             keywords: "melee, weapon",
             target: (
@@ -1132,7 +1091,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Slowing Frost",
             keywords: "magical, range",
             target: (
@@ -1156,7 +1115,7 @@ const FaerieMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Freezing Blast",
             keywords: "magical, range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,

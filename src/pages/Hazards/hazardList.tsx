@@ -18,7 +18,7 @@ const HazardList = [
         consequence="4 necrotic damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Siphon Life",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
@@ -52,7 +52,7 @@ const HazardList = [
         consequence="4 lightning damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Fork Lightning",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -84,7 +84,7 @@ const HazardList = [
         consequence="12 arcane damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Dimensional Jolt",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -122,7 +122,7 @@ const HazardList = [
         consequence="8 arcane damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Slow Down Time",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
@@ -157,7 +157,7 @@ const HazardList = [
         consequence="4 necrotic damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Ringing of Doom",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
@@ -203,7 +203,7 @@ const HazardList = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasp of the Dead",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
@@ -237,7 +237,7 @@ const HazardList = [
         consequence="8 necrotic damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasp of the Dead",
             keywords: "magical",
             effect: "The hazard summons two ghost warriors within 1 zone",
@@ -258,6 +258,7 @@ const HazardList = [
         threat="Minion"
         role=""
         vision="night"
+        basicMelee="2 necrotic"
         speeds={
           <span>
             flying 1,{" "}
@@ -270,7 +271,7 @@ const HazardList = [
         weaknesses="holy"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Ghostly Weapon",
             keywords: "melee, weapon",
             target: (
@@ -304,7 +305,7 @@ const HazardList = [
         consequence="4 physical damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grasping Vines",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
             defense: "Guard",
@@ -337,7 +338,7 @@ const HazardList = [
         consequence="4 toxic damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Toxic Spores",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
             defense: "Guard",
@@ -370,7 +371,7 @@ const HazardList = [
         consequence="8 psychic damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Paralyzing Wail",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
@@ -416,7 +417,7 @@ const HazardList = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Profane Smite",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -462,7 +463,7 @@ const HazardList = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Maddening Whispers",
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
@@ -496,7 +497,7 @@ const HazardList = [
         consequence="4 unholy damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Unending Pain",
             keywords: "magical",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
@@ -534,7 +535,7 @@ const HazardList = [
         consequence="8 arcane damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Dual Fire",
             keywords: "magical, range",
             target: <span>2 creature within 3 zones</span>,
@@ -560,7 +561,7 @@ const HazardList = [
         consequence="4 fire damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Burning Flames",
             target: <span>1d4+1 enemies within the hazard's zone</span>,
             defense: "Guard",
@@ -597,7 +598,7 @@ const HazardList = [
         consequence="12 necrotic damage"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "End Life",
             keywords: "magical, range",
             target: <span>1d4+1 enemies within 3 zones</span>,

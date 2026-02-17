@@ -34,6 +34,7 @@ const BeastMonsters = [
         threat="Major"
         role="Bruiser"
         speeds="climb 1"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -48,7 +49,7 @@ const BeastMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Fist",
             keywords: "melee, weapon",
             target: (
@@ -72,7 +73,7 @@ const BeastMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Throw Rock",
             keywords: "range, weapon",
             target: <span>1 creature within 3 zones</span>,
@@ -119,6 +120,7 @@ const BeastMonsters = [
         tier="1"
         threat="Boss"
         role="Bruiser"
+        basicMelee="6 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -135,7 +137,7 @@ const BeastMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -173,7 +175,7 @@ const BeastMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Tail",
             keywords: "melee, weapon",
             target: (
@@ -208,12 +210,7 @@ const BeastMonsters = [
           {
             name: "Tyrannosaurus Rampage",
             round: "1",
-            effect: (
-              <span>
-                The tyrannosaurus uses charge and can move twice as part of the
-                charge
-              </span>
-            ),
+            effect: <span>The tyrannosaurus can move twice then bite</span>,
           },
           {
             name: "Swinging Tail",
@@ -262,6 +259,7 @@ const BeastMonsters = [
         threat="Major"
         role="Bruiser"
         speeds="swim 1"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -292,7 +290,7 @@ const BeastMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -333,7 +331,11 @@ const BeastMonsters = [
       "Giant bears are huge bears that like other giant beasts were believed to have been created by magical experiments in ages past.",
     tactics: (
       <span>
-        Giant bears will rush the heroes to use rend and{" "}
+        Giant bears will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -353,6 +355,7 @@ const BeastMonsters = [
         threat="Major"
         role="Bruiser"
         speeds="climb 1"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -376,23 +379,7 @@ const BeastMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Bear Charge",
             effect: (
               <span>
@@ -437,9 +424,10 @@ const BeastMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Pincer",
             keywords: "melee, weapon",
             target: (
@@ -463,7 +451,7 @@ const BeastMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Stinger",
             keywords: "melee, weapon",
             target: (
@@ -519,9 +507,10 @@ const BeastMonsters = [
         tier="1"
         threat="Standard"
         role="Disabler"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Mandible",
             keywords: "melee, weapon",
             target: (
@@ -545,7 +534,7 @@ const BeastMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Web Area",
             target: <span>1d4+1 enemies within the giant spider's zone</span>,
             defense: "Guard",
@@ -592,9 +581,10 @@ const BeastMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="4 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Bite",
             keywords: "melee, weapon",
             target: (
@@ -650,9 +640,10 @@ const BeastMonsters = [
         tier="1"
         threat="Minor"
         role="Bruiser"
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Pounce",
             keywords: "melee, weapon",
             target: (
@@ -688,7 +679,11 @@ const BeastMonsters = [
       "Giant wolves are huge wolves that like other giant beasts were believed to have been created by magical experiments in ages past.",
     tactics: (
       <span>
-        Giant wolves will rush the heroes to use bite and{" "}
+        Giant wolves will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -707,29 +702,12 @@ const BeastMonsters = [
         tier="1"
         threat="Standard"
         role="Skirmisher"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Pack Tactics",
             description:
               "The giant wolf gains +1 fortune on attack rolls against creatures engaged to an ally",
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Bite",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
           },
         ]}
       />
@@ -765,6 +743,7 @@ const BeastMonsters = [
         threat="Standard"
         role="Disabler"
         speeds="swim 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Aquatic",
@@ -775,7 +754,7 @@ const BeastMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Tentacle",
             keywords: "weapon",
             target: <span>1 creature within the octopus' zone</span>,
@@ -803,7 +782,11 @@ const BeastMonsters = [
     description: "Velociraptors are smaller dinosaurs that hunt in packs.",
     tactics: (
       <span>
-        Velociraptors will rush the heroes to use bite and{" "}
+        Velociraptors will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        and{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
@@ -822,29 +805,12 @@ const BeastMonsters = [
         tier="1"
         threat="Minor"
         role="Skirmisher"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Pack Tactics",
             description:
               "The velociraptor gains +1 fortune on attack rolls against creatures engaged to an ally",
-          },
-        ]}
-        actions={[
-          {
-            basic: true,
-            name: "Bite",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
           },
         ]}
       />
@@ -880,6 +846,7 @@ const BeastMonsters = [
         threat="Standard"
         role="Tank"
         speeds="swim 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Aquatic",
@@ -888,7 +855,7 @@ const BeastMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Pincer",
             keywords: "weapon",
             target: <span>1 engaged creature</span>,

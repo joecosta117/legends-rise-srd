@@ -346,27 +346,7 @@ function Occultist() {
                 },
               ]}
               summons
-              actions={[
-                {
-                  basic: true,
-                  name: "Rend",
-                  keywords: "melee, weapon",
-                  target: (
-                    <span>
-                      1{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#engaged"
-                      >
-                        engaged
-                      </Link>{" "}
-                      creature
-                    </span>
-                  ),
-                  defense: "Guard",
-                  damage: "PB physical damage",
-                },
-              ]}
+              basicMelee="PB physical"
             />
 
             <h2>Curseblade</h2>

@@ -15,7 +15,11 @@ const DragonMonsters = [
     tactics: (
       <span>
         Dragon hatchlings tend to fly away when action gets too scary. On each
-        turn, a dragon hatchling uses rend or breath weapon if available.
+        turn, a dragon hatchling uses{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or breath weapon if available.
       </span>
     ),
     statBlock: (
@@ -32,6 +36,7 @@ const DragonMonsters = [
         threat="Minor"
         role="Bruiser"
         vision="night"
+        basicMelee="3 physical"
         resistances="elemental affinity damage type"
         traits={[
           {
@@ -42,23 +47,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Breath Weapon",
             keywords: "recharge",
             target: (
@@ -113,7 +102,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Rend",
             keywords: "melee, weapon",
             target: (
@@ -129,7 +118,7 @@ const DragonMonsters = [
             damage: "3 physical damage",
           },
           {
-            basic: true,
+            // basic: true,
             name: "Fire Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
@@ -183,7 +172,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Rend",
             keywords: "melee, weapon",
             target: (
@@ -199,7 +188,7 @@ const DragonMonsters = [
             damage: "4 physical damage",
           },
           {
-            basic: true,
+            // basic: true,
             name: "Cold Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
@@ -252,7 +241,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Rend",
             keywords: "melee, weapon",
             target: (
@@ -276,7 +265,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Venom Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
@@ -309,8 +298,11 @@ const DragonMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        them then use rend. Volcanic dragon always uses its volcanic breath if
-        possible.
+        them then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . Volcanic dragon always uses its volcanic breath if possible.
       </span>
     ),
     statBlock: (
@@ -341,25 +333,10 @@ const DragonMonsters = [
             ),
           },
         ]}
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Volcanic Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -380,7 +357,7 @@ const DragonMonsters = [
               </span>
             ),
             effect:
-              "The dragon can rend the triggering creature even if they aren't engaged to the dragon",
+              "The dragon can strike the triggering creature even if they aren't engaged to the dragon",
           },
         ]}
       />
@@ -400,9 +377,13 @@ const DragonMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        them then use rend. Volcanic dragon always uses its volcanic breath if
-        possible. Smarter than young dragons, the volcanic dragon will grab a
-        creature than fly away to drop them or fly away to escape harm.
+        them then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . Volcanic dragon always uses its volcanic breath if possible. Smarter
+        than young dragons, the volcanic dragon will grab a creature than fly
+        away to drop them or fly away to escape harm.
       </span>
     ),
     statBlock: (
@@ -421,6 +402,7 @@ const DragonMonsters = [
         vision="night"
         resistances="fire"
         weaknesses="cold"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -437,23 +419,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "10 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Volcanic Breath",
             keywords: "recharge",
             target: (
@@ -489,7 +455,7 @@ const DragonMonsters = [
                 , or use a range or magical ability within the dragon's zone
               </span>
             ),
-            effect: "The dragon can rend the triggering creature",
+            effect: "The dragon can strike the triggering creature",
           },
         ]}
         bossActions={[
@@ -569,9 +535,13 @@ const DragonMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        them then use rend. Volcanic dragon always uses its volcanic breath if
-        possible. Smarter than young dragons, the volcanic dragon will grab a
-        creature than fly away to drop them or fly away to escape harm.
+        them then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . Volcanic dragon always uses its volcanic breath if possible. Smarter
+        than young dragons, the volcanic dragon will grab a creature than fly
+        away to drop them or fly away to escape harm.
       </span>
     ),
     statBlock: (
@@ -604,25 +574,10 @@ const DragonMonsters = [
             ),
           },
         ]}
+        basicMelee="15 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "15 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Volcanic Breath",
             keywords: "recharge",
             target: (
@@ -667,7 +622,7 @@ const DragonMonsters = [
                 , or use a range or magical ability within 1 zone
               </span>
             ),
-            effect: "The dragon can rend the triggering creature",
+            effect: "The dragon can strike the triggering creature",
           },
         ]}
         bossActions={[
@@ -748,8 +703,11 @@ const DragonMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        them then use rend. A tundra dragon always uses its glacial breath if
-        possible.
+        them then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . A tundra dragon always uses its glacial breath if possible.
       </span>
     ),
     statBlock: (
@@ -768,6 +726,7 @@ const DragonMonsters = [
         vision="night"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -782,23 +741,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Glacial Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -831,9 +774,13 @@ const DragonMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        them then use rend. A tundra dragon always uses its glacial breath if
-        possible. Smarter than young dragons, the tundra dragon will grab a
-        creature than fly away to drop them or fly away to escape harm.
+        them then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . A tundra dragon always uses its glacial breath if possible. Smarter
+        than young dragons, the tundra dragon will grab a creature than fly away
+        to drop them or fly away to escape harm.
       </span>
     ),
     statBlock: (
@@ -852,6 +799,7 @@ const DragonMonsters = [
         vision="night"
         resistances="cold"
         weaknesses="fire"
+        basicMelee="12 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -868,23 +816,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Glacial Breath",
             keywords: "recharge",
             target: (
@@ -961,7 +893,7 @@ const DragonMonsters = [
             name: "Furious Thrash",
             round: "5",
             effect:
-              "The dragon uses rend against each creature within their zone.",
+              "The dragon uses strike against each creature within their zone.",
           },
         ]}
       />
@@ -981,9 +913,13 @@ const DragonMonsters = [
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
         </Link>{" "}
-        them then use rend. A tundra dragon always uses its glacial breath if
-        possible. Smarter than young dragons, the tundra dragon will grab a
-        creature than fly away to drop them or fly away to escape harm.
+        them then use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . A tundra dragon always uses its glacial breath if possible. Smarter
+        than young dragons, the tundra dragon will grab a creature than fly away
+        to drop them or fly away to escape harm.
       </span>
     ),
     statBlock: (
@@ -1016,25 +952,10 @@ const DragonMonsters = [
             ),
           },
         ]}
+        basicMelee="18 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "18 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Glacial Breath",
             keywords: "recharge",
             target: (
@@ -1121,7 +1042,7 @@ const DragonMonsters = [
             name: "Furious Thrash",
             round: "5",
             effect:
-              "The dragon uses rend against each creature within their zone.",
+              "The dragon uses strike against each creature within their zone.",
           },
         ]}
       />
@@ -1171,25 +1092,10 @@ const DragonMonsters = [
             ),
           },
         ]}
+        basicMelee="3 physical"
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "3 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Lightning Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
@@ -1199,7 +1105,7 @@ const DragonMonsters = [
               "light arcs to another creature within the same zone, dealing 1 lightning damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Lightning Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1243,6 +1149,7 @@ const DragonMonsters = [
         vision="night"
         resistances="lightning"
         speeds="fly 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -1259,23 +1166,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "10 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Lightning Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
@@ -1285,7 +1176,7 @@ const DragonMonsters = [
               "light arcs to another creature within the same zone, dealing 2 lightning damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Wing Gust",
             keywords: "range",
             target: <span>1d4 creatures within 3 zones</span>,
@@ -1300,7 +1191,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Lightning Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1402,6 +1293,7 @@ const DragonMonsters = [
         vision="night"
         resistances="lightning"
         speeds="fly 2"
+        basicMelee="15 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -1418,23 +1310,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "15 physical damage",
-          },
-          {
-            basic: true,
+            // basic: true,
             name: "Lightning Spit",
             keywords: "range",
             target: <span>1 creature within 3 zones</span>,
@@ -1444,7 +1320,7 @@ const DragonMonsters = [
               "light arcs to another creature within the same zone, dealing 3 lightning damage",
           },
           {
-            basic: false,
+            // basic: false,
             name: "Wing Gust",
             keywords: "range",
             target: <span>1d4 creatures within 3 zones</span>,
@@ -1459,7 +1335,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Lightning Breath",
             keywords: "range, recharge",
             target: (
@@ -1550,8 +1426,12 @@ const DragonMonsters = [
     tactics: (
       <span>
         Young swamp dragons start fights with corrosive breath before rushing
-        heroes to use rend. If the heroes aren't acquatic, the swamp dragon will
-        utilize any nearby water to their advantage.
+        heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . If the heroes aren't acquatic, the swamp dragon will utilize any
+        nearby water to their advantage.
       </span>
     ),
     statBlock: (
@@ -1569,6 +1449,7 @@ const DragonMonsters = [
         vision="night"
         resistances="toxic"
         speeds="fly 1, swim 1"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -1587,23 +1468,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Corrosive Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1639,9 +1504,13 @@ const DragonMonsters = [
     tactics: (
       <span>
         Adult swamp dragons start fights with corrosive breath before rushing
-        heroes to use rend. If the heroes aren't acquatic, the swamp dragon will
-        utilize any nearby water to their advantage. Smarter than young dragons,
-        the adult swamp dragon will fly or swim away to escape harm.
+        heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . If the heroes aren't acquatic, the swamp dragon will utilize any
+        nearby water to their advantage. Smarter than young dragons, the adult
+        swamp dragon will fly or swim away to escape harm.
       </span>
     ),
     statBlock: (
@@ -1659,6 +1528,7 @@ const DragonMonsters = [
         vision="night"
         resistances="toxic"
         speeds="fly 1, swim 1"
+        basicMelee="12 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -1679,23 +1549,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Corrosive Breath",
             keywords: "range, recharge",
             target: <span>All creatures in 1 zone within 3 zones</span>,
@@ -1809,9 +1663,13 @@ const DragonMonsters = [
     tactics: (
       <span>
         Ancient swamp dragons start fights with corrosive breath before rushing
-        heroes to use rend. If the heroes aren't acquatic, the swamp dragon will
-        utilize any nearby water to their advantage. Smarter than young dragons,
-        the ancient swamp dragon will fly or swim away to escape harm.
+        heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>
+        . If the heroes aren't acquatic, the swamp dragon will utilize any
+        nearby water to their advantage. Smarter than young dragons, the ancient
+        swamp dragon will fly or swim away to escape harm.
       </span>
     ),
     statBlock: (
@@ -1849,7 +1707,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Rend",
             keywords: "melee, weapon",
             target: (
@@ -1877,7 +1735,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Corrosive Breath",
             keywords: "range, recharge",
             target: (
@@ -2013,6 +1871,7 @@ const DragonMonsters = [
         vision="night"
         resistances="toxic"
         speeds="fly 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -2027,7 +1886,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Poisonous Rend",
             keywords: "melee, weapon",
             target: (
@@ -2051,7 +1910,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Venemous Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -2116,6 +1975,7 @@ const DragonMonsters = [
         vision="night"
         resistances="toxic"
         speeds="fly 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -2132,7 +1992,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Poisonous Rend",
             keywords: "melee, weapon",
             target: (
@@ -2156,7 +2016,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Venemous Breath",
             keywords: "recharge",
             target: (
@@ -2307,6 +2167,7 @@ const DragonMonsters = [
         vision="night"
         resistances="toxic"
         speeds="fly 2"
+        basicMelee="15 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -2323,7 +2184,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Poisonous Rend",
             keywords: "melee, weapon",
             target: (
@@ -2347,7 +2208,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Venemous Breath",
             keywords: "recharge",
             target: (
@@ -2478,8 +2339,11 @@ const DragonMonsters = [
       "The diabolical infernal dragons reside in the hellish lower realms among the demons and tortured souls. Infernal dragons sometimes serve demon lords, while ancient infernal dragons command domains of their own.",
     tactics: (
       <span>
-        Young infernal dragons will rush the heroes to use rend or hellfire
-        breath if available, as well as{" "}
+        Young infernal dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or hellfire breath if available, as well as{" "}
         <Link className="internal-link" to="/combat-abilities#hinder">
           hinder
         </Link>
@@ -2506,6 +2370,7 @@ const DragonMonsters = [
         resistances="fire, unholy"
         weaknesses="holy"
         speeds="fly 1"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -2532,23 +2397,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Hellfire Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -2577,9 +2426,12 @@ const DragonMonsters = [
       "The diabolical infernal dragons reside in the hellish lower realms among the demons and tortured souls. Infernal dragons sometimes serve demon lords, while ancient infernal dragons command domains of their own.",
     tactics: (
       <span>
-        Adult infernal dragons will rush the heroes to use rend or hellfire
-        breath if available, as well as expand aura. Smarter than young dragons,
-        the adult infernal dragon will fly away to escape harm.
+        Adult infernal dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or hellfire breath if available, as well as expand aura. Smarter than
+        young dragons, the adult infernal dragon will fly away to escape harm.
       </span>
     ),
     statBlock: (
@@ -2597,6 +2449,7 @@ const DragonMonsters = [
         vision="night"
         resistances="fire, unholy"
         weaknesses="holy"
+        basicMelee="12 physical"
         speeds="fly 1"
         traits={[
           {
@@ -2626,23 +2479,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Hellfire Breath",
             keywords: "recharge",
             target: (
@@ -2721,9 +2558,12 @@ const DragonMonsters = [
       "The diabolical infernal dragons reside in the hellish lower realms among the demons and tortured souls. Infernal dragons sometimes serve demon lords, while ancient infernal dragons command domains of their own.",
     tactics: (
       <span>
-        Ancient infernal dragons will rush the heroes to use rend or hellfire
-        breath if available, as well as expand aura. Smarter than young dragons,
-        the ancient infernal dragon will fly away to escape harm.
+        Ancient infernal dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or hellfire breath if available, as well as expand aura. Smarter than
+        young dragons, the ancient infernal dragon will fly away to escape harm.
       </span>
     ),
     statBlock: (
@@ -2742,6 +2582,7 @@ const DragonMonsters = [
         resistances="fire, unholy"
         weaknesses="holy"
         speeds="fly 2"
+        basicMelee="18 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -2770,23 +2611,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "18 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Hellfire Breath",
             keywords: "recharge",
             target: (
@@ -2885,6 +2710,7 @@ const DragonMonsters = [
         vision="night"
         resistances="cold, psychic"
         speeds="fly 1"
+        basicMelee="3 physical"
         traits={[
           {
             name: "Major Monster",
@@ -2899,7 +2725,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Void Rend",
             keywords: "melee, weapon",
             target: (
@@ -2923,7 +2749,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Void Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -2995,6 +2821,7 @@ const DragonMonsters = [
         vision="night"
         resistances="cold, psychic"
         speeds="fly 1"
+        basicMelee="10 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -3011,7 +2838,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Void Rend",
             keywords: "melee, weapon",
             target: (
@@ -3035,7 +2862,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Void Breath",
             keywords: "range, recharge",
             target: (
@@ -3177,6 +3004,7 @@ const DragonMonsters = [
         vision="night"
         resistances="cold, psychic"
         speeds="fly 2"
+        basicMelee="15 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -3198,7 +3026,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Void Rend",
             keywords: "melee, weapon",
             target: (
@@ -3222,7 +3050,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: false,
+            // basic: false,
             name: "Void Breath",
             keywords: "range, recharge",
             target: (
@@ -3344,9 +3172,12 @@ const DragonMonsters = [
       "The elusive umbral dragons live in the dangerous shadow realm, where undead shadows and other horrors dwell. Older umbral dragons often rule over their own domains within the shadow realm or sometimes venture into the mortal realm to spread gloom and darkness,",
     tactics: (
       <span>
-        Young umbral dragons will rush the heroes to use rend or shadow breath
-        if available, as well as create darkness around themselves as their
-        maneuver.
+        Young umbral dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or shadow breath if available, as well as create darkness around
+        themselves as their maneuver.
       </span>
     ),
     statBlock: (
@@ -3364,6 +3195,7 @@ const DragonMonsters = [
         vision="night"
         resistances="necrotic"
         speeds="fly 1"
+        basicMelee="4 physical"
         traits={[
           {
             name: "Major Monster",
@@ -3390,23 +3222,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "4 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Shadow Breath",
             keywords: "recharge",
             target: <span>1d4+1 enemies within the dragon's zone</span>,
@@ -3456,10 +3272,13 @@ const DragonMonsters = [
       "The elusive umbral dragons live in the dangerous shadow realm, where undead shadows and other horrors dwell. Older umbral dragons often rule over their own domains within the shadow realm or sometimes venture into the mortal realm to spread gloom and darkness,",
     tactics: (
       <span>
-        Adult umbral dragons will rush the heroes to use rend or shadow breath
-        if available, as well as create darkness around themselves as their
-        maneuver. Smarter than young dragons, adult umbral dragons will fly away
-        when weak.
+        Adult umbral dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or shadow breath if available, as well as create darkness around
+        themselves as their maneuver. Smarter than young dragons, adult umbral
+        dragons will fly away when weak.
       </span>
     ),
     statBlock: (
@@ -3477,6 +3296,7 @@ const DragonMonsters = [
         vision="night"
         resistances="necrotic"
         speeds="fly 1"
+        basicMelee="12 physical"
         traits={[
           {
             name: "Boss Monster",
@@ -3505,23 +3325,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "12 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Shadow Breath",
             keywords: "range, recharge",
             target: (
@@ -3644,10 +3448,13 @@ const DragonMonsters = [
       "The elusive umbral dragons live in the dangerous shadow realm, where undead shadows and other horrors dwell. Older umbral dragons often rule over their own domains within the shadow realm or sometimes venture into the mortal realm to spread gloom and darkness,",
     tactics: (
       <span>
-        Ancient umbral dragons will rush the heroes to use rend or shadow breath
-        if available, as well as create darkness around themselves as their
-        maneuver. Smarter than young dragons, ancient umbral dragons will fly
-        away when weak.
+        Ancient umbral dragons will rush the heroes to use{" "}
+        <Link className="internal-link" to="/combat-abilities#strike">
+          strike
+        </Link>{" "}
+        or shadow breath if available, as well as create darkness around
+        themselves as their maneuver. Smarter than young dragons, ancient umbral
+        dragons will fly away when weak.
       </span>
     ),
     statBlock: (
@@ -3664,6 +3471,7 @@ const DragonMonsters = [
         role="Skirmisher"
         vision="night"
         resistances="necrotic"
+        basicMelee="18 physical"
         speeds="fly 2"
         traits={[
           {
@@ -3697,23 +3505,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
-            name: "Rend",
-            keywords: "melee, weapon",
-            target: (
-              <span>
-                1{" "}
-                <Link className="internal-link" to="/rules/combat#engaged">
-                  engaged
-                </Link>{" "}
-                creature
-              </span>
-            ),
-            defense: "Guard",
-            damage: "18 physical damage",
-          },
-          {
-            basic: false,
+            // basic: false,
             name: "Shadow Breath",
             keywords: "range, recharge",
             target: (
@@ -3855,6 +3647,7 @@ const DragonMonsters = [
         threat="Major"
         role="Disabler"
         vision="night"
+        basicMelee="3 physical"
         speeds="fly 1"
         traits={[
           {
@@ -3870,7 +3663,7 @@ const DragonMonsters = [
         ]}
         actions={[
           {
-            basic: true,
+            // basic: true,
             name: "Grabbing Rend",
             keywords: "melee, weapon",
             target: (
@@ -3894,7 +3687,7 @@ const DragonMonsters = [
             ),
           },
           {
-            basic: true,
+            // basic: true,
             name: "Tail Sting",
             target: (
               <span>

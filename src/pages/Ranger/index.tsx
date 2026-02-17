@@ -376,43 +376,20 @@ function Ranger() {
               // mgt="12 + PB"
               res="8 + PB"
               pb="PB"
+              basicMelee="PB physical"
               speeds="fly 1 (Air only), swim 1 (Water only)"
               traits={[
                 {
                   name: "Aquatic (Water only)",
                   description: "The primal beast can breath only underwater.",
                 },
-              ]}
-              summons
-              actions={[
                 {
-                  basic: true,
-                  name: "Slam",
-                  keywords: "melee, weapon",
-                  target: (
-                    <span>
-                      1{" "}
-                      <Link
-                        className="internal-link"
-                        to="/rules/combat#engaged"
-                      >
-                        engaged
-                      </Link>{" "}
-                      creature
-                    </span>
-                  ),
-                  defense: "Guard",
-                  damage: "PB physical damage",
-                  success: (
-                    <span>
-                      <Link className="internal-link" to="/conditions#prone">
-                        prone
-                      </Link>{" "}
-                      (Land only)
-                    </span>
-                  ),
+                  name: "Pounce (Land only)",
+                  description:
+                    "When the primal beast gets a success on a melee strike, the target is knocked prone.",
                 },
               ]}
+              summons
             />
 
             <h2>Warden</h2>
