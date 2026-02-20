@@ -331,7 +331,11 @@ function HeroicArchetypes() {
                     Strike
                   </Link>
                   , and you deal additional damage equal to your proficiency
-                  bonus. On a success or higher, the target also takes 1{" "}
+                  bonus, or double your proficiency bonus if you are{" "}
+                  <Link className="internal-link" to="/rules/combat#hidden">
+                    hidden
+                  </Link>
+                  . On a success or higher, the target also takes 1{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#ongoing-damage"

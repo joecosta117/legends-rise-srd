@@ -5516,7 +5516,15 @@ export const warSpells = [
                   Strike
                 </Link>
                 , dealing the chosen damage type instead of your weapon's normal
-                damage type, and you deal an additional 2 damage per spell tier
+                damage type, and you deal an additional 2 damage per spell tier.
+                On a success or higher, the target also takes 1{" "}
+                <Link
+                  className="internal-link"
+                  to="/rules/combat#ongoing-damage"
+                >
+                  ongoing
+                </Link>{" "}
+                damage per spell tier of the chosen damage type.
               </span>
             }
           />

@@ -185,8 +185,8 @@ function Paladin() {
                     Strike
                   </Link>
                   , dealing holy or unholy damage (your choice) instead of your
-                  weapon's normal damage type, and you deal additional damage
-                  equal to your proficiency bonus
+                  weapon's normal damage type, and you deal 3 additional damage
+                  per your tier.
                 </span>
               }
             />
