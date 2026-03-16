@@ -759,11 +759,18 @@ function ThemeTalents() {
       content: (
         <span>
           When you help an ally on a{" "}
-          <Link className="internal-link" to="/rules/skills">
+          <Link
+            className="internal-link"
+            to="/rules/skills#helping-another-hero"
+          >
             skill roll
           </Link>{" "}
-          or group skill roll, the bonus you give to the final skill roll
-          increases to <Modifier type="f" count="2" />.
+          or{" "}
+          <Link className="internal-link" to="/rules/skills#group-rolls">
+            group skill roll
+          </Link>
+          , the bonus you give to the final skill roll increases to{" "}
+          <Modifier type="f" count="2" />.
         </span>
       ),
     },
