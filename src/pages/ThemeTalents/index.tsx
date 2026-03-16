@@ -758,11 +758,12 @@ function ThemeTalents() {
       title: "Natural Leader",
       content: (
         <span>
-          You gain <Modifier type="f" count="1" /> on{" "}
+          When you help an ally on a{" "}
           <Link className="internal-link" to="/rules/skills">
-            skill rolls
+            skill roll
           </Link>{" "}
-          to help another person’s skill rolls.
+          or group skill roll, the bonus you give to the final skill roll
+          increases to <Modifier type="f" count="2" />.
         </span>
       ),
     },

@@ -470,13 +470,16 @@ function SkillRules() {
           try again later.
         </p>
 
-        {/* <h2 id="helping-another-hero">Helping Another Hero</h2>
+        <h2 id="helping-another-hero">Helping Another Hero</h2>
         <p>
-          A hero can aid another at a task. One hero will make the final skill
-          roll, while the assister helps them by also making the same skill roll
-          at a normal difficulty. Only one hero can assist another at a time.
+          A hero can aid an ally at a task. One hero makes the skill roll with
+          the helper explaining how they assist. If the helper has an experience
+          relevant to the task, then the skill roll gains{" "}
+          <Modifier type="f" count="1" />. Otherwise the the skill roll takes{" "}
+          <Modifier type="mf" count="1" />. Only one hero can assist another at
+          a time.
         </p>
-        <ul>
+        {/* <ul>
           <li>
             <span>
               <b>Critical Success:</b> The ally attempting the task gains{" "}

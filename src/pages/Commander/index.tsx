@@ -226,11 +226,7 @@ function Commander() {
             <h3 className="header">Commanding Presence</h3>
             <p>
               You gain the natural leader martial theme talent, but your bonus
-              from the talent increases to{" "}
-              <b>
-                +2 <img className="icon" src={fortune} alt="fortune icon" />
-              </b>
-              .
+              from the talent increases to <Modifier type="f" count="3" />.
             </p>
 
             <h3 className="header">Subclass</h3>
