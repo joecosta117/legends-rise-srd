@@ -1243,7 +1243,7 @@ function LegendaryArchetypes() {
             <h4 className="header">Heroes Never Fail (8th-Level Feature)</h4>
             <p>
               You know how to push your luck in heroic situations. When you get
-              a critical success on a roll, you regain a{" "}
+              a critical success on a roll, you gain a{" "}
               <Link className="internal-link" to="/rules/rolling#hero-point">
                 hero point
               </Link>{" "}

@@ -23,11 +23,7 @@ function MythicalTalents() {
         </p>
 
         <h3 className="header">Mythical Luck</h3>
-        <p>
-          You start off each game session with an additional hero point, and
-          your maximum amount of hero points you can have at once increases by
-          +1.
-        </p>
+        <p>You start off each game session with two additional hero points.</p>
 
         <h3 className="header">Mythical Magic</h3>
         <p>

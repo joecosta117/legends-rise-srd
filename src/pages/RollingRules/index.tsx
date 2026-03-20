@@ -282,11 +282,11 @@ function RollingRules() {
           roll, and see the result, you can use a hero point to roll only the
           d20 again, and take the higher result.
         </p>
-        <h3 className="header">Regaining Hero Points</h3>
+        <h3 className="header">Gaining Hero Points</h3>
         <p>
-          When you roll a 20 on a d20 for a check, you gain a hero point, but
-          you can’t have more than one hero point at a time. Spend those points
-          so you can earn them back!
+          When you roll a 20 on a d20 for a check, you gain a hero point.
+          However, your number of hero points reset to 1 at the start of each
+          game session, so spend those points before you lose them!
         </p>
         <h3 className="header">Helping Allies</h3>
         <p>

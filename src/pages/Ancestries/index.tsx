@@ -1015,9 +1015,8 @@ function Ancestries() {
                       to="/rules/rolling#hero-point"
                     >
                       hero point
-                    </Link>{" "}
-                    , and your maximum amount of hero points you can have at
-                    once increases by +1.
+                    </Link>
+                    .
                   </span>
                 </li>
               </ul>
