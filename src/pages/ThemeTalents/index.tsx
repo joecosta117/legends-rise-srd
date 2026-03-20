@@ -932,8 +932,7 @@ function ThemeTalents() {
           <Link className="internal-link" to="/rules/rolling#hero-point">
             hero point
           </Link>
-          , and your maximum amount of hero points you can have at once
-          increases by +1. When you spend a hero point on a{" "}
+          . When you spend a hero point on a{" "}
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>

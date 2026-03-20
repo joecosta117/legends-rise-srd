@@ -415,13 +415,6 @@ function OptionalRules() {
               </span>
             </a>
           </li>
-          <li>
-            <a href="#stacking-hero-points">
-              <span>
-                <b>Stacking Hero Points</b>
-              </span>
-            </a>
-          </li>
         </ul>
 
         <h2 id="doom-die">Doom Die</h2>
@@ -772,16 +765,6 @@ function OptionalRules() {
           slowly transforms heroes into monsters. When a hero gets their final
           scar, the darkness takes them and they return to the story corrupted
           by evil.
-        </p>
-
-        <h2 id="stacking-hero-points">Stacking Hero Points</h2>
-        <p>
-          For even more heroic games or easier ones, the GM can let heroes stack
-          hero points up to a maximum of 3. Heroes still only gain 1 hero point
-          at the start of a game session, but they can gain more with good rolls
-          or save them over multiple game sessions. A clever player can enter a
-          pivotal scene with multiple hero points to help sway fate in their
-          favor!
         </p>
       </div>
     </div>
