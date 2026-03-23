@@ -2159,7 +2159,7 @@ function HeroicArchetypes() {
               </li>
             </ul>
             <h3 className="header">7th-Level Features</h3>
-            <p>You gain the rogue’s agile feature.</p>
+            <p>You gain the rogue’s slippery feature.</p>
           </div>
         )}
         {selectedArchetype === "Seeker Multiclass" && (
