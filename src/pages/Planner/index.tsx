@@ -46,6 +46,16 @@ export default function BuildPlanner() {
         <div className="build-planner-layout">
           {/* Left Column: Form */}
           <div className="build-planner-form-section">
+            <div className="build-planner-form-section-tabs">
+              <button className="link-button">Background</button>
+
+              <button className="link-button">Class</button>
+
+              <button className="link-button">Experiences</button>
+
+              <button className="link-button">Equipment</button>
+            </div>
+
             <CharacterBuilderForm
               register={register}
               errors={errors}
