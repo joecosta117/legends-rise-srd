@@ -508,7 +508,7 @@ function Relics() {
               </i>
             </p>
             <p>
-              On a critically successful{" "}
+              On a successful{" "}
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
@@ -591,7 +591,7 @@ function Relics() {
               <Link className="internal-link" to="/combat-abilities#strike">
                 strike
               </Link>{" "}
-              using this weapon, the target takes 1{" "}
+              using this weapon, the target takes 2{" "}
               <Link className="internal-link" to="/rules/combat#ongoing-damage">
                 ongoing
               </Link>{" "}
