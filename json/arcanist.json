@@ -1,0 +1,292 @@
+{
+  "class": {
+    "name": "Arcanist",
+    "description": "Arcanists focus on manipulating the arcane, the purest form of magic. Play an arcanist if you want to cast diverse magic in battle.",
+    "coreFeatures": {
+      "theme": {
+        "name": "Arcane",
+        "link": "/theme-talents"
+      },
+      "defenseBonus": "+1 to Spirit",
+      "startingHitPoints": 10,
+      "recoveries": 6,
+      "training": "Mystic robes",
+      "startingEquipment": {
+        "description": "You gain mystic robes and an implement.",
+        "suggestion": "You gain mystic robes and a wand as your implement."
+      }
+    },
+    "origins": [
+      {
+        "name": "Gifted",
+        "description": "You made a pact with a powerful entity for your arcane magic, or perhaps it was gifted upon you as a reward."
+      },
+      {
+        "name": "Innate",
+        "description": "Thanks to a magical bloodline, experimentation, or arcane exposure, magic flows through your veins and is a part of you."
+      },
+      {
+        "name": "Learned",
+        "description": "Through intense study and preparation, you have learned the secrets of arcane magic."
+      }
+    ],
+    "levelFeatures": [
+      {
+        "level": 1,
+        "features": [
+          {
+            "name": "Arcanist Magic",
+            "description": "You begin untapping the power of arcane magic.",
+            "details": [
+              {
+                "label": "Mana",
+                "value": "2, increasing to 5 at 5th level, and 8 at 8th level"
+              },
+              {
+                "label": "Magic Tradition",
+                "value": "You learn the arcane tradition and another magic tradition, except for eldritch, holy, nature, or unholy. You also learn a tier 1 battle spell from each tradition.",
+                "suggestion": "You learn the arcane and protection traditions. From the arcane tradition, you learn the arcane dart and arcane barrage battle spells, and from the protection tradition you learn quick ward and greater ward battle spells."
+              },
+              {
+                "label": "Spells at Higher Levels",
+                "value": "At levels 2, 4, 6, and 9, you learn a battle spell or a magic tradition, except for eldritch, holy, nature, or unholy."
+              }
+            ]
+          },
+          {
+            "name": "High Magic",
+            "type": "ability",
+            "actType": "Free",
+            "descriptor": "You have learned to command greater spells.",
+            "frequency": "Encounter",
+            "trigger": "You cast a battle spell",
+            "effect": "Treat the spell's tier as one higher"
+          },
+          {
+            "name": "Subclass",
+            "description": "Choose the wizard subclass, or another subclass of your choice. At 1st level, you gain features from your chosen subclass."
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "features": [
+          {
+            "name": "Class Talents",
+            "description": "Starting at 2nd level, you gain one class talent from the list at the end of this class description. You gain another class talent at 4th, 6th, and 9th levels."
+          },
+          {
+            "name": "Theme Talents",
+            "description": "You also gain a theme talent from your theme. You gain another theme talent at 4th, 6th, and 9th level."
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "features": [
+          {
+            "name": "Countermagic",
+            "type": "ability",
+            "actType": "Reaction",
+            "descriptor": "You utilize your knowledge of the arcane to disrupt another caster's magic.",
+            "frequency": "At-will",
+            "keywords": "Magical, Range",
+            "trigger": "You see a creature within 1 zone use a magical ability",
+            "effect": "The ability's attack roll takes -1 misfortune"
+          }
+        ]
+      }
+    ],
+    "subclasses": [
+      {
+        "name": "Wizard",
+        "description": "Wizards take a studious approach in learning all forms of magic.",
+        "features": [
+          {
+            "level": 1,
+            "name": "Studious Spell",
+            "type": "ability",
+            "actType": "Reaction",
+            "descriptor": "You analyze your surroundings as you unleash your magic.",
+            "frequency": "At-will",
+            "trigger": "You cast a battle spell",
+            "effect": "study"
+          }
+        ]
+      },
+      {
+        "name": "Sorcerer",
+        "description": "Sorcerers imbue their bodies with arcane energy, becoming one with magic. Some are born this way, while others achieve this state through dangerous magical experiments.",
+        "features": [
+          {
+            "level": 1,
+            "name": "Unleash Arcane",
+            "type": "ability",
+            "actType": "Maneuver",
+            "descriptor": "You enter an unstable state of heightened magic that leaves your physical body exposed",
+            "frequency": "At-will",
+            "keywords": "Magical",
+            "duration": "Scene ends",
+            "effect": [
+              "+1 fortune to attack rolls with magical abilities",
+              "Resistance to arcane damage",
+              "You are vulnerable"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Warmage",
+        "description": "You specialize in casting from the frontlines of battle, using magic to bolster your defenses and destruction.",
+        "features": [
+          {
+            "level": 1,
+            "name": "War Magic",
+            "description": "While wearing mystic robes, you gain +1 to Guard. Also, when you deal damage on an attack roll with a magical ability, you deal additional damage equal to your tier."
+          }
+        ]
+      }
+    ],
+    "talents": {
+      "tier1": [
+        {
+          "name": "Expanded Arcanist Magic",
+          "description": "Learn a battle spell or magic tradition from one listed in arcanist magic. You can take this class talent multiple times.",
+          "tier": 1,
+          "requirement": null
+        },
+        {
+          "name": "Far Spell",
+          "type": "ability",
+          "tier": 1,
+          "requirement": null,
+          "actType": "Reaction",
+          "descriptor": "You extend your magic further than possible.",
+          "frequency": "At-will",
+          "keywords": "Spellshape",
+          "trigger": "You cast a battle spell that targets a creature or zone",
+          "effect": "For a range spell, increase the range by 1 zone, or for a melee spell, you can instead target a creature within your zone."
+        },
+        {
+          "name": "Powerful Spell",
+          "type": "ability",
+          "tier": 1,
+          "requirement": null,
+          "actType": "Reaction",
+          "descriptor": "You amplify your dangerous magic.",
+          "frequency": "At-will",
+          "keywords": "Spellshape",
+          "trigger": "You cast a tier 1+ battle spell that deals initial damage",
+          "effect": "Increase the triggering spell's initial damage by the spell tier."
+        },
+        {
+          "name": "Safe Spell",
+          "type": "ability",
+          "tier": 1,
+          "requirement": null,
+          "actType": "Reaction",
+          "descriptor": "You shield your allies from your magic.",
+          "frequency": "At-will",
+          "keywords": "Spellshape",
+          "trigger": "You cast a battle spell that targets an entire zone or zone border",
+          "effect": "Choose a number of creatures equal to your proficiency bonus to be unaffected by the triggering spell."
+        },
+        {
+          "name": "Substitute Spell",
+          "type": "passive",
+          "tier": 1,
+          "requirement": null,
+          "description": "During a safe rest, you can replace one of your known battle spells with another battle spell of the same tier and from the same magic tradition."
+        }
+      ],
+      "tier2": [
+        {
+          "name": "Advanced Learning",
+          "type": "passive",
+          "tier": 2,
+          "requirement": "wizard",
+          "description": "You learn a battle spell from one of your known magic traditions of a spell tier no higher than your tier. Make this choice again."
+        },
+        {
+          "name": "Arcane Vitality",
+          "type": "ability",
+          "tier": 2,
+          "requirement": "sorcerer",
+          "actType": "Free",
+          "descriptor": "You transmute some of your life force into magical essence.",
+          "frequency": "At-will",
+          "keywords": "Magical",
+          "effect": "Spend a recovery, but instead of regaining hit points, you regain mana equal to your tier."
+        },
+        {
+          "name": "Effortless Spell",
+          "type": "ability",
+          "tier": 2,
+          "requirement": null,
+          "actType": "Reaction",
+          "descriptor": "With little strain, you cast a familiar spell.",
+          "frequency": "Encounter",
+          "keywords": "Spellshape",
+          "trigger": "You cast a tier 1+ battle spell",
+          "effect": "You don't spend mana on the triggering spell."
+        },
+        {
+          "name": "Magic Surge",
+          "type": "passive",
+          "tier": 2,
+          "requirement": "warmage",
+          "description": "When you use high magic, arcane energy leaps out from you at a number of creatures equal to the spell's tier within 1 zone. Target creatures take arcane damage equal to the spell's tier."
+        },
+        {
+          "name": "Immediate Spell",
+          "type": "ability",
+          "tier": 2,
+          "requirement": null,
+          "actType": "Reaction",
+          "descriptor": "With great effort, you quickly cast a spell.",
+          "frequency": "Encounter",
+          "keywords": "Spellshape",
+          "trigger": "You cast a battle spell that takes an action",
+          "effect": "You can instead use a maneuver to cast the triggering spell"
+        }
+      ],
+      "tier3": [
+        {
+          "name": "All Knowing",
+          "type": "passive",
+          "tier": 3,
+          "requirement": "wizard",
+          "description": "On your turn, you can study as a free action, but only once per turn."
+        },
+        {
+          "name": "Arcane Ascension",
+          "type": "passive",
+          "tier": 3,
+          "requirement": "sorcerer",
+          "description": "During unleash arcane, you gain a fly speed equal to your land speed and when you start your turn without mana, you regain 2 mana."
+        },
+        {
+          "name": "Master Arcanist",
+          "type": "passive",
+          "tier": 3,
+          "requirement": null,
+          "description": "You gain a second reaction that you can only use on features from this class such as countermagic."
+        },
+        {
+          "name": "Overpower Magic",
+          "type": "passive",
+          "tier": 3,
+          "requirement": "warmage",
+          "description": "All your magical abilities ignore damage resistances."
+        },
+        {
+          "name": "Unparalleled Magic",
+          "type": "passive",
+          "tier": 3,
+          "requirement": null,
+          "description": "You can use high magic a second time per scene."
+        }
+      ]
+    }
+  }
+}

@@ -52,6 +52,7 @@ import MythicalTalents from "./pages/MythicalTalents";
 import Vessel from "./pages/Vessel";
 import OptionalRules from "./pages/OptionalRules";
 import GMGuidance from "./pages/GMGuidance";
+import BuildPlanner from "./pages/Planner";
 
 function App() {
   return (
@@ -119,6 +120,7 @@ function App() {
             <Route path="/mythical-talents" element={<MythicalTalents />} />
             <Route path="/optional-rules" element={<OptionalRules />} />
             <Route path="/gm-advice" element={<GMGuidance />} />
+            <Route path="/build-planner" element={<BuildPlanner />} />
           </Routes>
         </div>
       </ScrollToTop>
