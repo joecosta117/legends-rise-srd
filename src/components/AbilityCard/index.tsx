@@ -272,7 +272,7 @@ const AbilityCard: React.FC<AbilityCardProps> = ({
               )}
               {partial && (
                 <p>
-                  <b>• Failure:</b>{" "}
+                  <b>• Partial Success:</b>{" "}
                   {typeof partial === "string"
                     ? transformEffect(partial)
                     : partial}
