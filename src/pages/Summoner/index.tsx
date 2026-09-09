@@ -966,13 +966,15 @@ function Summoner() {
 
             <h3 className="header">Destructive Aura</h3>
             <p>
-              Choose a damage type appropriate to your subclass. Treat the zone
-              of your major summons as a{" "}
+              Choose a damage type appropriate to your subclass. When you use
+              conjure summons, you can choose to treat the zone of your major
+              summons as a{" "}
               <Link className="internal-link" to="/rules/combat#zone-types">
                 dangerous zone
               </Link>{" "}
-              (1 damage per your tier of the chosen damage type) only for
-              enemies.
+              (1 damage per your tier of the chosen damage type). On later
+              turns, when you command your major summons, you can end the aura
+              as a free action.
             </p>
 
             <h3 className="header">Elemental Link</h3>
