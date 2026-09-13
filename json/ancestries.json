@@ -1,0 +1,657 @@
+{
+  "ancestries": [
+    {
+      "name": "Human",
+      "dropdownDescription": "You are the most ambitious and adaptable of the mortals.",
+      "accordionDescription": "Humans are the most common ancestry in Xorik.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Choose small or medium, as humans typically are between 4 to 7 feet tall.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Quick Learner",
+          "description": "When you make a skill roll with no relevant experience, you still add half your proficiency bonus to the roll.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Ambitious",
+          "description": "You gain a tier 1 class talent or a tier 1 theme talent.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Beastkin",
+      "dropdownDescription": "You are an animal-like humanoid attuned to nature.",
+      "accordionDescription": "Animal-like humanoids, beastkin all differ widely depending on their animal likeness. Originally creatures from the green realm, beastkin have formed communities in the mortal world.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Choose small or medium, as beastkin typically are between 4 to 7 feet tall.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Primal Connection",
+          "description": "You can communicate with animals that resemble you, such a bird beastkin communicating with birds.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Animal Characteristics",
+          "description": "Choose two characteristics from the following list.",
+          "type": "P",
+          "limit": 2,
+          "subtraits": [
+            {
+              "name": "Aquatic",
+              "effect": "You can breathe underwater and gain a swim speed of 1."
+            },
+            {
+              "name": "Behemoth",
+              "effect": "Your size increases to large."
+            },
+            {
+              "name": "Climber",
+              "effect": "You gain a climb speed of 1."
+            },
+            {
+              "name": "Hunter",
+              "effect": "You gain darkvision."
+            },
+            {
+              "name": "Natural Weapons",
+              "effect": "You have claws, sharp teeth, horns, or other means of hurting foes. Your natural melee weapons deal 3 physical damage."
+            },
+            {
+              "name": "Scales",
+              "effect": "Your Guard increases by +1 while unarmored."
+            },
+            {
+              "name": "Wings",
+              "effect": "You gain a fly speed of 1. However, your hollow bones make you fragile, so your maximum hit points decrease by your proficiency bonus."
+            },
+            {
+              "name": "Venomous",
+              "effect": "On a critically successful strike with a natural melee weapon, the target is hindered (next turn ends)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cambion",
+      "dropdownDescription": "You have been touched by the dark powers of the lower realms.",
+      "accordionDescription": "When mortals consort with fiends and dabble in dark magic, the lower realms influence on the mortal realm deepens, sometimes resulting in people born with dark powers.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium depending on the cambion's parents. A cambion born to gnomish parents would likely be small, while one born among humans is likely medium.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Infernal Heart",
+          "description": "You gain resistance to unholy damage.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Fiend Form",
+          "description": "You gain the following ability: You unleash the power of the lower realms to transform into a fiend. You gain temporary hit points equal to your proficiency bonus. When you deal damage from an attack roll, you deal additional damage equal to your tier.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Dhampir",
+      "dropdownDescription": "You have vampiric powers.",
+      "accordionDescription": "Dhampirs are rare creatures born out of the union between a vampire and mortal. Other dhampirs are created when a mortal is cursed with vampiric magic. Dhampirs only possess minor powers of true vampires.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Child of Darkness",
+          "description": "You gain resistance to necrotic damage.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Vampiric Bite",
+          "description": "You gain the following ability: You bite down on a living foe, draining their blood, and gaining a surge of vitality. Target: 1 living engaged creature. Defense: Guard. Damage: 5 physical damage per your tier. Effect: You gain temporary hit points equal to half the damage dealt (scene ends).",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Drakkin",
+      "dropdownDescription": "You are a draconic humanoid.",
+      "accordionDescription": "Proud dragon-like humanoids, drakkins can be a terrifying foe or great ally.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Draconic Heritage",
+          "description": "Choose cold, fire, lightning, or toxic as your draconic heritage. Your draconic heritage determines the features you gain from this ancestry. For mixed ancestries, you still choose a draconic heritage.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Draconic Resistance",
+          "description": "You gain resistance to the damage type chosen for draconic heritage.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Drakkin Breath Weapon",
+          "description": "Like a dragon, you exhale elemental energy at your foes. Target: 1d4+1 enemies in your zone. Defense: Guard. Damage: 3 damage per your tier of the damage type chosen for draconic heritage.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Dwarf",
+      "dropdownDescription": "You are stout but as tough as the mountains.",
+      "accordionDescription": "Dwarves are an ancient ancestry of Xorik, living in the great mountains.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Dwarven Constitution",
+          "description": "Your starting hit points increase by your proficiency bonus.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Dwarven Resilience",
+          "description": "You gain the following ability: You dig deep and rely on the stubborn toughness of your ancestors. Trigger: You become shaken. Effect: Spend a recovery.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Elementalkin",
+      "dropdownDescription": "You have an affinity for the elemental realms, embodying air, earth, fire, ice, or water.",
+      "accordionDescription": "In some places, the barrier between the mortal realm and elemental realms are thin, resulting in some being born with elemental power.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium depending on the elementalkin's parents. An elementalkin born to gnomish parents would likely be small, while one born among drakkins is likely medium.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Elemental Soul",
+          "description": "Choose air, earth, fire, ice, or water as your elemental soul. Your elemental soul determines the features you gain from this ancestry. For mixed ancestries, you still choose an elemental soul.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Elemental Affinity",
+          "description": "You gain resistance to a damage type depending on your elemental soul: lightning (air), fire (fire), or cold (ice). For water, you can breathe underwater and gain a swim speed of 1. For earth, your starting hit points increase by your proficiency bonus.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Elemental Magic",
+          "description": "You learn a battle spell depending on your elemental soul even if you don't know the spell's magic tradition: lightning bolt (air), stone armor (earth), fireball (fire), frozen prison (ice), or crashing wave (water). Once per scene, you can cast this spell at a spell tier equal to your tier without spending mana.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Elf",
+      "dropdownDescription": "You are nimble and graceful.",
+      "accordionDescription": "The long lived and nimble elves are outsiders that escaped a calamity on their homeworld by traveling to this world.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Elven Heritage",
+          "description": "Choose whether you are a light elf or dark elf. Light elves are most well known to other surface dwellers, and often make wondrous cities within nature. Dark elves often live underground in the night lands, and have adapted to their subterranean home.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Subterranean Sight",
+          "description": "You gain darkvision. (Dark Elf Only)",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Nimble Steps",
+          "description": "When you move, you don't trigger reactions. (Light Elf Only)",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Elven Accuracy",
+          "description": "You gain the following ability: Relying on your heightened senses and agility, you strike true. Trigger: You see the result of your attack roll. Effect: Reroll the triggering attack roll, and take the higher result.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Forgeborn",
+      "dropdownDescription": "You are a sentient construct, animated by magic or ancient craftsmanship.",
+      "accordionDescription": "Forgeborn are sentient constructs that were created to help fight in past wars.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium, depending on their construction with smaller models made for scouting.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Armored Core",
+          "description": "Your Guard increases by +1.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Overdrive",
+          "description": "You gain the following ability: You push your constructed body to the limits. Effect: You gain an extra action or maneuver this turn.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Giantkin",
+      "dropdownDescription": "You possess the power of giants in your blood.",
+      "accordionDescription": "Giantkins claim the latent powers of giants either from through their bloodline, or being blessed by giant magic. Many giantkins have their own communities while others live closely with true giants.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Medium unless you have tall stature.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Tall Stature",
+          "description": "Your size becomes large. You can still fit into most spaces a medium sized creature can, but it's not always comfortable.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Power of Giants",
+          "description": "You gain the following ability: You call upon the power of giants to grow in stature. You gain temporary hit points equal to your proficiency bonus and your size becomes huge.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Goblin",
+      "dropdownDescription": "You are small, mischievous, with a knack for survival.",
+      "accordionDescription": "Small people, goblins are survivors, rumored to once have come from the green realm along with gnomes. Unlike gnomes, goblins possess a tricky gift for getting out of trouble.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Tricksy Eyes",
+          "description": "You gain darkvision.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Not Today!",
+          "description": "You gain the following ability: As you see an attack coming, you dart away. Trigger: You see a creature make an attack roll against you. Effect: Move. If your movement puts you out of range of the triggering attack roll, then the roll has no effect on you.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Gnome",
+      "dropdownDescription": "You are a shorter people with faerie magic.",
+      "accordionDescription": "Gnomes originated from the magical green realm, and still retain fae magic as well as a supernatural drive for whimsy and novelty.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Faerie Trickery",
+          "description": "You learn the illusion tradition.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Chaotic Whimsy",
+          "description": "At the start of a scene, you can choose to roll a d6 for one of the following effects.",
+          "type": "P",
+          "limit": null,
+          "subtraits": [
+            {
+              "name": "1",
+              "effect": "You immediately teleport up to 1 zone away."
+            },
+            {
+              "name": "2",
+              "effect": "Your speeds increase by 1 (scene ends)."
+            },
+            {
+              "name": "3",
+              "effect": "You gain temporary hit points equal to your proficiency bonus (scene ends)."
+            },
+            {
+              "name": "4",
+              "effect": "You gain +1 fortune to your first roll in this scene."
+            },
+            {
+              "name": "5",
+              "effect": "Your size shrinks to tiny or grows to large (your choice) for the scene."
+            },
+            {
+              "name": "6",
+              "effect": "You become invisible until after you use an action or the scene ends."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Halfling",
+      "dropdownDescription": "Smaller humanoids with uncanny luck.",
+      "accordionDescription": "Short humanoids resembling smaller humans, halflings make up for their size with luck and bravery to overcome danger.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Resolve",
+          "description": "You gain +1 fortune to overcome rolls.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Lucky",
+          "description": "You start off each game session with an additional hero point, and your maximum amount of hero points you can have at once increases by +1.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Kobold",
+      "dropdownDescription": "You are a small reptilian humanoid that thrives in groups.",
+      "accordionDescription": "Small reptilian humanoids, kobolds make up for their frail bodies with cunning tactics and group mentality.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Strength in Numbers",
+          "description": "You gain +1 fortune to attack rolls against targets engaged to an ally.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Distracting Cry",
+          "description": "You gain the following ability: With a loud yip from such a small frame, you momentarily catch your foes' bewildered attention. Target: 1d4+1 enemies within your zone. Defense: Spirit. Critical: vulnerable (scene ends). Success: vulnerable (next turn ends).",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Lycanblood",
+      "dropdownDescription": "You possess the latent powers of a were-creature.",
+      "accordionDescription": "Children of lycanthropes often possess minor powers of their cursed parents, including animalistic traits. There are many types of lycanthropes from werewolves to wererats, so consider what your heritage manifests.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Supernatural Predator",
+          "description": "You gain +1 fortune to attack rolls against shaken targets.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Lycan Form",
+          "description": "You gain the following ability: Your body transforms into an animalistic hybrid form that makes you stronger than normal. Duration: Scene ends. Effect: You gain regeneration equal to your tier while shaken, your natural melee weapons deal 3 physical damage, and +1 fortune to overpower and any skill rolls requiring athleticism.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Nephilim",
+      "dropdownDescription": "You have been blessed with celestial powers.",
+      "accordionDescription": "When mortals mingle with angels or perform extraordinary good deeds, the heavenly realms bestow gifts upon the mortal realm, sometimes resulting in people born with angelic powers.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium depending on the nephilim's parents. A nephilim born to gnomish parents would likely be small, while one born among drakkins is likely medium.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Pure of Heart",
+          "description": "You gain resistance to holy damage.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Celestial Form",
+          "description": "You gain the following ability: You unleash the power of the heavens to transform into an angel. Duration: Scene ends. Effect: You gain a fly speed equal to your land speed. When you deal damage from an attack roll, you deal additional damage equal to your tier.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Orc",
+      "dropdownDescription": "You are fierce and proud.",
+      "accordionDescription": "Orcs are a martial focused people that favor athleticism and accomplishments.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Orcish Fury",
+          "description": "When you are shaken, you gain +1 fortune to attack rolls.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Glorious Vigor",
+          "description": "You gain the following ability: You can push your body's resilience beyond mortal limits. Duration: Scene ends. Effect: You gain temporary hit points equal to your shaken value.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Silvan",
+      "dropdownDescription": "You are a sentient, humanoid plant or tree.",
+      "accordionDescription": "Deep within forests where the borders between the green realm and mortal world are thin, primal magic awakens the plants and trees creating silvans. Each silvan is different with some resembling humanoid plants while others are more tree-like. Silvans typically guard their natural homes or carry a great purpose assigned to them upon their creation.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Regenerative Flora",
+          "description": "You gain an extra recovery.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Verdant Reach",
+          "description": "You gain the following ability: You stretch your plant-like limb or vine to reach farther than possible. Duration: End of your turn. Effect: Whenever you use a range ability with a target, you can increase the range by 1 zone. For a melee ability, you can target anyone within 1 zone.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Umbraling",
+      "dropdownDescription": "You have the dark powers of the shadow realm.",
+      "accordionDescription": "Umbralings are humanoids that have been touched by the shadow realm's ebony power. Some communities of umbralings even live in the dreaded realm.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium depending on the umbraling's parents. An umbraling born to gnomish parents would likely be small, while one born among drakkins is likely medium.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Dark Sight",
+          "description": "You gain darkvision.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Umbral Magic",
+          "description": "You learn the darkness battle spell even if you don't know the shadow tradition. Once per scene, you can cast this spell at a spell tier equal to your tier without spending mana.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    },
+    {
+      "name": "Wight",
+      "dropdownDescription": "You are an undead revenant, kept alive by your anger.",
+      "accordionDescription": "Undead humanoids that mostly resemble their former living forms. A wight's undeath is fueled by vengeance or a desire to satisfy a purpose left unfulfilled during their mortal life.",
+      "traits": [
+        {
+          "name": "Size",
+          "description": "Small or medium, as wights are the same size as when they lived.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Undead",
+          "description": "Your creature type becomes undead.",
+          "type": null,
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Undead Resilience",
+          "description": "You gain resistance to necrotic damage.",
+          "type": "S",
+          "limit": null,
+          "subtraits": null
+        },
+        {
+          "name": "Death Mark",
+          "description": "You gain the following ability: You focus your undying rage on a foe, and your purpose becomes to end their life. Target: 1 creature within 1 zone. Duration: Scene ends or the target dies. Effect: When you deal damage from an attack roll against the target, you deal additional damage equal to your tier. When the target dies, you gain temporary hit points equal to double your proficiency bonus until your next rest.",
+          "type": "P",
+          "limit": null,
+          "subtraits": null
+        }
+      ]
+    }
+  ]
+}

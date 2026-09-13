@@ -1,0 +1,66 @@
+@import "../../styles/index.scss";
+
+// Page wrapper - just padding
+.build-planner-page {
+  padding: 2rem 1rem;
+
+  @include mq(s) {
+    padding: 2rem;
+  }
+}
+
+// Content container - max width centering
+.build-planner-content {
+  max-width: 1800px;
+  margin: 0 auto;
+
+  h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  > p {
+    margin: 0 0 2rem 0;
+    color: $textwhite;
+  }
+}
+
+// TWO-COLUMN GRID LAYOUT
+.build-planner-layout {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  width: 100%;
+
+  // Mobile: Single column by default
+  grid-template-columns: 1fr;
+
+  // Desktop (768px+): Two columns
+  @include mq(s) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+// Left Column: Form
+.build-planner-form-section {
+  &-tabs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  background-color: blue;
+  min-height: 400px;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+// Right Column: Preview
+.build-planner-preview-section {
+  background-color: green;
+  min-height: 400px;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
