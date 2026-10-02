@@ -945,8 +945,8 @@ function Relics() {
               </li>
               <li>
                 <span>
-                  As a maneuver, you can break the staff to unleash an explosion
-                  of arcane fury. Make an{" "}
+                  As an action, you can break the staff to unleash an arcane
+                  explosion. Make an{" "}
                   <Link
                     className="internal-link"
                     to="/rules/combat#attack-roll"
@@ -954,8 +954,9 @@ function Relics() {
                     attack roll
                   </Link>{" "}
                   against the Spirit of each creature within 1 zone, including
-                  yourself, dealing 12 arcane damage. Any creature reduced to 0
-                  hit points from this damage is killed.
+                  yourself, dealing 30 arcane damage. If a creature becomes{" "}
+                  <ToolTip preset="shaken" /> by this damage or is already
+                  shaken, then they are instead reduced to 0 hit points.
                 </span>
               </li>
             </ul>

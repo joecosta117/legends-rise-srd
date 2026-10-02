@@ -1390,7 +1390,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     as one roll result lower
                   </span>
@@ -1450,7 +1450,7 @@ function FightingStyles() {
                       className="internal-link"
                       to="/rules/combat#attack-roll"
                     >
-                      attack rolls
+                      attack roll
                     </Link>{" "}
                     as one roll result lower
                   </span>
