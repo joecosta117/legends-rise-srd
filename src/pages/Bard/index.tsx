@@ -479,7 +479,7 @@ function Bard() {
             </p>
             <p>You gain the following ability:</p>
             <AbilityCard
-              name="Immediate Spell"
+              name="Violent Rewards"
               actType="Reaction"
               descriptor="You reward your newest muse."
               frequency="At-will"
