@@ -15,15 +15,15 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 necrotic damage"
+        consequence="2 necrotic damage"
         actions={[
           {
             // basic: true,
             name: "Siphon Life",
             keywords: "magical",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "2 necrotic damage",
+            damage: "1 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -49,7 +49,7 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 lightning damage"
+        consequence="2 lightning damage"
         actions={[
           {
             // basic: true,
@@ -57,11 +57,11 @@ const HazardList = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Guard",
-            damage: "4 lightning damage",
+            damage: "2 lightning damage",
             success: (
               <span>
-                Make this same attack roll against another creature within 1
-                zone of the original target, and the lightning stops
+                Make this same attack roll against another creature within 3
+                zones of the original target, and the lightning stops
               </span>
             ),
           },
@@ -81,7 +81,7 @@ const HazardList = [
         countdown="d4"
         tier="3"
         threat="Standard"
-        consequence="12 arcane damage"
+        consequence="6 arcane damage"
         actions={[
           {
             // basic: true,
@@ -89,7 +89,7 @@ const HazardList = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "12 arcane damage",
+            damage: "6 arcane damage",
             critical: (
               <span>
                 Same as a success, but the target is in the astral realm for the
@@ -119,15 +119,15 @@ const HazardList = [
         countdown="d4"
         tier="2"
         threat="Standard"
-        consequence="8 arcane damage"
+        consequence="4 arcane damage"
         actions={[
           {
             // basic: true,
             name: "Slow Down Time",
             keywords: "magical",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "4 arcane damage",
+            damage: "2 arcane damage",
             critical: <span>Same as a success, but dazed (overcome ends)</span>,
             success: (
               <span>
@@ -154,13 +154,13 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 necrotic damage"
+        consequence="2 necrotic damage"
         actions={[
           {
             // basic: true,
             name: "Ringing of Doom",
             keywords: "magical",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
             critical: "Same as a success, and the target falls prone from fear",
             success: (
@@ -188,7 +188,7 @@ const HazardList = [
         countdown="d8"
         tier="1"
         threat="Major"
-        consequence="4 necrotic damage"
+        consequence="2 necrotic damage"
         traits={[
           {
             name: "Major Hazard",
@@ -206,9 +206,9 @@ const HazardList = [
             // basic: true,
             name: "Grasp of the Dead",
             keywords: "magical",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "2 necrotic damage",
+            damage: "1 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -234,7 +234,7 @@ const HazardList = [
         countdown="d4"
         tier="2"
         threat="Standard"
-        consequence="8 necrotic damage"
+        consequence="4 necrotic damage"
         actions={[
           {
             // basic: true,
@@ -302,14 +302,14 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 physical damage"
+        consequence="2 physical damage"
         actions={[
           {
             // basic: true,
             name: "Grasping Vines",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Guard",
-            damage: "2 physical damage",
+            damage: "1 physical damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#seized">
@@ -335,14 +335,14 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 toxic damage"
+        consequence="2 toxic damage"
         actions={[
           {
             // basic: true,
             name: "Toxic Spores",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Guard",
-            damage: "2 toxic damage",
+            damage: "1 toxic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -368,15 +368,15 @@ const HazardList = [
         countdown="d4"
         tier="2"
         threat="Standard"
-        consequence="8 psychic damage"
+        consequence="4 psychic damage"
         actions={[
           {
             // basic: true,
             name: "Paralyzing Wail",
             keywords: "magical",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "4 psychic damage",
+            damage: "2 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -402,7 +402,7 @@ const HazardList = [
         countdown="d8"
         tier="2"
         threat="Major"
-        consequence="8 unholy damage"
+        consequence="4 unholy damage"
         traits={[
           {
             name: "Major Hazard",
@@ -422,7 +422,7 @@ const HazardList = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "8 unholy damage",
+            damage: "4 unholy damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">
@@ -448,7 +448,7 @@ const HazardList = [
         countdown="d8"
         tier="2"
         threat="Major"
-        consequence="8 psychic damage"
+        consequence="4 psychic damage"
         traits={[
           {
             name: "Major Hazard",
@@ -468,7 +468,7 @@ const HazardList = [
             keywords: "magical, range",
             target: <span>1 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "8 psychic damage",
+            damage: "4 psychic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#dazed">
@@ -494,15 +494,15 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 unholy damage"
+        consequence="2 unholy damage"
         actions={[
           {
             // basic: true,
             name: "Unending Pain",
             keywords: "magical",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Spirit",
-            damage: "2 unholy damage",
+            damage: "1 unholy damage",
             success: (
               <span>
                 1{" "}
@@ -532,7 +532,7 @@ const HazardList = [
         countdown="d8"
         tier="2"
         threat="Standard"
-        consequence="8 arcane damage"
+        consequence="4 arcane damage"
         actions={[
           {
             // basic: true,
@@ -540,7 +540,7 @@ const HazardList = [
             keywords: "magical, range",
             target: <span>2 creature within 3 zones</span>,
             defense: "Spirit",
-            damage: "8 arcane damage",
+            damage: "4 arcane damage",
           },
         ]}
       />
@@ -558,14 +558,14 @@ const HazardList = [
         countdown="d4"
         tier="1"
         threat="Standard"
-        consequence="4 fire damage"
+        consequence="2 fire damage"
         actions={[
           {
             // basic: true,
             name: "Burning Flames",
-            target: <span>1d4+1 enemies within the hazard's zone</span>,
+            target: <span>1d4+1 enemies within 1 zone</span>,
             defense: "Guard",
-            damage: "2 fire damage",
+            damage: "1 fire damage",
             success: (
               <span>
                 1{" "}
@@ -595,7 +595,7 @@ const HazardList = [
         countdown="d4"
         tier="3"
         threat="Standard"
-        consequence="12 necrotic damage"
+        consequence="6 necrotic damage"
         actions={[
           {
             // basic: true,
@@ -603,7 +603,7 @@ const HazardList = [
             keywords: "magical, range",
             target: <span>1d4+1 enemies within 3 zones</span>,
             defense: "Spirit",
-            damage: "6 necrotic damage",
+            damage: "3 necrotic damage",
             success: (
               <span>
                 <Link className="internal-link" to="/conditions#hindered">

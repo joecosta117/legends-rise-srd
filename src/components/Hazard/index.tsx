@@ -126,8 +126,7 @@ const Hazard: React.FC<MonsterProps> = ({
       <div className="monster-content">
         <div className="basics">
           <p>
-            <b>Countdown Die</b> {countdown} <b>|</b> <b>TN</b> {getTN()}{" "}
-            <b>|</b> <b>PB</b> +{getPB()}
+            <b>Countdown Die</b> {countdown} <b>|</b> <b>PB</b> +{getPB()}
           </p>
           <p>
             {consequence && (
