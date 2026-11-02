@@ -102,19 +102,19 @@ const DemonMonsters = [
     ),
   },
   {
-    name: "Hellhoud",
+    name: "Hellhound",
     tier: "1",
     type: "Fiend",
     role: "Bruiser",
     threat: "Standard",
     description:
-      "Hellhouds are the fiery hounds of the underworld and used by other demons to retrieve wayward souls.",
+      "Hellhounds are the fiery hounds of the underworld and used by other demons to retrieve wayward souls.",
     tactics: (
       <span>
-        Hellhouds charge the heroes using{" "}
+        Hellhounds charge the heroes using{" "}
         <Link className="internal-link" to="/combat-abilities#strike">
           strike
-        </Link>
+        </Link>{" "}
         or fire breath if available, and will{" "}
         <Link className="internal-link" to="/combat-abilities#overpower">
           overpower
@@ -124,7 +124,7 @@ const DemonMonsters = [
     ),
     statBlock: (
       <Monster
-        name="Hellhoud"
+        name="Hellhound"
         hp="12"
         evn="14"
         mgt="15"
