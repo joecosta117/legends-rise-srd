@@ -24,8 +24,8 @@ export const ritualSpells = [
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
-              to either detect the sensors or move without triggering the alarm.
-              The skill tier matches your tier.
+              against your tier to either detect the sensors or move without
+              triggering the alarm.
             </span>
           }
           // critical="Same as success, and the sensors see through invisibility"
@@ -122,7 +122,7 @@ export const ritualSpells = [
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
-              with the skill tier matching the spellcaster’s tier.
+              against your tier.
             </span>
           }
           // critical="Same as success, but the size of the disguise can be one larger or smaller"
@@ -199,8 +199,8 @@ export const ritualSpells = [
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
-              with the skill tier matching your tier. When the target is opened
-              by anyone not designated by you, the spell ends.
+              against your tier. When the target is opened by anyone not
+              designated by you, the spell ends.
             </span>
           }
           // critical="Lock duration is unlimited"
@@ -397,7 +397,7 @@ export const ritualSpells = [
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>{" "}
-              with the skill tier matching the spell tier.
+              against your tier.
             </span>
           }
           // critical="Other creatures take +1 misfortune to enter the dome"

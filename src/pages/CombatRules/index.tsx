@@ -968,9 +968,10 @@ function CombatRules() {
           <Link className="internal-link" to="/rules/skills">
             skill roll
           </Link>{" "}
-          with the skill tier being the tier of the hidden creature. Once a
-          hidden creature is spotted, they are no longer hidden as the spotter
-          usually informs their allies of the sneaking enemy.
+          with an easy or hard difficulty if the hidden creature is of a lower
+          or higher tier than the spotter. Once a hidden creature is spotted,
+          they are no longer hidden as the spotter usually informs their allies
+          of the sneaking enemy.
         </p>
         <h4 className="header">Blinded</h4>
         <p>Creatures unable to see treat other creatures as hidden.</p>

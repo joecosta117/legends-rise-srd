@@ -781,7 +781,8 @@ function Relics() {
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>
-              with the skill tier matching the spell’s tier.
+              . The skill difficulty is easy or hard if the spell's tier is
+              lower or higher than your tier.
             </p>
           </div>
         ),
@@ -894,7 +895,8 @@ function Relics() {
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>
-              with the skill tier matching the spell’s tier.
+              . The skill difficulty is easy or hard if the spell's tier is
+              lower or higher than your tier.
             </p>
           </div>
         ),
@@ -988,7 +990,8 @@ function Relics() {
               <Link className="internal-link" to="/rules/skills">
                 skill roll
               </Link>
-              with the skill tier matching the spell’s tier.
+              . The skill difficulty is easy or hard if the spell's tier is
+              lower or higher than your tier.
             </p>
           </div>
         ),
@@ -1600,7 +1603,8 @@ function Relics() {
                 <Link className="internal-link" to="/rules/skills">
                   skill roll
                 </Link>{" "}
-                with the skill tier equaling the relic’s item tier.
+                . The skill difficulty is easy or hard if the item tier is lower
+                or higher than your tier.
               </p>
               <ul>
                 <li>

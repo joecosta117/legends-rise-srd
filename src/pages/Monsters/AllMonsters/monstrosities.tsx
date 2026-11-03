@@ -2108,7 +2108,7 @@ const MonstrosityMonsters = [
                 >
                   countdown
                 </Link>{" "}
-                'break out' of skill tier 3.
+                'break out'.
               </span>
             ),
           },
