@@ -88,19 +88,22 @@ function SkillRules() {
           <li>
             <span>
               <b>Easy: </b>The challenge is well within reach or the heroes have
-              a strong advantage.
+              a strong advantage. Typically if the hero's tier is higher than
+              the challenge, it is considered easy.
             </span>
           </li>
           <li>
             <span>
-              <b>Normal: </b>The challenge is appropriately risky or uncertain.
-              This is the default difficulty for skill rolls.
+              <b>Normal: </b>The challenge is appropriately risky or uncertain
+              for the hero's tier. This is the default difficulty for skill
+              rolls.
             </span>
           </li>
           <li>
             <span>
               <b>Hard: </b>The challenge is well above the heroes’ abilities, or
-              the situation is highly unfavorable.
+              the situation is highly unfavorable. Typically if the hero's tier
+              is lower than the challenge, it is considered hard.
             </span>
           </li>
         </ul>
@@ -169,6 +172,14 @@ function SkillRules() {
           instead give skill rolls an easy difficulty. For example, if a tier 2
           hero is using the craft downtime activity to make a tier 1 item, the
           GM sets the skill difficulty to easy.
+        </p>
+        <p>
+          When making skill rolls for NPCs, the GM similarly should consider the
+          NPC's tier relative to the challenge. If the NPC's tier is higher than
+          the challenge, the GM can treat the skill roll as easy. If the NPC's
+          tier is lower than the challenge, the GM can treat the skill roll as
+          hard. For example, if a tier 1 NPC is attempting to spot a hidden tier
+          2 hero, then the GM should treat the skill roll as hard.
         </p>
 
         <h4 className="header">Minor Difficulty Adjustments</h4>

@@ -80,8 +80,9 @@ function Adventuring() {
           </Link>{" "}
           to see how best you can slow your descent, with the skill difficulty
           depending on the severity of the fall as determined by the GM. Falling
-          from a second floor building would be skill tier 1, while falling from
-          the clouds is skill tier 3.
+          from a second floor building would be a normal difficulty for tier 1
+          heroes, while falling from the clouds is a hard difficulty for tier 1
+          heroes.
         </p>
         <ul>
           <li>

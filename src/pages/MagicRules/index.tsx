@@ -283,8 +283,9 @@ function MagicRules() {
             ritual spell
           </Link>{" "}
           . Depending on the result of the skill roll, the magical effect
-          produced by the spell can vary. The roll’s skill tier matches the
-          spell’s tier.
+          produced by the spell can vary. The roll’s difficulty is easy if the
+          spell's tier is lower than the caster's tier, or difficult if the
+          spell's tier is higher.
         </p>
         <h3 className="header">Aiding a Ritual</h3>
         <p>
